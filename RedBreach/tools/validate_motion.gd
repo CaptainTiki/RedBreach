@@ -10,7 +10,7 @@ func _initialize() -> void:
 
 func _process(_delta: float) -> bool:
 	if is_instance_valid(player) and not phase.is_empty():
-		samples.append({"phase": phase, "body": player.position, "eye": player.camera.global_position, "floor": player.is_on_floor()})
+		samples.append({"phase": phase, "body": player.position, "eye": player.camera.global_position, "floor": player.is_on_floor(), "grounded": player.is_grounded()})
 	return false
 
 func ticks(count: int) -> void:
@@ -33,12 +33,14 @@ func check(condition: bool, message: String) -> void:
 		failures.append(message)
 
 func motion_summary(label: String, min_z: float, max_z: float) -> Dictionary:
-	var result := {"frames": 0, "airborne": 0, "max_rise": 0.0, "max_drop": 0.0, "max_lag": 0.0, "moving_frames": 0}
+	var result := {"frames": 0, "airborne": 0, "unsupported": 0, "max_rise": 0.0, "max_drop": 0.0, "max_lag": 0.0, "moving_frames": 0}
 	var previous: Dictionary = {}
 	for row in samples:
 		if row.phase != label or row.body.z <= min_z or row.body.z >= max_z:
 			continue
 		result.frames += 1
+		if not row.grounded:
+			result.unsupported += 1
 		if not row.floor:
 			result.airborne += 1
 		result.max_lag = maxf(result.max_lag, absf(row.eye.y - row.body.y - 1.65))
@@ -86,6 +88,9 @@ func run() -> void:
 	var downstairs := motion_summary(phase, -5.5, -2.0)
 	check(player.position.y < 0.1 and player.position.z > -2.0, "Descend the complete stair flight")
 	check(downstairs.max_drop > -0.06, "Descending stairs has no single-frame eye drops")
+	check(downstairs.frames > 60 and downstairs.unsupported == 0, "Walking down stairs maintains support at every tread")
+	await check_stair_descent()
+	await check_jump_and_ledge()
 	phase = ""
 	player.reset_player()
 	check(player.camera.global_position.distance_to(player.position + Vector3.UP * 1.65) < 0.001, "Reset snaps the camera without dragging across the gym")
@@ -99,3 +104,66 @@ func run() -> void:
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	print("GYM_MOTION_QA: ", "PASS" if failures.is_empty() else "FAIL", " (", failures.size(), " failures)")
 	quit(0 if failures.is_empty() else 1)
+
+func check_stair_descent() -> void:
+	# Vary the starting position to exercise different capsule/corner alignments.
+	for sprinting in [false, true]:
+		var supported := true
+		var samples_checked := 0
+		for start_z in [-6.60, -6.63, -6.67, -6.70, -6.74, -6.78]:
+			await place(Vector3(-9, 2.05, start_z))
+			if sprinting:
+				Input.action_press("gym_sprint")
+			player.test_direction = Vector2(0, 1)
+			phase = "stairs_sprint" if sprinting else "stairs_walk_offsets"
+			for i in 65:
+				await ticks(1)
+				if player.position.z > -5.5 and player.position.z < -2.0:
+					samples_checked += 1
+					supported = supported and player.is_grounded()
+			Input.action_release("gym_sprint")
+		check(supported and samples_checked > 150, ("Sprint" if sprinting else "Walk") + " stays supported across six stair approach offsets")
+	# Summarize one uninterrupted run separately; pooled runs contain teleports.
+	await place(Vector3(-9, 2.05, -6.6))
+	Input.action_press("gym_sprint")
+	phase = "stairs_sprint_camera"
+	player.test_direction = Vector2(0, 1)
+	await ticks(50)
+	Input.action_release("gym_sprint")
+	var sprint := motion_summary(phase, -5.5, -2.0)
+	check(sprint.frames > 40 and sprint.max_drop > -0.06, "Sprinting down stairs keeps the camera smooth")
+
+func check_jump_and_ledge() -> void:
+	await place(Vector3(-9, 2.05, -6.6))
+	player.test_direction = Vector2(0, 1)
+	var found_corner := false
+	for i in 50:
+		await ticks(1)
+		if player.is_grounded() and not player.is_on_floor():
+			found_corner = true
+			break
+	check(found_corner, "Exercise jumping exactly at a rounded stair corner")
+	var jump_start := player.position.y
+	Input.action_press("gym_jump")
+	await ticks(2)
+	Input.action_release("gym_jump")
+	check(not player.is_grounded() and player.velocity.y > 0.0 and player.position.y > jump_start + 0.05, "Jump immediately releases stair support")
+	await ticks(18)
+	check(not player.is_grounded() and player.position.y > jump_start + 0.85, "Stair jump keeps its full rise without being pulled down")
+	await ticks(80)
+	check(player.is_on_floor(), "Jump lands normally after leaving the stairs")
+	await place(Vector3(-9, 2.05, -8.5))
+	player.test_direction = Vector2(0, -1)
+	var left_ledge := false
+	var departure_height := 0.0
+	for i in 30:
+		await ticks(1)
+		if not player.is_grounded():
+			left_ledge = true
+			departure_height = player.position.y
+			break
+	check(left_ledge and departure_height > 1.5, "Walking off a two-meter ledge releases ground support")
+	await ticks(5)
+	check(not player.is_grounded() and player.position.y > departure_height - 0.2 and player.velocity.y < 0.0, "Large drops fall under gravity without a downward teleport")
+	await ticks(60)
+	check(player.is_on_floor() and player.position.y < 0.1, "Ledge fall lands on the gym floor")

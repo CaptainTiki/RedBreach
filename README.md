@@ -21,3 +21,5 @@ Press F5 in Godot to play the first gym. See the [approved top-down plan](docs/g
 The editable map is `RedBreach/maps/gym_01.map`; the playable saved scene is `RedBreach/gym/gym.tscn`.
 
 The 2.0 m doorway now has a [State Charts door and two switches](docs/gym-door-module.md). Aim at a switch within 2 m and press E.
+
+The [latest playtest notes](docs/gym-playtest-02.md) cover confirmed door behavior and stair descent. [Blockout texture notes](docs/blockout-textures.md) record the supplied Kenney grids and their map scale.

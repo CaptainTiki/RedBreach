@@ -18,6 +18,7 @@ var hit_count: int = 0
 var control_override: bool = false
 var test_direction := Vector2.ZERO
 var _interaction_requested: bool = false
+var _snapped_to_step: bool = false
 var _eye_height: float = 1.65
 var _pitch: float = 0.0
 var _previous_position := Vector3.ZERO
@@ -75,6 +76,7 @@ func reset_camera_interpolation() -> void:
 
 func reset_player() -> void:
 	_interaction_requested = false
+	_snapped_to_step = false
 	global_transform = spawn_transform
 	velocity = Vector3.ZERO
 	_pitch = 0.0
@@ -114,7 +116,7 @@ func _physics_process(delta: float) -> void:
 	_previous_position = _current_position
 	_previous_eye_offset = _eye_offset
 	var before := global_position
-	var was_grounded := is_on_floor()
+	var was_grounded := is_grounded()
 	var axis := test_direction if control_override else Input.get_vector("gym_left", "gym_right", "gym_forward", "gym_back")
 	if not control_override and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
 		axis = Vector2.ZERO
@@ -122,18 +124,22 @@ func _physics_process(delta: float) -> void:
 	var direction := global_basis * Vector3(axis.x, 0.0, axis.y)
 	velocity.x = direction.x * speed
 	velocity.z = direction.z * speed
-	if not is_on_floor():
+	if not was_grounded:
 		velocity.y -= gravity * delta
 	elif Input.is_action_just_pressed("gym_jump") and (control_override or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED):
 		velocity.y = jump_speed
 	else:
 		velocity.y = 0.0
+	var jumping := velocity.y > 0.0
 	var step_rise := _try_step(Vector3(velocity.x, 0.0, velocity.z) * delta)
 	move_and_slide()
+	_snapped_to_step = false
+	if was_grounded and not jumping and step_rise == 0.0:
+		_snap_down_step()
 	# Counteract only discrete stair movement. Jump arcs and slopes stay responsive.
 	_eye_offset -= step_rise
 	var height_change := global_position.y - before.y
-	if was_grounded and is_on_floor() and height_change < -0.06:
+	if was_grounded and is_grounded() and height_change < -0.06:
 		_eye_offset -= height_change
 	_eye_offset = clampf(_eye_offset, -step_height * 2.0, step_height)
 	_eye_offset *= exp(-stair_camera_smoothing * delta)
@@ -143,9 +149,35 @@ func _physics_process(delta: float) -> void:
 	_update_interaction()
 	status.text = "GYM 01  /  Hits: %d\nWASD move   Shift sprint   Space jump   LMB probe   E use\nEsc release mouse   Click recapture   R reset" % hit_count
 
+func is_grounded() -> bool:
+	# A capsule can touch a stair corner with a steep normal even though there is
+	# a flat tread directly below. Count only a verified downward step as support.
+	return is_on_floor() or _snapped_to_step
+
+func _snap_down_step() -> void:
+	if is_on_floor():
+		return
+	# Require a walkable tread within one step, so real ledges still cause a fall.
+	var query := PhysicsRayQueryParameters3D.create(global_position + Vector3.UP * safe_margin,
+		global_position - Vector3.UP * step_height, collision_mask, [get_rid()])
+	var tread := get_world_3d().direct_space_state.intersect_ray(query)
+	if tread.is_empty() or tread.normal.dot(Vector3.UP) < 0.99:
+		return
+	var collision := KinematicCollision3D.new()
+	if not test_move(global_transform, Vector3.DOWN * step_height, collision):
+		return
+	var travel := collision.get_travel()
+	if travel.y >= 0.0:
+		return
+	# Sweep the whole capsule to the contact, never teleport through the riser.
+	global_position += travel
+	velocity.y = 0.0
+	apply_floor_snap()
+	_snapped_to_step = true
+
 func _try_step(motion: Vector3) -> float:
 	floor_snap_length = 0.35
-	if not is_on_floor() or velocity.y > 0.0 or motion.length_squared() < 0.000001:
+	if not is_grounded() or velocity.y > 0.0 or motion.length_squared() < 0.000001:
 		return 0.0
 	var obstacle := KinematicCollision3D.new()
 	if not test_move(global_transform, motion, obstacle):

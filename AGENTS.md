@@ -36,3 +36,12 @@
 - Keep the door's behavior transitions in its StateChart. Use state signals for motor and feedback code; do not duplicate the state machine in the player or switches.
 - E interaction uses a 2 m camera ray stopped by solid geometry. Door blocker detection covers CharacterBody3D and RigidBody3D on its configured mask.
 - The combined rebuild validation now includes door checks. See `docs/gym-door-module.md` before extending this module.
+
+## Movement support
+
+- Movement ground checks use GymPlayer's `is_grounded()` to include verified stair-corner support; native slope snapping remains enabled. See `docs/gym-playtest-02.md`.
+
+## Blockout materials
+
+- Prefer the supplied plain Kenney grids under `RedBreach/textures/greybox`; see `docs/blockout-textures.md` for texture scale.
+- Keep planned/tested opening dimensions. Use door/window diagrams only when their proportions match; do not reshape gameplay spaces to fit them.

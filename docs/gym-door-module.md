@@ -72,3 +72,7 @@ The 1.0 m and 1.5 m doorways remain clearance gauges. The test prop shown in the
 - Build, gym, motion, door, and capture logs contain no script errors. Version stays 0.0.001; no commit was made.
 
 Use `tools/rebuild-gym.ps1 -Validate` to run the combined suite. Door-specific logs/captures are in ignored `RedBreach/.godot/`: `door_qa.log`, `door_capture.log`, and `door_*.png`.
+
+## User confirmation
+
+The user confirmed occupied-door protection, interruption when entering during closure, and shared operation from both switches. This baseline was committed as 0.0.001 in ca1e179. See [playtest 02](gym-playtest-02.md).
