@@ -9,6 +9,8 @@
 
 [ext_resource type="PackedScene" path="res://weapons/gym_pistol.tscn" id="pistol"]
 
+[ext_resource type="PackedScene" path="res://combat/player_health.tscn" id="health"]
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_bhunq"]
 radius = 0.3
 
@@ -22,6 +24,8 @@ default_font_size = 18
 [node name="GymPlayer" type="CharacterBody3D" unique_id=1337496554]
 floor_snap_length = 0.35
 script = ExtResource("1")
+
+[node name="Health" parent="." instance=ExtResource("health")]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1615349046]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

@@ -11,13 +11,13 @@
 
 ## Play
 
-Open `RedBreach/project.godot` and press F5. Main scene: `res://gym/gym.tscn`.
+Open `RedBreach/project.godot` and press F5. Main scene: `res://combat/combat_gym.tscn`. F1 opens the movement gym; F2 opens the combat gym. See [combat build and playtest instructions](combat-gym.md).
 
 - WASD: walk; Shift: sprint; Space: jump; hold Ctrl: crouch.
 - Mouse: look; left click: fire the pistol; hold right mouse: ADS; R: reload; E: use an aimed switch within 2 m.
 - Escape: release mouse; click: recapture without firing; Backspace: reset to spawn and refill the pistol/targets.
 
-The [prototype pistol](pistol-gym.md) provides semi-automatic hitscan fire, ammunition/reload, ADS, and recoil. Targets have health and recover after two seconds. Enemy AI, player damage, and pickups are later Combat Gym modules. The original diagnostic `fire_probe()` remains available to the older geometry/sightline checks; normal left-click input uses the pistol. State Charts drives the [door/switch module](gym-door-module.md) in the 2.0 m doorway. Open it before testing that clearance.
+The [prototype pistol](pistol-gym.md) provides semi-automatic hitscan fire, ammunition/reload, ADS, and recoil. Targets have health and recover after two seconds. The separate Combat Gym now adds the first bug, player damage/death, pickups, and splatter feedback. The original diagnostic `fire_probe()` remains available to the older geometry/sightline checks; normal left-click input uses the pistol. State Charts drives the [door/switch module](gym-door-module.md) in the 2.0 m doorway. Open it before testing that clearance.
 
 ## Edit the map
 

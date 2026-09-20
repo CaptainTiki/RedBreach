@@ -1,14 +1,14 @@
 # Combat Gym: scope and firing tests
 
-Status: the first pistol, reload, ADS, recoil, and damageable targets are built and validated in the existing approved target lane. The larger Combat Gym remains a planning brief and needs its top-down spatial plan before new geometry is built. See [pistol test notes](pistol-gym.md).
+Status: first Combat Gym built from the user-approved [top-down plan](combat-gym-plan.svg). The range, player survival, pickups, one StateCharts bug and splatter feedback are ready for playtest. See [current combat-gym notes](combat-gym.md).
 
 ## Proposed build order
 
 1. Built, ready for user playtest: one semi-automatic hitscan pistol, magazine/reserve ammunition, reload, firing feedback, targets with health, and hip-fire/ADS comparison tests. See [pistol notes](pistol-gym.md).
-2. Player survival: incoming damage, health/ammo pickups, death, and reset.
-3. Repeatable encounter: one enemy using StateCharts for detection, approach, attack, and death, with cover for sightline tests.
+2. Built: player survival: incoming damage, health/ammo pickups, death, and reset.
+3. Built: repeatable encounter: one enemy using StateCharts for detection, approach, attack, and death, with cover for sightline tests.
 
-The spatial plan should mark firing positions, near/mid/far targets, a lateral movement strip, cover, pickups, the encounter space, and safe reset positions. Story beats and level progression follow once this loop is proven.
+The approved spatial plan marks firing positions, near/mid/far targets, a lateral movement strip, cover, pickups, the encounter space, and safe reset positions. Story beats and level progression follow once this loop is proven.
 
 ## Requested ADS behavior
 
@@ -47,4 +47,4 @@ While ADS is active, sprint must not override the aiming speed. Apply the ADS mo
 - Keep mouse aiming responsive while the weapon and FOV blend. Any sensitivity scaling should be explicit and tunable, and assessed separately from recoil reduction.
 - Compare scoped values with measured results; preserve the existing movement, door, and alteration checks when weapon handling is implemented.
 
-The first pistol pass is included in local version `0.0.004` (Weapons). The remaining modules are planned work; no push is included.
+The first pistol pass is included in local version `0.0.004` (Weapons). The first survival/encounter pass is included in local version `0.0.005` (Combat Gym); no push is included.

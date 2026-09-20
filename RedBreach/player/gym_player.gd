@@ -3,6 +3,8 @@ extends CharacterBody3D
 signal jumped(origin: Vector3)
 signal relocated
 
+@export var gym_title: String = "GYM 01 + ANNEX"
+
 @export var crouch_height: float = 1.1
 @export var crouch_eye_height: float = 0.95
 @export var crouch_speed: float = 2.5
@@ -63,7 +65,20 @@ func _ready() -> void:
 	if DisplayServer.get_name() != "headless":
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
+func is_alive() -> bool:
+	return $Health.is_alive()
+
 func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed and not event.echo:
+		if event.physical_keycode == KEY_F1 or event.physical_keycode == KEY_F2:
+			get_tree().call_deferred("change_scene_to_file", "res://gym/gym.tscn" if event.physical_keycode == KEY_F1 else "res://combat/combat_gym.tscn")
+			return
+	if not is_alive():
+		if event.is_action_pressed("gym_reset"):
+			reset_player()
+		elif event.is_action_pressed("gym_release_mouse"):
+			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		return
 	if event.is_action_pressed("gym_interact") and (control_override or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED):
 		_interaction_requested = true
 	if event.is_action_pressed("gym_release_mouse"):
@@ -104,10 +119,12 @@ func reset_camera_interpolation() -> void:
 	_update_camera_aim()
 
 func reset_player() -> void:
+	$Health.reset_health()
 	relocate(spawn_transform)
 	pistol.reset_weapon()
 	hit_count = 0
 	get_tree().call_group("gym_targets", "reset_target")
+	get_tree().call_group("combat_gym", "reset_encounter")
 
 func relocate(destination: Transform3D) -> void:
 	# All recovery destinations are authored with full standing clearance.
@@ -183,6 +200,8 @@ func interaction_target() -> Node:
 	return null
 
 func try_interact() -> bool:
+	if not is_alive():
+		return false
 	var target := interaction_target()
 	return target.interact() if target != null else false
 
@@ -190,7 +209,7 @@ func _update_interaction() -> void:
 	if _interaction_requested:
 		try_interact()
 		_interaction_requested = false
-	var target: Node = interaction_target() if control_override or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED else null
+	var target: Node = interaction_target() if is_alive() and (control_override or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED) else null
 	$HUD/Interaction.text = target.get_interaction_prompt() if target != null else ""
 
 func _physics_process(delta: float) -> void:
@@ -199,12 +218,12 @@ func _physics_process(delta: float) -> void:
 	_previous_eye_offset = _eye_offset
 	var before := global_position
 	var was_grounded := is_grounded()
-	var controls_active := control_override or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED
+	var controls_active := is_alive() and (control_override or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED)
 	var jump_requested := Input.is_action_just_pressed("gym_jump") and controls_active
 	_update_posture(was_grounded, jump_requested, controls_active)
 	pistol.update_controls(controls_active)
 	var axis := test_direction if control_override else Input.get_vector("gym_left", "gym_right", "gym_forward", "gym_back")
-	if not control_override and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
+	if not controls_active:
 		axis = Vector2.ZERO
 	var speed := crouch_speed if is_crouching() else (sprint_speed if Input.is_action_pressed("gym_sprint") else walk_speed)
 	if pistol.is_ads():
@@ -237,7 +256,7 @@ func _physics_process(delta: float) -> void:
 	if global_position.y < -10.0:
 		reset_player()
 	_update_interaction()
-	status.text = "GYM 01 + ANNEX / %s / Hits: %d\nWASD move   Shift sprint   Ctrl crouch   Space jump\nLMB fire   RMB aim   R reload   E use\nEsc release mouse   Backspace reset" % [movement_mode(), hit_count]
+	status.text = "%s / %s / Hits: %d\nWASD move   Shift sprint   Ctrl crouch   Space jump\nLMB fire   RMB aim   R reload   E use\nEsc release mouse   Backspace reset\nF1 movement gym   F2 combat gym" % [gym_title, movement_mode(), hit_count]
 
 func is_grounded() -> bool:
 	# A capsule can touch a stair corner with a steep normal even though there is

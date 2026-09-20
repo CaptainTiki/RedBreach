@@ -59,7 +59,7 @@ func is_reloading() -> bool:
 	return $HandlingChart/Handling/Reloading.active
 
 func update_controls(controls_active: bool) -> void:
-	var aiming: bool = controls_active and Input.is_action_pressed("gym_aim") and not is_reloading()
+	var aiming: bool = controls_active and player.is_alive() and Input.is_action_pressed("gym_aim") and not is_reloading()
 	if aiming != is_ads():
 		$AimChart.send_event("aim" if aiming else "hip")
 
@@ -68,7 +68,7 @@ func aim_offset() -> Vector2:
 
 func fire() -> bool:
 	# One call per input press: holding the mouse does not repeat shots.
-	if not $HandlingChart/Handling/Ready.active or _cooldown > 0.0001:
+	if not player.is_alive() or not $HandlingChart/Handling/Ready.active or _cooldown > 0.0001:
 		return false
 	_cooldown = 1.0 / maxf(shots_per_second, 0.1)
 	if magazine <= 0:
@@ -81,11 +81,15 @@ func fire() -> bool:
 	shot_count += 1
 	last_hit = trace_shot()
 	var hit_target := false
-	if not last_hit.is_empty() and last_hit.collider.has_method("register_hit"):
+	if not last_hit.is_empty() and last_hit.collider.has_method("receive_shot"):
+		hit_target = last_hit.collider.receive_shot(damage, last_hit.position, last_hit.normal, -camera.global_basis.z)
+	elif not last_hit.is_empty() and last_hit.collider.has_method("register_hit"):
 		hit_target = last_hit.collider.register_hit(damage)
-		if hit_target:
-			player.hit_count += 1
-			_hit_time = 0.12
+	if not last_hit.is_empty() and not last_hit.collider.has_method("receive_shot"):
+		get_tree().call_group("combat_effects", "spawn_impact", last_hit.position, last_hit.normal)
+	if hit_target:
+		player.hit_count += 1
+		_hit_time = 0.12
 	var strength := ads_recoil_multiplier if is_ads() else 1.0
 	camera_kick += Vector2(deg_to_rad(kick_degrees), deg_to_rad(_rng.randf_range(-0.22, 0.22))) * strength
 	aim_drift += Vector2(deg_to_rad(drift_degrees), deg_to_rad(_rng.randf_range(-0.12, 0.12))) * strength
@@ -116,7 +120,7 @@ func trace_shot() -> Dictionary:
 	return muzzle_hit if not muzzle_hit.is_empty() else sight_hit
 
 func request_reload() -> bool:
-	if not $HandlingChart/Handling/Ready.active or magazine >= magazine_capacity or reserve <= 0:
+	if not player.is_alive() or not $HandlingChart/Handling/Ready.active or magazine >= magazine_capacity or reserve <= 0:
 		return false
 	$HandlingChart.send_event("reload")
 	return true
@@ -159,6 +163,13 @@ func cancel_handling() -> void:
 	$HUD/HitMarker.hide()
 	_refresh_hud()
 
+func add_ammo(amount: int) -> bool:
+	if amount <= 0 or reserve >= reserve_capacity:
+		return false
+	reserve = mini(reserve_capacity, reserve + amount)
+	_refresh_hud()
+	return true
+
 func reset_weapon() -> void:
 	cancel_handling()
 	magazine = magazine_capacity
@@ -191,7 +202,7 @@ func _process(delta: float) -> void:
 	$Pose/Recoil/MuzzleFlash.visible = _flash_time > 0.0
 	$HUD/HitMarker.visible = _hit_time > 0.0
 	# The iron sights become the reticle once the ADS transition has settled.
-	player.get_node("HUD/Crosshair").visible = ads_blend < 0.95
+	player.get_node("HUD/Crosshair").visible = player.is_alive() and ads_blend < 0.95
 
 func _refresh_hud() -> void:
 	var handling := "RELOADING" if is_reloading() else ("ADS" if is_ads() else "HIP FIRE")

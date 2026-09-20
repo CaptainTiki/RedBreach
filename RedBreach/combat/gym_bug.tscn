@@ -1,0 +1,309 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://combat/gym_bug.gd" id="script"]
+[ext_resource type="AudioStream" path="res://combat/bug_hit.wav" id="hit_audio"]
+[ext_resource type="AudioStream" path="res://combat/bug_attack.wav" id="attack_audio"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="chart"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="compound"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="atomic"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="transition"]
+
+[sub_resource type="StandardMaterial3D" id="shell"]
+albedo_color = Color(0.32,0.12,0.055,1)
+roughness = 0.7
+
+[sub_resource type="StandardMaterial3D" id="abdomen"]
+albedo_color = Color(0.37,0.48,0.075,1)
+roughness = 0.7
+
+[sub_resource type="StandardMaterial3D" id="dark"]
+albedo_color = Color(0.055,0.045,0.028,1)
+roughness = 0.7
+
+[sub_resource type="StandardMaterial3D" id="eye"]
+albedo_color = Color(1,0.38,0.045,1)
+roughness = 0.7
+shading_mode = 0
+
+[sub_resource type="StandardMaterial3D" id="warning"]
+albedo_color = Color(1,0.8,0.16,1)
+roughness = 0.7
+shading_mode = 0
+
+[sub_resource type="SphereMesh" id="body"]
+material = SubResource("shell")
+radius = 0.55
+height = 0.85
+radial_segments = 8
+rings = 4
+
+[sub_resource type="SphereMesh" id="belly"]
+material = SubResource("abdomen")
+radius = 0.56
+height = 1.15
+radial_segments = 8
+rings = 4
+
+[sub_resource type="SphereMesh" id="head"]
+material = SubResource("shell")
+radius = 0.35
+height = 0.55
+radial_segments = 8
+rings = 4
+
+[sub_resource type="SphereMesh" id="eye_mesh"]
+material = SubResource("eye")
+radius = 0.065
+height = 0.13
+radial_segments = 8
+rings = 4
+
+[sub_resource type="CylinderMesh" id="limb"]
+material = SubResource("dark")
+top_radius = 0.055
+bottom_radius = 0.085
+height = 1.0
+radial_segments = 5
+[sub_resource type="PrismMesh" id="fang"]
+material = SubResource("abdomen")
+size = Vector3(0.14,0.25,0.38)
+[sub_resource type="TorusMesh" id="ring"]
+material = SubResource("warning")
+inner_radius = 0.85
+outer_radius = 0.93
+rings = 20
+ring_segments = 6
+[sub_resource type="CapsuleShape3D" id="shape"]
+radius = 0.5
+height = 1.1
+[node name="GymBug" type="CharacterBody3D"]
+floor_snap_length = 0.3
+script = ExtResource("script")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0,0.55,0)
+shape = SubResource("shape")
+[node name="Agent" type="NavigationAgent3D" parent="."]
+path_desired_distance = 0.3
+target_desired_distance = 0.8
+radius = 0.55
+height = 1.1
+[node name="Visual" type="Node3D" parent="."]
+[node name="Carapace" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0,0.72,0)
+mesh = SubResource("body")
+[node name="Abdomen" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0,0.57,0.65)
+rotation = Vector3(1.570796,0,0)
+mesh = SubResource("belly")
+[node name="Head" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0,0.55,-0.58)
+mesh = SubResource("head")
+[node name="Warning" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0,0.03,0)
+mesh = SubResource("ring")
+visible = false
+[node name="Legs" type="Node3D" parent="Visual"]
+
+[node name="LegL0" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegL0"]
+transform = Transform3D(-0.202606,0.979260,0.000000,-0.580000,-0.120000,-0.100000,-0.163029,-0.033730,0.986045,-0.590000,0.590000,-0.450000)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegL0"]
+transform = Transform3D(-0.803842,0.594843,0.000000,-0.370000,-0.500000,-0.240000,-0.214130,-0.289365,0.932961,-1.065000,0.280000,-0.620000)
+mesh = SubResource("limb")
+
+[node name="LegL1" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegL1"]
+transform = Transform3D(-0.202606,0.979260,0.000000,-0.580000,-0.120000,-0.100000,-0.163029,-0.033730,0.986045,-0.590000,0.590000,0.000000)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegL1"]
+transform = Transform3D(-0.803842,0.594843,0.000000,-0.370000,-0.500000,-0.240000,-0.214130,-0.289365,0.932961,-1.065000,0.280000,-0.170000)
+mesh = SubResource("limb")
+
+[node name="LegL2" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegL2"]
+transform = Transform3D(-0.202606,0.979260,0.000000,-0.580000,-0.120000,0.200000,0.313293,0.064819,0.947442,-0.590000,0.590000,0.600000)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegL2"]
+transform = Transform3D(-0.803842,0.594843,0.000000,-0.370000,-0.500000,0.220000,0.198349,0.268040,0.942768,-1.065000,0.280000,0.810000)
+mesh = SubResource("limb")
+
+[node name="LegR0" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegR0"]
+transform = Transform3D(-0.202606,-0.979260,0.000000,0.580000,-0.120000,-0.100000,0.163029,-0.033730,0.986045,0.590000,0.590000,-0.450000)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegR0"]
+transform = Transform3D(-0.803842,-0.594843,0.000000,0.370000,-0.500000,-0.240000,0.214130,-0.289365,0.932961,1.065000,0.280000,-0.620000)
+mesh = SubResource("limb")
+
+[node name="LegR1" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegR1"]
+transform = Transform3D(-0.202606,-0.979260,0.000000,0.580000,-0.120000,-0.100000,0.163029,-0.033730,0.986045,0.590000,0.590000,0.000000)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegR1"]
+transform = Transform3D(-0.803842,-0.594843,0.000000,0.370000,-0.500000,-0.240000,0.214130,-0.289365,0.932961,1.065000,0.280000,-0.170000)
+mesh = SubResource("limb")
+
+[node name="LegR2" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegR2"]
+transform = Transform3D(-0.202606,-0.979260,0.000000,0.580000,-0.120000,0.200000,-0.313293,0.064819,0.947442,0.590000,0.590000,0.600000)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegR2"]
+transform = Transform3D(-0.803842,-0.594843,0.000000,0.370000,-0.500000,0.220000,-0.198349,0.268040,0.942768,1.065000,0.280000,0.810000)
+mesh = SubResource("limb")
+
+[node name="Eye0" type="MeshInstance3D" parent="Visual"]
+position = Vector3(-0.23,0.68,-0.86)
+mesh = SubResource("eye_mesh")
+
+[node name="Eye1" type="MeshInstance3D" parent="Visual"]
+position = Vector3(-0.11,0.68,-0.86)
+mesh = SubResource("eye_mesh")
+
+[node name="Eye2" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0.11,0.68,-0.86)
+mesh = SubResource("eye_mesh")
+
+[node name="Eye3" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0.23,0.68,-0.86)
+mesh = SubResource("eye_mesh")
+
+[node name="Fang0" type="MeshInstance3D" parent="Visual"]
+position = Vector3(-0.2,0.34,-0.87)
+rotation = Vector3(-0.4,0,-0.35)
+mesh = SubResource("fang")
+
+[node name="Fang1" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0.2,0.34,-0.87)
+rotation = Vector3(-0.4,0,0.35)
+mesh = SubResource("fang")
+
+[node name="Readout" type="Label3D" parent="."]
+position = Vector3(0,1.7,0)
+billboard = 1
+pixel_size = 0.004
+font_size = 28
+text = "BUG / DORMANT"
+[node name="HitSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("hit_audio")
+volume_db = -7.0
+max_distance = 35.0
+[node name="AttackSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("attack_audio")
+volume_db = -6.0
+max_distance = 35.0
+
+[node name="Brain" type="Node" parent="."]
+script = ExtResource("chart")
+track_in_editor = true
+
+[node name="Behavior" type="Node" parent="Brain"]
+script = ExtResource("compound")
+initial_state = NodePath("Dormant")
+
+[node name="Dormant" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToHunt" type="Node" parent="Brain/Behavior/Dormant"]
+script = ExtResource("transition")
+to = NodePath("../../Hunt")
+event = &"alert"
+
+[node name="Hunt" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToWindup" type="Node" parent="Brain/Behavior/Hunt"]
+script = ExtResource("transition")
+to = NodePath("../../Windup")
+event = &"windup"
+
+[node name="ToDead" type="Node" parent="Brain/Behavior/Hunt"]
+script = ExtResource("transition")
+to = NodePath("../../Dead")
+event = &"die"
+
+[node name="ToDormant" type="Node" parent="Brain/Behavior/Hunt"]
+script = ExtResource("transition")
+to = NodePath("../../Dormant")
+event = &"reset"
+
+[node name="Windup" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToLunge" type="Node" parent="Brain/Behavior/Windup"]
+script = ExtResource("transition")
+to = NodePath("../../Lunge")
+event = &"lunge"
+
+[node name="ToDead" type="Node" parent="Brain/Behavior/Windup"]
+script = ExtResource("transition")
+to = NodePath("../../Dead")
+event = &"die"
+
+[node name="ToDormant" type="Node" parent="Brain/Behavior/Windup"]
+script = ExtResource("transition")
+to = NodePath("../../Dormant")
+event = &"reset"
+
+[node name="Lunge" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToRecover" type="Node" parent="Brain/Behavior/Lunge"]
+script = ExtResource("transition")
+to = NodePath("../../Recover")
+event = &"recover"
+
+[node name="ToDead" type="Node" parent="Brain/Behavior/Lunge"]
+script = ExtResource("transition")
+to = NodePath("../../Dead")
+event = &"die"
+
+[node name="ToDormant" type="Node" parent="Brain/Behavior/Lunge"]
+script = ExtResource("transition")
+to = NodePath("../../Dormant")
+event = &"reset"
+
+[node name="Recover" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToHunt" type="Node" parent="Brain/Behavior/Recover"]
+script = ExtResource("transition")
+to = NodePath("../../Hunt")
+event = &"hunt"
+
+[node name="ToDead" type="Node" parent="Brain/Behavior/Recover"]
+script = ExtResource("transition")
+to = NodePath("../../Dead")
+event = &"die"
+
+[node name="ToDormant" type="Node" parent="Brain/Behavior/Recover"]
+script = ExtResource("transition")
+to = NodePath("../../Dormant")
+event = &"reset"
+
+[node name="Dead" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToDormant" type="Node" parent="Brain/Behavior/Dead"]
+script = ExtResource("transition")
+to = NodePath("../../Dormant")
+event = &"reset"
+
+[connection signal="state_entered" from="Brain/Behavior/Windup" to="." method="_on_windup_entered"]
+
+[connection signal="state_entered" from="Brain/Behavior/Lunge" to="." method="_on_lunge_entered"]
+
+[connection signal="state_entered" from="Brain/Behavior/Recover" to="." method="_on_recover_entered"]
+
+[connection signal="state_entered" from="Brain/Behavior/Dead" to="." method="_on_dead_entered"]

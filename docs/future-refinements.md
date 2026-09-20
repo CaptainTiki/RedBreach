@@ -41,6 +41,14 @@ Two weapons with noticeably different handling can use the same behavior code, w
 
 This entry records the intended design. It does not request an immediate refactor or introduce a weapon resource into the project yet.
 
+## FR-002: Bug presentation and impact refinement
+
+**Status:** Deferred until the first combat playtest gives us useful feel feedback.
+
+**Intent:** Replace the primitive six-legged bug and flattened corpse with authored animation and a death reaction. Revisit limb hit areas alongside the final silhouette; the current body capsule is the damage target. Tune the attack cue, hit sound, green droplets and surface splatters together so shots and impending attacks remain readable at combat distances.
+
+**Completion check:** Players can read a wind-up, distinguish a hit from a kill, and predict which visible parts receive damage. Preserve the dodgeable committed lunge, cover obstruction, bounded effects, and complete reset checks. This entry does not authorize importing an asset pack or changing the current weapon architecture.
+
 ## Adding future entries
 
 Give each idea the next stable identifier (FR-002, FR-003, and so on), a short title, status, a reason to revisit it, the intended change, and a practical completion check. Keep uncertain details marked as open. When an item enters active work or is completed, update its status and link the relevant plan or implementation notes.

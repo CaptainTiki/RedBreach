@@ -58,3 +58,11 @@
 - Camera kick and aim drift affect the actual aim used for shooting. Preserve sight alignment, immediate mouse response, and muzzle obstruction checks.
 - Runway measurements accept only ordinary WALK/SPRINT modes; ADS must cancel or prevent a timed run.
 - The combined rebuild validation includes pistol checks. Use the actual camera viewport for projected sight alignment, since a headless window can have different dimensions.
+
+## Current combat gym
+
+- F5 launches `RedBreach/combat/combat_gym.tscn`; F1/F2 switch between movement/combat gyms. The user approved `docs/combat-gym-plan.svg` before this separate layout was built. Read `docs/combat-gym.md` before extending it.
+- Edit combat geometry in `RedBreach/maps/combat_01.map`; run `tools/rebuild-combat-gym.ps1 -Validate` to rebuild and save both Geometry and navigation. Navigation is baked from the static source geometry, clipped to the arena. Preserve authored siblings.
+- Bug behavior, player life, and encounter transitions each belong to their editable StateCharts. One panel-released bug, a committed telegraphed lunge, and a resettable encounter are the current scope.
+- Preserve real hit-point feedback, shot/attack obstruction, bounded surface splatters, useful-only pickups, death input restrictions, and complete Backspace reset. Extended bug legs are visual placeholders; body collision receives damage.
+- Shared player/weapon changes require the original gym validation as well as combat checks. New geometry must still follow the plan-first rule.
