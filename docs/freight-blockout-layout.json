@@ -1,0 +1,1388 @@
+{
+  "rooms": {
+    "IN": [
+      190,
+      328,
+      6,
+      8,
+      "AIRLOCK",
+      "common"
+    ],
+    "R": [
+      190,
+      301,
+      40,
+      24,
+      "RECEIVING",
+      "common"
+    ],
+    "H": [
+      190,
+      260,
+      52,
+      40,
+      "SERVICE HUB",
+      "common"
+    ],
+    "OUT": [
+      190,
+      218,
+      10,
+      12,
+      "LIFT",
+      "exit"
+    ],
+    "A1": [
+      88,
+      278,
+      52,
+      32,
+      "STAFF INTAKE",
+      "security"
+    ],
+    "A2": [
+      32,
+      213,
+      48,
+      58,
+      "INSPECTION|FLOOR",
+      "security"
+    ],
+    "A3": [
+      52,
+      128,
+      64,
+      36,
+      "RECORDS|WORK FLOOR",
+      "security"
+    ],
+    "A4": [
+      121,
+      71,
+      66,
+      44,
+      "SECURITY|DISPATCH",
+      "security"
+    ],
+    "A5": [
+      143,
+      129,
+      30,
+      30,
+      "WATCH|GALLERY",
+      "security"
+    ],
+    "A6": [
+      133,
+      182,
+      46,
+      32,
+      "CLEARANCE|OFFICE",
+      "security"
+    ],
+    "A7": [
+      42,
+      61,
+      40,
+      40,
+      "RECORDS|SUPERVISOR",
+      "detour"
+    ],
+    "A8": [
+      83,
+      213,
+      36,
+      58,
+      "INSPECTION|ANNEX",
+      "detour"
+    ],
+    "B1": [
+      286,
+      278,
+      56,
+      36,
+      "MACHINE|ACCESS",
+      "power"
+    ],
+    "B2": [
+      342,
+      207,
+      52,
+      62,
+      "COOLANT|PUMP FLOOR",
+      "power"
+    ],
+    "B3": [
+      322,
+      125,
+      64,
+      38,
+      "COOLING|GALLERY",
+      "power"
+    ],
+    "B4": [
+      250,
+      62,
+      72,
+      48,
+      "AUXILIARY|GENERATOR HALL",
+      "power"
+    ],
+    "B5": [
+      228,
+      132,
+      28,
+      36,
+      "RELAY|GALLERY",
+      "power"
+    ],
+    "B6": [
+      242,
+      194,
+      48,
+      32,
+      "POWER|CONTROL",
+      "power"
+    ],
+    "B7": [
+      191,
+      130,
+      30,
+      42,
+      "RELAY|SERVICE",
+      "detour"
+    ],
+    "C1": [
+      286,
+      208,
+      32,
+      30,
+      "PUMP|SERVICE",
+      "detour"
+    ],
+    "C2": [
+      266,
+      150,
+      28,
+      26,
+      "VALVE|SERVICE",
+      "detour"
+    ],
+    "M": [
+      184,
+      52,
+      34,
+      28,
+      "MAINT.|WORKSHOP",
+      "optional"
+    ]
+  },
+  "nodes": {
+    "IN": [
+      190,
+      328
+    ],
+    "R": [
+      190,
+      301
+    ],
+    "H": [
+      190,
+      260
+    ],
+    "OUT": [
+      190,
+      218
+    ],
+    "A1": [
+      88,
+      278
+    ],
+    "A2": [
+      32,
+      213
+    ],
+    "A3": [
+      52,
+      128
+    ],
+    "A4": [
+      121,
+      71
+    ],
+    "A5": [
+      143,
+      129
+    ],
+    "A6": [
+      133,
+      182
+    ],
+    "A7": [
+      42,
+      61
+    ],
+    "A8": [
+      83,
+      213
+    ],
+    "B1": [
+      286,
+      278
+    ],
+    "B2": [
+      342,
+      207
+    ],
+    "B3": [
+      322,
+      125
+    ],
+    "B4": [
+      250,
+      62
+    ],
+    "B5": [
+      228,
+      132
+    ],
+    "B6": [
+      242,
+      194
+    ],
+    "B7": [
+      191,
+      130
+    ],
+    "C1": [
+      286,
+      208
+    ],
+    "C2": [
+      266,
+      150
+    ],
+    "M": [
+      184,
+      52
+    ],
+    "J0": [
+      52,
+      164
+    ],
+    "JT": [
+      85,
+      164
+    ],
+    "JA": [
+      97,
+      128
+    ],
+    "JB0": [
+      342,
+      248
+    ],
+    "JB": [
+      266,
+      125
+    ]
+  },
+  "edges": [
+    {
+      "a": "IN",
+      "b": "R",
+      "points": [
+        [
+          190,
+          328
+        ],
+        [
+          190,
+          301
+        ]
+      ],
+      "kind": "common",
+      "width": 6,
+      "gate": null,
+      "length": 27,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "R",
+      "b": "H",
+      "points": [
+        [
+          190,
+          301
+        ],
+        [
+          190,
+          260
+        ]
+      ],
+      "kind": "common",
+      "width": 8,
+      "gate": null,
+      "length": 41,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "H",
+      "b": "A1",
+      "points": [
+        [
+          190,
+          260
+        ],
+        [
+          190,
+          252
+        ],
+        [
+          132,
+          252
+        ],
+        [
+          132,
+          278
+        ],
+        [
+          88,
+          278
+        ]
+      ],
+      "kind": "security",
+      "width": 6,
+      "gate": null,
+      "length": 136,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "A1",
+      "b": "A2",
+      "points": [
+        [
+          88,
+          278
+        ],
+        [
+          32,
+          278
+        ],
+        [
+          32,
+          213
+        ]
+      ],
+      "kind": "security",
+      "width": 6,
+      "gate": null,
+      "length": 121,
+      "floor_start": 0,
+      "floor_end": -2
+    },
+    {
+      "a": "A2",
+      "b": "J0",
+      "points": [
+        [
+          32,
+          213
+        ],
+        [
+          32,
+          164
+        ],
+        [
+          52,
+          164
+        ]
+      ],
+      "kind": "security",
+      "width": 6,
+      "gate": null,
+      "length": 69,
+      "floor_start": -2,
+      "floor_end": -2
+    },
+    {
+      "a": "J0",
+      "b": "A3",
+      "points": [
+        [
+          52,
+          164
+        ],
+        [
+          52,
+          128
+        ]
+      ],
+      "kind": "security",
+      "width": 6,
+      "gate": "1",
+      "length": 36,
+      "floor_start": -2,
+      "floor_end": 0
+    },
+    {
+      "a": "J0",
+      "b": "JT",
+      "points": [
+        [
+          52,
+          164
+        ],
+        [
+          85,
+          164
+        ]
+      ],
+      "kind": "detour",
+      "width": 6,
+      "gate": null,
+      "length": 33,
+      "floor_start": -2,
+      "floor_end": -2
+    },
+    {
+      "a": "JT",
+      "b": "JA",
+      "points": [
+        [
+          85,
+          164
+        ],
+        [
+          97,
+          164
+        ],
+        [
+          97,
+          128
+        ]
+      ],
+      "kind": "detour",
+      "width": 6,
+      "gate": null,
+      "length": 48,
+      "floor_start": -2,
+      "floor_end": 0
+    },
+    {
+      "a": "JT",
+      "b": "A8",
+      "points": [
+        [
+          85,
+          164
+        ],
+        [
+          85,
+          213
+        ],
+        [
+          83,
+          213
+        ]
+      ],
+      "kind": "detour",
+      "width": 6,
+      "gate": null,
+      "length": 51,
+      "floor_start": -2,
+      "floor_end": -2
+    },
+    {
+      "a": "A3",
+      "b": "JA",
+      "points": [
+        [
+          52,
+          128
+        ],
+        [
+          97,
+          128
+        ]
+      ],
+      "kind": "security",
+      "width": 6,
+      "gate": null,
+      "length": 45,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "A3",
+      "b": "A7",
+      "points": [
+        [
+          52,
+          128
+        ],
+        [
+          35,
+          128
+        ],
+        [
+          35,
+          61
+        ],
+        [
+          42,
+          61
+        ]
+      ],
+      "kind": "detour",
+      "width": 6,
+      "gate": null,
+      "length": 91,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "JA",
+      "b": "A4",
+      "points": [
+        [
+          97,
+          128
+        ],
+        [
+          121,
+          128
+        ],
+        [
+          121,
+          71
+        ]
+      ],
+      "kind": "security",
+      "width": 6,
+      "gate": "2",
+      "length": 81,
+      "floor_start": 0,
+      "floor_end": 2
+    },
+    {
+      "a": "A4",
+      "b": "A5",
+      "points": [
+        [
+          121,
+          71
+        ],
+        [
+          143,
+          71
+        ],
+        [
+          143,
+          129
+        ]
+      ],
+      "kind": "security",
+      "width": 6,
+      "gate": null,
+      "length": 80,
+      "floor_start": 2,
+      "floor_end": 2
+    },
+    {
+      "a": "A5",
+      "b": "A6",
+      "points": [
+        [
+          143,
+          129
+        ],
+        [
+          143,
+          156
+        ],
+        [
+          133,
+          156
+        ],
+        [
+          133,
+          182
+        ]
+      ],
+      "kind": "security",
+      "width": 6,
+      "gate": null,
+      "length": 63,
+      "floor_start": 2,
+      "floor_end": 0
+    },
+    {
+      "a": "A6",
+      "b": "H",
+      "points": [
+        [
+          133,
+          182
+        ],
+        [
+          176,
+          182
+        ],
+        [
+          176,
+          260
+        ],
+        [
+          190,
+          260
+        ]
+      ],
+      "kind": "shortcut",
+      "width": 6,
+      "gate": "S1",
+      "length": 135,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "H",
+      "b": "B1",
+      "points": [
+        [
+          190,
+          260
+        ],
+        [
+          190,
+          252
+        ],
+        [
+          242,
+          252
+        ],
+        [
+          242,
+          278
+        ],
+        [
+          286,
+          278
+        ]
+      ],
+      "kind": "power",
+      "width": 6,
+      "gate": null,
+      "length": 130,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "B1",
+      "b": "JB0",
+      "points": [
+        [
+          286,
+          278
+        ],
+        [
+          342,
+          278
+        ],
+        [
+          342,
+          248
+        ]
+      ],
+      "kind": "power",
+      "width": 6,
+      "gate": null,
+      "length": 86,
+      "floor_start": 0,
+      "floor_end": -2
+    },
+    {
+      "a": "JB0",
+      "b": "B2",
+      "points": [
+        [
+          342,
+          248
+        ],
+        [
+          342,
+          207
+        ]
+      ],
+      "kind": "power",
+      "width": 6,
+      "gate": null,
+      "length": 41,
+      "floor_start": -2,
+      "floor_end": -2
+    },
+    {
+      "a": "B2",
+      "b": "B3",
+      "points": [
+        [
+          342,
+          207
+        ],
+        [
+          342,
+          154
+        ],
+        [
+          322,
+          154
+        ],
+        [
+          322,
+          125
+        ]
+      ],
+      "kind": "power",
+      "width": 6,
+      "gate": null,
+      "length": 102,
+      "floor_start": -2,
+      "floor_end": 0
+    },
+    {
+      "a": "B3",
+      "b": "JB",
+      "points": [
+        [
+          322,
+          125
+        ],
+        [
+          266,
+          125
+        ]
+      ],
+      "kind": "power",
+      "width": 6,
+      "gate": "4",
+      "length": 56,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "JB",
+      "b": "B4",
+      "points": [
+        [
+          266,
+          125
+        ],
+        [
+          250,
+          125
+        ],
+        [
+          250,
+          62
+        ]
+      ],
+      "kind": "power",
+      "width": 6,
+      "gate": null,
+      "length": 79,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "JB0",
+      "b": "C1",
+      "points": [
+        [
+          342,
+          248
+        ],
+        [
+          286,
+          248
+        ],
+        [
+          286,
+          208
+        ]
+      ],
+      "kind": "detour",
+      "width": 6,
+      "gate": null,
+      "length": 96,
+      "floor_start": -2,
+      "floor_end": -2
+    },
+    {
+      "a": "C1",
+      "b": "C2",
+      "points": [
+        [
+          286,
+          208
+        ],
+        [
+          300,
+          208
+        ],
+        [
+          300,
+          158
+        ],
+        [
+          266,
+          158
+        ],
+        [
+          266,
+          150
+        ]
+      ],
+      "kind": "detour",
+      "width": 6,
+      "gate": null,
+      "length": 106,
+      "floor_start": -2,
+      "floor_end": 0
+    },
+    {
+      "a": "C2",
+      "b": "JB",
+      "points": [
+        [
+          266,
+          150
+        ],
+        [
+          266,
+          125
+        ]
+      ],
+      "kind": "detour",
+      "width": 6,
+      "gate": null,
+      "length": 25,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "B4",
+      "b": "B5",
+      "points": [
+        [
+          250,
+          62
+        ],
+        [
+          228,
+          62
+        ],
+        [
+          228,
+          132
+        ]
+      ],
+      "kind": "power",
+      "width": 6,
+      "gate": null,
+      "length": 92,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "B5",
+      "b": "B7",
+      "points": [
+        [
+          228,
+          132
+        ],
+        [
+          191,
+          132
+        ],
+        [
+          191,
+          130
+        ]
+      ],
+      "kind": "detour",
+      "width": 6,
+      "gate": null,
+      "length": 39,
+      "floor_start": 0,
+      "floor_end": 0
+    },
+    {
+      "a": "B5",
+      "b": "B6",
+      "points": [
+        [
+          228,
+          132
+        ],
+        [
+          228,
+          164
+        ],
+        [
+          242,
+          164
+        ],
+        [
+          242,
+          194
+        ]
+      ],
+      "kind": "power",
+      "width": 6,
+      "gate": null,
+      "length": 76,
+      "floor_start": 0,
+      "floor_end": 2
+    },
+    {
+      "a": "B6",
+      "b": "H",
+      "points": [
+        [
+          242,
+          194
+        ],
+        [
+          204,
+          194
+        ],
+        [
+          204,
+          260
+        ],
+        [
+          190,
+          260
+        ]
+      ],
+      "kind": "shortcut",
+      "width": 6,
+      "gate": "S2",
+      "length": 118,
+      "floor_start": 2,
+      "floor_end": 0
+    },
+    {
+      "a": "A4",
+      "b": "M",
+      "points": [
+        [
+          121,
+          71
+        ],
+        [
+          121,
+          62
+        ],
+        [
+          184,
+          62
+        ],
+        [
+          184,
+          52
+        ]
+      ],
+      "kind": "optional",
+      "width": 4,
+      "gate": "BcD",
+      "length": 82,
+      "floor_start": 2,
+      "floor_end": 6
+    },
+    {
+      "a": "M",
+      "b": "B4",
+      "points": [
+        [
+          184,
+          52
+        ],
+        [
+          250,
+          52
+        ],
+        [
+          250,
+          62
+        ]
+      ],
+      "kind": "optional",
+      "width": 4,
+      "gate": null,
+      "length": 76,
+      "floor_start": 6,
+      "floor_end": 0
+    },
+    {
+      "a": "H",
+      "b": "OUT",
+      "points": [
+        [
+          190,
+          260
+        ],
+        [
+          190,
+          218
+        ]
+      ],
+      "kind": "exit",
+      "width": 6,
+      "gate": "K+P",
+      "length": 42,
+      "floor_start": 0,
+      "floor_end": 0
+    }
+  ],
+  "normal_route": [
+    "IN",
+    "R",
+    "H",
+    "A1",
+    "A2",
+    "J0",
+    "JT",
+    "JA",
+    "A3",
+    "A7",
+    "A3",
+    "JA",
+    "A4",
+    "A5",
+    "A6",
+    "H",
+    "B1",
+    "JB0",
+    "C1",
+    "C2",
+    "JB",
+    "B4",
+    "B5",
+    "B6",
+    "H",
+    "OUT"
+  ],
+  "normal_length": 1956,
+  "security_length": 1038,
+  "power_length": 808,
+  "short_route": [
+    "IN",
+    "R",
+    "H",
+    "A1",
+    "select BcD",
+    "A2",
+    "J0",
+    "JT",
+    "JA",
+    "A3",
+    "A7",
+    "A3",
+    "JA",
+    "A4",
+    "M",
+    "B4",
+    "B5",
+    "B6",
+    "H",
+    "OUT"
+  ],
+  "short_length": 1314,
+  "first_time_probes": 390,
+  "probe1": 34,
+  "probe4": 356,
+  "reachable_states": 5826,
+  "checks": "PASS",
+  "floor_heights": {
+    "IN": 0,
+    "R": 0,
+    "H": 0,
+    "OUT": 0,
+    "A1": 0,
+    "A2": -2,
+    "A3": 0,
+    "A4": 2,
+    "A5": 2,
+    "A6": 0,
+    "A7": 0,
+    "A8": -2,
+    "B1": 0,
+    "B2": -2,
+    "B3": 0,
+    "B4": 0,
+    "B5": 0,
+    "B6": 2,
+    "B7": 0,
+    "C1": -2,
+    "C2": 0,
+    "M": 6,
+    "J0": -2,
+    "JT": -2,
+    "JA": 0,
+    "JB0": -2,
+    "JB": 0
+  },
+  "stair_flights": [
+    [
+      "T1",
+      "A1",
+      "A2",
+      [
+        32,
+        236
+      ],
+      [
+        32,
+        232
+      ],
+      0,
+      -2
+    ],
+    [
+      "T2",
+      "J0",
+      "A3",
+      [
+        52,
+        158
+      ],
+      [
+        52,
+        154
+      ],
+      -2,
+      0
+    ],
+    [
+      "T3",
+      "JT",
+      "JA",
+      [
+        97,
+        151
+      ],
+      [
+        97,
+        147
+      ],
+      -2,
+      0
+    ],
+    [
+      "T4",
+      "JA",
+      "A4",
+      [
+        121,
+        111
+      ],
+      [
+        121,
+        107
+      ],
+      0,
+      2
+    ],
+    [
+      "T5",
+      "A5",
+      "A6",
+      [
+        133,
+        172
+      ],
+      [
+        133,
+        176
+      ],
+      2,
+      0
+    ],
+    [
+      "T6",
+      "B1",
+      "JB0",
+      [
+        342,
+        262
+      ],
+      [
+        342,
+        258
+      ],
+      0,
+      -2
+    ],
+    [
+      "T7",
+      "B2",
+      "B3",
+      [
+        342,
+        186
+      ],
+      [
+        342,
+        182
+      ],
+      -2,
+      0
+    ],
+    [
+      "T8",
+      "C1",
+      "C2",
+      [
+        300,
+        180
+      ],
+      [
+        300,
+        176
+      ],
+      -2,
+      0
+    ],
+    [
+      "T9",
+      "B5",
+      "B6",
+      [
+        242,
+        180
+      ],
+      [
+        242,
+        184
+      ],
+      0,
+      2
+    ],
+    [
+      "T10",
+      "B6",
+      "H",
+      [
+        204,
+        222
+      ],
+      [
+        204,
+        226
+      ],
+      2,
+      0
+    ],
+    [
+      "T11a",
+      "M",
+      "B4",
+      [
+        227,
+        52
+      ],
+      [
+        231,
+        52
+      ],
+      6,
+      4
+    ],
+    [
+      "T11b",
+      "M",
+      "B4",
+      [
+        233,
+        52
+      ],
+      [
+        237,
+        52
+      ],
+      4,
+      2
+    ],
+    [
+      "T11c",
+      "M",
+      "B4",
+      [
+        239,
+        52
+      ],
+      [
+        243,
+        52
+      ],
+      2,
+      0
+    ]
+  ],
+  "ladder": [
+    "A4",
+    "M",
+    [
+      153,
+      62
+    ],
+    2,
+    6
+  ],
+  "elevation_checks": "PASS: every edge, landing, gate threshold and ordinary loop",
+  "blockout_revision": "04",
+  "origin_xz": [
+    190,
+    260
+  ],
+  "mezzanines": [
+    {
+      "room": "A2",
+      "bounds": [
+        23,
+        236,
+        41,
+        242
+      ],
+      "floor": 0,
+      "stair": "T1"
+    },
+    {
+      "room": "A6",
+      "bounds": [
+        123,
+        166,
+        143,
+        172
+      ],
+      "floor": 2,
+      "stair": "T5"
+    },
+    {
+      "room": "B2",
+      "bounds": [
+        332,
+        176,
+        352,
+        182
+      ],
+      "floor": 0,
+      "stair": "T7"
+    }
+  ]
+}

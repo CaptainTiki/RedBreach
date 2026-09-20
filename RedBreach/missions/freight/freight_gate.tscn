@@ -1,0 +1,291 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://missions/freight/freight_gate.gd" id="1_door"]
+[ext_resource type="Script" path="res://interaction/door_switch.gd" id="2_switch"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="3_chart"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="4_compound"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="5_atomic"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="6_transition"]
+
+[ext_resource type="Texture2D" path="res://textures/greybox/Green/texture_01.png" id="kenney_metric_0"]
+
+[ext_resource type="Texture2D" path="res://textures/greybox/Orange/texture_03.png" id="kenney_metric_1"]
+
+[ext_resource type="Texture2D" path="res://textures/greybox/Dark/texture_01.png" id="kenney_metric_2"]
+
+[sub_resource type="StandardMaterial3D" id="DoorMaterial"]
+metallic = 0.25
+albedo_texture = ExtResource("kenney_metric_0")
+roughness = 1.0
+metallic_specular = 0.0
+texture_filter = 2
+uv1_scale = Vector3(1, 1, 1)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 32.0
+
+[sub_resource type="StandardMaterial3D" id="AccentMaterial"]
+albedo_texture = ExtResource("kenney_metric_1")
+roughness = 1.0
+metallic_specular = 0.0
+texture_filter = 2
+uv1_scale = Vector3(1, 1, 1)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 32.0
+
+[sub_resource type="StandardMaterial3D" id="SwitchMaterial"]
+albedo_texture = ExtResource("kenney_metric_2")
+roughness = 1.0
+metallic_specular = 0.0
+texture_filter = 2
+uv1_scale = Vector3(1, 1, 1)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 32.0
+
+[sub_resource type="StandardMaterial3D" id="LampMaterial"]
+albedo_color = Color(1, 0.55, 0.12, 1)
+emission_enabled = true
+emission = Color(1, 0.55, 0.12, 1)
+
+[sub_resource type="BoxMesh" id="LeafMesh"]
+material = SubResource("DoorMaterial")
+size = Vector3(1.5, 3.16, 0.18)
+
+[sub_resource type="BoxShape3D" id="LeafShape"]
+size = Vector3(1.5, 3.16, 0.18)
+
+[sub_resource type="BoxMesh" id="StripeMesh"]
+material = SubResource("AccentMaterial")
+size = Vector3(0.09, 3.0, 0.20)
+
+[sub_resource type="BoxMesh" id="SwitchMesh"]
+material = SubResource("SwitchMaterial")
+size = Vector3(0.38, 0.52, 0.14)
+
+[sub_resource type="BoxShape3D" id="SwitchShape"]
+size = Vector3(0.38, 0.52, 0.14)
+
+[sub_resource type="BoxMesh" id="ButtonMesh"]
+material = SubResource("LampMaterial")
+size = Vector3(0.24, 0.25, 0.03)
+
+[sub_resource type="BoxMesh" id="IndicatorMesh"]
+material = SubResource("LampMaterial")
+size = Vector3(1.8, 0.055, 0.04)
+
+[sub_resource type="BoxShape3D" id="ClearanceShape"]
+size = Vector3(3.08, 3.16, 1.0)
+
+[node name="SlidingDoor" type="Node3D"]
+script = ExtResource("1_door")
+leaf_travel = 1.6
+travel_time = 0.8
+
+[node name="LeftLeaf" type="AnimatableBody3D" parent="."]
+position = Vector3(-0.75, 1.60, 0)
+sync_to_physics = false
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="LeftLeaf"]
+mesh = SubResource("LeafMesh")
+
+[node name="Stripe" type="MeshInstance3D" parent="LeftLeaf"]
+position = Vector3(0.63, 0, 0)
+mesh = SubResource("StripeMesh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LeftLeaf"]
+shape = SubResource("LeafShape")
+
+[node name="RightLeaf" type="AnimatableBody3D" parent="."]
+position = Vector3(0.75, 1.60, 0)
+sync_to_physics = false
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="RightLeaf"]
+mesh = SubResource("LeafMesh")
+
+[node name="Stripe" type="MeshInstance3D" parent="RightLeaf"]
+position = Vector3(-0.63, 0, 0)
+mesh = SubResource("StripeMesh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RightLeaf"]
+shape = SubResource("LeafShape")
+
+[node name="SwitchFront" type="StaticBody3D" parent="."]
+position = Vector3(2.1, 1.35, 0.34)
+rotation_degrees = Vector3(0, 0, 0)
+collision_mask = 0
+script = ExtResource("2_switch")
+
+[node name="Mesh" type="MeshInstance3D" parent="SwitchFront"]
+mesh = SubResource("SwitchMesh")
+
+[node name="Lamp" type="MeshInstance3D" parent="SwitchFront"]
+position = Vector3(0, -0.035, 0.08)
+mesh = SubResource("ButtonMesh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SwitchFront"]
+shape = SubResource("SwitchShape")
+
+[node name="Label" type="Label3D" parent="SwitchFront"]
+position = Vector3(0, 0.165, 0.076)
+text = "USE"
+font_size = 28
+pixel_size = 0.003
+double_sided = false
+
+[node name="IndicatorFront" type="MeshInstance3D" parent="."]
+position = Vector3(0, 3.28, 0.34)
+mesh = SubResource("IndicatorMesh")
+
+[node name="StatusFront" type="Label3D" parent="."]
+position = Vector3(0, 3.48, 0.34)
+rotation_degrees = Vector3(0, 0, 0)
+text = "CLOSED"
+font_size = 28
+pixel_size = 0.006
+double_sided = false
+
+[node name="TitleFront" type="Label3D" parent="."]
+position = Vector3(0, 3.7, 0.34)
+rotation_degrees = Vector3(0, 0, 0)
+text = "04 / DOOR TEST"
+font_size = 24
+pixel_size = 0.007
+double_sided = false
+
+[node name="SwitchBack" type="StaticBody3D" parent="."]
+position = Vector3(2.1, 1.35, -0.34)
+rotation_degrees = Vector3(0, 180, 0)
+collision_mask = 0
+script = ExtResource("2_switch")
+
+[node name="Mesh" type="MeshInstance3D" parent="SwitchBack"]
+mesh = SubResource("SwitchMesh")
+
+[node name="Lamp" type="MeshInstance3D" parent="SwitchBack"]
+position = Vector3(0, -0.035, 0.08)
+mesh = SubResource("ButtonMesh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SwitchBack"]
+shape = SubResource("SwitchShape")
+
+[node name="Label" type="Label3D" parent="SwitchBack"]
+position = Vector3(0, 0.165, 0.076)
+text = "USE"
+font_size = 28
+pixel_size = 0.003
+double_sided = false
+
+[node name="IndicatorBack" type="MeshInstance3D" parent="."]
+position = Vector3(0, 3.28, -0.34)
+mesh = SubResource("IndicatorMesh")
+
+[node name="StatusBack" type="Label3D" parent="."]
+position = Vector3(0, 3.48, -0.34)
+rotation_degrees = Vector3(0, 180, 0)
+text = "CLOSED"
+font_size = 28
+pixel_size = 0.006
+double_sided = false
+
+[node name="TitleBack" type="Label3D" parent="."]
+position = Vector3(0, 3.7, -0.34)
+rotation_degrees = Vector3(0, 180, 0)
+text = "04 / DOOR TEST"
+font_size = 24
+pixel_size = 0.007
+double_sided = false
+
+[node name="Clearance" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Clearance"]
+position = Vector3(0, 1.60, 0)
+shape = SubResource("ClearanceShape")
+
+[node name="StateChart" type="Node" parent="."]
+script = ExtResource("3_chart")
+track_in_editor = true
+
+[node name="Movement" type="Node" parent="StateChart"]
+script = ExtResource("4_compound")
+initial_state = NodePath("Closed")
+
+[node name="Closed" type="Node" parent="StateChart/Movement"]
+script = ExtResource("5_atomic")
+
+[node name="Open" type="Node" parent="StateChart/Movement/Closed"]
+script = ExtResource("6_transition")
+to = NodePath("../../Opening")
+event = &"open_requested"
+
+[node name="Opening" type="Node" parent="StateChart/Movement"]
+script = ExtResource("5_atomic")
+
+[node name="Finish" type="Node" parent="StateChart/Movement/Opening"]
+script = ExtResource("6_transition")
+to = NodePath("../../Open")
+event = &"fully_open"
+
+[node name="Open" type="Node" parent="StateChart/Movement"]
+script = ExtResource("5_atomic")
+
+[node name="Close" type="Node" parent="StateChart/Movement/Open"]
+script = ExtResource("6_transition")
+to = NodePath("../../Closing")
+event = &"close_requested"
+
+[node name="Obstruction" type="Node" parent="StateChart/Movement/Open"]
+script = ExtResource("6_transition")
+to = NodePath("../../Blocked")
+event = &"obstructed"
+
+[node name="Closing" type="Node" parent="StateChart/Movement"]
+script = ExtResource("5_atomic")
+
+[node name="Finish" type="Node" parent="StateChart/Movement/Closing"]
+script = ExtResource("6_transition")
+to = NodePath("../../Closed")
+event = &"fully_closed"
+
+[node name="Reopen" type="Node" parent="StateChart/Movement/Closing"]
+script = ExtResource("6_transition")
+to = NodePath("../../Opening")
+event = &"open_requested"
+
+[node name="Obstruction" type="Node" parent="StateChart/Movement/Closing"]
+script = ExtResource("6_transition")
+to = NodePath("../../Blocked")
+event = &"obstructed"
+
+[node name="Blocked" type="Node" parent="StateChart/Movement"]
+script = ExtResource("5_atomic")
+
+[node name="Clear" type="Node" parent="StateChart/Movement/Blocked"]
+script = ExtResource("6_transition")
+to = NodePath("../../Open")
+event = &"clear"
+
+[node name="Reset" type="Node" parent="StateChart/Movement"]
+script = ExtResource("6_transition")
+to = NodePath("../Closed")
+event = &"reset"
+
+[connection signal="state_entered" from="StateChart/Movement/Closed" to="." method="_on_state_entered" binds=["Closed"]]
+
+[connection signal="state_entered" from="StateChart/Movement/Opening" to="." method="_on_state_entered" binds=["Opening"]]
+
+[connection signal="state_entered" from="StateChart/Movement/Open" to="." method="_on_state_entered" binds=["Open"]]
+
+[connection signal="state_entered" from="StateChart/Movement/Closing" to="." method="_on_state_entered" binds=["Closing"]]
+
+[connection signal="state_entered" from="StateChart/Movement/Blocked" to="." method="_on_state_entered" binds=["Blocked"]]
+
+[connection signal="state_physics_processing" from="StateChart/Movement/Opening" to="." method="_on_opening_physics"]
+
+[connection signal="state_physics_processing" from="StateChart/Movement/Closing" to="." method="_on_closing_physics"]
+
+[connection signal="state_physics_processing" from="StateChart/Movement/Blocked" to="." method="_on_blocked_physics"]

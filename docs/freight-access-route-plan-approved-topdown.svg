@@ -1,0 +1,409 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2040" height="1580" viewBox="0 0 2040 1580">
+<title>Red Breach - Freight Access paper route, discussion draft 02</title>
+<defs>
+<marker id="arrow-common" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#77d6c5"/></marker>
+<marker id="arrow-security" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#e6b55f"/></marker>
+<marker id="arrow-power" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#77bcef"/></marker>
+<marker id="arrow-detour" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#f18f85"/></marker>
+<marker id="arrow-optional" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#bd9be8"/></marker>
+<marker id="arrow-shortcut" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#91dfa4"/></marker>
+<marker id="arrow-exit" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#f1907b"/></marker>
+<pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="#213442" stroke-width="1"/></pattern>
+</defs>
+<rect width="2040" height="1580" fill="#101b25"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="44" y="50" font-size="34" fill="#d8e4ea" font-weight="700" text-anchor="start">RED BREACH / FREIGHT ACCESS</text>
+<text x="45" y="85" font-size="21" fill="#9eb4c4" font-weight="400" text-anchor="start">PAPER ROUTE 02   |   Level 2-3 candidate   |   Detours, locks and a knowledge shortcut</text>
+<text x="45" y="117" font-size="20" fill="#77d6c5" font-weight="400" text-anchor="start">Quiet arrival  &gt;  learn the plant  &gt;  freight card + power  &gt;  lift departure</text>
+<rect x="40" y="144" width="1240" height="1147" rx="8" fill="#14232f" stroke="#344958" stroke-width="2"/>
+<rect x="46" y="150" width="1228" height="1135" rx="6" fill="url(#grid)" stroke="none" stroke-width="1"/>
+<polyline points="673,1224.6 673,1138.2" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="673,1224.6 673,1138.2" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="673,1138.2 673,1007" fill="none" stroke="#93a6af" stroke-width="27.6" stroke-linejoin="round"/>
+<polyline points="673,1138.2 673,1007" fill="none" stroke="#213440" stroke-width="25.6" stroke-linejoin="round"/>
+<polyline points="673,1007 673,981.4 487.4,981.4 487.4,1064.6 346.6,1064.6" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="673,1007 673,981.4 487.4,981.4 487.4,1064.6 346.6,1064.6" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="346.6,1064.6 167.4,1064.6 167.4,856.6" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="346.6,1064.6 167.4,1064.6 167.4,856.6" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="167.4,856.6 167.4,699.8 231.4,699.8" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="167.4,856.6 167.4,699.8 231.4,699.8" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="231.4,699.8 231.4,584.6" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="231.4,699.8 231.4,584.6" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="231.4,699.8 337,699.8" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="231.4,699.8 337,699.8" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="337,699.8 375.4,699.8 375.4,584.6" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="337,699.8 375.4,699.8 375.4,584.6" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="337,699.8 337,856.6 330.6,856.6" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="337,699.8 337,856.6 330.6,856.6" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="231.4,584.6 375.4,584.6" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="231.4,584.6 375.4,584.6" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="231.4,584.6 177,584.6 177,370.2 199.4,370.2" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="231.4,584.6 177,584.6 177,370.2 199.4,370.2" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="375.4,584.6 452.2,584.6 452.2,402.2" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="375.4,584.6 452.2,584.6 452.2,402.2" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="452.2,402.2 522.6,402.2 522.6,587.8" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="452.2,402.2 522.6,402.2 522.6,587.8" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="522.6,587.8 522.6,674.2 490.6,674.2 490.6,757.4" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="522.6,587.8 522.6,674.2 490.6,674.2 490.6,757.4" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="490.6,757.4 628.2,757.4 628.2,1007 673,1007" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="490.6,757.4 628.2,757.4 628.2,1007 673,1007" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="673,1007 673,981.4 839.4,981.4 839.4,1064.6 980.2,1064.6" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="673,1007 673,981.4 839.4,981.4 839.4,1064.6 980.2,1064.6" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="980.2,1064.6 1159.4,1064.6 1159.4,968.6" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="980.2,1064.6 1159.4,1064.6 1159.4,968.6" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="1159.4,968.6 1159.4,837.4" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="1159.4,968.6 1159.4,837.4" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="1159.4,837.4 1159.4,667.8 1095.4,667.8 1095.4,575" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="1159.4,837.4 1159.4,667.8 1095.4,667.8 1095.4,575" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="1095.4,575 916.2,575" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="1095.4,575 916.2,575" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="916.2,575 865,575 865,373.4" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="916.2,575 865,575 865,373.4" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="1159.4,968.6 980.2,968.6 980.2,840.6" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="1159.4,968.6 980.2,968.6 980.2,840.6" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="980.2,840.6 1025,840.6 1025,680.6 916.2,680.6 916.2,655" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="980.2,840.6 1025,840.6 1025,680.6 916.2,680.6 916.2,655" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="916.2,655 916.2,575" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="916.2,655 916.2,575" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="865,373.4 794.6,373.4 794.6,597.4" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="865,373.4 794.6,373.4 794.6,597.4" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="794.6,597.4 676.2,597.4 676.2,591" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="794.6,597.4 676.2,597.4 676.2,591" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="794.6,597.4 794.6,699.8 839.4,699.8 839.4,795.8" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="794.6,597.4 794.6,699.8 839.4,699.8 839.4,795.8" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="839.4,795.8 717.8,795.8 717.8,1007 673,1007" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="839.4,795.8 717.8,795.8 717.8,1007 673,1007" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<polyline points="673,1007 673,872.6" fill="none" stroke="#93a6af" stroke-width="21.2" stroke-linejoin="round"/>
+<polyline points="673,1007 673,872.6" fill="none" stroke="#213440" stroke-width="19.2" stroke-linejoin="round"/>
+<rect x="663.4" y="1211.8" width="19.2" height="25.6" rx="0" fill="#253c40" stroke="#77d6c5" stroke-width="2"/>
+<rect x="609" y="1099.8" width="128" height="76.8" rx="0" fill="#253c40" stroke="#77d6c5" stroke-width="2"/>
+<rect x="589.8" y="943" width="166.4" height="128" rx="0" fill="#253c40" stroke="#77d6c5" stroke-width="2"/>
+<rect x="657" y="853.4" width="32" height="38.4" rx="0" fill="#4e3431" stroke="#f1907b" stroke-width="2"/>
+<rect x="263.4" y="1013.4" width="166.4" height="102.4" rx="0" fill="#413a2b" stroke="#e6b55f" stroke-width="2"/>
+<rect x="90.6" y="763.8" width="153.6" height="185.6" rx="0" fill="#413a2b" stroke="#e6b55f" stroke-width="2"/>
+<rect x="129" y="527" width="204.8" height="115.2" rx="0" fill="#413a2b" stroke="#e6b55f" stroke-width="2"/>
+<rect x="346.6" y="331.8" width="211.2" height="140.8" rx="0" fill="#413a2b" stroke="#e6b55f" stroke-width="2"/>
+<rect x="474.6" y="539.8" width="96" height="96" rx="0" fill="#413a2b" stroke="#e6b55f" stroke-width="2"/>
+<rect x="417" y="706.2" width="147.2" height="102.4" rx="0" fill="#413a2b" stroke="#e6b55f" stroke-width="2"/>
+<rect x="135.4" y="306.2" width="128" height="128" rx="0" fill="#432f35" stroke="#f18f85" stroke-width="2"/>
+<rect x="273" y="763.8" width="115.2" height="185.6" rx="0" fill="#432f35" stroke="#f18f85" stroke-width="2"/>
+<rect x="890.6" y="1007" width="179.2" height="115.2" rx="0" fill="#233b50" stroke="#77bcef" stroke-width="2"/>
+<rect x="1076.2" y="738.2" width="166.4" height="198.4" rx="0" fill="#233b50" stroke="#77bcef" stroke-width="2"/>
+<rect x="993" y="514.2" width="204.8" height="121.6" rx="0" fill="#233b50" stroke="#77bcef" stroke-width="2"/>
+<rect x="749.8" y="296.6" width="230.4" height="153.6" rx="0" fill="#233b50" stroke="#77bcef" stroke-width="2"/>
+<rect x="749.8" y="539.8" width="89.6" height="115.2" rx="0" fill="#233b50" stroke="#77bcef" stroke-width="2"/>
+<rect x="762.6" y="744.6" width="153.6" height="102.4" rx="0" fill="#233b50" stroke="#77bcef" stroke-width="2"/>
+<rect x="628.2" y="523.8" width="96" height="134.4" rx="0" fill="#432f35" stroke="#f18f85" stroke-width="2"/>
+<rect x="929" y="792.6" width="102.4" height="96" rx="0" fill="#432f35" stroke="#f18f85" stroke-width="2"/>
+<rect x="871.4" y="613.4" width="89.6" height="83.2" rx="0" fill="#432f35" stroke="#f18f85" stroke-width="2"/>
+<rect x="599.4" y="296.6" width="108.8" height="89.6" rx="0" fill="#39304b" stroke="#bd9be8" stroke-width="2"/>
+<polyline points="663.4,1211.8 682.6,1211.8" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="663.4,1176.6 682.6,1176.6" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="660.2,1099.8 685.8,1099.8" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="660.2,1071 685.8,1071" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="589.8,971.8 589.8,991" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="429.8,1055 429.8,1074.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="263.4,1055 263.4,1074.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="157.8,949.4 177,949.4" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="157.8,763.8 177,763.8" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="221.8,642.2 241,642.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="327.4,763.8 346.6,763.8" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="333.8,575 333.8,594.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="167.4,527 186.6,527" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="167.4,434.2 186.6,434.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="442.6,472.6 461.8,472.6" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="513,472.6 532.2,472.6" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="513,539.8 532.2,539.8" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="513,635.8 532.2,635.8" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="481,706.2 500.2,706.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="564.2,747.8 564.2,767" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="618.6,943 637.8,943" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="756.2,971.8 756.2,991" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="890.6,1055 890.6,1074.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="1069.8,1055 1069.8,1074.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="1149.8,936.6 1169,936.6" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="1149.8,738.2 1169,738.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="1085.8,635.8 1105,635.8" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="993,565.4 993,584.6" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="855.4,450.2 874.6,450.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="970.6,888.6 989.8,888.6" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="1015.4,792.6 1034.6,792.6" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="961,671 961,690.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="906.6,613.4 925.8,613.4" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="785,450.2 804.2,450.2" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="785,539.8 804.2,539.8" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="749.8,587.8 749.8,607" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="724.2,587.8 724.2,607" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="785,655 804.2,655" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="829.8,744.6 849,744.6" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="762.6,786.2 762.6,805.4" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="708.2,943 727.4,943" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="663.4,943 682.6,943" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="663.4,891.8 682.6,891.8" fill="none" stroke="#213440" stroke-width="3.5" stroke-linejoin="round"/>
+<polyline points="673,1224.6 673,1138.2" fill="none" stroke="#77d6c5" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="673,1138.2 673,1007" fill="none" stroke="#77d6c5" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="673,1007 673,981.4 487.4,981.4 487.4,1064.6 346.6,1064.6" fill="none" stroke="#e6b55f" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="346.6,1064.6 167.4,1064.6 167.4,856.6" fill="none" stroke="#e6b55f" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="167.4,856.6 167.4,699.8 231.4,699.8" fill="none" stroke="#e6b55f" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="231.4,699.8 231.4,584.6" fill="none" stroke="#e6b55f" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="231.4,699.8 337,699.8" fill="none" stroke="#f18f85" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="337,699.8 375.4,699.8 375.4,584.6" fill="none" stroke="#f18f85" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="337,699.8 337,856.6 330.6,856.6" fill="none" stroke="#f18f85" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="231.4,584.6 375.4,584.6" fill="none" stroke="#e6b55f" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="231.4,584.6 177,584.6 177,370.2 199.4,370.2" fill="none" stroke="#f18f85" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="375.4,584.6 452.2,584.6 452.2,402.2" fill="none" stroke="#e6b55f" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="452.2,402.2 522.6,402.2 522.6,587.8" fill="none" stroke="#e6b55f" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="522.6,587.8 522.6,674.2 490.6,674.2 490.6,757.4" fill="none" stroke="#e6b55f" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="490.6,757.4 628.2,757.4 628.2,1007 673,1007" fill="none" stroke="#91dfa4" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<polyline points="673,1007 673,981.4 839.4,981.4 839.4,1064.6 980.2,1064.6" fill="none" stroke="#77bcef" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="980.2,1064.6 1159.4,1064.6 1159.4,968.6" fill="none" stroke="#77bcef" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="1159.4,968.6 1159.4,837.4" fill="none" stroke="#77bcef" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="1159.4,837.4 1159.4,667.8 1095.4,667.8 1095.4,575" fill="none" stroke="#77bcef" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="1095.4,575 916.2,575" fill="none" stroke="#77bcef" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="916.2,575 865,575 865,373.4" fill="none" stroke="#77bcef" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="1159.4,968.6 980.2,968.6 980.2,840.6" fill="none" stroke="#f18f85" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="980.2,840.6 1025,840.6 1025,680.6 916.2,680.6 916.2,655" fill="none" stroke="#f18f85" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="916.2,655 916.2,575" fill="none" stroke="#f18f85" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="865,373.4 794.6,373.4 794.6,597.4" fill="none" stroke="#77bcef" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="794.6,597.4 676.2,597.4 676.2,591" fill="none" stroke="#f18f85" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="794.6,597.4 794.6,699.8 839.4,699.8 839.4,795.8" fill="none" stroke="#77bcef" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="839.4,795.8 717.8,795.8 717.8,1007 673,1007" fill="none" stroke="#91dfa4" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<polyline points="452.2,402.2 452.2,373.4 653.8,373.4 653.8,341.4" fill="none" stroke="#bd9be8" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<polyline points="653.8,341.4 865,341.4 865,373.4" fill="none" stroke="#bd9be8" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<polyline points="673,1007 673,872.6" fill="none" stroke="#f1907b" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="231.4" cy="699.8" r="4" fill="#e1edf0"/>
+<circle cx="337" cy="699.8" r="4" fill="#e1edf0"/>
+<circle cx="375.4" cy="584.6" r="4" fill="#e1edf0"/>
+<circle cx="1159.4" cy="968.6" r="4" fill="#e1edf0"/>
+<circle cx="916.2" cy="575" r="4" fill="#e1edf0"/>
+<rect x="621.1" y="1107.7" width="103.8" height="61" rx="3" fill="#253c40" stroke="none" stroke-width="1"/>
+<text x="673" y="1125.7" font-size="15" fill="#77d6c5" font-weight="700" text-anchor="middle">R</text>
+<text x="673" y="1147.7" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">RECEIVING</text>
+<text x="673" y="1164.7" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">40 x 24 m</text>
+<rect x="610.9" y="976.5" width="124.2" height="61" rx="3" fill="#253c40" stroke="none" stroke-width="1"/>
+<text x="673" y="994.5" font-size="15" fill="#77d6c5" font-weight="700" text-anchor="middle">H</text>
+<text x="673" y="1016.5" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">SERVICE HUB</text>
+<text x="673" y="1033.5" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">52 x 40 m</text>
+<rect x="279.4" y="1034.1" width="134.4" height="61" rx="3" fill="#413a2b" stroke="none" stroke-width="1"/>
+<text x="346.6" y="1052.1" font-size="15" fill="#e6b55f" font-weight="700" text-anchor="middle">A1</text>
+<text x="346.6" y="1074.1" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">STAFF INTAKE</text>
+<text x="346.6" y="1091.1" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">52 x 32 m</text>
+<rect x="110.4" y="815.6" width="114" height="82" rx="3" fill="#413a2b" stroke="none" stroke-width="1"/>
+<text x="167.4" y="833.6" font-size="15" fill="#e6b55f" font-weight="700" text-anchor="middle">A2</text>
+<text x="167.4" y="855.6" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">INSPECTION</text>
+<text x="167.4" y="876.6" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">FLOOR</text>
+<text x="167.4" y="893.6" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">48 x 58 m</text>
+<rect x="174.4" y="543.6" width="114" height="82" rx="3" fill="#413a2b" stroke="none" stroke-width="1"/>
+<text x="231.4" y="561.6" font-size="15" fill="#e6b55f" font-weight="700" text-anchor="middle">A3</text>
+<text x="231.4" y="583.6" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">RECORDS</text>
+<text x="231.4" y="604.6" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">WORK FLOOR</text>
+<text x="231.4" y="621.6" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">64 x 36 m</text>
+<rect x="405.4" y="361.2" width="93.6" height="82" rx="3" fill="#413a2b" stroke="none" stroke-width="1"/>
+<text x="452.2" y="379.2" font-size="15" fill="#e6b55f" font-weight="700" text-anchor="middle">A4</text>
+<text x="452.2" y="401.2" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">SECURITY</text>
+<text x="452.2" y="422.2" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">DISPATCH</text>
+<text x="452.2" y="439.2" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">66 x 44 m</text>
+<rect x="487.2" y="546.8" width="70.8" height="82" rx="3" fill="#413a2b" stroke="none" stroke-width="1"/>
+<text x="522.6" y="564.8" font-size="15" fill="#e6b55f" font-weight="700" text-anchor="middle">A5</text>
+<text x="522.6" y="586.8" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">WATCH</text>
+<text x="522.6" y="607.8" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">GALLERY</text>
+<text x="522.6" y="624.8" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">30 x 30 m</text>
+<rect x="438.7" y="716.4" width="103.8" height="82" rx="3" fill="#413a2b" stroke="none" stroke-width="1"/>
+<text x="490.6" y="734.4" font-size="15" fill="#e6b55f" font-weight="700" text-anchor="middle">A6</text>
+<text x="490.6" y="756.4" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">CLEARANCE</text>
+<text x="490.6" y="777.4" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">OFFICE</text>
+<text x="490.6" y="794.4" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">46 x 32 m</text>
+<rect x="142.4" y="329.2" width="114" height="82" rx="3" fill="#432f35" stroke="none" stroke-width="1"/>
+<text x="199.4" y="347.2" font-size="15" fill="#f18f85" font-weight="700" text-anchor="middle">A7</text>
+<text x="199.4" y="369.2" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">RECORDS</text>
+<text x="199.4" y="390.2" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">SUPERVISOR</text>
+<text x="199.4" y="407.2" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">40 x 40 m</text>
+<rect x="282.6" y="815.6" width="96" height="82" rx="3" fill="#432f35" stroke="none" stroke-width="1"/>
+<text x="330.6" y="833.6" font-size="15" fill="#f18f85" font-weight="700" text-anchor="middle">A8</text>
+<text x="330.6" y="855.6" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">INSPECTION</text>
+<text x="330.6" y="876.6" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">ANNEX</text>
+<text x="330.6" y="893.6" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">36 x 58 m</text>
+<rect x="938.5" y="1023.6" width="83.4" height="82" rx="3" fill="#233b50" stroke="none" stroke-width="1"/>
+<text x="980.2" y="1041.6" font-size="15" fill="#77bcef" font-weight="700" text-anchor="middle">B1</text>
+<text x="980.2" y="1063.6" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">MACHINE</text>
+<text x="980.2" y="1084.6" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">ACCESS</text>
+<text x="980.2" y="1101.6" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">56 x 36 m</text>
+<rect x="1102.4" y="796.4" width="114" height="82" rx="3" fill="#233b50" stroke="none" stroke-width="1"/>
+<text x="1159.4" y="814.4" font-size="15" fill="#77bcef" font-weight="700" text-anchor="middle">B2</text>
+<text x="1159.4" y="836.4" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">COOLANT</text>
+<text x="1159.4" y="857.4" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">PUMP FLOOR</text>
+<text x="1159.4" y="874.4" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">52 x 62 m</text>
+<rect x="1053.7" y="534" width="83.4" height="82" rx="3" fill="#233b50" stroke="none" stroke-width="1"/>
+<text x="1095.4" y="552" font-size="15" fill="#77bcef" font-weight="700" text-anchor="middle">B3</text>
+<text x="1095.4" y="574" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">COOLING</text>
+<text x="1095.4" y="595" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">GALLERY</text>
+<text x="1095.4" y="612" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">64 x 38 m</text>
+<rect x="787.6" y="332.4" width="154.8" height="82" rx="3" fill="#233b50" stroke="none" stroke-width="1"/>
+<text x="865" y="350.4" font-size="15" fill="#77bcef" font-weight="700" text-anchor="middle">B4</text>
+<text x="865" y="372.4" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">AUXILIARY</text>
+<text x="865" y="393.4" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">GENERATOR HALL</text>
+<text x="865" y="410.4" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">72 x 48 m</text>
+<rect x="759.2" y="556.4" width="70.8" height="82" rx="3" fill="#233b50" stroke="none" stroke-width="1"/>
+<text x="794.6" y="574.4" font-size="15" fill="#77bcef" font-weight="700" text-anchor="middle">B5</text>
+<text x="794.6" y="596.4" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">RELAY</text>
+<text x="794.6" y="617.4" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">GALLERY</text>
+<text x="794.6" y="634.4" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">28 x 36 m</text>
+<rect x="797.7" y="754.8" width="83.4" height="82" rx="3" fill="#233b50" stroke="none" stroke-width="1"/>
+<text x="839.4" y="772.8" font-size="15" fill="#77bcef" font-weight="700" text-anchor="middle">B6</text>
+<text x="839.4" y="794.8" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">POWER</text>
+<text x="839.4" y="815.8" font-size="17" fill="#d8e4ea" font-weight="600" text-anchor="middle">CONTROL</text>
+<text x="839.4" y="832.8" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">48 x 32 m</text>
+<rect x="640.8" y="550" width="70.8" height="82" rx="3" fill="#432f35" stroke="none" stroke-width="1"/>
+<text x="676.2" y="568" font-size="15" fill="#f18f85" font-weight="700" text-anchor="middle">B7</text>
+<text x="676.2" y="590" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">RELAY</text>
+<text x="676.2" y="611" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">SERVICE</text>
+<text x="676.2" y="628" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">30 x 42 m</text>
+<rect x="944.8" y="799.6" width="70.8" height="82" rx="3" fill="#432f35" stroke="none" stroke-width="1"/>
+<text x="980.2" y="817.6" font-size="15" fill="#f18f85" font-weight="700" text-anchor="middle">C1</text>
+<text x="980.2" y="839.6" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">PUMP</text>
+<text x="980.2" y="860.6" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">SERVICE</text>
+<text x="980.2" y="877.6" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">32 x 30 m</text>
+<rect x="880.8" y="614" width="70.8" height="82" rx="3" fill="#432f35" stroke="none" stroke-width="1"/>
+<text x="916.2" y="632" font-size="15" fill="#f18f85" font-weight="700" text-anchor="middle">C2</text>
+<text x="916.2" y="654" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">VALVE</text>
+<text x="916.2" y="675" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">SERVICE</text>
+<text x="916.2" y="692" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">28 x 26 m</text>
+<rect x="614.2" y="300.4" width="79.2" height="82" rx="3" fill="#39304b" stroke="none" stroke-width="1"/>
+<text x="653.8" y="318.4" font-size="15" fill="#bd9be8" font-weight="700" text-anchor="middle">M</text>
+<text x="653.8" y="340.4" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">MAINT.</text>
+<text x="653.8" y="361.4" font-size="14" fill="#d8e4ea" font-weight="600" text-anchor="middle">WORKSHOP</text>
+<text x="653.8" y="378.4" font-size="13" fill="#a6b5c0" font-weight="400" text-anchor="middle">34 x 28 m</text>
+<polyline points="218.4,645.4 244.4,645.4" fill="none" stroke="#101b25" stroke-width="10" stroke-linejoin="round"/>
+<polyline points="218.4,645.4 244.4,645.4" fill="none" stroke="#f18f85" stroke-width="6" stroke-linejoin="round"/>
+<circle cx="193" cy="651.8" r="16" fill="#f18f85" stroke="#101b25" stroke-width="3"/>
+<text x="193" y="657.8" font-size="17" fill="#101b25" font-weight="700" text-anchor="middle">1</text>
+<polyline points="413.8,571.6 413.8,597.6" fill="none" stroke="#101b25" stroke-width="10" stroke-linejoin="round"/>
+<polyline points="413.8,571.6 413.8,597.6" fill="none" stroke="#f18f85" stroke-width="6" stroke-linejoin="round"/>
+<circle cx="413.8" cy="546.2" r="16" fill="#f18f85" stroke="#101b25" stroke-width="3"/>
+<text x="413.8" y="552.2" font-size="17" fill="#101b25" font-weight="700" text-anchor="middle">2</text>
+<circle cx="154.6" cy="325.4" r="16" fill="#f18f85" stroke="#101b25" stroke-width="3"/>
+<text x="154.6" y="331.4" font-size="17" fill="#101b25" font-weight="700" text-anchor="middle">3</text>
+<circle cx="241" cy="328.6" r="15" fill="#e6b55f" stroke="#101b25" stroke-width="3"/>
+<text x="241" y="334.6" font-size="17" fill="#101b25" font-weight="700" text-anchor="middle">R</text>
+<polyline points="983.4,562 983.4,588" fill="none" stroke="#101b25" stroke-width="10" stroke-linejoin="round"/>
+<polyline points="983.4,562 983.4,588" fill="none" stroke="#f18f85" stroke-width="6" stroke-linejoin="round"/>
+<circle cx="983.4" cy="539.8" r="16" fill="#f18f85" stroke="#101b25" stroke-width="3"/>
+<text x="983.4" y="545.8" font-size="17" fill="#101b25" font-weight="700" text-anchor="middle">4</text>
+<rect x="957" y="587" width="8" height="8" rx="0" fill="#91dfa4" stroke="none" stroke-width="1"/>
+<polyline points="961,591 973.8,581.4" fill="none" stroke="#91dfa4" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="535.4" cy="437.4" r="17" fill="#e6b55f" stroke="#101b25" stroke-width="3"/>
+<text x="535.4" y="443.4" font-size="17" fill="#101b25" font-weight="700" text-anchor="middle">K</text>
+<circle cx="897" cy="760.6" r="17" fill="#77bcef" stroke="#101b25" stroke-width="3"/>
+<text x="897" y="766.6" font-size="17" fill="#101b25" font-weight="700" text-anchor="middle">P</text>
+<rect x="109.4" y="912.8" width="116" height="23" rx="3" fill="#111e28" stroke="#bd9be8" stroke-width="1"/>
+<text x="167.4" y="928.8" font-size="13" fill="#bd9be8" font-weight="600" text-anchor="middle">GMa  BcD  Tr1</text>
+<rect x="193.8" y="773.8" width="24" height="12" rx="0" fill="none" stroke="#bd9be8" stroke-width="2"/>
+<text x="187.8" y="801.8" font-size="12" fill="#bd9be8" font-weight="600" text-anchor="start">Tr1 +</text>
+<polyline points="549.6,360.4 549.6,386.4" fill="none" stroke="#bd9be8" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="559.6,360.4 559.6,386.4" fill="none" stroke="#bd9be8" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="549.6,364.4 559.6,364.4" fill="none" stroke="#bd9be8" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="549.6,370.4 559.6,370.4" fill="none" stroke="#bd9be8" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="549.6,376.4 559.6,376.4" fill="none" stroke="#bd9be8" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="549.6,382.4 559.6,382.4" fill="none" stroke="#bd9be8" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="554.6" y="352.4" font-size="12" fill="#bd9be8" font-weight="600" text-anchor="middle">UP</text>
+<polyline points="780,328.4 780,354.4" fill="none" stroke="#bd9be8" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="790,328.4 790,354.4" fill="none" stroke="#bd9be8" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="780,332.4 790,332.4" fill="none" stroke="#bd9be8" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="780,338.4 790,338.4" fill="none" stroke="#bd9be8" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="780,344.4 790,344.4" fill="none" stroke="#bd9be8" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="780,350.4 790,350.4" fill="none" stroke="#bd9be8" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="785" y="320.4" font-size="12" fill="#bd9be8" font-weight="600" text-anchor="middle">DOWN</text>
+<polyline points="596.2,364.4 596.2,382.4" fill="none" stroke="#bd9be8" stroke-width="4" stroke-linejoin="round"/>
+<text x="573.8" y="415" font-size="13" fill="#bd9be8" font-weight="700" text-anchor="start">BcD</text>
+<text x="529" y="245.4" font-size="15" fill="#bd9be8" font-weight="700" text-anchor="start">BcD / UPPER SERVICE CROSSOVER</text>
+<text x="529" y="271" font-size="13" fill="#b2a3c8" font-weight="400" text-anchor="start">Retractable ladder in A4; fixed descent in B4</text>
+<polyline points="616.2,933.4 640.2,933.4" fill="none" stroke="#91dfa4" stroke-width="6" stroke-linejoin="round"/>
+<text x="591.2" y="938.4" font-size="15" fill="#91dfa4" font-weight="700" text-anchor="start">S1</text>
+<polyline points="705.8,933.4 729.8,933.4" fill="none" stroke="#91dfa4" stroke-width="6" stroke-linejoin="round"/>
+<text x="734.8" y="938.4" font-size="15" fill="#91dfa4" font-weight="700" text-anchor="start">S2</text>
+<polyline points="661,904.6 685,904.6" fill="none" stroke="#f1907b" stroke-width="6" stroke-linejoin="round"/>
+<text x="689" y="902.6" font-size="14" fill="#f1907b" font-weight="700" text-anchor="start">K + P</text>
+<text x="673" y="869.6" font-size="11" fill="#f1907b" font-weight="700" text-anchor="middle">EXIT</text>
+<text x="673" y="883.6" font-size="11" fill="#d8e4ea" font-weight="700" text-anchor="middle">LIFT</text>
+<text x="753" y="872.6" font-size="14" fill="#a9bbc7" font-weight="400" text-anchor="start">Freight lift</text>
+<text x="673" y="1228.6" font-size="10" fill="#77d6c5" font-weight="700" text-anchor="middle">IN</text>
+<polyline points="655,1210.2 691,1210.2" fill="none" stroke="#77d6c5" stroke-width="3" stroke-linejoin="round" stroke-dasharray="4 3"/>
+<text x="705" y="1216.2" font-size="15" fill="#77d6c5" font-weight="400" text-anchor="start">Arrival title</text>
+<text x="753" y="1157.4" font-size="17" fill="#77d6c5" font-weight="600" text-anchor="start">Quiet foothold</text>
+<text x="733.8" y="1234.2" font-size="15" fill="#a9c1ca" font-weight="400" text-anchor="start">Arrival airlock / 6 x 8 m</text>
+<text x="673" y="1055" font-size="12" fill="#b5d7d5" font-weight="600" text-anchor="middle">LIFT / CARD + POWER</text>
+<text x="423.4" y="955.8" font-size="15" fill="#e6b55f" font-weight="700" text-anchor="start">A / SECURITY</text>
+<text x="769" y="955.8" font-size="15" fill="#77bcef" font-weight="700" text-anchor="start">B / AUX POWER</text>
+<text x="78" y="182" font-size="16" fill="#d8e4ea" font-weight="700" text-anchor="start">N</text>
+<polyline points="84,221 84,192" fill="none" stroke="#bdd1d9" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-common)"/>
+<text x="94" y="218" font-size="14" fill="#9fb4c4" font-weight="400" text-anchor="start">Top-down / upper link dashed</text>
+<polyline points="88,1240 152,1240" fill="none" stroke="#dde8ed" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="88,1235 88,1245" fill="none" stroke="#dde8ed" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="152,1235 152,1245" fill="none" stroke="#dde8ed" stroke-width="2" stroke-linejoin="round"/>
+<text x="88" y="1264" font-size="14" fill="#a8bdca" font-weight="400" text-anchor="start">20 m / grid = 20 m</text>
+<rect x="1310" y="144" width="686" height="1147" rx="8" fill="#192b39" stroke="#344958" stroke-width="2"/>
+<text x="1340" y="187" font-size="24" fill="#d8e4ea" font-weight="700" text-anchor="start">YOUR FOUR ROUTE CHANGES</text>
+<rect x="1340" y="215" width="33" height="33" rx="5" fill="#f18f85" stroke="none" stroke-width="1"/>
+<text x="1356.5" y="239" font-size="18" fill="#10212b" font-weight="700" text-anchor="middle">1</text>
+<text x="1388" y="238" font-size="21" fill="#f18f85" font-weight="700" text-anchor="start">A CLOSED FRONT ENTRANCE</text>
+<text x="1388" y="267" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">Door 1 stays locked. Take the red side passage</text>
+<text x="1388" y="292" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">around it to the junction at 2. The annex is a side room.</text>
+<rect x="1340" y="320" width="33" height="33" rx="5" fill="#f18f85" stroke="none" stroke-width="1"/>
+<text x="1356.5" y="344" font-size="18" fill="#10212b" font-weight="700" text-anchor="middle">2</text>
+<text x="1388" y="343" font-size="21" fill="#f18f85" font-weight="700" text-anchor="start">A SECOND OBSTACLE</text>
+<text x="1388" y="372" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">Door 2 blocks entry to Security Dispatch. Turn left</text>
+<text x="1388" y="397" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">into Records and head north to the supervisor room.</text>
+<rect x="1340" y="425" width="33" height="33" rx="5" fill="#f18f85" stroke="none" stroke-width="1"/>
+<text x="1356.5" y="449" font-size="18" fill="#10212b" font-weight="700" text-anchor="middle">3</text>
+<text x="1388" y="448" font-size="21" fill="#f18f85" font-weight="700" text-anchor="start">GET THE RECORDS CARD</text>
+<text x="1388" y="477" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">R opens door 2. Return to that junction and continue.</text>
+<text x="1388" y="502" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">The separate freight card K waits in A4, at the fork.</text>
+<rect x="1340" y="530" width="33" height="33" rx="5" fill="#f18f85" stroke="none" stroke-width="1"/>
+<text x="1356.5" y="554" font-size="18" fill="#10212b" font-weight="700" text-anchor="middle">4</text>
+<text x="1388" y="553" font-size="21" fill="#f18f85" font-weight="700" text-anchor="start">LEARN THE POWER DETOUR</text>
+<text x="1388" y="582" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">B2 &gt; B3 leads to the closed east face of door 4.</text>
+<text x="1388" y="607" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">Backtrack; the red service route reaches its release.</text>
+<text x="1388" y="632" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">Once opened from the west, it stays open both ways.</text>
+<polyline points="1340,666 1965,666" fill="none" stroke="#3e5361" stroke-width="1" stroke-linejoin="round"/>
+<text x="1340" y="704" font-size="23" fill="#bd9be8" font-weight="700" text-anchor="start">A2 / THREE-BUTTON SELECTOR</text>
+<text x="1340" y="734" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">Only one selection stays active. Initial state: all off.</text>
+<rect x="1340" y="755" width="66" height="32" rx="4" fill="#302d43" stroke="#bd9be8" stroke-width="1"/>
+<text x="1373" y="778" font-size="18" fill="#bd9be8" font-weight="700" text-anchor="middle">GMa</text>
+<text x="1422" y="778" font-size="17" fill="#d8e4ea" font-weight="400" text-anchor="start">Sparks / faulty circuit. Both useful routes closed.</text>
+<rect x="1340" y="798" width="66" height="32" rx="4" fill="#302d43" stroke="#bd9be8" stroke-width="1"/>
+<text x="1373" y="821" font-size="18" fill="#bd9be8" font-weight="700" text-anchor="middle">BcD</text>
+<text x="1422" y="821" font-size="17" fill="#d8e4ea" font-weight="400" text-anchor="start">Deploy A4 ladder + open Maintenance passage.</text>
+<rect x="1340" y="841" width="66" height="32" rx="4" fill="#302d43" stroke="#bd9be8" stroke-width="1"/>
+<text x="1373" y="864" font-size="18" fill="#bd9be8" font-weight="700" text-anchor="middle">Tr1</text>
+<text x="1422" y="864" font-size="17" fill="#d8e4ea" font-weight="400" text-anchor="start">Open the local health hatch. Close BcD again.</text>
+<text x="1340" y="907" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">Matching codes are the clue, not a remote announcement.</text>
+<text x="1340" y="933" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">GMa &gt; BcD &gt; Tr1 leaves the secret open, ladder closed.</text>
+<text x="1340" y="959" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">Knowing players can collect health, then reselect BcD.</text>
+<polyline points="1340,989 1965,989" fill="none" stroke="#3e5361" stroke-width="1" stroke-linejoin="round"/>
+<text x="1340" y="1025" font-size="21" fill="#bd9be8" font-weight="700" text-anchor="start">KNOWLEDGE CHANGES THE ROUTE</text>
+<text x="1340" y="1056" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">BcD links A4 and B4 through an upper service tunnel.</text>
+<text x="1340" y="1082" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">Collect K in A4, then choose the long return or BcD.</text>
+<text x="1340" y="1108" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">A5/A6 return to the hub; Maintenance leads to Power.</text>
+<text x="1340" y="1134" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">K + P are always required. No button can block completion.</text>
+<text x="1340" y="1192" font-size="19" fill="#d8e4ea" font-weight="700" text-anchor="start">NEXT REVIEW</text>
+<text x="1340" y="1223" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">Agree these connections, then plan enemies and supplies.</text>
+<text x="1340" y="1249" font-size="17" fill="#b7cad6" font-weight="400" text-anchor="start">The Tr1 health secret is reserved; its amount is undecided.</text>
+<rect x="40" y="1310" width="1956" height="214" rx="8" fill="#192b39" stroke="#344958" stroke-width="2"/>
+<text x="66" y="1345" font-size="18" fill="#d8e4ea" font-weight="700" text-anchor="start">TRAVEL CHECK / WALK 5 m/s, SPRINT 8 m/s</text>
+<text x="66" y="1381" font-size="21" fill="#77d6c5" font-weight="600" text-anchor="start">Known ordinary route: 1,956 m / 6.52 min walking</text>
+<text x="66" y="1413" font-size="20" fill="#bd9be8" font-weight="600" text-anchor="start">BcD knowledge route: 1,314 m / 4.38 min walking</text>
+<text x="66" y="1443" font-size="18" fill="#b7cad6" font-weight="400" text-anchor="start">Probing both blocked approaches adds about 390 m / 78 seconds walking.</text>
+<text x="66" y="1475" font-size="16" fill="#9bb3c3" font-weight="400" text-anchor="start">These are drawn centrelines, not playtest times; ladder travel, combat and searching are excluded.</text>
+<text x="66" y="1500" font-size="16" fill="#9bb3c3" font-weight="400" text-anchor="start">~10-minute familiar-run target remains unproven. B2/B3 become optional on the efficient red route.</text>
+<polyline points="1510,1348 1551,1348" fill="none" stroke="#e6b55f" stroke-width="3" stroke-linejoin="round"/>
+<text x="1564" y="1353" font-size="17" fill="#c5d6df" font-weight="400" text-anchor="start">Security</text>
+<polyline points="1510,1377 1551,1377" fill="none" stroke="#77bcef" stroke-width="3" stroke-linejoin="round"/>
+<text x="1564" y="1382" font-size="17" fill="#c5d6df" font-weight="400" text-anchor="start">Power</text>
+<polyline points="1510,1406 1551,1406" fill="none" stroke="#f18f85" stroke-width="3" stroke-linejoin="round"/>
+<text x="1564" y="1411" font-size="17" fill="#c5d6df" font-weight="400" text-anchor="start">Added detours / side rooms</text>
+<polyline points="1510,1435 1551,1435" fill="none" stroke="#91dfa4" stroke-width="3" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<text x="1564" y="1440" font-size="17" fill="#c5d6df" font-weight="400" text-anchor="start">Return gates: S1 / S2</text>
+<polyline points="1510,1464 1551,1464" fill="none" stroke="#bd9be8" stroke-width="3" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<text x="1564" y="1469" font-size="17" fill="#c5d6df" font-weight="400" text-anchor="start">Conditional upper crossover</text>
+<text x="45" y="1558" font-size="17" fill="#a8bdca" font-weight="400" text-anchor="start">Discussion draft 02 / preserves the main footprint. Health-secret location proposed; no enemy pass or 3D construction yet.</text>
+</g></svg>

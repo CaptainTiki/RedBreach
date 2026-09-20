@@ -4,6 +4,7 @@
 - Red Breach is a crunchy sci-fi shooter set at an industrial plant on Mars during an alien takeover.
 - Workspace root: this folder. Godot project: `RedBreach/project.godot`.
 - Keep shared instructions and documentation at the workspace root, outside the Godot project.
+- Campaign arc: the colony is attacked, the aliens are discovered to have been present for a long time, and the goal becomes leaving Mars. The freight-access example is provisionally level 2 or 3 for an already competent player, targeting about ten minutes on a normal familiar run. See `docs/project-brief.md` and the mission walkthrough for quiet arrival rooms, persistent airlock/elevator transitions and destination-title presentation. These are design requirements, not authorization to skip the staged planning process.
 - Preserve the existing nested project folder unless the user requests restructuring.
 
 ## Version every commit
@@ -17,7 +18,9 @@
 - Plan each level on paper first as a top-down 2D spatial layout before constructing it in TrenchBroom or Godot.
 - Record rooms and zones, routes and connections, story beats, objectives, encounters, items, keys, and locked gates.
 - Preserve the plan or its transcription in `docs/` and resolve spatial intent with the user before 3D blockout.
+- Rooms can themselves be height transitions: consider mezzanines, upper/lower entrances and internal stairs during room layout. Main-floor labels do not require single-level rooms. Use this selectively, draw each doorway elevation and preserve key/gate reachability; update the elevation plan when moving a reserved corridor stair into a room.
 - Begin with a small TrenchBroom pipeline test, then validate traversal and scale before expanding.
+- For missions, follow the user's staged workflow: agree on the step-by-step walkthrough, review a spatial paper plan and key/gate reachability, make an enemy/pickup pass, then build and playtest. During construction, check empty traversal/progression before the populated run. The user has now authorized an empty blockout and walkthrough before the enemy/pickup pass. `docs/example-mission-walkthrough.md` is the mission sequence and `docs/freight-access-route-plan.md` / `.svg` now show built elevation revision 04 on the user-approved top-down route, with the user's annotated detours, separate Records card, west-side door 4 release and optional GMa/BcD/Tr1 selector. The freight card is in A4 before the Maintenance/A5-A6 route choice; the Records card remains at 3/A7 for door 2. The user requested stairs and height variation; `docs/freight-access-elevation-plan.md` records built floor heights, room mezzanines, stairs and level gate thresholds. Test empty traversal and progression now; review enemies/pickups before populating the level.
 
 ## Scope and validation
 - Keep the initial experiment small and editable. Document pipeline choices and findings.
@@ -62,7 +65,7 @@
 
 ## Current combat gym
 
-- F2 opens `RedBreach/combat/combat_gym.tscn`; F1/F2 retain movement/combat gyms. F5 now launches the route test and F3 returns to it. The user approved `docs/combat-gym-plan.svg` before this separate layout was built. Read `docs/combat-gym.md` before extending it.
+- F2 opens `RedBreach/combat/combat_gym.tscn`; F1/F2 retain movement/combat gyms. F5 now launches the freight blockout; F3 returns to the route test and F6 to freight. The user approved `docs/combat-gym-plan.svg` before this separate layout was built. Read `docs/combat-gym.md` before extending it.
 - Edit combat geometry in `RedBreach/maps/combat_01.map`; run `tools/rebuild-combat-gym.ps1 -Validate` to rebuild and save both Geometry and navigation. Navigation is baked from the static source geometry, clipped to the arena. Preserve authored siblings.
 - Bug behavior, player life, and encounter transitions each belong to their editable StateCharts. The two release panels select one melee bug or one spitter at a time. Preserve the original melee lunge and the repeatable encounter.
 - Preserve real hit-point feedback, shot/attack obstruction, bounded surface splatters, useful-only pickups, death input restrictions, and complete Backspace reset. Extended bug legs are visual placeholders; body collision receives damage.
@@ -86,4 +89,13 @@
 
 - Small bugs inherit `combat/gym_bug.tscn` through `gym_small_bug.tscn`; any positive accepted damaging hit kills them. Their smaller capsule stays outside the scaled Visual subtree. Regulars have 150 HP; the spitter retains 150 HP and 3x mouth damage. Preserve StateChart behavior, one-shot death, scale on reset, and route source fingerprints. The route validation includes `validate_bug_mix.gd`, `validate_rear_ambush.gd` and the metric texture checks.
 
-- Level-one planning remains deferred. `docs/level-structure-notes.md` records a proposed objective tree plus physical loops/shortcuts, informed by the user's easy first encounter run. It does not authorize building level geometry or progression systems.
+- Level-one planning remains deferred. `docs/level-structure-notes.md` records a proposed objective tree plus physical loops/shortcuts, informed by the user's easy first encounter run. The user separately authorized the early-campaign freight blockout; see the freight workflow below.
+
+## Current freight blockout
+
+- The user authorized the empty blockout and walkthrough after reviewing the route and height variation. Read `docs/freight-blockout.md`. Enemy placement and broader pickups remain a later paper pass.
+- F5/F6 open `RedBreach/missions/freight/freight_blockout.tscn`. Edit architecture in `RedBreach/maps/freight_01.map`; run `tools/rebuild-freight-blockout.ps1 -Validate`. Preserve authored siblings of Geometry and both installed addons.
+- The source map is now authoritative. `tools/bootstrap-freight-blockout.py` is a one-time generator and refuses an existing map without `--overwrite`; never run it as part of an ordinary rebuild or overwrite TrenchBroom edits silently. Update `docs/freight-blockout-layout.json` and mission `layout.json` expectations with intentional spatial alterations.
+- The player uses the existing movement tuning. Freight's derived player adds a StateChart-controlled, collision-checked E-use ladder only. Gates retain the shared door StateChart and obstruction logic; CircuitChart owns exclusive GMa/BcD/Tr1 selection, and RunChart owns arrival/running/completion.
+- K remains in A4 before either exit, R in A7 for D2, P in B6; preserve fixed D1, one-sided D4/S1/S2 releases, and K+P lift access. Maintenance stays reversible while BcD is active.
+- Save human empty-walk results separately under `user://freight_walkthroughs`; disable storage for QA. Automated route traversal is geometry evidence, never human mission timing. The exit cabin completes this test; loading a next level remains deferred.

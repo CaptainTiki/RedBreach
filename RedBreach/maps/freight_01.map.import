@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://bid8114sci2sv"
+path="res://.godot/imported/freight_01.map-681a88030f363d84da8964a1a685fc7e.tres"
+
+[deps]
+
+source_file="res://maps/freight_01.map"
+dest_files=["res://.godot/imported/freight_01.map-681a88030f363d84da8964a1a685fc7e.tres"]
+
+[params]
+

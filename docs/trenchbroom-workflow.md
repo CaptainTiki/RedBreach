@@ -6,12 +6,12 @@
 - TrenchBroom 2025.4 at `D:\TrenchBroom\TrenchBroom.exe`.
 - func_godot 2025.12 and Godot State Charts 0.22.5, both enabled.
 - Mapping format: Valve 220; scale: 32 map units per Godot metre.
-- All three gyms use supplied 1024 px Kenney grids at 0.03125 face scale: 1 m full repeats and 0.125 m fine squares, matching the printed metre labels. Both installed and portable TrenchBroom defaults use this scale. See [texture notes](blockout-textures.md).
+- All three gyms and the freight blockout use supplied 1024 px Kenney grids at 0.03125 face scale: 1 m full repeats and 0.125 m fine squares, matching the printed metre labels. Both installed and portable TrenchBroom defaults use this scale. See [texture notes](blockout-textures.md).
 - Coordinate conversion used by func_godot: Godot `(X,Y,Z) = map (Y,Z,X) / 32`. The plan's north is Godot -Z, corresponding to map -X.
 
 ## Play
 
-Open `RedBreach/project.godot` and press F5. Main scene: `res://encounters/route_trial.tscn`. F1 opens movement, F2 combat, and F3 the [encounter route test](encounter-route-test.md). See [combat build and playtest instructions](combat-gym.md).
+Open `RedBreach/project.godot` and press F5. Main scene: `res://missions/freight/freight_blockout.tscn`. F1 opens movement, F2 combat, F3 the [encounter route test](encounter-route-test.md), and F6 the [freight walkthrough](freight-blockout.md). See [combat build and playtest instructions](combat-gym.md).
 
 - WASD: walk; Shift: sprint; Space: jump; hold Ctrl: crouch.
 - Mouse: look; left click: fire the pistol; hold right mouse: ADS; R: reload; E: use an aimed switch within 2 m.
@@ -30,6 +30,10 @@ The [prototype pistol](pistol-gym.md) provides semi-automatic hitscan fire, ammu
 A `.map` reimport alone does not rebuild the saved scene. Explicitly build and save Geometry. Changes to generated Geometry children will be replaced at the next build. Keep the source map and baked scene together in commits.
 
 Alternatively, from the repository root run `./tools/rebuild-gym.ps1`. Add `-Validate` to run the gym, movement, door, annex, alteration, and pistol checks. Pass `-GodotPath` if the editor executable is elsewhere. Save any open Godot scene edits before running the command, then reload the scene if prompted.
+
+## Freight blockout edits
+
+Open `RedBreach/maps/freight_01.map` in TrenchBroom. Build Geometry in `missions/freight/freight_blockout.tscn`, then save; or run `tools/rebuild-freight-blockout.ps1 -Validate`. The rebuild reads your map edits and preserves authored cards, gates, labels and ladders outside Geometry. Move those authored nodes too when their architecture moves. The bootstrap generator is for deliberate regeneration only and is never called by the rebuild. See [freight notes](freight-blockout.md) for coordinates and checks.
 
 ## Configuration sources
 
