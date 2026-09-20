@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://dmxxvv760laf1"
+path="res://.godot/imported/gym_01.map-7ec7c0502344d87190c65e65c56a4575.tres"
+
+[deps]
+
+source_file="res://maps/gym_01.map"
+dest_files=["res://.godot/imported/gym_01.map-7ec7c0502344d87190c65e65c56a4575.tres"]
+
+[params]
+

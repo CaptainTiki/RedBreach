@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TrenchBroomGameConfig" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/func_godot/src/trenchbroom/trenchbroom_game_config.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+game_name = "Red Breach"
+map_formats = Array[Dictionary]([{"format": "Valve"}])
+default_uv_scale = Vector2(0.25, 0.25)
