@@ -70,8 +70,9 @@ func is_alive() -> bool:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
-		if event.physical_keycode == KEY_F1 or event.physical_keycode == KEY_F2:
-			get_tree().call_deferred("change_scene_to_file", "res://gym/gym.tscn" if event.physical_keycode == KEY_F1 else "res://combat/combat_gym.tscn")
+		if event.physical_keycode in [KEY_F1, KEY_F2, KEY_F3]:
+			var scenes := {KEY_F1: "res://gym/gym.tscn", KEY_F2: "res://combat/combat_gym.tscn", KEY_F3: "res://encounters/route_trial.tscn"}
+			get_tree().call_deferred("change_scene_to_file", scenes[event.physical_keycode])
 			return
 	if not is_alive():
 		if event.is_action_pressed("gym_reset"):
@@ -256,7 +257,7 @@ func _physics_process(delta: float) -> void:
 	if global_position.y < -10.0:
 		reset_player()
 	_update_interaction()
-	status.text = "%s / %s / Hits: %d\nWASD move   Shift sprint   Ctrl crouch   Space jump\nLMB fire   RMB aim   R reload   E use\nEsc release mouse   Backspace reset\nF1 movement gym   F2 combat gym" % [gym_title, movement_mode(), hit_count]
+	status.text = "%s / %s / Hits: %d\nWASD move   Shift sprint   Ctrl crouch   Space jump\nLMB fire   RMB aim   R reload   E use\nEsc release mouse   Backspace reset\nF1 movement   F2 combat   F3 route test" % [gym_title, movement_mode(), hit_count]
 
 func is_grounded() -> bool:
 	# A capsule can touch a stair corner with a steep normal even though there is

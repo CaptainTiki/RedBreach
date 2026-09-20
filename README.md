@@ -17,7 +17,7 @@ Plan levels on paper as top-down 2D layouts with story beats, objectives, encoun
 
 ## Test gym
 
-Press F5 in Godot to play the [Combat Gym](docs/combat-gym.md): a 10/20/30 m precision range and the first bug encounter. Press F1 for the movement gym or F2 for a fresh combat gym. See the [approved top-down plan](docs/gym-plan.svg), [gym scope](docs/first-test-plan.md), and [TrenchBroom workflow](docs/trenchbroom-workflow.md).
+Press F5 in Godot to play the [Encounter Route Test](docs/encounter-route-test.md): a measured 114 m route with three occupied rooms, two hallway vent ambushes and a delayed rear hatch in encounter D. F4 compares empty-route and combat runs; Backspace repeats. F1 opens the movement gym, F2 the original [Combat Gym](docs/combat-gym.md), and F3 the route test. See the [approved top-down plan](docs/gym-plan.svg), [gym scope](docs/first-test-plan.md), and [TrenchBroom workflow](docs/trenchbroom-workflow.md).
 
 The editable map is `RedBreach/maps/gym_01.map`; the playable saved scene is `RedBreach/gym/gym.tscn`.
 
@@ -31,4 +31,8 @@ The high-jump blocks now sit along the south wall opposite the long-jump approac
 
 The [first pistol](docs/pistol-gym.md) is playable in the existing target lane: left click fires, hold right mouse for ADS, R reloads, and Backspace resets/refills the gym. Targets have health and recover automatically. The [approved Combat Gym layout](docs/combat-gym-plan.svg) is now built as a separate map: player damage/death, useful-only pickups, a StateCharts bug with a dodgeable lunge, and green hit/death splatters. See the [playtest route and build instructions](docs/combat-gym.md).
 
-The [larger spitter](docs/spitter.md) is available from the yellow-green arena panel. Its half-second mouth-opening wind-up exposes a weak point, and its fast 35 m/s spit makes it a priority target. Two mouth hits or six body hits kill it.
+The [larger spitter](docs/spitter.md) is available from the orange arena panel. Its half-second mouth-opening wind-up exposes a weak point, and its fast 35 m/s spit makes it a priority target. Two mouth hits or six body hits kill it.
+
+All three gyms now use the supplied [Kenney grids at their printed 1 m scale](docs/blockout-textures.md). [Level structure discussion](docs/level-structure-notes.md) records the proposal for objective branches, loops, shortcuts and measured pacing before level one.
+
+The [enemy mix experiment](docs/bug-mix.md) adds one-hit small bugs, raises regular melee health to 150, and puts three smalls, two regulars and one spitter in route encounter D. Use F3/F5 to test route revision 04: the [blind corner and rear hatch](docs/rear-hatch-plan.md) start D before its room becomes visible. The same six enemies arrive from two directions; the front five now start deeper in D to leave room to read the fight. Movement, pistol and hatch timing stay the same.

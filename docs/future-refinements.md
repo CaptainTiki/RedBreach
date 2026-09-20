@@ -49,6 +49,57 @@ This entry records the intended design. It does not request an immediate refacto
 
 **Completion check:** Players can read a wind-up, distinguish a hit from a kill, and predict which visible parts receive damage. Preserve the dodgeable committed lunge, cover obstruction, bounded effects, and complete reset checks. This entry does not authorize importing an asset pack or changing the current weapon architecture.
 
+## FR-003: Small-bug wall and ceiling navigation
+
+**Status:** Future capability under discussion; no runtime implementation yet. The user explicitly wants reliable pathfinding for future levels, whether graph-based or mesh-based, rather than a solution tied to the current gym.
+
+**Intent:** Small bugs pursue the player over connected floors, walls and ceilings, creating pressure from multiple surfaces while the player retreats. They retain their one-hit role. The system should cope with branching rooms, corners, obstructions, closed doors and changing player position, and survive the TrenchBroom alteration pipeline.
+
+### Proposed architecture to investigate
+
+- Generate shared navigation data from simplified, explicitly crawlable level surfaces when the map is built. Preserve surface orientation and available body clearance. Avoid dense sampling of decorative triangles or requiring designers to hand-place every route. Exclude inaccessible/hidden brush faces, disconnected surfaces and gaps that cannot be crossed.
+- Prefer a graph of connected surface patches with valid transition boundaries, plus smooth movement within patches. A* can select a route over that graph. Sparse waypoints can support special transitions, vents and authored hints, but a trail of the player's previous floor positions cannot be the primary navigation system for ceiling pursuit or alternate routes.
+- Godot's AStar3D can provide the graph search; it does not automatically generate walkable surfaces, test body clearance or produce surface-constrained smoothing. Those are separate engineering requirements. Evaluate this against multiple oriented native navigation maps with a higher-level connection graph before selecting the implementation. Retain native ground navigation where it remains appropriate.
+- Give the crawler a surface-following movement controller: adhesion, body/hitbox orientation, smooth inside/outside corner transitions, collision-safe movement and recovery from lost contact. Paths and their smoothing must stay on reachable surfaces instead of cutting through solids or bridging arbitrary gaps. Keep movement/attack/death transitions in editable StateCharts.
+- Pursuit should select reachable attack positions relative to the player. A ceiling bug cannot simply target the player's feet through open air. Descending, dropping and lunging need explicit, readable actions and legal paths. A killed ceiling crawler should detach and fall rather than remain glued overhead.
+- Doors and gameplay blockers change relevant connections; near-neighbor separation handles other bugs without pushing them off the surface. Navigation debug views should show connected patches, rejected clearance, chosen paths and failed transitions.
+
+### Cost and workflow
+
+This is a substantial reusable navigation/movement feature. Runtime overhead is expected to be manageable with a shared precomputed graph, compact surfaces, bounded and staggered path requests, and local contact checks, but this is an engineering expectation rather than a benchmark. Pathfinding, crowd separation, physics/contact checks and animation should be profiled separately. Do not scan or rebuild the whole level for each bug every frame. Scope the first system to static level architecture plus supported dynamic blockers; moving crawlable machinery and deforming terrain are separate future requirements.
+
+Rebuilding a TrenchBroom map must also rebuild/validate crawler navigation, flag stale geometry, and preserve designer annotations for special routes where possible. Bake diagnostics and predictable editing matter as much as a successful chase in one room.
+
+### Completion evidence before wider rollout
+
+Use the proposed architecture in a small reviewed navigation test layout first: floor-to-wall-to-ceiling and back, inner and outer corners, a doorway, an obstacle with two alternative routes, and an unreachable area. Require pursuit after the player changes rooms or reverses direction; rerouting or explicit stopping at blocked doors; collision-safe separation; correct shots and falling death on every orientation; and full reset. Move a wall in TrenchBroom and rebuild to prove the paths follow the edited geometry. Profile representative groups (for example 6, 20 and 50 crawlers) without treating those counts as promised performance targets.
+
+This test should exercise the intended reusable system. No level geometry, wall-crawling code or navigation replacement is authorized by this design note alone.
+
+### Technical references checked
+
+- [Godot 3D navigation overview](https://docs.godotengine.org/en/stable/tutorials/navigation/navigation_introduction_3d.html): graph pathfinding versus movement within mesh-defined areas.
+- [AStar3D](https://docs.godotengine.org/en/stable/classes/class_astar3d.html): connected weighted points in 3D; graph construction belongs to the caller.
+- [Navigation map orientation](https://docs.godotengine.org/en/stable/classes/class_navigationserver3d.html#class-navigationserver3d-method-map-set-up) and [current region implementation](https://github.com/godotengine/godot/blob/master/modules/navigation_3d/nav_region_3d.cpp): each native map has an up direction; current upstream code reports regions rotated 90 degrees or more away from it. This is a reason to investigate the backend, not a claim that arbitrary-surface navigation is impossible in Godot.
+- [NavigationAgents](https://docs.godotengine.org/en/stable/tutorials/navigation/navigation_using_navigationagents.html): movement is supplied by game code; avoidance is separate from pathfinding and does not inherently know the collision world or navigation surface.
+
+## FR-004: Distinct bug alert and ambush audio
+
+**Status:** Agreed audio-pass refinement; deferred. The user accepted the revision 04 rear-ambush concept after moving D's front enemies deeper into the room. This records future audio work, not a request to change the current prototype.
+
+**Why revisit:** The player could hear the hatch's metallic ting, turn to engage the rear bug and backpedal away from D successfully. The missing or insufficiently readable bug screech left the hatch as the recognizable tell. The player should be able to recognize a newly revealed nearby threat without already knowing an ambush is coming.
+
+**Intent:** Give bugs an audible initial awareness/engagement screech, and make the ambush tell recognizably distinct from ordinary pursuit or "I'm walking toward you" sounds. An ambush screech should communicate a new, close threat that deserves attention while the player is facing another fight. Preserve the hatch cue as supporting information; the bug vocalization must carry its own meaning.
+
+- Differentiate the ambush vocal's character and rhythm from routine pursuit chatter and attack wind-ups; do not rely only on making the same sound louder.
+- Place the tell at the actual bug/emergence location so direction and distance help the player locate danger behind or beside them. Align it with detection or emergence, not remote encounter arming before the bug appears.
+- Keep the initial alert readable through gunfire, reloads, hatch noise and other bugs. Control repetition and overlapping vocals so ordinary pursuit does not drown out a new ambush tell.
+- Exact sounds, mixing and trigger details remain for the audio pass. Preserve the approved encounter spacing and response opportunity while evaluating the cues.
+
+**Completion check:** On a first encounter with the ambush, a player looking toward D can distinguish the nearby ambush screech from routine pursuit, recognize its direction and turn to respond without prior knowledge of the hatch. Check this while firing/reloading with multiple active bugs, and confirm repeated pursuit sounds do not falsely signal another ambush.
+
+Source: [revision 04 accepted playtest](rear-hatch-plan.md#revision-04-human-playtest--concept-accepted). Coordinate this with [FR-002 bug presentation](#fr-002-bug-presentation-and-impact-refinement).
+
 ## Adding future entries
 
-Give each idea the next stable identifier (FR-002, FR-003, and so on), a short title, status, a reason to revisit it, the intended change, and a practical completion check. Keep uncertain details marked as open. When an item enters active work or is completed, update its status and link the relevant plan or implementation notes.
+Give each idea the next stable identifier (FR-005, FR-006, and so on), a short title, status, a reason to revisit it, the intended change, and a practical completion check. Keep uncertain details marked as open. When an item enters active work or is completed, update its status and link the relevant plan or implementation notes.

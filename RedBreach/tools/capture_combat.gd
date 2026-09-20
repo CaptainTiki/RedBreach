@@ -45,7 +45,7 @@ func run() -> void:
 	await ticks(4)
 	await shot("hit")
 	await ticks(20)
-	for i in 2:
+	for i in 4:
 		aim(bug.global_position + Vector3.UP * 0.7)
 		player.pistol.fire()
 		await ticks(20)

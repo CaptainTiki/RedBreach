@@ -88,7 +88,7 @@ Use the State Charts addon for the posture states when implementing crouch, and 
 
 Use the supplied **plain Kenney grids**: Light/Dark as the neutral base, a consistent cool color for jump lanes, Green for the runway/return path, and Orange for crouch tests. Label stations with text as well as color. Existing gym textures remain as the comparison baseline.
 
-Use `texture_01.png`, `texture_03.png`, or `texture_05.png` from the chosen color set at **0.0625 face scale**: a full 1024 px repeat covers 2 m, with 0.25 m fine squares. Follow [blockout texture conventions](blockout-textures.md). Opening geometry follows the planned clearances rather than the pack's door/window diagrams.
+Use `texture_01.png`, `texture_03.png`, or `texture_05.png` from the chosen color set at **0.03125 face scale**: a full 1024 px repeat covers 1 m, with 0.125 m fine squares. Follow [blockout texture conventions](blockout-textures.md). Opening geometry follows the planned clearances rather than the pack's door/window diagrams.
 
 ## Story, items, and progression
 

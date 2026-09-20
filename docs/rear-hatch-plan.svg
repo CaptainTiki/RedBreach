@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000"><title>Rear hatch revision 04: trigger before the blind left turn</title><defs><marker id="go" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#68daca"/></marker><marker id="back" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#bea7ff"/></marker></defs><rect width="1440" height="1000" fill="#101a24"/><g font-family="Segoe UI,Arial,sans-serif">
+<text x="36" y="52" font-size="30" fill="#d8e4ed" font-weight="700">RED BREACH / BLIND CORNER + REAR HATCH</text>
+<text x="36" y="87" font-size="20" fill="#a9bfce" font-weight="400">Revision 04 • Front group deeper in D; same blind corner, rear hatch and timing.</text>
+<rect x="36" y="130" width="936" height="644" fill="#182735" stroke="#344958" stroke-width="3"/>
+<rect x="996" y="130" width="408" height="644" fill="#1d2e3c" stroke="#344958" stroke-width="3"/>
+<text x="58" y="159" font-size="16" fill="#a7bfce" font-weight="600">TOP-DOWN • NORTH / -Z ↑</text>
+<rect x="60" y="230" width="240" height="320" fill="#263b4b" stroke="none" stroke-width="3"/>
+<rect x="300" y="230" width="280" height="80" fill="#263b4b" stroke="none" stroke-width="3"/>
+<rect x="500" y="310" width="80" height="140" fill="#263b4b" stroke="none" stroke-width="3"/>
+<rect x="580" y="370" width="40" height="80" fill="#263b4b" stroke="none" stroke-width="3"/>
+<rect x="620" y="230" width="320" height="320" fill="#263b4b" stroke="none" stroke-width="3"/>
+<rect x="120" y="550" width="120" height="100" fill="#263b4b" stroke="none" stroke-width="3"/>
+<rect x="720" y="550" width="120" height="100" fill="#263b4b" stroke="none" stroke-width="3"/>
+<rect x="350.0" y="190" width="60" height="40" fill="#5a4025" stroke="none" stroke-width="3"/>
+<path d="M60 230 L300 230" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M60 230 L60 550" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M60 550 L120 550" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M240 550 L300 550" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M300 310 L300 550" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M120 550 L120 650" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M240 550 L240 650" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M300 230 L350.0 230" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M410.0 230 L580 230" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M580 230 L580 370" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M580 370 L620 370" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M300 310 L500 310" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M500 310 L500 450" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M500 450 L620 450" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M620 230 L940 230" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M940 230 L940 550" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M620 230 L620 370" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M620 450 L620 550" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M620 550 L720 550" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M840 550 L940 550" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M720 550 L720 650" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M840 550 L840 650" stroke="#9cb0c0" stroke-width="4" fill="none"/>
+<path d="M350.0 230 L350.0 190" stroke="#ffb85d" stroke-width="4" fill="none"/>
+<path d="M350.0 190 L410.0 190" stroke="#ffb85d" stroke-width="4" fill="none"/>
+<path d="M410.0 190 L410.0 230" stroke="#ffb85d" stroke-width="4" fill="none"/>
+<path d="M356.0 195.99999999999994 L404.0 195.99999999999994" stroke="#ffb85d" stroke-width="4" fill="none"/>
+<text x="318" y="185" font-size="16" fill="#ffc779" font-weight="700">REAR HATCH</text>
+<rect x="210.0" y="410" width="40" height="40" fill="#596d7d" stroke="#b5c8d5" stroke-width="3"/>
+<text x="213.0" y="435" font-size="13" fill="#d8e4ed" font-weight="400">2.2m</text>
+<rect x="720" y="430" width="40" height="40" fill="#596d7d" stroke="#b5c8d5" stroke-width="3"/>
+<text x="723" y="455" font-size="13" fill="#d8e4ed" font-weight="400">1.1m</text>
+<rect x="800" y="310" width="40" height="40" fill="#596d7d" stroke="#b5c8d5" stroke-width="3"/>
+<text x="803" y="335" font-size="13" fill="#d8e4ed" font-weight="400">2.2m</text>
+<rect x="348" y="281" width="24" height="18" fill="#eac783" stroke="none" stroke-width="3"/>
+<text x="350" y="295" font-size="11" fill="#142431" font-weight="700">+H</text>
+<rect x="408" y="281" width="24" height="18" fill="#eac783" stroke="none" stroke-width="3"/>
+<text x="410" y="295" font-size="11" fill="#142431" font-weight="700">AM</text>
+<path d="M460 230 L460 310" stroke="#ffb85d" stroke-width="4" fill="none"/>
+<text x="438" y="330" font-size="14" fill="#ffc779" font-weight="700">TRIGGER</text>
+<polyline points="180,630 180,270 540,270 540,410 780,410 780,630" fill="none" stroke="#68daca" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#go)"/>
+<polyline points="680,390 550.0,390 550.0,260.0 200,260.0" fill="none" stroke="#bea7ff" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#back)"/>
+<circle cx="830" cy="270" r="12" fill="#f18e88" stroke="#101a24" stroke-width="2"/>
+<text x="825" y="275" font-size="15" fill="#142431" font-weight="700">R</text>
+<circle cx="890" cy="340" r="12" fill="#f18e88" stroke="#101a24" stroke-width="2"/>
+<text x="885" y="345" font-size="15" fill="#142431" font-weight="700">R</text>
+<circle cx="900" cy="500" r="12" fill="#d8ed69" stroke="#101a24" stroke-width="2"/>
+<text x="895" y="505" font-size="15" fill="#142431" font-weight="700">P</text>
+<circle cx="890" cy="270" r="12" fill="#ffca7c" stroke="#101a24" stroke-width="2"/>
+<text x="885" y="275" font-size="15" fill="#142431" font-weight="700">s</text>
+<circle cx="900" cy="430" r="12" fill="#ffca7c" stroke="#101a24" stroke-width="2"/>
+<text x="895" y="435" font-size="15" fill="#142431" font-weight="700">s</text>
+<circle cx="380" cy="214.00000000000006" r="12" fill="#ffca7c" stroke="#101a24" stroke-width="2"/>
+<text x="375" y="219.00000000000006" font-size="15" fill="#142431" font-weight="700">s</text>
+<circle cx="120" cy="330" r="12" fill="#d8ed69" stroke="#101a24" stroke-width="2"/>
+<text x="115" y="335" font-size="15" fill="#142431" font-weight="700">P</text>
+<text x="80" y="511" font-size="18" fill="#d8e4ed" font-weight="700">C / EXISTING ROOM</text>
+<text x="643" y="257" font-size="18" fill="#d8e4ed" font-weight="700">D / DEEPER FRONT FIVE</text>
+<text x="316" y="370" font-size="17" fill="#95aebf" font-weight="700">OLD STRAIGHT</text>
+<text x="316" y="396" font-size="17" fill="#95aebf" font-weight="700">APPROACH CLOSED</text>
+<text x="320" y="468" font-size="17" fill="#c4b2ff" font-weight="600">Final turn is LEFT into D.</text>
+<text x="320" y="498" font-size="17" fill="#c4b2ff" font-weight="400">Retreat must follow the bend.</text>
+<text x="320" y="548" font-size="16" fill="#a4bccd" font-weight="400">4 m approach and final entry.</text>
+<text x="320" y="574" font-size="16" fill="#ffc779" font-weight="400">Hatch sounds behind-left</text>
+<text x="320" y="599" font-size="16" fill="#ffc779" font-weight="400">when facing east into D.</text>
+<text x="132" y="670" font-size="15" fill="#a6bfce" font-weight="400">FROM B</text>
+<text x="728" y="670" font-size="15" fill="#a6bfce" font-weight="400">ONWARD TO E</text>
+<text x="60" y="721" font-size="18" fill="#d8e4ed" font-weight="400">s  Small · 1 hit       R  Regular · 6 hits       P  Spitter · 2 mouth / 6 body</text>
+<text x="60" y="752" font-size="14" fill="#9fb8c9" font-weight="400">Teal: advance     Lilac: retreat     Amber: hatch / trigger     Plan coordinates are in metres.</text>
+<text x="1020" y="183" font-size="18" fill="#edf3f6" font-weight="700">1  CROSS THE TRIGGER</text>
+<text x="1020" y="218" font-size="16" fill="#b5c9d7" font-weight="400">Full-width trigger before the sightline.</text>
+<text x="1020" y="243" font-size="16" fill="#b5c9d7" font-weight="400">The rear sequence is now committed.</text>
+<text x="1020" y="314" font-size="18" fill="#edf3f6" font-weight="700">2  ROUND THE LEFT CORNER</text>
+<text x="1020" y="349" font-size="16" fill="#b5c9d7" font-weight="400">See and engage the five room bugs.</text>
+<text x="1020" y="374" font-size="16" fill="#b5c9d7" font-weight="400">Room entry is not required.</text>
+<text x="1020" y="445" font-size="18" fill="#edf3f6" font-weight="700">3  HEAR THE HATCH</text>
+<text x="1020" y="480" font-size="16" fill="#b5c9d7" font-weight="400">Burst 1.75 seconds after the trigger.</text>
+<text x="1020" y="505" font-size="16" fill="#b5c9d7" font-weight="400">One small emerges 0.35 seconds later.</text>
+<text x="1020" y="576" font-size="18" fill="#edf3f6" font-weight="700">4  TURN, RETREAT, RE-ENGAGE</text>
+<text x="1020" y="611" font-size="16" fill="#b5c9d7" font-weight="400">Address the rear threat or reposition.</text>
+<text x="1020" y="636" font-size="16" fill="#b5c9d7" font-weight="400">No door traps you in the fight.</text>
+<rect x="1016" y="692" width="368" height="58" fill="#2d4543" stroke="none" stroke-width="3"/>
+<text x="1030" y="717" font-size="16" fill="#b5eadb" font-weight="600">TOTAL: 3 smalls + 2 regulars + 1 spitter</text>
+<text x="1030" y="741" font-size="15" fill="#b5eadb" font-weight="400">Five preplaced + one delayed rear spawn</text>
+<rect x="36" y="801" width="1368" height="154" fill="#1d2d3a" stroke="#344958" stroke-width="3"/>
+<text x="60" y="835" font-size="17" fill="#96e4d4" font-weight="700">THE CHECK THAT MATTERS</text>
+<text x="60" y="867" font-size="20" fill="#d8e4ed" font-weight="400">Approach, spot a room bug, immediately backpedal: the hatch must still fire.</text>
+<text x="60" y="899" font-size="17" fill="#b4c8d7" font-weight="400">Verify sightlines across the corridor width, then test walking, sprinting, ADS and pauses.</text>
+<text x="60" y="932" font-size="17" fill="#b4c8d7" font-weight="400">The bend adds 12 m to the marked route: 114 m total. Compare empty traversal again.</text>
+</g></svg>

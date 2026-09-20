@@ -6,12 +6,12 @@
 - TrenchBroom 2025.4 at `D:\TrenchBroom\TrenchBroom.exe`.
 - func_godot 2025.12 and Godot State Charts 0.22.5, both enabled.
 - Mapping format: Valve 220; scale: 32 map units per Godot metre.
-- Original gym grids are 128 x 128 pixels at 0.25 UV scale, giving a 1 m major grid and 0.25 m subdivisions. The annex uses plain Kenney grids at 0.0625 scale: 2 m texture repeats and 0.25 m fine squares; see [texture notes](blockout-textures.md).
+- All three gyms use supplied 1024 px Kenney grids at 0.03125 face scale: 1 m full repeats and 0.125 m fine squares, matching the printed metre labels. Both installed and portable TrenchBroom defaults use this scale. See [texture notes](blockout-textures.md).
 - Coordinate conversion used by func_godot: Godot `(X,Y,Z) = map (Y,Z,X) / 32`. The plan's north is Godot -Z, corresponding to map -X.
 
 ## Play
 
-Open `RedBreach/project.godot` and press F5. Main scene: `res://combat/combat_gym.tscn`. F1 opens the movement gym; F2 opens the combat gym. See [combat build and playtest instructions](combat-gym.md).
+Open `RedBreach/project.godot` and press F5. Main scene: `res://encounters/route_trial.tscn`. F1 opens movement, F2 combat, and F3 the [encounter route test](encounter-route-test.md). See [combat build and playtest instructions](combat-gym.md).
 
 - WASD: walk; Shift: sprint; Space: jump; hold Ctrl: crouch.
 - Mouse: look; left click: fire the pistol; hold right mouse: ADS; R: reload; E: use an aimed switch within 2 m.
@@ -22,7 +22,7 @@ The [prototype pistol](pistol-gym.md) provides semi-automatic hitscan fire, ammu
 ## Edit the map
 
 1. Open `RedBreach/maps/gym_01.map` in TrenchBroom using the **Red Breach** game and **Valve** format.
-2. Game path: `D:\Godot\REPOs\RedBreach\RedBreach`. Material collections: `gym`, `greybox/Dark`, `greybox/Light`, `greybox/Green`, `greybox/Purple`, and `greybox/Orange`.
+2. Game path: `D:\Godot\REPOs\RedBreach\RedBreach`. Material collections: `greybox/Dark`, `greybox/Green`, `greybox/Purple`, `greybox/Orange`, and `greybox/Red`.
 3. Edit the brushes and save the map.
 4. In Godot, open `gym/gym.tscn`, select **Geometry**, and press **Build Map** in the Inspector.
 5. Save the scene and press F5.

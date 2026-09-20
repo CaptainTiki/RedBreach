@@ -4,7 +4,7 @@ Status: built and ready for playtest, included in local version `0.0.006` (Spitt
 
 ## Play
 
-Press F5 (or F2 during play), enter the arena, approach the yellow-green **E / SPITTER** panel on the right, and press E. The original turquoise **E / MELEE BUG** panel remains available. Only one enemy is active in an attempt. Backspace clears the encounter and lets you choose again.
+Press F2 during play to open the Combat Gym, then enter the arena, approach the orange **E / SPITTER** panel on the right, and press E. The green **E / MELEE BUG** panel remains available. Only one enemy is active in an attempt. Backspace clears the encounter and lets you choose again.
 
 The larger bug moves around cover until it can fire. Its jaws open over about 0.08 seconds, exposing a bright yellow-green throat during a **0.5-second charge**. It tracks you throughout the charge, fires at your position at release, and then closes its mouth after a short 0.1-second spit animation. The projectile has no homing and no predictive lead.
 

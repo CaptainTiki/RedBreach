@@ -6,4 +6,4 @@
 script = ExtResource("1")
 game_name = "Red Breach"
 map_formats = Array[Dictionary]([{"format": "Valve"}])
-default_uv_scale = Vector2(0.25, 0.25)
+default_uv_scale = Vector2(0.03125, 0.03125)

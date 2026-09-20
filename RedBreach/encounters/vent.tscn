@@ -1,0 +1,94 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://encounters/vent.gd" id="script"]
+
+[ext_resource type="AudioStream" path="res://encounters/vent_burst.wav" id="sound"]
+
+[ext_resource type="Texture2D" path="res://textures/greybox/Dark/texture_06.png" id="kenney_metric_0"]
+
+[sub_resource type="StandardMaterial3D" id="metal"]
+metallic = 0.65
+albedo_texture = ExtResource("kenney_metric_0")
+roughness = 1.0
+metallic_specular = 0.0
+texture_filter = 2
+uv1_scale = Vector3(1, 1, 1)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 32.0
+
+[sub_resource type="StandardMaterial3D" id="dark"]
+albedo_color = Color(0.015, 0.02, 0.025, 1)
+
+[sub_resource type="BoxMesh" id="bar"]
+size = Vector3(2.3, 0.09, 0.09)
+material = SubResource("metal")
+
+[sub_resource type="BoxMesh" id="opening"]
+size = Vector3(2.4, 1.8, 0.1)
+material = SubResource("dark")
+
+[node name="Vent" type="Node3D"]
+script = ExtResource("script")
+
+[node name="Opening" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0, -0.15)
+mesh = SubResource("opening")
+
+[node name="Grate" type="Node3D" parent="."]
+
+[node name="Slat0" type="MeshInstance3D" parent="Grate"]
+position = Vector3(0, -0.81, 0)
+mesh = SubResource("bar")
+
+[node name="Slat1" type="MeshInstance3D" parent="Grate"]
+position = Vector3(0, -0.63, 0)
+mesh = SubResource("bar")
+
+[node name="Slat2" type="MeshInstance3D" parent="Grate"]
+position = Vector3(0, -0.45, 0)
+mesh = SubResource("bar")
+
+[node name="Slat3" type="MeshInstance3D" parent="Grate"]
+position = Vector3(0, -0.27, 0)
+mesh = SubResource("bar")
+
+[node name="Slat4" type="MeshInstance3D" parent="Grate"]
+position = Vector3(0, -0.09, 0)
+mesh = SubResource("bar")
+
+[node name="Slat5" type="MeshInstance3D" parent="Grate"]
+position = Vector3(0, 0.09, 0)
+mesh = SubResource("bar")
+
+[node name="Slat6" type="MeshInstance3D" parent="Grate"]
+position = Vector3(0, 0.27, 0)
+mesh = SubResource("bar")
+
+[node name="Slat7" type="MeshInstance3D" parent="Grate"]
+position = Vector3(0, 0.45, 0)
+mesh = SubResource("bar")
+
+[node name="Slat8" type="MeshInstance3D" parent="Grate"]
+position = Vector3(0, 0.63, 0)
+mesh = SubResource("bar")
+
+[node name="Slat9" type="MeshInstance3D" parent="Grate"]
+position = Vector3(0, 0.81, 0)
+mesh = SubResource("bar")
+
+[node name="Side0" type="MeshInstance3D" parent="Grate"]
+position = Vector3(-1.13, 0, 0)
+rotation = Vector3(0, 0, 1.5707963)
+scale = Vector3(0.8, 1, 1)
+mesh = SubResource("bar")
+
+[node name="Side1" type="MeshInstance3D" parent="Grate"]
+position = Vector3(1.13, 0, 0)
+rotation = Vector3(0, 0, 1.5707963)
+scale = Vector3(0.8, 1, 1)
+mesh = SubResource("bar")
+
+[node name="Sound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("sound")
+volume_db = -7.0
+max_distance = 35.0

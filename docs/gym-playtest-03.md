@@ -8,7 +8,7 @@ The [west annex plan](gym-movement-plan.md) is implemented: four horizontal jump
 
 Geometry lives in `RedBreach/maps/gym_01.map` and is baked into `RedBreach/gym/gym.tscn`. The map now has 69 convex brushes. Of the original 26 brushes, 25 remain unchanged; the west wall became two segments around the connector. All existing gym stations retain their positions.
 
-`RedBreach/gym/movement_annex.tscn` contains editable station origins, reset points, markings, signs, and the cover target outside the generated Geometry subtree. The annex uses plain Kenney grids at 0.25 m fine-grid scale.
+`RedBreach/gym/movement_annex.tscn` contains editable station origins, reset points, markings, signs, and the cover target outside the generated Geometry subtree. The annex now follows the corrected [Kenney grid convention](blockout-textures.md): 1 m full repeats and 0.125 m fine divisions. The original playtest used the earlier 2 m repeat.
 
 ## Controls and station behavior
 

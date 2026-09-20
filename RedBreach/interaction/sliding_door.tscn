@@ -7,17 +7,39 @@
 [ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="5_atomic"]
 [ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="6_transition"]
 
+[ext_resource type="Texture2D" path="res://textures/greybox/Green/texture_01.png" id="kenney_metric_0"]
+
+[ext_resource type="Texture2D" path="res://textures/greybox/Orange/texture_03.png" id="kenney_metric_1"]
+
+[ext_resource type="Texture2D" path="res://textures/greybox/Dark/texture_01.png" id="kenney_metric_2"]
+
 [sub_resource type="StandardMaterial3D" id="DoorMaterial"]
-albedo_color = Color(0.14, 0.24, 0.29, 1)
 metallic = 0.25
-roughness = 0.65
+albedo_texture = ExtResource("kenney_metric_0")
+roughness = 1.0
+metallic_specular = 0.0
+texture_filter = 2
+uv1_scale = Vector3(1, 1, 1)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 32.0
 
 [sub_resource type="StandardMaterial3D" id="AccentMaterial"]
-albedo_color = Color(0.88, 0.54, 0.16, 1)
-roughness = 0.8
+albedo_texture = ExtResource("kenney_metric_1")
+roughness = 1.0
+metallic_specular = 0.0
+texture_filter = 2
+uv1_scale = Vector3(1, 1, 1)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 32.0
 
 [sub_resource type="StandardMaterial3D" id="SwitchMaterial"]
-albedo_color = Color(0.06, 0.09, 0.12, 1)
+albedo_texture = ExtResource("kenney_metric_2")
+roughness = 1.0
+metallic_specular = 0.0
+texture_filter = 2
+uv1_scale = Vector3(1, 1, 1)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 32.0
 
 [sub_resource type="StandardMaterial3D" id="LampMaterial"]
 albedo_color = Color(1, 0.55, 0.12, 1)

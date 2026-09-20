@@ -1,0 +1,135 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://encounters/encounter.gd" id="script"]
+
+[ext_resource type="PackedScene" path="res://encounters/vent.tscn" id="vent"]
+
+[ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="chart"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="compound"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="atomic"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="transition"]
+
+[sub_resource type="BoxShape3D" id="trigger"]
+size = Vector3(6, 3, 2)
+
+[node name="Encounter" type="Node3D"]
+script = ExtResource("script")
+
+[node name="Trigger" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 1
+
+[node name="Shape" type="CollisionShape3D" parent="Trigger"]
+position = Vector3(0, 1.5, 0)
+shape = SubResource("trigger")
+
+[node name="Spawns" type="Node3D" parent="."]
+
+[node name="Enemies" type="Node3D" parent="."]
+
+[node name="Vent" parent="." instance=ExtResource("vent")]
+
+[node name="Chart" type="Node" parent="."]
+script = ExtResource("chart")
+
+[node name="Encounter" type="Node" parent="Chart"]
+script = ExtResource("compound")
+initial_state = NodePath("Armed")
+
+[node name="Armed" type="Node" parent="Chart/Encounter"]
+script = ExtResource("atomic")
+
+[node name="ToIntroducing" type="Node" parent="Chart/Encounter/Armed"]
+script = ExtResource("transition")
+to = NodePath("../../Introducing")
+event = &"introduce"
+
+[node name="ToFighting" type="Node" parent="Chart/Encounter/Armed"]
+script = ExtResource("transition")
+to = NodePath("../../Fighting")
+event = &"fight"
+
+[node name="ToCancelled" type="Node" parent="Chart/Encounter/Armed"]
+script = ExtResource("transition")
+to = NodePath("../../Cancelled")
+event = &"cancel"
+
+[node name="Introducing" type="Node" parent="Chart/Encounter"]
+script = ExtResource("atomic")
+
+[node name="ToFighting" type="Node" parent="Chart/Encounter/Introducing"]
+script = ExtResource("transition")
+to = NodePath("../../Fighting")
+event = &"fight"
+
+[node name="ToCancelled" type="Node" parent="Chart/Encounter/Introducing"]
+script = ExtResource("transition")
+to = NodePath("../../Cancelled")
+event = &"cancel"
+
+[node name="ToArmed" type="Node" parent="Chart/Encounter/Introducing"]
+script = ExtResource("transition")
+to = NodePath("../../Armed")
+event = &"reset"
+
+[node name="Fighting" type="Node" parent="Chart/Encounter"]
+script = ExtResource("atomic")
+
+[node name="ToCleared" type="Node" parent="Chart/Encounter/Fighting"]
+script = ExtResource("transition")
+to = NodePath("../../Cleared")
+event = &"clear"
+
+[node name="ToCancelled" type="Node" parent="Chart/Encounter/Fighting"]
+script = ExtResource("transition")
+to = NodePath("../../Cancelled")
+event = &"cancel"
+
+[node name="ToArmed" type="Node" parent="Chart/Encounter/Fighting"]
+script = ExtResource("transition")
+to = NodePath("../../Armed")
+event = &"reset"
+
+[node name="Cleared" type="Node" parent="Chart/Encounter"]
+script = ExtResource("atomic")
+
+[node name="ToCancelled" type="Node" parent="Chart/Encounter/Cleared"]
+script = ExtResource("transition")
+to = NodePath("../../Cancelled")
+event = &"cancel"
+
+[node name="ToArmed" type="Node" parent="Chart/Encounter/Cleared"]
+script = ExtResource("transition")
+to = NodePath("../../Armed")
+event = &"reset"
+
+[node name="Cancelled" type="Node" parent="Chart/Encounter"]
+script = ExtResource("atomic")
+
+[node name="ToArmed" type="Node" parent="Chart/Encounter/Cancelled"]
+script = ExtResource("transition")
+to = NodePath("../../Armed")
+event = &"reset"
+
+[node name="ToWaitingBurst" type="Node" parent="Chart/Encounter/Armed"]
+script = ExtResource("transition")
+to = NodePath("../../WaitingBurst")
+event = &"delay"
+
+[node name="WaitingBurst" type="Node" parent="Chart/Encounter"]
+script = ExtResource("atomic")
+
+[node name="ToIntroducing" type="Node" parent="Chart/Encounter/WaitingBurst"]
+script = ExtResource("transition")
+to = NodePath("../../Introducing")
+event = &"introduce"
+
+[node name="ToCancelled" type="Node" parent="Chart/Encounter/WaitingBurst"]
+script = ExtResource("transition")
+to = NodePath("../../Cancelled")
+event = &"cancel"
+
+[node name="ToArmed" type="Node" parent="Chart/Encounter/WaitingBurst"]
+script = ExtResource("transition")
+to = NodePath("../../Armed")
+event = &"reset"

@@ -4,6 +4,8 @@
 [ext_resource type="Script" path="res://gym/sprint_runway.gd" id="run"]
 [ext_resource type="Script" path="res://gym/target.gd" id="target"]
 
+[ext_resource type="Texture2D" path="res://textures/greybox/Red/texture_03.png" id="kenney_metric_0"]
+
 [sub_resource type="StandardMaterial3D" id="LineMaterial"]
 shading_mode = 0
 albedo_color = Color(0.93, 0.98, 1, 1)
@@ -20,8 +22,13 @@ size = Vector2(4, 0.10)
 default_font_size = 22
 
 [sub_resource type="StandardMaterial3D" id="TargetMaterial"]
-albedo_color = Color(0.95, 0.27, 0.12, 1)
+albedo_texture = ExtResource("kenney_metric_0")
 roughness = 1.0
+metallic_specular = 0.0
+texture_filter = 2
+uv1_scale = Vector3(1, 1, 1)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 32.0
 
 [sub_resource type="BoxMesh" id="TargetMesh"]
 material = SubResource("TargetMaterial")

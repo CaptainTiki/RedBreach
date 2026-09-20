@@ -94,6 +94,7 @@ func reset_bug() -> void:
 	$Readout.text = "SPITTER / DORMANT"
 
 func _physics_process(delta: float) -> void:
+	sense_waiting_target()
 	var current := state()
 	if current in ["Dead", "Dormant"]:
 		return

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="850" viewBox="0 0 1160 850"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#6ce4d6"/></marker></defs><rect width="1160" height="850" fill="#111d28"/><g font-family="Segoe UI, sans-serif">
+<text x="40" y="48" font-size="28" fill="#e5edf3">RED BREACH / ENCOUNTER ROUTE TEST</text>
+<text x="40" y="79" font-size="18" fill="#e5edf3">Revision 04 / 114 m route / three occupied rooms + delayed rear hatch in D</text>
+<text x="40" y="106" font-size="17" fill="#6ce4d6">5 m/s walk: 22.8 s ideal     |     8 m/s sprint: 14.25 s ideal     |     Fight times: to measure</text>
+<rect x="154" y="625" width="96" height="144" fill="#213c48" stroke="#abc1ce" stroke-width="3"/>
+<rect x="130" y="481" width="144" height="144" fill="#2d3b55" stroke="#abc1ce" stroke-width="3"/>
+<rect x="166" y="337" width="72" height="144" fill="#494036" stroke="#abc1ce" stroke-width="3"/>
+<rect x="130" y="145" width="144" height="192" fill="#2d3b55" stroke="#abc1ce" stroke-width="3"/>
+<path d="M274 145H442V229H466V277H394V193H274Z" fill="#253644" stroke="#abc1ce" stroke-width="3"/>
+<rect x="304" y="121" width="36" height="24" fill="#494036" stroke="#f5a94f" stroke-width="3"/>
+<path d="M370 145V193" stroke="#f5a94f" stroke-width="4" stroke-dasharray="5 3"/>
+<rect x="466" y="145" width="192" height="192" fill="#2d3b55" stroke="#abc1ce" stroke-width="3"/>
+<rect x="526" y="337" width="72" height="192" fill="#494036" stroke="#abc1ce" stroke-width="3"/>
+<rect x="490" y="529" width="144" height="144" fill="#213c48" stroke="#abc1ce" stroke-width="3"/>
+<polyline points="202,697 202,169 418,169 418,253 562,253 562,649" fill="none" stroke="#6ce4d6" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrow)"/>
+<text x="142" y="169" font-size="13" fill="#e5edf3">C / SPITTER</text>
+<text x="142" y="505" font-size="13" fill="#e5edf3">A / TWO SMALLS</text>
+<text x="478" y="169" font-size="13" fill="#e5edf3">D / FRONT FIVE</text>
+<text x="166" y="745" font-size="13" fill="#e5edf3">START</text>
+<text x="502" y="625" font-size="13" fill="#e5edf3">FINISH</text>
+<circle cx="166" cy="541" r="8" fill="#f3947d"/>
+<text x="161" y="546" font-size="13" fill="#10202a">m</text>
+<circle cx="238" cy="517" r="8" fill="#f3947d"/>
+<text x="233" y="522" font-size="13" fill="#10202a">m</text>
+<circle cx="166" cy="205" r="10" fill="#d8ed48"/>
+<text x="161" y="210" font-size="13" fill="#10202a">S</text>
+<circle cx="592" cy="169" r="10" fill="#f3947d"/>
+<text x="587" y="174" font-size="13" fill="#10202a">M</text>
+<circle cx="628" cy="211" r="10" fill="#f3947d"/>
+<text x="623" y="216" font-size="13" fill="#10202a">M</text>
+<circle cx="634" cy="307" r="10" fill="#d8ed48"/>
+<text x="629" y="312" font-size="13" fill="#10202a">S</text>
+<circle cx="322" cy="133" r="8" fill="#f3947d"/><text x="317" y="138" font-size="13" fill="#10202a">m</text>
+<circle cx="628" cy="169" r="8" fill="#f3947d"/><text x="623" y="174" font-size="13" fill="#10202a">m</text>
+<circle cx="634" cy="265" r="8" fill="#f3947d"/><text x="629" y="270" font-size="13" fill="#10202a">m</text>
+<rect x="159" y="370" width="14" height="30" fill="#f5a94f"/>
+<text x="179" y="390" font-size="14" fill="#ffd095">B / 1</text>
+<rect x="591" y="418" width="14" height="30" fill="#f5a94f"/>
+<text x="611" y="438" font-size="14" fill="#ffd095">E / 2</text>
+<path d="M166,457 L238,457" stroke="#f5a94f" stroke-width="4" stroke-dasharray="5 3"/>
+<path d="M526,361 L598,361" stroke="#f5a94f" stroke-width="4" stroke-dasharray="5 3"/>
+<rect x="220.0" y="253" width="24.0" height="24" fill="#6f8290" stroke="#abc1ce" stroke-width="3"/>
+<rect x="526" y="265" width="24" height="24" fill="#6f8290" stroke="#abc1ce" stroke-width="3"/>
+<rect x="574" y="193" width="24" height="24" fill="#6f8290" stroke="#abc1ce" stroke-width="3"/>
+<text x="294" y="209" font-size="12" fill="#ffe08a">+ H / AMMO</text>
+<text x="725" y="167" font-size="17" fill="#6ce4d6">TEST SEQUENCE</text>
+<text x="725" y="196" font-size="16" fill="#d5dfe6">Empty route: walk, then sprint</text>
+<text x="725" y="225" font-size="16" fill="#d5dfe6">Combat route: repeat for comparison</text>
+<text x="725" y="254" font-size="16" fill="#d5dfe6">A  Two small bugs</text>
+<text x="725" y="283" font-size="16" fill="#d5dfe6">B  Vent trigger: one small bug</text>
+<text x="725" y="312" font-size="16" fill="#d5dfe6">C  Existing spitter + cover</text>
+<text x="725" y="341" font-size="16" fill="#d5dfe6">D  Same six / five front + one rear</text>
+<text x="725" y="370" font-size="16" fill="#d5dfe6">E  Vent trigger: two small bugs</text>
+<text x="725" y="399" font-size="16" fill="#ffd095">D burst: 1.75 s + 0.35 s emergence</text>
+<text x="725" y="428" font-size="17" fill="#6ce4d6">READOUT / SAVED RESULTS</text>
+<text x="725" y="457" font-size="16" fill="#d5dfe6">Route total + distance travelled</text>
+<text x="725" y="486" font-size="16" fill="#d5dfe6">Each alert-to-clear encounter split</text>
+<text x="725" y="515" font-size="16" fill="#d5dfe6">Cue / spawn / first-hit timing</text>
+<text x="725" y="544" font-size="16" fill="#d5dfe6">Time with and without active fights</text>
+<text x="725" y="573" font-size="16" fill="#d5dfe6">Shots, damage and movement modes</text>
+<text x="725" y="602" font-size="16" fill="#d5dfe6">Death / bypass / reset labelled</text>
+<text x="725" y="631" font-size="16" fill="#d5dfe6"></text>
+<text x="725" y="660" font-size="16" fill="#d5dfe6">No target duration assumed.</text>
+<text x="725" y="689" font-size="16" fill="#d5dfe6">No story level built yet.</text>
+<text x="45" y="810" font-size="15" fill="#e5edf3">North up / metres / m = small / M = regular / S = spitter / Orange = trigger or hatch</text>
+<text x="40" y="835" font-size="14" fill="#6ce4d6">Detailed blind-corner plan: rear-hatch-plan.svg / Trigger before the sightline; room entry is not required.</text></g></svg>

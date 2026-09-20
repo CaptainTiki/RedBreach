@@ -1,0 +1,38 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://combat/gym_bug.tscn" id="base"]
+
+[sub_resource type="CapsuleShape3D" id="small_shape"]
+radius = 0.275
+height = 0.605
+
+[node name="GymSmallBug" instance=ExtResource("base")]
+max_health = 1.0
+dies_to_any_hit = true
+display_name = "SMALL BUG"
+visual_scale = 0.55
+sight_height = 0.4
+attack_start_distance = 2.2
+attack_reach = 1.05
+move_speed = 4.5
+attack_damage = 10.0
+windup_seconds = 0.35
+lunge_speed = 11.0
+lunge_seconds = 0.16
+recovery_seconds = 0.65
+
+[node name="CollisionShape3D" parent="." index="0"]
+position = Vector3(0, 0.3025, 0)
+shape = SubResource("small_shape")
+
+[node name="Agent" parent="." index="1"]
+radius = 0.3
+height = 0.605
+
+[node name="Visual" parent="." index="2"]
+scale = Vector3(0.55, 0.55, 0.55)
+
+[node name="Readout" parent="." index="3"]
+position = Vector3(0, 1.05, 0)
+font_size = 24
+text = "SMALL BUG / DORMANT"

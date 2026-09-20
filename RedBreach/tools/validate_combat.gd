@@ -73,7 +73,7 @@ func run() -> void:
 	aim(bug.global_position + Vector3.UP * 0.65)
 	check(not bug.can_see_target(), "Tall cover blocks bug sightline")
 	pistol.fire()
-	check(bug.health == 100, "Tall cover blocks real pistol damage to the bug")
+	check(bug.health == 150, "Tall cover blocks real pistol damage to the bug")
 	# Path following must go around the obstacle, not stall or cut through it.
 	gym.reset_encounter()
 	await place(Vector3(20,0.05,-3))
@@ -116,18 +116,18 @@ func run() -> void:
 	check(not ammo.try_collect(player) and ammo.available, "Full ammo leaves ammunition available")
 	pistol.reserve = 50
 	check(ammo.try_collect(player) and pistol.reserve == 60, "Ammunition pickup caps reserve at 60")
-	# Kill by four actual aimed pistol shots, producing world-space blood and a corpse.
+	# Kill by six actual aimed pistol shots, producing world-space blood and a corpse.
 	gym.reset_encounter()
 	await place(Vector3(25,0.05,-10))
 	bug.global_position = Vector3(25,0.05,-16)
 	gym.start_encounter()
 	pistol.reset_weapon()
 	await ticks(2) # Synchronize the relocated bug collider before firing.
-	for i in 4:
+	for i in 6:
 		aim(bug.global_position + Vector3.UP * 0.7)
-		check(pistol.fire() and bug.health == float(75-i*25), "Pistol shot %d damages the live bug" % (i+1))
+		check(pistol.fire() and bug.health == float(125-i*25), "Pistol shot %d damages the live bug" % (i+1))
 		await ticks(16)
-	check(bug.state() == "Dead" and gym.state() == "Cleared", "Fourth shot kills the bug and clears the encounter")
+	check(bug.state() == "Dead" and gym.state() == "Cleared", "Sixth shot kills the bug and clears the encounter")
 	check(bug.collision_layer == 0 and bug.get_node("CollisionShape3D").disabled, "Dead bug has no blocking collision")
 	check(bug.get_node("Visual").scale.y < 0.3 and not bug.get_node("Visual/Warning").visible, "Death leaves a flattened corpse with no attack indicator")
 	check(gym.get_node("Gate/CollisionShape3D").disabled, "Killing the bug reopens the gate")
@@ -161,7 +161,7 @@ func run() -> void:
 	await ticks(5)
 	check(health.health == 100 and health.get_node("LifeChart/Life/Alive").active, "Backspace restores health and Alive state")
 	check(pistol.magazine == 12 and pistol.reserve == 60 and is_equal_approx(player.camera.fov,80.0), "Backspace restores ammo and normal camera handling")
-	check(gym.state() == "Ready" and bug.state() == "Dormant" and bug.health == 100, "Backspace resets the fight and bug")
+	check(gym.state() == "Ready" and bug.state() == "Dormant" and bug.health == 150, "Backspace resets the fight and bug")
 	check(gym.get_node("Effects").splats.is_empty() and gym.get_node("Effects").droplets.is_empty(), "Reset removes all persistent and transient effects")
 	check(med.available and ammo.available and gym.get_node("Gate/CollisionShape3D").disabled, "Reset restores supplies and opens gate")
 	check(player.position.distance_to(player.spawn_transform.origin) < 0.1, "Reset returns to the safe bay")
