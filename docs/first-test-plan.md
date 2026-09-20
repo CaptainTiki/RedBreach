@@ -24,9 +24,9 @@ See [the 2D plan](gym-plan.svg). This is a reusable mechanics gym. The second pa
 ## Later modules
 
 1. Completed: [State Charts door/switch module](gym-door-module.md) in the 2.0 m doorway.
-2. Built, awaiting user playtest: [movement annex](gym-movement-plan.md) for jump distance, sprint timing, and crouch. See [implementation and test results](gym-playtest-03.md).
-3. After annex playtesting, plan and perform a deliberate alteration test: relocate the existing high-jump blocks beside the long-jump lanes, rebuild, and verify old/new collision and labels.
-4. Test pickups and actual weapon behavior.
+2. User playtest accepted: [movement annex](gym-movement-plan.md) for jump distance, sprint timing, and crouch. See [implementation and test results](gym-playtest-03.md).
+3. High-jump relocation implemented and source-to-Godot alteration validated: [plan and results](gym-alteration-plan.md). Ready for the user to check the moved blocks. The TrenchBroom editor UI round trip remains untested because desktop control could not start.
+4. Built, awaiting user playtest: [first pistol](pistol-gym.md), ammo/reload, damageable targets, and hip-fire/ADS comparisons in the existing target lane. Continue the [Combat Gym](combat-gym-scope.md) with player health/damage and pickups, planning new geometry first.
 5. Add a basic enemy and combat checks.
 6. After gym mechanics and scale feel right, plan the first real level in 2D with story beats, encounters, routes, and items.
 

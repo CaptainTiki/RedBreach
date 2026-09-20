@@ -7,6 +7,8 @@
 [ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="posture_atomic"]
 [ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="posture_transition"]
 
+[ext_resource type="PackedScene" path="res://weapons/gym_pistol.tscn" id="pistol"]
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_bhunq"]
 radius = 0.3
 
@@ -34,6 +36,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.65, 0)
 current = true
 fov = 80.0
 far = 200.0
+
+[node name="Pistol" parent="Camera3D" instance=ExtResource("pistol")]
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=2124759893]
 

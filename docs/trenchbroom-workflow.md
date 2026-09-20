@@ -14,10 +14,10 @@
 Open `RedBreach/project.godot` and press F5. Main scene: `res://gym/gym.tscn`.
 
 - WASD: walk; Shift: sprint; Space: jump; hold Ctrl: crouch.
-- Mouse: look; left click: hitscan probe with target hit feedback; E: use an aimed switch within 2 m.
-- Escape: release mouse; click: recapture; R: reset to spawn.
+- Mouse: look; left click: fire the pistol; hold right mouse: ADS; R: reload; E: use an aimed switch within 2 m.
+- Escape: release mouse; click: recapture without firing; Backspace: reset to spawn and refill the pistol/targets.
 
-The probe is a test tool. There is no weapon/ammo system or enemy AI yet. State Charts drives the [door/switch module](gym-door-module.md) in the 2.0 m doorway. Open it before testing that clearance.
+The [prototype pistol](pistol-gym.md) provides semi-automatic hitscan fire, ammunition/reload, ADS, and recoil. Targets have health and recover after two seconds. Enemy AI, player damage, and pickups are later Combat Gym modules. The original diagnostic `fire_probe()` remains available to the older geometry/sightline checks; normal left-click input uses the pistol. State Charts drives the [door/switch module](gym-door-module.md) in the 2.0 m doorway. Open it before testing that clearance.
 
 ## Edit the map
 
@@ -29,7 +29,7 @@ The probe is a test tool. There is no weapon/ammo system or enemy AI yet. State 
 
 A `.map` reimport alone does not rebuild the saved scene. Explicitly build and save Geometry. Changes to generated Geometry children will be replaced at the next build. Keep the source map and baked scene together in commits.
 
-Alternatively, from the repository root run `./tools/rebuild-gym.ps1`. Add `-Validate` to run the gym, movement, door, and annex checks. Pass `-GodotPath` if the editor executable is elsewhere. Save any open Godot scene edits before running the command, then reload the scene if prompted.
+Alternatively, from the repository root run `./tools/rebuild-gym.ps1`. Add `-Validate` to run the gym, movement, door, annex, alteration, and pistol checks. Pass `-GodotPath` if the editor executable is elsewhere. Save any open Godot scene edits before running the command, then reload the scene if prompted.
 
 ## Configuration sources
 
@@ -72,9 +72,9 @@ See [gym playtest 01](gym-playtest-01.md) for the user's scale findings and the 
 
 ## Movement annex and alteration test
 
-The saved gym now contains 69 brush collisions, including the west annex. Its authored `MovementAnnex` instance stays outside Geometry. Jump lane and runway coordinates are relative to editable station roots; reset points and signs are children of those roots. The full validation command includes 58 annex checks. See [playtest 03](gym-playtest-03.md).
+The saved gym now contains 69 brush collisions, including the west annex. Its authored `MovementAnnex` instance stays outside Geometry. Jump lane and runway coordinates are relative to editable station roots; reset points and signs are children of those roots. The full validation command includes 58 annex checks and 32 alteration checks. See [playtest 03](gym-playtest-03.md).
 
-After the user playtests the annex, deliberately move the original 0.75 m and 1.25 m high-jump blocks beside the horizontal jump tests:
+The user accepted the annex and requested the alteration exercise. The two high-jump blocks have now moved beside the long-jump approaches; see [the current plan and results](gym-alteration-plan.md). Source editing, func_godot rebuilding, collision, and saved-scene reload passed. The TrenchBroom UI round trip remains untested because the computer-use runtime failed to start. For future station moves, use this workflow:
 
 1. Mark the intended destination on the 2D plan, preserving approaches and return routes.
 2. In TrenchBroom, move the two existing block brushes and save the map. Retain their heights.

@@ -21,6 +21,7 @@
 
 ## Scope and validation
 - Keep the initial experiment small and editable. Document pipeline choices and findings.
+- Track deferred improvements in `docs/future-refinements.md`. Read relevant entries when refining a system; these notes do not expand the active task unless the user brings them into scope.
 - Do not choose a TrenchBroom import plugin, map format, or asset pack without investigating compatibility with the existing Godot project.
 - Validate changed project settings and scenes with the installed compatible Godot version when available; report any validation limitations.
 
@@ -42,9 +43,18 @@
 - Movement ground checks use GymPlayer's `is_grounded()` to include verified stair-corner support; native slope snapping remains enabled. See `docs/gym-playtest-02.md`.
 - Standing/crouched posture belongs to GymPlayer's editable PostureChart. Safe standing checks the full standing capsule; low headroom keeps the player crouched.
 - `RedBreach/gym/movement_annex.tscn` is an authored sibling of Geometry with lane origins, recovery points, runway measurements, and labels. Move these with their source-map brushes when relocating a station. See `docs/gym-playtest-03.md`.
-- The original high-jump blocks are still in place. Their deliberate relocation beside the long-jump lanes is deferred until after annex playtesting.
+- The high-jump blocks are relocated beside the long-jump approaches: low center (-48, 0.375, 10.5), high center (-44, 0.625, 10.5). See `docs/gym-alteration-plan.md` for the current layout and pipeline results. The combined validation includes repeated alteration build/save/reload checks.
 
 ## Blockout materials
 
 - Prefer the supplied plain Kenney grids under `RedBreach/textures/greybox`; see `docs/blockout-textures.md` for texture scale.
 - Keep planned/tested opening dimensions. Use door/window diagrams only when their proportions match; do not reshape gameplay spaces to fit them.
+
+## Current pistol prototype
+
+- The first weapon is the semi-automatic pistol in `RedBreach/weapons/gym_pistol.tscn`, attached to GymPlayer's Camera3D. See `docs/pistol-gym.md` for tuning, scope, and validation.
+- LMB fires, RMB holds ADS, R reloads, and Backspace resets/refills the gym. Preserve the click-to-recapture behavior after Escape.
+- Keep Ready/Reloading and Hip/ADS transitions in the pistol's editable StateCharts. Instance ammo/cooldowns/recoil are runtime state; per-weapon resource consolidation remains deferred in Future Refinements FR-001.
+- Camera kick and aim drift affect the actual aim used for shooting. Preserve sight alignment, immediate mouse response, and muzzle obstruction checks.
+- Runway measurements accept only ordinary WALK/SPRINT modes; ADS must cancel or prevent a timed run.
+- The combined rebuild validation includes pistol checks. Use the actual camera viewport for projected sight alignment, since a headless window can have different dimensions.

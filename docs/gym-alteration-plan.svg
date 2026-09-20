@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000"><title>Red Breach high-jump relocation plan</title>
+<text x="50" y="60" font-family="Segoe UI,Arial" font-size="32" font-weight="700" fill="#e4eff2">RED BREACH / ALTERATION TEST</text>
+<text x="50" y="99" font-family="Segoe UI,Arial" font-size="23" font-weight="400" fill="#8fd9c4">Move the existing high-jump blocks beside the long-jump approaches.</text>
+<text x="50" y="133" font-family="Segoe UI,Arial" font-size="18" font-weight="400" fill="#aec1c9">Top-down plan | north = -Z | metres | baseline 0.0.003 | two brushes + their labels</text>
+<rect x="60" y="190" width="684" height="532" fill="#1b2c35" stroke="#607985" stroke-width="2"/>
+<rect x="820" y="266" width="456" height="456" fill="#1b2c35" stroke="#607985" stroke-width="2"/>
+<line x1="79" y1="190" x2="79" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="98" y1="190" x2="98" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="117" y1="190" x2="117" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="136" y1="190" x2="136" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="155" y1="190" x2="155" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="174" y1="190" x2="174" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="193" y1="190" x2="193" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="212" y1="190" x2="212" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="231" y1="190" x2="231" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="250" y1="190" x2="250" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="269" y1="190" x2="269" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="288" y1="190" x2="288" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="307" y1="190" x2="307" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="326" y1="190" x2="326" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="345" y1="190" x2="345" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="364" y1="190" x2="364" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="383" y1="190" x2="383" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="402" y1="190" x2="402" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="421" y1="190" x2="421" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="440" y1="190" x2="440" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="459" y1="190" x2="459" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="478" y1="190" x2="478" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="497" y1="190" x2="497" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="516" y1="190" x2="516" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="535" y1="190" x2="535" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="554" y1="190" x2="554" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="573" y1="190" x2="573" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="592" y1="190" x2="592" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="611" y1="190" x2="611" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="630" y1="190" x2="630" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="649" y1="190" x2="649" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="668" y1="190" x2="668" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="687" y1="190" x2="687" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="706" y1="190" x2="706" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="725" y1="190" x2="725" y2="722" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="209" x2="744" y2="209" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="228" x2="744" y2="228" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="247" x2="744" y2="247" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="266" x2="744" y2="266" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="285" x2="744" y2="285" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="304" x2="744" y2="304" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="323" x2="744" y2="323" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="342" x2="744" y2="342" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="361" x2="744" y2="361" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="380" x2="744" y2="380" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="399" x2="744" y2="399" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="418" x2="744" y2="418" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="437" x2="744" y2="437" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="456" x2="744" y2="456" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="475" x2="744" y2="475" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="494" x2="744" y2="494" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="513" x2="744" y2="513" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="532" x2="744" y2="532" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="551" x2="744" y2="551" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="570" x2="744" y2="570" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="589" x2="744" y2="589" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="608" x2="744" y2="608" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="627" x2="744" y2="627" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="646" x2="744" y2="646" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="665" x2="744" y2="665" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="684" x2="744" y2="684" stroke="#293e49" stroke-width="1"/>
+<line x1="60" y1="703" x2="744" y2="703" stroke="#293e49" stroke-width="1"/>
+<rect x="98" y="228" width="342" height="57" fill="#244239" stroke="#607985" stroke-width="2"/>
+<rect x="383" y="285" width="57" height="399" fill="#244239" stroke="#607985" stroke-width="2"/>
+<rect x="98" y="608" width="608" height="76" fill="#244239" stroke="#8fd9c4" stroke-width="2"/>
+<rect x="744" y="627" width="76" height="57" fill="#244239" stroke="#607985" stroke-width="2"/>
+<rect x="98" y="285" width="57" height="133" fill="#365c62" stroke="#607985" stroke-width="2"/>
+<rect x="98" y="418" width="57" height="38" fill="#090f16" stroke="#ed8e80" stroke-width="2"/>
+<rect x="98" y="456" width="57" height="152" fill="#2b4555" stroke="#607985" stroke-width="2"/>
+<text x="106" y="495" font-family="Segoe UI,Arial" font-size="20" font-weight="700" fill="#9dcbe5">J1</text>
+<text x="107" y="436" font-family="Segoe UI,Arial" font-size="16" font-weight="400" fill="#ed8e80">2 m</text>
+<rect x="174" y="285" width="57" height="114" fill="#365c62" stroke="#607985" stroke-width="2"/>
+<rect x="174" y="399" width="57" height="57" fill="#090f16" stroke="#ed8e80" stroke-width="2"/>
+<rect x="174" y="456" width="57" height="152" fill="#2b4555" stroke="#607985" stroke-width="2"/>
+<text x="182" y="495" font-family="Segoe UI,Arial" font-size="20" font-weight="700" fill="#9dcbe5">J2</text>
+<text x="183" y="417" font-family="Segoe UI,Arial" font-size="16" font-weight="400" fill="#ed8e80">3 m</text>
+<rect x="250" y="285" width="57" height="95" fill="#365c62" stroke="#607985" stroke-width="2"/>
+<rect x="250" y="380" width="57" height="76" fill="#090f16" stroke="#ed8e80" stroke-width="2"/>
+<rect x="250" y="456" width="57" height="152" fill="#2b4555" stroke="#607985" stroke-width="2"/>
+<text x="258" y="495" font-family="Segoe UI,Arial" font-size="20" font-weight="700" fill="#9dcbe5">J3</text>
+<text x="259" y="398" font-family="Segoe UI,Arial" font-size="16" font-weight="400" fill="#ed8e80">4 m</text>
+<rect x="326" y="285" width="57" height="76" fill="#365c62" stroke="#607985" stroke-width="2"/>
+<rect x="326" y="361" width="57" height="95" fill="#090f16" stroke="#ed8e80" stroke-width="2"/>
+<rect x="326" y="456" width="57" height="152" fill="#2b4555" stroke="#607985" stroke-width="2"/>
+<text x="334" y="495" font-family="Segoe UI,Arial" font-size="20" font-weight="700" fill="#9dcbe5">J4</text>
+<text x="335" y="379" font-family="Segoe UI,Arial" font-size="16" font-weight="400" fill="#ed8e80">5 m</text>
+<text x="117" y="645.0" font-family="Segoe UI,Arial" font-size="18" font-weight="400" fill="#8fd9c4">4 m staging route stays open</text>
+<rect x="630" y="228" width="76" height="456" fill="#25493e" stroke="#8fd9c4" stroke-width="2"/>
+<text x="633.8" y="455" font-family="Segoe UI,Arial" font-size="18" font-weight="400" fill="#8fd9c4">20 m</text>
+<rect x="459" y="304" width="76" height="28.5" fill="#554433" stroke="#f1bf7c" stroke-width="2"/>
+<text x="462.8" y="320" font-family="Segoe UI,Arial" font-size="16" font-weight="400" fill="#f1bf7c">1</text>
+<rect x="459" y="380" width="76" height="28.5" fill="#554433" stroke="#f1bf7c" stroke-width="2"/>
+<text x="462.8" y="396" font-family="Segoe UI,Arial" font-size="16" font-weight="400" fill="#f1bf7c">1.25</text>
+<rect x="459" y="456" width="76" height="28.5" fill="#554433" stroke="#f1bf7c" stroke-width="2"/>
+<text x="462.8" y="472" font-family="Segoe UI,Arial" font-size="16" font-weight="400" fill="#f1bf7c">1.5</text>
+<rect x="478" y="532" width="38" height="19" fill="#695139" stroke="#f1bf7c" stroke-width="2"/>
+<rect x="117" y="684" width="38" height="19" fill="#a85d48" stroke="#ffc29b" stroke-width="2"/>
+<rect x="193" y="684" width="38" height="19" fill="#a85d48" stroke="#ffc29b" stroke-width="2"/>
+<line x1="136" y1="684" x2="136" y2="668.8" stroke="#ffc29b" stroke-width="2"/>
+<line x1="212" y1="684" x2="212" y2="668.8" stroke="#ffc29b" stroke-width="2"/>
+<text x="79" y="747" font-family="Segoe UI,Arial" font-size="17" font-weight="700" fill="#ffc29b">LOW 0.75 m    2 m gap    HIGH 1.25 m</text>
+<text x="117" y="786.5" font-family="Segoe UI,Arial" font-size="17" font-weight="400" fill="#aec1c9">Both footprints: 2 m x 1 m; 1 m behind to wall.</text>
+<text x="877" y="296.6" font-family="Segoe UI,Arial" font-size="23" font-weight="700" fill="#aec1c9">ORIGINAL GYM</text>
+<rect x="858" y="323" width="114" height="57" fill="#344349" stroke="#607985" stroke-width="2"/>
+<rect x="858" y="380" width="38" height="76" fill="#3a515d" stroke="#607985" stroke-width="2"/>
+<rect x="934" y="380" width="38" height="114" fill="#4d4840" stroke="#607985" stroke-width="2"/>
+<rect x="1029" y="475" width="38" height="19" fill="#1b2c35" stroke="#ed8e80" stroke-width="2"/>
+<line x1="1029" y1="475" x2="1067" y2="494" stroke="#ed8e80" stroke-width="2"/>
+<line x1="1067" y1="475" x2="1029" y2="494" stroke="#ed8e80" stroke-width="2"/>
+<rect x="1029" y="418" width="38" height="19" fill="#1b2c35" stroke="#ed8e80" stroke-width="2"/>
+<line x1="1029" y1="418" x2="1067" y2="437" stroke="#ed8e80" stroke-width="2"/>
+<line x1="1067" y1="418" x2="1029" y2="437" stroke="#ed8e80" stroke-width="2"/>
+<text x="1086" y="455" font-family="Segoe UI,Arial" font-size="18" font-weight="400" fill="#ed8e80">Old sites:</text>
+<text x="1086" y="483.5" font-family="Segoe UI,Arial" font-size="18" font-weight="400" fill="#ed8e80">clear floor</text>
+<line x1="858" y1="570" x2="886.5" y2="570" stroke="#a49679" stroke-width="7"/>
+<line x1="905.5" y1="570" x2="934" y2="570" stroke="#a49679" stroke-width="7"/>
+<line x1="953" y1="570" x2="976.75" y2="570" stroke="#a49679" stroke-width="7"/>
+<line x1="1005.25" y1="570" x2="1029" y2="570" stroke="#a49679" stroke-width="7"/>
+<line x1="1048" y1="570" x2="1067.0" y2="570" stroke="#a49679" stroke-width="7"/>
+<line x1="1105.0" y1="570" x2="1124" y2="570" stroke="#a49679" stroke-width="7"/>
+<text x="1010" y="673.5" font-family="Segoe UI,Arial" font-size="18" font-weight="400" fill="#8fd9c4">SPAWN</text>
+<text x="1330" y="249" font-family="Segoe UI,Arial" font-size="19" font-weight="700" fill="#ffc29b">LOW</text>
+<text x="1330" y="283" font-family="Segoe UI,Arial" font-size="17" font-weight="400" fill="#e4eff2">X: -49 to -47</text>
+<text x="1330" y="311" font-family="Segoe UI,Arial" font-size="17" font-weight="400" fill="#e4eff2">Z: 10 to 11</text>
+<text x="1330" y="339" font-family="Segoe UI,Arial" font-size="17" font-weight="400" fill="#e4eff2">Height: 0.75 m</text>
+<text x="1330" y="399" font-family="Segoe UI,Arial" font-size="19" font-weight="700" fill="#ffc29b">HIGH</text>
+<text x="1330" y="433" font-family="Segoe UI,Arial" font-size="17" font-weight="400" fill="#e4eff2">X: -45 to -43</text>
+<text x="1330" y="461" font-family="Segoe UI,Arial" font-size="17" font-weight="400" fill="#e4eff2">Z: 10 to 11</text>
+<text x="1330" y="489" font-family="Segoe UI,Arial" font-size="17" font-weight="400" fill="#e4eff2">Height: 1.25 m</text>
+<text x="50" y="870" font-family="Segoe UI,Arial" font-size="23" font-weight="700" fill="#8fd9c4">VERIFY THE CHANGE</text>
+<text x="50" y="910" font-family="Segoe UI,Arial" font-size="20" font-weight="400" fill="#e4eff2">Old floor clear. New dimensions correct. Labels face the approaches. Routes remain usable.</text>
+<text x="50" y="945" font-family="Segoe UI,Arial" font-size="20" font-weight="400" fill="#aec1c9">Rebuild twice, save, reload, then repeat the checks. All other 67 brushes stay unchanged.</text>
+</svg>

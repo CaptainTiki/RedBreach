@@ -38,7 +38,7 @@ func run() -> void:
 	await ticks(30)
 	check(InputMap.action_get_events("gym_crouch")[0].physical_keycode == KEY_CTRL, "Crouch is bound to physical Ctrl")
 	check(player.get_node("PostureChart/Posture/Standing").active and not player.is_crouching(), "Editable posture State Chart starts Standing")
-	check(is_equal_approx(floor_height(0, -0.5), 0.75) and is_equal_approx(floor_height(0, -3.5), 1.25), "Both original high-jump blocks remain in place for the later relocation test")
+	check(is_equal_approx(floor_height(-48, 10.5), 0.75) and is_equal_approx(floor_height(-44, 10.5), 1.25), "Relocated high-jump blocks retain their heights beside the long-jump approaches")
 	for lane in gym.get_node("MovementAnnex/JumpLanes").get_children():
 		var pit_center: Vector3 = lane.global_position + Vector3(0, 0, -lane.gap_length * 0.5)
 		check(absf(floor_height(pit_center.x, pit_center.z) + 1.5) < 0.01, "%s has a real 1.5 m deep pit" % lane.name)

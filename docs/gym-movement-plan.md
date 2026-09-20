@@ -1,6 +1,6 @@
 # Movement gym extension: west annex
 
-Status: spatial plan approved; annex built and automated checks passed. User playtest is next. The drawing below preserves the approved planning artifact; see [playtest 03](gym-playtest-03.md) for implementation results. The existing high-jump blocks will be relocated only after this pass is tested.
+Status: spatial plan approved; annex built, validated, and accepted in the user's first playtest. The drawing below preserves the original approved planning artifact; see [playtest 03](gym-playtest-03.md) for implementation results. The subsequent [high-jump alteration plan](gym-alteration-plan.md) supersedes the two block positions shown here.
 
 ![Top-down plan and clearance sections](gym-movement-plan.png)
 
@@ -42,7 +42,7 @@ Run-up Z extent is -2 to 6 for every lane. Landing depth varies from 7 to 4 m, g
 
 A clean attempt starts in its marked approach, becomes airborne from that approach, and lands on the matching pad. Walking around or landing on a divider does not count. Show the lane, walking/sprinting mode, result, and horizontal takeoff-to-landing displacement. Test both comfortable jumps and attempts near the limit.
 
-On a miss, entering that pit below Y = -0.8 m resets the player to the lane centre at Z = 5, facing north, with velocity and camera history reset. The pit is 1.5 m deep and nonlethal. Each attempt has a local recovery point; R continues to return to the main gym spawn.
+On a miss, entering that pit below Y = -0.8 m resets the player to the lane centre at Z = 5, facing north, with velocity and camera history reset. The pit is 1.5 m deep and nonlethal. Each attempt has a local recovery point; Backspace returns to the main gym spawn (the pistol pass reassigned R to reload).
 
 Current idealized same-height flight time is about 0.69 s, giving roughly 3.44 m of walking travel or 5.50 m of sprint travel. These are estimates from the current controller values, not guaranteed clear-gap distances: collision edges and takeoff timing affect real results. Record the usable distances from playtesting before designing level gaps around them.
 

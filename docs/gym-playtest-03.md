@@ -1,6 +1,6 @@
 # Gym playtest 03: movement annex
 
-Status: built and validated on 2026-09-19; ready for the user's feel test. Built from local commit `104fae9` (Stair Helper), version `0.0.002`. Saved as version `0.0.003` in the local Movement Gym commit, with no push.
+Status: built and validated on 2026-09-19; the user subsequently accepted the gym playtest. The [alteration follow-up](gym-alteration-plan.md) records the requested high-jump relocation. The notes below describe the Movement Gym implementation before that move. Built from local commit `104fae9` (Stair Helper), version `0.0.002`. Saved as version `0.0.003` in the local Movement Gym commit, with no push.
 
 ## Built from the approved plan
 

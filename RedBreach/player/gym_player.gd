@@ -20,6 +20,7 @@ signal relocated
 
 @onready var camera: Camera3D = $Camera3D
 @onready var status: Label = $HUD/Status
+@onready var pistol = $Camera3D/Pistol
 var spawn_transform: Transform3D
 var hit_count: int = 0
 var control_override: bool = false
@@ -67,6 +68,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		_interaction_requested = true
 	if event.is_action_pressed("gym_release_mouse"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		pistol.update_controls(false)
+	if event.is_action_pressed("gym_reload") and (control_override or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED):
+		pistol.request_reload()
 	if event.is_action_pressed("gym_reset"):
 		reset_player()
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
@@ -74,14 +78,15 @@ func _unhandled_input(event: InputEvent) -> void:
 		_pitch = clampf(_pitch - event.relative.y * mouse_sensitivity, -1.45, 1.45)
 		_update_camera_aim()
 	if event.is_action_pressed("gym_fire"):
-		if Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
+		if not control_override and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		else:
-			fire_probe()
+			pistol.fire()
 
 func _update_camera_aim() -> void:
 	# Keep mouse look immediate; only movement is interpolated.
-	camera.global_basis = global_basis * Basis(Vector3.RIGHT, _pitch)
+	var recoil: Vector2 = pistol.aim_offset()
+	camera.global_basis = global_basis * Basis(Vector3.UP, recoil.y) * Basis(Vector3.RIGHT, clampf(_pitch + recoil.x, -1.5, 1.5))
 
 func _process(_delta: float) -> void:
 	var fraction := Engine.get_physics_interpolation_fraction()
@@ -100,11 +105,15 @@ func reset_camera_interpolation() -> void:
 
 func reset_player() -> void:
 	relocate(spawn_transform)
+	pistol.reset_weapon()
+	hit_count = 0
+	get_tree().call_group("gym_targets", "reset_target")
 
 func relocate(destination: Transform3D) -> void:
 	# All recovery destinations are authored with full standing clearance.
 	_interaction_requested = false
 	_snapped_to_step = false
+	pistol.cancel_handling()
 	global_transform = destination
 	velocity = Vector3.ZERO
 	_pitch = 0.0
@@ -118,6 +127,8 @@ func is_crouching() -> bool:
 	return $PostureChart/Posture/Crouched.active
 
 func movement_mode() -> String:
+	if pistol.is_ads():
+		return "CROUCH ADS" if is_crouching() else "ADS"
 	if is_crouching():
 		return "CROUCH"
 	return "SPRINT" if Input.is_action_pressed("gym_sprint") else "WALK"
@@ -191,10 +202,13 @@ func _physics_process(delta: float) -> void:
 	var controls_active := control_override or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED
 	var jump_requested := Input.is_action_just_pressed("gym_jump") and controls_active
 	_update_posture(was_grounded, jump_requested, controls_active)
+	pistol.update_controls(controls_active)
 	var axis := test_direction if control_override else Input.get_vector("gym_left", "gym_right", "gym_forward", "gym_back")
 	if not control_override and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
 		axis = Vector2.ZERO
 	var speed := crouch_speed if is_crouching() else (sprint_speed if Input.is_action_pressed("gym_sprint") else walk_speed)
+	if pistol.is_ads():
+		speed = (crouch_speed if is_crouching() else walk_speed) * pistol.ads_move_multiplier
 	var direction := global_basis * Vector3(axis.x, 0.0, axis.y)
 	velocity.x = direction.x * speed
 	velocity.z = direction.z * speed
@@ -223,7 +237,7 @@ func _physics_process(delta: float) -> void:
 	if global_position.y < -10.0:
 		reset_player()
 	_update_interaction()
-	status.text = "GYM 01 + ANNEX / %s / Hits: %d\nWASD move   Shift sprint   Ctrl crouch   Space jump\nLMB probe   E use   Esc release mouse   R reset" % [movement_mode(), hit_count]
+	status.text = "GYM 01 + ANNEX / %s / Hits: %d\nWASD move   Shift sprint   Ctrl crouch   Space jump\nLMB fire   RMB aim   R reload   E use\nEsc release mouse   Backspace reset" % [movement_mode(), hit_count]
 
 func is_grounded() -> bool:
 	# A capsule can touch a stair corner with a steep normal even though there is

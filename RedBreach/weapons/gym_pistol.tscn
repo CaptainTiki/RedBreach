@@ -1,0 +1,261 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://weapons/gym_pistol.gd" id="1"]
+
+[ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="chart"]
+
+[ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="compound"]
+
+[ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="atomic"]
+
+[ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="transition"]
+
+[ext_resource type="AudioStream" path="res://weapons/pistol_shot.wav" id="shot"]
+
+[ext_resource type="AudioStream" path="res://weapons/pistol_reload.wav" id="reload"]
+
+[ext_resource type="AudioStream" path="res://weapons/pistol_dry.wav" id="dry"]
+
+[sub_resource type="StandardMaterial3D" id="Frame"]
+albedo_color = Color(0.075, 0.09, 0.105, 1)
+metallic = 0.5
+roughness = 0.55
+
+[sub_resource type="StandardMaterial3D" id="Slide"]
+albedo_color = Color(0.30, 0.34, 0.38, 1)
+metallic = 0.75
+roughness = 0.55
+
+[sub_resource type="StandardMaterial3D" id="Grip"]
+albedo_color = Color(0.035, 0.045, 0.052, 1)
+metallic = 0
+roughness = 0.55
+
+[sub_resource type="StandardMaterial3D" id="Accent"]
+albedo_color = Color(0.22, 0.8, 0.78, 1)
+metallic = 0.2
+roughness = 0.55
+shading_mode = 0
+
+[sub_resource type="StandardMaterial3D" id="Flash"]
+albedo_color = Color(1, 0.7, 0.25, 1)
+metallic = 0
+roughness = 0.55
+shading_mode = 0
+
+[sub_resource type="BoxMesh" id="MeshSlide"]
+material = SubResource("Slide")
+size = Vector3(0.075, 0.075, 0.31)
+
+[sub_resource type="BoxMesh" id="MeshBody"]
+material = SubResource("Frame")
+size = Vector3(0.065, 0.055, 0.26)
+
+[sub_resource type="BoxMesh" id="MeshGrip"]
+material = SubResource("Grip")
+size = Vector3(0.064, 0.14, 0.075)
+
+[sub_resource type="BoxMesh" id="MeshBarrel"]
+material = SubResource("Frame")
+size = Vector3(0.033, 0.032, 0.035)
+
+[sub_resource type="BoxMesh" id="MeshGuardBottom"]
+material = SubResource("Frame")
+size = Vector3(0.015, 0.014, 0.09)
+
+[sub_resource type="BoxMesh" id="MeshGuardFront"]
+material = SubResource("Frame")
+size = Vector3(0.015, 0.062, 0.014)
+
+[sub_resource type="BoxMesh" id="MeshRearSight"]
+material = SubResource("Frame")
+size = Vector3(0.019, 0.034, 0.026)
+
+[sub_resource type="BoxMesh" id="MeshFrontSight"]
+material = SubResource("Accent")
+size = Vector3(0.008, 0.02, 0.013)
+
+[sub_resource type="BoxMesh" id="MeshSideAccent"]
+material = SubResource("Accent")
+size = Vector3(0.003, 0.01, 0.065)
+
+[sub_resource type="BoxMesh" id="MeshFlash"]
+material = SubResource("Flash")
+size = Vector3(0.04, 0.035, 0.1)
+
+[node name="Pistol" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Pose" type="Node3D" parent="."]
+position = Vector3(0.24, -0.22, -0.48)
+
+[node name="Recoil" type="Node3D" parent="Pose"]
+
+[node name="Slide" type="MeshInstance3D" parent="Pose/Recoil"]
+position = Vector3(0, 0.055, -0.105)
+mesh = SubResource("MeshSlide")
+cast_shadow = 0
+
+[node name="Body" type="MeshInstance3D" parent="Pose/Recoil"]
+position = Vector3(0, 0, -0.09)
+mesh = SubResource("MeshBody")
+cast_shadow = 0
+
+[node name="Grip" type="MeshInstance3D" parent="Pose/Recoil"]
+position = Vector3(0, -0.083, 0.005)
+mesh = SubResource("MeshGrip")
+cast_shadow = 0
+rotation_degrees = Vector3(-12, 0, 0)
+
+[node name="Barrel" type="MeshInstance3D" parent="Pose/Recoil"]
+position = Vector3(0, 0.044, -0.277)
+mesh = SubResource("MeshBarrel")
+cast_shadow = 0
+
+[node name="GuardBottom" type="MeshInstance3D" parent="Pose/Recoil"]
+position = Vector3(0, -0.075, -0.063)
+mesh = SubResource("MeshGuardBottom")
+cast_shadow = 0
+
+[node name="GuardFront" type="MeshInstance3D" parent="Pose/Recoil"]
+position = Vector3(0, -0.041, -0.105)
+mesh = SubResource("MeshGuardFront")
+cast_shadow = 0
+
+[node name="RearSightLeft" type="MeshInstance3D" parent="Pose/Recoil"]
+position = Vector3(-0.0255, 0.088, 0.025)
+mesh = SubResource("MeshRearSight")
+cast_shadow = 0
+
+[node name="RearSightRight" type="MeshInstance3D" parent="Pose/Recoil"]
+position = Vector3(0.0255, 0.088, 0.025)
+mesh = SubResource("MeshRearSight")
+cast_shadow = 0
+
+[node name="FrontSight" type="MeshInstance3D" parent="Pose/Recoil"]
+position = Vector3(0, 0.095, -0.237)
+mesh = SubResource("MeshFrontSight")
+cast_shadow = 0
+
+[node name="SideAccent" type="MeshInstance3D" parent="Pose/Recoil"]
+position = Vector3(0.038, 0.057, -0.12)
+mesh = SubResource("MeshSideAccent")
+cast_shadow = 0
+
+[node name="MuzzleFlash" type="MeshInstance3D" parent="Pose/Recoil"]
+position = Vector3(0, 0.044, -0.335)
+mesh = SubResource("MeshFlash")
+cast_shadow = 0
+visible = false
+
+[node name="Muzzle" type="Marker3D" parent="Pose/Recoil"]
+position = Vector3(0, 0.044, -0.30)
+
+[node name="ReloadTimer" type="Timer" parent="."]
+one_shot = true
+process_callback = 0
+
+[node name="ShotSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("shot")
+volume_db = -12.0
+
+[node name="ReloadSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("reload")
+volume_db = -17.0
+
+[node name="DrySound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("dry")
+volume_db = -16.0
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Ammo" type="Label" parent="HUD"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -290.0
+offset_top = -108.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+horizontal_alignment = 2
+mouse_filter = 2
+text = "PISTOL  12 / 60\nHIP FIRE"
+
+[node name="HitMarker" type="Label" parent="HUD"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -20.0
+offset_right = 18.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "x"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 30
+theme_override_colors/font_color = Color(0.5, 1, 0.8, 1)
+mouse_filter = 2
+visible = false
+
+[node name="HandlingChart" type="Node" parent="."]
+script = ExtResource("chart")
+track_in_editor = true
+
+[node name="Handling" type="Node" parent="HandlingChart"]
+script = ExtResource("compound")
+initial_state = NodePath("Ready")
+
+[node name="Ready" type="Node" parent="HandlingChart/Handling"]
+script = ExtResource("atomic")
+
+[node name="ToReloading" type="Node" parent="HandlingChart/Handling/Ready"]
+script = ExtResource("transition")
+to = NodePath("../../Reloading")
+event = &"reload"
+
+[node name="Reloading" type="Node" parent="HandlingChart/Handling"]
+script = ExtResource("atomic")
+
+[node name="ToReady" type="Node" parent="HandlingChart/Handling/Reloading"]
+script = ExtResource("transition")
+to = NodePath("../../Ready")
+event = &"ready"
+
+[node name="AimChart" type="Node" parent="."]
+script = ExtResource("chart")
+track_in_editor = true
+
+[node name="Aim" type="Node" parent="AimChart"]
+script = ExtResource("compound")
+initial_state = NodePath("Hip")
+
+[node name="Hip" type="Node" parent="AimChart/Aim"]
+script = ExtResource("atomic")
+
+[node name="ToADS" type="Node" parent="AimChart/Aim/Hip"]
+script = ExtResource("transition")
+to = NodePath("../../ADS")
+event = &"aim"
+
+[node name="ADS" type="Node" parent="AimChart/Aim"]
+script = ExtResource("atomic")
+
+[node name="ToHip" type="Node" parent="AimChart/Aim/ADS"]
+script = ExtResource("transition")
+to = NodePath("../../Hip")
+event = &"hip"
+
+[connection signal="state_entered" from="HandlingChart/Handling/Reloading" to="." method="_on_reload_entered"]
+
+[connection signal="timeout" from="ReloadTimer" to="." method="_on_reload_timeout"]

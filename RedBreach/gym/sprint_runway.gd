@@ -39,7 +39,7 @@ func _physics_process(delta: float) -> void:
 	var location := to_local(player.global_position)
 	var inside := _inside_width(location)
 	var mode: String = player.movement_mode()
-	var valid_posture: bool = player.is_grounded() and not player.is_crouching() and absf(location.y) < 0.1
+	var valid_posture: bool = player.is_grounded() and not player.is_crouching() and absf(location.y) < 0.1 and mode in ["WALK", "SPRINT"]
 	if running:
 		if not inside or not valid_posture or mode != _mode or location.z > _previous.z + 0.001:
 			running = false
