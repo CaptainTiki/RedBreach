@@ -20,4 +20,5 @@ if ($Validate) {
     Invoke-GymScript 'res://tools/validate_gym.gd' 'gym_qa.log'
     Invoke-GymScript 'res://tools/validate_motion.gd' 'motion_qa.log' 120
     Invoke-GymScript 'res://tools/validate_door.gd' 'door_qa.log' 120
+    Invoke-GymScript 'res://tools/validate_annex.gd' 'annex_qa.log' 120
 }

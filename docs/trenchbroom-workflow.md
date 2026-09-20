@@ -6,14 +6,14 @@
 - TrenchBroom 2025.4 at `D:\TrenchBroom\TrenchBroom.exe`.
 - func_godot 2025.12 and Godot State Charts 0.22.5, both enabled.
 - Mapping format: Valve 220; scale: 32 map units per Godot metre.
-- Grid textures are 128 x 128 pixels at 0.25 UV scale, giving a 1 m major grid and 0.25 m subdivisions.
+- Original gym grids are 128 x 128 pixels at 0.25 UV scale, giving a 1 m major grid and 0.25 m subdivisions. The annex uses plain Kenney grids at 0.0625 scale: 2 m texture repeats and 0.25 m fine squares; see [texture notes](blockout-textures.md).
 - Coordinate conversion used by func_godot: Godot `(X,Y,Z) = map (Y,Z,X) / 32`. The plan's north is Godot -Z, corresponding to map -X.
 
 ## Play
 
 Open `RedBreach/project.godot` and press F5. Main scene: `res://gym/gym.tscn`.
 
-- WASD: walk; Shift: sprint; Space: jump.
+- WASD: walk; Shift: sprint; Space: jump; hold Ctrl: crouch.
 - Mouse: look; left click: hitscan probe with target hit feedback; E: use an aimed switch within 2 m.
 - Escape: release mouse; click: recapture; R: reset to spawn.
 
@@ -22,14 +22,14 @@ The probe is a test tool. There is no weapon/ammo system or enemy AI yet. State 
 ## Edit the map
 
 1. Open `RedBreach/maps/gym_01.map` in TrenchBroom using the **Red Breach** game and **Valve** format.
-2. Game path: `D:\Godot\REPOs\RedBreach\RedBreach`. Material collection: `gym`.
+2. Game path: `D:\Godot\REPOs\RedBreach\RedBreach`. Material collections: `gym`, `greybox/Dark`, `greybox/Light`, `greybox/Green`, `greybox/Purple`, and `greybox/Orange`.
 3. Edit the brushes and save the map.
 4. In Godot, open `gym/gym.tscn`, select **Geometry**, and press **Build Map** in the Inspector.
 5. Save the scene and press F5.
 
 A `.map` reimport alone does not rebuild the saved scene. Explicitly build and save Geometry. Changes to generated Geometry children will be replaced at the next build. Keep the source map and baked scene together in commits.
 
-Alternatively, from the repository root run `./tools/rebuild-gym.ps1`. Add `-Validate` to run the baseline gym checks. Pass `-GodotPath` if the editor executable is elsewhere. Save any open Godot scene edits before running the command, then reload the scene if prompted.
+Alternatively, from the repository root run `./tools/rebuild-gym.ps1`. Add `-Validate` to run the gym, movement, door, and annex checks. Pass `-GodotPath` if the editor executable is elsewhere. Save any open Godot scene edits before running the command, then reload the scene if prompted.
 
 ## Configuration sources
 
@@ -69,3 +69,17 @@ See [gym playtest 01](gym-playtest-01.md) for the user's scale findings and the 
 ## Door module
 
 `RedBreach/interaction/sliding_door.tscn` is a reusable authored scene outside Geometry. Its StateChart node owns the five behavior states. See [door module notes](gym-door-module.md) for controls, placement, state flow, and validation. The combined validation command includes `validate_door.gd`.
+
+## Movement annex and alteration test
+
+The saved gym now contains 69 brush collisions, including the west annex. Its authored `MovementAnnex` instance stays outside Geometry. Jump lane and runway coordinates are relative to editable station roots; reset points and signs are children of those roots. The full validation command includes 58 annex checks. See [playtest 03](gym-playtest-03.md).
+
+After the user playtests the annex, deliberately move the original 0.75 m and 1.25 m high-jump blocks beside the horizontal jump tests:
+
+1. Mark the intended destination on the 2D plan, preserving approaches and return routes.
+2. In TrenchBroom, move the two existing block brushes and save the map. Retain their heights.
+3. In Godot, move `Labels/CoverLow` and `Labels/CoverHigh` to match. These original blocks have no reset/measurement triggers; other stations do, so move their authored station roots too when applicable.
+4. Rebuild Geometry, save, and reload the scene. Verify the old positions are clear, the new positions have the expected collision/heights, and labels agree.
+5. Update intentional coordinate expectations in validation and run `tools/rebuild-gym.ps1 -Validate`. Playtest access to both jump types and repeat the source build to prove the alteration persists.
+
+Moving a solid block is a small change. Moving a pit lane or doorway also requires editing the surrounding floor or wall opening, since those voids are assembled from solid brushes. Gameplay placement is currently a separate Godot edit; it is not automatically moved by TrenchBroom.

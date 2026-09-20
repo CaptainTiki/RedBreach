@@ -38,7 +38,7 @@ func run() -> void:
 	player.control_override = true
 	await ticks(30)
 	check(player.is_on_floor() and absf(player.position.y) < 0.08, "Saved scene has a solid floor at spawn")
-	check(gym.get_node("Geometry").find_children("*", "CollisionShape3D", true, false).size() == 26, "All 26 brush collision shapes survive save/reload")
+	check(gym.get_node("Geometry").find_children("*", "CollisionShape3D", true, false).size() == 69, "All 69 brush collision shapes survive save/reload")
 	check(InputMap.action_get_events("gym_sprint")[0].physical_keycode == KEY_SHIFT, "Sprint is bound to physical Shift")
 	check(InputMap.action_get_events("gym_jump")[0].physical_keycode == KEY_SPACE, "Jump is bound to physical Space")
 	await teleport(Vector3(0, 0.05, 9))

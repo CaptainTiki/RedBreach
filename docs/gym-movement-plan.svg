@@ -1,0 +1,394 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1440" viewBox="0 0 1920 1440">
+<title>Red Breach movement gym extension: proposed top-down plan</title>
+<desc>A west-side annex with four jump lanes, a 20 meter sprint runway, and three crouch clearance tunnels, connected to the existing gym by a three meter opening.</desc>
+<rect x="0" y="0" width="1920" height="1440" rx="0" fill="#101b23" stroke="none" stroke-width="1"/>
+<text x="60" y="66" fill="#edf3f4" font-family="Segoe UI,Arial,sans-serif" font-size="37" font-weight="700" text-anchor="start">RED BREACH</text>
+<text x="60" y="108" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700" text-anchor="start">MOVEMENT GYM / WEST ANNEX</text>
+<text x="60" y="144" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start">Top-down spatial plan  •  Godot metres  •  1 m grid  •  north = −Z</text>
+<rect x="1548" y="45" width="312" height="45" rx="8" fill="#3b3027" stroke="#f1bf7c" stroke-width="1"/>
+<text x="1704" y="75" fill="#f1bf7c" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">PROPOSED / NOT BUILT</text>
+<text x="1860" y="126" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="end">Plan 02 · 19 September 2026</text>
+<rect x="60" y="220" width="720" height="560" rx="0" fill="#1b2c35" stroke="none" stroke-width="1"/>
+<rect x="860" y="300" width="480" height="480" rx="0" fill="#202c34" stroke="none" stroke-width="1"/>
+<polyline points="80,220 80,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="100,220 100,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="120,220 120,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="140,220 140,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="160,220 160,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="180,220 180,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="200,220 200,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="220,220 220,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="240,220 240,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="260,220 260,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="280,220 280,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="300,220 300,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="320,220 320,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="340,220 340,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="360,220 360,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="380,220 380,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="400,220 400,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="420,220 420,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="440,220 440,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="460,220 460,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="480,220 480,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="500,220 500,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="520,220 520,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="540,220 540,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="560,220 560,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="580,220 580,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="600,220 600,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="620,220 620,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="640,220 640,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="660,220 660,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="680,220 680,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="700,220 700,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="720,220 720,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="740,220 740,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="760,220 760,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,240 780,240" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,260 780,260" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,280 780,280" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,300 780,300" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,320 780,320" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,340 780,340" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,360 780,360" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,380 780,380" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,400 780,400" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,420 780,420" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,440 780,440" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,460 780,460" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,480 780,480" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,500 780,500" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,520 780,520" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,540 780,540" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,560 780,560" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,580 780,580" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,600 780,600" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,620 780,620" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,640 780,640" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,660 780,660" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,680 780,680" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,700 780,700" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,720 780,720" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,740 780,740" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="60,760 780,760" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="880,300 880,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="900,300 900,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="920,300 920,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="940,300 940,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="960,300 960,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="980,300 980,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1000,300 1000,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1020,300 1020,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1040,300 1040,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1060,300 1060,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1080,300 1080,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1100,300 1100,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1120,300 1120,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1140,300 1140,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1160,300 1160,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1180,300 1180,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1200,300 1200,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1220,300 1220,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1240,300 1240,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1260,300 1260,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1280,300 1280,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1300,300 1300,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="1320,300 1320,780" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,320 1340,320" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,340 1340,340" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,360 1340,360" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,380 1340,380" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,400 1340,400" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,420 1340,420" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,440 1340,440" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,460 1340,460" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,480 1340,480" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,500 1340,500" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,520 1340,520" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,540 1340,540" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,560 1340,560" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,580 1340,580" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,600 1340,600" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,620 1340,620" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,640 1340,640" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,660 1340,660" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,680 1340,680" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,700 1340,700" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,720 1340,720" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,740 1340,740" fill="none" stroke="#293e49" stroke-width="1"/>
+<polyline points="860,760 1340,760" fill="none" stroke="#293e49" stroke-width="1"/>
+<rect x="100" y="260" width="360" height="60" rx="0" fill="#244239" stroke="none" stroke-width="1"/>
+<rect x="400" y="320" width="60" height="420" rx="0" fill="#244239" stroke="none" stroke-width="1"/>
+<rect x="100" y="660" width="640" height="80" rx="0" fill="#244239" stroke="none" stroke-width="1"/>
+<rect x="560" y="300" width="80" height="360" rx="0" fill="#25333a" stroke="none" stroke-width="1"/>
+<rect x="780" y="680" width="80" height="60" rx="0" fill="#244239" stroke="none" stroke-width="1"/>
+<polyline points="60,220 780,220 780,780 60,780 60,220" fill="none" stroke="#8fa6b0" stroke-width="5"/>
+<polyline points="860,300 1340,300 1340,780 860,780 860,300" fill="none" stroke="#8fa6b0" stroke-width="5"/>
+<polyline points="780,680 780,740" fill="none" stroke="#244239" stroke-width="7"/>
+<polyline points="860,680 860,740" fill="none" stroke="#244239" stroke-width="7"/>
+<polyline points="780,680 860,680" fill="none" stroke="#8fa6b0" stroke-width="5"/>
+<polyline points="780,740 860,740" fill="none" stroke="#8fa6b0" stroke-width="5"/>
+<polyline points="60,189 780,189" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="60,183 60,195" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="780,183 780,195" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<text x="420.0" y="179" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="middle">36 m annex</text>
+<polyline points="860,270 1340,270" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="860,264 860,276" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="1340,264 1340,276" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<text x="1100.0" y="260" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="middle">24 m existing gym</text>
+<polyline points="36,220 36,780" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="30,220 42,220" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="30,780 42,780" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<text x="26" y="500.0" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400" text-anchor="end">28</text>
+<text x="26" y="520.0" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400" text-anchor="end">m</text>
+<text x="100" y="251" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="700" text-anchor="start">01 / GAP JUMPS</text>
+<text x="480" y="251" fill="#f1bf7c" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" text-anchor="start">03 / CROUCH</text>
+<text x="700" y="251" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle">02</text>
+<text x="240" y="298.0" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="middle">NORTH RETURN</text>
+<rect x="100" y="320" width="60" height="140" rx="0" fill="#365c62" stroke="#9dcbe5" stroke-width="1"/>
+<rect x="100" y="460" width="60" height="40" rx="0" fill="#0b131c" stroke="#ed8e80" stroke-width="2"/>
+<rect x="100" y="500" width="60" height="160" rx="0" fill="#2b4555" stroke="#9dcbe5" stroke-width="1"/>
+<polyline points="100,500 160,500" fill="none" stroke="#edf3f4" stroke-width="3"/>
+<text x="130.0" y="487" fill="#ed8e80" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">2 m</text>
+<text x="130.0" y="338.0" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle">LAND</text>
+<polyline points="130.0,640 130.0,516.0" fill="none" stroke="#9dcbe5" stroke-width="2" stroke-dasharray="6 6"/>
+<polygon points="130.0,516.0 133.91468980700108,524.1040239211741 126.08531019299893,524.1040239211741" fill="#9dcbe5"/>
+<text x="130.0" y="610.0" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="middle">8 m</text>
+<text x="130.0" y="684.0" fill="#edf3f4" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle">J1</text>
+<rect x="180" y="320" width="60" height="120" rx="0" fill="#365c62" stroke="#9dcbe5" stroke-width="1"/>
+<rect x="180" y="440" width="60" height="60" rx="0" fill="#0b131c" stroke="#ed8e80" stroke-width="2"/>
+<rect x="180" y="500" width="60" height="160" rx="0" fill="#2b4555" stroke="#9dcbe5" stroke-width="1"/>
+<polyline points="180,500 240,500" fill="none" stroke="#edf3f4" stroke-width="3"/>
+<text x="210.0" y="477" fill="#ed8e80" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">3 m</text>
+<text x="210.0" y="338.0" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle">LAND</text>
+<polyline points="210.0,640 210.0,516.0" fill="none" stroke="#9dcbe5" stroke-width="2" stroke-dasharray="6 6"/>
+<polygon points="210.0,516.0 213.91468980700108,524.1040239211741 206.08531019299892,524.1040239211741" fill="#9dcbe5"/>
+<text x="210.0" y="610.0" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="middle">8 m</text>
+<text x="210.0" y="684.0" fill="#edf3f4" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle">J2</text>
+<rect x="260" y="320" width="60" height="100" rx="0" fill="#365c62" stroke="#9dcbe5" stroke-width="1"/>
+<rect x="260" y="420" width="60" height="80" rx="0" fill="#0b131c" stroke="#ed8e80" stroke-width="2"/>
+<rect x="260" y="500" width="60" height="160" rx="0" fill="#2b4555" stroke="#9dcbe5" stroke-width="1"/>
+<polyline points="260,500 320,500" fill="none" stroke="#edf3f4" stroke-width="3"/>
+<text x="290.0" y="467" fill="#ed8e80" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">4 m</text>
+<text x="290.0" y="338.0" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle">LAND</text>
+<polyline points="290.0,640 290.0,516.0" fill="none" stroke="#9dcbe5" stroke-width="2" stroke-dasharray="6 6"/>
+<polygon points="290.0,516.0 293.9146898070011,524.1040239211741 286.0853101929989,524.1040239211741" fill="#9dcbe5"/>
+<text x="290.0" y="610.0" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="middle">8 m</text>
+<text x="290.0" y="684.0" fill="#edf3f4" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle">J3</text>
+<rect x="340" y="320" width="60" height="80" rx="0" fill="#365c62" stroke="#9dcbe5" stroke-width="1"/>
+<rect x="340" y="400" width="60" height="100" rx="0" fill="#0b131c" stroke="#ed8e80" stroke-width="2"/>
+<rect x="340" y="500" width="60" height="160" rx="0" fill="#2b4555" stroke="#9dcbe5" stroke-width="1"/>
+<polyline points="340,500 400,500" fill="none" stroke="#edf3f4" stroke-width="3"/>
+<text x="370.0" y="457" fill="#ed8e80" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">5 m</text>
+<text x="370.0" y="338.0" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle">LAND</text>
+<polyline points="370.0,640 370.0,516.0" fill="none" stroke="#9dcbe5" stroke-width="2" stroke-dasharray="6 6"/>
+<polygon points="370.0,516.0 373.9146898070011,524.1040239211741 366.0853101929989,524.1040239211741" fill="#9dcbe5"/>
+<text x="370.0" y="610.0" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="middle">8 m</text>
+<text x="370.0" y="684.0" fill="#edf3f4" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle">J4</text>
+<polyline points="120,272.0 430.0,272.0 430.0,710.0" fill="none" stroke="#8fd9c4" stroke-width="2" stroke-dasharray="8 7"/>
+<polygon points="430.0,710.0 426.0853101929989,701.8959760788259 433.9146898070011,701.8959760788259" fill="#8fd9c4"/>
+<text x="430.0" y="440.0" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400" text-anchor="middle">3 m</text>
+<text x="430.0" y="464.0" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="middle">aisle</text>
+<polyline points="734.0,720 160,720" fill="none" stroke="#8fd9c4" stroke-width="2" stroke-dasharray="8 7"/>
+<polygon points="160,720 168.1040239211741,716.0853101929989 168.1040239211741,723.9146898070011" fill="#8fd9c4"/>
+<text x="240" y="766.0" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400" text-anchor="middle">4 m DEEP STAGING / RESET TO YOUR LANE</text>
+<rect x="480" y="340" width="80" height="30.0" rx="0" fill="#543937" stroke="#ed8e80" stroke-width="2"/>
+<text x="520" y="361.0" fill="#ed8e80" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">1 m</text>
+<polyline points="566.0,355.0 592.0,355.0" fill="none" stroke="#f1bf7c" stroke-width="2"/>
+<polygon points="592.0,355.0 586.5973173858839,357.60979320466737 586.5973173858839,352.39020679533263" fill="#f1bf7c"/>
+<rect x="480" y="420" width="80" height="30.0" rx="0" fill="#554433" stroke="#f1bf7c" stroke-width="2"/>
+<text x="520" y="441.0" fill="#f1bf7c" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">1.25 m</text>
+<polyline points="566.0,435.0 592.0,435.0" fill="none" stroke="#f1bf7c" stroke-width="2"/>
+<polygon points="592.0,435.0 586.5973173858839,437.60979320466737 586.5973173858839,432.39020679533263" fill="#f1bf7c"/>
+<rect x="480" y="500" width="80" height="30.0" rx="0" fill="#554433" stroke="#f1bf7c" stroke-width="2"/>
+<text x="520" y="521.0" fill="#f1bf7c" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">1.5 m</text>
+<polyline points="566.0,515.0 592.0,515.0" fill="none" stroke="#f1bf7c" stroke-width="2"/>
+<polygon points="592.0,515.0 586.5973173858839,517.6097932046674 586.5973173858839,512.3902067953326" fill="#f1bf7c"/>
+<text x="520" y="314.0" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="middle">ceiling height</text>
+<rect x="500" y="580" width="40" height="20" rx="0" fill="#695139" stroke="#f1bf7c" stroke-width="1"/>
+<circle cx="520" cy="540" r="6" fill="#ed8e80" stroke="none"/>
+<text x="552.0" y="596.0" fill="#f1bf7c" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">1 m cover</text>
+<circle cx="520" cy="640" r="7" fill="#f1bf7c" stroke="none"/>
+<polyline points="520,630.0 520,606.0" fill="none" stroke="#f1bf7c" stroke-width="2"/>
+<polygon points="520,606.0 522.6097932046674,611.4026826141161 517.3902067953326,611.4026826141161" fill="#f1bf7c"/>
+<rect x="660" y="260" width="80" height="480" rx="0" fill="#25493e" stroke="#8fd9c4" stroke-width="2"/>
+<rect x="660" y="260" width="80" height="40" rx="0" fill="#31584a" stroke="none" stroke-width="1"/>
+<rect x="660" y="700" width="80" height="40" rx="0" fill="#31584a" stroke="none" stroke-width="1"/>
+<polyline points="660,320 668.0,320" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,320 740,320" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,340 668.0,340" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,340 740,340" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,360 668.0,360" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,360 740,360" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,380 668.0,380" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,380 740,380" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,400 668.0,400" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,400 740,400" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,420 668.0,420" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,420 740,420" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,440 668.0,440" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,440 740,440" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,460 668.0,460" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,460 740,460" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,480 668.0,480" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,480 740,480" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,500 668.0,500" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,500 740,500" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,520 668.0,520" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,520 740,520" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,540 668.0,540" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,540 740,540" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,560 668.0,560" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,560 740,560" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,580 668.0,580" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,580 740,580" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,600 668.0,600" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,600 740,600" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,620 668.0,620" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,620 740,620" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,640 668.0,640" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,640 740,640" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,660 668.0,660" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,660 740,660" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,680 668.0,680" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="732.0,680 740,680" fill="none" stroke="#8fd9c4" stroke-width="1"/>
+<polyline points="660,300 740,300" fill="none" stroke="#edf3f4" stroke-width="3"/>
+<polyline points="660,700 740,700" fill="none" stroke="#edf3f4" stroke-width="3"/>
+<text x="700" y="284.0" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="middle">2 m</text>
+<text x="700" y="322.0" fill="#edf3f4" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle">FINISH</text>
+<text x="700" y="692.0" fill="#edf3f4" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle">START</text>
+<text x="700" y="728.0" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="400" text-anchor="middle">2 m</text>
+<polyline points="700,668.0 700,344.0" fill="none" stroke="#8fd9c4" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="700,344.0 703.9146898070011,352.1040239211741 696.0853101929989,352.1040239211741" fill="#8fd9c4"/>
+<rect x="666.0" y="476.0" width="68" height="36" rx="0" fill="#25493e" stroke="none" stroke-width="1"/>
+<text x="700" y="502.0" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">20 m</text>
+<text x="1100" y="336.0" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle">EXISTING GYM</text>
+<rect x="900" y="360" width="120" height="60" rx="0" fill="#344349" stroke="#627986" stroke-width="1"/>
+<rect x="900" y="420" width="40" height="80" rx="0" fill="#3a515d" stroke="none" stroke-width="1"/>
+<polyline points="900,430.0 940,430.0" fill="none" stroke="#79929f" stroke-width="1"/>
+<polyline points="900,440 940,440" fill="none" stroke="#79929f" stroke-width="1"/>
+<polyline points="900,450.0 940,450.0" fill="none" stroke="#79929f" stroke-width="1"/>
+<polyline points="900,460 940,460" fill="none" stroke="#79929f" stroke-width="1"/>
+<polyline points="900,470.0 940,470.0" fill="none" stroke="#79929f" stroke-width="1"/>
+<polyline points="900,480 940,480" fill="none" stroke="#79929f" stroke-width="1"/>
+<polyline points="900,490.0 940,490.0" fill="none" stroke="#79929f" stroke-width="1"/>
+<rect x="980" y="420" width="40" height="120" rx="0" fill="#4d4840" stroke="none" stroke-width="1"/>
+<polyline points="1000,530.0 1000,430.0" fill="none" stroke="#ac9c85" stroke-width="2"/>
+<polygon points="1000,430.0 1002.6097932046674,435.4026826141161 997.3902067953326,435.4026826141161" fill="#ac9c85"/>
+<rect x="1080" y="460" width="40" height="20" rx="0" fill="#674c46" stroke="none" stroke-width="1"/>
+<rect x="1080" y="520" width="40" height="20" rx="0" fill="#674c46" stroke="none" stroke-width="1"/>
+<circle cx="1220" cy="520" r="7" fill="#b77864" stroke="none"/>
+<circle cx="1252.0" cy="440" r="7" fill="#b77864" stroke="none"/>
+<circle cx="1284.0" cy="360" r="7" fill="#b77864" stroke="none"/>
+<polyline points="900,620 930.0,620" fill="none" stroke="#a49679" stroke-width="8"/>
+<polyline points="950.0,620 980,620" fill="none" stroke="#a49679" stroke-width="8"/>
+<polyline points="1000,620 1025.0,620" fill="none" stroke="#a49679" stroke-width="8"/>
+<polyline points="1055.0,620 1080,620" fill="none" stroke="#a49679" stroke-width="8"/>
+<polyline points="1100,620 1120.0,620" fill="none" stroke="#a49679" stroke-width="8"/>
+<polyline points="1160.0,620 1180,620" fill="none" stroke="#a49679" stroke-width="8"/>
+<text x="1120" y="664.0" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="middle">door · targets · stair / ramp tests</text>
+<circle cx="1100" cy="720" r="13" fill="#8fd9c4" stroke="none"/>
+<text x="1100" y="764.0" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">SPAWN</text>
+<polyline points="1080,720 876.0,720" fill="none" stroke="#8fd9c4" stroke-width="3"/>
+<polygon points="876.0,720 884.1040239211741,716.0853101929989 884.1040239211741,723.9146898070011" fill="#8fd9c4"/>
+<polyline points="848.0,710.0 792.0,710.0" fill="none" stroke="#8fd9c4" stroke-width="3"/>
+<polygon points="792.0,710.0 800.1040239211741,706.0853101929989 800.1040239211741,713.9146898070011" fill="#8fd9c4"/>
+<text x="820" y="664.0" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="middle">3 m</text>
+<text x="820" y="768.0" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="400" text-anchor="middle">4 m link</text>
+<rect x="1390" y="220" width="470" height="560" rx="12" fill="#182831" stroke="#354b56" stroke-width="1"/>
+<text x="1418" y="260" fill="#edf3f4" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" text-anchor="start">THE TEST LOOP</text>
+<text x="1418" y="305" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" text-anchor="start">01   DISTANCE</text>
+<text x="1418" y="337" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">8 m approach • 3 m wide lanes</text>
+<text x="1418" y="365" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">2 / 3 / 4 / 5 m gaps; level landings</text>
+<text x="1418" y="393" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Miss → reset at that lane’s approach</text>
+<polyline points="1418,414 1832,414" fill="none" stroke="#354b56" stroke-width="1"/>
+<text x="1418" y="450" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" text-anchor="start">02   SPEED</text>
+<text x="1418" y="482" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">20 m timing strip • 4 m wide</text>
+<text x="1418" y="510" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">2 m run-in + 2 m stopping space</text>
+<text x="1418" y="538" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Show walk / sprint time and best run</text>
+<polyline points="1418,560 1832,560" fill="none" stroke="#354b56" stroke-width="1"/>
+<text x="1418" y="596" fill="#f1bf7c" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" text-anchor="start">03   CLEARANCE</text>
+<text x="1418" y="628" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Hold Ctrl • 1.10 m crouched body</text>
+<text x="1418" y="656" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">1.0 m blocked / 1.25 + 1.5 m pass</text>
+<text x="1418" y="684" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Release beneath roof → stay crouched</text>
+<text x="1418" y="712" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Stand after clearing the low opening</text>
+<polyline points="60,813 160,813" fill="none" stroke="#edf3f4" stroke-width="2"/>
+<polyline points="60,806 60,820" fill="none" stroke="#edf3f4" stroke-width="2"/>
+<polyline points="160,806 160,820" fill="none" stroke="#edf3f4" stroke-width="2"/>
+<text x="176" y="819" fill="#edf3f4" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">5 m</text>
+<text x="302" y="819" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start">TEAL  circulation / sprint</text>
+<text x="600" y="819" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start">BLUE  jump pads</text>
+<text x="850" y="819" fill="#f1bf7c" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start">AMBER  crouch / cover</text>
+<text x="1170" y="819" fill="#ed8e80" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start">RED  gap / blocked clearance</text>
+<polyline points="1810,818 1810,793" fill="none" stroke="#aec1c9" stroke-width="2"/>
+<polygon points="1810,793 1813.0447587387787,799.3031297164688 1806.9552412612213,799.3031297164688" fill="#aec1c9"/>
+<text x="1830" y="813" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" text-anchor="start">N</text>
+<rect x="60" y="858" width="570" height="474" rx="12" fill="#182831" stroke="#354b56" stroke-width="1"/>
+<text x="86" y="904" fill="#f1bf7c" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start">CROUCH CLEARANCE / SIDE VIEW</text>
+<text x="86" y="938" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Standing body: 1.80 m  •  crouched: 1.10 m</text>
+<text x="86" y="966" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Same 0.60 m width; feet stay on the floor.</text>
+<rect x="99" y="1042.0" width="134" height="10" rx="0" fill="#ed8e80" stroke="none" stroke-width="1"/>
+<polyline points="93,1142 239,1142" fill="none" stroke="#edf3f4" stroke-width="2"/>
+<rect x="139" y="1043" width="54" height="99" rx="27" fill="#47656d" stroke="#ed8e80" stroke-width="2"/>
+<circle cx="171" cy="1056.5" r="3" fill="#edf3f4" stroke="none"/>
+<text x="166" y="1175" fill="#ed8e80" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">1 m</text>
+<text x="166" y="1203" fill="#ed8e80" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" text-anchor="middle">BLOCKED</text>
+<rect x="275" y="1019.5" width="134" height="10" rx="0" fill="#f1bf7c" stroke="none" stroke-width="1"/>
+<polyline points="269,1142 415,1142" fill="none" stroke="#edf3f4" stroke-width="2"/>
+<rect x="315" y="1043" width="54" height="99" rx="27" fill="#47656d" stroke="#f1bf7c" stroke-width="2"/>
+<circle cx="347" cy="1056.5" r="3" fill="#edf3f4" stroke="none"/>
+<text x="342" y="1175" fill="#f1bf7c" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">1.25 m</text>
+<text x="342" y="1203" fill="#f1bf7c" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" text-anchor="middle">SNUG</text>
+<rect x="451" y="997.0" width="134" height="10" rx="0" fill="#8fd9c4" stroke="none" stroke-width="1"/>
+<polyline points="445,1142 591,1142" fill="none" stroke="#edf3f4" stroke-width="2"/>
+<rect x="491" y="1043" width="54" height="99" rx="27" fill="#47656d" stroke="#8fd9c4" stroke-width="2"/>
+<circle cx="523" cy="1056.5" r="3" fill="#edf3f4" stroke="none"/>
+<text x="518" y="1175" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">1.5 m</text>
+<text x="518" y="1203" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" text-anchor="middle">GENEROUS</text>
+<text x="86" y="1251" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Hold Ctrl: slower movement and lower viewpoint.</text>
+<text x="86" y="1279" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Jump from crouch only after safe standing clearance.</text>
+<rect x="660" y="858" width="570" height="474" rx="12" fill="#182831" stroke="#354b56" stroke-width="1"/>
+<text x="686" y="904" fill="#9dcbe5" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start">GAP JUMP / SIDE VIEW</text>
+<text x="686" y="938" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Same takeoff and landing height.</text>
+<text x="686" y="966" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">8 m run-up; at least 4 m of landing depth.</text>
+<rect x="688" y="1106" width="224" height="52" rx="0" fill="#365261" stroke="none" stroke-width="1"/>
+<rect x="1052" y="1106" width="112" height="52" rx="0" fill="#365261" stroke="none" stroke-width="1"/>
+<rect x="912" y="1106" width="140" height="52" rx="0" fill="#0b131c" stroke="none" stroke-width="1"/>
+<polyline points="688,1106 912,1106" fill="none" stroke="#9dcbe5" stroke-width="3"/>
+<polyline points="1052,1106 1164,1106" fill="none" stroke="#9dcbe5" stroke-width="3"/>
+<polyline points="912,1106 912,1148 1052,1148 1052,1106" fill="none" stroke="#ed8e80" stroke-width="2"/>
+<polyline points="905.0,1106.0 908.95,1103.5625 912.9,1101.25 916.85,1099.0625 920.8,1097.0 924.75,1095.0625 928.7,1093.25 932.65,1091.5625 936.6,1090.0 940.55,1088.5625 944.5,1087.25 948.45,1086.0625 952.4,1085.0 956.35,1084.0625 960.3,1083.25 964.25,1082.5625 968.2,1082.0 972.15,1081.5625 976.1,1081.25 980.05,1081.0625 984.0,1081.0 987.95,1081.0625 991.9,1081.25 995.85,1081.5625 999.8,1082.0 1003.75,1082.5625 1007.7,1083.25 1011.65,1084.0625 1015.6,1085.0 1019.55,1086.0625 1023.5,1087.25 1027.45,1088.5625 1031.4,1090.0 1035.35,1091.5625 1039.3,1093.25 1043.25,1095.0625 1047.2,1097.0 1051.15,1099.0625 1055.1,1101.25 1059.05,1103.5625 1063.0,1106.0" fill="none" stroke="#edf3f4" stroke-width="2" stroke-dasharray="5 5"/>
+<polyline points="688,1045 912,1045" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="688,1039 688,1051" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="912,1039 912,1051" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<text x="800.0" y="1035" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="middle">8 m run-up</text>
+<polyline points="912,1185 1052,1185" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="912,1179 912,1191" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="1052,1179 1052,1191" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<text x="982.0" y="1175" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="middle">5 m gap</text>
+<polyline points="1052,1045 1164,1045" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="1052,1039 1052,1051" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<polyline points="1164,1039 1164,1051" fill="none" stroke="#aec1c9" stroke-width="1"/>
+<text x="1108.0" y="1035" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="middle">4 m pad</text>
+<text x="686" y="1232" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Gaps are measured edge to edge.</text>
+<text x="686" y="1260" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Misses reset locally; no damage or long walk back.</text>
+<text x="686" y="1288" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Passing distances come from the playtest.</text>
+<rect x="1260" y="858" width="600" height="474" rx="12" fill="#182831" stroke="#354b56" stroke-width="1"/>
+<text x="1286" y="904" fill="#edf3f4" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start">WHAT THIS PASS SETTLES</text>
+<text x="1286" y="954" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" text-anchor="start">01</text>
+<text x="1327" y="954" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Reliable walking and sprinting jump distances.</text>
+<text x="1286" y="1008" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" text-anchor="start">02</text>
+<text x="1327" y="1008" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Travel time for planning corridors and encounters.</text>
+<text x="1286" y="1062" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" text-anchor="start">03</text>
+<text x="1327" y="1062" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Crouched height, speed, and cover sightlines.</text>
+<text x="1286" y="1116" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" text-anchor="start">04</text>
+<text x="1327" y="1116" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Safe standing beneath and beyond low ceilings.</text>
+<text x="1286" y="1170" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" text-anchor="start">05</text>
+<text x="1327" y="1170" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Stairs, ramps, and doors still work in both stances.</text>
+<polyline points="1286,1211 1834,1211" fill="none" stroke="#354b56" stroke-width="1"/>
+<text x="1286" y="1248" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Sprint stays unlimited. Timing is a measurement tool.</text>
+<text x="1286" y="1277" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start">Next module: first weapon + ammo, then an enemy.</text>
+<text x="60" y="1383" fill="#8fd9c4" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" text-anchor="start">PLAN FIRST → REVIEW THE SPACE → BUILD IN TRENCHBROOM → PLAYTEST</text>
+<text x="1860" y="1383" fill="#aec1c9" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" text-anchor="end">Version 0.0.002 baseline · documentation only</text>
+</svg>

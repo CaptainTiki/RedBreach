@@ -24,8 +24,10 @@ See [the 2D plan](gym-plan.svg). This is a reusable mechanics gym. The second pa
 ## Later modules
 
 1. Completed: [State Charts door/switch module](gym-door-module.md) in the 2.0 m doorway.
-2. Test pickups and actual weapon behavior.
-3. Add a basic enemy and combat checks.
-4. After gym mechanics and scale feel right, plan the first real level in 2D with story beats, encounters, routes, and items.
+2. Built, awaiting user playtest: [movement annex](gym-movement-plan.md) for jump distance, sprint timing, and crouch. See [implementation and test results](gym-playtest-03.md).
+3. After annex playtesting, plan and perform a deliberate alteration test: relocate the existing high-jump blocks beside the long-jump lanes, rebuild, and verify old/new collision and labels.
+4. Test pickups and actual weapon behavior.
+5. Add a basic enemy and combat checks.
+6. After gym mechanics and scale feel right, plan the first real level in 2D with story beats, encounters, routes, and items.
 
 See [the pipeline guide](trenchbroom-workflow.md) for editing and rebuilding.

@@ -27,4 +27,4 @@ For the plain grids, use a full texture repeat of **2 m**, with **0.25 m fine sq
 - The existing gym textures are 128 px at scale 0.25, so their full repeat is 1 m. Do not copy that face scale onto the larger Kenney files: it would make a full repeat 8 m.
 - Keep horizontal and vertical scales equal. Check against a known 1 m brush before a broad material pass.
 
-The current gym retains its existing materials in this movement pass. Apply these conventions when we choose the next blockout texture pass. The func_godot base texture directory already points at `res://textures`; preserve the `greybox/<Color>/texture_NN` paths when selecting materials.
+The movement annex now uses these conventions: Light/Dark for neutral surfaces, Purple for jump lanes, Green for the runway and return route, and Orange for crouch tests. The original gym retains its existing materials as a comparison. Mipmaps are enabled for the six Kenney textures used in the annex so fine grids filter at distance. The func_godot base texture directory points at `res://textures`; preserve the `greybox/<Color>/texture_NN` paths when selecting materials.

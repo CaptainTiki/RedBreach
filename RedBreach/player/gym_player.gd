@@ -1,5 +1,12 @@
 extends CharacterBody3D
 ## Temporary scale-test controller. Game movement and weapon behavior are still open.
+signal jumped(origin: Vector3)
+signal relocated
+
+@export var crouch_height: float = 1.1
+@export var crouch_eye_height: float = 0.95
+@export var crouch_speed: float = 2.5
+@export_range(1.0, 30.0) var crouch_camera_smoothing: float = 12.0
 
 @export var walk_speed: float = 5.0
 @export var sprint_speed: float = 8.0
@@ -20,15 +27,31 @@ var test_direction := Vector2.ZERO
 var _interaction_requested: bool = false
 var _snapped_to_step: bool = false
 var _eye_height: float = 1.65
+var _previous_eye_height: float = 1.65
+var _target_eye_height: float = 1.65
+var _standing_eye_height: float = 1.65
+var _standing_shape: CapsuleShape3D
+var _standing_visual_height: float = 2.0
 var _pitch: float = 0.0
 var _previous_position := Vector3.ZERO
 var _current_position := Vector3.ZERO
 var _previous_eye_offset: float = 0.0
 var _eye_offset: float = 0.0
 
+func _enter_tree() -> void:
+	if not Engine.is_editor_hint() and not EngineDebugger.is_active():
+		$PostureChart.track_in_editor = false
+
 func _ready() -> void:
+	# Per-player copies: changing stance must never resize another instance.
+	$CollisionShape3D.shape = $CollisionShape3D.shape.duplicate()
+	_standing_shape = $CollisionShape3D.shape.duplicate()
+	$MeshInstance3D.mesh = $MeshInstance3D.mesh.duplicate()
+	_standing_visual_height = $MeshInstance3D.mesh.height
 	spawn_transform = global_transform
 	_eye_height = camera.position.y
+	_standing_eye_height = _eye_height
+	_target_eye_height = _eye_height
 	_pitch = camera.rotation.x
 	# Use the camera's world transform so the parent cannot bypass smoothing.
 	camera.top_level = true
@@ -63,10 +86,11 @@ func _update_camera_aim() -> void:
 func _process(_delta: float) -> void:
 	var fraction := Engine.get_physics_interpolation_fraction()
 	camera.global_position = _previous_position.lerp(_current_position, fraction)
-	camera.global_position.y += _eye_height + lerpf(_previous_eye_offset, _eye_offset, fraction)
+	camera.global_position.y += lerpf(_previous_eye_height, _eye_height, fraction) + lerpf(_previous_eye_offset, _eye_offset, fraction)
 	_update_camera_aim()
 
 func reset_camera_interpolation() -> void:
+	_previous_eye_height = _eye_height
 	_previous_position = global_position
 	_current_position = global_position
 	_previous_eye_offset = 0.0
@@ -75,12 +99,58 @@ func reset_camera_interpolation() -> void:
 	_update_camera_aim()
 
 func reset_player() -> void:
+	relocate(spawn_transform)
+
+func relocate(destination: Transform3D) -> void:
+	# All recovery destinations are authored with full standing clearance.
 	_interaction_requested = false
 	_snapped_to_step = false
-	global_transform = spawn_transform
+	global_transform = destination
 	velocity = Vector3.ZERO
 	_pitch = 0.0
+	$PostureChart.send_event("stand_requested")
+	_eye_height = _standing_eye_height
+	_target_eye_height = _standing_eye_height
 	reset_camera_interpolation()
+	relocated.emit()
+
+func is_crouching() -> bool:
+	return $PostureChart/Posture/Crouched.active
+
+func movement_mode() -> String:
+	if is_crouching():
+		return "CROUCH"
+	return "SPRINT" if Input.is_action_pressed("gym_sprint") else "WALK"
+
+func can_stand() -> bool:
+	var query := PhysicsShapeQueryParameters3D.new()
+	query.shape = _standing_shape
+	query.transform = global_transform.translated(Vector3.UP * (_standing_shape.height * 0.5 + safe_margin * 2.0))
+	query.collision_mask = collision_mask
+	query.exclude = [get_rid()]
+	return get_world_3d().direct_space_state.intersect_shape(query, 1).is_empty()
+
+func _on_standing_entered() -> void:
+	_set_posture_shape(_standing_shape.height, _standing_eye_height, _standing_visual_height)
+
+func _on_crouched_entered() -> void:
+	_set_posture_shape(crouch_height, crouch_eye_height, crouch_height)
+
+func _set_posture_shape(height: float, eye: float, visual_height: float) -> void:
+	$CollisionShape3D.shape.height = height
+	$CollisionShape3D.position.y = height * 0.5
+	$MeshInstance3D.mesh.height = visual_height
+	$MeshInstance3D.position.y = visual_height * 0.5
+	_target_eye_height = eye
+
+func _update_posture(grounded: bool, jump_requested: bool, controls_active: bool) -> void:
+	if not grounded or not controls_active:
+		return
+	if is_crouching():
+		if (not Input.is_action_pressed("gym_crouch") or jump_requested) and can_stand():
+			$PostureChart.send_event("stand_requested")
+	elif Input.is_action_pressed("gym_crouch") and not jump_requested:
+		$PostureChart.send_event("crouch_requested")
 
 func fire_probe() -> bool:
 	var start := camera.global_position
@@ -113,21 +183,26 @@ func _update_interaction() -> void:
 	$HUD/Interaction.text = target.get_interaction_prompt() if target != null else ""
 
 func _physics_process(delta: float) -> void:
+	_previous_eye_height = _eye_height
 	_previous_position = _current_position
 	_previous_eye_offset = _eye_offset
 	var before := global_position
 	var was_grounded := is_grounded()
+	var controls_active := control_override or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED
+	var jump_requested := Input.is_action_just_pressed("gym_jump") and controls_active
+	_update_posture(was_grounded, jump_requested, controls_active)
 	var axis := test_direction if control_override else Input.get_vector("gym_left", "gym_right", "gym_forward", "gym_back")
 	if not control_override and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
 		axis = Vector2.ZERO
-	var speed := sprint_speed if Input.is_action_pressed("gym_sprint") else walk_speed
+	var speed := crouch_speed if is_crouching() else (sprint_speed if Input.is_action_pressed("gym_sprint") else walk_speed)
 	var direction := global_basis * Vector3(axis.x, 0.0, axis.y)
 	velocity.x = direction.x * speed
 	velocity.z = direction.z * speed
 	if not was_grounded:
 		velocity.y -= gravity * delta
-	elif Input.is_action_just_pressed("gym_jump") and (control_override or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED):
+	elif jump_requested and not is_crouching():
 		velocity.y = jump_speed
+		jumped.emit(global_position)
 	else:
 		velocity.y = 0.0
 	var jumping := velocity.y > 0.0
@@ -143,11 +218,12 @@ func _physics_process(delta: float) -> void:
 		_eye_offset -= height_change
 	_eye_offset = clampf(_eye_offset, -step_height * 2.0, step_height)
 	_eye_offset *= exp(-stair_camera_smoothing * delta)
+	_eye_height = lerpf(_eye_height, _target_eye_height, 1.0 - exp(-crouch_camera_smoothing * delta))
 	_current_position = global_position
 	if global_position.y < -10.0:
 		reset_player()
 	_update_interaction()
-	status.text = "GYM 01  /  Hits: %d\nWASD move   Shift sprint   Space jump   LMB probe   E use\nEsc release mouse   Click recapture   R reset" % hit_count
+	status.text = "GYM 01 + ANNEX / %s / Hits: %d\nWASD move   Shift sprint   Ctrl crouch   Space jump\nLMB probe   E use   Esc release mouse   R reset" % [movement_mode(), hit_count]
 
 func is_grounded() -> bool:
 	# A capsule can touch a stair corner with a steep normal even though there is

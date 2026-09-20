@@ -25,7 +25,7 @@
 - Validate changed project settings and scenes with the installed compatible Godot version when available; report any validation limitations.
 
 ## Current gym workflow
-- The approved first gym plan is `docs/gym-plan.svg`; scope is recorded in `docs/first-test-plan.md`.
+- The approved first gym plan is `docs/gym-plan.svg`; the built movement annex follows `docs/gym-movement-plan.md`. Scope is recorded in `docs/first-test-plan.md`.
 - Edit geometry in `RedBreach/maps/gym_01.map`. Bake it into `RedBreach/gym/gym.tscn` with func_godot.
 - Keep authored gameplay nodes outside the Geometry subtree, whose children are replaced by Build Map.
 - Read `docs/trenchbroom-workflow.md` before changing the map pipeline. Preserve both installed addons.
@@ -40,6 +40,9 @@
 ## Movement support
 
 - Movement ground checks use GymPlayer's `is_grounded()` to include verified stair-corner support; native slope snapping remains enabled. See `docs/gym-playtest-02.md`.
+- Standing/crouched posture belongs to GymPlayer's editable PostureChart. Safe standing checks the full standing capsule; low headroom keeps the player crouched.
+- `RedBreach/gym/movement_annex.tscn` is an authored sibling of Geometry with lane origins, recovery points, runway measurements, and labels. Move these with their source-map brushes when relocating a station. See `docs/gym-playtest-03.md`.
+- The original high-jump blocks are still in place. Their deliberate relocation beside the long-jump lanes is deferred until after annex playtesting.
 
 ## Blockout materials
 

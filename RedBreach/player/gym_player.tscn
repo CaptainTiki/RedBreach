@@ -2,6 +2,11 @@
 
 [ext_resource type="Script" uid="uid://c307uth4vqj11" path="res://player/gym_player.gd" id="1"]
 
+[ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="posture_chart"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="posture_compound"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="posture_atomic"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="posture_transition"]
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_bhunq"]
 radius = 0.3
 
@@ -86,3 +91,30 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 mouse_filter = 2
+
+[node name="PostureChart" type="Node" parent="."]
+script = ExtResource("posture_chart")
+track_in_editor = true
+
+[node name="Posture" type="Node" parent="PostureChart"]
+script = ExtResource("posture_compound")
+initial_state = NodePath("Standing")
+
+[node name="Standing" type="Node" parent="PostureChart/Posture"]
+script = ExtResource("posture_atomic")
+
+[node name="Crouch" type="Node" parent="PostureChart/Posture/Standing"]
+script = ExtResource("posture_transition")
+to = NodePath("../../Crouched")
+event = &"crouch_requested"
+
+[node name="Crouched" type="Node" parent="PostureChart/Posture"]
+script = ExtResource("posture_atomic")
+
+[node name="Stand" type="Node" parent="PostureChart/Posture/Crouched"]
+script = ExtResource("posture_transition")
+to = NodePath("../../Standing")
+event = &"stand_requested"
+
+[connection signal="state_entered" from="PostureChart/Posture/Standing" to="." method="_on_standing_entered"]
+[connection signal="state_entered" from="PostureChart/Posture/Crouched" to="." method="_on_crouched_entered"]

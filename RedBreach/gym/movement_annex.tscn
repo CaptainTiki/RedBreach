@@ -1,0 +1,464 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://gym/jump_lane.gd" id="jump"]
+[ext_resource type="Script" path="res://gym/sprint_runway.gd" id="run"]
+[ext_resource type="Script" path="res://gym/target.gd" id="target"]
+
+[sub_resource type="StandardMaterial3D" id="LineMaterial"]
+shading_mode = 0
+albedo_color = Color(0.93, 0.98, 1, 1)
+
+[sub_resource type="PlaneMesh" id="JumpLine"]
+material = SubResource("LineMaterial")
+size = Vector2(3, 0.08)
+
+[sub_resource type="PlaneMesh" id="RunLine"]
+material = SubResource("LineMaterial")
+size = Vector2(4, 0.10)
+
+[sub_resource type="Theme" id="ReadoutTheme"]
+default_font_size = 22
+
+[sub_resource type="StandardMaterial3D" id="TargetMaterial"]
+albedo_color = Color(0.95, 0.27, 0.12, 1)
+roughness = 1.0
+
+[sub_resource type="BoxMesh" id="TargetMesh"]
+material = SubResource("TargetMaterial")
+size = Vector3(0.5, 0.5, 0.15)
+
+[sub_resource type="BoxShape3D" id="TargetShape"]
+size = Vector3(0.5, 0.5, 0.15)
+
+[node name="MovementAnnex" type="Node3D"]
+
+[node name="JumpLanes" type="Node3D" parent="."]
+
+[node name="J1" type="Node3D" parent="JumpLanes"]
+position = Vector3(-48.5, 0, -2)
+script = ExtResource("jump")
+lane_name = "J1"
+gap_length = 2.0
+landing_depth = 7.0
+
+[node name="ResetPoint" type="Marker3D" parent="JumpLanes/J1"]
+position = Vector3(0, 0.05, 7)
+
+[node name="TakeoffLine" type="MeshInstance3D" parent="JumpLanes/J1"]
+position = Vector3(0, 0.012, 0.04)
+mesh = SubResource("JumpLine")
+
+[node name="LandingLine" type="MeshInstance3D" parent="JumpLanes/J1"]
+position = Vector3(0, 0.012, -2.04)
+mesh = SubResource("JumpLine")
+
+[node name="LaneSign" type="Label3D" parent="JumpLanes/J1"]
+position = Vector3(0, 2.5, -10)
+text = "J1 / 2 m GAP\nWALK + SPRINT"
+font_size = 32
+pixel_size = 0.006
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+
+
+[node name="ApproachSign" type="Label3D" parent="JumpLanes/J1"]
+position = Vector3(0, 0.018, 6.1)
+text = "J1 / 2 m\n8 m APPROACH"
+font_size = 30
+pixel_size = 0.006
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+rotation_degrees = Vector3(-90, 0, 0)
+
+
+[node name="HUD" type="CanvasLayer" parent="JumpLanes/J1"]
+layer = 2
+
+[node name="Readout" type="Label" parent="JumpLanes/J1/HUD"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -150.0
+offset_right = 720.0
+offset_bottom = -24.0
+grow_vertical = 0
+theme = SubResource("ReadoutTheme")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+mouse_filter = 2
+
+[node name="J2" type="Node3D" parent="JumpLanes"]
+position = Vector3(-44.5, 0, -2)
+script = ExtResource("jump")
+lane_name = "J2"
+gap_length = 3.0
+landing_depth = 6.0
+
+[node name="ResetPoint" type="Marker3D" parent="JumpLanes/J2"]
+position = Vector3(0, 0.05, 7)
+
+[node name="TakeoffLine" type="MeshInstance3D" parent="JumpLanes/J2"]
+position = Vector3(0, 0.012, 0.04)
+mesh = SubResource("JumpLine")
+
+[node name="LandingLine" type="MeshInstance3D" parent="JumpLanes/J2"]
+position = Vector3(0, 0.012, -3.04)
+mesh = SubResource("JumpLine")
+
+[node name="LaneSign" type="Label3D" parent="JumpLanes/J2"]
+position = Vector3(0, 2.5, -10)
+text = "J2 / 3 m GAP\nWALK + SPRINT"
+font_size = 32
+pixel_size = 0.006
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+
+
+[node name="ApproachSign" type="Label3D" parent="JumpLanes/J2"]
+position = Vector3(0, 0.018, 6.1)
+text = "J2 / 3 m\n8 m APPROACH"
+font_size = 30
+pixel_size = 0.006
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+rotation_degrees = Vector3(-90, 0, 0)
+
+
+[node name="HUD" type="CanvasLayer" parent="JumpLanes/J2"]
+layer = 2
+
+[node name="Readout" type="Label" parent="JumpLanes/J2/HUD"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -150.0
+offset_right = 720.0
+offset_bottom = -24.0
+grow_vertical = 0
+theme = SubResource("ReadoutTheme")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+mouse_filter = 2
+
+[node name="J3" type="Node3D" parent="JumpLanes"]
+position = Vector3(-40.5, 0, -2)
+script = ExtResource("jump")
+lane_name = "J3"
+gap_length = 4.0
+landing_depth = 5.0
+
+[node name="ResetPoint" type="Marker3D" parent="JumpLanes/J3"]
+position = Vector3(0, 0.05, 7)
+
+[node name="TakeoffLine" type="MeshInstance3D" parent="JumpLanes/J3"]
+position = Vector3(0, 0.012, 0.04)
+mesh = SubResource("JumpLine")
+
+[node name="LandingLine" type="MeshInstance3D" parent="JumpLanes/J3"]
+position = Vector3(0, 0.012, -4.04)
+mesh = SubResource("JumpLine")
+
+[node name="LaneSign" type="Label3D" parent="JumpLanes/J3"]
+position = Vector3(0, 2.5, -10)
+text = "J3 / 4 m GAP\nWALK + SPRINT"
+font_size = 32
+pixel_size = 0.006
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+
+
+[node name="ApproachSign" type="Label3D" parent="JumpLanes/J3"]
+position = Vector3(0, 0.018, 6.1)
+text = "J3 / 4 m\n8 m APPROACH"
+font_size = 30
+pixel_size = 0.006
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+rotation_degrees = Vector3(-90, 0, 0)
+
+
+[node name="HUD" type="CanvasLayer" parent="JumpLanes/J3"]
+layer = 2
+
+[node name="Readout" type="Label" parent="JumpLanes/J3/HUD"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -150.0
+offset_right = 720.0
+offset_bottom = -24.0
+grow_vertical = 0
+theme = SubResource("ReadoutTheme")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+mouse_filter = 2
+
+[node name="J4" type="Node3D" parent="JumpLanes"]
+position = Vector3(-36.5, 0, -2)
+script = ExtResource("jump")
+lane_name = "J4"
+gap_length = 5.0
+landing_depth = 4.0
+
+[node name="ResetPoint" type="Marker3D" parent="JumpLanes/J4"]
+position = Vector3(0, 0.05, 7)
+
+[node name="TakeoffLine" type="MeshInstance3D" parent="JumpLanes/J4"]
+position = Vector3(0, 0.012, 0.04)
+mesh = SubResource("JumpLine")
+
+[node name="LandingLine" type="MeshInstance3D" parent="JumpLanes/J4"]
+position = Vector3(0, 0.012, -5.04)
+mesh = SubResource("JumpLine")
+
+[node name="LaneSign" type="Label3D" parent="JumpLanes/J4"]
+position = Vector3(0, 2.5, -10)
+text = "J4 / 5 m GAP\nWALK + SPRINT"
+font_size = 32
+pixel_size = 0.006
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+
+
+[node name="ApproachSign" type="Label3D" parent="JumpLanes/J4"]
+position = Vector3(0, 0.018, 6.1)
+text = "J4 / 5 m\n8 m APPROACH"
+font_size = 30
+pixel_size = 0.006
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+rotation_degrees = Vector3(-90, 0, 0)
+
+
+[node name="HUD" type="CanvasLayer" parent="JumpLanes/J4"]
+layer = 2
+
+[node name="Readout" type="Label" parent="JumpLanes/J4/HUD"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -150.0
+offset_right = 720.0
+offset_bottom = -24.0
+grow_vertical = 0
+theme = SubResource("ReadoutTheme")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+mouse_filter = 2
+
+[node name="Runway" type="Node3D" parent="."]
+position = Vector3(-20, 0, 8)
+script = ExtResource("run")
+
+[node name="StartLine" type="MeshInstance3D" parent="Runway"]
+position = Vector3(0, 0.012, 0)
+mesh = SubResource("RunLine")
+
+[node name="FinishLine" type="MeshInstance3D" parent="Runway"]
+position = Vector3(0, 0.012, -20)
+mesh = SubResource("RunLine")
+
+[node name="Title" type="Label3D" parent="Runway"]
+position = Vector3(0, 3, -21.5)
+text = "02 / 20 m RUN"
+font_size = 40
+pixel_size = 0.007
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+
+
+[node name="Board" type="Label3D" parent="Runway"]
+position = Vector3(0, 2.05, -21.5)
+text = "WALK / SPRINT\nStart at the south line"
+font_size = 30
+pixel_size = 0.006
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+
+
+[node name="StartText" type="Label3D" parent="Runway"]
+position = Vector3(0, 0.018, 1)
+text = "START / 20 m"
+font_size = 30
+pixel_size = 0.007
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+rotation_degrees = Vector3(-90, 0, 0)
+
+
+[node name="FinishText" type="Label3D" parent="Runway"]
+position = Vector3(0, 0.018, -20.8)
+text = "FINISH"
+font_size = 30
+pixel_size = 0.007
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+rotation_degrees = Vector3(-90, 0, 0)
+
+
+[node name="HUD" type="CanvasLayer" parent="Runway"]
+layer = 2
+
+[node name="Readout" type="Label" parent="Runway/HUD"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -150.0
+offset_right = 720.0
+offset_bottom = -24.0
+grow_vertical = 0
+theme = SubResource("ReadoutTheme")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+mouse_filter = 2
+
+[node name="CrouchLabels" type="Node3D" parent="."]
+
+
+[node name="C1West" type="Label3D" parent="CrouchLabels"]
+position = Vector3(-31.03, 1.45, -9.25)
+text = "1 m CLEAR\nTOO LOW"
+font_size = 28
+pixel_size = 0.005
+outline_size = 6
+modulate = Color(1, 0.7, 0.35, 1)
+double_sided = false
+rotation_degrees = Vector3(0, -90, 0)
+
+
+[node name="C1East" type="Label3D" parent="CrouchLabels"]
+position = Vector3(-26.97, 1.45, -9.25)
+text = "1 m CLEAR\nTOO LOW"
+font_size = 28
+pixel_size = 0.005
+outline_size = 6
+modulate = Color(1, 0.7, 0.35, 1)
+double_sided = false
+rotation_degrees = Vector3(0, 90, 0)
+
+
+[node name="C2West" type="Label3D" parent="CrouchLabels"]
+position = Vector3(-31.03, 1.7, -5.25)
+text = "1.25 m CLEAR\nHOLD CTRL"
+font_size = 28
+pixel_size = 0.005
+outline_size = 6
+modulate = Color(1, 0.7, 0.35, 1)
+double_sided = false
+rotation_degrees = Vector3(0, -90, 0)
+
+
+[node name="C2East" type="Label3D" parent="CrouchLabels"]
+position = Vector3(-26.97, 1.7, -5.25)
+text = "1.25 m CLEAR\nHOLD CTRL"
+font_size = 28
+pixel_size = 0.005
+outline_size = 6
+modulate = Color(1, 0.7, 0.35, 1)
+double_sided = false
+rotation_degrees = Vector3(0, 90, 0)
+
+
+[node name="C3West" type="Label3D" parent="CrouchLabels"]
+position = Vector3(-31.03, 1.95, -1.25)
+text = "1.5 m CLEAR\nHOLD CTRL"
+font_size = 28
+pixel_size = 0.005
+outline_size = 6
+modulate = Color(1, 0.7, 0.35, 1)
+double_sided = false
+rotation_degrees = Vector3(0, -90, 0)
+
+
+[node name="C3East" type="Label3D" parent="CrouchLabels"]
+position = Vector3(-26.97, 1.95, -1.25)
+text = "1.5 m CLEAR\nHOLD CTRL"
+font_size = 28
+pixel_size = 0.005
+outline_size = 6
+modulate = Color(1, 0.7, 0.35, 1)
+double_sided = false
+rotation_degrees = Vector3(0, 90, 0)
+
+
+[node name="HallTitle" type="Label3D" parent="CrouchLabels"]
+position = Vector3(-29, 2.5, -12)
+text = "03 / CROUCH\nHOLD CTRL"
+font_size = 36
+pixel_size = 0.007
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+
+
+[node name="CoverTitle" type="Label3D" parent="CrouchLabels"]
+position = Vector3(-29, 1.6, 3.04)
+text = "1 m COVER / STAND + CROUCH"
+font_size = 22
+pixel_size = 0.004
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+
+
+[node name="CoverTarget" type="StaticBody3D" parent="."]
+position = Vector3(-29, 0.8, 0)
+script = ExtResource("target")
+
+[node name="Plate" type="MeshInstance3D" parent="CoverTarget"]
+mesh = SubResource("TargetMesh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CoverTarget"]
+shape = SubResource("TargetShape")
+
+[node name="Readout" type="Label3D" parent="CoverTarget"]
+position = Vector3(0, 0.5, 0)
+text = "SIGHTLINE CHECK"
+font_size = 24
+pixel_size = 0.006
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+
+
+[node name="AnnexTitle" type="Label3D" parent="."]
+position = Vector3(-34, 3.2, -15.94)
+text = "RED BREACH / MOVEMENT ANNEX"
+font_size = 54
+pixel_size = 0.012
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+
+
+[node name="EntrySign" type="Label3D" parent="."]
+position = Vector3(-12.02, 2.6, 8.5)
+text = "MOVEMENT ANNEX\nJUMPS / SPRINT / CROUCH"
+font_size = 34
+pixel_size = 0.006
+outline_size = 6
+modulate = Color(0.91, 0.97, 1, 1)
+double_sided = false
+rotation_degrees = Vector3(0, 90, 0)
