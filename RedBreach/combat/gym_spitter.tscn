@@ -1,0 +1,366 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://combat/gym_spitter.gd" id="script"]
+[ext_resource type="AudioStream" path="res://combat/bug_hit.wav" id="hit_audio"]
+[ext_resource type="AudioStream" path="res://combat/bug_attack.wav" id="attack_audio"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="chart"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="compound"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="atomic"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="transition"]
+
+[ext_resource type="Script" path="res://combat/spitter_mouth.gd" id="mouth_script"]
+[ext_resource type="AudioStream" path="res://combat/spitter_charge.wav" id="charge_audio"]
+[ext_resource type="AudioStream" path="res://combat/spitter_spit.wav" id="spit_audio"]
+
+[sub_resource type="StandardMaterial3D" id="shell"]
+albedo_color = Color(0.19,0.15,0.055,1)
+roughness = 0.7
+
+[sub_resource type="StandardMaterial3D" id="abdomen"]
+albedo_color = Color(0.25,0.32,0.045,1)
+roughness = 0.7
+
+[sub_resource type="StandardMaterial3D" id="dark"]
+albedo_color = Color(0.055,0.045,0.028,1)
+roughness = 0.7
+
+[sub_resource type="StandardMaterial3D" id="eye"]
+albedo_color = Color(1,0.38,0.045,1)
+roughness = 0.7
+shading_mode = 0
+
+[sub_resource type="StandardMaterial3D" id="warning"]
+albedo_color = Color(1,0.8,0.16,1)
+roughness = 0.7
+shading_mode = 0
+
+[sub_resource type="SphereMesh" id="body"]
+material = SubResource("shell")
+radius = 0.88
+height = 1.36
+radial_segments = 8
+rings = 4
+
+[sub_resource type="SphereMesh" id="belly"]
+material = SubResource("abdomen")
+radius = 0.896
+height = 1.84
+radial_segments = 8
+rings = 4
+
+[sub_resource type="SphereMesh" id="head"]
+material = SubResource("shell")
+radius = 0.56
+height = 0.88
+radial_segments = 8
+rings = 4
+
+[sub_resource type="SphereMesh" id="eye_mesh"]
+material = SubResource("eye")
+radius = 0.104
+height = 0.208
+radial_segments = 8
+rings = 4
+
+[sub_resource type="CylinderMesh" id="limb"]
+material = SubResource("dark")
+top_radius = 0.088
+bottom_radius = 0.136
+height = 1.0
+radial_segments = 5
+[sub_resource type="PrismMesh" id="fang"]
+material = SubResource("abdomen")
+size = Vector3(0.14,0.25,0.38)
+[sub_resource type="TorusMesh" id="ring"]
+material = SubResource("warning")
+inner_radius = 1.36
+outer_radius = 1.488
+rings = 20
+ring_segments = 6
+[sub_resource type="CapsuleShape3D" id="shape"]
+radius = 0.75
+height = 1.85
+[sub_resource type="StandardMaterial3D" id="mouth_green"]
+albedo_color = Color(0.78,1,0.025,1)
+shading_mode = 0
+emission_enabled = true
+emission = Color(0.72,1,0.02,1)
+emission_energy_multiplier = 1.0
+[sub_resource type="SphereMesh" id="throat_mesh"]
+material = SubResource("mouth_green")
+radius = 0.32
+height = 0.64
+radial_segments = 12
+rings = 6
+[sub_resource type="BoxMesh" id="jaw_mesh"]
+material = SubResource("shell")
+size = Vector3(0.85,0.24,0.4)
+[sub_resource type="BoxShape3D" id="mouth_shape"]
+size = Vector3(0.6,0.48,0.12)
+[sub_resource type="CapsuleShape3D" id="body_hit_shape"]
+radius = 0.85
+height = 2.9
+[node name="GymSpitter" type="CharacterBody3D"]
+floor_snap_length = 0.3
+script = ExtResource("script")
+max_health = 150.0
+move_speed = 2.5
+windup_seconds = 0.5
+recovery_seconds = 1.25
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0,0.925,0)
+shape = SubResource("shape")
+[node name="Agent" type="NavigationAgent3D" parent="."]
+path_desired_distance = 0.3
+target_desired_distance = 0.8
+radius = 0.85
+height = 1.85
+[node name="Visual" type="Node3D" parent="."]
+[node name="Carapace" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0.0,1.152,0.0)
+mesh = SubResource("body")
+[node name="Abdomen" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0.0,0.912,1.04)
+rotation = Vector3(1.570796,0,0)
+mesh = SubResource("belly")
+[node name="Head" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0,1.18,-0.928)
+mesh = SubResource("head")
+[node name="Warning" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0.0,0.048,0.0)
+mesh = SubResource("ring")
+visible = false
+[node name="Legs" type="Node3D" parent="Visual"]
+
+[node name="LegL0" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegL0"]
+transform = Transform3D(-0.202606,0.97926,0.0,-0.928,-0.192,-0.16,-0.163029,-0.03373,0.986045,-0.944,0.944,-0.72)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegL0"]
+transform = Transform3D(-0.803842,0.594843,0.0,-0.592,-0.8,-0.384,-0.21413,-0.289365,0.932961,-1.704,0.448,-0.992)
+mesh = SubResource("limb")
+
+[node name="LegL1" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegL1"]
+transform = Transform3D(-0.202606,0.97926,0.0,-0.928,-0.192,-0.16,-0.163029,-0.03373,0.986045,-0.944,0.944,0.0)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegL1"]
+transform = Transform3D(-0.803842,0.594843,0.0,-0.592,-0.8,-0.384,-0.21413,-0.289365,0.932961,-1.704,0.448,-0.272)
+mesh = SubResource("limb")
+
+[node name="LegL2" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegL2"]
+transform = Transform3D(-0.202606,0.97926,0.0,-0.928,-0.192,0.32,0.313293,0.064819,0.947442,-0.944,0.944,0.96)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegL2"]
+transform = Transform3D(-0.803842,0.594843,0.0,-0.592,-0.8,0.352,0.198349,0.26804,0.942768,-1.704,0.448,1.296)
+mesh = SubResource("limb")
+
+[node name="LegR0" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegR0"]
+transform = Transform3D(-0.202606,-0.97926,0.0,0.928,-0.192,-0.16,0.163029,-0.03373,0.986045,0.944,0.944,-0.72)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegR0"]
+transform = Transform3D(-0.803842,-0.594843,0.0,0.592,-0.8,-0.384,0.21413,-0.289365,0.932961,1.704,0.448,-0.992)
+mesh = SubResource("limb")
+
+[node name="LegR1" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegR1"]
+transform = Transform3D(-0.202606,-0.97926,0.0,0.928,-0.192,-0.16,0.163029,-0.03373,0.986045,0.944,0.944,0.0)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegR1"]
+transform = Transform3D(-0.803842,-0.594843,0.0,0.592,-0.8,-0.384,0.21413,-0.289365,0.932961,1.704,0.448,-0.272)
+mesh = SubResource("limb")
+
+[node name="LegR2" type="Node3D" parent="Visual/Legs"]
+
+[node name="Upper" type="MeshInstance3D" parent="Visual/Legs/LegR2"]
+transform = Transform3D(-0.202606,-0.97926,0.0,0.928,-0.192,0.32,-0.313293,0.064819,0.947442,0.944,0.944,0.96)
+mesh = SubResource("limb")
+
+[node name="Lower" type="MeshInstance3D" parent="Visual/Legs/LegR2"]
+transform = Transform3D(-0.803842,-0.594843,0.0,0.592,-0.8,0.352,-0.198349,0.26804,0.942768,1.704,0.448,1.296)
+mesh = SubResource("limb")
+
+[node name="Eye0" type="MeshInstance3D" parent="Visual"]
+position = Vector3(-0.368,1.5,-1.4)
+mesh = SubResource("eye_mesh")
+
+[node name="Eye1" type="MeshInstance3D" parent="Visual"]
+position = Vector3(-0.176,1.5,-1.4)
+mesh = SubResource("eye_mesh")
+
+[node name="Eye2" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0.176,1.5,-1.4)
+mesh = SubResource("eye_mesh")
+
+[node name="Eye3" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0.368,1.5,-1.4)
+mesh = SubResource("eye_mesh")
+
+[node name="Readout" type="Label3D" parent="."]
+position = Vector3(0,2.3,0)
+billboard = 1
+pixel_size = 0.004
+font_size = 28
+text = "SPITTER / DORMANT"
+[node name="HitSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("hit_audio")
+volume_db = -7.0
+max_distance = 35.0
+[node name="AttackSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("charge_audio")
+volume_db = -6.0
+max_distance = 35.0
+
+[node name="SpitSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("spit_audio")
+volume_db = -5.0
+max_distance = 40.0
+[node name="BodyHitArea" type="Area3D" parent="."]
+position = Vector3(0,0.925,0.4)
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+script = ExtResource("mouth_script")
+weak_point = false
+enemy_path = NodePath("..")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BodyHitArea"]
+rotation = Vector3(1.570796,0,0)
+shape = SubResource("body_hit_shape")
+[node name="Mouth" type="Node3D" parent="Visual"]
+position = Vector3(0,1.03,-1.53)
+[node name="UpperJaw" type="MeshInstance3D" parent="Visual/Mouth"]
+position = Vector3(0,0.12,0)
+mesh = SubResource("jaw_mesh")
+[node name="LowerJaw" type="MeshInstance3D" parent="Visual/Mouth"]
+position = Vector3(0,-0.12,0)
+mesh = SubResource("jaw_mesh")
+[node name="Throat" type="MeshInstance3D" parent="Visual/Mouth"]
+position = Vector3(0,0,-0.08)
+scale = Vector3(1,1,0.3)
+mesh = SubResource("throat_mesh")
+visible = false
+[node name="MouthHitArea" type="Area3D" parent="."]
+position = Vector3(0,1.03,-1.61)
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+script = ExtResource("mouth_script")
+enemy_path = NodePath("..")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MouthHitArea"]
+shape = SubResource("mouth_shape")
+[node name="Muzzle" type="Marker3D" parent="Visual/Mouth"]
+position = Vector3(0,0,-0.32)
+[node name="Brain" type="Node" parent="."]
+script = ExtResource("chart")
+track_in_editor = true
+
+[node name="Behavior" type="Node" parent="Brain"]
+script = ExtResource("compound")
+initial_state = NodePath("Dormant")
+
+[node name="Dormant" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToHunt" type="Node" parent="Brain/Behavior/Dormant"]
+script = ExtResource("transition")
+to = NodePath("../../Hunt")
+event = &"alert"
+
+[node name="Hunt" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToWindup" type="Node" parent="Brain/Behavior/Hunt"]
+script = ExtResource("transition")
+to = NodePath("../../Windup")
+event = &"windup"
+
+[node name="ToDead" type="Node" parent="Brain/Behavior/Hunt"]
+script = ExtResource("transition")
+to = NodePath("../../Dead")
+event = &"die"
+
+[node name="ToDormant" type="Node" parent="Brain/Behavior/Hunt"]
+script = ExtResource("transition")
+to = NodePath("../../Dormant")
+event = &"reset"
+
+[node name="Windup" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToSpit" type="Node" parent="Brain/Behavior/Windup"]
+script = ExtResource("transition")
+to = NodePath("../../Spit")
+event = &"spit"
+
+[node name="ToDead" type="Node" parent="Brain/Behavior/Windup"]
+script = ExtResource("transition")
+to = NodePath("../../Dead")
+event = &"die"
+
+[node name="ToDormant" type="Node" parent="Brain/Behavior/Windup"]
+script = ExtResource("transition")
+to = NodePath("../../Dormant")
+event = &"reset"
+
+[node name="Spit" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToRecover" type="Node" parent="Brain/Behavior/Spit"]
+script = ExtResource("transition")
+to = NodePath("../../Recover")
+event = &"recover"
+
+[node name="ToDead" type="Node" parent="Brain/Behavior/Spit"]
+script = ExtResource("transition")
+to = NodePath("../../Dead")
+event = &"die"
+
+[node name="ToDormant" type="Node" parent="Brain/Behavior/Spit"]
+script = ExtResource("transition")
+to = NodePath("../../Dormant")
+event = &"reset"
+
+[node name="Recover" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToHunt" type="Node" parent="Brain/Behavior/Recover"]
+script = ExtResource("transition")
+to = NodePath("../../Hunt")
+event = &"hunt"
+
+[node name="ToDead" type="Node" parent="Brain/Behavior/Recover"]
+script = ExtResource("transition")
+to = NodePath("../../Dead")
+event = &"die"
+
+[node name="ToDormant" type="Node" parent="Brain/Behavior/Recover"]
+script = ExtResource("transition")
+to = NodePath("../../Dormant")
+event = &"reset"
+
+[node name="Dead" type="Node" parent="Brain/Behavior"]
+script = ExtResource("atomic")
+
+[node name="ToDormant" type="Node" parent="Brain/Behavior/Dead"]
+script = ExtResource("transition")
+to = NodePath("../../Dormant")
+event = &"reset"
+
+[connection signal="state_entered" from="Brain/Behavior/Windup" to="." method="_on_windup_entered"]
+
+[connection signal="state_entered" from="Brain/Behavior/Spit" to="." method="_on_spit_entered"]
+
+[connection signal="state_entered" from="Brain/Behavior/Recover" to="." method="_on_recover_entered"]
+
+[connection signal="state_entered" from="Brain/Behavior/Dead" to="." method="_on_dead_entered"]

@@ -14,14 +14,14 @@
 <rect x="-7" y="-3" width="2" height="1" fill="#809caa"/>
 <g fill="#ff934d"><circle cx="-4" cy="-10" r=".5"/><circle cx="0" cy="-20" r=".4"/><circle cx="4" cy="-30" r=".3"/></g>
 <circle cx="20" cy="-16" r=".65" fill="#bde852"/><circle cx="20" cy="-2" r=".45" fill="#e9f3ff"/>
-<rect x="23" y="-2.4" width=".65" height=".65" fill="#78dee8"/><rect x="14" y="-15" width=".65" height=".65" fill="#e96673"/><rect x="27" y="-6" width=".65" height=".65" fill="#efc872"/>
+<rect x="23" y="-2.4" width=".65" height=".65" fill="#78dee8"/><rect x="26" y="-2.4" width=".65" height=".65" fill="#cdf242"/><rect x="14" y="-15" width=".65" height=".65" fill="#e96673"/><rect x="27" y="-6" width=".65" height=".65" fill="#efc872"/>
 <circle cx="4" cy="7" r=".45" fill="#e9f3ff"/>
 </g>
 <text x="85" y="155" class="label">PRECISION RANGE</text><text x="85" y="180">16 × 38 m</text><text x="276" y="209">30 m / 0.4 m plate</text><text x="210" y="369">20 m / 0.6 m plate</text><text x="146" y="529">10 m / 0.8 m plate</text>
 <text x="83" y="650" class="small">12 m strafe strip / firing pads at Z=0</text><text x="84" y="610" class="small">Crouch cover</text>
 <text x="373" y="370" class="label">FIRST BUG / 20 × 20 m</text><text x="530" y="407" class="small">Bug release</text>
 <text x="467" y="497" class="small">Tall cover / 2.2 m</text><text x="371" y="557" class="small">Low / 1.1 m</text>
-<text x="563" y="627" class="small">E: start</text><text x="456" y="688" class="small">4 m gate</text>
+<text x="563" y="627" class="small">E: choose bug</text><text x="456" y="688" class="small">4 m gate</text>
 <text x="86" y="767" class="label">SAFE STAGING / SPAWN / SUPPLIES</text>
 <text x="720" y="347" class="label">TEST LOOP</text><text x="720" y="383">1 · Compare hip fire and ADS</text><text x="720" y="415">2 · Enter arena; press E at panel</text><text x="720" y="447">3 · Dodge the telegraphed lunge</text><text x="720" y="479">4 · Shoot bug; inspect splatters</text><text x="720" y="511">5 · Reset for another attempt</text>
 <text x="720" y="566" fill="#bde852">Green · bug</text><text x="720" y="594">Red · health / gold · ammunition</text><text x="720" y="622">White · spawn / encounter start</text>

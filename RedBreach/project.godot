@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="RedBreach"
-config/version="0.0.005"
+config/version="0.0.006"
 run/main_scene="res://combat/combat_gym.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"

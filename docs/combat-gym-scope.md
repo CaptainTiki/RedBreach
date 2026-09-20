@@ -48,3 +48,5 @@ While ADS is active, sprint must not override the aiming speed. Apply the ADS mo
 - Compare scoped values with measured results; preserve the existing movement, door, and alteration checks when weapon handling is implemented.
 
 The first pistol pass is included in local version `0.0.004` (Weapons). The first survival/encounter pass is included in local version `0.0.005` (Combat Gym); no push is included.
+
+The [fast spitter](spitter.md) extends the same arena with a larger enemy, half-second mouth-opening wind-up, exposed throat weak point, and 35 m/s projectile. A second panel selects it instead of the melee bug; this extension is included in local version `0.0.006` (Spitter).

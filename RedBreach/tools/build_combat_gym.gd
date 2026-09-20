@@ -20,8 +20,8 @@ func run() -> void:
 	var nav := NavigationMesh.new()
 	nav.geometry_parsed_geometry_type = NavigationMesh.PARSED_GEOMETRY_STATIC_COLLIDERS
 	nav.geometry_collision_mask = 1
-	nav.agent_height = 1.2
-	nav.agent_radius = 0.6
+	nav.agent_height = 1.9
+	nav.agent_radius = 1.0
 	nav.agent_max_climb = 0.2
 	nav.cell_size = 0.2
 	nav.cell_height = 0.1

@@ -63,6 +63,14 @@
 
 - F5 launches `RedBreach/combat/combat_gym.tscn`; F1/F2 switch between movement/combat gyms. The user approved `docs/combat-gym-plan.svg` before this separate layout was built. Read `docs/combat-gym.md` before extending it.
 - Edit combat geometry in `RedBreach/maps/combat_01.map`; run `tools/rebuild-combat-gym.ps1 -Validate` to rebuild and save both Geometry and navigation. Navigation is baked from the static source geometry, clipped to the arena. Preserve authored siblings.
-- Bug behavior, player life, and encounter transitions each belong to their editable StateCharts. One panel-released bug, a committed telegraphed lunge, and a resettable encounter are the current scope.
+- Bug behavior, player life, and encounter transitions each belong to their editable StateCharts. The two release panels select one melee bug or one spitter at a time. Preserve the original melee lunge and the repeatable encounter.
 - Preserve real hit-point feedback, shot/attack obstruction, bounded surface splatters, useful-only pickups, death input restrictions, and complete Backspace reset. Extended bug legs are visual placeholders; body collision receives damage.
 - Shared player/weapon changes require the original gym validation as well as combat checks. New geometry must still follow the plan-first rule.
+
+## Spitter extension
+
+- Read `docs/spitter.md` before refining the ranged enemy. User intent: fast spit that is only just dodgeable, encouraging quick kills. Starting speed is 35 m/s; aim tracks until release, then flight is fixed.
+- `combat/gym_spitter.tscn` has a half-second jaw-opening charge and a bright yellow-green throat. The open front mouth takes 3x damage; 150 health means two accurate pistol mouth hits or six body hits. Nonlethal weak hits do not cancel the attack.
+- Solid geometry/body collision is layer 1; shot-only mouth/body areas use layer 2. Pistol rays must ignore ordinary triggers and compare solid hits with shot areas. Keep physics shapes outside corpse deformation.
+- Navigation now uses 1.0 m radius / 1.9 m height clearance for the larger body. Both bugs share the same approved arena and spawn. One active enemy, clean projectile lifetime/impact, and reset/death/switch cleanup are required.
+- Combat validation now includes `validate_spitter.gd`. Preserve the original combat and weapon checks when changing selection, rays, damage or projectile behavior.

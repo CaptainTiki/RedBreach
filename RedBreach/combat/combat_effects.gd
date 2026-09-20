@@ -36,6 +36,15 @@ func clear_effects() -> void:
 func spawn_impact(point: Vector3, normal: Vector3) -> void:
 	_burst(point + normal * 0.025, normal, 5, false)
 
+func spawn_spit_impact(point: Vector3, normal: Vector3, exclude: Array[RID], hit_player: bool) -> void:
+	_burst(point + normal * 0.03, normal, 12, true)
+	if hit_player:
+		var floor_hit := _cast(point + Vector3.UP * 0.1, point + Vector3.DOWN * 4.0, exclude)
+		if not floor_hit.is_empty():
+			_splat(floor_hit.position, floor_hit.normal, 0.3)
+	else:
+		_splat(point, normal, 0.3)
+
 func spawn_bug_hit(point: Vector3, normal: Vector3, direction: Vector3, exclude: Array[RID], lethal: bool) -> void:
 	_burst(point + normal * 0.06, normal, 40 if lethal else 13, true)
 	var floor_hit := _cast(point + Vector3.UP * 0.2, point + Vector3.DOWN * 6.0, exclude)

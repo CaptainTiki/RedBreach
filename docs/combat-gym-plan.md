@@ -20,3 +20,5 @@ Story beat: quarantine test bay, first contact, bug pursuit and a readable wind-
 First-pass scope: health/damage/death/reset; health and ammo pickups; editable StateChart-driven bug; obstacle navigation and line-of-sight attacks; hitscan hit-position feedback; green hit bursts, death burst, floor/wall splatters and a corpse. Primitive bug/model/effects are deliberate prototypes. Per-weapon resources stay deferred.
 
 Acceptance: saved TrenchBroom source builds repeatedly; range hits at all three distances; walls stop shots, detection and attacks; bug navigates either side of cover; lunge can be dodged; death disables player fire/movement; pickups apply only when useful; reset clears every encounter state and effect; original movement/door/pistol tests still pass.
+
+Spitter extension: a second authored release panel at (26,1,-2) selects the larger ranged enemy at the existing spawn. One enemy per attempt remains the rule. No source brushes, cover positions, routes or dimensions change; navigation clearance is enlarged for this body. See [spitter notes](spitter.md).

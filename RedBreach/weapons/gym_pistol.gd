@@ -103,7 +103,18 @@ func fire() -> bool:
 	return true
 
 func _ray(start: Vector3, end: Vector3) -> Dictionary:
-	return get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(start, end, 1, [player.get_rid()]))
+	# Triggers on layer 1 must not block bullets. Query only shot areas on layer 2.
+	var query := PhysicsRayQueryParameters3D.create(start, end, 1, [player.get_rid()])
+	var body_hit := get_world_3d().direct_space_state.intersect_ray(query)
+	query.collision_mask = 2
+	query.collide_with_bodies = false
+	query.collide_with_areas = true
+	var area_hit := get_world_3d().direct_space_state.intersect_ray(query)
+	if area_hit.is_empty():
+		return body_hit
+	if body_hit.is_empty() or start.distance_squared_to(area_hit.position) < start.distance_squared_to(body_hit.position):
+		return area_hit
+	return body_hit
 
 func trace_shot() -> Dictionary:
 	var origin := camera.global_position

@@ -6,7 +6,10 @@ $ErrorActionPreference = 'Stop'
 $projectDir = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\RedBreach'))
 if (-not (Test-Path -LiteralPath $GodotPath)) { throw 'Godot not found. Supply -GodotPath.' }
 $checks = ,@('res://tools/build_combat_gym.gd', 'combat_build.log')
-if ($Validate) { $checks += ,@('res://tools/validate_combat.gd', 'combat_qa.log') }
+if ($Validate) {
+    $checks += ,@('res://tools/validate_combat.gd', 'combat_qa.log')
+    $checks += ,@('res://tools/validate_spitter.gd', 'spitter_qa.log')
+}
 foreach ($entry in $checks) {
     $logPath = Join-Path $projectDir ('.godot\' + $entry[1])
     $runArgs = @('--headless', '--path', ('"' + $projectDir + '"'), '--log-file', ('"' + $logPath + '"'), '--script', $entry[0], '--fixed-fps', '120')
