@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1320" viewBox="0 0 1600 1320"><rect width="1600" height="1320" fill="#111b25"/>
+<text x="45" y="49" font-family="Segoe UI,Arial,sans-serif" font-size="32" fill="#e5edf3">ARCHITECTURE LAB / SHAPE STUDY 03</text>
+<text x="45" y="82" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#e5edf3">Same 4 m movement envelope. Three different wall constructions. All proposed dimensions in metres.</text>
+<text x="45" y="116" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#a9bac9">Profiles first: solid shell → sloped base → service volume → internal frame. Colour identifies geometry, not final materials.</text>
+<text x="45" y="161" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#7ed6bf">A / SUSPENDED SERVICE SPINE</text>
+<text x="45" y="189" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">Faceted shell + hanging spine + forked supports.</text>
+<path d="M144.0,485 L102,443.0 L102,275.0 L172.0,205 L368.0,205 L438,275.0 L438,443.0 L396.0,485 Z" fill="#1b2a36" stroke="#7ed6bf" stroke-width="3" />
+<path d="M144.0,485 L102,443.0 L118.79999999999998,437.4 L158,485 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
+<path d="M102,443.0 L102,275.0 L118.79999999999998,283.4 L118.79999999999998,437.4 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
+<path d="M102,275.0 L172.0,205 L180.39999999999998,221.8 L118.79999999999998,283.4 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
+<path d="M172.0,205 L368.0,205 L359.6,221.8 L180.39999999999998,221.8 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
+<path d="M368.0,205 L438,275.0 L421.20000000000005,283.4 L359.6,221.8 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
+<path d="M438,275.0 L438,443.0 L421.20000000000005,437.4 L421.20000000000005,283.4 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
+<path d="M438,443.0 L396.0,485 L382,485 L421.20000000000005,437.4 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
+<path d="M113.20000000000002,311.4 L138.4,311.4 L138.4,277.79999999999995 L113.20000000000002,277.79999999999995 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
+<path d="M426.79999999999995,311.4 L401.6,311.4 L401.6,277.79999999999995 L426.79999999999995,277.79999999999995 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
+<path d="M172.0,230.20000000000002 L225.2,269.4 L225.2,255.40000000000003 L180.39999999999998,221.8 Z" fill="#48645d" stroke="#7ed6bf" stroke-width="2" />
+<path d="M368.0,230.20000000000002 L314.8,269.4 L314.8,255.40000000000003 L359.6,221.8 Z" fill="#48645d" stroke="#7ed6bf" stroke-width="2" />
+<path d="M225.2,255.40000000000003 L314.8,255.40000000000003 L314.8,280.6 L300.8,294.6 L239.2,294.6 L225.2,280.6 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
+<path d="M226.32,280.6 L239.2,293.48" fill="none" stroke="#ecf6ce" stroke-width="5" />
+<path d="M313.68,280.6 L300.8,293.48" fill="none" stroke="#ecf6ce" stroke-width="5" />
+<path d="M158,485 L158,305.79999999999995 L382,305.79999999999995 L382,485" fill="none" stroke="#b7c5cf" stroke-width="2" stroke-dasharray="7 5" />
+<path d="M144.0,485 L396.0,485" fill="none" stroke="#c5d0d9" stroke-width="5" />
+<text x="181" y="360" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">4 m × 3.2 m clear</text>
+<circle cx="270" cy="391" r="8" fill="#9dadb8"/>
+<path d="M270,400 L270,445 L258,485" fill="none" stroke="#9dadb8" stroke-width="4" />
+<path d="M270,445 L282,485" fill="none" stroke="#9dadb8" stroke-width="4" />
+<text x="45" y="516" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">1.6 m-wide faceted trunk; underside at 3.4 m.</text>
+<text x="45" y="541" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">Forked hangers at ribs / paired inset light housings.</text>
+<text x="575" y="161" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#efbb75">B / STEPPED SERVICE GALLERY</text>
+<text x="575" y="189" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">Wall steps inward beneath a raised ceiling spine.</text>
+<path d="M674.0,485 L618.0,429 L618.0,331.0 L646.0,331.0 L646.0,261 L702.0,261 L702.0,205 L898.0,205 L898.0,261 L954.0,261 L954.0,331.0 L982.0,331.0 L982.0,429 L926.0,485 Z" fill="#1b2a36" stroke="#efbb75" stroke-width="3" />
+<path d="M688,485 L660.0,448.6 L660.0,305.79999999999995 L710.4,275.0 L710.4,261 L640.4,289.0 L640.4,448.6 L671.2,485 Z" fill="#665035" stroke="#efbb75" stroke-width="2" />
+<path d="M643.2,325.4 L685.2,325.4 L685.2,291.79999999999995 L643.2,291.79999999999995 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
+<path d="M912,485 L940.0,448.6 L940.0,305.79999999999995 L889.6,275.0 L889.6,261 L959.6,289.0 L959.6,448.6 L928.8,485 Z" fill="#665035" stroke="#efbb75" stroke-width="2" />
+<path d="M956.8,325.4 L914.8,325.4 L914.8,291.79999999999995 L956.8,291.79999999999995 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
+<rect x="710.4" y="219.0" width="179.20000000000002" height="14.0" fill="#665035" stroke="#efbb75"/>
+<path d="M688,485 L688,305.79999999999995 L912,305.79999999999995 L912,485" fill="none" stroke="#b7c5cf" stroke-width="2" stroke-dasharray="7 5" />
+<path d="M674.0,485 L926.0,485" fill="none" stroke="#c5d0d9" stroke-width="5" />
+<text x="711" y="360" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">4 m × 3.2 m clear</text>
+<circle cx="800" cy="391" r="8" fill="#9dadb8"/>
+<path d="M800,400 L800,445 L788,485" fill="none" stroke="#9dadb8" stroke-width="4" />
+<path d="M800,445 L812,485" fill="none" stroke="#9dadb8" stroke-width="4" />
+<text x="575" y="516" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">1 m sloped base + vertical wall + two real setbacks.</text>
+<text x="575" y="541" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">6.5 m widest shell / 5 m crown / separate columns.</text>
+<text x="1105" y="161" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#8dc5f2">C / BUTTRESSED WINDOW BAY</text>
+<text x="1105" y="189" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">Splayed base; deep windows; broad knee braces.</text>
+<path d="M1204.0,485 L1148.0,429 L1148.0,303.0 L1218,233.0 L1442,233.0 L1512.0,303.0 L1512.0,429 L1456.0,485 Z" fill="#1b2a36" stroke="#8dc5f2" stroke-width="3" />
+<rect x="1243.2" y="241.40000000000003" width="173.6" height="16.8" fill="#39546a" stroke="#8dc5f2"/>
+<path d="M1218,485 L1178.8,429 L1178.8,317 L1243.2,258.20000000000005 L1243.2,241.40000000000003 L1162,311.4 L1162,429 L1195.6,485 Z" fill="#39546a" stroke="#8dc5f2" stroke-width="2" />
+<path d="M1148.0,415.0 L1117.2,415.0 L1117.2,317 L1148.0,317" fill="none" stroke="#b4e8fc" stroke-width="3" />
+<path d="M1170.4,289.0 L1204.0,289.0 L1218,275.0 L1184.4,275.0 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
+<path d="M1442,485 L1481.2,429 L1481.2,317 L1416.8,258.20000000000005 L1416.8,241.40000000000003 L1498,311.4 L1498,429 L1464.4,485 Z" fill="#39546a" stroke="#8dc5f2" stroke-width="2" />
+<path d="M1512.0,415.0 L1542.8,415.0 L1542.8,317 L1512.0,317" fill="none" stroke="#b4e8fc" stroke-width="3" />
+<path d="M1489.6,289.0 L1456.0,289.0 L1442,275.0 L1475.6,275.0 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
+<path d="M1218,485 L1218,305.79999999999995 L1442,305.79999999999995 L1442,485" fill="none" stroke="#b7c5cf" stroke-width="2" stroke-dasharray="7 5" />
+<path d="M1204.0,485 L1456.0,485" fill="none" stroke="#c5d0d9" stroke-width="5" />
+<text x="1241" y="360" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">4 m × 3.2 m clear</text>
+<circle cx="1330" cy="391" r="8" fill="#9dadb8"/>
+<path d="M1330,400 L1330,445 L1318,485" fill="none" stroke="#9dadb8" stroke-width="4" />
+<path d="M1330,445 L1342,485" fill="none" stroke="#9dadb8" stroke-width="4" />
+<text x="1105" y="516" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">1 m splayed base; 1.25 m upper shoulder.</text>
+<text x="1105" y="541" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">6.5 m widest shell / 4.5 m crown / 0.55 m reveal.</text>
+<path d="M45,571 L1555,571" fill="none" stroke="#3c4b59" stroke-width="2" />
+<text x="45" y="608" font-family="Segoe UI,Arial,sans-serif" font-size="24" fill="#e5edf3">A / SIDE WALL + SUSPENDED CENTRE SPINE</text>
+<rect x="65" y="651" width="485" height="251" fill="#1b2a36" stroke="#758a9b"/>
+<path d="M65,902 L100,865 L515,865 L550,902 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="2" />
+<path d="M65,651 L100,688 L515,688 L550,651 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="2" />
+<rect x="105" y="716" width="405" height="111" fill="#15212b" stroke="#7ed6bf"/>
+<rect x="65" y="651" width="35" height="251" fill="#48645d" stroke="#7ed6bf"/>
+<rect x="515" y="651" width="35" height="251" fill="#48645d" stroke="#7ed6bf"/>
+<rect x="100" y="689" width="415" height="24" fill="#95643b" stroke="#efbb75"/>
+<rect x="145" y="684" width="11" height="35" fill="#688278" stroke="none"/>
+<rect x="300" y="684" width="11" height="35" fill="#688278" stroke="none"/>
+<rect x="455" y="684" width="11" height="35" fill="#688278" stroke="none"/>
+<rect x="140" y="835" width="315" height="18" fill="#33443d" stroke="#7ed6bf"/>
+<rect x="65" y="732" width="485" height="39" fill="#95643b" stroke="#efbb75"/>
+<path d="M65,668 L100,668 L100,746 L65,746 Z" fill="#48645d" stroke="#7ed6bf" stroke-width="2" />
+<path d="M515,668 L550,668 L550,746 L515,746 Z" fill="#48645d" stroke="#7ed6bf" stroke-width="2" />
+<rect x="125" y="765" width="150" height="6" fill="#ecf6ce" stroke="none"/>
+<rect x="325" y="765" width="150" height="6" fill="#ecf6ce" stroke="none"/>
+<text x="77" y="929" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">Side elevation / spine in foreground; wall infill behind</text>
+<text x="605" y="665" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#7ed6bf">01  SHELL PLANES</text>
+<text x="605" y="692" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#e5edf3">Separate floor, lower wedges, wall slabs, upper wedges and roof.</text>
+<text x="605" y="731" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#efbb75">02  SUSPENDED SPINE</text>
+<text x="605" y="758" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#e5edf3">Chamfered trunk, real end caps and two inset light channels.</text>
+<text x="605" y="797" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#8dc5f2">03  FORKED SUPPORTS</text>
+<text x="605" y="824" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#e5edf3">Angled brush hangers connect each rib to the central trunk.</text>
+<text x="605" y="863" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#e5edf3">04  RECESSED INFILL</text>
+<text x="605" y="890" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#e5edf3">Set backing behind the frame. Add real lips to vents and windows.</text>
+<text x="605" y="923" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#a9bac9">Judge silhouette and shadow under neutral light before adding small detail.</text>
+<path d="M45,952 L1555,952" fill="none" stroke="#3c4b59" stroke-width="2" />
+<text x="45" y="990" font-family="Segoe UI,Arial,sans-serif" font-size="23" fill="#e5edf3">PLAN / SAME THREE OUT-AND-BACK TESTS</text>
+<rect x="70" y="1015" width="100" height="180" fill="#1b2a36" stroke="#7ed6bf"/>
+<rect x="92" y="1015" width="56" height="180" fill="#243643" stroke="none"/>
+<rect x="82" y="1020" width="10" height="6" fill="#7ed6bf" stroke="none"/>
+<rect x="148" y="1020" width="10" height="6" fill="#7ed6bf" stroke="none"/>
+<rect x="82" y="1060" width="10" height="6" fill="#7ed6bf" stroke="none"/>
+<rect x="148" y="1060" width="10" height="6" fill="#7ed6bf" stroke="none"/>
+<rect x="82" y="1105" width="10" height="6" fill="#7ed6bf" stroke="none"/>
+<rect x="148" y="1105" width="10" height="6" fill="#7ed6bf" stroke="none"/>
+<rect x="82" y="1150" width="10" height="6" fill="#7ed6bf" stroke="none"/>
+<rect x="148" y="1150" width="10" height="6" fill="#7ed6bf" stroke="none"/>
+<text x="111" y="1052" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#7ed6bf">A</text>
+<rect x="220" y="1015" width="100" height="180" fill="#1b2a36" stroke="#efbb75"/>
+<rect x="242" y="1015" width="56" height="180" fill="#243643" stroke="none"/>
+<rect x="232" y="1020" width="10" height="6" fill="#efbb75" stroke="none"/>
+<rect x="298" y="1020" width="10" height="6" fill="#efbb75" stroke="none"/>
+<rect x="232" y="1060" width="10" height="6" fill="#efbb75" stroke="none"/>
+<rect x="298" y="1060" width="10" height="6" fill="#efbb75" stroke="none"/>
+<rect x="232" y="1105" width="10" height="6" fill="#efbb75" stroke="none"/>
+<rect x="298" y="1105" width="10" height="6" fill="#efbb75" stroke="none"/>
+<rect x="232" y="1150" width="10" height="6" fill="#efbb75" stroke="none"/>
+<rect x="298" y="1150" width="10" height="6" fill="#efbb75" stroke="none"/>
+<text x="261" y="1052" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#efbb75">B</text>
+<rect x="370" y="1015" width="100" height="180" fill="#1b2a36" stroke="#8dc5f2"/>
+<rect x="392" y="1015" width="56" height="180" fill="#243643" stroke="none"/>
+<rect x="382" y="1020" width="10" height="6" fill="#8dc5f2" stroke="none"/>
+<rect x="448" y="1020" width="10" height="6" fill="#8dc5f2" stroke="none"/>
+<rect x="382" y="1060" width="10" height="6" fill="#8dc5f2" stroke="none"/>
+<rect x="448" y="1060" width="10" height="6" fill="#8dc5f2" stroke="none"/>
+<rect x="382" y="1105" width="10" height="6" fill="#8dc5f2" stroke="none"/>
+<rect x="448" y="1105" width="10" height="6" fill="#8dc5f2" stroke="none"/>
+<rect x="382" y="1150" width="10" height="6" fill="#8dc5f2" stroke="none"/>
+<rect x="448" y="1150" width="10" height="6" fill="#8dc5f2" stroke="none"/>
+<text x="411" y="1052" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#8dc5f2">C</text>
+<rect x="50" y="1195" width="450" height="65" fill="#243643" stroke="#9db1c1"/>
+<text x="98" y="1234" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#e5edf3">Shared gallery / widened to 24 × 6 m</text>
+<text x="575" y="1030" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#e5edf3">16 m sample lengths; centres 8 m apart; clear lanes remain 4 m.</text>
+<text x="575" y="1064" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#e5edf3">Extra wall depth sits outside the lanes. C’s scenery sits to the east.</text>
+<text x="575" y="1098" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#e5edf3">B reserves a sealed overhead hatch between ribs; services stay beside it.</text>
+<text x="575" y="1146" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#a9bac9">Images supplied by you guide geometry, not shader imitation.</text>
+<text x="575" y="1180" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#a9bac9">A: hanging spine   B: stepped bays   C: window buttresses</text>
+<text x="575" y="1214" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#a9bac9">Sketches show profiles at ribs; infill and continuous ducting sit behind.</text>
+<text x="45" y="1293" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#a9bac9">REVISION 03 / paper geometry study only · no game-map edits · actual construction and clearance checks follow review</text>
+</svg>
