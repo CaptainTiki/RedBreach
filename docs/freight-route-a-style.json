@@ -1,0 +1,10674 @@
+{
+  "revision": "12",
+  "status": "BUILT - QUALITY PASS VALIDATED - HUMAN WALKTHROUGH PENDING",
+  "paper_review": "Explicitly waived by user for the rest of admin / all Route A",
+  "zones": [
+    {
+      "id": "A1_03",
+      "room": "A1",
+      "title": "Administration",
+      "bounds": [
+        62,
+        262,
+        81.875,
+        275.875
+      ],
+      "floor": 0,
+      "ceiling": 3.5,
+      "sample": [
+        72,
+        264
+      ]
+    },
+    {
+      "id": "A1_04",
+      "room": "A1",
+      "title": "Staff preparation",
+      "bounds": [
+        62,
+        276.125,
+        95.875,
+        294
+      ],
+      "floor": 0,
+      "ceiling": 3.5,
+      "sample": [
+        83,
+        291
+      ]
+    },
+    {
+      "id": "A2_01",
+      "room": "A2",
+      "title": "Circuit control",
+      "bounds": [
+        8,
+        184,
+        31.875,
+        205.875
+      ],
+      "floor": -2,
+      "ceiling": 1.5,
+      "sample": [
+        20,
+        188
+      ]
+    },
+    {
+      "id": "A2_02",
+      "room": "A2",
+      "title": "Pump test room",
+      "bounds": [
+        32.125,
+        184,
+        56,
+        205.875
+      ],
+      "floor": -2,
+      "ceiling": 2.5,
+      "sample": [
+        44,
+        202.5
+      ]
+    },
+    {
+      "id": "A2_03",
+      "room": "A2",
+      "title": "Staff preparation",
+      "bounds": [
+        8,
+        206.125,
+        31.875,
+        223.875
+      ],
+      "floor": -2,
+      "ceiling": 1.5,
+      "sample": [
+        20,
+        209.5
+      ]
+    },
+    {
+      "id": "A2_04",
+      "room": "A2",
+      "title": "Kit store",
+      "bounds": [
+        8,
+        224.125,
+        31.875,
+        242
+      ],
+      "floor": -2,
+      "ceiling": 1.5,
+      "sample": [
+        20,
+        239.5
+      ]
+    },
+    {
+      "id": "A2_05",
+      "room": "A2",
+      "title": "Inspection work floor",
+      "bounds": [
+        32.125,
+        206.125,
+        56,
+        232
+      ],
+      "floor": -2,
+      "ceiling": 2.5,
+      "sample": [
+        44,
+        219
+      ]
+    },
+    {
+      "id": "A8_01",
+      "room": "A8",
+      "title": "Annex intake",
+      "bounds": [
+        65,
+        184,
+        101,
+        203.875
+      ],
+      "floor": -2,
+      "ceiling": 1.5,
+      "sample": [
+        82,
+        190
+      ]
+    },
+    {
+      "id": "A8_02",
+      "room": "A8",
+      "title": "Tool workshop",
+      "bounds": [
+        65,
+        204.125,
+        84.875,
+        242
+      ],
+      "floor": -2,
+      "ceiling": 2.5,
+      "sample": [
+        75,
+        220
+      ]
+    },
+    {
+      "id": "A8_03",
+      "room": "A8",
+      "title": "Service stores",
+      "bounds": [
+        85.125,
+        204.125,
+        101,
+        222.875
+      ],
+      "floor": -2,
+      "ceiling": 1.5,
+      "sample": [
+        93,
+        211
+      ]
+    },
+    {
+      "id": "A8_04",
+      "room": "A8",
+      "title": "Spare assemblies",
+      "bounds": [
+        85.125,
+        223.125,
+        101,
+        242
+      ],
+      "floor": -2,
+      "ceiling": 1.5,
+      "sample": [
+        93,
+        237.5
+      ]
+    },
+    {
+      "id": "A3_Floor",
+      "room": "A3",
+      "title": "Records processing",
+      "bounds": [
+        20,
+        120,
+        70,
+        146
+      ],
+      "floor": 0,
+      "ceiling": 8,
+      "sample": [
+        30,
+        140
+      ]
+    },
+    {
+      "id": "A3_Stacks",
+      "room": "A3",
+      "title": "Records machine aisle",
+      "bounds": [
+        70.125,
+        120,
+        84,
+        146
+      ],
+      "floor": 0,
+      "ceiling": 8,
+      "sample": [
+        79,
+        142
+      ]
+    },
+    {
+      "id": "A3_Upper",
+      "room": "A3",
+      "title": "Archive transfer gallery",
+      "bounds": [
+        20,
+        110,
+        84,
+        118
+      ],
+      "floor": 4,
+      "ceiling": 8,
+      "sample": [
+        46,
+        115
+      ]
+    },
+    {
+      "id": "A7_South",
+      "room": "A7",
+      "title": "Document retrieval",
+      "bounds": [
+        22,
+        63.125,
+        62,
+        81
+      ],
+      "floor": 4,
+      "ceiling": 7.5,
+      "sample": [
+        28,
+        75
+      ]
+    },
+    {
+      "id": "A7_North",
+      "room": "A7",
+      "title": "Secure records",
+      "bounds": [
+        22,
+        41,
+        62,
+        62.875
+      ],
+      "floor": 4,
+      "ceiling": 7.5,
+      "sample": [
+        45,
+        45
+      ]
+    },
+    {
+      "id": "A4_West",
+      "room": "A4",
+      "title": "Freight dispatch",
+      "bounds": [
+        88,
+        49,
+        125.875,
+        79.875
+      ],
+      "floor": 2,
+      "ceiling": 5.5,
+      "sample": [
+        98,
+        58
+      ]
+    },
+    {
+      "id": "A4_South",
+      "room": "A4",
+      "title": "Dispatch reception gallery",
+      "bounds": [
+        88,
+        80.125,
+        131.875,
+        93
+      ],
+      "floor": 2,
+      "ceiling": 5.5,
+      "sample": [
+        96,
+        88
+      ]
+    },
+    {
+      "id": "A4_East",
+      "room": "A4",
+      "title": "Security operations",
+      "bounds": [
+        126.125,
+        49,
+        154,
+        79.875
+      ],
+      "floor": 2,
+      "ceiling": 5.5,
+      "sample": [
+        136,
+        56
+      ]
+    },
+    {
+      "id": "A4_Exit",
+      "room": "A4",
+      "title": "Watch handover",
+      "bounds": [
+        132.125,
+        80.125,
+        154,
+        93
+      ],
+      "floor": 2,
+      "ceiling": 5.5,
+      "sample": [
+        136,
+        88
+      ]
+    },
+    {
+      "id": "A5_Low",
+      "room": "A5",
+      "title": "Surveillance equipment",
+      "bounds": [
+        128,
+        114,
+        158,
+        129.8
+      ],
+      "floor": 2,
+      "ceiling": 10,
+      "sample": [
+        133,
+        120
+      ]
+    },
+    {
+      "id": "A5_Upper",
+      "room": "A5",
+      "title": "Watch gallery",
+      "bounds": [
+        128,
+        130,
+        150,
+        144
+      ],
+      "floor": 6,
+      "ceiling": 10,
+      "sample": [
+        135,
+        133
+      ]
+    },
+    {
+      "id": "A6_Upper",
+      "room": "A6",
+      "title": "Supervisor overlook",
+      "bounds": [
+        110,
+        166,
+        130,
+        180
+      ],
+      "floor": 6,
+      "ceiling": 10,
+      "sample": [
+        113,
+        169
+      ]
+    },
+    {
+      "id": "A6_West",
+      "room": "A6",
+      "title": "Clearance work office",
+      "bounds": [
+        110,
+        184.125,
+        129.875,
+        198
+      ],
+      "floor": 0,
+      "ceiling": 3.5,
+      "sample": [
+        119,
+        195
+      ]
+    },
+    {
+      "id": "A6_East",
+      "room": "A6",
+      "title": "Exit processing",
+      "bounds": [
+        130.125,
+        184.125,
+        156,
+        198
+      ],
+      "floor": 0,
+      "ceiling": 3.5,
+      "sample": [
+        140,
+        194
+      ]
+    },
+    {
+      "id": "A6_Low",
+      "room": "A6",
+      "title": "Office systems",
+      "bounds": [
+        110,
+        166,
+        127,
+        183.8
+      ],
+      "floor": 0,
+      "ceiling": 3.5,
+      "sample": [
+        116,
+        170
+      ]
+    }
+  ],
+  "props": [
+    {
+      "id": "A1_001",
+      "room": "A1",
+      "kind": "desk",
+      "bounds": [
+        64,
+        263.6,
+        67,
+        265.4
+      ],
+      "bottom": 0,
+      "top": 0.75,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A1_002",
+      "room": "A1",
+      "kind": "chair",
+      "bounds": [
+        64.45,
+        265.54999999999995,
+        65.10000000000001,
+        266.19999999999993
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Desk chair",
+      "facing": "south"
+    },
+    {
+      "id": "A1_003",
+      "room": "A1",
+      "kind": "chair",
+      "bounds": [
+        65.7,
+        265.54999999999995,
+        66.35000000000001,
+        266.19999999999993
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Desk chair",
+      "facing": "south"
+    },
+    {
+      "id": "A1_004",
+      "room": "A1",
+      "kind": "desk",
+      "bounds": [
+        71,
+        263.6,
+        74,
+        265.4
+      ],
+      "bottom": 0,
+      "top": 0.75,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A1_005",
+      "room": "A1",
+      "kind": "chair",
+      "bounds": [
+        71.45,
+        265.54999999999995,
+        72.10000000000001,
+        266.19999999999993
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Desk chair",
+      "facing": "south"
+    },
+    {
+      "id": "A1_006",
+      "room": "A1",
+      "kind": "chair",
+      "bounds": [
+        72.7,
+        265.54999999999995,
+        73.35000000000001,
+        266.19999999999993
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Desk chair",
+      "facing": "south"
+    },
+    {
+      "id": "A1_007",
+      "room": "A1",
+      "kind": "desk",
+      "bounds": [
+        78,
+        263.6,
+        80.6,
+        265.2
+      ],
+      "bottom": 0,
+      "top": 0.75,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A1_008",
+      "room": "A1",
+      "kind": "chair",
+      "bounds": [
+        78.45,
+        265.34999999999997,
+        79.10000000000001,
+        265.99999999999994
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Desk chair",
+      "facing": "south"
+    },
+    {
+      "id": "A1_009",
+      "room": "A1",
+      "kind": "chair",
+      "bounds": [
+        79.7,
+        265.34999999999997,
+        80.35000000000001,
+        265.99999999999994
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Desk chair",
+      "facing": "south"
+    },
+    {
+      "id": "A1_010",
+      "room": "A1",
+      "kind": "desk",
+      "bounds": [
+        64,
+        270.5,
+        67,
+        272.3
+      ],
+      "bottom": 0,
+      "top": 0.75,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A1_011",
+      "room": "A1",
+      "kind": "chair",
+      "bounds": [
+        64.45,
+        272.45,
+        65.10000000000001,
+        273.09999999999997
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Desk chair",
+      "facing": "south"
+    },
+    {
+      "id": "A1_012",
+      "room": "A1",
+      "kind": "chair",
+      "bounds": [
+        65.7,
+        272.45,
+        66.35000000000001,
+        273.09999999999997
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Desk chair",
+      "facing": "south"
+    },
+    {
+      "id": "A1_013",
+      "room": "A1",
+      "kind": "desk",
+      "bounds": [
+        71,
+        270.5,
+        74,
+        272.3
+      ],
+      "bottom": 0,
+      "top": 0.75,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A1_014",
+      "room": "A1",
+      "kind": "chair",
+      "bounds": [
+        71.45,
+        272.45,
+        72.10000000000001,
+        273.09999999999997
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Desk chair",
+      "facing": "south"
+    },
+    {
+      "id": "A1_015",
+      "room": "A1",
+      "kind": "chair",
+      "bounds": [
+        72.7,
+        272.45,
+        73.35000000000001,
+        273.09999999999997
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Desk chair",
+      "facing": "south"
+    },
+    {
+      "id": "A1_016",
+      "room": "A1",
+      "kind": "storage",
+      "bounds": [
+        62.25,
+        262.5,
+        63.15,
+        265.8
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "name": "West filing cabinets",
+      "facing": "south"
+    },
+    {
+      "id": "A1_017",
+      "room": "A1",
+      "kind": "service",
+      "bounds": [
+        80.75,
+        262.8,
+        81.55,
+        265.8
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Network cabinet",
+      "facing": "south"
+    },
+    {
+      "id": "A1_018",
+      "room": "A1",
+      "kind": "storage",
+      "bounds": [
+        78.8,
+        270.8,
+        80.8,
+        271.7
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "name": "Archive north bank",
+      "facing": "south"
+    },
+    {
+      "id": "A1_019",
+      "room": "A1",
+      "kind": "storage",
+      "bounds": [
+        78.8,
+        274.4,
+        80.8,
+        275.3
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "name": "Archive south bank",
+      "facing": "south"
+    },
+    {
+      "id": "A1_020",
+      "room": "A1",
+      "kind": "storage",
+      "bounds": [
+        64,
+        274.8,
+        74.2,
+        275.65
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "name": "Records wall cabinets",
+      "facing": "south"
+    },
+    {
+      "id": "A1_021",
+      "room": "A1",
+      "kind": "service",
+      "bounds": [
+        62.25,
+        270.5,
+        63.15,
+        273
+      ],
+      "bottom": 0,
+      "top": 2.3,
+      "name": "Air handling",
+      "facing": "south"
+    },
+    {
+      "id": "A1_022",
+      "room": "A1",
+      "kind": "display",
+      "bounds": [
+        62.13,
+        267,
+        62.4,
+        268.9
+      ],
+      "bottom": 1.1,
+      "top": 2.1,
+      "name": "Wall readout",
+      "facing": "south"
+    },
+    {
+      "id": "A1_023",
+      "room": "A1",
+      "kind": "desk",
+      "bounds": [
+        76.5,
+        279.1,
+        84.5,
+        280.1
+      ],
+      "bottom": 0,
+      "top": 1.1,
+      "name": "Kit issue counter",
+      "facing": "south"
+    },
+    {
+      "id": "A1_024",
+      "room": "A1",
+      "kind": "storage",
+      "bounds": [
+        76.5,
+        276.4,
+        84.8,
+        277.15
+      ],
+      "bottom": 0,
+      "top": 2.3,
+      "name": "Kit issue storage wall",
+      "facing": "south"
+    },
+    {
+      "id": "A1_025",
+      "room": "A1",
+      "kind": "storage",
+      "bounds": [
+        90.5,
+        276.4,
+        95.1,
+        277.3
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "name": "Changing / north lockers",
+      "facing": "south"
+    },
+    {
+      "id": "A1_026",
+      "room": "A1",
+      "kind": "bench",
+      "bounds": [
+        90.5,
+        279.2,
+        92.5,
+        280
+      ],
+      "bottom": 0,
+      "top": 0.45,
+      "name": "Changing bench",
+      "facing": "south"
+    },
+    {
+      "id": "A1_027",
+      "room": "A1",
+      "kind": "service",
+      "bounds": [
+        94.5,
+        279,
+        95.55,
+        284.2
+      ],
+      "bottom": 0,
+      "top": 2.5,
+      "name": "Suit cleaning and air unit",
+      "facing": "south"
+    },
+    {
+      "id": "A1_028",
+      "room": "A1",
+      "kind": "bench",
+      "bounds": [
+        90.5,
+        286.2,
+        93,
+        287
+      ],
+      "bottom": 0,
+      "top": 0.45,
+      "name": "Changing bench",
+      "facing": "south"
+    },
+    {
+      "id": "A1_029",
+      "room": "A1",
+      "kind": "storage",
+      "bounds": [
+        94.9,
+        286.3,
+        95.65,
+        289
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "name": "East service lockers",
+      "facing": "south"
+    },
+    {
+      "id": "A1_030",
+      "room": "A1",
+      "kind": "storage",
+      "bounds": [
+        85.1,
+        293.05,
+        94.5,
+        293.8
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "name": "South changing lockers",
+      "facing": "south"
+    },
+    {
+      "id": "A1_031",
+      "room": "A1",
+      "kind": "desk",
+      "bounds": [
+        78,
+        285.3,
+        83,
+        286.5
+      ],
+      "bottom": 0,
+      "top": 1.0,
+      "name": "Equipment repair bench",
+      "facing": "south"
+    },
+    {
+      "id": "A1_032",
+      "room": "A1",
+      "kind": "chair",
+      "bounds": [
+        79.3,
+        286.7,
+        79.95,
+        287.35
+      ],
+      "bottom": 0,
+      "top": 0.7,
+      "name": "Repair stool",
+      "facing": "south"
+    },
+    {
+      "id": "A1_033",
+      "room": "A1",
+      "kind": "bench",
+      "bounds": [
+        78.2,
+        290.3,
+        82.4,
+        291
+      ],
+      "bottom": 0,
+      "top": 0.45,
+      "name": "Equipment fitting bench",
+      "facing": "south"
+    },
+    {
+      "id": "A1_034",
+      "room": "A1",
+      "kind": "storage",
+      "bounds": [
+        76.5,
+        292.8,
+        84.8,
+        293.8
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "name": "Spare kit lockers",
+      "facing": "south"
+    },
+    {
+      "id": "A1_035",
+      "room": "A1",
+      "kind": "storage",
+      "bounds": [
+        63,
+        276.8,
+        68,
+        277.8
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "name": "Tool cabinets",
+      "facing": "south"
+    },
+    {
+      "id": "A1_036",
+      "room": "A1",
+      "kind": "desk",
+      "bounds": [
+        64,
+        279.6,
+        68,
+        280.8
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Outbound tool check bench",
+      "facing": "south"
+    },
+    {
+      "id": "A1_037",
+      "room": "A1",
+      "kind": "equipment",
+      "bounds": [
+        69.5,
+        277,
+        71.8,
+        280.5
+      ],
+      "bottom": 0,
+      "top": 1.4,
+      "name": "Equipment cart bay",
+      "facing": "south"
+    },
+    {
+      "id": "A1_038",
+      "room": "A1",
+      "kind": "service",
+      "bounds": [
+        62.25,
+        279.7,
+        63.1,
+        284.4
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "name": "Utility cabinets",
+      "facing": "south"
+    },
+    {
+      "id": "A1_039",
+      "room": "A1",
+      "kind": "equipment",
+      "bounds": [
+        68.4,
+        284.3,
+        71.3,
+        285.8
+      ],
+      "bottom": 0,
+      "top": 1.2,
+      "name": "Prepared equipment carts",
+      "facing": "south"
+    },
+    {
+      "id": "A1_040",
+      "room": "A1",
+      "kind": "equipment",
+      "bounds": [
+        64,
+        292.6,
+        68.5,
+        293.7
+      ],
+      "bottom": 0,
+      "top": 1.4,
+      "name": "Outbound cases",
+      "facing": "south"
+    },
+    {
+      "id": "A1_041",
+      "room": "A1",
+      "kind": "storage",
+      "bounds": [
+        69.5,
+        290.5,
+        71.8,
+        293.5
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "name": "Tool/supply rack",
+      "facing": "south"
+    },
+    {
+      "id": "A1_042",
+      "room": "A1",
+      "kind": "equipment",
+      "bounds": [
+        66,
+        290.5,
+        68.5,
+        291.5
+      ],
+      "bottom": 0,
+      "top": 1.1,
+      "name": "Outbound trolley",
+      "facing": "south"
+    },
+    {
+      "id": "A1_043",
+      "room": "A1",
+      "kind": "backboard",
+      "bounds": [
+        85.8,
+        284.2,
+        86.1,
+        287.1
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment backboard / partial bay divider",
+      "facing": "south"
+    },
+    {
+      "id": "A1_044",
+      "room": "A1",
+      "kind": "backboard",
+      "bounds": [
+        85.8,
+        289.9,
+        86.1,
+        292.3
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment backboard / partial bay divider",
+      "facing": "south"
+    },
+    {
+      "id": "A1_045",
+      "room": "A1",
+      "kind": "backboard",
+      "bounds": [
+        75.75,
+        284.2,
+        76,
+        285.8
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment backboard / partial bay divider",
+      "facing": "south"
+    },
+    {
+      "id": "A1_046",
+      "room": "A1",
+      "kind": "backboard",
+      "bounds": [
+        75.75,
+        289.9,
+        76,
+        292.3
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment backboard / partial bay divider",
+      "facing": "south"
+    },
+    {
+      "id": "A1_047",
+      "room": "A1",
+      "kind": "duct",
+      "bounds": [
+        62.4,
+        262.29999999999995,
+        81.5,
+        262.9
+      ],
+      "bottom": 2.7,
+      "top": 3.15,
+      "name": "Ceiling service trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A1_048",
+      "room": "A1",
+      "kind": "duct",
+      "bounds": [
+        62.4,
+        276.45,
+        85,
+        277.05
+      ],
+      "bottom": 2.7,
+      "top": 3.15,
+      "name": "Ceiling service trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A1_049",
+      "room": "A1",
+      "kind": "duct",
+      "bounds": [
+        94.7,
+        277,
+        95.3,
+        293.4
+      ],
+      "bottom": 2.7,
+      "top": 3.15,
+      "name": "Ceiling service trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A1_050",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        64.4,
+        264.38,
+        66.6,
+        264.62
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_051",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        71.4,
+        264.38,
+        73.6,
+        264.62
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_052",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        78.10000000000001,
+        264.38,
+        80.3,
+        264.62
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_053",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        64.4,
+        271.28,
+        66.6,
+        271.52
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_054",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        71.4,
+        271.28,
+        73.6,
+        271.52
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_055",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        78.30000000000001,
+        272.88,
+        80.5,
+        273.12
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_056",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        64.4,
+        279.78,
+        66.6,
+        280.02
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_057",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        70.9,
+        283.28,
+        73.1,
+        283.52
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_058",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        79.4,
+        279.48,
+        81.6,
+        279.72
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_059",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        79.4,
+        285.68,
+        81.6,
+        285.92
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_060",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        90.4,
+        278.08,
+        92.6,
+        278.32
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_061",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        90.4,
+        286.58,
+        92.6,
+        286.82
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A1_062",
+      "room": "A1",
+      "kind": "light",
+      "bounds": [
+        86.7,
+        291.68,
+        88.89999999999999,
+        291.92
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "name": "Task light housing",
+      "facing": "south"
+    },
+    {
+      "id": "A2_001",
+      "room": "A2",
+      "kind": "desk",
+      "bounds": [
+        10,
+        189,
+        14,
+        190.8
+      ],
+      "bottom": -2,
+      "top": -1.22,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A2_002",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        10.6,
+        191,
+        11.25,
+        191.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_003",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        12.75,
+        191,
+        13.4,
+        191.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_004",
+      "room": "A2",
+      "kind": "desk",
+      "bounds": [
+        24,
+        190,
+        28,
+        191.8
+      ],
+      "bottom": -2,
+      "top": -1.22,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A2_005",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        24.6,
+        192,
+        25.25,
+        192.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_006",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        26.75,
+        192,
+        27.4,
+        192.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_007",
+      "room": "A2",
+      "kind": "desk",
+      "bounds": [
+        10,
+        208,
+        14,
+        209.8
+      ],
+      "bottom": -2,
+      "top": -1.22,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A2_008",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        10.6,
+        210,
+        11.25,
+        210.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_009",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        12.75,
+        210,
+        13.4,
+        210.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_010",
+      "room": "A2",
+      "kind": "desk",
+      "bounds": [
+        24,
+        208,
+        28,
+        209.8
+      ],
+      "bottom": -2,
+      "top": -1.22,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A2_011",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        24.6,
+        210,
+        25.25,
+        210.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_012",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        26.75,
+        210,
+        27.4,
+        210.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_013",
+      "room": "A2",
+      "kind": "desk",
+      "bounds": [
+        24,
+        219,
+        28,
+        220.8
+      ],
+      "bottom": -2,
+      "top": -1.22,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A2_014",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        24.6,
+        221,
+        25.25,
+        221.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_015",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        26.75,
+        221,
+        27.4,
+        221.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_016",
+      "room": "A2",
+      "kind": "desk",
+      "bounds": [
+        34,
+        208,
+        38,
+        209.8
+      ],
+      "bottom": -2,
+      "top": -1.22,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A2_017",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        34.6,
+        210,
+        35.25,
+        210.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_018",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        36.75,
+        210,
+        37.4,
+        210.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_019",
+      "room": "A2",
+      "kind": "desk",
+      "bounds": [
+        47,
+        210,
+        51,
+        211.8
+      ],
+      "bottom": -2,
+      "top": -1.22,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A2_020",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        47.6,
+        212,
+        48.25,
+        212.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_021",
+      "room": "A2",
+      "kind": "chair",
+      "bounds": [
+        49.75,
+        212,
+        50.4,
+        212.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A8_001",
+      "room": "A8",
+      "kind": "desk",
+      "bounds": [
+        67,
+        187,
+        71,
+        188.8
+      ],
+      "bottom": -2,
+      "top": -1.22,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A8_002",
+      "room": "A8",
+      "kind": "chair",
+      "bounds": [
+        67.6,
+        189,
+        68.25,
+        189.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A8_003",
+      "room": "A8",
+      "kind": "chair",
+      "bounds": [
+        69.75,
+        189,
+        70.4,
+        189.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A8_004",
+      "room": "A8",
+      "kind": "desk",
+      "bounds": [
+        76,
+        187,
+        80,
+        188.8
+      ],
+      "bottom": -2,
+      "top": -1.22,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A8_005",
+      "room": "A8",
+      "kind": "chair",
+      "bounds": [
+        76.6,
+        189,
+        77.25,
+        189.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A8_006",
+      "room": "A8",
+      "kind": "chair",
+      "bounds": [
+        78.75,
+        189,
+        79.4,
+        189.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A8_007",
+      "room": "A8",
+      "kind": "desk",
+      "bounds": [
+        87,
+        187,
+        91,
+        188.8
+      ],
+      "bottom": -2,
+      "top": -1.22,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A8_008",
+      "room": "A8",
+      "kind": "chair",
+      "bounds": [
+        87.6,
+        189,
+        88.25,
+        189.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A8_009",
+      "room": "A8",
+      "kind": "chair",
+      "bounds": [
+        89.75,
+        189,
+        90.4,
+        189.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A8_010",
+      "room": "A8",
+      "kind": "desk",
+      "bounds": [
+        67,
+        198,
+        71,
+        199.8
+      ],
+      "bottom": -2,
+      "top": -1.22,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A8_011",
+      "room": "A8",
+      "kind": "chair",
+      "bounds": [
+        67.6,
+        200,
+        68.25,
+        200.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A8_012",
+      "room": "A8",
+      "kind": "chair",
+      "bounds": [
+        69.75,
+        200,
+        70.4,
+        200.65
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_001",
+      "room": "A3",
+      "kind": "desk",
+      "bounds": [
+        23,
+        124,
+        27,
+        125.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A3_002",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        23.6,
+        126,
+        24.25,
+        126.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_003",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        25.75,
+        126,
+        26.4,
+        126.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_004",
+      "room": "A3",
+      "kind": "desk",
+      "bounds": [
+        23,
+        131,
+        27,
+        132.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A3_005",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        23.6,
+        133,
+        24.25,
+        133.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_006",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        25.75,
+        133,
+        26.4,
+        133.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_007",
+      "room": "A3",
+      "kind": "desk",
+      "bounds": [
+        23,
+        138,
+        27,
+        139.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A3_008",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        23.6,
+        140,
+        24.25,
+        140.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_009",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        25.75,
+        140,
+        26.4,
+        140.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_010",
+      "room": "A3",
+      "kind": "desk",
+      "bounds": [
+        35,
+        124,
+        39,
+        125.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A3_011",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        35.6,
+        126,
+        36.25,
+        126.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_012",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        37.75,
+        126,
+        38.4,
+        126.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_013",
+      "room": "A3",
+      "kind": "desk",
+      "bounds": [
+        35,
+        131,
+        39,
+        132.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A3_014",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        35.6,
+        133,
+        36.25,
+        133.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_015",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        37.75,
+        133,
+        38.4,
+        133.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_016",
+      "room": "A3",
+      "kind": "desk",
+      "bounds": [
+        35,
+        138,
+        39,
+        139.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A3_017",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        35.6,
+        140,
+        36.25,
+        140.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_018",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        37.75,
+        140,
+        38.4,
+        140.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_019",
+      "room": "A3",
+      "kind": "desk",
+      "bounds": [
+        60,
+        137,
+        64,
+        138.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A3_020",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        60.6,
+        139,
+        61.25,
+        139.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A3_021",
+      "room": "A3",
+      "kind": "chair",
+      "bounds": [
+        62.75,
+        139,
+        63.4,
+        139.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_001",
+      "room": "A7",
+      "kind": "desk",
+      "bounds": [
+        25,
+        67,
+        29,
+        68.8
+      ],
+      "bottom": 4,
+      "top": 4.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A7_002",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        25.6,
+        69,
+        26.25,
+        69.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_003",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        27.75,
+        69,
+        28.4,
+        69.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_004",
+      "room": "A7",
+      "kind": "desk",
+      "bounds": [
+        35,
+        72,
+        39,
+        73.8
+      ],
+      "bottom": 4,
+      "top": 4.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A7_005",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        35.6,
+        74,
+        36.25,
+        74.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_006",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        37.75,
+        74,
+        38.4,
+        74.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_007",
+      "room": "A7",
+      "kind": "desk",
+      "bounds": [
+        52,
+        66,
+        56,
+        67.8
+      ],
+      "bottom": 4,
+      "top": 4.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A7_008",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        52.6,
+        68,
+        53.25,
+        68.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_009",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        54.75,
+        68,
+        55.4,
+        68.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_010",
+      "room": "A7",
+      "kind": "desk",
+      "bounds": [
+        25,
+        43,
+        29,
+        44.8
+      ],
+      "bottom": 4,
+      "top": 4.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A7_011",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        25.6,
+        45,
+        26.25,
+        45.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_012",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        27.75,
+        45,
+        28.4,
+        45.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_013",
+      "room": "A7",
+      "kind": "desk",
+      "bounds": [
+        35,
+        43,
+        39,
+        44.8
+      ],
+      "bottom": 4,
+      "top": 4.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A7_014",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        35.6,
+        45,
+        36.25,
+        45.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_015",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        37.75,
+        45,
+        38.4,
+        45.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_016",
+      "room": "A7",
+      "kind": "desk",
+      "bounds": [
+        45,
+        43,
+        49,
+        44.8
+      ],
+      "bottom": 4,
+      "top": 4.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A7_017",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        45.6,
+        45,
+        46.25,
+        45.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_018",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        47.75,
+        45,
+        48.4,
+        45.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_019",
+      "room": "A7",
+      "kind": "desk",
+      "bounds": [
+        51,
+        51,
+        55,
+        52.8
+      ],
+      "bottom": 4,
+      "top": 4.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A7_020",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        51.6,
+        53,
+        52.25,
+        53.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A7_021",
+      "room": "A7",
+      "kind": "chair",
+      "bounds": [
+        53.75,
+        53,
+        54.4,
+        53.65
+      ],
+      "bottom": 4,
+      "top": 4.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_001",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        91,
+        52,
+        95,
+        53.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_002",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        91.6,
+        54,
+        92.25,
+        54.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_003",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        93.75,
+        54,
+        94.4,
+        54.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_004",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        101,
+        52,
+        105,
+        53.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_005",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        101.6,
+        54,
+        102.25,
+        54.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_006",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        103.75,
+        54,
+        104.4,
+        54.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_007",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        111,
+        52,
+        115,
+        53.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_008",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        111.6,
+        54,
+        112.25,
+        54.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_009",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        113.75,
+        54,
+        114.4,
+        54.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_010",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        91,
+        60,
+        95,
+        61.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_011",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        91.6,
+        62,
+        92.25,
+        62.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_012",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        93.75,
+        62,
+        94.4,
+        62.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_013",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        101,
+        60,
+        105,
+        61.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_014",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        101.6,
+        62,
+        102.25,
+        62.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_015",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        103.75,
+        62,
+        104.4,
+        62.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_016",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        111,
+        60,
+        115,
+        61.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_017",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        111.6,
+        62,
+        112.25,
+        62.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_018",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        113.75,
+        62,
+        114.4,
+        62.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_019",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        91,
+        69,
+        95,
+        70.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_020",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        91.6,
+        71,
+        92.25,
+        71.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_021",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        93.75,
+        71,
+        94.4,
+        71.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_022",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        101,
+        69,
+        105,
+        70.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_023",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        101.6,
+        71,
+        102.25,
+        71.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_024",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        103.75,
+        71,
+        104.4,
+        71.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_025",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        114,
+        67,
+        118,
+        68.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_026",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        114.6,
+        69,
+        115.25,
+        69.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_027",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        116.75,
+        69,
+        117.4,
+        69.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_028",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        129,
+        52,
+        133,
+        53.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_029",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        129.6,
+        54,
+        130.25,
+        54.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_030",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        131.75,
+        54,
+        132.4,
+        54.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_031",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        138,
+        52,
+        142,
+        53.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_032",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        138.6,
+        54,
+        139.25,
+        54.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_033",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        140.75,
+        54,
+        141.4,
+        54.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_034",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        146,
+        73,
+        150,
+        74.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_035",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        146.6,
+        75,
+        147.25,
+        75.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_036",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        148.75,
+        75,
+        149.4,
+        75.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_037",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        91,
+        86,
+        95,
+        87.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_038",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        91.6,
+        88,
+        92.25,
+        88.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_039",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        93.75,
+        88,
+        94.4,
+        88.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_040",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        119,
+        86,
+        123,
+        87.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_041",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        119.6,
+        88,
+        120.25,
+        88.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_042",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        121.75,
+        88,
+        122.4,
+        88.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_043",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        133,
+        86,
+        137,
+        87.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_044",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        133.6,
+        88,
+        134.25,
+        88.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_045",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        135.75,
+        88,
+        136.4,
+        88.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_046",
+      "room": "A4",
+      "kind": "desk",
+      "bounds": [
+        146,
+        86,
+        150,
+        87.8
+      ],
+      "bottom": 2,
+      "top": 2.7800000000000002,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A4_047",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        146.6,
+        88,
+        147.25,
+        88.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A4_048",
+      "room": "A4",
+      "kind": "chair",
+      "bounds": [
+        148.75,
+        88,
+        149.4,
+        88.65
+      ],
+      "bottom": 2,
+      "top": 2.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A5_001",
+      "room": "A5",
+      "kind": "desk",
+      "bounds": [
+        129,
+        131,
+        133,
+        132.8
+      ],
+      "bottom": 6,
+      "top": 6.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A5_002",
+      "room": "A5",
+      "kind": "chair",
+      "bounds": [
+        129.6,
+        133,
+        130.25,
+        133.65
+      ],
+      "bottom": 6,
+      "top": 6.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A5_003",
+      "room": "A5",
+      "kind": "chair",
+      "bounds": [
+        131.75,
+        133,
+        132.4,
+        133.65
+      ],
+      "bottom": 6,
+      "top": 6.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_001",
+      "room": "A6",
+      "kind": "desk",
+      "bounds": [
+        111,
+        168,
+        115,
+        169.8
+      ],
+      "bottom": 6,
+      "top": 6.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A6_002",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        111.6,
+        170,
+        112.25,
+        170.65
+      ],
+      "bottom": 6,
+      "top": 6.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_003",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        113.75,
+        170,
+        114.4,
+        170.65
+      ],
+      "bottom": 6,
+      "top": 6.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_004",
+      "room": "A6",
+      "kind": "desk",
+      "bounds": [
+        123,
+        168,
+        127,
+        169.8
+      ],
+      "bottom": 6,
+      "top": 6.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A6_005",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        123.6,
+        170,
+        124.25,
+        170.65
+      ],
+      "bottom": 6,
+      "top": 6.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_006",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        125.75,
+        170,
+        126.4,
+        170.65
+      ],
+      "bottom": 6,
+      "top": 6.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_007",
+      "room": "A6",
+      "kind": "desk",
+      "bounds": [
+        112,
+        168,
+        116,
+        169.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A6_008",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        112.6,
+        170,
+        113.25,
+        170.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_009",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        114.75,
+        170,
+        115.4,
+        170.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_010",
+      "room": "A6",
+      "kind": "desk",
+      "bounds": [
+        112,
+        178,
+        116,
+        179.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A6_011",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        112.6,
+        180,
+        113.25,
+        180.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_012",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        114.75,
+        180,
+        115.4,
+        180.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_013",
+      "room": "A6",
+      "kind": "desk",
+      "bounds": [
+        112,
+        187,
+        116,
+        188.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A6_014",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        112.6,
+        189,
+        113.25,
+        189.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_015",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        114.75,
+        189,
+        115.4,
+        189.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_016",
+      "room": "A6",
+      "kind": "desk",
+      "bounds": [
+        121,
+        187,
+        125,
+        188.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A6_017",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        121.6,
+        189,
+        122.25,
+        189.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_018",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        123.75,
+        189,
+        124.4,
+        189.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_019",
+      "room": "A6",
+      "kind": "desk",
+      "bounds": [
+        112,
+        193,
+        116,
+        194.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A6_020",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        112.6,
+        195,
+        113.25,
+        195.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_021",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        114.75,
+        195,
+        115.4,
+        195.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_022",
+      "room": "A6",
+      "kind": "desk",
+      "bounds": [
+        132,
+        187,
+        136,
+        188.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A6_023",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        132.6,
+        189,
+        133.25,
+        189.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_024",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        134.75,
+        189,
+        135.4,
+        189.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_025",
+      "room": "A6",
+      "kind": "desk",
+      "bounds": [
+        141,
+        193,
+        145,
+        194.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A6_026",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        141.6,
+        195,
+        142.25,
+        195.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_027",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        143.75,
+        195,
+        144.4,
+        195.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_028",
+      "room": "A6",
+      "kind": "desk",
+      "bounds": [
+        132,
+        193,
+        136,
+        194.8
+      ],
+      "bottom": 0,
+      "top": 0.78,
+      "name": "Paired workstations",
+      "facing": "south"
+    },
+    {
+      "id": "A6_029",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        132.6,
+        195,
+        133.25,
+        195.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A6_030",
+      "room": "A6",
+      "kind": "chair",
+      "bounds": [
+        134.75,
+        195,
+        135.4,
+        195.65
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "name": "Chair",
+      "facing": "south"
+    },
+    {
+      "id": "A2_022",
+      "room": "A2",
+      "kind": "pump",
+      "bounds": [
+        35,
+        188,
+        40,
+        192
+      ],
+      "bottom": -2,
+      "top": 0.5,
+      "name": "Test equipment",
+      "facing": "south"
+    },
+    {
+      "id": "A2_023",
+      "room": "A2",
+      "kind": "pump",
+      "bounds": [
+        46,
+        188,
+        51,
+        192
+      ],
+      "bottom": -2,
+      "top": 0.5,
+      "name": "Test equipment",
+      "facing": "south"
+    },
+    {
+      "id": "A2_024",
+      "room": "A2",
+      "kind": "pump",
+      "bounds": [
+        46,
+        197,
+        51,
+        201
+      ],
+      "bottom": -2,
+      "top": 0.5,
+      "name": "Test equipment",
+      "facing": "south"
+    },
+    {
+      "id": "A2_025",
+      "room": "A2",
+      "kind": "machine",
+      "bounds": [
+        34,
+        227,
+        38,
+        231
+      ],
+      "bottom": -2,
+      "top": 0.5,
+      "name": "Service assembly",
+      "facing": "south"
+    },
+    {
+      "id": "A2_026",
+      "room": "A2",
+      "kind": "machine",
+      "bounds": [
+        24,
+        229,
+        29,
+        232
+      ],
+      "bottom": -2,
+      "top": 0.5,
+      "name": "Service assembly",
+      "facing": "south"
+    },
+    {
+      "id": "A8_013",
+      "room": "A8",
+      "kind": "machine",
+      "bounds": [
+        67,
+        207,
+        71,
+        211
+      ],
+      "bottom": -2,
+      "top": 0.5,
+      "name": "Service assembly",
+      "facing": "south"
+    },
+    {
+      "id": "A8_014",
+      "room": "A8",
+      "kind": "machine",
+      "bounds": [
+        67,
+        218,
+        71,
+        223
+      ],
+      "bottom": -2,
+      "top": 0.5,
+      "name": "Service assembly",
+      "facing": "south"
+    },
+    {
+      "id": "A8_015",
+      "room": "A8",
+      "kind": "machine",
+      "bounds": [
+        79,
+        222,
+        83,
+        227
+      ],
+      "bottom": -2,
+      "top": 0.5,
+      "name": "Service assembly",
+      "facing": "south"
+    },
+    {
+      "id": "A8_016",
+      "room": "A8",
+      "kind": "machine",
+      "bounds": [
+        96,
+        227,
+        99,
+        231
+      ],
+      "bottom": -2,
+      "top": 0.5,
+      "name": "Service assembly",
+      "facing": "south"
+    },
+    {
+      "id": "A8_017",
+      "room": "A8",
+      "kind": "desk",
+      "bounds": [
+        78,
+        208,
+        83,
+        210
+      ],
+      "bottom": -2,
+      "top": -1.1,
+      "name": "Service assembly",
+      "facing": "south"
+    },
+    {
+      "id": "A3_022",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        76,
+        123,
+        81,
+        126
+      ],
+      "bottom": 0,
+      "top": 2.5,
+      "name": "Service assembly",
+      "facing": "south"
+    },
+    {
+      "id": "A5_004",
+      "room": "A5",
+      "kind": "server",
+      "bounds": [
+        130,
+        116,
+        136,
+        118
+      ],
+      "bottom": 2,
+      "top": 4.5,
+      "name": "Service assembly",
+      "facing": "south"
+    },
+    {
+      "id": "A5_005",
+      "room": "A5",
+      "kind": "server",
+      "bounds": [
+        130,
+        123,
+        136,
+        125
+      ],
+      "bottom": 2,
+      "top": 4.5,
+      "name": "Service assembly",
+      "facing": "south"
+    },
+    {
+      "id": "A6_031",
+      "room": "A6",
+      "kind": "server",
+      "bounds": [
+        121,
+        180,
+        126,
+        182
+      ],
+      "bottom": 0,
+      "top": 2.5,
+      "name": "Service assembly",
+      "facing": "south"
+    },
+    {
+      "id": "A3_023",
+      "room": "A3",
+      "kind": "rack",
+      "bounds": [
+        23,
+        121,
+        28,
+        122.1
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A3_024",
+      "room": "A3",
+      "kind": "rack",
+      "bounds": [
+        23,
+        128,
+        28,
+        129.1
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A3_025",
+      "room": "A3",
+      "kind": "rack",
+      "bounds": [
+        23,
+        135,
+        28,
+        136.1
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A3_026",
+      "room": "A3",
+      "kind": "rack",
+      "bounds": [
+        35,
+        121,
+        40,
+        122.1
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A3_027",
+      "room": "A3",
+      "kind": "rack",
+      "bounds": [
+        35,
+        128,
+        40,
+        129.1
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A3_028",
+      "room": "A3",
+      "kind": "rack",
+      "bounds": [
+        35,
+        135,
+        40,
+        136.1
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A7_022",
+      "room": "A7",
+      "kind": "rack",
+      "bounds": [
+        25,
+        59,
+        30,
+        60.1
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A7_023",
+      "room": "A7",
+      "kind": "rack",
+      "bounds": [
+        44,
+        59,
+        49,
+        60.1
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A7_024",
+      "room": "A7",
+      "kind": "rack",
+      "bounds": [
+        25,
+        77,
+        30,
+        78.1
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A7_025",
+      "room": "A7",
+      "kind": "rack",
+      "bounds": [
+        34,
+        77,
+        39,
+        78.1
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A7_026",
+      "room": "A7",
+      "kind": "rack",
+      "bounds": [
+        52,
+        76,
+        57,
+        77.1
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A7_027",
+      "room": "A7",
+      "kind": "rack",
+      "bounds": [
+        45,
+        47,
+        50,
+        48.1
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A7_028",
+      "room": "A7",
+      "kind": "rack",
+      "bounds": [
+        53,
+        47,
+        58,
+        48.1
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A8_018",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        86.5,
+        207,
+        91.5,
+        208.1
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A8_019",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        87,
+        217,
+        92,
+        218.1
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A8_020",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        87,
+        238,
+        92,
+        239.1
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A8_021",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        94,
+        238,
+        99,
+        239.1
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A2_027",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        24,
+        227,
+        29,
+        228.1
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A2_028",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        10,
+        236,
+        15,
+        237.1
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A2_029",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        24,
+        236,
+        29,
+        237.1
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Archive / parts shelves",
+      "facing": "south"
+    },
+    {
+      "id": "A2_030",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        10,
+        184.45,
+        14.5,
+        185.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A2_031",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        10,
+        204.375,
+        14.5,
+        205.425
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A2_032",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        8.45,
+        186,
+        9.5,
+        190.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A2_033",
+      "room": "A2",
+      "kind": "air",
+      "bounds": [
+        8.45,
+        193,
+        9.5,
+        197.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "east"
+    },
+    {
+      "id": "A2_034",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        30.375,
+        186,
+        31.425,
+        190.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A2_035",
+      "room": "A2",
+      "kind": "air",
+      "bounds": [
+        30.375,
+        193,
+        31.425,
+        197.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "west"
+    },
+    {
+      "id": "A2_036",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        10.9,
+        187.85,
+        13.1,
+        188.15
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_037",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        10.9,
+        195.85,
+        13.1,
+        196.15
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_038",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        17.9,
+        195.85,
+        20.1,
+        196.15
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_039",
+      "room": "A2",
+      "kind": "duct",
+      "bounds": [
+        9,
+        184.65,
+        30.875,
+        185.15
+      ],
+      "bottom": 0.9,
+      "top": 1.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A2_040",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        34.125,
+        184.45,
+        38.625,
+        185.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A2_041",
+      "room": "A2",
+      "kind": "air",
+      "bounds": [
+        41.125,
+        184.45,
+        45.625,
+        185.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "south"
+    },
+    {
+      "id": "A2_042",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        34.125,
+        204.375,
+        38.625,
+        205.425
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A2_043",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        32.575,
+        186,
+        33.625,
+        190.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A2_044",
+      "room": "A2",
+      "kind": "air",
+      "bounds": [
+        32.575,
+        193,
+        33.625,
+        197.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "east"
+    },
+    {
+      "id": "A2_045",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        54.5,
+        186,
+        55.55,
+        190.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A2_046",
+      "room": "A2",
+      "kind": "air",
+      "bounds": [
+        54.5,
+        193,
+        55.55,
+        197.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "west"
+    },
+    {
+      "id": "A2_047",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        35.025,
+        187.85,
+        37.225,
+        188.15
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_048",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        35.025,
+        195.85,
+        37.225,
+        196.15
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_049",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        42.025,
+        187.85,
+        44.225,
+        188.15
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_050",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        42.025,
+        195.85,
+        44.225,
+        196.15
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_051",
+      "room": "A2",
+      "kind": "duct",
+      "bounds": [
+        33.125,
+        184.65,
+        55,
+        185.15
+      ],
+      "bottom": 1.9,
+      "top": 2.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A2_052",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        10,
+        206.575,
+        14.5,
+        207.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A2_053",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        10,
+        222.375,
+        14.5,
+        223.425
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A2_054",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        8.45,
+        208.125,
+        9.5,
+        212.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A2_055",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        30.375,
+        208.125,
+        31.425,
+        212.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A2_056",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        10.9,
+        209.975,
+        13.1,
+        210.275
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_057",
+      "room": "A2",
+      "kind": "duct",
+      "bounds": [
+        9,
+        206.775,
+        30.875,
+        207.275
+      ],
+      "bottom": 0.9,
+      "top": 1.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A2_058",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        10,
+        240.5,
+        14.5,
+        241.55
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A2_059",
+      "room": "A2",
+      "kind": "air",
+      "bounds": [
+        17,
+        240.5,
+        21.5,
+        241.55
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "north"
+    },
+    {
+      "id": "A2_060",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        8.45,
+        226.125,
+        9.5,
+        230.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A2_061",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        30.375,
+        226.125,
+        31.425,
+        230.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A2_062",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        10.9,
+        227.975,
+        13.1,
+        228.275
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_063",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        17.9,
+        227.975,
+        20.1,
+        228.275
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_064",
+      "room": "A2",
+      "kind": "duct",
+      "bounds": [
+        9,
+        224.775,
+        30.875,
+        225.275
+      ],
+      "bottom": 0.9,
+      "top": 1.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A2_065",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        34.125,
+        206.575,
+        38.625,
+        207.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A2_067",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        32.575,
+        208.125,
+        33.625,
+        212.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A2_068",
+      "room": "A2",
+      "kind": "storage",
+      "bounds": [
+        32.575,
+        222.125,
+        33.625,
+        226.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A2_069",
+      "room": "A2",
+      "kind": "rack",
+      "bounds": [
+        54.5,
+        208.125,
+        55.55,
+        212.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A2_070",
+      "room": "A2",
+      "kind": "air",
+      "bounds": [
+        54.5,
+        215.125,
+        55.55,
+        219.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "west"
+    },
+    {
+      "id": "A2_071",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        35.025,
+        209.975,
+        37.225,
+        210.275
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_072",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        35.025,
+        217.975,
+        37.225,
+        218.275
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_073",
+      "room": "A2",
+      "kind": "light",
+      "bounds": [
+        42.025,
+        209.975,
+        44.225,
+        210.275
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A2_074",
+      "room": "A2",
+      "kind": "duct",
+      "bounds": [
+        33.125,
+        206.775,
+        55,
+        207.275
+      ],
+      "bottom": 1.9,
+      "top": 2.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A8_022",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        67,
+        184.45,
+        71.5,
+        185.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A8_023",
+      "room": "A8",
+      "kind": "air",
+      "bounds": [
+        74,
+        184.45,
+        78.5,
+        185.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "south"
+    },
+    {
+      "id": "A8_024",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        88,
+        184.45,
+        92.5,
+        185.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A8_025",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        67,
+        202.375,
+        71.5,
+        203.425
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A8_026",
+      "room": "A8",
+      "kind": "storage",
+      "bounds": [
+        81,
+        202.375,
+        85.5,
+        203.425
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A8_027",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        65.45,
+        186,
+        66.5,
+        190.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A8_028",
+      "room": "A8",
+      "kind": "air",
+      "bounds": [
+        65.45,
+        193,
+        66.5,
+        197.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "east"
+    },
+    {
+      "id": "A8_029",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        99.5,
+        186,
+        100.55,
+        190.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A8_030",
+      "room": "A8",
+      "kind": "air",
+      "bounds": [
+        99.5,
+        193,
+        100.55,
+        197.5
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "west"
+    },
+    {
+      "id": "A8_031",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        67.9,
+        187.85,
+        70.1,
+        188.15
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_032",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        74.9,
+        187.85,
+        77.1,
+        188.15
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_033",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        81.9,
+        187.85,
+        84.1,
+        188.15
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_034",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        88.9,
+        187.85,
+        91.1,
+        188.15
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_035",
+      "room": "A8",
+      "kind": "duct",
+      "bounds": [
+        66,
+        184.65,
+        100,
+        185.15
+      ],
+      "bottom": 0.9,
+      "top": 1.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A8_036",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        67,
+        204.575,
+        71.5,
+        205.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A8_037",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        67,
+        240.5,
+        71.5,
+        241.55
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A8_038",
+      "room": "A8",
+      "kind": "air",
+      "bounds": [
+        74,
+        240.5,
+        78.5,
+        241.55
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "north"
+    },
+    {
+      "id": "A8_039",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        65.45,
+        206.125,
+        66.5,
+        210.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A8_040",
+      "room": "A8",
+      "kind": "air",
+      "bounds": [
+        65.45,
+        213.125,
+        66.5,
+        217.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "east"
+    },
+    {
+      "id": "A8_041",
+      "room": "A8",
+      "kind": "storage",
+      "bounds": [
+        65.45,
+        220.125,
+        66.5,
+        224.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A8_042",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        65.45,
+        227.125,
+        66.5,
+        231.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A8_043",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        83.375,
+        206.125,
+        84.425,
+        210.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A8_044",
+      "room": "A8",
+      "kind": "storage",
+      "bounds": [
+        83.375,
+        220.125,
+        84.425,
+        224.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A8_045",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        67.9,
+        207.975,
+        70.1,
+        208.275
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_046",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        67.9,
+        215.975,
+        70.1,
+        216.275
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_047",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        67.9,
+        223.975,
+        70.1,
+        224.275
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_048",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        67.9,
+        231.975,
+        70.1,
+        232.275
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_049",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        74.9,
+        207.975,
+        77.1,
+        208.275
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_050",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        74.9,
+        215.975,
+        77.1,
+        216.275
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_051",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        74.9,
+        223.975,
+        77.1,
+        224.275
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_052",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        74.9,
+        231.975,
+        77.1,
+        232.275
+      ],
+      "bottom": 2.18,
+      "top": 2.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_053",
+      "room": "A8",
+      "kind": "duct",
+      "bounds": [
+        66,
+        204.775,
+        83.875,
+        205.275
+      ],
+      "bottom": 1.9,
+      "top": 2.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A8_054",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        87.125,
+        221.375,
+        91.625,
+        222.425
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A8_055",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        99.5,
+        206.125,
+        100.55,
+        210.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A8_056",
+      "room": "A8",
+      "kind": "air",
+      "bounds": [
+        99.5,
+        213.125,
+        100.55,
+        217.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "west"
+    },
+    {
+      "id": "A8_057",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        88.025,
+        207.975,
+        90.225,
+        208.275
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_058",
+      "room": "A8",
+      "kind": "duct",
+      "bounds": [
+        86.125,
+        204.775,
+        100,
+        205.275
+      ],
+      "bottom": 0.9,
+      "top": 1.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A8_059",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        87.125,
+        223.575,
+        91.625,
+        224.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A8_060",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        87.125,
+        240.5,
+        91.625,
+        241.55
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A8_061",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        85.575,
+        225.125,
+        86.625,
+        229.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A8_062",
+      "room": "A8",
+      "kind": "rack",
+      "bounds": [
+        99.5,
+        225.125,
+        100.55,
+        229.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A8_063",
+      "room": "A8",
+      "kind": "air",
+      "bounds": [
+        99.5,
+        232.125,
+        100.55,
+        236.625
+      ],
+      "bottom": -2,
+      "top": 0.3999999999999999,
+      "name": "Environmental services",
+      "facing": "west"
+    },
+    {
+      "id": "A8_064",
+      "room": "A8",
+      "kind": "light",
+      "bounds": [
+        88.025,
+        226.975,
+        90.225,
+        227.275
+      ],
+      "bottom": 1.18,
+      "top": 1.3399999999999999,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A8_065",
+      "room": "A8",
+      "kind": "duct",
+      "bounds": [
+        86.125,
+        223.775,
+        100,
+        224.275
+      ],
+      "bottom": 0.9,
+      "top": 1.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A3_029",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        29,
+        120.45,
+        33.5,
+        121.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A3_030",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        22,
+        144.5,
+        26.5,
+        145.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A3_031",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        29,
+        144.5,
+        33.5,
+        145.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A3_032",
+      "room": "A3",
+      "kind": "air",
+      "bounds": [
+        36,
+        144.5,
+        40.5,
+        145.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Environmental services",
+      "facing": "north"
+    },
+    {
+      "id": "A3_033",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        43,
+        144.5,
+        47.5,
+        145.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A3_034",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        50,
+        144.5,
+        54.5,
+        145.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A3_035",
+      "room": "A3",
+      "kind": "air",
+      "bounds": [
+        57,
+        144.5,
+        61.5,
+        145.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Environmental services",
+      "facing": "north"
+    },
+    {
+      "id": "A3_036",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        20.45,
+        122,
+        21.5,
+        126.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A3_037",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        20.45,
+        129,
+        21.5,
+        133.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A3_038",
+      "room": "A3",
+      "kind": "air",
+      "bounds": [
+        20.45,
+        136,
+        21.5,
+        140.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Environmental services",
+      "facing": "east"
+    },
+    {
+      "id": "A3_039",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        68.5,
+        122,
+        69.55,
+        126.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A3_040",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        68.5,
+        129,
+        69.55,
+        133.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A3_041",
+      "room": "A3",
+      "kind": "air",
+      "bounds": [
+        68.5,
+        136,
+        69.55,
+        140.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Environmental services",
+      "facing": "west"
+    },
+    {
+      "id": "A3_042",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        22.9,
+        123.85,
+        25.1,
+        124.15
+      ],
+      "bottom": 3.18,
+      "top": 3.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_043",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        22.9,
+        131.85,
+        25.1,
+        132.15
+      ],
+      "bottom": 3.18,
+      "top": 3.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_044",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        29.9,
+        123.85,
+        32.1,
+        124.15
+      ],
+      "bottom": 3.18,
+      "top": 3.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_045",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        29.9,
+        131.85,
+        32.1,
+        132.15
+      ],
+      "bottom": 3.18,
+      "top": 3.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_046",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        36.9,
+        123.85,
+        39.1,
+        124.15
+      ],
+      "bottom": 3.18,
+      "top": 3.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_047",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        36.9,
+        131.85,
+        39.1,
+        132.15
+      ],
+      "bottom": 3.18,
+      "top": 3.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_048",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        43.4,
+        123.85,
+        45.6,
+        124.15
+      ],
+      "bottom": 3.18,
+      "top": 3.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_049",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        43.4,
+        131.85,
+        45.6,
+        132.15
+      ],
+      "bottom": 3.18,
+      "top": 3.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_050",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        50.9,
+        123.85,
+        53.1,
+        124.15
+      ],
+      "bottom": 7.68,
+      "top": 7.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_051",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        50.9,
+        131.85,
+        53.1,
+        132.15
+      ],
+      "bottom": 7.68,
+      "top": 7.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_052",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        57.9,
+        123.85,
+        60.1,
+        124.15
+      ],
+      "bottom": 7.68,
+      "top": 7.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_053",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        57.9,
+        131.85,
+        60.1,
+        132.15
+      ],
+      "bottom": 7.68,
+      "top": 7.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_054",
+      "room": "A3",
+      "kind": "duct",
+      "bounds": [
+        21,
+        120.65,
+        69,
+        121.15
+      ],
+      "bottom": 7.4,
+      "top": 7.800000000000001,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A3_055",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        72.125,
+        120.45,
+        76.625,
+        121.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A3_056",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        72.125,
+        144.5,
+        76.625,
+        145.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A3_057",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        70.575,
+        122,
+        71.625,
+        126.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A3_058",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        70.575,
+        129,
+        71.625,
+        133.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A3_059",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        82.5,
+        122,
+        83.55,
+        126.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A3_060",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        82.5,
+        129,
+        83.55,
+        133.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A3_061",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        74.025,
+        123.85,
+        76.225,
+        124.15
+      ],
+      "bottom": 3.2800000000000002,
+      "top": 3.4400000000000004,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_062",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        74.025,
+        131.85,
+        76.225,
+        132.15
+      ],
+      "bottom": 3.2800000000000002,
+      "top": 3.4400000000000004,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_063",
+      "room": "A3",
+      "kind": "duct",
+      "bounds": [
+        71.125,
+        120.65,
+        83,
+        121.15
+      ],
+      "bottom": 7.4,
+      "top": 7.800000000000001,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A3_064",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        22,
+        110.45,
+        26.5,
+        111.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A3_065",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        29,
+        110.45,
+        33.5,
+        111.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A3_066",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        43,
+        110.45,
+        47.5,
+        111.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A3_067",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        50,
+        110.45,
+        54.5,
+        111.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A3_068",
+      "room": "A3",
+      "kind": "air",
+      "bounds": [
+        57,
+        110.45,
+        61.5,
+        111.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Environmental services",
+      "facing": "south"
+    },
+    {
+      "id": "A3_069",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        64,
+        110.45,
+        68.5,
+        111.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A3_070",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        71,
+        110.45,
+        75.5,
+        111.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A3_071",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        22,
+        116.5,
+        26.5,
+        117.55
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A3_072",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        29,
+        116.5,
+        33.5,
+        117.55
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A3_073",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        64,
+        116.5,
+        68.5,
+        117.55
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A3_074",
+      "room": "A3",
+      "kind": "server",
+      "bounds": [
+        71,
+        116.5,
+        75.5,
+        117.55
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A3_075",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        20.45,
+        112,
+        21.5,
+        116.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A3_076",
+      "room": "A3",
+      "kind": "storage",
+      "bounds": [
+        82.5,
+        112,
+        83.55,
+        116.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A3_077",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        22.9,
+        113.85,
+        25.1,
+        114.15
+      ],
+      "bottom": 7.68,
+      "top": 7.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_078",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        29.9,
+        113.85,
+        32.1,
+        114.15
+      ],
+      "bottom": 7.68,
+      "top": 7.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_079",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        36.9,
+        113.85,
+        39.1,
+        114.15
+      ],
+      "bottom": 7.68,
+      "top": 7.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_080",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        50.9,
+        113.85,
+        53.1,
+        114.15
+      ],
+      "bottom": 7.68,
+      "top": 7.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_081",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        57.9,
+        113.85,
+        60.1,
+        114.15
+      ],
+      "bottom": 7.68,
+      "top": 7.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_082",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        64.9,
+        113.85,
+        67.1,
+        114.15
+      ],
+      "bottom": 7.68,
+      "top": 7.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_083",
+      "room": "A3",
+      "kind": "light",
+      "bounds": [
+        71.9,
+        113.85,
+        74.1,
+        114.15
+      ],
+      "bottom": 7.68,
+      "top": 7.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A3_084",
+      "room": "A3",
+      "kind": "duct",
+      "bounds": [
+        21,
+        110.65,
+        83,
+        111.15
+      ],
+      "bottom": 7.4,
+      "top": 7.800000000000001,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A7_029",
+      "room": "A7",
+      "kind": "storage",
+      "bounds": [
+        24,
+        63.575,
+        28.5,
+        64.625
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A7_030",
+      "room": "A7",
+      "kind": "server",
+      "bounds": [
+        31,
+        63.575,
+        35.5,
+        64.625
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A7_031",
+      "room": "A7",
+      "kind": "storage",
+      "bounds": [
+        45,
+        63.575,
+        49.5,
+        64.625
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A7_032",
+      "room": "A7",
+      "kind": "server",
+      "bounds": [
+        52,
+        63.575,
+        56.5,
+        64.625
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A7_033",
+      "room": "A7",
+      "kind": "storage",
+      "bounds": [
+        24,
+        79.5,
+        28.5,
+        80.55
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A7_034",
+      "room": "A7",
+      "kind": "server",
+      "bounds": [
+        31,
+        79.5,
+        35.5,
+        80.55
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A7_035",
+      "room": "A7",
+      "kind": "air",
+      "bounds": [
+        38,
+        79.5,
+        42.5,
+        80.55
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Environmental services",
+      "facing": "north"
+    },
+    {
+      "id": "A7_036",
+      "room": "A7",
+      "kind": "server",
+      "bounds": [
+        52,
+        79.5,
+        56.5,
+        80.55
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A7_037",
+      "room": "A7",
+      "kind": "storage",
+      "bounds": [
+        22.45,
+        65.125,
+        23.5,
+        69.625
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A7_038",
+      "room": "A7",
+      "kind": "storage",
+      "bounds": [
+        60.5,
+        65.125,
+        61.55,
+        69.625
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A7_039",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        24.9,
+        66.975,
+        27.1,
+        67.275
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_040",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        31.9,
+        66.975,
+        34.1,
+        67.275
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_041",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        38.9,
+        66.975,
+        41.1,
+        67.275
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_042",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        45.9,
+        66.975,
+        48.1,
+        67.275
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_043",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        52.9,
+        66.975,
+        55.1,
+        67.275
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_044",
+      "room": "A7",
+      "kind": "duct",
+      "bounds": [
+        23,
+        63.775,
+        61,
+        64.275
+      ],
+      "bottom": 6.9,
+      "top": 7.300000000000001,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A7_045",
+      "room": "A7",
+      "kind": "storage",
+      "bounds": [
+        24,
+        41.45,
+        28.5,
+        42.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A7_046",
+      "room": "A7",
+      "kind": "server",
+      "bounds": [
+        31,
+        41.45,
+        35.5,
+        42.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A7_047",
+      "room": "A7",
+      "kind": "air",
+      "bounds": [
+        38,
+        41.45,
+        42.5,
+        42.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Environmental services",
+      "facing": "south"
+    },
+    {
+      "id": "A7_048",
+      "room": "A7",
+      "kind": "storage",
+      "bounds": [
+        45,
+        41.45,
+        49.5,
+        42.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A7_049",
+      "room": "A7",
+      "kind": "server",
+      "bounds": [
+        52,
+        41.45,
+        56.5,
+        42.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A7_050",
+      "room": "A7",
+      "kind": "storage",
+      "bounds": [
+        24,
+        61.375,
+        28.5,
+        62.425
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A7_051",
+      "room": "A7",
+      "kind": "server",
+      "bounds": [
+        31,
+        61.375,
+        35.5,
+        62.425
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A7_052",
+      "room": "A7",
+      "kind": "storage",
+      "bounds": [
+        45,
+        61.375,
+        49.5,
+        62.425
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A7_053",
+      "room": "A7",
+      "kind": "server",
+      "bounds": [
+        52,
+        61.375,
+        56.5,
+        62.425
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A7_054",
+      "room": "A7",
+      "kind": "storage",
+      "bounds": [
+        22.45,
+        43,
+        23.5,
+        47.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A7_055",
+      "room": "A7",
+      "kind": "server",
+      "bounds": [
+        22.45,
+        50,
+        23.5,
+        54.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A7_056",
+      "room": "A7",
+      "kind": "storage",
+      "bounds": [
+        60.5,
+        43,
+        61.55,
+        47.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A7_057",
+      "room": "A7",
+      "kind": "server",
+      "bounds": [
+        60.5,
+        50,
+        61.55,
+        54.5
+      ],
+      "bottom": 4,
+      "top": 6.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A7_058",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        24.9,
+        44.85,
+        27.1,
+        45.15
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_059",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        24.9,
+        52.85,
+        27.1,
+        53.15
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_060",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        31.9,
+        44.85,
+        34.1,
+        45.15
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_061",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        31.9,
+        52.85,
+        34.1,
+        53.15
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_062",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        38.9,
+        44.85,
+        41.1,
+        45.15
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_063",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        38.9,
+        52.85,
+        41.1,
+        53.15
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_064",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        45.9,
+        44.85,
+        48.1,
+        45.15
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_065",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        45.9,
+        52.85,
+        48.1,
+        53.15
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_066",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        52.9,
+        44.85,
+        55.1,
+        45.15
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_067",
+      "room": "A7",
+      "kind": "light",
+      "bounds": [
+        52.9,
+        52.85,
+        55.1,
+        53.15
+      ],
+      "bottom": 7.18,
+      "top": 7.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A7_068",
+      "room": "A7",
+      "kind": "duct",
+      "bounds": [
+        23,
+        41.65,
+        61,
+        42.15
+      ],
+      "bottom": 6.9,
+      "top": 7.300000000000001,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A4_049",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        90,
+        49.45,
+        94.5,
+        50.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A4_050",
+      "room": "A4",
+      "kind": "server",
+      "bounds": [
+        97,
+        49.45,
+        101.5,
+        50.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A4_051",
+      "room": "A4",
+      "kind": "air",
+      "bounds": [
+        104,
+        49.45,
+        108.5,
+        50.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Environmental services",
+      "facing": "south"
+    },
+    {
+      "id": "A4_052",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        111,
+        49.45,
+        115.5,
+        50.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A4_053",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        90,
+        78.375,
+        94.5,
+        79.425
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A4_054",
+      "room": "A4",
+      "kind": "server",
+      "bounds": [
+        97,
+        78.375,
+        101.5,
+        79.425
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A4_055",
+      "room": "A4",
+      "kind": "air",
+      "bounds": [
+        104,
+        78.375,
+        108.5,
+        79.425
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Environmental services",
+      "facing": "north"
+    },
+    {
+      "id": "A4_056",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        88.45,
+        51,
+        89.5,
+        55.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A4_057",
+      "room": "A4",
+      "kind": "server",
+      "bounds": [
+        88.45,
+        58,
+        89.5,
+        62.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A4_058",
+      "room": "A4",
+      "kind": "air",
+      "bounds": [
+        88.45,
+        65,
+        89.5,
+        69.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Environmental services",
+      "facing": "east"
+    },
+    {
+      "id": "A4_059",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        124.375,
+        51,
+        125.425,
+        55.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A4_060",
+      "room": "A4",
+      "kind": "server",
+      "bounds": [
+        124.375,
+        58,
+        125.425,
+        62.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A4_061",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        90.9,
+        52.85,
+        93.1,
+        53.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_062",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        90.9,
+        60.85,
+        93.1,
+        61.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_063",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        90.9,
+        68.85,
+        93.1,
+        69.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_064",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        97.9,
+        52.85,
+        100.1,
+        53.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_065",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        97.9,
+        60.85,
+        100.1,
+        61.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_066",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        97.9,
+        68.85,
+        100.1,
+        69.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_067",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        104.9,
+        52.85,
+        107.1,
+        53.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_068",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        104.9,
+        60.85,
+        107.1,
+        61.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_069",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        104.9,
+        68.85,
+        107.1,
+        69.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_070",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        111.9,
+        52.85,
+        114.1,
+        53.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_071",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        111.9,
+        60.85,
+        114.1,
+        61.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_072",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        111.9,
+        68.85,
+        114.1,
+        69.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_073",
+      "room": "A4",
+      "kind": "duct",
+      "bounds": [
+        89,
+        49.65,
+        124.875,
+        50.15
+      ],
+      "bottom": 4.9,
+      "top": 5.300000000000001,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A4_074",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        90,
+        80.575,
+        94.5,
+        81.625
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A4_075",
+      "room": "A4",
+      "kind": "server",
+      "bounds": [
+        97,
+        80.575,
+        101.5,
+        81.625
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A4_076",
+      "room": "A4",
+      "kind": "air",
+      "bounds": [
+        104,
+        80.575,
+        108.5,
+        81.625
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Environmental services",
+      "facing": "south"
+    },
+    {
+      "id": "A4_077",
+      "room": "A4",
+      "kind": "server",
+      "bounds": [
+        118,
+        80.575,
+        122.5,
+        81.625
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A4_078",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        90,
+        91.5,
+        94.5,
+        92.55
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A4_079",
+      "room": "A4",
+      "kind": "air",
+      "bounds": [
+        104,
+        91.5,
+        108.5,
+        92.55
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Environmental services",
+      "facing": "north"
+    },
+    {
+      "id": "A4_080",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        111,
+        91.5,
+        115.5,
+        92.55
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A4_081",
+      "room": "A4",
+      "kind": "server",
+      "bounds": [
+        118,
+        91.5,
+        122.5,
+        92.55
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A4_082",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        88.45,
+        82.125,
+        89.5,
+        86.625
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A4_083",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        130.375,
+        82.125,
+        131.425,
+        86.625
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A4_084",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        90.9,
+        83.975,
+        93.1,
+        84.275
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_085",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        97.9,
+        83.975,
+        100.1,
+        84.275
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_086",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        104.9,
+        83.975,
+        107.1,
+        84.275
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_087",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        111.9,
+        83.975,
+        114.1,
+        84.275
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_088",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        118.9,
+        83.975,
+        121.1,
+        84.275
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_089",
+      "room": "A4",
+      "kind": "duct",
+      "bounds": [
+        89,
+        80.775,
+        130.875,
+        81.275
+      ],
+      "bottom": 4.9,
+      "top": 5.300000000000001,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A4_090",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        128.125,
+        49.45,
+        132.625,
+        50.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A4_091",
+      "room": "A4",
+      "kind": "server",
+      "bounds": [
+        135.125,
+        49.45,
+        139.625,
+        50.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A4_092",
+      "room": "A4",
+      "kind": "air",
+      "bounds": [
+        142.125,
+        49.45,
+        146.625,
+        50.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Environmental services",
+      "facing": "south"
+    },
+    {
+      "id": "A4_093",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        128.125,
+        78.375,
+        132.625,
+        79.425
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A4_094",
+      "room": "A4",
+      "kind": "server",
+      "bounds": [
+        135.125,
+        78.375,
+        139.625,
+        79.425
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A4_095",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        126.575,
+        51,
+        127.625,
+        55.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A4_096",
+      "room": "A4",
+      "kind": "server",
+      "bounds": [
+        126.575,
+        58,
+        127.625,
+        62.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A4_097",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        152.5,
+        51,
+        153.55,
+        55.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A4_098",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        129.025,
+        52.85,
+        131.225,
+        53.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_099",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        129.025,
+        60.85,
+        131.225,
+        61.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_100",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        129.025,
+        68.85,
+        131.225,
+        69.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_101",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        136.025,
+        52.85,
+        138.225,
+        53.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_102",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        136.025,
+        60.85,
+        138.225,
+        61.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_103",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        136.025,
+        68.85,
+        138.225,
+        69.15
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_104",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        144.225,
+        52.85,
+        146.42499999999998,
+        53.15
+      ],
+      "bottom": 9.68,
+      "top": 9.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_105",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        144.225,
+        60.85,
+        146.42499999999998,
+        61.15
+      ],
+      "bottom": 9.68,
+      "top": 9.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_106",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        144.225,
+        68.85,
+        146.42499999999998,
+        69.15
+      ],
+      "bottom": 9.68,
+      "top": 9.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_108",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        134.125,
+        80.575,
+        138.625,
+        81.625
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A4_109",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        134.125,
+        91.5,
+        138.625,
+        92.55
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A4_110",
+      "room": "A4",
+      "kind": "storage",
+      "bounds": [
+        152.5,
+        82.125,
+        153.55,
+        86.625
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A4_111",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        135.025,
+        83.975,
+        137.225,
+        84.275
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_112",
+      "room": "A4",
+      "kind": "light",
+      "bounds": [
+        142.025,
+        83.975,
+        144.225,
+        84.275
+      ],
+      "bottom": 5.18,
+      "top": 5.34,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A4_113",
+      "room": "A4",
+      "kind": "duct",
+      "bounds": [
+        133.125,
+        80.775,
+        153,
+        81.275
+      ],
+      "bottom": 9.4,
+      "top": 9.8,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A5_007",
+      "room": "A5",
+      "kind": "storage",
+      "bounds": [
+        130,
+        114.45,
+        134.5,
+        115.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A5_008",
+      "room": "A5",
+      "kind": "server",
+      "bounds": [
+        137,
+        114.45,
+        141.5,
+        115.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A5_009",
+      "room": "A5",
+      "kind": "air",
+      "bounds": [
+        144,
+        114.45,
+        148.5,
+        115.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Environmental services",
+      "facing": "south"
+    },
+    {
+      "id": "A5_010",
+      "room": "A5",
+      "kind": "storage",
+      "bounds": [
+        130,
+        128.3,
+        134.5,
+        129.35000000000002
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A5_011",
+      "room": "A5",
+      "kind": "storage",
+      "bounds": [
+        128.45,
+        116,
+        129.5,
+        120.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A5_012",
+      "room": "A5",
+      "kind": "storage",
+      "bounds": [
+        156.5,
+        116,
+        157.55,
+        120.5
+      ],
+      "bottom": 2,
+      "top": 4.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A5_013",
+      "room": "A5",
+      "kind": "light",
+      "bounds": [
+        130.9,
+        117.85,
+        133.1,
+        118.15
+      ],
+      "bottom": 9.68,
+      "top": 9.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A5_014",
+      "room": "A5",
+      "kind": "light",
+      "bounds": [
+        137.9,
+        117.85,
+        140.1,
+        118.15
+      ],
+      "bottom": 9.68,
+      "top": 9.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A5_015",
+      "room": "A5",
+      "kind": "light",
+      "bounds": [
+        144.9,
+        117.85,
+        147.1,
+        118.15
+      ],
+      "bottom": 9.68,
+      "top": 9.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A5_016",
+      "room": "A5",
+      "kind": "duct",
+      "bounds": [
+        129,
+        114.65,
+        157,
+        115.15
+      ],
+      "bottom": 9.4,
+      "top": 9.8,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A5_017",
+      "room": "A5",
+      "kind": "light",
+      "bounds": [
+        130.9,
+        133.85,
+        133.1,
+        134.15
+      ],
+      "bottom": 9.68,
+      "top": 9.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A5_018",
+      "room": "A5",
+      "kind": "light",
+      "bounds": [
+        138.35,
+        133.85,
+        140.54999999999998,
+        134.15
+      ],
+      "bottom": 9.68,
+      "top": 9.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A6_032",
+      "room": "A6",
+      "kind": "storage",
+      "bounds": [
+        112,
+        166.45,
+        116.5,
+        167.5
+      ],
+      "bottom": 6,
+      "top": 8.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A6_035",
+      "room": "A6",
+      "kind": "light",
+      "bounds": [
+        119.9,
+        169.85,
+        122.1,
+        170.15
+      ],
+      "bottom": 9.68,
+      "top": 9.84,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A6_036",
+      "room": "A6",
+      "kind": "duct",
+      "bounds": [
+        111,
+        166.65,
+        129,
+        167.15
+      ],
+      "bottom": 9.4,
+      "top": 9.8,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A6_037",
+      "room": "A6",
+      "kind": "storage",
+      "bounds": [
+        112,
+        184.575,
+        116.5,
+        185.625
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A6_038",
+      "room": "A6",
+      "kind": "server",
+      "bounds": [
+        119,
+        184.575,
+        123.5,
+        185.625
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A6_039",
+      "room": "A6",
+      "kind": "storage",
+      "bounds": [
+        112,
+        196.5,
+        116.5,
+        197.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A6_040",
+      "room": "A6",
+      "kind": "server",
+      "bounds": [
+        119,
+        196.5,
+        123.5,
+        197.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A6_041",
+      "room": "A6",
+      "kind": "storage",
+      "bounds": [
+        110.45,
+        186.125,
+        111.5,
+        190.625
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A6_042",
+      "room": "A6",
+      "kind": "storage",
+      "bounds": [
+        128.375,
+        186.125,
+        129.425,
+        190.625
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A6_043",
+      "room": "A6",
+      "kind": "light",
+      "bounds": [
+        112.9,
+        187.975,
+        115.1,
+        188.275
+      ],
+      "bottom": 3.18,
+      "top": 3.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A6_044",
+      "room": "A6",
+      "kind": "light",
+      "bounds": [
+        119.9,
+        187.975,
+        122.1,
+        188.275
+      ],
+      "bottom": 3.18,
+      "top": 3.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A6_045",
+      "room": "A6",
+      "kind": "duct",
+      "bounds": [
+        111,
+        184.775,
+        128.875,
+        185.275
+      ],
+      "bottom": 2.9,
+      "top": 3.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A6_047",
+      "room": "A6",
+      "kind": "server",
+      "bounds": [
+        139.125,
+        184.575,
+        143.625,
+        185.625
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A6_048",
+      "room": "A6",
+      "kind": "storage",
+      "bounds": [
+        132.125,
+        196.5,
+        136.625,
+        197.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A6_049",
+      "room": "A6",
+      "kind": "server",
+      "bounds": [
+        139.125,
+        196.5,
+        143.625,
+        197.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A6_050",
+      "room": "A6",
+      "kind": "air",
+      "bounds": [
+        146.125,
+        196.5,
+        150.625,
+        197.55
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Environmental services",
+      "facing": "north"
+    },
+    {
+      "id": "A6_051",
+      "room": "A6",
+      "kind": "storage",
+      "bounds": [
+        130.575,
+        186.125,
+        131.625,
+        190.625
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A6_052",
+      "room": "A6",
+      "kind": "light",
+      "bounds": [
+        133.025,
+        187.975,
+        135.225,
+        188.275
+      ],
+      "bottom": 3.18,
+      "top": 3.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A6_053",
+      "room": "A6",
+      "kind": "light",
+      "bounds": [
+        140.025,
+        187.975,
+        142.225,
+        188.275
+      ],
+      "bottom": 3.18,
+      "top": 3.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A6_054",
+      "room": "A6",
+      "kind": "light",
+      "bounds": [
+        147.025,
+        187.975,
+        149.225,
+        188.275
+      ],
+      "bottom": 3.18,
+      "top": 3.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A6_055",
+      "room": "A6",
+      "kind": "duct",
+      "bounds": [
+        131.125,
+        184.775,
+        155,
+        185.275
+      ],
+      "bottom": 2.9,
+      "top": 3.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A6_056",
+      "room": "A6",
+      "kind": "storage",
+      "bounds": [
+        112,
+        166.45,
+        116.5,
+        167.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "south"
+    },
+    {
+      "id": "A6_057",
+      "room": "A6",
+      "kind": "storage",
+      "bounds": [
+        112,
+        182.3,
+        116.5,
+        183.35000000000002
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "north"
+    },
+    {
+      "id": "A6_058",
+      "room": "A6",
+      "kind": "storage",
+      "bounds": [
+        110.45,
+        168,
+        111.5,
+        172.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "east"
+    },
+    {
+      "id": "A6_059",
+      "room": "A6",
+      "kind": "storage",
+      "bounds": [
+        125.5,
+        168,
+        126.55,
+        172.5
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "name": "Equipment bank",
+      "facing": "west"
+    },
+    {
+      "id": "A6_060",
+      "room": "A6",
+      "kind": "light",
+      "bounds": [
+        112.9,
+        169.85,
+        115.1,
+        170.15
+      ],
+      "bottom": 3.18,
+      "top": 3.3400000000000003,
+      "name": "Task lighting",
+      "facing": "south"
+    },
+    {
+      "id": "A6_061",
+      "room": "A6",
+      "kind": "duct",
+      "bounds": [
+        111,
+        166.65,
+        126,
+        167.15
+      ],
+      "bottom": 2.9,
+      "top": 3.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_001",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        160.0,
+        251.87,
+        162.0,
+        252.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_002",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        158.2,
+        249.275,
+        159.8,
+        249.82500000000002
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_003",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        152.0,
+        251.87,
+        154.0,
+        252.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_004",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        144.0,
+        251.87,
+        146.0,
+        252.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_005",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        142.2,
+        249.275,
+        143.8,
+        249.82500000000002
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_006",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        136.0,
+        251.87,
+        138.0,
+        252.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_007",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        131.0,
+        256.87,
+        133.0,
+        257.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_008",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        129.275,
+        258.2,
+        129.82500000000002,
+        259.8
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "east"
+    },
+    {
+      "id": "A_Halls_009",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        131.0,
+        264.87,
+        133.0,
+        265.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_010",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        126.0,
+        269.87,
+        128.0,
+        270.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_011",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        124.2,
+        267.27500000000003,
+        125.8,
+        267.825
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_012",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        118.0,
+        269.87,
+        120.0,
+        270.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_013",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        56.0,
+        287.87,
+        58.0,
+        288.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_014",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        54.2,
+        285.27500000000003,
+        55.8,
+        285.825
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_015",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        48.0,
+        287.87,
+        50.0,
+        288.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_016",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        43.0,
+        282.87,
+        45.0,
+        283.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_017",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        46.175000000000004,
+        280.2,
+        46.725,
+        281.8
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "west"
+    },
+    {
+      "id": "A_Halls_018",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        43.0,
+        274.87,
+        45.0,
+        275.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_019",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        43.0,
+        266.87,
+        45.0,
+        267.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_020",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        46.175000000000004,
+        264.2,
+        46.725,
+        265.8
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "west"
+    },
+    {
+      "id": "A_Halls_021",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        43.0,
+        258.87,
+        45.0,
+        259.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_022",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        43.0,
+        250.87,
+        45.0,
+        251.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_023",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        46.175000000000004,
+        248.2,
+        46.725,
+        249.8
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "west"
+    },
+    {
+      "id": "A_Halls_024",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        19.0,
+        178.87,
+        21.0,
+        179.13
+      ],
+      "bottom": 2.06,
+      "top": 2.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_025",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        24.0,
+        171.87,
+        26.0,
+        172.13
+      ],
+      "bottom": 2.06,
+      "top": 2.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_026",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        26.2,
+        174.17499999999998,
+        27.8,
+        174.725
+      ],
+      "bottom": -2.0,
+      "top": 0.2999999999999998,
+      "name": "Air recirculation",
+      "facing": "north"
+    },
+    {
+      "id": "A_Halls_027",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        32.0,
+        171.87,
+        34.0,
+        172.13
+      ],
+      "bottom": 2.06,
+      "top": 2.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_028",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        40.0,
+        171.87,
+        42.0,
+        172.13
+      ],
+      "bottom": 2.06,
+      "top": 2.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_029",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        42.2,
+        174.17499999999998,
+        43.8,
+        174.725
+      ],
+      "bottom": -2.0,
+      "top": 0.2999999999999998,
+      "name": "Air recirculation",
+      "facing": "north"
+    },
+    {
+      "id": "A_Halls_030",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        84.0,
+        168.87,
+        86.0,
+        169.13
+      ],
+      "bottom": 2.06,
+      "top": 2.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_031",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        84.0,
+        176.87,
+        86.0,
+        177.13
+      ],
+      "bottom": 2.06,
+      "top": 2.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_032",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        82.27499999999999,
+        178.2,
+        82.825,
+        179.8
+      ],
+      "bottom": -2.0,
+      "top": 0.2999999999999998,
+      "name": "Air recirculation",
+      "facing": "east"
+    },
+    {
+      "id": "A_Halls_033",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        101.0,
+        127.87,
+        103.0,
+        128.13
+      ],
+      "bottom": 6.06,
+      "top": 6.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_034",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        120.0,
+        122.87,
+        122.0,
+        123.13
+      ],
+      "bottom": 6.06,
+      "top": 6.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_035",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        123.175,
+        120.2,
+        123.72500000000001,
+        121.8
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "west"
+    },
+    {
+      "id": "A_Halls_036",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        115.0,
+        100.87,
+        117.0,
+        101.13
+      ],
+      "bottom": 6.06,
+      "top": 6.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_037",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        107.0,
+        100.87,
+        109.0,
+        101.13
+      ],
+      "bottom": 6.06,
+      "top": 6.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_038",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        105.2,
+        98.27499999999999,
+        106.8,
+        98.825
+      ],
+      "bottom": 2.0,
+      "top": 4.3,
+      "name": "Air recirculation",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_039",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        34.0,
+        104.87,
+        36.0,
+        105.13
+      ],
+      "bottom": 8.06,
+      "top": 8.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_040",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        39.0,
+        97.87,
+        41.0,
+        98.13
+      ],
+      "bottom": 8.06,
+      "top": 8.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_041",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        41.2,
+        100.175,
+        42.8,
+        100.72500000000001
+      ],
+      "bottom": 4.0,
+      "top": 6.3,
+      "name": "Air recirculation",
+      "facing": "north"
+    },
+    {
+      "id": "A_Halls_042",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        48.0,
+        92.87,
+        50.0,
+        93.13
+      ],
+      "bottom": 8.06,
+      "top": 8.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_043",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        48.0,
+        84.87,
+        50.0,
+        85.13
+      ],
+      "bottom": 8.06,
+      "top": 8.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_044",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        51.175000000000004,
+        82.2,
+        51.725,
+        83.8
+      ],
+      "bottom": 4.0,
+      "top": 6.3,
+      "name": "Air recirculation",
+      "facing": "west"
+    },
+    {
+      "id": "A_Halls_045",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        150.0,
+        106.87,
+        152.0,
+        107.13
+      ],
+      "bottom": 6.06,
+      "top": 6.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_046",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        131.0,
+        148.87,
+        133.0,
+        149.13
+      ],
+      "bottom": 10.06,
+      "top": 10.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_047",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        129.275,
+        150.2,
+        129.82500000000002,
+        151.8
+      ],
+      "bottom": 6.0,
+      "top": 8.3,
+      "name": "Air recirculation",
+      "facing": "east"
+    },
+    {
+      "id": "A_Halls_048",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        126.0,
+        153.87,
+        128.0,
+        154.13
+      ],
+      "bottom": 10.06,
+      "top": 10.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_049",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        119.0,
+        158.87,
+        121.0,
+        159.13
+      ],
+      "bottom": 10.06,
+      "top": 10.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_050",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        117.27499999999999,
+        160.2,
+        117.825,
+        161.8
+      ],
+      "bottom": 6.0,
+      "top": 8.3,
+      "name": "Air recirculation",
+      "facing": "east"
+    },
+    {
+      "id": "A_Halls_051",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        160.0,
+        189.87,
+        162.0,
+        190.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_052",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        168.0,
+        189.87,
+        170.0,
+        190.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_053",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        170.2,
+        192.17499999999998,
+        171.8,
+        192.725
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "north"
+    },
+    {
+      "id": "A_Halls_054",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        175.0,
+        194.87,
+        177.0,
+        195.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_055",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        175.0,
+        202.87,
+        177.0,
+        203.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_056",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        173.275,
+        204.2,
+        173.82500000000002,
+        205.8
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "east"
+    },
+    {
+      "id": "A_Halls_057",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        175.0,
+        210.87,
+        177.0,
+        211.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_058",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        175.0,
+        218.87,
+        177.0,
+        219.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_059",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        173.275,
+        220.2,
+        173.82500000000002,
+        221.8
+      ],
+      "bottom": 0.0,
+      "top": 2.3,
+      "name": "Air recirculation",
+      "facing": "east"
+    },
+    {
+      "id": "A_Halls_060",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        175.0,
+        226.87,
+        177.0,
+        227.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_061",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        160.4,
+        61.87,
+        162.4,
+        62.13
+      ],
+      "bottom": 9.56,
+      "top": 9.72,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_062",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        162.6,
+        63.175000000000004,
+        164.20000000000002,
+        63.725
+      ],
+      "bottom": 6.0,
+      "top": 8.3,
+      "name": "Air recirculation",
+      "facing": "north"
+    },
+    {
+      "id": "A_Halls_063",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        56.0,
+        163.87,
+        58.0,
+        164.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_064",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        64.0,
+        163.87,
+        66.0,
+        164.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_065",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        66.2,
+        166.17499999999998,
+        67.8,
+        166.725
+      ],
+      "bottom": -2.0,
+      "top": 0.2999999999999998,
+      "name": "Air recirculation",
+      "facing": "north"
+    },
+    {
+      "id": "A_Halls_066",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        72.0,
+        163.87,
+        74.0,
+        164.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_067",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        79.7,
+        163.87,
+        81.7,
+        164.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_068",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        89.0,
+        163.87,
+        91.0,
+        164.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_069",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        96.0,
+        158.87,
+        98.0,
+        159.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A_Halls_070",
+      "room": "A_Halls",
+      "kind": "air",
+      "bounds": [
+        99.175,
+        156.2,
+        99.72500000000001,
+        157.8
+      ],
+      "bottom": -2.0,
+      "top": 0.2999999999999998,
+      "name": "Air recirculation",
+      "facing": "west"
+    },
+    {
+      "id": "A_Halls_071",
+      "room": "A_Halls",
+      "kind": "light",
+      "bounds": [
+        96.0,
+        134.87,
+        98.0,
+        135.13
+      ],
+      "bottom": 4.06,
+      "top": 4.22,
+      "name": "Compartment light",
+      "facing": "south"
+    },
+    {
+      "id": "A1_063",
+      "room": "A1",
+      "kind": "hatch",
+      "bounds": [
+        90.6,
+        280.6,
+        93.4,
+        283.4
+      ],
+      "bottom": 3.38,
+      "top": 3.5,
+      "name": "A1_H SERVICE HATCH",
+      "facing": "south"
+    },
+    {
+      "id": "A2_075",
+      "room": "A2",
+      "kind": "hatch",
+      "bounds": [
+        25.6,
+        196.6,
+        28.4,
+        199.4
+      ],
+      "bottom": 1.38,
+      "top": 1.5,
+      "name": "A2_H SERVICE HATCH",
+      "facing": "south"
+    },
+    {
+      "id": "A8_066",
+      "room": "A8",
+      "kind": "hatch",
+      "bounds": [
+        95.6,
+        199.6,
+        98.4,
+        202.4
+      ],
+      "bottom": 1.38,
+      "top": 1.5,
+      "name": "A8_H SERVICE HATCH",
+      "facing": "south"
+    },
+    {
+      "id": "A7_069",
+      "room": "A7",
+      "kind": "hatch",
+      "bounds": [
+        55.6,
+        55.6,
+        58.4,
+        58.4
+      ],
+      "bottom": 7.38,
+      "top": 7.5,
+      "name": "A7_H SERVICE HATCH",
+      "facing": "south"
+    },
+    {
+      "id": "A4_114",
+      "room": "A4",
+      "kind": "hatch",
+      "bounds": [
+        133.6,
+        72.6,
+        136.4,
+        75.4
+      ],
+      "bottom": 5.38,
+      "top": 5.5,
+      "name": "A4_H SERVICE HATCH",
+      "facing": "south"
+    },
+    {
+      "id": "A5_020",
+      "room": "A5",
+      "kind": "hatch",
+      "bounds": [
+        152.6,
+        135.6,
+        155.4,
+        138.4
+      ],
+      "bottom": 9.88,
+      "top": 10.0,
+      "name": "A5_H SERVICE HATCH",
+      "facing": "south"
+    },
+    {
+      "id": "A3_Hatch",
+      "room": "A3",
+      "kind": "hatch",
+      "bounds": [
+        62.6,
+        132.6,
+        65.4,
+        135.4
+      ],
+      "bottom": 7.88,
+      "top": 8,
+      "name": "A3 SERVICE HATCH",
+      "facing": "south"
+    },
+    {
+      "id": "A6_Hatch",
+      "room": "A6",
+      "kind": "hatch",
+      "bounds": [
+        150.6,
+        168.6,
+        153.4,
+        171.4
+      ],
+      "bottom": 9.88,
+      "top": 10,
+      "name": "A6 SERVICE HATCH",
+      "facing": "south"
+    },
+    {
+      "id": "A4_107_1",
+      "room": "A4",
+      "kind": "duct",
+      "bounds": [
+        127.125,
+        49.65,
+        143.7,
+        50.15
+      ],
+      "bottom": 4.9,
+      "top": 5.3,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A4_107_2",
+      "room": "A4",
+      "kind": "duct",
+      "bounds": [
+        144.05,
+        49.65,
+        153,
+        50.15
+      ],
+      "bottom": 9.4,
+      "top": 9.8,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A5_019_1",
+      "room": "A5",
+      "kind": "duct",
+      "bounds": [
+        129,
+        130.65,
+        137.82,
+        131.15
+      ],
+      "bottom": 9.4,
+      "top": 9.8,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "A5_019_2",
+      "room": "A5",
+      "kind": "duct",
+      "bounds": [
+        138.18,
+        130.65,
+        149,
+        131.15
+      ],
+      "bottom": 9.4,
+      "top": 9.8,
+      "name": "Ventilation trunk",
+      "facing": "south"
+    },
+    {
+      "id": "Screening_C1",
+      "room": "A1",
+      "kind": "hatch",
+      "bounds": [
+        88.6,
+        263.70000000000005,
+        91.4,
+        266.5
+      ],
+      "bottom": 3.38,
+      "top": 3.5,
+      "name": "Screening sealed service hatch",
+      "facing": "south"
+    }
+  ],
+  "hatches": [
+    {
+      "id": "A1_H",
+      "room": "A1",
+      "center": [
+        92,
+        3.5,
+        282
+      ],
+      "landing": [
+        90.25,
+        280.25,
+        93.75,
+        283.75
+      ],
+      "floor": 0,
+      "aperture_m": 2.5,
+      "service_pocket_height_m": 2.0,
+      "status": "SEALED RESERVATION; no spawn, cut or open-state collision",
+      "emergence_route_paper_xz": [
+        [
+          92,
+          282
+        ],
+        [
+          88,
+          282
+        ]
+      ],
+      "intended_enemies": [
+        "small melee",
+        "regular melee"
+      ],
+      "backing_volume_min": [
+        90.5,
+        3.75,
+        280.5
+      ],
+      "backing_volume_max": [
+        93.5,
+        5.75,
+        283.5
+      ],
+      "backing_status": "Space reservation for an enclosed service pocket; existing roof remains sealed until encounter construction",
+      "staging_clearance_note": "Fits current 1.1 m regular-melee collider plus margin; large body emergence test does not authorize a spitter staging fit"
+    },
+    {
+      "id": "A2_H",
+      "room": "A2",
+      "center": [
+        27,
+        1.5,
+        198
+      ],
+      "landing": [
+        25.25,
+        196.25,
+        28.75,
+        199.75
+      ],
+      "floor": -2,
+      "aperture_m": 2.5,
+      "service_pocket_height_m": 2.0,
+      "status": "SEALED RESERVATION; no spawn, cut or open-state collision",
+      "emergence_route_paper_xz": [
+        [
+          27,
+          198
+        ],
+        [
+          20,
+          198
+        ]
+      ],
+      "intended_enemies": [
+        "small melee",
+        "regular melee"
+      ],
+      "backing_volume_min": [
+        25.5,
+        1.75,
+        196.5
+      ],
+      "backing_volume_max": [
+        28.5,
+        3.75,
+        199.5
+      ],
+      "backing_status": "Space reservation for an enclosed service pocket; existing roof remains sealed until encounter construction",
+      "staging_clearance_note": "Fits current 1.1 m regular-melee collider plus margin; large body emergence test does not authorize a spitter staging fit"
+    },
+    {
+      "id": "A8_H",
+      "room": "A8",
+      "center": [
+        97,
+        1.5,
+        201
+      ],
+      "landing": [
+        95.25,
+        199.25,
+        98.75,
+        202.75
+      ],
+      "floor": -2,
+      "aperture_m": 2.5,
+      "service_pocket_height_m": 2.0,
+      "status": "SEALED RESERVATION; no spawn, cut or open-state collision",
+      "emergence_route_paper_xz": [
+        [
+          97,
+          201
+        ],
+        [
+          93,
+          201
+        ],
+        [
+          93,
+          196
+        ]
+      ],
+      "intended_enemies": [
+        "small melee",
+        "regular melee"
+      ],
+      "backing_volume_min": [
+        95.5,
+        1.75,
+        199.5
+      ],
+      "backing_volume_max": [
+        98.5,
+        3.75,
+        202.5
+      ],
+      "backing_status": "Space reservation for an enclosed service pocket; existing roof remains sealed until encounter construction",
+      "staging_clearance_note": "Fits current 1.1 m regular-melee collider plus margin; large body emergence test does not authorize a spitter staging fit"
+    },
+    {
+      "id": "A7_H",
+      "room": "A7",
+      "center": [
+        57,
+        7.5,
+        57
+      ],
+      "landing": [
+        55.25,
+        55.25,
+        58.75,
+        58.75
+      ],
+      "floor": 4,
+      "aperture_m": 2.5,
+      "service_pocket_height_m": 2.0,
+      "status": "SEALED RESERVATION; no spawn, cut or open-state collision",
+      "emergence_route_paper_xz": [
+        [
+          57,
+          57
+        ],
+        [
+          40,
+          57
+        ]
+      ],
+      "intended_enemies": [
+        "small melee",
+        "regular melee"
+      ],
+      "backing_volume_min": [
+        55.5,
+        8.0,
+        55.5
+      ],
+      "backing_volume_max": [
+        58.5,
+        10.0,
+        58.5
+      ],
+      "backing_status": "Space reservation for an enclosed service pocket; existing roof remains sealed until encounter construction",
+      "staging_clearance_note": "Fits current 1.1 m regular-melee collider plus margin; large body emergence test does not authorize a spitter staging fit"
+    },
+    {
+      "id": "A4_H",
+      "room": "A4",
+      "center": [
+        135,
+        5.5,
+        74
+      ],
+      "landing": [
+        133.25,
+        72.25,
+        136.75,
+        75.75
+      ],
+      "floor": 2,
+      "aperture_m": 2.5,
+      "service_pocket_height_m": 2.0,
+      "status": "SEALED RESERVATION; no spawn, cut or open-state collision",
+      "emergence_route_paper_xz": [
+        [
+          135,
+          74
+        ],
+        [
+          142,
+          74
+        ]
+      ],
+      "intended_enemies": [
+        "small melee",
+        "regular melee"
+      ],
+      "backing_volume_min": [
+        133.5,
+        5.8,
+        72.5
+      ],
+      "backing_volume_max": [
+        136.5,
+        7.8,
+        75.5
+      ],
+      "backing_status": "Space reservation for an enclosed service pocket; existing roof remains sealed until encounter construction",
+      "staging_clearance_note": "Fits current 1.1 m regular-melee collider plus margin; large body emergence test does not authorize a spitter staging fit"
+    },
+    {
+      "id": "A5_H",
+      "room": "A5",
+      "center": [
+        154,
+        10,
+        137
+      ],
+      "landing": [
+        152.25,
+        135.25,
+        155.75,
+        138.75
+      ],
+      "floor": 2,
+      "aperture_m": 2.5,
+      "service_pocket_height_m": 2.0,
+      "status": "SEALED RESERVATION; no spawn, cut or open-state collision",
+      "emergence_route_paper_xz": [
+        [
+          154,
+          137
+        ],
+        [
+          154,
+          119
+        ],
+        [
+          151,
+          119
+        ]
+      ],
+      "intended_enemies": [
+        "small melee",
+        "regular melee"
+      ],
+      "backing_volume_min": [
+        152.5,
+        10.25,
+        135.5
+      ],
+      "backing_volume_max": [
+        155.5,
+        12.25,
+        138.5
+      ],
+      "backing_status": "Space reservation for an enclosed service pocket; existing roof remains sealed until encounter construction",
+      "staging_clearance_note": "Fits current 1.1 m regular-melee collider plus margin; large body emergence test does not authorize a spitter staging fit"
+    },
+    {
+      "id": "A3_H",
+      "room": "A3",
+      "center": [
+        64,
+        8,
+        134
+      ],
+      "landing": [
+        62.25,
+        132.25,
+        65.75,
+        135.75
+      ],
+      "floor": 0,
+      "aperture_m": 2.5,
+      "service_pocket_height_m": 2.0,
+      "status": "SEALED RESERVATION; no spawn, cut or open-state collision",
+      "emergence_route_paper_xz": [
+        [
+          64,
+          134
+        ],
+        [
+          66,
+          134
+        ],
+        [
+          66,
+          142
+        ]
+      ],
+      "intended_enemies": [
+        "small melee",
+        "regular melee"
+      ],
+      "backing_volume_min": [
+        62.5,
+        8.25,
+        132.5
+      ],
+      "backing_volume_max": [
+        65.5,
+        10.25,
+        135.5
+      ],
+      "backing_status": "Space reservation for an enclosed service pocket; existing roof remains sealed until encounter construction",
+      "staging_clearance_note": "Fits current 1.1 m regular-melee collider plus margin; large body emergence test does not authorize a spitter staging fit"
+    },
+    {
+      "id": "A6_H",
+      "room": "A6",
+      "center": [
+        152,
+        10,
+        170
+      ],
+      "landing": [
+        150.25,
+        168.25,
+        153.75,
+        171.75
+      ],
+      "floor": 0,
+      "aperture_m": 2.5,
+      "service_pocket_height_m": 2.0,
+      "status": "SEALED RESERVATION; no spawn, cut or open-state collision",
+      "emergence_route_paper_xz": [
+        [
+          152,
+          170
+        ],
+        [
+          152,
+          182
+        ],
+        [
+          148,
+          182
+        ],
+        [
+          148,
+          190
+        ]
+      ],
+      "intended_enemies": [
+        "small melee",
+        "regular melee"
+      ],
+      "backing_volume_min": [
+        150.5,
+        10.25,
+        168.5
+      ],
+      "backing_volume_max": [
+        153.5,
+        12.25,
+        171.5
+      ],
+      "backing_status": "Space reservation for an enclosed service pocket; existing roof remains sealed until encounter construction",
+      "staging_clearance_note": "Fits current 1.1 m regular-melee collider plus margin; large body emergence test does not authorize a spitter staging fit"
+    },
+    {
+      "id": "Screening_C1",
+      "room": "A1",
+      "center": [
+        90,
+        3.5,
+        265.1
+      ],
+      "landing": [
+        88.25,
+        263.35,
+        91.75,
+        266.85
+      ],
+      "floor": 0,
+      "aperture_m": 2.5,
+      "status": "SEALED RESERVATION; no active spawn or roof opening",
+      "emergence_route_paper_xz": [
+        [
+          90,
+          265.1
+        ],
+        [
+          89.5,
+          266.5
+        ],
+        [
+          88,
+          268
+        ]
+      ],
+      "service_pocket_height_m": 2.0,
+      "intended_enemies": [
+        "small melee",
+        "regular melee"
+      ],
+      "backing_volume_min": [
+        88.5,
+        3.75,
+        263.6
+      ],
+      "backing_volume_max": [
+        91.5,
+        5.75,
+        266.6
+      ],
+      "backing_status": "Space reservation for an enclosed service pocket; existing roof remains sealed until encounter construction",
+      "staging_clearance_note": "Fits current 1.1 m regular-melee collider plus margin; large body emergence test does not authorize a spitter staging fit"
+    }
+  ],
+  "corridor_bays": 48,
+  "protected_route_width_m": 3,
+  "notes": [
+    "One continuous dark floor at each existing elevation",
+    "Closed hatch placeholders reserve later enclosed service pockets; no active spawn",
+    "Registration and Screening retained with corrected services, fixture mounts and a sealed Screening C1 hatch placeholder",
+    "Route B, hub, arrival/lift and Maintenance destination remain unchanged"
+  ],
+  "local_canopies": [
+    {
+      "bounds": [
+        20,
+        120,
+        46,
+        146
+      ],
+      "ceiling": 3.5
+    },
+    {
+      "bounds": [
+        126,
+        49,
+        143.75,
+        80
+      ],
+      "ceiling": 5.5
+    },
+    {
+      "bounds": [
+        132,
+        80,
+        154,
+        93
+      ],
+      "ceiling": 5.5
+    }
+  ],
+  "working_routes": [
+    {
+      "room": "admin",
+      "name": "Office spine",
+      "points": [
+        [
+          82,
+          268
+        ],
+        [
+          65,
+          268
+        ]
+      ],
+      "width": 3,
+      "main": false
+    },
+    {
+      "room": "admin",
+      "name": "Workstation aisle",
+      "points": [
+        [
+          68.8,
+          264.4
+        ],
+        [
+          68.8,
+          273.4
+        ]
+      ],
+      "width": 2,
+      "main": false
+    },
+    {
+      "room": "admin",
+      "name": "Workstation aisle",
+      "points": [
+        [
+          76,
+          264.4
+        ],
+        [
+          76,
+          273.4
+        ]
+      ],
+      "width": 2,
+      "main": false
+    },
+    {
+      "room": "admin",
+      "name": "Archive access",
+      "points": [
+        [
+          76,
+          273
+        ],
+        [
+          79.5,
+          273
+        ]
+      ],
+      "width": 2,
+      "main": false
+    },
+    {
+      "room": "prep",
+      "name": "Main / screening to Inspection",
+      "points": [
+        [
+          88,
+          276
+        ],
+        [
+          88,
+          282
+        ],
+        [
+          74,
+          282
+        ],
+        [
+          74,
+          288
+        ],
+        [
+          62,
+          288
+        ]
+      ],
+      "width": 3,
+      "main": true
+    },
+    {
+      "room": "prep",
+      "name": "Locker and cleaning aisle",
+      "points": [
+        [
+          88,
+          282
+        ],
+        [
+          88,
+          291
+        ],
+        [
+          93,
+          291
+        ]
+      ],
+      "width": 3,
+      "main": false
+    },
+    {
+      "room": "prep",
+      "name": "Repair workbench access",
+      "points": [
+        [
+          88,
+          288.5
+        ],
+        [
+          80,
+          288.5
+        ]
+      ],
+      "width": 2,
+      "main": false
+    },
+    {
+      "room": "prep",
+      "name": "Tool bay access",
+      "points": [
+        [
+          74,
+          282
+        ],
+        [
+          65,
+          282
+        ],
+        [
+          65,
+          285
+        ]
+      ],
+      "width": 2,
+      "main": false
+    }
+  ],
+  "application_version": "0.0.010",
+  "quality_pass": "Geometry joins, side aisles, early-room consistency, backing-volume audit and render batching",
+  "quality_walks": [
+    {
+      "name": "A3 records work aisles",
+      "floor": 0,
+      "points": [
+        [
+          54,
+          142
+        ],
+        [
+          43,
+          142
+        ],
+        [
+          43,
+          126.9
+        ],
+        [
+          30,
+          126.9
+        ]
+      ]
+    },
+    {
+      "name": "A7 retrieval work aisle",
+      "floor": 4,
+      "points": [
+        [
+          40,
+          69
+        ],
+        [
+          40,
+          75
+        ],
+        [
+          30,
+          75
+        ]
+      ]
+    },
+    {
+      "name": "A4 dispatch workstations",
+      "floor": 2,
+      "points": [
+        [
+          114,
+          74
+        ],
+        [
+          119,
+          74
+        ],
+        [
+          119,
+          64
+        ],
+        [
+          98,
+          64
+        ]
+      ]
+    },
+    {
+      "name": "A5 equipment lower floor",
+      "floor": 2,
+      "points": [
+        [
+          151,
+          119
+        ],
+        [
+          139,
+          119
+        ],
+        [
+          139,
+          127
+        ],
+        [
+          132,
+          127
+        ]
+      ]
+    },
+    {
+      "name": "A5 watch workstations",
+      "floor": 6,
+      "points": [
+        [
+          132,
+          138
+        ],
+        [
+          132,
+          135
+        ]
+      ]
+    },
+    {
+      "name": "A6 west office",
+      "floor": 0,
+      "points": [
+        [
+          148,
+          190
+        ],
+        [
+          148,
+          183
+        ],
+        [
+          138,
+          183
+        ],
+        [
+          138,
+          185
+        ],
+        [
+          126.5,
+          185
+        ],
+        [
+          126.5,
+          195
+        ],
+        [
+          119,
+          195
+        ]
+      ]
+    },
+    {
+      "name": "A6 under-gallery office",
+      "floor": 0,
+      "points": [
+        [
+          126.5,
+          183
+        ],
+        [
+          119,
+          183
+        ],
+        [
+          119,
+          176
+        ],
+        [
+          119,
+          172
+        ]
+      ]
+    },
+    {
+      "name": "A8 workshop stations",
+      "floor": -2,
+      "points": [
+        [
+          75,
+          228
+        ],
+        [
+          80,
+          228
+        ],
+        [
+          80,
+          232
+        ]
+      ]
+    },
+    {
+      "name": "A8 spares shelves",
+      "floor": -2,
+      "points": [
+        [
+          75,
+          233
+        ],
+        [
+          94,
+          233
+        ],
+        [
+          94,
+          237
+        ],
+        [
+          88,
+          237
+        ]
+      ]
+    },
+    {
+      "name": "A2 kit-store shelves",
+      "floor": -2,
+      "points": [
+        [
+          20,
+          231
+        ],
+        [
+          22.5,
+          231
+        ],
+        [
+          22.5,
+          239
+        ],
+        [
+          28,
+          239
+        ]
+      ]
+    },
+    {
+      "name": "A2 pump service aisle",
+      "floor": -2,
+      "points": [
+        [
+          44,
+          203
+        ],
+        [
+          44,
+          194
+        ],
+        [
+          42,
+          194
+        ],
+        [
+          42,
+          187
+        ],
+        [
+          52,
+          187
+        ],
+        [
+          52,
+          201
+        ]
+      ]
+    }
+  ],
+  "quality_fixes": [
+    "Dispatch overlapping ceilings replaced by butt joints",
+    "Ducts/lights clear beams, partitions and upper-deck edges",
+    "350 physical light mounts connect to verified overhead surfaces",
+    "Registration noticeboard moved to waiting wall; staff trunk split around partition",
+    "Screening C1 added; nine sealed hatches reserve 2 m overhead backing space for melee bugs",
+    "Clearance A6_046 cabinet removed to open lower-office crossover",
+    "Conflicting trim finishes separated by physical 0.03125 m relief; shared identical-finish joints retained",
+    "Runtime-only per-prop material batching preserves source cuboids, collision and lights"
+  ]
+}

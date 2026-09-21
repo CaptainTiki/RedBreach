@@ -1,0 +1,26 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_fixture.tres" id="1_ke6bg"]
+[ext_resource type="Material" path="res://props/blockout/f02/screen.tres" id="2_v65q5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_cxdsr"]
+size = Vector3(0.23500001, 1, 1.9)
+
+[sub_resource type="BoxMesh" id="BoxMesh_efcn2"]
+size = Vector3(0.025, 0.88, 1.7800001)
+
+[node name="BlockoutAssembly" type="Node3D" unique_id=240870725]
+metadata/kind = "display"
+metadata/dimensions_m = Vector3(0.27, 1, 1.9)
+
+[node name="Visual" type="Node3D" parent="." unique_id=2081766509]
+
+[node name="Housing" type="MeshInstance3D" parent="Visual" unique_id=54163515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1525, 0.5, 0.95)
+material_override = ExtResource("1_ke6bg")
+mesh = SubResource("BoxMesh_cxdsr")
+
+[node name="Readout" type="MeshInstance3D" parent="Visual" unique_id=1555661393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0125, 0.5, 0.95)
+material_override = ExtResource("2_v65q5")
+mesh = SubResource("BoxMesh_efcn2")

@@ -1,0 +1,26 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_block.tres" id="1_v56rv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_kdhto"]
+size = Vector3(0.3, 2.4, 2.9)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tcght"]
+size = Vector3(0.3, 2.4, 2.9)
+
+[node name="BlockoutAssembly" type="Node3D" unique_id=1753970453]
+metadata/kind = "backboard"
+metadata/dimensions_m = Vector3(0.3, 2.4, 2.9)
+
+[node name="Visual" type="Node3D" parent="." unique_id=240320467]
+
+[node name="Panel" type="MeshInstance3D" parent="Visual" unique_id=1988012558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 1.2, 1.45)
+material_override = ExtResource("1_v56rv")
+mesh = SubResource("BoxMesh_kdhto")
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=1468635559]
+
+[node name="Envelope" type="CollisionShape3D" parent="Collision" unique_id=694087567]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 1.2, 1.45)
+shape = SubResource("BoxShape3D_tcght")

@@ -1,0 +1,70 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_fixture.tres" id="1_bsah8"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_block.tres" id="2_gr6pr"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_service.tres" id="3_4a8um"]
+[ext_resource type="Material" path="res://props/blockout/f02/screen.tres" id="4_bd6f6"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_surface.tres" id="5_8qv3e"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_65ngt"]
+size = Vector3(5, 0.2, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ipkgi"]
+size = Vector3(4.7, 2.1, 3.6999998)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2276e"]
+size = Vector3(4.5, 0.20000005, 3.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oeoyk"]
+size = Vector3(4.3999996, 0.54999995, 0.03000021)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6anwt"]
+size = Vector3(0.34999996, 1.85, 0.38)
+
+[sub_resource type="BoxMesh" id="BoxMesh_u0vlj"]
+size = Vector3(0.3499999, 1.85, 0.38)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d07w5"]
+size = Vector3(5, 2.5, 4)
+
+[node name="BlockoutAssembly" type="Node3D" unique_id=611226714]
+metadata/kind = "pump"
+metadata/dimensions_m = Vector3(5, 2.5, 4)
+
+[node name="Visual" type="Node3D" parent="." unique_id=854519100]
+
+[node name="Plinth" type="MeshInstance3D" parent="Visual" unique_id=925385487]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.1, 2)
+material_override = ExtResource("1_bsah8")
+mesh = SubResource("BoxMesh_65ngt")
+
+[node name="MachineHousing" type="MeshInstance3D" parent="Visual" unique_id=1788607804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 1.25, 2)
+material_override = ExtResource("2_gr6pr")
+mesh = SubResource("BoxMesh_ipkgi")
+
+[node name="UpperHousing" type="MeshInstance3D" parent="Visual" unique_id=2096934949]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.4, 2)
+material_override = ExtResource("3_4a8um")
+mesh = SubResource("BoxMesh_2276e")
+
+[node name="ControlPanel" type="MeshInstance3D" parent="Visual" unique_id=600804534]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 1.4, 3.875)
+material_override = ExtResource("4_bd6f6")
+mesh = SubResource("BoxMesh_oeoyk")
+
+[node name="PipeRiser" type="MeshInstance3D" parent="Visual" unique_id=1676055529]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.475, 1.325, 0.21000001)
+material_override = ExtResource("5_8qv3e")
+mesh = SubResource("BoxMesh_6anwt")
+
+[node name="@MeshInstance3D@181" type="MeshInstance3D" parent="Visual" unique_id=941851167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4750004, 1.325, 0.21000001)
+material_override = ExtResource("5_8qv3e")
+mesh = SubResource("BoxMesh_u0vlj")
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=1112038851]
+
+[node name="Envelope" type="CollisionShape3D" parent="Collision" unique_id=1778426425]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 1.25, 2)
+shape = SubResource("BoxShape3D_d07w5")

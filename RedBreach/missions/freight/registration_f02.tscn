@@ -10,7 +10,6 @@
 [ext_resource type="PackedScene" path="res://props/blockout/f02/service_cabinet_3p000_2p200_1p050.tscn" id="8_ykdf2"]
 [ext_resource type="PackedScene" path="res://props/blockout/f02/north_service_trunk_16p800_0p400_0p800.tscn" id="15_2cn6r"]
 [ext_resource type="PackedScene" path="res://props/blockout/f03/d1.tscn" id="15_dd0a6"]
-[ext_resource type="PackedScene" path="res://props/blockout/f02/waiting_service_trunk_0p700_0p400_8p900.tscn" id="16_2dakl"]
 [ext_resource type="PackedScene" path="res://props/blockout/f03/chair.tscn" id="16_18mgi"]
 [ext_resource type="PackedScene" path="res://props/blockout/f02/lounge_service_trunk_16p800_0p400_0p700.tscn" id="17_ldqf5"]
 [ext_resource type="PackedScene" path="res://props/blockout/f03/d2.tscn" id="17_usymf"]
@@ -26,6 +25,7 @@
 [ext_resource type="PackedScene" path="res://props/blockout/f03/t1.tscn" id="24_3tm2d"]
 [ext_resource type="PackedScene" path="res://props/blockout/f03/t2.tscn" id="25_m5aj0"]
 [ext_resource type="PackedScene" path="res://props/blockout/f03/m1.tscn" id="26_5o5k8"]
+[ext_resource type="PackedScene" path="res://props/blockout/quality/registration_split_trunk.tscn" id="27_dd0a6"]
 [ext_resource type="PackedScene" path="res://props/blockout/f03/m2.tscn" id="27_jh3u5"]
 [ext_resource type="PackedScene" path="res://interaction/sliding_door_wide.tscn" id="28_mlkih"]
 [ext_resource type="Script" path="res://interaction/sliding_door_wide.gd" id="29_maale"]
@@ -84,16 +84,10 @@ metadata/dimensions_m = Vector3(3, 2.2, 1.05)
 metadata/layout_id = "W3"
 
 [node name="H2" type="Node3D" parent="Objects" unique_id=456351545 instance=ExtResource("15_2cn6r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47499847, 3.05, 0.6000061)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47499847, 3.05, 0.8500061)
 metadata/kind = "north service trunk"
 metadata/dimensions_m = Vector3(16.8, 0.4, 0.8)
 metadata/layout_id = "H2"
-
-[node name="H3" type="Node3D" parent="Objects" unique_id=1160775202 instance=ExtResource("16_2dakl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27500153, 3.05, 12.5)
-metadata/kind = "waiting service trunk"
-metadata/dimensions_m = Vector3(0.7, 0.4, 8.9)
-metadata/layout_id = "H3"
 
 [node name="H4" type="Node3D" parent="Objects" unique_id=626055894 instance=ExtResource("17_ldqf5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47499847, 3.05, 30.399994)
@@ -138,7 +132,7 @@ metadata/dimensions_m = Vector3(2.2, 0.17, 0.24)
 metadata/layout_id = "F8"
 
 [node name="Noticeboard" type="Node3D" parent="Objects" unique_id=2062045784 instance=ExtResource("19_3tm2d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.375, 1.1, 21.899994)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.375, 1.1, 14.14)
 
 [node name="RegistrationDesk" type="Node3D" parent="Objects" unique_id=362174525 instance=ExtResource("20_m5aj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 12.125)
@@ -226,6 +220,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.425, 0.75, 25.15)
 metadata/kind = "desk monitor"
 metadata/dimensions_m = Vector3(0.9, 0.5, 0.25)
 metadata/layout_id = "O_M2"
+
+[node name="H3" type="Node3D" parent="Objects" unique_id=2018224757 instance=ExtResource("27_dd0a6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4750015, 3.05, 12.5)
+metadata/kind = "waiting service trunk"
+metadata/dimensions_m = Vector3(0.7, 0.4, 8.9)
+metadata/layout_id = "H3"
 
 [node name="CandidateItem1" type="Marker3D" parent="." unique_id=1766942594]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.975, 1.15, 20.8)

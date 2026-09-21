@@ -1,0 +1,44 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_block.tres" id="1_cjjv1"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_surface.tres" id="2_mj44m"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_fixture.tres" id="3_lhemu"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0jv66"]
+size = Vector3(0.75, 2.2, 2.66)
+
+[sub_resource type="BoxMesh" id="BoxMesh_il4a7"]
+size = Vector3(0.63, 1.9600002, 0.025000095)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dbcfx"]
+size = Vector3(0.060000002, 0.28000003, 0.00999999)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b5p44"]
+size = Vector3(0.75, 2.2, 2.7)
+
+[node name="BlockoutAssembly" type="Node3D" unique_id=78736454]
+metadata/kind = "storage"
+metadata/dimensions_m = Vector3(0.75, 2.2, 2.7)
+
+[node name="Visual" type="Node3D" parent="." unique_id=1698043055]
+
+[node name="Housing" type="MeshInstance3D" parent="Visual" unique_id=930325830]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.375, 1.1, 1.33)
+material_override = ExtResource("1_cjjv1")
+mesh = SubResource("BoxMesh_0jv66")
+
+[node name="DoorPanel" type="MeshInstance3D" parent="Visual" unique_id=994300530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.375, 1.1, 2.6875)
+material_override = ExtResource("2_mj44m")
+mesh = SubResource("BoxMesh_il4a7")
+
+[node name="Handle" type="MeshInstance3D" parent="Visual" unique_id=20057131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.59000003, 1.09, 2.7070003)
+material_override = ExtResource("3_lhemu")
+mesh = SubResource("BoxMesh_dbcfx")
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=1421679811]
+
+[node name="Envelope" type="CollisionShape3D" parent="Collision" unique_id=152894636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.375, 1.1, 1.35)
+shape = SubResource("BoxShape3D_b5p44")

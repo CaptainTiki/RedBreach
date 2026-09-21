@@ -9,6 +9,8 @@ if (-not (Test-Path -LiteralPath $GodotPath)) { throw 'Godot not found. Supply -
 $checks = ,@('res://tools/build_freight.gd', 'freight_build.log', '600', '^FREIGHT_BUILD: \d+ brushes; save=0$')
 if ($Validate) {
     $checks += ,@('res://tools/validate_freight.gd', 'freight_qa.log', '160000', '^FREIGHT_QA: \d+ checks; 0 failures$')
+    $checks += ,@('res://tools/validate_freight_route_a.gd', 'route_a_qa.log', '60000', '^FREIGHT_ROUTE_A_QA: \d+ checks; 0 failures$')
+    $checks += ,@('res://tools/validate_freight_batch.gd', 'route_a_batch_qa.log', '2000', '^BATCH_QA: .*"failures":\[\]')
 }
 foreach ($entry in $checks) {
     $logPath = Join-Path $projectDir ('.godot\' + $entry[1])

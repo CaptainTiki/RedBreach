@@ -1,6 +1,6 @@
 {
   "revision": "F-04",
-  "status": "APPROVED - SCREENING BUILT / ADMIN AND PREP PENDING",
+  "status": "BUILT - SCREENING F04 / ADMIN AND PREP ROUTE A CONTINUATION",
   "source_layout": "08",
   "source_map_sha256": "60f09581dbac8628c1f141f1cecc5fd3df5b9bfe006f1045faf481e6500a5baf",
   "architecture": {
@@ -1612,12 +1612,11 @@
   ],
   "built_layout": "09",
   "built_rooms": [
-    "screening"
-  ],
-  "pending_rooms": [
+    "screening",
     "admin",
     "prep"
   ],
+  "pending_rooms": [],
   "validation": {
     "freight_checks": 217,
     "greybox_checks": 9,
@@ -1653,5 +1652,7 @@
       "metric_triangles": 14372
     },
     "validated_layout_revision": "10"
-  }
+  },
+  "continuation_layout": "11",
+  "continuation_record": "freight-route-a-style.json"
 }

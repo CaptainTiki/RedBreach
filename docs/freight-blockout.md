@@ -1,6 +1,8 @@
-# Freight access / empty walkthrough 08
+# Freight access / empty walkthrough 12
 
-Approved F-04 Screening is built as layout 09: ribs, angled upper corners, equipment and the exit frame extend the accepted Registration sample. Administration and Staff Preparation retain F01 while Screening awaits the user walkthrough. Registration now has the layout-10 continuous flat floor, retaining its staff door and furnished office. This is an early-campaign level 2/3 example. The roughly ten-minute target applies to a later normal populated run; this empty walk is a measurement, not a duration guarantee.
+Route A now carries the accepted Registration/Screening language through Administration, Staff Preparation, Inspection, the optional Annex, Records, Security, Watch, Clearance and their corridors. The user explicitly waived another paper review for this continuation. [Use the guided Route A walkthrough](freight-route-a-walkthrough.md). Layout 12 retains the continuous flat dark floors and the existing route, objectives, stairs and shortcut. Application version remains 0.0.010. The [Route A quality pass](freight-route-a-quality-pass.md) corrects earlier services/fixtures, opens the Clearance office crossover and adds runtime render batching.
+
+This is an early-campaign level 2/3 example. The roughly ten-minute target applies to a later normal populated run; the empty walk measures traversal, not final mission duration.
 
 ## Play
 
@@ -30,7 +32,8 @@ The HUD reports elapsed time, distance, current room, height and objective state
 - Saved scene: `RedBreach/missions/freight/freight_blockout.tscn`; authored interactions remain outside Geometry.
 - Rebuild: `tools/rebuild-freight-blockout.ps1 -Validate` builds, saves, reloads and checks the map. Save editor edits before rebuilding and reload the scene afterward.
 - Layout record: `docs/freight-blockout-layout.json`; validation/room metadata: `RedBreach/missions/freight/layout.json`.
-- Paper drawings: [current F-01 sample](freight-furnishing-plan.md), [A-01 baseline interiors](freight-a-interior-plan.md), [revision-04 whole-level baseline](freight-access-route-plan.png), [current elevations](freight-access-elevation-plan.md).
+- Built continuation: [Route A record and walkthrough](freight-route-a-walkthrough.md); [placement data](freight-route-a-style.json).
+- Historical paper drawings: [F-01 sample](freight-furnishing-plan.md), [A-01 baseline interiors](freight-a-interior-plan.md), [revision-04 whole-level baseline](freight-access-route-plan.png), [current elevations](freight-access-elevation-plan.md).
 
 The source map is authoritative for future TrenchBroom edits. `tools/bootstrap-freight-blockout.py` generated the initial brushes; it refuses to overwrite an existing map unless explicitly asked. The normal rebuild never runs it. Update authored gates, labels, objectives and metadata when intentionally moving their geometry.
 
@@ -42,7 +45,7 @@ The one-time `tools/apply-freight-a-interiors.py` application is source-hash gua
 
 ## Validation
 
-The saved map contains **1,216 brush collisions**. Rebuild/save/reload validation passed **199 checks with zero failures**. The checks cover floor samples, standing clearance above and below galleries, all 19 stair flights in both directions, the continuous full route, A in reverse, sealed old openings, both Maintenance/ladder directions, camera-ray interactions, cards/power, one-sided releases, selector exclusivity, cache, reset and completion. All 14,192 baked triangles passed the 1 m Kenney UV check. Rendered player-eye views were inspected.
+The saved map contains **2,178 brush collisions**. Rebuild/save/reload validation passed **217 freight checks and 38 Route A checks**, plus **nine shared greybox checks**, with zero failures. All 24,380 baked triangles passed the measured Kenney UV check. Validation covers the complete normal route, A in reverse, 19 stair flights in both directions, openings, gallery clearances, card/gate/selector/ladder behavior, reset and completion. The new pass checks supported prop placements, full-width A1 work aisles and eight hatch landing/emergence reservations using a 2 m wide body. Twenty-nine rendered player-eye views were inspected. Human walkthrough and populated combat review remain next.
 
 The F-02 source audit confirms that all 1,183 original brushes outside the ten replaced reception furniture brushes remain literally unchanged. Eighteen new map brushes provide approved partitions, headers, uprights and beams. Props are external scene instances preserved by the normal rebuild. Shared movement, pistol, combat and addon files are unchanged in this pass. This revision completed build, headless QA and rendered capture without reported errors or warnings.
 

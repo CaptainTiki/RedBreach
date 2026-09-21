@@ -1,0 +1,45 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_fixture.tres" id="1_yx1we"]
+[ext_resource type="Material" path="res://props/blockout/f02/lamp.tres" id="2_adcuo"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_i5orr"]
+size = Vector3(2.2, 0.16, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7lli3"]
+size = Vector3(2.0800002, 0.01, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s3lqm"]
+size = Vector3(2.2, 0.16, 0.3)
+
+[node name="BlockoutAssembly" type="Node3D" unique_id=1547559610]
+metadata/kind = "light"
+metadata/dimensions_m = Vector3(2.2, 0.16, 0.3)
+
+[node name="Visual" type="Node3D" parent="." unique_id=91526208]
+
+[node name="Housing" type="MeshInstance3D" parent="Visual" unique_id=146765153]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0.08, 0.15)
+material_override = ExtResource("1_yx1we")
+mesh = SubResource("BoxMesh_i5orr")
+
+[node name="Diffuser" type="MeshInstance3D" parent="Visual" unique_id=2091656020]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, -0.007, 0.15)
+material_override = ExtResource("2_adcuo")
+mesh = SubResource("BoxMesh_7lli3")
+
+[node name="TaskLight" type="OmniLight3D" parent="." unique_id=1383055285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, -0.18, 0.15)
+light_color = Color(0.9, 0.94, 1, 1)
+light_energy = 0.5
+distance_fade_enabled = true
+distance_fade_begin = 55.0
+distance_fade_length = 15.0
+omni_range = 10.0
+omni_attenuation = 0.65
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=615002917]
+
+[node name="Envelope" type="CollisionShape3D" parent="Collision" unique_id=810530366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0.08, 0.15)
+shape = SubResource("BoxShape3D_s3lqm")

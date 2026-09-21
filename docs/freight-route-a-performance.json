@@ -1,0 +1,168 @@
+{
+  "control": {
+    "conditions": "Local rendered offscreen window, empty mission, fixed camera; not a populated combat benchmark",
+    "engine": "4.7.2-stable (steam)",
+    "samples_per_view": 240,
+    "viewport": [
+      1440,
+      900
+    ],
+    "views": [
+      {
+        "draw_calls_p50": 1905.0,
+        "frame_ms_p50": 1.791,
+        "frame_ms_p95": 2.178,
+        "frame_ms_p99": 2.43,
+        "objects_p50": 3084.0,
+        "view": "registration"
+      },
+      {
+        "draw_calls_p50": 1825.0,
+        "frame_ms_p50": 1.698,
+        "frame_ms_p95": 2.013,
+        "frame_ms_p99": 2.211,
+        "objects_p50": 3630.0,
+        "view": "admin"
+      },
+      {
+        "draw_calls_p50": 3922.0,
+        "frame_ms_p50": 3.161,
+        "frame_ms_p95": 3.644,
+        "frame_ms_p99": 4.115,
+        "objects_p50": 8716.0,
+        "view": "inspection"
+      },
+      {
+        "draw_calls_p50": 3723.0,
+        "frame_ms_p50": 3.417,
+        "frame_ms_p95": 3.95,
+        "frame_ms_p99": 4.286,
+        "objects_p50": 8281.0,
+        "view": "records"
+      },
+      {
+        "draw_calls_p50": 1425.0,
+        "frame_ms_p50": 1.57,
+        "frame_ms_p95": 2.254,
+        "frame_ms_p99": 3.213,
+        "objects_p50": 3558.0,
+        "view": "dispatch"
+      },
+      {
+        "draw_calls_p50": 4676.0,
+        "frame_ms_p50": 4.38,
+        "frame_ms_p95": 5.963,
+        "frame_ms_p99": 8.028,
+        "objects_p50": 10422.0,
+        "view": "watch"
+      },
+      {
+        "draw_calls_p50": 814.0,
+        "frame_ms_p50": 1.287,
+        "frame_ms_p95": 2.067,
+        "frame_ms_p99": 2.268,
+        "objects_p50": 1916.0,
+        "view": "clearance"
+      },
+      {
+        "draw_calls_p50": 2609.0,
+        "frame_ms_p50": 2.203,
+        "frame_ms_p95": 2.552,
+        "frame_ms_p99": 2.761,
+        "objects_p50": 4036.0,
+        "view": "annex"
+      }
+    ],
+    "vsync": "disabled",
+    "warmup_frames": 75
+  },
+  "batched": {
+    "conditions": "Local rendered offscreen window, empty mission, fixed camera; not a populated combat benchmark",
+    "engine": "4.7.2-stable (steam)",
+    "samples_per_view": 240,
+    "viewport": [
+      1440,
+      900
+    ],
+    "views": [
+      {
+        "draw_calls_p50": 1008.0,
+        "frame_ms_p50": 1.22,
+        "frame_ms_p95": 1.569,
+        "frame_ms_p99": 1.918,
+        "objects_p50": 1991.0,
+        "view": "registration"
+      },
+      {
+        "draw_calls_p50": 450.0,
+        "frame_ms_p50": 0.968,
+        "frame_ms_p95": 1.362,
+        "frame_ms_p99": 1.484,
+        "objects_p50": 1521.0,
+        "view": "admin"
+      },
+      {
+        "draw_calls_p50": 827.0,
+        "frame_ms_p50": 1.203,
+        "frame_ms_p95": 1.647,
+        "frame_ms_p99": 1.737,
+        "objects_p50": 2744.0,
+        "view": "inspection"
+      },
+      {
+        "draw_calls_p50": 1167.0,
+        "frame_ms_p50": 1.521,
+        "frame_ms_p95": 1.917,
+        "frame_ms_p99": 2.234,
+        "objects_p50": 2953.0,
+        "view": "records"
+      },
+      {
+        "draw_calls_p50": 366.0,
+        "frame_ms_p50": 0.923,
+        "frame_ms_p95": 1.193,
+        "frame_ms_p99": 1.348,
+        "objects_p50": 1610.0,
+        "view": "dispatch"
+      },
+      {
+        "draw_calls_p50": 1119.0,
+        "frame_ms_p50": 1.422,
+        "frame_ms_p95": 2.142,
+        "frame_ms_p99": 2.789,
+        "objects_p50": 3259.0,
+        "view": "watch"
+      },
+      {
+        "draw_calls_p50": 354.0,
+        "frame_ms_p50": 0.896,
+        "frame_ms_p95": 1.134,
+        "frame_ms_p99": 1.256,
+        "objects_p50": 1325.0,
+        "view": "clearance"
+      },
+      {
+        "draw_calls_p50": 1271.0,
+        "frame_ms_p50": 1.376,
+        "frame_ms_p95": 1.743,
+        "frame_ms_p99": 1.909,
+        "objects_p50": 2365.0,
+        "view": "annex"
+      }
+    ],
+    "vsync": "disabled",
+    "warmup_frames": 75
+  },
+  "batch_validation": {
+    "assemblies_compared": 634,
+    "checks": "Per-assembly mesh bounds, triangle count and per-material triangles; collision/light counts; unsaved generated batches; visible editable source cuboids; physical mount support",
+    "failures": [],
+    "fixture_mounts_supported": 350,
+    "render_meshes": 1568,
+    "source_meshes": 6715,
+    "unchanged_collision_bodies": 507,
+    "unchanged_lights": 164
+  },
+  "hardware": "NVIDIA RTX 2080 SUPER; D3D12 Forward+; Godot 4.7.2 Steam",
+  "limitations": "Single empty fixed-view comparison; not a representative populated-game FPS claim. Vsync disabled; 1440x900 offscreen window. CPU TIME_PROCESS monitor excluded because its aggregated/stale samples are unsuitable here."
+}

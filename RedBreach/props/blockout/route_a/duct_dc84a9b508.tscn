@@ -1,0 +1,99 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_service.tres" id="1_nllvb"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_fixture.tres" id="2_l7ixf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ioiu7"]
+size = Vector3(18, 0.4, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_45tya"]
+size = Vector3(0.7, 0.015000001, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gdeok"]
+size = Vector3(0.70000005, 0.015000001, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hf8ip"]
+size = Vector3(0.6999998, 0.015000001, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yii55"]
+size = Vector3(0.6999998, 0.015000001, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_odyow"]
+size = Vector3(0.6999998, 0.015000001, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ft4gy"]
+size = Vector3(0.6999998, 0.015000001, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3jjor"]
+size = Vector3(0.6999998, 0.015000001, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2jm0m"]
+size = Vector3(0.6999998, 0.015000001, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g24wi"]
+size = Vector3(0.70000076, 0.015000001, 0.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a16xp"]
+size = Vector3(18, 0.4, 0.5)
+
+[node name="BlockoutAssembly" type="Node3D" unique_id=1992382939]
+metadata/kind = "duct"
+metadata/dimensions_m = Vector3(18, 0.4, 0.5)
+
+[node name="Visual" type="Node3D" parent="." unique_id=952977970]
+
+[node name="Trunk" type="MeshInstance3D" parent="Visual" unique_id=987168008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.2, 0.25)
+material_override = ExtResource("1_nllvb")
+mesh = SubResource("BoxMesh_ioiu7")
+
+[node name="VentSlot" type="MeshInstance3D" parent="Visual" unique_id=43154553]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, -0.0175, 0.25)
+material_override = ExtResource("2_l7ixf")
+mesh = SubResource("BoxMesh_45tya")
+
+[node name="@MeshInstance3D@731" type="MeshInstance3D" parent="Visual" unique_id=562684780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5500002, -0.0175, 0.25)
+material_override = ExtResource("2_l7ixf")
+mesh = SubResource("BoxMesh_gdeok")
+
+[node name="@MeshInstance3D@732" type="MeshInstance3D" parent="Visual" unique_id=413548373]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5499997, -0.0175, 0.25)
+material_override = ExtResource("2_l7ixf")
+mesh = SubResource("BoxMesh_hf8ip")
+
+[node name="@MeshInstance3D@733" type="MeshInstance3D" parent="Visual" unique_id=134110171]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5499997, -0.0175, 0.25)
+material_override = ExtResource("2_l7ixf")
+mesh = SubResource("BoxMesh_yii55")
+
+[node name="@MeshInstance3D@734" type="MeshInstance3D" parent="Visual" unique_id=1928793233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.549999, -0.0175, 0.25)
+material_override = ExtResource("2_l7ixf")
+mesh = SubResource("BoxMesh_odyow")
+
+[node name="@MeshInstance3D@735" type="MeshInstance3D" parent="Visual" unique_id=225954575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.549999, -0.0175, 0.25)
+material_override = ExtResource("2_l7ixf")
+mesh = SubResource("BoxMesh_ft4gy")
+
+[node name="@MeshInstance3D@736" type="MeshInstance3D" parent="Visual" unique_id=157298276]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.549999, -0.0175, 0.25)
+material_override = ExtResource("2_l7ixf")
+mesh = SubResource("BoxMesh_3jjor")
+
+[node name="@MeshInstance3D@737" type="MeshInstance3D" parent="Visual" unique_id=946207894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.549999, -0.0175, 0.25)
+material_override = ExtResource("2_l7ixf")
+mesh = SubResource("BoxMesh_2jm0m")
+
+[node name="@MeshInstance3D@738" type="MeshInstance3D" parent="Visual" unique_id=1906448423]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.550001, -0.0175, 0.25)
+material_override = ExtResource("2_l7ixf")
+mesh = SubResource("BoxMesh_g24wi")
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=1631098579]
+
+[node name="Envelope" type="CollisionShape3D" parent="Collision" unique_id=361773719]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.2, 0.25)
+shape = SubResource("BoxShape3D_a16xp")

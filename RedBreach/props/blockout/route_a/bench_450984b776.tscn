@@ -1,0 +1,43 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_surface.tres" id="1_k6cj2"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_block.tres" id="2_b8r4r"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vit6i"]
+size = Vector3(2.5, 0.099999994, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0gi6i"]
+size = Vector3(0.19999999, 0.35, 0.59999996)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fdqgm"]
+size = Vector3(0.19999981, 0.35, 0.59999996)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jitma"]
+size = Vector3(2.5, 0.45, 0.8)
+
+[node name="BlockoutAssembly" type="Node3D" unique_id=1472477696]
+metadata/kind = "bench"
+metadata/dimensions_m = Vector3(2.5, 0.45, 0.8)
+
+[node name="Visual" type="Node3D" parent="." unique_id=1633600401]
+
+[node name="Seat" type="MeshInstance3D" parent="Visual" unique_id=1630857179]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0.39999998, 0.4)
+material_override = ExtResource("1_k6cj2")
+mesh = SubResource("BoxMesh_vit6i")
+
+[node name="Support" type="MeshInstance3D" parent="Visual" unique_id=1301241967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0.175, 0.4)
+material_override = ExtResource("2_b8r4r")
+mesh = SubResource("BoxMesh_0gi6i")
+
+[node name="@MeshInstance3D@81" type="MeshInstance3D" parent="Visual" unique_id=1028859794]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25, 0.175, 0.4)
+material_override = ExtResource("2_b8r4r")
+mesh = SubResource("BoxMesh_fdqgm")
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=744977985]
+
+[node name="Envelope" type="CollisionShape3D" parent="Collision" unique_id=1871874761]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0.225, 0.4)
+shape = SubResource("BoxShape3D_jitma")

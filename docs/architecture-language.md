@@ -132,7 +132,7 @@ Ceiling candidates belong between structural ribs and fixtures, above useful lan
 
 Retain the rear-hatch experiment's lessons when encounters are authored: approach triggers must account for engaging from outside a room and backing away; reserve response time, a hatch cue and a distinct nearby ambush screech (FR-004). Occupied emergence must defer safely, and reset/death/exit must cancel pending spawns. These are encounter requirements, not new spawning behavior in the current empty walkthrough.
 
-[Screening's first reservations](freight-screening-hatch-reservations.png) show ceiling C1 and north-wall W1 as alternatives in one service bay. Their aperture/landing footprints avoid current props; W1 still needs a backing pocket designed before any cut. No hatch, enemy or trigger is built by this drawing. The orange clearance ribbons in the original F04 drawing were not recessed-floor proposals: Screening remains level; the subsequent layout-10 decision also removes Registration's local lowered walkway.
+[Screening's first reservations](freight-screening-hatch-reservations.png) show ceiling C1 and north-wall W1 as alternatives in one service bay. Their aperture/landing footprints avoid current props; W1 still needs a backing pocket designed before any cut. That drawing itself built no hatch, enemy or trigger. Layout 12 subsequently adds the sealed C1 ceiling placeholder and checks its backing/drop/exit reservations; W1 remains an unbuilt alternative. The orange clearance ribbons in the original F04 drawing were not recessed-floor proposals: Screening remains level; the subsequent layout-10 decision also removes Registration's local lowered walkway.
 
 
 ## Texture transitions require geometry / current floor decision
@@ -140,3 +140,15 @@ Retain the rear-hatch experiment's lessons when encounters are authored: approac
 User rule: a change in texture must be supported by actual geometry: a raised or lowered surface, a border brush, trim or a physical three-dimensional seam. An uninterrupted coplanar floor uses one continuous material. Colour alone should not introduce an arbitrary seam across that surface.
 
 The user rejected replacing Registration's recessed path with a contrasting material strip. [Layout 10](freight-registration-flat-floor.md) removes the 0.25 m depression and its orange floor/step materials, bringing the former strips to 0 m under the existing dark floor texture. Registration and Screening now share the level-floor treatment. The furniture, door and back office remain. Use the established ribs, upper corners, compartment frames and service runs for the architectural theme; reserve height changes for purposeful platforms, stairs and mezzanines.
+
+
+## Built Route A continuation / layout 12
+
+The user explicitly bypassed another paper review for the rest of admin / all Route A. The complete pass now extends the pilot through every A room and connecting corridor. See [the walkthrough and construction record](freight-route-a-walkthrough.md). Historical instructions above to wait for the next A paper review are superseded for this built pass only.
+
+Working offices use local low ceilings; occupied upper routes, stair halls and the Maintenance ladder retain their taller volumes. Large working floors are organized into terminal, storage and equipment groups. Gallery guards now use open rail/post assemblies, and furnishings leave the tested descent views clear. Primary routing and the key dependencies remain unchanged.
+
+Nine closed ceiling grate placeholders reserve 2.5 m apertures, 3.5 m landing squares and routes with 2 m body clearance. Their roofs remain sealed. Each now reserves a checked 3 x 3 x 2 m backing volume above the sealed roof for current small/regular melee bugs. This is a planning envelope, not a built chamber or active spawner; enclosure, roof opening and navigation still belong to the encounter pass. A spitter staging fit is not implied.
+
+
+The layout-12 quality pass also brings earlier Registration/Screening services forward: split ducts at partitions or ceiling-height changes, mount suspended light housings to actual overhead structure, and keep furniture out of secondary office crossover routes. Physically offset competing trim faces or form true butt joints; identical material/UV overlaps within a structural assembly are tracked separately from finish conflicts. See [quality evidence and review questions](freight-route-a-quality-pass.md).

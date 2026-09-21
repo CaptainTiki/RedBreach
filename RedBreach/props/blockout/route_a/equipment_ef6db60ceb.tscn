@@ -1,0 +1,53 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_fixture.tres" id="1_be3yd"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_block.tres" id="2_c53k2"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_service.tres" id="3_b0p6v"]
+[ext_resource type="Material" path="res://props/blockout/f02/screen.tres" id="4_msyq4"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_opi8d"]
+size = Vector3(2.3, 0.2, 3.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gtg17"]
+size = Vector3(1.9999999, 0.99999994, 3.1999998)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oraa8"]
+size = Vector3(1.8, 0.20000005, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kiiwh"]
+size = Vector3(1.7, 0.30799997, 0.03000021)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uglcn"]
+size = Vector3(2.3, 1.4, 3.5)
+
+[node name="BlockoutAssembly" type="Node3D" unique_id=2006582031]
+metadata/kind = "equipment"
+metadata/dimensions_m = Vector3(2.3, 1.4, 3.5)
+
+[node name="Visual" type="Node3D" parent="." unique_id=526135688]
+
+[node name="Plinth" type="MeshInstance3D" parent="Visual" unique_id=832714709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 0.1, 1.75)
+material_override = ExtResource("1_be3yd")
+mesh = SubResource("BoxMesh_opi8d")
+
+[node name="MachineHousing" type="MeshInstance3D" parent="Visual" unique_id=1485175561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 0.7, 1.75)
+material_override = ExtResource("2_c53k2")
+mesh = SubResource("BoxMesh_gtg17")
+
+[node name="UpperHousing" type="MeshInstance3D" parent="Visual" unique_id=2014566070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 1.3, 1.75)
+material_override = ExtResource("3_b0p6v")
+mesh = SubResource("BoxMesh_oraa8")
+
+[node name="ControlPanel" type="MeshInstance3D" parent="Visual" unique_id=32416521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 0.784, 3.375)
+material_override = ExtResource("4_msyq4")
+mesh = SubResource("BoxMesh_kiiwh")
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=1163940118]
+
+[node name="Envelope" type="CollisionShape3D" parent="Collision" unique_id=1557628533]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 0.7, 1.75)
+shape = SubResource("BoxShape3D_uglcn")
