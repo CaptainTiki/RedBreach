@@ -1,0 +1,36 @@
+{
+  "freight_checks": 217,
+  "greybox_checks": 9,
+  "failures": 0,
+  "brushes": 1221,
+  "metric_triangles": 14276,
+  "screening_prop_assemblies": 15,
+  "screening_visual_blocks": 109,
+  "light_sources": 4,
+  "source_map_sha256": "d991a1c705f8a4584dbfad2757e8a42166cc6a5c8323ef5dcb62a324d6edd5ae",
+  "saved_scene_sha256": "d180c98472719581f14f6adcd0ffdbad625f61666777a69b2bc9c5b74e678a55",
+  "registration_scene_unchanged": true,
+  "captures": [
+    "freight-screening-entry.png",
+    "freight-screening-built.png"
+  ],
+  "subjective_review": "User walkthrough: looking good, minor issues, no major blocker. Duct flicker fixed; hatch reservations now part of room planning.",
+  "duct_followup": {
+    "asset": "res://props/blockout/f04/d-s.tscn",
+    "sha256": "94c412b120cbe3658807d9f22b41cc67e325b6fb5d5ed98194cb20c83268864f",
+    "panel_back_gap_m": 0.01,
+    "panel_front_separation_m": 0.035,
+    "checked_panels": 8,
+    "collision_unchanged": true,
+    "rendered_views": 3,
+    "full_suite_rerun": false,
+    "reason": "Visual-only housing adjustment; map and collision unchanged"
+  },
+  "prior_layout_09_fingerprint": {
+    "source_map_sha256": "3a59c37ed6f85e7832029802a808c18671408475217a0ad0a3d797e89756a717",
+    "saved_scene_sha256": "6f45ee78b5efd15cad34ff1904ab36b0ebaf11766755bc59f43bffb8cb5c0604",
+    "brushes": 1229,
+    "metric_triangles": 14372
+  },
+  "validated_layout_revision": "10"
+}

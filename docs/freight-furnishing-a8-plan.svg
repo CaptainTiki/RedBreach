@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120"><title>RED BREACH / A8 ANNEX / SEPARATED DOORWAYS</title><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#81e1bd"/></marker></defs>
+<rect width="1600" height="1120" fill="#111e29"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="40" y="51" font-size="28" fill="#eef4f5" font-weight="700" text-anchor="start">RED BREACH / A8 ANNEX / SEPARATED DOORWAYS</text>
+<text x="40" y="84" font-size="17" fill="#acc1cd" font-weight="400" text-anchor="start">BUILT SAMPLE F-01 / LAYOUT 06  |  Reviewed spatial plan  |  Clear routes + measured furniture</text>
+<rect x="35" y="128" width="745" height="884" fill="#192c3b" stroke="none" stroke-width="1" opacity="1"/>
+<text x="57" y="162" font-size="21" fill="#eef4f5" font-weight="700" text-anchor="start">TOP DOWN / FLOOR -2 m</text>
+<rect x="205" y="222" width="378" height="609" fill="#263b47" stroke="#e9d0a0" stroke-width="5" opacity="1"/>
+<rect x="205" y="222" width="378" height="208.688" fill="#314449" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="205" y="433.312" width="208.688" height="397.688" fill="#304048" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="416.312" y="433.312" width="166.688" height="196.875" fill="#314449" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="416.312" y="632.812" width="166.688" height="198.188" fill="#314449" stroke="none" stroke-width="1" opacity="1"/>
+<polyline points="205,222 205,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="257.5,222 257.5,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="310,222 310,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="362.5,222 362.5,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="415,222 415,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="467.5,222 467.5,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="520,222 520,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="572.5,222 572.5,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,232.5 583,232.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,285 583,285" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,337.5 583,337.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,390 583,390" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,442.5 583,442.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,495 583,495" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,547.5 583,547.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,600 583,600" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,652.5 583,652.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,705 583,705" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,757.5 583,757.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,810 583,810" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="205,432 289,432" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="331,432 478,432" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="520,432 583,432" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="415,432 415,516" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="415,558 415,715.5" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="415,757.5 415,831" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="415,631.5 583,631.5" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="383.5,222 446.5,222" fill="none" stroke="#263b47" stroke-width="7" stroke-linejoin="round"/>
+<polyline points="383.5,222 446.5,222" fill="none" stroke="#81e1bd" stroke-width="2" stroke-linejoin="round"/>
+<text x="415" y="208" font-size="14" fill="#81e1bd" font-weight="700" text-anchor="middle">ENTRY</text>
+<polyline points="415,348 499,348 499,537 310,537" fill="none" stroke="#81e1bd" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<polyline points="310,684 310,736.5 509.5,736.5" fill="none" stroke="#81e1bd" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<polyline points="415,222 415,348 310,348 310,684" fill="none" stroke="#81e1bd" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="236.5" y="243" width="63" height="10.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="268" y="250.56" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">B</text>
+<rect x="551.5" y="253.5" width="10.5" height="105" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="556.75" y="308.31" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">R</text>
+<rect x="226" y="505.5" width="42" height="10.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="247" y="513.06" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">B</text>
+<rect x="341.5" y="652.5" width="42" height="10.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="362.5" y="660.06" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">B</text>
+<rect x="236.5" y="757.5" width="21" height="31.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="247" y="775.56" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">M</text>
+<rect x="341.5" y="789" width="52.5" height="10.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="367.75" y="796.56" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">R</text>
+<rect x="430.75" y="463.5" width="42" height="12.6" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="451.75" y="472.11" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">R</text>
+<rect x="530.5" y="558" width="10.5" height="42" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="535.75" y="581.31" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">R</text>
+<rect x="457" y="689.25" width="42" height="21" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="478" y="702.06" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">M</text>
+<rect x="530.5" y="726" width="31.5" height="31.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="546.25" y="744.06" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">BOX</text>
+<rect x="319" y="271" width="129" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="383.5" y="285" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">01 / ANNEX INTAKE</text>
+<rect x="242" y="586" width="136" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="310" y="600" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">02 / TOOL WORKSHOP</text>
+<rect x="427.5" y="491.5" width="143" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="499" y="505.5" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">03 / SERVICE STORES</text>
+<rect x="420.5" y="769.75" width="157" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="499" y="783.75" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">04 / SPARE ASSEMBLIES</text>
+<text x="163" y="204" font-size="15" fill="#eef4f5" font-weight="700" text-anchor="middle">N</text>
+<polyline points="163,245 163,216" fill="none" stroke="#eef4f5" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="158,224 163,216 168,224" fill="none" stroke="#eef4f5" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="205,891 310,891" fill="none" stroke="#eef4f5" stroke-width="3" stroke-linejoin="round"/>
+<text x="205" y="915" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">10 m / grid = 5 m</text>
+<text x="58" y="929" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">D desks   C counters/consoles   P pumps   S inspection equipment</text>
+<text x="58" y="953" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">B benches   L lockers   R racks/cabinets   M machinery   dots: chairs</text>
+<text x="58" y="984" font-size="13" fill="#81e1bd" font-weight="400" text-anchor="start">Mint: suggested walk / dashed: optional access. Reserve 3 m wide travel lanes.</text>
+<rect x="810" y="128" width="750" height="884" fill="#192c3b" stroke="none" stroke-width="1" opacity="1"/>
+<text x="832" y="162" font-size="21" fill="#eef4f5" font-weight="700" text-anchor="start">ROOM FUNCTION AND ARCHITECTURE</text>
+<text x="840" y="204" font-size="19" fill="#eef4f5" font-weight="700" text-anchor="start">ROOMS / CLEAR USABLE DIMENSIONS</text>
+<text x="840" y="233" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Space</text>
+<text x="1095" y="233" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Approx. m</text>
+<text x="1243" y="233" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Ratio</text>
+<text x="1364" y="233" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Clear height</text>
+<text x="840" y="266" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">01  Annex intake</text>
+<text x="1095" y="266" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">36.0 x 19.9</text>
+<text x="1243" y="266" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.81:1</text>
+<text x="1380" y="266" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">3.5 m</text>
+<text x="840" y="301" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">02  Tool workshop</text>
+<text x="1095" y="301" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">19.9 x 37.9</text>
+<text x="1243" y="301" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.91:1</text>
+<text x="1380" y="301" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">4.5 m</text>
+<text x="840" y="336" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">03  Service stores</text>
+<text x="1095" y="336" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">15.9 x 18.8</text>
+<text x="1243" y="336" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.18:1</text>
+<text x="1380" y="336" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">3.5 m</text>
+<text x="840" y="371" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">04  Spare assemblies</text>
+<text x="1095" y="371" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">15.9 x 18.9</text>
+<text x="1243" y="371" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.19:1</text>
+<text x="1380" y="371" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">3.5 m</text>
+<text x="840" y="416" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">Dimensions allow for 0.25 m internal partitions.</text>
+<text x="840" y="495" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">The north connection stays at (85,184), floor -2 m.</text>
+<text x="840" y="524" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Replace the existing short, offset divider fragments.</text>
+<text x="840" y="553" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">A continuous T-wall has doors set back from its junction.</text>
+<text x="840" y="582" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Two north openings have 14 m of wall between them.</text>
+<text x="840" y="611" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Storage doors sit away from intersecting wall corners.</text>
+<text x="840" y="640" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">All four rooms are optional; no new key or reward here.</text>
+<text x="840" y="713" font-size="19" fill="#eef4f5" font-weight="700" text-anchor="start">JUNCTION CHANGE</text>
+<polyline points="855,770 925,770" fill="none" stroke="#e9d0a0" stroke-width="6" stroke-linejoin="round"/>
+<polyline points="980,770 1250,770" fill="none" stroke="#e9d0a0" stroke-width="6" stroke-linejoin="round"/>
+<polyline points="1305,770 1445,770" fill="none" stroke="#e9d0a0" stroke-width="6" stroke-linejoin="round"/>
+<polyline points="1125,770 1125,845" fill="none" stroke="#e9d0a0" stroke-width="6" stroke-linejoin="round"/>
+<text x="953" y="755" font-size="14" fill="#81e1bd" font-weight="400" text-anchor="middle">4 m</text>
+<text x="1278" y="755" font-size="14" fill="#81e1bd" font-weight="400" text-anchor="middle">4 m</text>
+<text x="1125" y="874" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="middle">Solid wall at the junction; doors are set back on each side.</text>
+<text x="840" y="946" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">Workshop clear height: 4.5 m. Intake and stores: 3.5 m.</text>
+<text x="840" y="974" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">No extra quest item, encounter or required detour added.</text>
+<text x="40" y="1060" font-size="16" fill="#eef4f5" font-weight="400" text-anchor="start">A8 remains a side branch. The stores loop reconnects within the annex; it bypasses no mission gate.</text>
+<text x="40" y="1094" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Built in layout 06. Kenney metric greybox props; walkthrough and progression checks passed.</text>
+</g></svg>

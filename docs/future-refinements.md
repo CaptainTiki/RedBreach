@@ -100,6 +100,16 @@ This test should exercise the intended reusable system. No level geometry, wall-
 
 Source: [revision 04 accepted playtest](rear-hatch-plan.md#revision-04-human-playtest--concept-accepted). Coordinate this with [FR-002 bug presentation](#fr-002-bug-presentation-and-impact-refinement).
 
+## FR-005: Return views through upper routes
+
+**Status:** User-proposed level-design principle; deferred to a suitable spatial plan.
+
+Use the same room more than once from different positions or heights. The player first sees a catwalk from below, travels through other rooms, and later returns on that catwalk. The user explicitly notes that the upper route need not be accessible by stairs from the lower room. Their supplied Doom 3 BFG reference illustrates the intended visual reconnection.
+
+Plan the upper entrance, exit, elevation and sightlines on paper together with the surrounding rooms. Preserve card/gate dependencies and check jump/drop bypasses. Give the upper return a purpose: route progress, orientation, a changed encounter angle or a visible consequence of an earlier action. Do not add an isolated decorative balcony and claim it is a working loop.
+
+**Completion check:** The player can recognize the earlier room from the upper route, understand how the journey reconnects, and traverse both intended approaches without breaking progression. Review combat crossfire and enemy access in the later populated pass. F-02 reception does not implement this feature; its current 3.5 m ceiling cannot accept a usable upper floor.
+
 ## Adding future entries
 
-Give each idea the next stable identifier (FR-005, FR-006, and so on), a short title, status, a reason to revisit it, the intended change, and a practical completion check. Keep uncertain details marked as open. When an item enters active work or is completed, update its status and link the relevant plan or implementation notes.
+Give each idea the next stable identifier (FR-006, FR-007, and so on), a short title, status, a reason to revisit it, the intended change, and a practical completion check. Keep uncertain details marked as open. When an item enters active work or is completed, update its status and link the relevant plan or implementation notes.

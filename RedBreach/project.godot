@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="RedBreach"
-config/version="0.0.008"
+config/version="0.0.010"
 run/main_scene="res://missions/freight/freight_blockout.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"

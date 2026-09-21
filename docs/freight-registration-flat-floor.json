@@ -1,0 +1,34 @@
+{
+  "status": "BUILT AND VALIDATED - LAYOUT 10",
+  "revision": "10",
+  "scope": "Registration walkway removal; consolidate A1 floor without altering its other occupied surfaces",
+  "bounds": [
+    62,
+    262,
+    114,
+    294
+  ],
+  "floor_y": 0,
+  "texture": "greybox/Dark/texture_06",
+  "decision": "No recessed pathway and no painted material pathway; continuous flat floor. Material transitions require supporting geometry.",
+  "preserve": [
+    "Staff door and switches",
+    "All furniture and lights",
+    "Screening and its hatch reservations",
+    "Other rooms, stairs, mission gates and progression"
+  ],
+  "source_map_sha256": "d991a1c705f8a4584dbfad2757e8a42166cc6a5c8323ef5dcb62a324d6edd5ae",
+  "unchanged_brushes": 1220,
+  "removed_floor_brushes": 9,
+  "added_floor_brushes": 1,
+  "brushes": 1221,
+  "raised_area_m2": 129.0,
+  "validation": {
+    "freight_checks": 217,
+    "greybox_checks": 9,
+    "failures": 0,
+    "metric_triangles": 14276,
+    "rendered_views": 6
+  },
+  "saved_scene_sha256": "d180c98472719581f14f6adcd0ffdbad625f61666777a69b2bc9c5b74e678a55"
+}

@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120"><title>RED BREACH / A1 STAFF INTAKE</title><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#81e1bd"/></marker></defs>
+<rect width="1600" height="1120" fill="#111e29"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="40" y="51" font-size="28" fill="#eef4f5" font-weight="700" text-anchor="start">RED BREACH / A1 STAFF INTAKE</text>
+<text x="40" y="84" font-size="17" fill="#acc1cd" font-weight="400" text-anchor="start">BUILT SAMPLE F-01 / LAYOUT 06  |  Reviewed spatial plan  |  Clear routes + measured furniture</text>
+<rect x="35" y="128" width="745" height="884" fill="#192c3b" stroke="none" stroke-width="1" opacity="1"/>
+<text x="57" y="162" font-size="21" fill="#eef4f5" font-weight="700" text-anchor="start">TOP DOWN / FLOOR 0 m</text>
+<rect x="108" y="255" width="624" height="384" fill="#263b47" stroke="#e9d0a0" stroke-width="5" opacity="1"/>
+<rect x="517.5" y="255" width="214.5" height="384" fill="#314449" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="349.5" y="255" width="165" height="166.5" fill="#314449" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="108" y="255" width="238.5" height="166.5" fill="#314449" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="108" y="424.5" width="406.5" height="214.5" fill="#314449" stroke="none" stroke-width="1" opacity="1"/>
+<polyline points="144,255 144,639" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="204,255 204,639" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="264,255 264,639" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="324,255 324,639" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="384,255 384,639" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="444,255 444,639" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="504,255 504,639" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="564,255 564,639" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="624,255 624,639" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="684,255 684,639" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="108,291 732,291" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="108,351 732,351" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="108,411 732,411" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="108,471 732,471" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="108,531 732,531" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="108,591 732,591" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="516,255 516,351" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="516,399 516,639" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="348,255 348,303" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="348,351 348,423" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="108,423 396,423" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="444,423 516,423" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="732,315 732,387" fill="none" stroke="#263b47" stroke-width="7" stroke-linejoin="round"/>
+<polyline points="732,315 732,387" fill="none" stroke="#81e1bd" stroke-width="2" stroke-linejoin="round"/>
+<text x="742" y="340" font-size="14" fill="#81e1bd" font-weight="700" text-anchor="start">ENTRY</text>
+<polyline points="108,531 108,603" fill="none" stroke="#263b47" stroke-width="7" stroke-linejoin="round"/>
+<polyline points="108,531 108,603" fill="none" stroke="#81e1bd" stroke-width="2" stroke-linejoin="round"/>
+<text x="98" y="556" font-size="14" fill="#81e1bd" font-weight="700" text-anchor="end">EXIT</text>
+<polyline points="420,375 420,327 276,327" fill="none" stroke="#81e1bd" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<polyline points="732,351 612,351 612,375 420,375 420,495 252,495 252,567 108,567" fill="none" stroke="#81e1bd" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="648" y="435" width="60" height="14.4" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="678" y="444.84" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">C</text>
+<circle cx="675.9" cy="465.3" r="3.900000000000034" fill="#7595af"/>
+<rect x="717.6" y="279" width="7.8" height="48" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="721.5" y="305.64" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">B</text>
+<rect x="564" y="579" width="60" height="8.4" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="594" y="585.84" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">B</text>
+<rect x="372" y="285" width="36" height="12" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="390" y="293.64" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">C</text>
+<circle cx="391.5" cy="302.1" r="3.900000000000034" fill="#7595af"/>
+<rect x="456" y="303" width="24" height="36" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="468" y="323.64" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">S</text>
+<rect x="372" y="264.6" width="72" height="9" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="408" y="271.74" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">L</text>
+<rect x="144" y="303" width="24" height="10.8" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="156" y="311.04" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">D</text>
+<circle cx="155.7" cy="322.5" r="3.900000000000034" fill="#7595af"/>
+<rect x="216" y="303" width="24" height="10.8" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="228" y="311.04" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">D</text>
+<circle cx="227.7" cy="322.5" r="3.900000000000034" fill="#7595af"/>
+<rect x="144" y="363" width="24" height="10.8" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="156" y="371.04" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">D</text>
+<circle cx="155.7" cy="382.5" r="3.900000000000034" fill="#7595af"/>
+<rect x="216" y="363" width="24" height="10.8" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="228" y="371.04" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">D</text>
+<circle cx="227.7" cy="382.5" r="3.900000000000034" fill="#7595af"/>
+<rect x="300" y="363" width="24" height="12" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="312" y="371.64" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">R</text>
+<rect x="168" y="459" width="60" height="8.4" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="198" y="465.84" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">B</text>
+<rect x="324" y="567" width="60" height="8.4" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="354" y="573.84" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">B</text>
+<rect x="300" y="459" width="72" height="14.4" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="336" y="468.84" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">C</text>
+<rect x="120" y="591" width="60" height="9.6" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="150" y="598.44" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">L</text>
+<rect x="456" y="531" width="9.6" height="72" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="460.8" y="569.64" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">L</text>
+<rect x="564" y="493" width="108" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="618" y="507" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">01 / RECEPTION</text>
+<rect x="378" y="394.6" width="108" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="432" y="408.6" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">02 / SCREENING</text>
+<rect x="156.5" y="265" width="143" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="228" y="279" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">03 / ADMINISTRATION</text>
+<rect x="278" y="589" width="164" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="360" y="603" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">04 / STAFF PREPARATION</text>
+<polyline points="588,639 684,639" fill="none" stroke="#62cde6" stroke-width="6" stroke-linejoin="round"/>
+<text x="636" y="675" font-size="12" fill="#62cde6" font-weight="400" text-anchor="middle">MARS VIEW BAY</text>
+<text x="66" y="237" font-size="15" fill="#eef4f5" font-weight="700" text-anchor="middle">N</text>
+<polyline points="66,278 66,249" fill="none" stroke="#eef4f5" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="61,257 66,249 71,257" fill="none" stroke="#eef4f5" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="108,699 228,699" fill="none" stroke="#eef4f5" stroke-width="3" stroke-linejoin="round"/>
+<text x="108" y="723" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">10 m / grid = 5 m</text>
+<text x="58" y="929" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">D desks   C counters/consoles   P pumps   S inspection equipment</text>
+<text x="58" y="953" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">B benches   L lockers   R racks/cabinets   M machinery   dots: chairs</text>
+<text x="58" y="984" font-size="13" fill="#81e1bd" font-weight="400" text-anchor="start">Mint: suggested walk / dashed: optional access. Reserve 3 m wide travel lanes.</text>
+<rect x="810" y="128" width="750" height="884" fill="#192c3b" stroke="none" stroke-width="1" opacity="1"/>
+<text x="832" y="162" font-size="21" fill="#eef4f5" font-weight="700" text-anchor="start">ROOM FUNCTION AND ARCHITECTURE</text>
+<text x="840" y="204" font-size="19" fill="#eef4f5" font-weight="700" text-anchor="start">ROOMS / CLEAR USABLE DIMENSIONS</text>
+<text x="840" y="233" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Space</text>
+<text x="1095" y="233" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Approx. m</text>
+<text x="1243" y="233" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Ratio</text>
+<text x="1364" y="233" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Clear height</text>
+<text x="840" y="266" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">01  Reception</text>
+<text x="1095" y="266" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">17.9 x 32.0</text>
+<text x="1243" y="266" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.79:1</text>
+<text x="1380" y="266" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">3.5 m</text>
+<text x="840" y="301" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">02  Screening</text>
+<text x="1095" y="301" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">13.8 x 13.9</text>
+<text x="1243" y="301" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.01:1</text>
+<text x="1380" y="301" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">3.5 m</text>
+<text x="840" y="336" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">03  Administration</text>
+<text x="1095" y="336" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">19.9 x 13.9</text>
+<text x="1243" y="336" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.43:1</text>
+<text x="1380" y="336" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">3.5 m</text>
+<text x="840" y="371" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">04  Staff preparation</text>
+<text x="1095" y="371" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">33.9 x 17.9</text>
+<text x="1243" y="371" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.90:1</text>
+<text x="1380" y="371" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">3.5 m</text>
+<text x="840" y="416" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">Dimensions allow for 0.25 m internal partitions.</text>
+<text x="840" y="495" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">A staffed intake sequence, with an optional office.</text>
+<text x="840" y="524" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Four rooms; clear proportions range from 1.01 to 1.90.</text>
+<text x="840" y="553" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">All occupied ceilings: +3.5 m above the 0 m floor.</text>
+<text x="840" y="582" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">The east entry and southwest exit stay in place.</text>
+<text x="840" y="611" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">New partitions close old gaps; thresholds remain level.</text>
+<text x="840" y="640" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">One south-facing window bay tests a shallow Mars view.</text>
+<text x="840" y="713" font-size="19" fill="#eef4f5" font-weight="700" text-anchor="start">WHAT CHANGES</text>
+<text x="840" y="748" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Lower the 8 m room ceiling to a 3.5 m occupied ceiling.</text>
+<text x="840" y="779" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Use a screening room and a compact optional office.</text>
+<text x="840" y="810" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Counter, workstations, lockers and benches define the jobs.</text>
+<text x="840" y="841" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Internal doors are separated from wall junctions.</text>
+<text x="840" y="872" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">The sealed exterior window has a shallow Mars-view prototype.</text>
+<text x="840" y="943" font-size="16" fill="#eef4f5" font-weight="400" text-anchor="start">Openings remain open in the furnishing blockout.</text>
+<text x="840" y="971" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Automatic pressure-door behavior is a later pass.</text>
+<text x="40" y="1060" font-size="16" fill="#eef4f5" font-weight="400" text-anchor="start">The 52 x 32 m shell remains. Internal openings are 4 m; shell openings remain 6 m.</text>
+<text x="40" y="1094" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Built in layout 06. Kenney metric greybox props; walkthrough and progression checks passed.</text>
+</g></svg>

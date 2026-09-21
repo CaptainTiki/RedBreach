@@ -1,0 +1,387 @@
+{
+  "revision": "F-03c",
+  "status": "BUILT - APPROVED F-03c / LAYOUT 08",
+  "built_layout": "08",
+  "baseline_layout": "07",
+  "baseline_map_sha256": "07d6b5b95f8360945c0f24b030139c6d1103c3e9afe3b7b3d3c5bdeaee8ba5bc",
+  "bounds": [
+    96.125,
+    262,
+    114,
+    294
+  ],
+  "floor_levels": {
+    "corridor_and_work_bays": 0,
+    "recessed_walkway": -0.25
+  },
+  "recess_rectangles": [
+    [
+      98.5,
+      268.5,
+      113,
+      271.5
+    ],
+    [
+      98.5,
+      270,
+      101.5,
+      291.5
+    ],
+    [
+      100,
+      278.5,
+      104,
+      281.5
+    ],
+    [
+      100,
+      288.5,
+      107.5,
+      291.5
+    ]
+  ],
+  "recess_outline": [
+    [
+      98.5,
+      268.5
+    ],
+    [
+      113,
+      268.5
+    ],
+    [
+      113,
+      271.5
+    ],
+    [
+      101.5,
+      271.5
+    ],
+    [
+      101.5,
+      278.5
+    ],
+    [
+      104,
+      278.5
+    ],
+    [
+      104,
+      281.5
+    ],
+    [
+      101.5,
+      281.5
+    ],
+    [
+      101.5,
+      288.5
+    ],
+    [
+      107.5,
+      288.5
+    ],
+    [
+      107.5,
+      291.5
+    ],
+    [
+      98.5,
+      291.5
+    ],
+    [
+      98.5,
+      268.5
+    ]
+  ],
+  "main_route": [
+    [
+      114,
+      270
+    ],
+    [
+      100,
+      270
+    ],
+    [
+      100,
+      272
+    ],
+    [
+      96,
+      272
+    ]
+  ],
+  "reference": "references/f03-walkway-annotation.png",
+  "route_width_m": 3,
+  "step_height_m": 0.25,
+  "ceiling_y": 3.5,
+  "landings": [
+    {
+      "name": "hub arrival",
+      "bounds": [
+        113,
+        267,
+        114,
+        273
+      ],
+      "floor": 0
+    },
+    {
+      "name": "screening approach",
+      "bounds": [
+        96.125,
+        270,
+        98.5,
+        274
+      ],
+      "floor": 0
+    },
+    {
+      "name": "staff door approach",
+      "bounds": [
+        104,
+        278.5,
+        108,
+        281.5
+      ],
+      "floor": 0
+    },
+    {
+      "name": "back-office threshold",
+      "bounds": [
+        98.5,
+        282,
+        101.5,
+        286
+      ],
+      "floor": -0.25
+    }
+  ],
+  "staff_door": {
+    "centre": [
+      106,
+      0,
+      280
+    ],
+    "wall_axis": "x",
+    "opening_width_m": 3,
+    "opening_height_m": 3.2,
+    "head_y": 3.2,
+    "header_infill_m": 0,
+    "existing_slot_width_m": 4,
+    "side_infill_m": 0.5,
+    "behavior": "unlocked E-use both sides; existing StateChart and obstruction behavior; reset closed; no key requirement"
+  },
+  "office_bounds": [
+    96.125,
+    284.125,
+    114,
+    294
+  ],
+  "office_route": [
+    [
+      100,
+      284
+    ],
+    [
+      100,
+      290
+    ],
+    [
+      106,
+      290
+    ]
+  ],
+  "office_props": [
+    {
+      "id": "D1",
+      "kind": "supervisor workstation",
+      "bounds": [
+        103,
+        285.0,
+        106,
+        286.2
+      ],
+      "bottom": 0,
+      "top": 0.75
+    },
+    {
+      "id": "C1",
+      "kind": "chair",
+      "bounds": [
+        104.15,
+        286.45,
+        104.8,
+        287.1
+      ],
+      "bottom": 0,
+      "top": 0.9
+    },
+    {
+      "id": "D2",
+      "kind": "registration workstation",
+      "bounds": [
+        108.2,
+        287,
+        110.6,
+        288.2
+      ],
+      "bottom": 0,
+      "top": 0.75
+    },
+    {
+      "id": "C2",
+      "kind": "chair",
+      "bounds": [
+        109.3,
+        288.45,
+        109.95,
+        289.1
+      ],
+      "bottom": 0,
+      "top": 0.9
+    },
+    {
+      "id": "F1",
+      "kind": "filing cabinets",
+      "bounds": [
+        96.6,
+        285,
+        97.8,
+        287.8
+      ],
+      "bottom": 0,
+      "top": 2.1
+    },
+    {
+      "id": "F2",
+      "kind": "filing / archive cabinets",
+      "bounds": [
+        107,
+        284.4,
+        110.2,
+        285.2
+      ],
+      "bottom": 0,
+      "top": 2.1
+    },
+    {
+      "id": "F3",
+      "kind": "supply cabinets",
+      "bounds": [
+        111.75,
+        291,
+        113.6,
+        292.25
+      ],
+      "bottom": 0,
+      "top": 2.1
+    },
+    {
+      "id": "S1",
+      "kind": "two server rack envelopes",
+      "bounds": [
+        112.35,
+        285.1,
+        113.65,
+        288.2
+      ],
+      "bottom": 0,
+      "top": 2.4
+    },
+    {
+      "id": "A1",
+      "kind": "air circulation unit",
+      "bounds": [
+        96.6,
+        289,
+        97.9,
+        291
+      ],
+      "bottom": 0,
+      "top": 2.2
+    },
+    {
+      "id": "A2",
+      "kind": "air filter / service unit",
+      "bounds": [
+        98.5,
+        292.9,
+        100.3,
+        293.7
+      ],
+      "bottom": 0,
+      "top": 2.2
+    },
+    {
+      "id": "T1",
+      "kind": "wall status readout",
+      "bounds": [
+        103,
+        284.15,
+        105.4,
+        284.35
+      ],
+      "bottom": 1.3,
+      "top": 2.1
+    },
+    {
+      "id": "T2",
+      "kind": "wall terminal",
+      "bounds": [
+        113.7,
+        288.7,
+        113.95,
+        289.7
+      ],
+      "bottom": 1.1,
+      "top": 2.0
+    },
+    {
+      "id": "M1",
+      "kind": "desk monitor",
+      "bounds": [
+        103.5,
+        285.15,
+        104.4,
+        285.4
+      ],
+      "bottom": 0.75,
+      "top": 1.25
+    },
+    {
+      "id": "M2",
+      "kind": "desk monitor",
+      "bounds": [
+        108.55,
+        287.15,
+        109.45,
+        287.4
+      ],
+      "bottom": 0.75,
+      "top": 1.25
+    }
+  ],
+  "preserve": [
+    "entry view and registration assembly",
+    "small waiting bay",
+    "window, glass, outside diorama",
+    "existing lighting and fixtures",
+    "screening and other departments",
+    "mission keys and route dependencies"
+  ],
+  "checks": [
+    "0.25 m = 8 map units at 32 units/metre; same as existing stair risers",
+    "Recess avoids all retained floor furniture",
+    "Back-office route reserves 3 m ribbons clear of equipment",
+    "Four-metre staff slot receives 0.5 m side infills for a 3 m door",
+    "Staff branch stops 2 m before the level door; the office entrance retains its continuous lower floor",
+    "Window-room footprint remains 17.875 x 9.875 m, ratio 1.81:1"
+  ],
+  "notes": [
+    "Built and validated: walking, sprinting, backpedalling and strafing cross the step samples both ways; human feel awaits playtest",
+    "Four straight rectangular strips follow the user redline; raised work bays retain their existing elevations",
+    "Supervision/registration operations replaces the lounge use; no new gameplay reward or secret"
+  ]
+}

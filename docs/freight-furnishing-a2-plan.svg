@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120"><title>RED BREACH / A2 INSPECTION / WALL-SIDE DESCENT</title><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#81e1bd"/></marker></defs>
+<rect width="1600" height="1120" fill="#111e29"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="40" y="51" font-size="28" fill="#eef4f5" font-weight="700" text-anchor="start">RED BREACH / A2 INSPECTION / WALL-SIDE DESCENT</text>
+<text x="40" y="84" font-size="17" fill="#acc1cd" font-weight="400" text-anchor="start">BUILT SAMPLE F-01 / LAYOUT 06  |  Reviewed spatial plan  |  Clear routes + measured furniture</text>
+<rect x="35" y="128" width="745" height="884" fill="#192c3b" stroke="none" stroke-width="1" opacity="1"/>
+<text x="57" y="162" font-size="21" fill="#eef4f5" font-weight="700" text-anchor="start">TOP DOWN / FLOOR -2 m</text>
+<rect x="143" y="222" width="504" height="609" fill="#263b47" stroke="#e9d0a0" stroke-width="5" opacity="1"/>
+<rect x="143" y="222" width="250.688" height="229.688" fill="#314449" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="396.312" y="222" width="250.688" height="229.688" fill="#304048" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="143" y="454.312" width="250.688" height="186.375" fill="#314449" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="143" y="643.312" width="250.688" height="187.688" fill="#314449" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="396.312" y="454.312" width="250.688" height="271.688" fill="#304048" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="396.312" y="726" width="61.6875" height="105" fill="#304048" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="458" y="726" width="189" height="105" fill="#4e4169" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="605" y="705" width="42" height="21" fill="#4e4169" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="605" y="642" width="42" height="21" fill="#515249" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="605" y="663" width="42" height="42" fill="#665638" stroke="none" stroke-width="1" opacity="1"/>
+<polyline points="605,663 647,663" fill="none" stroke="#ffc775" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="605,668.25 647,668.25" fill="none" stroke="#ffc775" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="605,673.5 647,673.5" fill="none" stroke="#ffc775" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="605,678.75 647,678.75" fill="none" stroke="#ffc775" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="605,684 647,684" fill="none" stroke="#ffc775" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="605,689.25 647,689.25" fill="none" stroke="#ffc775" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="605,694.5 647,694.5" fill="none" stroke="#ffc775" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="605,699.75 647,699.75" fill="none" stroke="#ffc775" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="605,705 647,705" fill="none" stroke="#ffc775" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="458,726 605,726" fill="none" stroke="#c6a4f5" stroke-width="3" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<polyline points="605,663 605,705" fill="none" stroke="#c6a4f5" stroke-width="3" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<text x="531.5" y="799.5" font-size="13" fill="#e3cbff" font-weight="700" text-anchor="middle">ENTRY DECK  /  0 m</text>
+<text x="500" y="742.8" font-size="10" fill="#e3cbff" font-weight="400" text-anchor="middle">OPEN GUARD / VIEW DOWN</text>
+<polyline points="552.5,757.5 479,631.5" fill="none" stroke="#62cde6" stroke-width="2" stroke-linejoin="round" stroke-dasharray="4 4"/>
+<circle cx="552.5" cy="757.5" r="4" fill="#62cde6"/>
+<polyline points="164,222 164,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="216.5,222 216.5,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="269,222 269,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="321.5,222 321.5,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="374,222 374,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="426.5,222 426.5,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="479,222 479,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="531.5,222 531.5,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="584,222 584,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="636.5,222 636.5,831" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,232.5 647,232.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,285 647,285" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,337.5 647,337.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,390 647,390" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,442.5 647,442.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,495 647,495" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,547.5 647,547.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,600 647,600" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,652.5 647,652.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,705 647,705" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,757.5 647,757.5" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="143,810 647,810" fill="none" stroke="#3a4e5a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="395,222 395,537" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="395,579 395,831" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="143,453 248,453" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="290,453 500,453" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="542,453 647,453" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="143,642 248,642" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="290,642 395,642" fill="none" stroke="#e9d0a0" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="489.5,831 552.5,831" fill="none" stroke="#263b47" stroke-width="7" stroke-linejoin="round"/>
+<polyline points="489.5,831 552.5,831" fill="none" stroke="#81e1bd" stroke-width="2" stroke-linejoin="round"/>
+<text x="521" y="859" font-size="14" fill="#81e1bd" font-weight="700" text-anchor="middle">ENTRY</text>
+<polyline points="237.5,222 300.5,222" fill="none" stroke="#263b47" stroke-width="7" stroke-linejoin="round"/>
+<polyline points="237.5,222 300.5,222" fill="none" stroke="#81e1bd" stroke-width="2" stroke-linejoin="round"/>
+<text x="269" y="208" font-size="14" fill="#81e1bd" font-weight="700" text-anchor="middle">EXIT</text>
+<polyline points="521,631.5 521,327" fill="none" stroke="#81e1bd" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<polyline points="269,558 269,715.5 242.75,715.5" fill="none" stroke="#81e1bd" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<polyline points="269,390 242.75,390" fill="none" stroke="#81e1bd" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<polyline points="521,831 521,768 626,768 626,705 626,663 626,631.5 479,631.5 479,558 269,558 269,222" fill="none" stroke="#81e1bd" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="164" y="232.5" width="52.5" height="12.6" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="190.25" y="241.11" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">C</text>
+<rect x="311" y="295.5" width="21" height="9.45" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="321.5" y="302.535" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">D</text>
+<circle cx="321.237" cy="312.562" r="3.4124999999999925" fill="#7595af"/>
+<rect x="212.3" y="405.75" width="29.4" height="10.5" fill="#ffc775" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="227" y="413.31" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">SEL</text>
+<rect x="437" y="264" width="42" height="31.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="458" y="282.06" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">P</text>
+<rect x="542" y="348" width="42" height="31.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="563" y="366.06" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">P</text>
+<rect x="620.75" y="264" width="15.75" height="147" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="628.625" y="339.81" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">V</text>
+<rect x="153.5" y="484.5" width="8.4" height="115.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="157.7" y="544.56" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">L</text>
+<rect x="185" y="516" width="42" height="7.35" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="206" y="521.985" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">B</text>
+<rect x="311" y="600" width="52.5" height="7.35" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="337.25" y="605.985" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">B</text>
+<rect x="220.7" y="678.75" width="12.6" height="10.5" fill="#ffc775" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="227" y="686.31" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">Tr1</text>
+<rect x="311" y="778.5" width="52.5" height="10.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="337.25" y="786.06" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">R</text>
+<rect x="164" y="757.5" width="31.5" height="31.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="179.75" y="775.56" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">BOX</text>
+<rect x="416" y="689.25" width="42" height="31.5" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="437" y="707.31" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">S</text>
+<rect x="426.5" y="484.5" width="31.5" height="9.45" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="442.25" y="491.535" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">D</text>
+<circle cx="440.413" cy="501.562" r="3.4124999999999925" fill="#7595af"/>
+<rect x="563" y="526.5" width="25.2" height="8.4" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="575.6" y="533.01" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">B</text>
+<rect x="405.5" y="778.5" width="25.2" height="8.4" fill="#7595af" stroke="#c0d1db" stroke-width="0.8" opacity="0.88"/>
+<text x="418.1" y="785.01" font-size="9" fill="#111e29" font-weight="700" text-anchor="middle">B</text>
+<rect x="194" y="250" width="150" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="269" y="264" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">01 / CIRCUIT CONTROL</text>
+<rect x="449.5" y="402.25" width="143" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="521" y="416.25" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">02 / PUMP TEST ROOM</text>
+<rect x="187" y="475.75" width="164" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="269" y="489.75" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">03 / STAFF PREPARATION</text>
+<rect x="215" y="790.75" width="108" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="269" y="804.75" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">04 / KIT STORE</text>
+<rect x="425" y="575.5" width="192" height="20" fill="#263b47" stroke="none" stroke-width="1" opacity="0.92"/>
+<text x="521" y="589.5" font-size="13" fill="#eef4f5" font-weight="700" text-anchor="middle">05 / INSPECTION WORK FLOOR</text>
+<text x="101" y="204" font-size="15" fill="#eef4f5" font-weight="700" text-anchor="middle">N</text>
+<polyline points="101,245 101,216" fill="none" stroke="#eef4f5" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="96,224 101,216 106,224" fill="none" stroke="#eef4f5" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="143,891 248,891" fill="none" stroke="#eef4f5" stroke-width="3" stroke-linejoin="round"/>
+<text x="143" y="915" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">10 m / grid = 5 m</text>
+<text x="58" y="929" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">D desks   C counters/consoles   P pumps   S inspection equipment</text>
+<text x="58" y="953" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">B benches   L lockers   R racks/cabinets   M machinery   dots: chairs</text>
+<text x="58" y="984" font-size="13" fill="#81e1bd" font-weight="400" text-anchor="start">Mint: suggested walk / dashed: optional access. Reserve 3 m wide travel lanes.</text>
+<rect x="810" y="128" width="750" height="410" fill="#192c3b" stroke="none" stroke-width="1" opacity="1"/>
+<text x="832" y="162" font-size="21" fill="#eef4f5" font-weight="700" text-anchor="start">A2 / ENTRY, VIEW AND DESCENT (N-S SECTION)</text>
+<polyline points="855,390 1119,390 1119,397.5 1130,397.5 1130,405 1141,405 1141,412.5 1152,412.5 1152,420 1163,420 1163,427.5 1174,427.5 1174,435 1185,435 1185,442.5 1196,442.5 1196,450 1207,450 1427,450" fill="none" stroke="#ffc775" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="855,285 1251,285 1251,315 1427,315" fill="none" stroke="#e9d0a0" stroke-width="4" stroke-linejoin="round"/>
+<text x="855" y="495" font-size="12" fill="#acc1cd" font-weight="400" text-anchor="middle">242</text>
+<text x="1075" y="495" font-size="12" fill="#acc1cd" font-weight="400" text-anchor="middle">232</text>
+<text x="1119" y="495" font-size="12" fill="#acc1cd" font-weight="400" text-anchor="middle">230</text>
+<text x="1207" y="495" font-size="12" fill="#acc1cd" font-weight="400" text-anchor="middle">226</text>
+<text x="1251" y="495" font-size="12" fill="#acc1cd" font-weight="400" text-anchor="middle">224</text>
+<text x="1427" y="495" font-size="12" fill="#acc1cd" font-weight="400" text-anchor="middle">216</text>
+<text x="855" y="516" font-size="12" fill="#acc1cd" font-weight="400" text-anchor="start">Plan Z (m)  /  vertical scale enlarged for readability</text>
+<text x="965" y="415" font-size="12" fill="#acc1cd" font-weight="400" text-anchor="middle">UPPER DECK</text>
+<text x="1097" y="415" font-size="12" fill="#acc1cd" font-weight="400" text-anchor="middle">2 m</text>
+<text x="1229" y="475" font-size="12" fill="#acc1cd" font-weight="400" text-anchor="middle">2 m</text>
+<text x="1339" y="475" font-size="12" fill="#acc1cd" font-weight="400" text-anchor="middle">LOWER FLOOR</text>
+<circle cx="987" cy="340.5" r="6" fill="#62cde6"/>
+<polyline points="987,340.5 1383,450" fill="none" stroke="#62cde6" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<text x="953" y="322.5" font-size="12" fill="#62cde6" font-weight="400" text-anchor="start">EYE</text>
+<polyline points="1075,390 1075,354" fill="none" stroke="#c6a4f5" stroke-width="2" stroke-linejoin="round" stroke-dasharray="3 3"/>
+<text x="1020" y="330" font-size="11" fill="#dcc0ff" font-weight="400" text-anchor="start">SIDE GUARD (PROJECTED)</text>
+<text x="880" y="248" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">3.5 m clear above the upper entry</text>
+<text x="1170" y="274" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">4.5 m over the work floor</text>
+<text x="840" y="190" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">The landing reveals the receiving floor before the first downward step.</text>
+<text x="840" y="216" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">The side guard is projected here; the stair approach stays clear. Verify in the player camera.</text>
+<text x="840" y="590" font-size="19" fill="#eef4f5" font-weight="700" text-anchor="start">ROOMS / CLEAR USABLE DIMENSIONS</text>
+<text x="840" y="619" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Space</text>
+<text x="1095" y="619" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Approx. m</text>
+<text x="1243" y="619" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Ratio</text>
+<text x="1364" y="619" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Clear height</text>
+<text x="840" y="652" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">01  Circuit control</text>
+<text x="1095" y="652" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">23.9 x 21.9</text>
+<text x="1243" y="652" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.09:1</text>
+<text x="1380" y="652" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">3.5 m</text>
+<text x="840" y="687" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">02  Pump test room</text>
+<text x="1095" y="687" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">23.9 x 21.9</text>
+<text x="1243" y="687" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.09:1</text>
+<text x="1380" y="687" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">4.5 m</text>
+<text x="840" y="722" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">03  Staff preparation</text>
+<text x="1095" y="722" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">23.9 x 17.8</text>
+<text x="1243" y="722" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.35:1</text>
+<text x="1380" y="722" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">3.5 m</text>
+<text x="840" y="757" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">04  Kit store</text>
+<text x="1095" y="757" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">23.9 x 17.9</text>
+<text x="1243" y="757" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.34:1</text>
+<text x="1380" y="757" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">3.5 m</text>
+<text x="840" y="792" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">05  Inspection work floor</text>
+<text x="1095" y="792" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">23.9 x 25.9</text>
+<text x="1243" y="792" font-size="15" fill="#81e1bd" font-weight="400" text-anchor="start">1.08:1</text>
+<text x="1380" y="792" font-size="15" fill="#eef4f5" font-weight="400" text-anchor="start">4.5 m</text>
+<text x="840" y="837" font-size="13" fill="#acc1cd" font-weight="400" text-anchor="start">Dimensions allow for 0.25 m internal partitions.</text>
+<text x="840" y="888" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Entry remains at (44,242), floor 0 m. Exit stays -2 m.</text>
+<text x="840" y="917" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">I1 shifts to the east wall: (54,230) to (54,226).</text>
+<text x="840" y="946" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">4 m clear stair width; 0.25 m rise / 0.5 m tread.</text>
+<text x="840" y="975" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Upper and lower landings each reserve 4 x 2 m.</text>
+<text x="840" y="1004" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">A larger upper deck provides the viewing/turning space.</text>
+<text x="840" y="1033" font-size="15" fill="#acc1cd" font-weight="400" text-anchor="start">Selector (16,202) and Tr1 cache (16,228) stay reachable.</text>
+<text x="40" y="1060" font-size="16" fill="#eef4f5" font-weight="400" text-anchor="start">Inspection gains a main 24 x 26 m working bay. The platform and stair are circulation, not extra rooms.</text>
+<text x="40" y="1094" font-size="14" fill="#acc1cd" font-weight="400" text-anchor="start">Built in layout 06. Kenney metric greybox props; walkthrough and progression checks passed.</text>
+</g></svg>

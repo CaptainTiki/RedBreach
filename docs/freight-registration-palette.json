@@ -1,0 +1,28 @@
+{
+  "scope": "A1 registration, waiting, staff and back office",
+  "material_revision": "registration_palette_01",
+  "geometry_revision": "08",
+  "source_sha256": "6f031b110d945367f216e9b1a4ee4719a66ba0950083c63740005d37978f7586",
+  "output_sha256": "60f09581dbac8628c1f141f1cecc5fd3df5b9bfe006f1045faf481e6500a5baf",
+  "brushes_before": 1211,
+  "brushes_after": 1216,
+  "material_boundary_splits": 5,
+  "painted_faces": 163,
+  "unchanged_brushes": 1164,
+  "prop_assets_recoloured": 27,
+  "palette": {
+    "raised_floor": "Dark/texture_06 (unchanged)",
+    "walls": "MutedGreen/texture_01",
+    "ceiling": "GreyPale/texture_01",
+    "walkway": "MutedOrange/texture_06",
+    "step_edges": "MutedOrange/texture_03",
+    "props": "MutedPurple/texture_01",
+    "tops_panels_structure": "GreyMedium/texture_03",
+    "overhead_services": "GreyMedium/texture_01",
+    "fixture_housings": "GreyCharcoal/texture_01"
+  },
+  "notes": [
+    "Shared shell/ceiling brushes divided at the existing room boundary for local materials; occupied geometry and UV scale unchanged.",
+    "Original PNGs, floor surfaces, lights, screens and gameplay unchanged."
+  ]
+}

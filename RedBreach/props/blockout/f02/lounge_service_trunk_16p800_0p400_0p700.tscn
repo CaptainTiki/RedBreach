@@ -1,0 +1,28 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_service.tres" id="1_dny0u"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_odymi"]
+size = Vector3(16.8, 0.4, 0.7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nqq64"]
+size = Vector3(16.8, 0.4, 0.7)
+
+[node name="BlockoutProp" type="Node3D" unique_id=626055894]
+metadata/kind = "lounge service trunk"
+metadata/dimensions_m = Vector3(16.8, 0.4, 0.7)
+
+[node name="Visual" type="Node3D" parent="." unique_id=1232983125]
+
+[node name="Part" type="MeshInstance3D" parent="Visual" unique_id=2121975956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.4, 0.2, 0.35)
+material_override = ExtResource("1_dny0u")
+mesh = SubResource("BoxMesh_odymi")
+
+[node name="Lights" type="Node3D" parent="." unique_id=1363860995]
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=1597342543]
+
+[node name="Part" type="CollisionShape3D" parent="Collision" unique_id=967368803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.4, 0.2, 0.35)
+shape = SubResource("BoxShape3D_nqq64")

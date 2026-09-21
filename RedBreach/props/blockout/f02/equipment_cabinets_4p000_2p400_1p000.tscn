@@ -1,0 +1,61 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_block.tres" id="1_vvv7s"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_surface.tres" id="2_0kdto"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_m38d2"]
+size = Vector3(4, 2.4, 0.965)
+
+[sub_resource type="BoxMesh" id="BoxMesh_27bmu"]
+size = Vector3(0.86, 2.1, 0.01999998)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1pdr1"]
+size = Vector3(0.8599999, 2.1, 0.01999998)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nowl1"]
+size = Vector3(0.86000013, 2.1, 0.01999998)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0fjvq"]
+size = Vector3(0.86000013, 2.1, 0.01999998)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xsvfl"]
+size = Vector3(4, 2.4, 0.965)
+
+[node name="BlockoutProp" type="Node3D" unique_id=883108891]
+metadata/kind = "equipment cabinets"
+metadata/dimensions_m = Vector3(4, 2.4, 1)
+
+[node name="Visual" type="Node3D" parent="." unique_id=6592374]
+
+[node name="PartShell" type="MeshInstance3D" parent="Visual" unique_id=989296164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.2, 0.4825)
+material_override = ExtResource("1_vvv7s")
+mesh = SubResource("BoxMesh_m38d2")
+
+[node name="PartFace" type="MeshInstance3D" parent="Visual" unique_id=872565222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.2, 0.99)
+material_override = ExtResource("2_0kdto")
+mesh = SubResource("BoxMesh_27bmu")
+
+[node name="@MeshInstance3D@2" type="MeshInstance3D" parent="Visual" unique_id=1027209091]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.2, 0.99)
+material_override = ExtResource("2_0kdto")
+mesh = SubResource("BoxMesh_1pdr1")
+
+[node name="@MeshInstance3D@3" type="MeshInstance3D" parent="Visual" unique_id=1717584554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 1.2, 0.99)
+material_override = ExtResource("2_0kdto")
+mesh = SubResource("BoxMesh_nowl1")
+
+[node name="@MeshInstance3D@4" type="MeshInstance3D" parent="Visual" unique_id=1785426962]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 1.2, 0.99)
+material_override = ExtResource("2_0kdto")
+mesh = SubResource("BoxMesh_0fjvq")
+
+[node name="Lights" type="Node3D" parent="." unique_id=1970165071]
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=1387682276]
+
+[node name="PartShell" type="CollisionShape3D" parent="Collision" unique_id=615953427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.2, 0.4825)
+shape = SubResource("BoxShape3D_xsvfl")

@@ -1,0 +1,53 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_block.tres" id="1_h2xmg"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_surface.tres" id="2_0erhi"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ovs5v"]
+size = Vector3(3.2, 2.1, 0.765)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1exjv"]
+size = Vector3(3.0400002, 0.53499997, 0.01999998)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ukvi7"]
+size = Vector3(3.0400002, 0.535, 0.01999998)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4bpyr"]
+size = Vector3(3.0400002, 0.53499997, 0.01999998)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l7sv4"]
+size = Vector3(3.2, 2.1, 0.8)
+
+[node name="OfficeProp" type="Node3D" unique_id=712686678]
+metadata/kind = "filing / archive cabinets"
+metadata/dimensions_m = Vector3(3.2, 2.1, 0.8)
+
+[node name="Visual" type="Node3D" parent="." unique_id=961278797]
+
+[node name="Housing" type="MeshInstance3D" parent="Visual" unique_id=1114776941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 1.05, 0.3825)
+material_override = ExtResource("1_h2xmg")
+mesh = SubResource("BoxMesh_ovs5v")
+
+[node name="Drawer" type="MeshInstance3D" parent="Visual" unique_id=2036727259]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 0.41749996, 0.79)
+material_override = ExtResource("2_0erhi")
+mesh = SubResource("BoxMesh_1exjv")
+
+[node name="@MeshInstance3D@9" type="MeshInstance3D" parent="Visual" unique_id=531372076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 1.0174999, 0.79)
+material_override = ExtResource("2_0erhi")
+mesh = SubResource("BoxMesh_ukvi7")
+
+[node name="@MeshInstance3D@10" type="MeshInstance3D" parent="Visual" unique_id=1712104205]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 1.6174998, 0.79)
+material_override = ExtResource("2_0erhi")
+mesh = SubResource("BoxMesh_4bpyr")
+
+[node name="Lights" type="Node3D" parent="." unique_id=1657981808]
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=2134299292]
+
+[node name="Envelope" type="CollisionShape3D" parent="Collision" unique_id=726732117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 1.05, 0.4)
+shape = SubResource("BoxShape3D_l7sv4")

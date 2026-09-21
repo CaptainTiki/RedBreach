@@ -1,0 +1,216 @@
+{
+  "patterns": [
+    "01",
+    "03",
+    "06"
+  ],
+  "colour_saturation": 0.28,
+  "colour_brightness": 0.8,
+  "dark_colour_brightness": 0.5,
+  "grey_backgrounds": {
+    "GreyCharcoal": 28,
+    "Dark_existing": 51,
+    "GreyMedium": 96,
+    "GreyPale": 150
+  },
+  "files": [
+    {
+      "file": "RedBreach/textures/greybox/GreyCharcoal/texture_01.png",
+      "source": "RedBreach/textures/greybox/Dark/texture_01.png",
+      "source_sha256": "07e28d7a86396fa4f1d7c43040f8e57e2374f6fa35b02bc48e70f9ccd4041c1a",
+      "sha256": "5c50cc2dbbc79a140d794eaa99d763bba937d8dcf9d9b58ef408e53341ee032e"
+    },
+    {
+      "file": "RedBreach/textures/greybox/GreyCharcoal/texture_03.png",
+      "source": "RedBreach/textures/greybox/Dark/texture_03.png",
+      "source_sha256": "e188004c88831e2446d77f7aec6b222516a08ac0ef9947ca56cedfd897d2d44a",
+      "sha256": "b13b380edd6a1a5c2d9a5b32f8f001c6a4487ab657a6cdf4be0e8c11cc68e192"
+    },
+    {
+      "file": "RedBreach/textures/greybox/GreyCharcoal/texture_06.png",
+      "source": "RedBreach/textures/greybox/Dark/texture_06.png",
+      "source_sha256": "a96d3b723fe47f5d1bd0d5f2207c16755d5a4a568a22df86c6d88f243d413a68",
+      "sha256": "bb349e50ed293c189b5bca16616e937053d1f36a40dcf5792e981951c0cef735"
+    },
+    {
+      "file": "RedBreach/textures/greybox/GreyMedium/texture_01.png",
+      "source": "RedBreach/textures/greybox/Dark/texture_01.png",
+      "source_sha256": "07e28d7a86396fa4f1d7c43040f8e57e2374f6fa35b02bc48e70f9ccd4041c1a",
+      "sha256": "aade93998d6c583e6dc0e0a7dc16f447cfac1b5bc0d2cf12627e5d9f6de0909e"
+    },
+    {
+      "file": "RedBreach/textures/greybox/GreyMedium/texture_03.png",
+      "source": "RedBreach/textures/greybox/Dark/texture_03.png",
+      "source_sha256": "e188004c88831e2446d77f7aec6b222516a08ac0ef9947ca56cedfd897d2d44a",
+      "sha256": "4af07e20b073192f5139ad66ce3e8650e089dd42f4bcb37efcd701b3be8792c5"
+    },
+    {
+      "file": "RedBreach/textures/greybox/GreyMedium/texture_06.png",
+      "source": "RedBreach/textures/greybox/Dark/texture_06.png",
+      "source_sha256": "a96d3b723fe47f5d1bd0d5f2207c16755d5a4a568a22df86c6d88f243d413a68",
+      "sha256": "07ad19ce8cc63d0346838911cccf8b78ad7219cf22fe6f6676a645b2875ea12d"
+    },
+    {
+      "file": "RedBreach/textures/greybox/GreyPale/texture_01.png",
+      "source": "RedBreach/textures/greybox/Dark/texture_01.png",
+      "source_sha256": "07e28d7a86396fa4f1d7c43040f8e57e2374f6fa35b02bc48e70f9ccd4041c1a",
+      "sha256": "632e75caf979439ed6c0e7699ca88facc8c7da966f8ab84f7a8d0b36767b9db2"
+    },
+    {
+      "file": "RedBreach/textures/greybox/GreyPale/texture_03.png",
+      "source": "RedBreach/textures/greybox/Dark/texture_03.png",
+      "source_sha256": "e188004c88831e2446d77f7aec6b222516a08ac0ef9947ca56cedfd897d2d44a",
+      "sha256": "4af64f994704c37686762cea14d06eeb8ab245c360c0bf14467995129e55afed"
+    },
+    {
+      "file": "RedBreach/textures/greybox/GreyPale/texture_06.png",
+      "source": "RedBreach/textures/greybox/Dark/texture_06.png",
+      "source_sha256": "a96d3b723fe47f5d1bd0d5f2207c16755d5a4a568a22df86c6d88f243d413a68",
+      "sha256": "76a9e77553f17d0fe72adfbf94a721422d5c0ffee817421791f541c515e52f56"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedGreen/texture_01.png",
+      "source": "RedBreach/textures/greybox/Green/texture_01.png",
+      "source_sha256": "ecba61e1d5e9acd605cec1724f5c902bf599146e94b09b053b428b63c4ec2951",
+      "sha256": "c5ff93f062c4830965e4a6022ead26ecea058d231eebfb2217adc65b3a02c0bd"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedGreen/texture_03.png",
+      "source": "RedBreach/textures/greybox/Green/texture_03.png",
+      "source_sha256": "d150be820736ea50358de171ff650ff514770ff0093e3bf67be400f4b97bde22",
+      "sha256": "18d61c0278d2334cceacae0cc4a78752308c133c25e6425605ed9234cb78627b"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedGreen/texture_06.png",
+      "source": "RedBreach/textures/greybox/Green/texture_06.png",
+      "source_sha256": "f2683eb0c6858e366079c7e8f146a7dc2bc2757b8f27c10d897a68db7b0e0817",
+      "sha256": "428df9afbfe6427c0ae3d58580836767b39ec29fa03e36be4e10ac029d089f4b"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedOrange/texture_01.png",
+      "source": "RedBreach/textures/greybox/Orange/texture_01.png",
+      "source_sha256": "6861a9f94e45b96e2571a823afad4b6001b6d00f820019128b34ce659a3356ca",
+      "sha256": "c3c3c279624e838c9398ae5503c190ff9e43b5c20b4b51b6f43c48319f370c9c"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedOrange/texture_03.png",
+      "source": "RedBreach/textures/greybox/Orange/texture_03.png",
+      "source_sha256": "7c402c773ebe370ea614f0e57cd1590fa35eadda3478754842e19cfadb915681",
+      "sha256": "688c21eb61d5ee6341f586123759df87f6b3bd7a69a7b70233345c2ead5b38f7"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedOrange/texture_06.png",
+      "source": "RedBreach/textures/greybox/Orange/texture_06.png",
+      "source_sha256": "cf741bc644a903abf42c2689023146af1d6cef80a5f81a38507e47cb98d89f2d",
+      "sha256": "9b9a6690d34339d30a4a4209b2d6ede0de6be356f36e91e351bc8ae6869348cb"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedRed/texture_01.png",
+      "source": "RedBreach/textures/greybox/Red/texture_01.png",
+      "source_sha256": "376fa10639295e4649880461b8c0487614b93de83d9bf660e2815acbffe2c03d",
+      "sha256": "2a13f9a241f8d615dae69f7008ee4cbbad55917634155d6378ff77d0021cd3f5"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedRed/texture_03.png",
+      "source": "RedBreach/textures/greybox/Red/texture_03.png",
+      "source_sha256": "22c305804fe5c0f05eb97e731094b1da68d6346e2d35e2dc44ed725691c527b2",
+      "sha256": "00a49205f3f9ce2256e92a4b5d8b112192236cd2ef98447fa579d257d407fb61"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedRed/texture_06.png",
+      "source": "RedBreach/textures/greybox/Red/texture_06.png",
+      "source_sha256": "c38b63008e3d6bf205ba81378748593565a9a3646c927233c11ea2613a0b945e",
+      "sha256": "280ca02d06ae2f384bffec68b9a0d8bf776493eb64b9f8794ef006fe85202e19"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedPurple/texture_01.png",
+      "source": "RedBreach/textures/greybox/Purple/texture_01.png",
+      "source_sha256": "0e0c2dfff301d16919ec1c5f977dbae4743f0c840aa11f1d255c2fec3291159e",
+      "sha256": "2dd586bbd3e88166329d5a8f304586efe9d6227fbb683ef53e20804815c16b08"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedPurple/texture_03.png",
+      "source": "RedBreach/textures/greybox/Purple/texture_03.png",
+      "source_sha256": "ad3fb848f7924d3ab82a4d2b44346030e979f68640ddb18ecb0e526814bea8c6",
+      "sha256": "79f0ec63e12b588b88c5a8596a8f874866c4349db3ea957e073e9d99a2a5997e"
+    },
+    {
+      "file": "RedBreach/textures/greybox/MutedPurple/texture_06.png",
+      "source": "RedBreach/textures/greybox/Purple/texture_06.png",
+      "source_sha256": "0c48b0452faec4e91019fd1f9a8b4b1b75a38da0b1b9232d7e213aff4569a6b5",
+      "sha256": "7bedf0d00c248b5a96210e614256cbba8cf01bd7d00c1c96e43b6dcf7322d6f0"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkGreen/texture_01.png",
+      "source": "RedBreach/textures/greybox/Green/texture_01.png",
+      "source_sha256": "ecba61e1d5e9acd605cec1724f5c902bf599146e94b09b053b428b63c4ec2951",
+      "sha256": "44e6b94b64b819c9fdb5ff79d2cf315a67cdba5a4cb447e92b39e52569637c03"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkGreen/texture_03.png",
+      "source": "RedBreach/textures/greybox/Green/texture_03.png",
+      "source_sha256": "d150be820736ea50358de171ff650ff514770ff0093e3bf67be400f4b97bde22",
+      "sha256": "e7210f2d9592ff54e1cc93b3ba24499070a7d9564adc3509a96c41c4ed4950ca"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkGreen/texture_06.png",
+      "source": "RedBreach/textures/greybox/Green/texture_06.png",
+      "source_sha256": "f2683eb0c6858e366079c7e8f146a7dc2bc2757b8f27c10d897a68db7b0e0817",
+      "sha256": "34db50171cdf63a332228ff5b8a8c643564a8c115b50dd2043e06d1f3dfbe7d2"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkOrange/texture_01.png",
+      "source": "RedBreach/textures/greybox/Orange/texture_01.png",
+      "source_sha256": "6861a9f94e45b96e2571a823afad4b6001b6d00f820019128b34ce659a3356ca",
+      "sha256": "c91ff44a9248edc7ae84319467739145e6c80f2c8694f61bc3bdbc92071e6347"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkOrange/texture_03.png",
+      "source": "RedBreach/textures/greybox/Orange/texture_03.png",
+      "source_sha256": "7c402c773ebe370ea614f0e57cd1590fa35eadda3478754842e19cfadb915681",
+      "sha256": "5d6cfca7271414fa7ef8bb91c5207492bfec987538e348f8cffd11f5f413a466"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkOrange/texture_06.png",
+      "source": "RedBreach/textures/greybox/Orange/texture_06.png",
+      "source_sha256": "cf741bc644a903abf42c2689023146af1d6cef80a5f81a38507e47cb98d89f2d",
+      "sha256": "31ff89797de30899082564b021b492e74dd60f095d75e10da3c15b3899f35b12"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkRed/texture_01.png",
+      "source": "RedBreach/textures/greybox/Red/texture_01.png",
+      "source_sha256": "376fa10639295e4649880461b8c0487614b93de83d9bf660e2815acbffe2c03d",
+      "sha256": "a44b6c9395734dea3fbfc2b920e70d3a05bd012b2c98eaf68386987d8f3657ed"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkRed/texture_03.png",
+      "source": "RedBreach/textures/greybox/Red/texture_03.png",
+      "source_sha256": "22c305804fe5c0f05eb97e731094b1da68d6346e2d35e2dc44ed725691c527b2",
+      "sha256": "3c066f20e5cec360b16962d8cb057dcf01bada6d28af075d8bc4d1c466ea25f5"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkRed/texture_06.png",
+      "source": "RedBreach/textures/greybox/Red/texture_06.png",
+      "source_sha256": "c38b63008e3d6bf205ba81378748593565a9a3646c927233c11ea2613a0b945e",
+      "sha256": "00c7132cee812600db23f5dde4865e3ac275656806e16dc6e68aada5cbebbcf9"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkPurple/texture_01.png",
+      "source": "RedBreach/textures/greybox/Purple/texture_01.png",
+      "source_sha256": "0e0c2dfff301d16919ec1c5f977dbae4743f0c840aa11f1d255c2fec3291159e",
+      "sha256": "bac787acf49186fc2f0d2b1ffcf3a42ec18823b5b3209879bd57171804c34208"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkPurple/texture_03.png",
+      "source": "RedBreach/textures/greybox/Purple/texture_03.png",
+      "source_sha256": "ad3fb848f7924d3ab82a4d2b44346030e979f68640ddb18ecb0e526814bea8c6",
+      "sha256": "b5c620ebb9fba6ddc078eabc75a1d8894b54d0bc1c1ce7b1fc5aac45a085cb61"
+    },
+    {
+      "file": "RedBreach/textures/greybox/DarkPurple/texture_06.png",
+      "source": "RedBreach/textures/greybox/Purple/texture_06.png",
+      "source_sha256": "0c48b0452faec4e91019fd1f9a8b4b1b75a38da0b1b9232d7e213aff4569a6b5",
+      "sha256": "6aa1d14319e3579ca18b11686ea1b9de78f4f56779a55057537899f9628ed7a4"
+    }
+  ]
+}

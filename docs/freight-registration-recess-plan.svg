@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1320" viewBox="0 0 1700 1320"><title>Red Breach F-03 Recessed Registration Walkway and Back Office</title><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#79e0b8"/></marker></defs>
+<rect x="0" y="0" width="1700" height="1320" fill="#101c28" stroke="none" stroke-width="1"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="38" y="48" fill="#f0f4f7" font-size="29" font-weight="700" text-anchor="start">RED BREACH / REGISTRATION REFINEMENT / F-03c</text>
+<text x="38" y="80" fill="#afc1cd" font-size="18" font-weight="400" text-anchor="start">BUILT / LAYOUT 08  |  Simple lower walkway; the staff branch ends before the door</text>
+<rect x="35" y="112" width="655" height="1120" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="57" y="149" fill="#f0f4f7" font-size="20" font-weight="700" text-anchor="start">REGISTRATION / FLOOR LEVELS AND ROUTE</text>
+<rect x="150" y="185" width="429" height="768" fill="#283d49" stroke="#e2c28e" stroke-width="4"/>
+<rect x="207" y="341" width="348" height="72" fill="#244f69" stroke="none" stroke-width="1"/>
+<rect x="207" y="377" width="72" height="516" fill="#244f69" stroke="none" stroke-width="1"/>
+<rect x="243" y="581" width="96" height="72" fill="#244f69" stroke="none" stroke-width="1"/>
+<rect x="243" y="821" width="180" height="72" fill="#244f69" stroke="none" stroke-width="1"/>
+<polyline points="207,341 555,341 555,413 279,413 279,581 339,581 339,653 279,653 279,821 423,821 423,893 207,893 207,341" fill="none" stroke="#6cadde" stroke-width="3"/>
+<polyline points="150,521 195,521" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<polyline points="291,521 387,521" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<polyline points="387,521 387,569" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<polyline points="387,665 387,713" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<polyline points="150,713 195,713" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<polyline points="291,713 579,713" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<polyline points="579,305 579,449" fill="none" stroke="#283d49" stroke-width="7"/>
+<polyline points="579,305 579,449" fill="none" stroke="#79e0b8" stroke-width="2"/>
+<polyline points="150,377 150,473" fill="none" stroke="#283d49" stroke-width="7"/>
+<polyline points="150,377 150,473" fill="none" stroke="#79e0b8" stroke-width="2"/>
+<rect x="171" y="192.2" width="96" height="24" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="363" y="192.2" width="120" height="24" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="171" y="257" width="48" height="33.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="315" y="257" width="48" height="24" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="521.4" y="221" width="43.2" height="48" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="390" y="530.6" width="177" height="24" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="390" y="554.6" width="24" height="9.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="543" y="554.6" width="24" height="74.4" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="435" y="560.6" width="15.6" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="497.4" y="560.6" width="15.6" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="420.6" y="681.8" width="132" height="26.4" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="553.8" y="636.2" width="19.2" height="72" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="166.2" y="535.4" width="19.2" height="110.4" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="307.8" y="535.4" width="2.4" height="28.8" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="305.4" y="680.6" width="72" height="25.2" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="151.8" y="305" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="568.2" y="497" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="151.8" y="689" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="568.2" y="857" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="276.6" y="188.6" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="492.6" y="188.6" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<polyline points="387,569 387,581" fill="none" stroke="#e2c28e" stroke-width="8"/>
+<polyline points="387,653 387,665" fill="none" stroke="#e2c28e" stroke-width="8"/>
+<polyline points="387,581 387,653" fill="none" stroke="#dfac71" stroke-width="6"/>
+<polyline points="579,377 243,377 243,425 147,425" fill="none" stroke="#79e0b8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<polyline points="243,425 243,857 387,857" fill="none" stroke="#79e0b8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<polyline points="243,617 483,617" fill="none" stroke="#79e0b8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<text x="435" y="353" fill="#f0f4f7" font-size="12" font-weight="700" text-anchor="middle">−0.25</text>
+<text x="243" y="564.2" fill="#f0f4f7" font-size="12" font-weight="700" text-anchor="middle">−0.25</text>
+<text x="483" y="691.4" fill="#f0f4f7" font-size="12" font-weight="700" text-anchor="middle">STAFF BAY / 0</text>
+<text x="363" y="799.4" fill="#f0f4f7" font-size="12" font-weight="700" text-anchor="middle">OFFICE / 0</text>
+<text x="473.4" y="461" fill="#f0f4f7" font-size="13" font-weight="700" text-anchor="middle">REGISTRATION</text>
+<text x="363" y="607.4" fill="#6cadde" font-size="10" font-weight="700" text-anchor="middle">UP / 0</text>
+<text x="327" y="845" fill="#6cadde" font-size="10" font-weight="700" text-anchor="middle">-0.25</text>
+<rect x="315" y="737" width="72" height="28.8" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="351" y="755.4" fill="#101c28" font-size="9" font-weight="700" text-anchor="middle">D1</text>
+<rect x="342.6" y="771.8" width="15.6" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="439.8" y="785" width="57.6" height="28.8" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="468.6" y="803.4" fill="#101c28" font-size="9" font-weight="700" text-anchor="middle">D2</text>
+<rect x="466.2" y="819.8" width="15.6" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="161.4" y="737" width="28.8" height="67.2" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="175.8" y="774.6" fill="#101c28" font-size="9" font-weight="700" text-anchor="middle">F1</text>
+<rect x="411" y="722.6" width="76.8" height="19.2" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="449.4" y="736.2" fill="#101c28" font-size="9" font-weight="700" text-anchor="middle">F2</text>
+<rect x="525" y="881" width="44.4" height="30" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="547.2" y="900" fill="#101c28" font-size="9" font-weight="700" text-anchor="middle">F3</text>
+<rect x="539.4" y="739.4" width="31.2" height="74.4" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="555" y="780.6" fill="#101c28" font-size="9" font-weight="700" text-anchor="middle">S1</text>
+<rect x="161.4" y="833" width="31.2" height="48" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="177" y="861" fill="#101c28" font-size="9" font-weight="700" text-anchor="middle">A1</text>
+<rect x="207" y="926.6" width="43.2" height="19.2" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="228.6" y="940.2" fill="#101c28" font-size="9" font-weight="700" text-anchor="middle">A2</text>
+<rect x="315" y="716.6" width="57.6" height="4.8" fill="#6cd9e8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="571.8" y="825.8" width="6" height="24" fill="#6cd9e8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="327" y="740.6" width="21.6" height="6" fill="#6cd9e8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="448.2" y="788.6" width="21.6" height="6" fill="#6cd9e8" stroke="#b5c6d2" stroke-width="0.6"/>
+<polyline points="291,953 483,953" fill="none" stroke="#6cd9e8" stroke-width="6"/>
+<text x="605" y="359" fill="#79e0b8" font-size="13" font-weight="700" text-anchor="start">FROM HUB</text>
+<text x="132" y="407" fill="#79e0b8" font-size="12" font-weight="700" text-anchor="end">SCREENING</text>
+<text x="132" y="427" fill="#afc1cd" font-size="11" font-weight="400" text-anchor="end">still floor 0</text>
+<text x="360" y="977" fill="#6cd9e8" font-size="14" font-weight="400" text-anchor="middle">Exterior view, glazing and lighting retained</text>
+<text x="58" y="1024" fill="#6cadde" font-size="18" font-weight="700" text-anchor="start">Blue floor = 3 m-wide route at −0.25 m.</text>
+<text x="58" y="1057" fill="#afc1cd" font-size="15" font-weight="400" text-anchor="start">Work bays and furniture remain at their current 0 m level.</text>
+<text x="58" y="1085" fill="#afc1cd" font-size="15" font-weight="400" text-anchor="start">Straight entry, one long spine, two square side branches.</text>
+<text x="58" y="1113" fill="#afc1cd" font-size="15" font-weight="400" text-anchor="start">Staff branch stops before the door; office strip continues.</text>
+<text x="58" y="1156" fill="#f0f4f7" font-size="16" font-weight="400" text-anchor="start">0.25 m = 8 map units; same rise as our existing stairs.</text>
+<text x="58" y="1185" fill="#afc1cd" font-size="14" font-weight="400" text-anchor="start">Movement checks pass, including diagonal and reverse crossings.</text>
+<rect x="720" y="112" width="945" height="550" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="744" y="149" fill="#f0f4f7" font-size="20" font-weight="700" text-anchor="start">THE WINDOW ROOM BECOMES REGISTRATION OPERATIONS</text>
+<text x="744" y="178" fill="#afc1cd" font-size="15" font-weight="400" text-anchor="start">Equipment bays stay at 0 m; the simple walkway continues through at -0.25 m.</text>
+<rect x="855" y="220" width="661.375" height="365.375" fill="#283d49" stroke="#e2c28e" stroke-width="4"/>
+<rect x="942.875" y="220" width="111" height="272.875" fill="#244f69" stroke="none" stroke-width="1"/>
+<rect x="998.375" y="381.875" width="277.5" height="111" fill="#244f69" stroke="none" stroke-width="1"/>
+<polyline points="924.375,220 1072.38,220" fill="none" stroke="#283d49" stroke-width="7"/>
+<polyline points="924.375,220 1072.38,220" fill="none" stroke="#79e0b8" stroke-width="2"/>
+<polyline points="998.375,215.375 998.375,437.375 1220.38,437.375" fill="none" stroke="#79e0b8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<rect x="1109.38" y="252.375" width="111" height="44.4" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="1164.88" y="278.575" fill="#101c28" font-size="13" font-weight="700" text-anchor="middle">D1</text>
+<rect x="1151.93" y="306.025" width="24.05" height="24.05" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="1301.78" y="326.375" width="88.8" height="44.4" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="1346.18" y="352.575" fill="#101c28" font-size="13" font-weight="700" text-anchor="middle">D2</text>
+<rect x="1342.47" y="380.025" width="24.05" height="24.05" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="872.575" y="252.375" width="44.4" height="103.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="894.775" y="308.175" fill="#101c28" font-size="13" font-weight="700" text-anchor="middle">F1</text>
+<rect x="1257.38" y="230.175" width="118.4" height="29.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="1316.57" y="248.975" fill="#101c28" font-size="13" font-weight="700" text-anchor="middle">F2</text>
+<rect x="1433.12" y="474.375" width="68.45" height="46.25" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="1467.35" y="501.5" fill="#101c28" font-size="13" font-weight="700" text-anchor="middle">F3</text>
+<rect x="1455.32" y="256.075" width="48.1" height="114.7" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="1479.38" y="317.425" fill="#101c28" font-size="13" font-weight="700" text-anchor="middle">S1</text>
+<rect x="872.575" y="400.375" width="48.1" height="74" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="896.625" y="441.375" fill="#101c28" font-size="13" font-weight="700" text-anchor="middle">A1</text>
+<rect x="942.875" y="544.675" width="66.6" height="29.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.6"/>
+<text x="976.175" y="563.475" fill="#101c28" font-size="13" font-weight="700" text-anchor="middle">A2</text>
+<rect x="1109.38" y="220.925" width="88.8" height="7.4" fill="#6cd9e8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="1505.28" y="389.275" width="9.25" height="37" fill="#6cd9e8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="1127.88" y="257.925" width="33.3" height="9.25" fill="#6cd9e8" stroke="#b5c6d2" stroke-width="0.6"/>
+<rect x="1314.72" y="331.925" width="33.3" height="9.25" fill="#6cd9e8" stroke="#b5c6d2" stroke-width="0.6"/>
+<polyline points="1072.38,585.375 1368.38,585.375" fill="none" stroke="#6cd9e8" stroke-width="6"/>
+<text x="1210" y="206" fill="#79e0b8" font-size="13" font-weight="700" text-anchor="middle">ENTRY FROM WAITING</text>
+<text x="1200" y="611" fill="#6cd9e8" font-size="16" font-weight="400" text-anchor="middle">Keep the view across the window clear of tall equipment.</text>
+<text x="744" y="641" fill="#afc1cd" font-size="15" font-weight="400" text-anchor="start">D = desk  ·  F = filing/storage  ·  S = servers  ·  A = air unit  ·  cyan = readouts</text>
+<rect x="720" y="686" width="945" height="265" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="744" y="724" fill="#f0f4f7" font-size="20" font-weight="700" text-anchor="start">STAFF BRANCH / STEP UP BEFORE THE DOOR</text>
+<text x="744" y="751" fill="#afc1cd" font-size="14" font-weight="400" text-anchor="start">Floor profile only; the vertical difference is exaggerated for clarity.</text>
+<polyline points="780,815 910,815 910,870 1240,870 1240,815 1580,815" fill="none" stroke="#6cadde" stroke-width="4"/>
+<polyline points="1430,778 1430,815" fill="none" stroke="#dfac71" stroke-width="6"/>
+<text x="790" y="798" fill="#f0f4f7" font-size="15" font-weight="400" text-anchor="start">Arrival 0</text>
+<text x="1050" y="899" fill="#6cadde" font-size="17" font-weight="700" text-anchor="start">Walkway −0.25 m</text>
+<text x="1195" y="930" fill="#f0f4f7" font-size="15" font-weight="400" text-anchor="start">2 m level approach; desk floor stays at 0 m</text>
+<text x="1365" y="770" fill="#dfac71" font-size="14" font-weight="700" text-anchor="start">STAFF DOOR</text>
+<text x="744" y="774" fill="#afc1cd" font-size="15" font-weight="400" text-anchor="start">Recess ends early, keeping the step edge away from staff chairs.</text>
+<rect x="720" y="975" width="945" height="257" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="744" y="1013" fill="#f0f4f7" font-size="20" font-weight="700" text-anchor="start">STAFF ACCESS + BACK-OFFICE FUNCTION</text>
+<text x="744" y="1048" fill="#f0f4f7" font-size="17" font-weight="400" text-anchor="start">The staff door and desk bay stay on the existing 0 m floor.</text>
+<text x="744" y="1077" fill="#afc1cd" font-size="16" font-weight="400" text-anchor="start">Unlocked E-use on both sides; retain our tested obstruction behavior.</text>
+<text x="744" y="1113" fill="#f0f4f7" font-size="17" font-weight="400" text-anchor="start">Two desks/readouts, three storage banks, two server-rack envelopes,</text>
+<text x="744" y="1142" fill="#f0f4f7" font-size="17" font-weight="400" text-anchor="start">two air-handling units and wall terminals replace the sparse lounge.</text>
+<text x="744" y="1180" fill="#afc1cd" font-size="16" font-weight="400" text-anchor="start">The small waiting area stays. No new card, objective or reward is added.</text>
+<text x="38" y="1285" fill="#afc1cd" font-size="17" font-weight="400" text-anchor="start">BUILT F-03c / 199 freight checks + 9 texture checks passed. Screening retains its F-01 blockout.</text>
+</g></svg>

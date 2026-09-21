@@ -1,0 +1,60 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_surface.tres" id="1_yypm6"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_block.tres" id="2_q8ku6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_06wyv"]
+size = Vector3(0.65, 0.09, 0.65)
+
+[sub_resource type="BoxMesh" id="BoxMesh_k1b7x"]
+size = Vector3(0.65, 0.42, 0.089999974)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gfj12"]
+size = Vector3(0.06, 0.39, 0.06)
+
+[sub_resource type="BoxMesh" id="BoxMesh_c1ynu"]
+size = Vector3(0.06, 0.39, 0.060000002)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fr4jq"]
+size = Vector3(0.060000002, 0.39, 0.06)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sgdeh"]
+size = Vector3(0.060000002, 0.39, 0.060000002)
+
+[node name="OfficeProp" type="Node3D" unique_id=458692541]
+metadata/kind = "chair"
+metadata/dimensions_m = Vector3(0.65, 0.9, 0.65)
+
+[node name="Visual" type="Node3D" parent="." unique_id=1875770072]
+
+[node name="ChairSeat" type="MeshInstance3D" parent="Visual" unique_id=334643236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.325, 0.435, 0.325)
+material_override = ExtResource("1_yypm6")
+mesh = SubResource("BoxMesh_06wyv")
+
+[node name="ChairBack" type="MeshInstance3D" parent="Visual" unique_id=1645933434]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.325, 0.69, 0.605)
+material_override = ExtResource("1_yypm6")
+mesh = SubResource("BoxMesh_k1b7x")
+
+[node name="ChairLeg" type="MeshInstance3D" parent="Visual" unique_id=1654507996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 0.195, 0.08)
+material_override = ExtResource("2_q8ku6")
+mesh = SubResource("BoxMesh_gfj12")
+
+[node name="@MeshInstance3D@3" type="MeshInstance3D" parent="Visual" unique_id=1095539491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 0.195, 0.56999993)
+material_override = ExtResource("2_q8ku6")
+mesh = SubResource("BoxMesh_c1ynu")
+
+[node name="@MeshInstance3D@4" type="MeshInstance3D" parent="Visual" unique_id=1961207102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.56999993, 0.195, 0.08)
+material_override = ExtResource("2_q8ku6")
+mesh = SubResource("BoxMesh_fr4jq")
+
+[node name="@MeshInstance3D@5" type="MeshInstance3D" parent="Visual" unique_id=1716199623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.56999993, 0.195, 0.56999993)
+material_override = ExtResource("2_q8ku6")
+mesh = SubResource("BoxMesh_sgdeh")
+
+[node name="Lights" type="Node3D" parent="." unique_id=1826015302]

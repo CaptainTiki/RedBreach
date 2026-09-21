@@ -1,6 +1,7 @@
-# Freight access / built elevation pass 04
+# Freight access / built elevation pass 05
 
-Status: the user approved the route and height direction, then authorized an empty blockout and walkthrough. Revision 04 is built. A2, A6 and B2 now perform their height changes inside the rooms; B4 has an overhead Maintenance mezzanine. See [play and rebuild instructions](freight-blockout.md). Enemy/pickup placement follows the empty scale review.
+Current layout 06: the approved [F-01 sample](freight-furnishing-plan.md) supersedes A1/A2/A8 internal partitions, ceilings and furnishing, and replaces I1 with the east-wall stair from (54,230) to (54,226), floor 0 to -2. Their external portals and the remaining A-01 layout are unchanged.
+Status: revision 05 is built. The [reviewed A-01 interiors and upper-floor drawings](freight-a-interior-plan.md) supersede the revision-04 whole-level drawing for A. B and Maintenance retain revision-04 geometry. See [play and rebuild instructions](freight-blockout.md); enemies and supplies follow the empty-walk review.
 
 - [Height drawing and schematic side profiles](freight-access-route-plan.png)
 - [Editable elevation drawing](freight-access-route-plan.svg)
@@ -9,7 +10,7 @@ Status: the user approved the route and height direction, then authorized an emp
 
 ## The experience
 
-**Security:** leave the hub at ground level, descend 2 m into Inspection, climb back to Records through the side detour, then climb another 2 m after door 2 into Security Dispatch. Collect the freight card there. Watch Gallery stays raised; stairs inside the Clearance Office lead down to its return floor and hub. The optional Inspection Annex shares the lower Inspection level.
+**Security:** leave the hub at ground level, descend 2 m into Inspection and climb back to Records through the side detour. Climb Records to the +4 m gallery and Supervisor suite, collect R, then return downstairs to door 2. Climb to +2 m Dispatch and collect K. Watch climbs from +2 to +6 m, then its upper passage leads to Clearance, where three flights descend to the hub floor. The optional Inspection Annex shares the lower Inspection level.
 
 **Power:** descend 2 m beyond Machine Access into the pump/service area. Either approach climbs back to ground level before door 4, so the red detour and Cooling Gallery still meet. Generator and Relay stay at ground level. Stairs inside Power Control's entrance rise 2 m onto its control floor; the return corridor descends to the hub before S2.
 
@@ -25,9 +26,11 @@ The floor labels on the route drawing name each room's main floor. They allow ad
 
 Built room transitions:
 
-- **A2 Inspection:** an entry mezzanine at 0 m leads down T1 to the -2 m working floor.
+- **A2 Inspection:** an entry platform at 0 m leads down I1 to the -2 m working floor.
 - **B2 Pump Floor:** climb T7 from the -2 m machinery floor to a 0 m exit mezzanine inside the room before heading toward B3.
-- **A6 Clearance Office:** enter at +2 m from Watch Gallery and descend T5 inside to the 0 m return floor.
+- **A3/A7 Records:** climb R1a/R1b from 0 to +4 m, then enter the elevated Supervisor suite.
+- **A5 Watch:** climb G1a/G1b from +2 to +6 m and cross the divided upper floor.
+- **A6 Clearance Office:** enter at +6 m from Watch and descend O1a/O1b/O1c inside to the 0 m return floor.
 - **B4 Generator Hall:** the +6 m Maintenance arrival opens onto a mezzanine above the hall, connected by three stair flights.
 - **B6 Power Control:** a lower 0 m entry climbs to the +2 m control floor.
 
@@ -40,9 +43,10 @@ All heights are metres relative to the hub floor, Y = 0. Values describe the mai
 | Floor height | Rooms / junctions |
 |---|---|
 | -2 m | A2 Inspection, A8 Annex, B2 Pump Floor, C1 Pump Service; J0, JT and JB0 |
-| 0 m | Arrival airlock, Receiving, hub, freight lift, A1, A3, A7, A6, B1, B3, C2, B4, B5, B7; JA and JB |
+| 0 m | Arrival airlock, Receiving, hub, freight lift, A1, A3, A6, B1, B3, C2, B4, B5, B7; JA and JB |
 | +2 m | A4 Security Dispatch, A5 Watch Gallery, B6 Power Control |
-| +6 m | Maintenance Workshop and upper service connection |
+| +4 m | A3 gallery and A7 Supervisor suite |
+| +6 m | A5 upper Watch floor, A6 Clearance mezzanine, Maintenance Workshop and upper service connection |
 
 B6 has a short lower entry at Y=0 before its internal stairs; its main floor and objective P are at +2 m. B4 has the +6 m Maintenance landing and descending stair structure above its main Y=0 floor. These are deliberate split-level room details, not mismatched doorway heights.
 
@@ -54,11 +58,17 @@ Each coordinate pair below is (X,Z) in metres. Endpoints mark the flight itself;
 
 | ID | Position / connection | Flight start -> end (X,Z) | Floor change |
 |---|---|---|---|
-| T1 | Inside A2, entry mezzanine -> work floor | (32,236) -> (32,232) | 0 -> -2 m |
+| I1 | Inside A2, entry platform -> work floor | (44,228) -> (44,224) | 0 -> -2 m |
 | T2 | Closed front approach to door 1 | (52,158) -> (52,154) | -2 -> 0 m |
 | T3 | Red Inspection -> Records detour | (97,151) -> (97,147) | -2 -> 0 m |
 | T4 | After door 2, before A4 | (121,111) -> (121,107) | 0 -> +2 m |
-| T5 | Inside A6, upper entry -> return floor | (133,172) -> (133,176) | +2 -> 0 m |
+| R1a | A3 lower Records stair | (58,128) -> (58,124) | 0 -> +2 m |
+| R1b | A3 upper Records stair | (58,122) -> (58,118) | +2 -> +4 m |
+| G1a | A5 lower Watch stair | (145,120) -> (145,124) | +2 -> +4 m |
+| G1b | A5 upper Watch stair | (145,126) -> (145,130) | +4 -> +6 m |
+| O1a | A6 upper descent | (130,176) -> (134,176) | +6 -> +4 m |
+| O1b | A6 middle descent | (136,176) -> (140,176) | +4 -> +2 m |
+| O1c | A6 lower descent | (142,176) -> (146,176) | +2 -> 0 m |
 | T6 | Beyond B1, before the Power fork | (342,262) -> (342,258) | 0 -> -2 m |
 | T7 | Inside B2, work floor -> exit mezzanine | (342,186) -> (342,182) | -2 -> 0 m |
 | T8 | C1 -> C2 red service route | (300,180) -> (300,176) | -2 -> 0 m |
@@ -71,7 +81,7 @@ Each coordinate pair below is (X,Z) in metres. Endpoints mark the flight itself;
 
 T11 reserves 20 m overall along X=225..245 at Z=52, including its two intermediate landings and both end landings. Its 4 m width fits inside B4's reviewed footprint. T9 reserves the B6 entry strip along X=242, Z=178..186; the room's north threshold starts at Y=0 and reaches the upper floor at the landing. Keep the stepped strip clear of props and the power control interaction.
 
-T2 serves the deliberately blocked approach and stops on the level platform before door 1. T7 serves the optional B2/B3 route. The ordinary known route takes eight 2 m flights: T1, T3, T4, T5, T6, T8, T9 and T10.
+T2 serves the deliberately blocked approach and stops on the level platform before door 1. T7 serves the optional B2/B3 route. The ordinary known route uses I1, T3, Records R1a/R1b in both directions, T4, G1a/G1b, O1a/O1b/O1c, T6, T8, T9 and T10.
 
 ## Connections and gates
 
@@ -87,4 +97,9 @@ Paper checks passed for every connection's start/end height, every stair's rise/
 
 During blockout, reserve at least 3 m clear headroom above stair nosings and landings, and check the actual ceiling/underside geometry along the full climb. Keep the approved gates effective from raised viewpoints and prevent the inactive Maintenance connection from being bypassed by a jump or nearby prop. Place guards and walls where needed without obscuring the route itself. Check player walking, sprinting, ADS retreat, turning on landings and bug pursuit using the existing gym movement tuning. The E-use ladder is implemented and checked in both directions with the real player capsule. Bug pursuit remains deferred to the enemy/navigation pass.
 
-Horizontal centreline estimates remain 1,956 m for the ordinary route and 1,314 m via BcD. They exclude vertical travel and are not new timing results. Stairs and ladder movement must be measured in the empty traversal test; the ten-minute populated target remains unchanged. No artificial wait or movement slowdown is added to reach it.
+The earlier 1,956 m ordinary-route and 1,314 m BcD estimates describe revision 04 only. Revision 05 adds the reviewed A interior routes; its paper A trace is approximately 1,314 m hub to hub, excluding Annex, exploration and combat. These estimates are not new timing results. Stairs and ladder movement must be measured in the empty traversal test; the ten-minute populated target remains unchanged. No artificial wait or movement slowdown is added to reach it.
+
+
+## Registration refinement / layout 08
+
+The approved [F-03c registration plan](freight-registration-recess-plan.md) introduces local circulation strips at -0.25 m inside A1. Work bays, the staff-door landing and desk area remain at 0 m. The staff strip ends two metres before its door; the office entrance stays on the lower strip. Shell connections, Screening, the exterior window and all other mission heights retain their prior elevations.

@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1280" viewBox="0 0 1700 1280"><title>Red Breach F-02 Registration Composition</title><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#79e0b8"/></marker></defs>
+<rect x="0" y="0" width="1700" height="1280" fill="#101c28" stroke="none" stroke-width="1"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="38" y="48" fill="#f0f4f7" font-size="29" font-weight="700" text-anchor="start">RED BREACH / A1 REGISTRATION / F-02</text>
+<text x="38" y="80" fill="#afc1cd" font-size="18" font-weight="400" text-anchor="start">BUILT / LAYOUT 07  |  Approved functional bays + complete cuboid composition  |  Walkthrough ready</text>
+<rect x="35" y="110" width="655" height="1010" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="57" y="146" fill="#f0f4f7" font-size="20" font-weight="700" text-anchor="start">GROUND PLAN / EXISTING RECEPTION ENVELOPE</text>
+<rect x="150" y="185" width="429" height="333" fill="#283d49" stroke="none" stroke-width="1"/>
+<rect x="150" y="524" width="234" height="186" fill="#283d49" stroke="none" stroke-width="1"/>
+<rect x="390" y="524" width="189" height="186" fill="#283d49" stroke="none" stroke-width="1"/>
+<rect x="150" y="716" width="429" height="237" fill="#283d49" stroke="none" stroke-width="1"/>
+<polyline points="195,185 195,953" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="243,185 243,953" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="291,185 291,953" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="339,185 339,953" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="387,185 387,953" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="435,185 435,953" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="483,185 483,953" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="531,185 531,953" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="579,185 579,953" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,185 579,185" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,233 579,233" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,281 579,281" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,329 579,329" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,377 579,377" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,425 579,425" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,473 579,473" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,521 579,521" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,569 579,569" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,617 579,617" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,665 579,665" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,713 579,713" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,761 579,761" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,809 579,809" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,857 579,857" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,905 579,905" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<polyline points="150,953 579,953" fill="none" stroke="#3c505d" stroke-width="0.6"/>
+<rect x="150" y="185" width="429" height="768" fill="none" stroke="#e2c28e" stroke-width="4"/>
+<polyline points="579,305 579,449" fill="none" stroke="#283d49" stroke-width="7"/>
+<polyline points="579,305 579,449" fill="none" stroke="#79e0b8" stroke-width="2"/>
+<polyline points="150,377 150,473" fill="none" stroke="#283d49" stroke-width="7"/>
+<polyline points="150,377 150,473" fill="none" stroke="#79e0b8" stroke-width="2"/>
+<polyline points="150,521 195,521" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<polyline points="291,521 387,521" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<polyline points="387,521 387,569" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<polyline points="387,665 387,713" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<polyline points="150,713 195,713" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<polyline points="291,713 579,713" fill="none" stroke="#e2c28e" stroke-width="6"/>
+<rect x="393" y="515" width="180" height="63.6" fill="none" stroke="#bba0e6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="161.4" y="199.4" width="403.2" height="19.2" fill="none" stroke="#bba0e6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="156.6" y="485" width="16.8" height="213.6" fill="none" stroke="#bba0e6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="161.4" y="914.6" width="403.2" height="16.8" fill="none" stroke="#bba0e6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="157.8" y="305" width="412.8" height="6.72" fill="none" stroke="#bba0e6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="157.8" y="413" width="412.8" height="6.72" fill="none" stroke="#bba0e6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="157.8" y="785" width="412.8" height="6.72" fill="none" stroke="#bba0e6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="243" y="245" width="52.8" height="5.76" fill="#ffe296" stroke="none" stroke-width="1"/>
+<rect x="411" y="324.2" width="52.8" height="5.76" fill="#ffe296" stroke="none" stroke-width="1"/>
+<rect x="459" y="524.6" width="52.8" height="5.76" fill="#ffe296" stroke="none" stroke-width="1"/>
+<rect x="459" y="564.2" width="52.8" height="5.76" fill="#ffe296" stroke="none" stroke-width="1"/>
+<rect x="223.8" y="593" width="52.8" height="5.76" fill="#ffe296" stroke="none" stroke-width="1"/>
+<rect x="463.8" y="653" width="52.8" height="5.76" fill="#ffe296" stroke="none" stroke-width="1"/>
+<rect x="267" y="797" width="52.8" height="5.76" fill="#ffe296" stroke="none" stroke-width="1"/>
+<rect x="435" y="893" width="52.8" height="5.76" fill="#ffe296" stroke="none" stroke-width="1"/>
+<rect x="171" y="192.2" width="96" height="24" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="219" y="208.2" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">E1</text>
+<rect x="363" y="192.2" width="120" height="24" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="423" y="208.2" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">E2</text>
+<rect x="171" y="257" width="48" height="33.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="195" y="277.8" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">E3</text>
+<rect x="315" y="257" width="48" height="24" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="339" y="273" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">E4</text>
+<rect x="521.4" y="221" width="43.2" height="48" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="543" y="249" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">E5</text>
+<rect x="390" y="530.6" width="177" height="24" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="478.5" y="546.6" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">R1</text>
+<rect x="390" y="554.6" width="24" height="9.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="402" y="563.4" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">R2</text>
+<rect x="543" y="554.6" width="24" height="74.4" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="555" y="595.8" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">R3</text>
+<rect x="435" y="560.6" width="15.6" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="442.8" y="572.4" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">R4</text>
+<rect x="497.4" y="560.6" width="15.6" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="505.2" y="572.4" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">R5</text>
+<rect x="420.6" y="681.8" width="132" height="26.4" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="486.6" y="699" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">R6</text>
+<rect x="553.8" y="636.2" width="19.2" height="72" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="563.4" y="676.2" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">R7</text>
+<rect x="166.2" y="535.4" width="19.2" height="110.4" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="175.8" y="594.6" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">W1</text>
+<rect x="307.8" y="535.4" width="2.4" height="28.8" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="309" y="553.8" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">W2</text>
+<rect x="305.4" y="680.6" width="72" height="25.2" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="341.4" y="697.2" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">W3</text>
+<rect x="166.2" y="761" width="19.2" height="124.8" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="175.8" y="827.4" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">L1</text>
+<rect x="339" y="729.8" width="96" height="19.2" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="387" y="743.4" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">L2</text>
+<rect x="550.2" y="761" width="19.2" height="91.2" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="559.8" y="810.6" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">L3</text>
+<rect x="459" y="809" width="28.8" height="28.8" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="473.4" y="827.4" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">L4</text>
+<rect x="511.8" y="885.8" width="33.6" height="26.4" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="528.6" y="903" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">L5</text>
+<rect x="207" y="926.6" width="43.2" height="19.2" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<text x="228.6" y="940.2" fill="#101c28" font-size="10" font-weight="700" text-anchor="middle">L6</text>
+<rect x="151.8" y="305" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<rect x="568.2" y="497" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<rect x="151.8" y="689" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<rect x="568.2" y="857" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<rect x="276.6" y="188.6" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<rect x="492.6" y="188.6" width="7.68" height="15.6" fill="#708fa8" stroke="#b5c6d2" stroke-width="0.7"/>
+<polyline points="339,425 243,425 243,857 387,857" fill="none" stroke="#79e0b8" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<polyline points="243,617 459,617" fill="none" stroke="#79e0b8" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<polyline points="339,425 459,425 459,485" fill="none" stroke="#79e0b8" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<polyline points="579,377 339,377 339,425 147,425" fill="none" stroke="#79e0b8" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="298" y="339" width="34" height="24" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="315" y="357" fill="#f0f4f7" font-size="17" font-weight="700" text-anchor="middle">01</text>
+<rect x="202" y="651" width="34" height="24" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="219" y="669" fill="#f0f4f7" font-size="17" font-weight="700" text-anchor="middle">02</text>
+<rect x="466" y="636.6" width="34" height="24" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="483" y="654.6" fill="#f0f4f7" font-size="17" font-weight="700" text-anchor="middle">03</text>
+<rect x="346" y="795" width="34" height="24" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="363" y="813" fill="#f0f4f7" font-size="17" font-weight="700" text-anchor="middle">04</text>
+<polyline points="291,953 483,953" fill="none" stroke="#6cd9e8" stroke-width="6"/>
+<circle cx="437.4" cy="684.2" r="7" fill="#e8b786"/>
+<circle cx="521.4" cy="897.8" r="7" fill="#e8b786"/>
+<text x="600" y="359" fill="#79e0b8" font-size="13" font-weight="700" text-anchor="start">FROM HUB</text>
+<text x="132" y="410" fill="#79e0b8" font-size="12" font-weight="700" text-anchor="end">TO SCREENING</text>
+<text x="360" y="975" fill="#6cd9e8" font-size="15" font-weight="400" text-anchor="middle">Existing sealed Mars-view window</text>
+<text x="80" y="181" fill="#afc1cd" font-size="18" font-weight="700" text-anchor="start">N ↑</text>
+<polyline points="150,989 270,989" fill="none" stroke="#f0f4f7" stroke-width="3"/>
+<text x="150" y="1013" fill="#afc1cd" font-size="14" font-weight="400" text-anchor="start">5 m / grid = 2 m</text>
+<text x="57" y="1053" fill="#afc1cd" font-size="15" font-weight="400" text-anchor="start">Solid mint: existing onward route. Dashed: optional bays.</text>
+<text x="57" y="1079" fill="#afc1cd" font-size="15" font-weight="400" text-anchor="start">Purple dashed: overhead masses. Yellow: light housings.</text>
+<text x="57" y="1104" fill="#afc1cd" font-size="15" font-weight="400" text-anchor="start">Orange dots: possible pickup locations, not assigned items.</text>
+<rect x="720" y="110" width="945" height="476" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="744" y="146" fill="#f0f4f7" font-size="21" font-weight="700" text-anchor="start">REGISTRATION ASSEMBLY / FRONT ELEVATION</text>
+<text x="744" y="176" fill="#afc1cd" font-size="15" font-weight="400" text-anchor="start">Every shape is a simple box. Sizes below are our proposal, not measurements of Doom 3.</text>
+<rect x="790" y="179" width="808.4" height="329" fill="#283d49" stroke="#e2c28e" stroke-width="1"/>
+<rect x="790" y="179" width="808.4" height="42.3" fill="#bba0e6" stroke="none" stroke-width="1"/>
+<rect x="818.2" y="207.2" width="752" height="47" fill="#708fa8" stroke="#bba0e6" stroke-width="1"/>
+<rect x="837" y="254.2" width="188" height="15.04" fill="#ffe296" stroke="none" stroke-width="1"/>
+<rect x="1335.2" y="254.2" width="188" height="15.04" fill="#ffe296" stroke="none" stroke-width="1"/>
+<rect x="1043.8" y="263.6" width="319.6" height="47" fill="#708fa8" stroke="none" stroke-width="1"/>
+<text x="1203.6" y="292.74" fill="#f0f4f7" font-size="16" font-weight="700" text-anchor="middle">REGISTRATION</text>
+<rect x="846.4" y="221.3" width="51.7" height="286.7" fill="#708fa8" stroke="none" stroke-width="1"/>
+<rect x="1513.8" y="221.3" width="51.7" height="286.7" fill="#708fa8" stroke="none" stroke-width="1"/>
+<rect x="869.9" y="404.6" width="648.6" height="103.4" fill="#708fa8" stroke="#f0f4f7" stroke-width="1"/>
+<rect x="851.1" y="400.84" width="686.2" height="11.28" fill="#e2c28e" stroke="none" stroke-width="1"/>
+<rect x="978" y="349.14" width="84.6" height="51.7" fill="#708fa8" stroke="#f0f4f7" stroke-width="1"/>
+<rect x="1269.4" y="349.14" width="84.6" height="51.7" fill="#708fa8" stroke="#f0f4f7" stroke-width="1"/>
+<rect x="1546.7" y="343.5" width="30.08" height="164.5" fill="#79e0b8" stroke="none" stroke-width="1"/>
+<text x="1535" y="516" fill="#79e0b8" font-size="13" font-weight="400" text-anchor="start">1.75 m</text>
+<text x="744" y="550" fill="#afc1cd" font-size="17" font-weight="400" text-anchor="start">Counter 1.1 m · canopy underside 2.7 m · room ceiling 3.5 m</text>
+<rect x="720" y="610" width="945" height="510" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="744" y="648" fill="#f0f4f7" font-size="21" font-weight="700" text-anchor="start">SMALLER SPACES, COMPLETE LAYERS</text>
+<text x="745" y="683" fill="#f0f4f7" font-size="17" font-weight="400" text-anchor="start">01  Arrival / registration front</text>
+<text x="1270" y="683" fill="#afc1cd" font-size="17" font-weight="400" text-anchor="start">17.9 × 13.9 m</text>
+<text x="1505" y="683" fill="#79e0b8" font-size="17" font-weight="400" text-anchor="start">1.29:1</text>
+<text x="745" y="717" fill="#f0f4f7" font-size="17" font-weight="400" text-anchor="start">02  Waiting bay</text>
+<text x="1270" y="717" fill="#afc1cd" font-size="17" font-weight="400" text-anchor="start">9.8 × 7.8 m</text>
+<text x="1505" y="717" fill="#79e0b8" font-size="17" font-weight="400" text-anchor="start">1.26:1</text>
+<text x="745" y="751" fill="#f0f4f7" font-size="17" font-weight="400" text-anchor="start">03  Registration staff bay</text>
+<text x="1270" y="751" fill="#afc1cd" font-size="17" font-weight="400" text-anchor="start">7.9 × 7.8 m</text>
+<text x="1505" y="751" fill="#79e0b8" font-size="17" font-weight="400" text-anchor="start">1.02:1</text>
+<text x="745" y="785" fill="#f0f4f7" font-size="17" font-weight="400" text-anchor="start">04  Window lounge</text>
+<text x="1270" y="785" fill="#afc1cd" font-size="17" font-weight="400" text-anchor="start">17.9 × 9.9 m</text>
+<text x="1505" y="785" fill="#79e0b8" font-size="17" font-weight="400" text-anchor="start">1.81:1</text>
+<text x="744" y="845" fill="#f0f4f7" font-size="17" font-weight="400" text-anchor="start">Entry: kiosks, equipment banks, uprights, beams and real light housings.</text>
+<text x="744" y="875" fill="#f0f4f7" font-size="17" font-weight="400" text-anchor="start">Desk: three counter blocks, chairs, screens, sign, canopy and task lights.</text>
+<text x="744" y="905" fill="#f0f4f7" font-size="17" font-weight="400" text-anchor="start">Waiting + lounge: seat groups, queue rail, cabinets and wall services.</text>
+<text x="744" y="950" fill="#e2c28e" font-size="17" font-weight="700" text-anchor="start">AUTHORING SPLIT</text>
+<text x="744" y="980" fill="#afc1cd" font-size="16" font-weight="400" text-anchor="start">TrenchBroom: room shell, partitions, landings and route-defining structure.</text>
+<text x="744" y="1008" fill="#afc1cd" font-size="16" font-weight="400" text-anchor="start">Godot prop scenes: reusable cube assemblies with simple collision.</text>
+<text x="744" y="1036" fill="#afc1cd" font-size="16" font-weight="400" text-anchor="start">Blender later: replace prop visuals inside those scenes; keep placement.</text>
+<text x="744" y="1080" fill="#79e0b8" font-size="17" font-weight="400" text-anchor="start">Readable retreat space stays clear. Detail density lives around it.</text>
+<rect x="35" y="1140" width="1630" height="106" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="58" y="1172" fill="#f0f4f7" font-size="19" font-weight="700" text-anchor="start">LATER LAYOUT TOOL: SEE A PLACE → TRAVEL THROUGH OTHER ROOMS → RETURN ABOVE IT</text>
+<text x="58" y="1204" fill="#afc1cd" font-size="17" font-weight="400" text-anchor="start">The catwalk has no direct stair from the room below. It reconnects the player visually with earlier space.</text>
+<text x="58" y="1230" fill="#afc1cd" font-size="16" font-weight="400" text-anchor="start">Not added to this sample: it needs a reviewed upper route and taller section. Main mission gates remain intact.</text>
+</g></svg>

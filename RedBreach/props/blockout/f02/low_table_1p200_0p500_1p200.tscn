@@ -1,0 +1,44 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/f02/dark.tres" id="1_tk857"]
+[ext_resource type="Material" path="res://props/blockout/f02/panel.tres" id="2_rvird"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ww1g6"]
+size = Vector3(1.0800002, 0.38, 1.0800002)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mjjq6"]
+size = Vector3(1.2, 0.120000005, 1.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hpmwp"]
+size = Vector3(1.0800002, 0.38, 1.0800002)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rykvm"]
+size = Vector3(1.2, 0.120000005, 1.2)
+
+[node name="BlockoutProp" type="Node3D" unique_id=198664808]
+metadata/kind = "low table"
+metadata/dimensions_m = Vector3(1.2, 0.5, 1.2)
+
+[node name="Visual" type="Node3D" parent="." unique_id=974374631]
+
+[node name="PartBase" type="MeshInstance3D" parent="Visual" unique_id=421839950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.19, 0.6)
+material_override = ExtResource("1_tk857")
+mesh = SubResource("BoxMesh_ww1g6")
+
+[node name="PartTop" type="MeshInstance3D" parent="Visual" unique_id=137454756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.44, 0.6)
+material_override = ExtResource("2_rvird")
+mesh = SubResource("BoxMesh_mjjq6")
+
+[node name="Lights" type="Node3D" parent="." unique_id=1880186989]
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=216682855]
+
+[node name="PartBase" type="CollisionShape3D" parent="Collision" unique_id=1302058610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.19, 0.6)
+shape = SubResource("BoxShape3D_hpmwp")
+
+[node name="PartTop" type="CollisionShape3D" parent="Collision" unique_id=747132471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.44, 0.6)
+shape = SubResource("BoxShape3D_rykvm")

@@ -1,0 +1,45 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_block.tres" id="1_s7iy0"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_surface.tres" id="2_himwk"]
+[ext_resource type="Material" path="res://props/blockout/f02/screen.tres" id="3_hlw20"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_eobfa"]
+size = Vector3(0.6, 0.04, 0.19999999)
+
+[sub_resource type="BoxMesh" id="BoxMesh_aidw3"]
+size = Vector3(0.07999998, 0.14000002, 0.08)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hfmlf"]
+size = Vector3(0.9, 0.36, 0.17)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hyl6f"]
+size = Vector3(0.81999993, 0.28, 0.015000001)
+
+[node name="OfficeProp" type="Node3D" unique_id=1385054281]
+metadata/kind = "desk monitor"
+metadata/dimensions_m = Vector3(0.9, 0.5, 0.25)
+
+[node name="Visual" type="Node3D" parent="." unique_id=936882148]
+
+[node name="Foot" type="MeshInstance3D" parent="Visual" unique_id=407458252]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 0.02, 0.14)
+material_override = ExtResource("1_s7iy0")
+mesh = SubResource("BoxMesh_eobfa")
+
+[node name="Stand" type="MeshInstance3D" parent="Visual" unique_id=2101781325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 0.11, 0.13)
+material_override = ExtResource("1_s7iy0")
+mesh = SubResource("BoxMesh_aidw3")
+
+[node name="Display" type="MeshInstance3D" parent="Visual" unique_id=991343472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 0.32, 0.135)
+material_override = ExtResource("2_himwk")
+mesh = SubResource("BoxMesh_hfmlf")
+
+[node name="Screen" type="MeshInstance3D" parent="Visual" unique_id=865197671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 0.32, 0.23249999)
+material_override = ExtResource("3_hlw20")
+mesh = SubResource("BoxMesh_hyl6f")
+
+[node name="Lights" type="Node3D" parent="." unique_id=1205151657]

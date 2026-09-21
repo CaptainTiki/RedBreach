@@ -1,0 +1,53 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_block.tres" id="1_s3qbg"]
+[ext_resource type="Material" path="res://props/blockout/materials/registration_surface.tres" id="2_xi74s"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6e7l5"]
+size = Vector3(3, 2.2, 1.015)
+
+[sub_resource type="BoxMesh" id="BoxMesh_giybn"]
+size = Vector3(0.86, 1.9, 0.01999998)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2t2ox"]
+size = Vector3(0.8599999, 1.9, 0.01999998)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8eboy"]
+size = Vector3(0.86000013, 1.9, 0.01999998)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dtv1s"]
+size = Vector3(3, 2.2, 1.015)
+
+[node name="BlockoutProp" type="Node3D" unique_id=1114058414]
+metadata/kind = "service cabinet"
+metadata/dimensions_m = Vector3(3, 2.2, 1.05)
+
+[node name="Visual" type="Node3D" parent="." unique_id=1939660567]
+
+[node name="PartShell" type="MeshInstance3D" parent="Visual" unique_id=1289101631]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.1, 0.5075)
+material_override = ExtResource("1_s3qbg")
+mesh = SubResource("BoxMesh_6e7l5")
+
+[node name="PartFace" type="MeshInstance3D" parent="Visual" unique_id=2079453217]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.1, 1.04)
+material_override = ExtResource("2_xi74s")
+mesh = SubResource("BoxMesh_giybn")
+
+[node name="@MeshInstance3D@25" type="MeshInstance3D" parent="Visual" unique_id=1256535277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.1, 1.04)
+material_override = ExtResource("2_xi74s")
+mesh = SubResource("BoxMesh_2t2ox")
+
+[node name="@MeshInstance3D@26" type="MeshInstance3D" parent="Visual" unique_id=753921243]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 1.1, 1.04)
+material_override = ExtResource("2_xi74s")
+mesh = SubResource("BoxMesh_8eboy")
+
+[node name="Lights" type="Node3D" parent="." unique_id=1991105526]
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=1749735792]
+
+[node name="PartShell" type="CollisionShape3D" parent="Collision" unique_id=1394230615]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.1, 0.5075)
+shape = SubResource("BoxShape3D_dtv1s")

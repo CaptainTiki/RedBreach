@@ -1,0 +1,1466 @@
+{
+  "status": "BUILT - USER APPROVED F-01 / LAYOUT 06",
+  "revision": "F-01",
+  "baseline_layout": "05",
+  "built_layout": "06",
+  "rooms": {
+    "A1": {
+      "title": "STAFF INTAKE",
+      "bounds": [
+        62,
+        262,
+        114,
+        294
+      ],
+      "scale": 12,
+      "floor": 0,
+      "entry": [
+        114,
+        270
+      ],
+      "exit": [
+        62,
+        288
+      ],
+      "rooms": [
+        [
+          "01",
+          "Reception",
+          [
+            96.125,
+            262,
+            114,
+            294
+          ],
+          3.5,
+          [
+            104.5,
+            283
+          ]
+        ],
+        [
+          "02",
+          "Screening",
+          [
+            82.125,
+            262,
+            95.875,
+            275.875
+          ],
+          3.5,
+          [
+            89,
+            274.8
+          ]
+        ],
+        [
+          "03",
+          "Administration",
+          [
+            62,
+            262,
+            81.875,
+            275.875
+          ],
+          3.5,
+          [
+            72,
+            264
+          ]
+        ],
+        [
+          "04",
+          "Staff preparation",
+          [
+            62,
+            276.125,
+            95.875,
+            294
+          ],
+          3.5,
+          [
+            83,
+            291
+          ]
+        ]
+      ],
+      "walls": [
+        [
+          [
+            96,
+            262
+          ],
+          [
+            96,
+            270
+          ]
+        ],
+        [
+          [
+            96,
+            274
+          ],
+          [
+            96,
+            294
+          ]
+        ],
+        [
+          [
+            82,
+            262
+          ],
+          [
+            82,
+            266
+          ]
+        ],
+        [
+          [
+            82,
+            270
+          ],
+          [
+            82,
+            276
+          ]
+        ],
+        [
+          [
+            62,
+            276
+          ],
+          [
+            86,
+            276
+          ]
+        ],
+        [
+          [
+            90,
+            276
+          ],
+          [
+            96,
+            276
+          ]
+        ]
+      ],
+      "doors": [
+        [
+          "Reception / screening",
+          [
+            96,
+            272
+          ],
+          "x"
+        ],
+        [
+          "Office",
+          [
+            82,
+            268
+          ],
+          "x"
+        ],
+        [
+          "Staff preparation",
+          [
+            88,
+            276
+          ],
+          "z"
+        ]
+      ],
+      "route": [
+        [
+          114,
+          270
+        ],
+        [
+          104,
+          270
+        ],
+        [
+          104,
+          272
+        ],
+        [
+          88,
+          272
+        ],
+        [
+          88,
+          282
+        ],
+        [
+          74,
+          282
+        ],
+        [
+          74,
+          288
+        ],
+        [
+          62,
+          288
+        ]
+      ],
+      "optional": [
+        [
+          [
+            88,
+            272
+          ],
+          [
+            88,
+            268
+          ],
+          [
+            76,
+            268
+          ]
+        ]
+      ],
+      "props": [
+        {
+          "kind": "counter",
+          "bounds": [
+            107,
+            277,
+            112,
+            278.2
+          ],
+          "label": "COUNTER",
+          "height_m": 1.1,
+          "floor_y": 0
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            109,
+            279.2,
+            109.65,
+            279.84999999999997
+          ],
+          "label": "",
+          "height_m": 0.9,
+          "floor_y": 0
+        },
+        {
+          "kind": "bench",
+          "bounds": [
+            112.8,
+            264,
+            113.45,
+            268
+          ],
+          "label": "",
+          "height_m": 0.45,
+          "floor_y": 0
+        },
+        {
+          "kind": "bench",
+          "bounds": [
+            100,
+            289,
+            105,
+            289.7
+          ],
+          "label": "",
+          "height_m": 0.45,
+          "floor_y": 0
+        },
+        {
+          "kind": "counter",
+          "bounds": [
+            84,
+            264.5,
+            87,
+            265.5
+          ],
+          "label": "CHECK",
+          "height_m": 1.1,
+          "floor_y": 0
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            85.3,
+            265.6,
+            85.95,
+            266.25
+          ],
+          "label": "",
+          "height_m": 0.9,
+          "floor_y": 0
+        },
+        {
+          "kind": "scanner",
+          "bounds": [
+            91,
+            266,
+            93,
+            269
+          ],
+          "label": "SCAN",
+          "height_m": 2.4,
+          "floor_y": 0
+        },
+        {
+          "kind": "locker",
+          "bounds": [
+            84,
+            262.8,
+            90,
+            263.55
+          ],
+          "label": "",
+          "height_m": 2.2,
+          "floor_y": 0
+        },
+        {
+          "kind": "desk",
+          "bounds": [
+            65,
+            266,
+            67,
+            266.9
+          ],
+          "label": "",
+          "height_m": 0.75,
+          "floor_y": 0
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            65.65,
+            267.3,
+            66.30000000000001,
+            267.95
+          ],
+          "label": "",
+          "height_m": 0.9,
+          "floor_y": 0
+        },
+        {
+          "kind": "desk",
+          "bounds": [
+            71,
+            266,
+            73,
+            266.9
+          ],
+          "label": "",
+          "height_m": 0.75,
+          "floor_y": 0
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            71.65,
+            267.3,
+            72.30000000000001,
+            267.95
+          ],
+          "label": "",
+          "height_m": 0.9,
+          "floor_y": 0
+        },
+        {
+          "kind": "desk",
+          "bounds": [
+            65,
+            271,
+            67,
+            271.9
+          ],
+          "label": "",
+          "height_m": 0.75,
+          "floor_y": 0
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            65.65,
+            272.3,
+            66.30000000000001,
+            272.95
+          ],
+          "label": "",
+          "height_m": 0.9,
+          "floor_y": 0
+        },
+        {
+          "kind": "desk",
+          "bounds": [
+            71,
+            271,
+            73,
+            271.9
+          ],
+          "label": "",
+          "height_m": 0.75,
+          "floor_y": 0
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            71.65,
+            272.3,
+            72.30000000000001,
+            272.95
+          ],
+          "label": "",
+          "height_m": 0.9,
+          "floor_y": 0
+        },
+        {
+          "kind": "cabinet",
+          "bounds": [
+            78,
+            271,
+            80,
+            272
+          ],
+          "label": "",
+          "height_m": 2.1,
+          "floor_y": 0
+        },
+        {
+          "kind": "bench",
+          "bounds": [
+            67,
+            279,
+            72,
+            279.7
+          ],
+          "label": "",
+          "height_m": 0.45,
+          "floor_y": 0
+        },
+        {
+          "kind": "bench",
+          "bounds": [
+            80,
+            288,
+            85,
+            288.7
+          ],
+          "label": "",
+          "height_m": 0.45,
+          "floor_y": 0
+        },
+        {
+          "kind": "counter",
+          "bounds": [
+            78,
+            279,
+            84,
+            280.2
+          ],
+          "label": "KIT",
+          "height_m": 1.1,
+          "floor_y": 0
+        },
+        {
+          "kind": "locker",
+          "bounds": [
+            63,
+            290,
+            68,
+            290.8
+          ],
+          "label": "",
+          "height_m": 2.2,
+          "floor_y": 0
+        },
+        {
+          "kind": "locker",
+          "bounds": [
+            91,
+            285,
+            91.8,
+            291
+          ],
+          "label": "",
+          "height_m": 2.2,
+          "floor_y": 0
+        }
+      ],
+      "notes": [
+        "A staffed intake sequence, with an optional office.",
+        "Four rooms; clear proportions range from 1.01 to 1.90.",
+        "All occupied ceilings: +3.5 m above the 0 m floor.",
+        "The east entry and southwest exit stay in place.",
+        "New partitions close old gaps; thresholds remain level.",
+        "One south-facing window bay tests a shallow Mars view."
+      ],
+      "foot": "The 52 x 32 m shell remains. Internal openings are 4 m; shell openings remain 6 m.",
+      "window_candidate": {
+        "wall": "south",
+        "span_x": [
+          102,
+          110
+        ],
+        "z": 294,
+        "sill_y": 1,
+        "head_y": 2.8,
+        "type": "shallow non-traversable exterior view"
+      }
+    },
+    "A2": {
+      "title": "INSPECTION / WALL-SIDE DESCENT",
+      "bounds": [
+        8,
+        184,
+        56,
+        242
+      ],
+      "scale": 10.5,
+      "floor": -2,
+      "entry": [
+        44,
+        242
+      ],
+      "exit": [
+        20,
+        184
+      ],
+      "rooms": [
+        [
+          "01",
+          "Circuit control",
+          [
+            8,
+            184,
+            31.875,
+            205.875
+          ],
+          3.5,
+          [
+            20,
+            188
+          ]
+        ],
+        [
+          "02",
+          "Pump test room",
+          [
+            32.125,
+            184,
+            56,
+            205.875
+          ],
+          4.5,
+          [
+            44,
+            202.5
+          ]
+        ],
+        [
+          "03",
+          "Staff preparation",
+          [
+            8,
+            206.125,
+            31.875,
+            223.875
+          ],
+          3.5,
+          [
+            20,
+            209.5
+          ]
+        ],
+        [
+          "04",
+          "Kit store",
+          [
+            8,
+            224.125,
+            31.875,
+            242
+          ],
+          3.5,
+          [
+            20,
+            239.5
+          ]
+        ],
+        [
+          "05",
+          "Inspection work floor",
+          [
+            32.125,
+            206.125,
+            56,
+            232
+          ],
+          4.5,
+          [
+            44,
+            219
+          ]
+        ]
+      ],
+      "walls": [
+        [
+          [
+            32,
+            184
+          ],
+          [
+            32,
+            214
+          ]
+        ],
+        [
+          [
+            32,
+            218
+          ],
+          [
+            32,
+            242
+          ]
+        ],
+        [
+          [
+            8,
+            206
+          ],
+          [
+            18,
+            206
+          ]
+        ],
+        [
+          [
+            22,
+            206
+          ],
+          [
+            42,
+            206
+          ]
+        ],
+        [
+          [
+            46,
+            206
+          ],
+          [
+            56,
+            206
+          ]
+        ],
+        [
+          [
+            8,
+            224
+          ],
+          [
+            18,
+            224
+          ]
+        ],
+        [
+          [
+            22,
+            224
+          ],
+          [
+            32,
+            224
+          ]
+        ]
+      ],
+      "doors": [
+        [
+          "Preparation / control",
+          [
+            20,
+            206
+          ],
+          "z"
+        ],
+        [
+          "Inspection / preparation",
+          [
+            32,
+            216
+          ],
+          "x"
+        ],
+        [
+          "Pump test room",
+          [
+            44,
+            206
+          ],
+          "z"
+        ],
+        [
+          "Kit store",
+          [
+            20,
+            224
+          ],
+          "z"
+        ]
+      ],
+      "route": [
+        [
+          44,
+          242
+        ],
+        [
+          44,
+          236
+        ],
+        [
+          54,
+          236
+        ],
+        [
+          54,
+          230
+        ],
+        [
+          54,
+          226
+        ],
+        [
+          54,
+          223
+        ],
+        [
+          40,
+          223
+        ],
+        [
+          40,
+          216
+        ],
+        [
+          20,
+          216
+        ],
+        [
+          20,
+          184
+        ]
+      ],
+      "optional": [
+        [
+          [
+            44,
+            223
+          ],
+          [
+            44,
+            194
+          ]
+        ],
+        [
+          [
+            20,
+            216
+          ],
+          [
+            20,
+            231
+          ],
+          [
+            17.5,
+            231
+          ]
+        ],
+        [
+          [
+            20,
+            200
+          ],
+          [
+            17.5,
+            200
+          ]
+        ]
+      ],
+      "props": [
+        {
+          "kind": "console",
+          "bounds": [
+            10,
+            185,
+            15,
+            186.2
+          ],
+          "label": "CONTROL",
+          "height_m": 1.1,
+          "floor_y": -2
+        },
+        {
+          "kind": "desk",
+          "bounds": [
+            24,
+            191,
+            26,
+            191.9
+          ],
+          "label": "",
+          "height_m": 0.75,
+          "floor_y": -2
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            24.65,
+            192.3,
+            25.299999999999997,
+            192.95000000000002
+          ],
+          "label": "",
+          "height_m": 0.9,
+          "floor_y": -2
+        },
+        {
+          "kind": "selector",
+          "bounds": [
+            14.6,
+            201.5,
+            17.4,
+            202.5
+          ],
+          "label": "GMa / BcD / Tr1",
+          "height_m": 1.4,
+          "floor_y": -2
+        },
+        {
+          "kind": "pump",
+          "bounds": [
+            36,
+            188,
+            40,
+            191
+          ],
+          "label": "PUMP",
+          "height_m": 2.6,
+          "floor_y": -2
+        },
+        {
+          "kind": "pump",
+          "bounds": [
+            46,
+            196,
+            50,
+            199
+          ],
+          "label": "PUMP",
+          "height_m": 2.6,
+          "floor_y": -2
+        },
+        {
+          "kind": "pipe",
+          "bounds": [
+            53.5,
+            188,
+            55.0,
+            202
+          ],
+          "label": "",
+          "height_m": 3.4,
+          "floor_y": -2
+        },
+        {
+          "kind": "locker",
+          "bounds": [
+            9,
+            209,
+            9.8,
+            220
+          ],
+          "label": "",
+          "height_m": 2.2,
+          "floor_y": -2
+        },
+        {
+          "kind": "bench",
+          "bounds": [
+            12,
+            212,
+            16,
+            212.7
+          ],
+          "label": "",
+          "height_m": 0.45,
+          "floor_y": -2
+        },
+        {
+          "kind": "bench",
+          "bounds": [
+            24,
+            220,
+            29,
+            220.7
+          ],
+          "label": "",
+          "height_m": 0.45,
+          "floor_y": -2
+        },
+        {
+          "kind": "cache",
+          "bounds": [
+            15.4,
+            227.5,
+            16.6,
+            228.5
+          ],
+          "label": "Tr1",
+          "height_m": 1.6,
+          "floor_y": -2
+        },
+        {
+          "kind": "rack",
+          "bounds": [
+            24,
+            237,
+            29,
+            238
+          ],
+          "label": "",
+          "height_m": 2.3,
+          "floor_y": -2
+        },
+        {
+          "kind": "crates",
+          "bounds": [
+            10,
+            235,
+            13,
+            238
+          ],
+          "label": "",
+          "height_m": 1.2,
+          "floor_y": -2
+        },
+        {
+          "kind": "scanner",
+          "bounds": [
+            34,
+            228.5,
+            38,
+            231.5
+          ],
+          "label": "SCAN",
+          "height_m": 2.4,
+          "floor_y": -2
+        },
+        {
+          "kind": "desk",
+          "bounds": [
+            35,
+            209,
+            38,
+            209.9
+          ],
+          "label": "",
+          "height_m": 0.75,
+          "floor_y": -2
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            36,
+            210.3,
+            36.65,
+            210.95000000000002
+          ],
+          "label": "",
+          "height_m": 0.9,
+          "floor_y": -2
+        },
+        {
+          "kind": "bench",
+          "bounds": [
+            48,
+            213,
+            50.4,
+            213.8
+          ],
+          "label": "",
+          "height_m": 0.45,
+          "floor_y": -2
+        },
+        {
+          "kind": "bench",
+          "bounds": [
+            33,
+            237,
+            35.4,
+            237.8
+          ],
+          "label": "",
+          "height_m": 0.45,
+          "floor_y": -2
+        }
+      ],
+      "notes": [
+        "Entry remains at (44,242), floor 0 m. Exit stays -2 m.",
+        "I1 shifts to the east wall: (54,230) to (54,226).",
+        "4 m clear stair width; 0.25 m rise / 0.5 m tread.",
+        "Upper and lower landings each reserve 4 x 2 m.",
+        "A larger upper deck provides the viewing/turning space.",
+        "Selector (16,202) and Tr1 cache (16,228) stay reachable."
+      ],
+      "foot": "Inspection gains a main 24 x 26 m working bay. The platform and stair are circulation, not extra rooms.",
+      "deck": [
+        38,
+        232,
+        56,
+        242,
+        0
+      ],
+      "ceiling_overrides": [
+        {
+          "bounds": [
+            32,
+            206,
+            56,
+            242
+          ],
+          "ceiling_y": 2.5,
+          "reason": "4.5 m clear above the -2 m inspection floor"
+        },
+        {
+          "bounds": [
+            38,
+            224,
+            56,
+            242
+          ],
+          "ceiling_y": 3.5,
+          "reason": "3.5 m clear above the upper entry; carry this roof over the stair and lower landing"
+        }
+      ],
+      "stair": {
+        "start": [
+          54,
+          230
+        ],
+        "end": [
+          54,
+          226
+        ],
+        "width": 4,
+        "floor_start": 0,
+        "floor_end": -2,
+        "upper_landing": [
+          52,
+          230,
+          56,
+          232
+        ],
+        "lower_landing": [
+          52,
+          224,
+          56,
+          226
+        ],
+        "approach_clear": [
+          50,
+          232,
+          56,
+          238
+        ]
+      }
+    },
+    "A8": {
+      "title": "ANNEX / SEPARATED DOORWAYS",
+      "bounds": [
+        65,
+        184,
+        101,
+        242
+      ],
+      "scale": 10.5,
+      "floor": -2,
+      "entry": [
+        85,
+        184
+      ],
+      "rooms": [
+        [
+          "01",
+          "Annex intake",
+          [
+            65,
+            184,
+            101,
+            203.875
+          ],
+          3.5,
+          [
+            82,
+            190
+          ]
+        ],
+        [
+          "02",
+          "Tool workshop",
+          [
+            65,
+            204.125,
+            84.875,
+            242
+          ],
+          4.5,
+          [
+            75,
+            220
+          ]
+        ],
+        [
+          "03",
+          "Service stores",
+          [
+            85.125,
+            204.125,
+            101,
+            222.875
+          ],
+          3.5,
+          [
+            93,
+            211
+          ]
+        ],
+        [
+          "04",
+          "Spare assemblies",
+          [
+            85.125,
+            223.125,
+            101,
+            242
+          ],
+          3.5,
+          [
+            93,
+            237.5
+          ]
+        ]
+      ],
+      "walls": [
+        [
+          [
+            65,
+            204
+          ],
+          [
+            73,
+            204
+          ]
+        ],
+        [
+          [
+            77,
+            204
+          ],
+          [
+            91,
+            204
+          ]
+        ],
+        [
+          [
+            95,
+            204
+          ],
+          [
+            101,
+            204
+          ]
+        ],
+        [
+          [
+            85,
+            204
+          ],
+          [
+            85,
+            212
+          ]
+        ],
+        [
+          [
+            85,
+            216
+          ],
+          [
+            85,
+            231
+          ]
+        ],
+        [
+          [
+            85,
+            235
+          ],
+          [
+            85,
+            242
+          ]
+        ],
+        [
+          [
+            85,
+            223
+          ],
+          [
+            101,
+            223
+          ]
+        ]
+      ],
+      "doors": [
+        [
+          "Workshop",
+          [
+            75,
+            204
+          ],
+          "z"
+        ],
+        [
+          "Stores from intake",
+          [
+            93,
+            204
+          ],
+          "z"
+        ],
+        [
+          "Stores from workshop",
+          [
+            85,
+            214
+          ],
+          "x"
+        ],
+        [
+          "Spare assemblies",
+          [
+            85,
+            233
+          ],
+          "x"
+        ]
+      ],
+      "route": [
+        [
+          85,
+          184
+        ],
+        [
+          85,
+          196
+        ],
+        [
+          75,
+          196
+        ],
+        [
+          75,
+          228
+        ]
+      ],
+      "optional": [
+        [
+          [
+            85,
+            196
+          ],
+          [
+            93,
+            196
+          ],
+          [
+            93,
+            214
+          ],
+          [
+            75,
+            214
+          ]
+        ],
+        [
+          [
+            75,
+            228
+          ],
+          [
+            75,
+            233
+          ],
+          [
+            94,
+            233
+          ]
+        ]
+      ],
+      "props": [
+        {
+          "kind": "bench",
+          "bounds": [
+            68,
+            186,
+            74,
+            187
+          ],
+          "label": "",
+          "height_m": 0.45,
+          "floor_y": -2
+        },
+        {
+          "kind": "cabinet",
+          "bounds": [
+            98,
+            187,
+            99,
+            197
+          ],
+          "label": "",
+          "height_m": 2.1,
+          "floor_y": -2
+        },
+        {
+          "kind": "bench",
+          "bounds": [
+            67,
+            211,
+            71,
+            212
+          ],
+          "label": "",
+          "height_m": 0.45,
+          "floor_y": -2
+        },
+        {
+          "kind": "bench",
+          "bounds": [
+            78,
+            225,
+            82,
+            226
+          ],
+          "label": "",
+          "height_m": 0.45,
+          "floor_y": -2
+        },
+        {
+          "kind": "machine",
+          "bounds": [
+            68,
+            235,
+            70,
+            238
+          ],
+          "label": "LATHE",
+          "height_m": 1.7,
+          "floor_y": -2
+        },
+        {
+          "kind": "rack",
+          "bounds": [
+            78,
+            238,
+            83,
+            239
+          ],
+          "label": "",
+          "height_m": 2.3,
+          "floor_y": -2
+        },
+        {
+          "kind": "rack",
+          "bounds": [
+            86.5,
+            207,
+            90.5,
+            208.2
+          ],
+          "label": "",
+          "height_m": 2.3,
+          "floor_y": -2
+        },
+        {
+          "kind": "rack",
+          "bounds": [
+            96,
+            216,
+            97,
+            220
+          ],
+          "label": "",
+          "height_m": 2.3,
+          "floor_y": -2
+        },
+        {
+          "kind": "machine",
+          "bounds": [
+            89,
+            228.5,
+            93,
+            230.5
+          ],
+          "label": "SPARES",
+          "height_m": 1.7,
+          "floor_y": -2
+        },
+        {
+          "kind": "crates",
+          "bounds": [
+            96,
+            232,
+            99,
+            235
+          ],
+          "label": "",
+          "height_m": 1.2,
+          "floor_y": -2
+        }
+      ],
+      "notes": [
+        "The north connection stays at (85,184), floor -2 m.",
+        "Replace the existing short, offset divider fragments.",
+        "A continuous T-wall has doors set back from its junction.",
+        "Two north openings have 14 m of wall between them.",
+        "Storage doors sit away from intersecting wall corners.",
+        "All four rooms are optional; no new key or reward here."
+      ],
+      "foot": "A8 remains a side branch. The stores loop reconnects within the annex; it bypasses no mission gate."
+    }
+  },
+  "checks": [
+    "A1: rooms within 2:1; 3 m route ribbons clear walls/props; door returns >=1 m; no overlapping furniture",
+    "A2: rooms within 2:1; 3 m route ribbons clear walls/props; door returns >=1 m; no overlapping furniture",
+    "A8: rooms within 2:1; 3 m route ribbons clear walls/props; door returns >=1 m; no overlapping furniture"
+  ],
+  "partition_definition": "Wall centreline segments have butt ends at opening edges; thickness extends only perpendicular to each segment.",
+  "internal_partition_thickness_m": 0.25,
+  "internal_opening_width_m": 4,
+  "internal_clear_opening_height_m": 3.2,
+  "reserved_frame_side_width_m": 0.25,
+  "reserved_route_width_m": 3,
+  "shell_opening_width_m": 6,
+  "scope": "A1, A2 and A8 only; mission dependencies and exterior corridor connections retained",
+  "notes": [
+    "No final enemy or pickup distribution in this drawing.",
+    "Only A2 I1 moved; other stairs remain unchanged.",
+    "A2 upper deck and stair need the higher ceiling envelope shown in section.",
+    "Clear-height transitions must include closed bulkheads and correct stair headroom.",
+    "Paper checks do not establish collision, navigation or camera visibility."
+  ]
+}

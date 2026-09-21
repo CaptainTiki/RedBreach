@@ -1,0 +1,94 @@
+{
+  "status": "PAPER RESERVATIONS ONLY - NO HATCHES OR ENEMIES BUILT",
+  "room": "screening",
+  "design_intent": "Preserve space for bug entry during blockout, before encounter placement. These two candidates share the north service bay; neither is a committed ambush.",
+  "source_layout": "09",
+  "candidates": [
+    {
+      "id": "C1",
+      "surface": "ceiling",
+      "opening_bounds_xz": [
+        88.25,
+        264.1,
+        90.75,
+        266.6
+      ],
+      "surface_height": 3.5,
+      "landing_bounds_xz": [
+        88,
+        263.85,
+        91,
+        266.85
+      ],
+      "exit_route": [
+        [
+          89.5,
+          265.35
+        ],
+        [
+          88,
+          266.25
+        ],
+        [
+          88,
+          268
+        ]
+      ],
+      "notes": [
+        "2.5 x 2.5 m candidate aperture between ribs and lights; reserve 3 x 3 m below",
+        "Reserve a service pocket above the ceiling; validate the actual emergence animation/collider later",
+        "This is a drop candidate; wall/ceiling crawling is still a separate future movement feature"
+      ]
+    },
+    {
+      "id": "W1",
+      "surface": "north wall",
+      "opening_span_x": [
+        89.25,
+        91.75
+      ],
+      "surface_z": 262,
+      "opening_height": [
+        0,
+        2.5
+      ],
+      "landing_bounds_xz": [
+        89,
+        262.125,
+        92,
+        265.125
+      ],
+      "exit_route": [
+        [
+          90.5,
+          263.5
+        ],
+        [
+          89.5,
+          265.35
+        ],
+        [
+          88,
+          266.25
+        ],
+        [
+          88,
+          268
+        ]
+      ],
+      "notes": [
+        "2.5 x 2.5 m candidate aperture in the gap between the cabinet bank and cooling unit",
+        "A backing service pocket must be planned outside the current shell before cutting this wall",
+        "Shares the C1 emergence bay; do not assume both hatches fire together"
+      ]
+    }
+  ],
+  "future_floor_hatches": "Reserve beside through routes, stairs and door landings; avoid making the only retreat route an open pit. No floor hatch is proposed in this compact Screening sample.",
+  "encounter_requirements": [
+    "Directional hatch burst plus distinct nearby ambush screech",
+    "Trigger before line of sight when rear pressure is intended; do not depend on room entry",
+    "Validate enemy-sized opening, staging/landing space and connected navigation, including larger bugs",
+    "Defer occupied emergence; preserve response opportunity, retreat and reset cancellation",
+    "Check above/below/behind space against adjoining rooms and floors before cutting openings"
+  ]
+}

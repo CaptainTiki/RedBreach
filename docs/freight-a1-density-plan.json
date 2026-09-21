@@ -1,0 +1,1657 @@
+{
+  "revision": "F-04",
+  "status": "APPROVED - SCREENING BUILT / ADMIN AND PREP PENDING",
+  "source_layout": "08",
+  "source_map_sha256": "60f09581dbac8628c1f141f1cecc5fd3df5b9bfe006f1045faf481e6500a5baf",
+  "architecture": {
+    "status": "BUILT SCREENING - USER WALKTHROUGH NEXT",
+    "sample": "Screening ribs and upper corners; Screening/Staff Preparation threshold",
+    "rib_stations_z": [
+      263.5,
+      267.25,
+      271,
+      274.75
+    ],
+    "rib_width": 0.25,
+    "rib_projection": 0.25,
+    "rib_underside": 3.25,
+    "rib_corner_intercept": 0.8,
+    "upper_corner": {
+      "rise": 0.55,
+      "projection": 0.55,
+      "starts_at_height": 2.95,
+      "interrupt_at_doorways": true
+    },
+    "threshold": {
+      "centre": [
+        88,
+        276
+      ],
+      "clear_width": 4,
+      "clear_height": 3.2,
+      "frame_outside_width": 5,
+      "depth": 0.5,
+      "side_leg_bounds": [
+        [
+          85.5,
+          275.75,
+          86,
+          276.25
+        ],
+        [
+          90,
+          275.75,
+          90.5,
+          276.25
+        ]
+      ],
+      "door_behaviour": "No new working door in this sample"
+    },
+    "scanner_top": 3.15,
+    "reference": "freight-a1-architecture-section.svg"
+  },
+  "rooms": {
+    "screening": [
+      82.125,
+      262,
+      95.875,
+      275.875
+    ],
+    "admin": [
+      62,
+      262,
+      81.875,
+      275.875
+    ],
+    "prep": [
+      62,
+      276.125,
+      95.875,
+      294
+    ]
+  },
+  "floor": 0,
+  "ceiling": 3.5,
+  "routes": [
+    {
+      "room": "screening",
+      "name": "Main / registration to staff prep",
+      "points": [
+        [
+          96,
+          272
+        ],
+        [
+          88,
+          272
+        ],
+        [
+          88,
+          276
+        ]
+      ],
+      "width": 3,
+      "main": true
+    },
+    {
+      "room": "screening",
+      "name": "Administration branch",
+      "points": [
+        [
+          88,
+          272
+        ],
+        [
+          88,
+          268
+        ],
+        [
+          82,
+          268
+        ]
+      ],
+      "width": 3,
+      "main": false
+    },
+    {
+      "room": "screening",
+      "name": "Observation station",
+      "points": [
+        [
+          88,
+          272
+        ],
+        [
+          84.4,
+          272
+        ]
+      ],
+      "width": 2,
+      "main": false
+    },
+    {
+      "room": "admin",
+      "name": "Office spine",
+      "points": [
+        [
+          82,
+          268
+        ],
+        [
+          65,
+          268
+        ]
+      ],
+      "width": 3,
+      "main": false
+    },
+    {
+      "room": "admin",
+      "name": "Workstation aisle",
+      "points": [
+        [
+          68.8,
+          264.4
+        ],
+        [
+          68.8,
+          273.4
+        ]
+      ],
+      "width": 2,
+      "main": false
+    },
+    {
+      "room": "admin",
+      "name": "Workstation aisle",
+      "points": [
+        [
+          76,
+          264.4
+        ],
+        [
+          76,
+          273.4
+        ]
+      ],
+      "width": 2,
+      "main": false
+    },
+    {
+      "room": "admin",
+      "name": "Archive access",
+      "points": [
+        [
+          76,
+          273
+        ],
+        [
+          79.5,
+          273
+        ]
+      ],
+      "width": 2,
+      "main": false
+    },
+    {
+      "room": "prep",
+      "name": "Main / screening to Inspection",
+      "points": [
+        [
+          88,
+          276
+        ],
+        [
+          88,
+          282
+        ],
+        [
+          74,
+          282
+        ],
+        [
+          74,
+          288
+        ],
+        [
+          62,
+          288
+        ]
+      ],
+      "width": 3,
+      "main": true
+    },
+    {
+      "room": "prep",
+      "name": "Locker and cleaning aisle",
+      "points": [
+        [
+          88,
+          282
+        ],
+        [
+          88,
+          291
+        ],
+        [
+          93,
+          291
+        ]
+      ],
+      "width": 3,
+      "main": false
+    },
+    {
+      "room": "prep",
+      "name": "Repair workbench access",
+      "points": [
+        [
+          88,
+          288.5
+        ],
+        [
+          80,
+          288.5
+        ]
+      ],
+      "width": 2,
+      "main": false
+    },
+    {
+      "room": "prep",
+      "name": "Tool bay access",
+      "points": [
+        [
+          74,
+          282
+        ],
+        [
+          65,
+          282
+        ],
+        [
+          65,
+          285
+        ]
+      ],
+      "width": 2,
+      "main": false
+    }
+  ],
+  "floor_props": [
+    {
+      "room": "screening",
+      "id": "S1a",
+      "name": "Scan arch / north post",
+      "bounds": [
+        90.25,
+        269.75,
+        91.25,
+        270.5
+      ],
+      "bottom": 0,
+      "top": 2.8,
+      "kind": "scanner"
+    },
+    {
+      "room": "screening",
+      "id": "S1b",
+      "name": "Scan arch / south post",
+      "bounds": [
+        90.25,
+        273.5,
+        91.25,
+        274.25
+      ],
+      "bottom": 0,
+      "top": 2.8,
+      "kind": "scanner"
+    },
+    {
+      "room": "screening",
+      "id": "S2",
+      "name": "Baggage scanner and conveyor",
+      "bounds": [
+        90,
+        267.5,
+        95,
+        269.25
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "kind": "scanner"
+    },
+    {
+      "room": "screening",
+      "id": "S3",
+      "name": "Screening operator desk",
+      "bounds": [
+        84.4,
+        264.4,
+        87.2,
+        265.4
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "desk"
+    },
+    {
+      "room": "screening",
+      "id": "s3",
+      "name": "Operator chair",
+      "bounds": [
+        85.5,
+        265.55,
+        86.15,
+        266.2
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "chair"
+    },
+    {
+      "room": "screening",
+      "id": "S4",
+      "name": "Observation / inspection counter",
+      "bounds": [
+        83.8,
+        273.8,
+        85.8,
+        275.2
+      ],
+      "bottom": 0,
+      "top": 1.1,
+      "kind": "desk"
+    },
+    {
+      "room": "screening",
+      "id": "S5",
+      "name": "Personal storage bank",
+      "bounds": [
+        91.5,
+        275.0,
+        95.2,
+        275.75
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "screening",
+      "id": "S6",
+      "name": "Records and equipment storage",
+      "bounds": [
+        83.0,
+        262.25,
+        88.6,
+        263.05
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "screening",
+      "id": "S7",
+      "name": "Scan electronics / cooling",
+      "bounds": [
+        94.1,
+        262.8,
+        95.5,
+        265.7
+      ],
+      "bottom": 0,
+      "top": 2.5,
+      "kind": "service"
+    },
+    {
+      "room": "screening",
+      "id": "S8",
+      "name": "Inspection supply cabinet",
+      "bounds": [
+        82.5,
+        271.4,
+        83.2,
+        275.2
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "screening",
+      "id": "S9",
+      "name": "Wall status display",
+      "bounds": [
+        95.58,
+        268.6,
+        95.8,
+        269.8
+      ],
+      "bottom": 1.1,
+      "top": 2.1,
+      "kind": "display"
+    },
+    {
+      "room": "admin",
+      "id": "A1",
+      "name": "Paired workstations",
+      "bounds": [
+        64,
+        263.6,
+        67,
+        265.4
+      ],
+      "bottom": 0,
+      "top": 0.75,
+      "kind": "desk"
+    },
+    {
+      "room": "admin",
+      "id": "a10",
+      "name": "Desk chair",
+      "bounds": [
+        64.45,
+        265.54999999999995,
+        65.10000000000001,
+        266.19999999999993
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "chair"
+    },
+    {
+      "room": "admin",
+      "id": "a11",
+      "name": "Desk chair",
+      "bounds": [
+        65.7,
+        265.54999999999995,
+        66.35000000000001,
+        266.19999999999993
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "chair"
+    },
+    {
+      "room": "admin",
+      "id": "A2",
+      "name": "Paired workstations",
+      "bounds": [
+        71,
+        263.6,
+        74,
+        265.4
+      ],
+      "bottom": 0,
+      "top": 0.75,
+      "kind": "desk"
+    },
+    {
+      "room": "admin",
+      "id": "a20",
+      "name": "Desk chair",
+      "bounds": [
+        71.45,
+        265.54999999999995,
+        72.10000000000001,
+        266.19999999999993
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "chair"
+    },
+    {
+      "room": "admin",
+      "id": "a21",
+      "name": "Desk chair",
+      "bounds": [
+        72.7,
+        265.54999999999995,
+        73.35000000000001,
+        266.19999999999993
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "chair"
+    },
+    {
+      "room": "admin",
+      "id": "A3",
+      "name": "Paired workstations",
+      "bounds": [
+        78,
+        263.6,
+        80.6,
+        265.2
+      ],
+      "bottom": 0,
+      "top": 0.75,
+      "kind": "desk"
+    },
+    {
+      "room": "admin",
+      "id": "a30",
+      "name": "Desk chair",
+      "bounds": [
+        78.45,
+        265.34999999999997,
+        79.10000000000001,
+        265.99999999999994
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "chair"
+    },
+    {
+      "room": "admin",
+      "id": "a31",
+      "name": "Desk chair",
+      "bounds": [
+        79.7,
+        265.34999999999997,
+        80.35000000000001,
+        265.99999999999994
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "chair"
+    },
+    {
+      "room": "admin",
+      "id": "A4",
+      "name": "Paired workstations",
+      "bounds": [
+        64,
+        270.5,
+        67,
+        272.3
+      ],
+      "bottom": 0,
+      "top": 0.75,
+      "kind": "desk"
+    },
+    {
+      "room": "admin",
+      "id": "a40",
+      "name": "Desk chair",
+      "bounds": [
+        64.45,
+        272.45,
+        65.10000000000001,
+        273.09999999999997
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "chair"
+    },
+    {
+      "room": "admin",
+      "id": "a41",
+      "name": "Desk chair",
+      "bounds": [
+        65.7,
+        272.45,
+        66.35000000000001,
+        273.09999999999997
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "chair"
+    },
+    {
+      "room": "admin",
+      "id": "A5",
+      "name": "Paired workstations",
+      "bounds": [
+        71,
+        270.5,
+        74,
+        272.3
+      ],
+      "bottom": 0,
+      "top": 0.75,
+      "kind": "desk"
+    },
+    {
+      "room": "admin",
+      "id": "a50",
+      "name": "Desk chair",
+      "bounds": [
+        71.45,
+        272.45,
+        72.10000000000001,
+        273.09999999999997
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "chair"
+    },
+    {
+      "room": "admin",
+      "id": "a51",
+      "name": "Desk chair",
+      "bounds": [
+        72.7,
+        272.45,
+        73.35000000000001,
+        273.09999999999997
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "chair"
+    },
+    {
+      "room": "admin",
+      "id": "A6",
+      "name": "West filing cabinets",
+      "bounds": [
+        62.25,
+        262.5,
+        63.15,
+        265.8
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "admin",
+      "id": "A7",
+      "name": "Network cabinet",
+      "bounds": [
+        80.75,
+        262.8,
+        81.55,
+        265.8
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "kind": "service"
+    },
+    {
+      "room": "admin",
+      "id": "A8",
+      "name": "Archive north bank",
+      "bounds": [
+        78.8,
+        270.8,
+        80.8,
+        271.7
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "admin",
+      "id": "A9",
+      "name": "Archive south bank",
+      "bounds": [
+        78.8,
+        274.4,
+        80.8,
+        275.3
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "admin",
+      "id": "A10",
+      "name": "Records wall cabinets",
+      "bounds": [
+        64,
+        274.8,
+        74.2,
+        275.65
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "admin",
+      "id": "A11",
+      "name": "Air handling",
+      "bounds": [
+        62.25,
+        270.5,
+        63.15,
+        273
+      ],
+      "bottom": 0,
+      "top": 2.3,
+      "kind": "service"
+    },
+    {
+      "room": "admin",
+      "id": "A12",
+      "name": "Wall readout",
+      "bounds": [
+        62.13,
+        267,
+        62.4,
+        268.9
+      ],
+      "bottom": 1.1,
+      "top": 2.1,
+      "kind": "display"
+    },
+    {
+      "room": "prep",
+      "id": "P1",
+      "name": "Kit issue counter",
+      "bounds": [
+        76.5,
+        279.1,
+        84.5,
+        280.1
+      ],
+      "bottom": 0,
+      "top": 1.1,
+      "kind": "desk"
+    },
+    {
+      "room": "prep",
+      "id": "P2",
+      "name": "Kit issue storage wall",
+      "bounds": [
+        76.5,
+        276.4,
+        84.8,
+        277.15
+      ],
+      "bottom": 0,
+      "top": 2.3,
+      "kind": "storage"
+    },
+    {
+      "room": "prep",
+      "id": "P3",
+      "name": "Changing / north lockers",
+      "bounds": [
+        90.5,
+        276.4,
+        95.1,
+        277.3
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "prep",
+      "id": "P4",
+      "name": "Changing bench",
+      "bounds": [
+        90.5,
+        279.2,
+        92.5,
+        280
+      ],
+      "bottom": 0,
+      "top": 0.45,
+      "kind": "bench"
+    },
+    {
+      "room": "prep",
+      "id": "P5",
+      "name": "Suit cleaning and air unit",
+      "bounds": [
+        94.5,
+        279,
+        95.55,
+        284.2
+      ],
+      "bottom": 0,
+      "top": 2.5,
+      "kind": "service"
+    },
+    {
+      "room": "prep",
+      "id": "P6",
+      "name": "PPE issue cabinets",
+      "bounds": [
+        90.3,
+        281.2,
+        93,
+        282.7
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "prep",
+      "id": "P7",
+      "name": "Changing bench",
+      "bounds": [
+        90.5,
+        286.2,
+        93,
+        287
+      ],
+      "bottom": 0,
+      "top": 0.45,
+      "kind": "bench"
+    },
+    {
+      "room": "prep",
+      "id": "P8",
+      "name": "East service lockers",
+      "bounds": [
+        94.9,
+        286.3,
+        95.65,
+        289
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "prep",
+      "id": "P9",
+      "name": "South changing lockers",
+      "bounds": [
+        85.1,
+        293.05,
+        94.5,
+        293.8
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "prep",
+      "id": "P10",
+      "name": "Equipment repair bench",
+      "bounds": [
+        78,
+        285.3,
+        83,
+        286.5
+      ],
+      "bottom": 0,
+      "top": 1.0,
+      "kind": "desk"
+    },
+    {
+      "room": "prep",
+      "id": "p10",
+      "name": "Repair stool",
+      "bounds": [
+        79.3,
+        286.7,
+        79.95,
+        287.35
+      ],
+      "bottom": 0,
+      "top": 0.7,
+      "kind": "chair"
+    },
+    {
+      "room": "prep",
+      "id": "P11",
+      "name": "Equipment fitting bench",
+      "bounds": [
+        78.2,
+        290.3,
+        82.4,
+        291
+      ],
+      "bottom": 0,
+      "top": 0.45,
+      "kind": "bench"
+    },
+    {
+      "room": "prep",
+      "id": "P12",
+      "name": "Spare kit lockers",
+      "bounds": [
+        76.5,
+        292.8,
+        84.8,
+        293.8
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "prep",
+      "id": "P13",
+      "name": "Tool cabinets",
+      "bounds": [
+        63,
+        276.8,
+        68,
+        277.8
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "prep",
+      "id": "P14",
+      "name": "Outbound tool check bench",
+      "bounds": [
+        64,
+        279.6,
+        68,
+        280.8
+      ],
+      "bottom": 0,
+      "top": 0.9,
+      "kind": "desk"
+    },
+    {
+      "room": "prep",
+      "id": "P15",
+      "name": "Equipment cart bay",
+      "bounds": [
+        69.5,
+        277,
+        71.8,
+        280.5
+      ],
+      "bottom": 0,
+      "top": 1.4,
+      "kind": "equipment"
+    },
+    {
+      "room": "prep",
+      "id": "P16",
+      "name": "Utility cabinets",
+      "bounds": [
+        62.25,
+        279.7,
+        63.1,
+        284.4
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "service"
+    },
+    {
+      "room": "prep",
+      "id": "P17",
+      "name": "Prepared equipment carts",
+      "bounds": [
+        68.4,
+        284.3,
+        71.3,
+        285.8
+      ],
+      "bottom": 0,
+      "top": 1.2,
+      "kind": "equipment"
+    },
+    {
+      "room": "prep",
+      "id": "P18",
+      "name": "Outbound cases",
+      "bounds": [
+        64,
+        292.6,
+        68.5,
+        293.7
+      ],
+      "bottom": 0,
+      "top": 1.4,
+      "kind": "equipment"
+    },
+    {
+      "room": "prep",
+      "id": "P19",
+      "name": "Tool/supply rack",
+      "bounds": [
+        69.5,
+        290.5,
+        71.8,
+        293.5
+      ],
+      "bottom": 0,
+      "top": 2.2,
+      "kind": "storage"
+    },
+    {
+      "room": "prep",
+      "id": "P20",
+      "name": "Outbound trolley",
+      "bounds": [
+        66,
+        290.5,
+        68.5,
+        291.5
+      ],
+      "bottom": 0,
+      "top": 1.1,
+      "kind": "equipment"
+    },
+    {
+      "room": "prep",
+      "id": "B1",
+      "name": "Equipment backboard / partial bay divider",
+      "bounds": [
+        85.8,
+        284.2,
+        86.1,
+        287.1
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "kind": "backboard"
+    },
+    {
+      "room": "prep",
+      "id": "B2",
+      "name": "Equipment backboard / partial bay divider",
+      "bounds": [
+        85.8,
+        289.9,
+        86.1,
+        292.3
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "kind": "backboard"
+    },
+    {
+      "room": "prep",
+      "id": "B3",
+      "name": "Equipment backboard / partial bay divider",
+      "bounds": [
+        75.75,
+        284.2,
+        76,
+        285.8
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "kind": "backboard"
+    },
+    {
+      "room": "prep",
+      "id": "B4",
+      "name": "Equipment backboard / partial bay divider",
+      "bounds": [
+        75.75,
+        289.9,
+        76,
+        292.3
+      ],
+      "bottom": 0,
+      "top": 2.4,
+      "kind": "backboard"
+    },
+    {
+      "room": "screening",
+      "id": "R1W",
+      "name": "Structural rib / west leg",
+      "bounds": [
+        82.125,
+        263.375,
+        82.375,
+        263.625
+      ],
+      "bottom": 0,
+      "top": 3.25,
+      "kind": "service"
+    },
+    {
+      "room": "screening",
+      "id": "R1E",
+      "name": "Structural rib / east leg",
+      "bounds": [
+        95.625,
+        263.375,
+        95.875,
+        263.625
+      ],
+      "bottom": 0,
+      "top": 3.25,
+      "kind": "service"
+    },
+    {
+      "room": "screening",
+      "id": "R2E",
+      "name": "Structural rib / east leg",
+      "bounds": [
+        95.625,
+        267.125,
+        95.875,
+        267.375
+      ],
+      "bottom": 0,
+      "top": 3.25,
+      "kind": "service"
+    },
+    {
+      "room": "screening",
+      "id": "R3W",
+      "name": "Structural rib / west leg",
+      "bounds": [
+        82.125,
+        270.875,
+        82.375,
+        271.125
+      ],
+      "bottom": 0,
+      "top": 3.25,
+      "kind": "service"
+    },
+    {
+      "room": "screening",
+      "id": "R4W",
+      "name": "Structural rib / west leg",
+      "bounds": [
+        82.125,
+        274.625,
+        82.375,
+        274.875
+      ],
+      "bottom": 0,
+      "top": 3.25,
+      "kind": "service"
+    },
+    {
+      "room": "screening",
+      "id": "R4E",
+      "name": "Structural rib / east leg",
+      "bounds": [
+        95.625,
+        274.625,
+        95.875,
+        274.875
+      ],
+      "bottom": 0,
+      "top": 3.25,
+      "kind": "service"
+    }
+  ],
+  "overhead": [
+    {
+      "room": "screening",
+      "id": "S1h",
+      "name": "Scan arch / overhead",
+      "bounds": [
+        90.25,
+        269.75,
+        91.25,
+        274.25
+      ],
+      "bottom": 2.8,
+      "top": 3.15,
+      "kind": "scanner"
+    },
+    {
+      "room": "screening",
+      "id": "D-S",
+      "name": "Ceiling service trunk",
+      "bounds": [
+        82.875,
+        262.15,
+        95.125,
+        262.75
+      ],
+      "bottom": 2.95,
+      "top": 3.4,
+      "kind": "duct"
+    },
+    {
+      "room": "admin",
+      "id": "D-A",
+      "name": "Ceiling service trunk",
+      "bounds": [
+        62.4,
+        262.15,
+        81.5,
+        262.75
+      ],
+      "bottom": 2.95,
+      "top": 3.4,
+      "kind": "duct"
+    },
+    {
+      "room": "prep",
+      "id": "D-P1",
+      "name": "Ceiling service trunk",
+      "bounds": [
+        62.4,
+        276.25,
+        85,
+        276.85
+      ],
+      "bottom": 2.95,
+      "top": 3.4,
+      "kind": "duct"
+    },
+    {
+      "room": "prep",
+      "id": "D-P2",
+      "name": "Ceiling service trunk",
+      "bounds": [
+        95.0,
+        277,
+        95.6,
+        293.4
+      ],
+      "bottom": 2.95,
+      "top": 3.4,
+      "kind": "duct"
+    },
+    {
+      "room": "screening",
+      "id": "Ls1",
+      "name": "Task light housing",
+      "bounds": [
+        84.4,
+        264.68,
+        86.6,
+        264.92
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "screening",
+      "id": "Ls2",
+      "name": "Task light housing",
+      "bounds": [
+        91.4,
+        267.88,
+        93.6,
+        268.12
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "screening",
+      "id": "Ls3",
+      "name": "Task light housing",
+      "bounds": [
+        91.4,
+        271.88,
+        93.6,
+        272.12
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "screening",
+      "id": "Ls4",
+      "name": "Task light housing",
+      "bounds": [
+        86.4,
+        273.88,
+        88.6,
+        274.12
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "admin",
+      "id": "La1",
+      "name": "Task light housing",
+      "bounds": [
+        64.4,
+        264.38,
+        66.6,
+        264.62
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "admin",
+      "id": "La2",
+      "name": "Task light housing",
+      "bounds": [
+        71.4,
+        264.38,
+        73.6,
+        264.62
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "admin",
+      "id": "La3",
+      "name": "Task light housing",
+      "bounds": [
+        78.10000000000001,
+        264.38,
+        80.3,
+        264.62
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "admin",
+      "id": "La4",
+      "name": "Task light housing",
+      "bounds": [
+        64.4,
+        271.28,
+        66.6,
+        271.52
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "admin",
+      "id": "La5",
+      "name": "Task light housing",
+      "bounds": [
+        71.4,
+        271.28,
+        73.6,
+        271.52
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "admin",
+      "id": "La6",
+      "name": "Task light housing",
+      "bounds": [
+        78.30000000000001,
+        272.88,
+        80.5,
+        273.12
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "prep",
+      "id": "Lp1",
+      "name": "Task light housing",
+      "bounds": [
+        64.4,
+        279.78,
+        66.6,
+        280.02
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "prep",
+      "id": "Lp2",
+      "name": "Task light housing",
+      "bounds": [
+        70.9,
+        283.28,
+        73.1,
+        283.52
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "prep",
+      "id": "Lp3",
+      "name": "Task light housing",
+      "bounds": [
+        79.4,
+        279.48,
+        81.6,
+        279.72
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "prep",
+      "id": "Lp4",
+      "name": "Task light housing",
+      "bounds": [
+        79.4,
+        285.68,
+        81.6,
+        285.92
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "prep",
+      "id": "Lp5",
+      "name": "Task light housing",
+      "bounds": [
+        90.4,
+        278.08,
+        92.6,
+        278.32
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "prep",
+      "id": "Lp6",
+      "name": "Task light housing",
+      "bounds": [
+        90.4,
+        286.58,
+        92.6,
+        286.82
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "prep",
+      "id": "Lp7",
+      "name": "Task light housing",
+      "bounds": [
+        86.7,
+        291.68,
+        88.89999999999999,
+        291.92
+      ],
+      "bottom": 2.95,
+      "top": 3.12,
+      "kind": "light"
+    },
+    {
+      "room": "admin",
+      "id": "T-A",
+      "name": "Ceiling beam",
+      "bounds": [
+        73.9,
+        262.2,
+        74.2,
+        275.7
+      ],
+      "bottom": 3.22,
+      "top": 3.5,
+      "kind": "beam"
+    },
+    {
+      "room": "prep",
+      "id": "T-P1",
+      "name": "Ceiling beam",
+      "bounds": [
+        62.4,
+        284,
+        95.5,
+        284.25
+      ],
+      "bottom": 3.22,
+      "top": 3.5,
+      "kind": "beam"
+    },
+    {
+      "room": "prep",
+      "id": "T-P2",
+      "name": "Ceiling beam",
+      "bounds": [
+        62.4,
+        290,
+        95.5,
+        290.25
+      ],
+      "bottom": 3.22,
+      "top": 3.5,
+      "kind": "beam"
+    },
+    {
+      "room": "screening",
+      "id": "R1H",
+      "name": "Structural rib / ceiling",
+      "bounds": [
+        82.125,
+        263.375,
+        95.875,
+        263.625
+      ],
+      "bottom": 3.25,
+      "top": 3.5,
+      "kind": "beam"
+    },
+    {
+      "room": "screening",
+      "id": "R2H",
+      "name": "Structural rib / ceiling",
+      "bounds": [
+        82.125,
+        267.125,
+        95.875,
+        267.375
+      ],
+      "bottom": 3.25,
+      "top": 3.5,
+      "kind": "beam"
+    },
+    {
+      "room": "screening",
+      "id": "R3H",
+      "name": "Structural rib / ceiling",
+      "bounds": [
+        82.125,
+        270.875,
+        95.875,
+        271.125
+      ],
+      "bottom": 3.25,
+      "top": 3.5,
+      "kind": "beam"
+    },
+    {
+      "room": "screening",
+      "id": "R4H",
+      "name": "Structural rib / ceiling",
+      "bounds": [
+        82.125,
+        274.625,
+        95.875,
+        274.875
+      ],
+      "bottom": 3.25,
+      "top": 3.5,
+      "kind": "beam"
+    }
+  ],
+  "checks": [
+    "Three-metre main/through routes clear every floor prop and backboard",
+    "Two-metre staff/working aisles clear the drawn floor props",
+    "All new footprints fit their existing rooms and do not overlap",
+    "Scan arch reserves 3.0 m clear width and 2.8 m clear height",
+    "Floors stay at 0 m and ceiling slabs at 3.5 m; ribs leave 3.25 m and the threshold 3.2 m clear"
+  ],
+  "replace": "Earlier F01 furnishings inside these three rooms only",
+  "preserve": [
+    "Registration and exterior view",
+    "existing room shells and openings",
+    "main mission route and optional Administration visit",
+    "keys, gates and accepted level length",
+    "movement settings"
+  ],
+  "references": [
+    "references/doom3-administration/registration.png",
+    "references/doom3-administration/work-area.png",
+    "references/doom3-administration/return-catwalk.png"
+  ],
+  "notes": [
+    "Monitors, handles and tray boxes belong to their desk/equipment assemblies; do not scatter floor clutter",
+    "Scanning and suit-cleaning equipment are visual blockout props, not new interaction mechanics",
+    "Orange ribbons in this drawing reserve clearance; all these floors are level",
+    "Enemy and broader pickup placement remain a later pass"
+  ],
+  "built_layout": "09",
+  "built_rooms": [
+    "screening"
+  ],
+  "pending_rooms": [
+    "admin",
+    "prep"
+  ],
+  "validation": {
+    "freight_checks": 217,
+    "greybox_checks": 9,
+    "failures": 0,
+    "brushes": 1221,
+    "metric_triangles": 14276,
+    "screening_prop_assemblies": 15,
+    "screening_visual_blocks": 109,
+    "light_sources": 4,
+    "source_map_sha256": "d991a1c705f8a4584dbfad2757e8a42166cc6a5c8323ef5dcb62a324d6edd5ae",
+    "saved_scene_sha256": "d180c98472719581f14f6adcd0ffdbad625f61666777a69b2bc9c5b74e678a55",
+    "registration_scene_unchanged": true,
+    "captures": [
+      "freight-screening-entry.png",
+      "freight-screening-built.png"
+    ],
+    "subjective_review": "User walkthrough: looking good, minor issues, no major blocker. Duct flicker fixed; hatch reservations now part of room planning.",
+    "duct_followup": {
+      "asset": "res://props/blockout/f04/d-s.tscn",
+      "sha256": "94c412b120cbe3658807d9f22b41cc67e325b6fb5d5ed98194cb20c83268864f",
+      "panel_back_gap_m": 0.01,
+      "panel_front_separation_m": 0.035,
+      "checked_panels": 8,
+      "collision_unchanged": true,
+      "rendered_views": 3,
+      "full_suite_rerun": false,
+      "reason": "Visual-only housing adjustment; map and collision unchanged"
+    },
+    "prior_layout_09_fingerprint": {
+      "source_map_sha256": "3a59c37ed6f85e7832029802a808c18671408475217a0ad0a3d797e89756a717",
+      "saved_scene_sha256": "6f45ee78b5efd15cad34ff1904ab36b0ebaf11766755bc59f43bffb8cb5c0604",
+      "brushes": 1229,
+      "metric_triangles": 14372
+    },
+    "validated_layout_revision": "10"
+  }
+}

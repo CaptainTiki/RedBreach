@@ -7,6 +7,7 @@ ROOT=Path(__file__).resolve().parents[1];P=ROOT/'RedBreach'
 MAP=P/'maps/freight_01.map'
 if MAP.exists() and '--overwrite' not in sys.argv:raise SystemExit('Map already exists. Edit it in TrenchBroom, or explicitly pass --overwrite to regenerate.')
 m=json.loads((ROOT/'docs/freight-blockout-layout.json').read_text())
+if str(m.get('revision',m.get('blockout_revision'))) != '04':raise SystemExit('Historical revision-04 bootstrap only. Edit the authoritative map; use the reviewed A-01 record for current interiors.')
 rooms=m['rooms'];edges=m['edges'];heights=m['floor_heights'];stairs=m['stair_flights']
 # Half-metre plan cells merge into ordinary rectangular Valve 220 brushes.
 cells={};ceilings={}

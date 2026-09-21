@@ -1,0 +1,44 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://props/blockout/materials/registration_fixture.tres" id="1_ynw31"]
+[ext_resource type="Material" path="res://props/blockout/f02/lamp.tres" id="2_emy6b"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hme55"]
+size = Vector3(2.2, 0.14, 0.24)
+
+[sub_resource type="BoxMesh" id="BoxMesh_po0ql"]
+size = Vector3(2.0200002, 0.03, 0.18999998)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_740w7"]
+size = Vector3(2.2, 0.14, 0.24)
+
+[node name="BlockoutProp" type="Node3D" unique_id=1440193608]
+metadata/kind = "light housing"
+metadata/dimensions_m = Vector3(2.2, 0.17, 0.24)
+
+[node name="Visual" type="Node3D" parent="." unique_id=562412818]
+
+[node name="FixtureHousing" type="MeshInstance3D" parent="Visual" unique_id=1598413617]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0.1, 0.12)
+material_override = ExtResource("1_ynw31")
+mesh = SubResource("BoxMesh_hme55")
+
+[node name="FixtureDiffuser" type="MeshInstance3D" parent="Visual" unique_id=1305841945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0.015, 0.12)
+material_override = ExtResource("2_emy6b")
+mesh = SubResource("BoxMesh_po0ql")
+
+[node name="Lights" type="Node3D" parent="." unique_id=674957906]
+
+[node name="FixtureLight" type="OmniLight3D" parent="Lights" unique_id=1819004535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, -0.2, 0.12)
+light_color = Color(1, 0.88, 0.68, 1)
+light_energy = 1.35
+omni_range = 10.0
+omni_attenuation = 1.1
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=930645602]
+
+[node name="FixtureHousing" type="CollisionShape3D" parent="Collision" unique_id=667388415]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0.1, 0.12)
+shape = SubResource("BoxShape3D_740w7")

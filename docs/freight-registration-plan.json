@@ -1,0 +1,797 @@
+{
+  "revision": "F-02",
+  "status": "BUILT - APPROVED F-02 / LAYOUT 07",
+  "built_layout": "07",
+  "baseline_layout": "06",
+  "baseline_map_sha256": "d52b1691839324628b713be998456d5393febba39741fdee319a1b89c899f446",
+  "bounds": [
+    96.125,
+    262,
+    114,
+    294
+  ],
+  "ceiling": 3.5,
+  "rooms": [
+    [
+      "01",
+      "Arrival / registration front",
+      [
+        96.125,
+        262,
+        114,
+        275.875
+      ]
+    ],
+    [
+      "02",
+      "Waiting bay",
+      [
+        96.125,
+        276.125,
+        105.875,
+        283.875
+      ]
+    ],
+    [
+      "03",
+      "Registration staff bay",
+      [
+        106.125,
+        276.125,
+        114,
+        283.875
+      ]
+    ],
+    [
+      "04",
+      "Window lounge",
+      [
+        96.125,
+        284.125,
+        114,
+        294
+      ]
+    ]
+  ],
+  "walls": [
+    [
+      [
+        96.125,
+        276
+      ],
+      [
+        98,
+        276
+      ]
+    ],
+    [
+      [
+        102,
+        276
+      ],
+      [
+        106,
+        276
+      ]
+    ],
+    [
+      [
+        106,
+        276
+      ],
+      [
+        106,
+        278
+      ]
+    ],
+    [
+      [
+        106,
+        282
+      ],
+      [
+        106,
+        284
+      ]
+    ],
+    [
+      [
+        96.125,
+        284
+      ],
+      [
+        98,
+        284
+      ]
+    ],
+    [
+      [
+        102,
+        284
+      ],
+      [
+        114,
+        284
+      ]
+    ]
+  ],
+  "main_route": [
+    [
+      114,
+      270
+    ],
+    [
+      104,
+      270
+    ],
+    [
+      104,
+      272
+    ],
+    [
+      96,
+      272
+    ]
+  ],
+  "optional_routes": [
+    [
+      [
+        104,
+        272
+      ],
+      [
+        100,
+        272
+      ],
+      [
+        100,
+        290
+      ],
+      [
+        106,
+        290
+      ]
+    ],
+    [
+      [
+        100,
+        280
+      ],
+      [
+        109,
+        280
+      ]
+    ],
+    [
+      [
+        104,
+        272
+      ],
+      [
+        109,
+        272
+      ],
+      [
+        109,
+        274.5
+      ]
+    ]
+  ],
+  "floor_objects": [
+    {
+      "id": "E1",
+      "kind": "equipment cabinets",
+      "bounds": [
+        97,
+        262.3,
+        101,
+        263.3
+      ],
+      "height": 2.4,
+      "group": "entry",
+      "floor": 0
+    },
+    {
+      "id": "E2",
+      "kind": "wall cabinets",
+      "bounds": [
+        105,
+        262.3,
+        110,
+        263.3
+      ],
+      "height": 2.4,
+      "group": "entry",
+      "floor": 0
+    },
+    {
+      "id": "E3",
+      "kind": "information kiosk",
+      "bounds": [
+        97,
+        265,
+        99,
+        266.4
+      ],
+      "height": 1.5,
+      "group": "entry",
+      "floor": 0
+    },
+    {
+      "id": "E4",
+      "kind": "check terminal",
+      "bounds": [
+        103,
+        265,
+        105,
+        266
+      ],
+      "height": 1.2,
+      "group": "entry",
+      "floor": 0
+    },
+    {
+      "id": "E5",
+      "kind": "equipment housing",
+      "bounds": [
+        111.6,
+        263.5,
+        113.4,
+        265.5
+      ],
+      "height": 2.4,
+      "group": "entry",
+      "floor": 0
+    },
+    {
+      "id": "R1",
+      "kind": "registration counter front",
+      "bounds": [
+        106.125,
+        276.4,
+        113.5,
+        277.4
+      ],
+      "height": 1.1,
+      "group": "registration",
+      "floor": 0
+    },
+    {
+      "id": "R2",
+      "kind": "counter return",
+      "bounds": [
+        106.125,
+        277.4,
+        107.125,
+        277.8
+      ],
+      "height": 1.1,
+      "group": "registration",
+      "floor": 0
+    },
+    {
+      "id": "R3",
+      "kind": "counter return",
+      "bounds": [
+        112.5,
+        277.4,
+        113.5,
+        280.5
+      ],
+      "height": 1.1,
+      "group": "registration",
+      "floor": 0
+    },
+    {
+      "id": "R4",
+      "kind": "staff chair",
+      "bounds": [
+        108,
+        277.65,
+        108.65,
+        278.3
+      ],
+      "height": 0.9,
+      "group": "registration",
+      "floor": 0
+    },
+    {
+      "id": "R5",
+      "kind": "staff chair",
+      "bounds": [
+        110.6,
+        277.65,
+        111.25,
+        278.3
+      ],
+      "height": 0.9,
+      "group": "registration",
+      "floor": 0
+    },
+    {
+      "id": "R6",
+      "kind": "staff back counter",
+      "bounds": [
+        107.4,
+        282.7,
+        112.9,
+        283.8
+      ],
+      "height": 1.1,
+      "group": "registration",
+      "floor": 0
+    },
+    {
+      "id": "R7",
+      "kind": "supply cabinet",
+      "bounds": [
+        112.95,
+        280.8,
+        113.75,
+        283.8
+      ],
+      "height": 2.2,
+      "group": "registration",
+      "floor": 0
+    },
+    {
+      "id": "W1",
+      "kind": "waiting seats",
+      "bounds": [
+        96.8,
+        276.6,
+        97.6,
+        281.2
+      ],
+      "height": 0.9,
+      "group": "waiting",
+      "floor": 0
+    },
+    {
+      "id": "W2",
+      "kind": "queue rail",
+      "bounds": [
+        102.7,
+        276.6,
+        102.8,
+        277.8
+      ],
+      "height": 1.1,
+      "group": "waiting",
+      "floor": 0
+    },
+    {
+      "id": "W3",
+      "kind": "service cabinet",
+      "bounds": [
+        102.6,
+        282.65,
+        105.6,
+        283.7
+      ],
+      "height": 2.2,
+      "group": "waiting",
+      "floor": 0
+    },
+    {
+      "id": "L1",
+      "kind": "lounge seats",
+      "bounds": [
+        96.8,
+        286,
+        97.6,
+        291.2
+      ],
+      "height": 0.9,
+      "group": "lounge",
+      "floor": 0
+    },
+    {
+      "id": "L2",
+      "kind": "lounge seats",
+      "bounds": [
+        104,
+        284.7,
+        108,
+        285.5
+      ],
+      "height": 0.9,
+      "group": "lounge",
+      "floor": 0
+    },
+    {
+      "id": "L3",
+      "kind": "lounge seats",
+      "bounds": [
+        112.8,
+        286,
+        113.6,
+        289.8
+      ],
+      "height": 0.9,
+      "group": "lounge",
+      "floor": 0
+    },
+    {
+      "id": "L4",
+      "kind": "low table",
+      "bounds": [
+        109,
+        288,
+        110.2,
+        289.2
+      ],
+      "height": 0.5,
+      "group": "lounge",
+      "floor": 0
+    },
+    {
+      "id": "L5",
+      "kind": "supply vending placeholder",
+      "bounds": [
+        111.2,
+        291.2,
+        112.6,
+        292.3
+      ],
+      "height": 2,
+      "group": "lounge",
+      "floor": 0
+    },
+    {
+      "id": "L6",
+      "kind": "wall service housing",
+      "bounds": [
+        98.5,
+        292.9,
+        100.3,
+        293.7
+      ],
+      "height": 2.2,
+      "group": "lounge",
+      "floor": 0
+    },
+    {
+      "id": "U1",
+      "kind": "structural upright",
+      "bounds": [
+        96.2,
+        267,
+        96.52,
+        267.65
+      ],
+      "height": 3.5,
+      "group": "architecture",
+      "floor": 0
+    },
+    {
+      "id": "U2",
+      "kind": "structural upright",
+      "bounds": [
+        113.55,
+        275,
+        113.86999999999999,
+        275.65
+      ],
+      "height": 3.5,
+      "group": "architecture",
+      "floor": 0
+    },
+    {
+      "id": "U3",
+      "kind": "structural upright",
+      "bounds": [
+        96.2,
+        283,
+        96.52,
+        283.65
+      ],
+      "height": 3.5,
+      "group": "architecture",
+      "floor": 0
+    },
+    {
+      "id": "U4",
+      "kind": "structural upright",
+      "bounds": [
+        113.55,
+        290,
+        113.86999999999999,
+        290.65
+      ],
+      "height": 3.5,
+      "group": "architecture",
+      "floor": 0
+    },
+    {
+      "id": "U5",
+      "kind": "structural upright",
+      "bounds": [
+        101.4,
+        262.15,
+        101.72,
+        262.79999999999995
+      ],
+      "height": 3.5,
+      "group": "architecture",
+      "floor": 0
+    },
+    {
+      "id": "U6",
+      "kind": "structural upright",
+      "bounds": [
+        110.4,
+        262.15,
+        110.72,
+        262.79999999999995
+      ],
+      "height": 3.5,
+      "group": "architecture",
+      "floor": 0
+    }
+  ],
+  "overhead_objects": [
+    {
+      "id": "H1",
+      "kind": "registration canopy",
+      "bounds": [
+        106.25,
+        275.75,
+        113.75,
+        278.4
+      ],
+      "bottom": 2.7,
+      "top": 3.35
+    },
+    {
+      "id": "H2",
+      "kind": "north service trunk",
+      "bounds": [
+        96.6,
+        262.6,
+        113.4,
+        263.4
+      ],
+      "bottom": 3.05,
+      "top": 3.45
+    },
+    {
+      "id": "H3",
+      "kind": "waiting service trunk",
+      "bounds": [
+        96.4,
+        274.5,
+        97.1,
+        283.4
+      ],
+      "bottom": 3.05,
+      "top": 3.45
+    },
+    {
+      "id": "H4",
+      "kind": "lounge service trunk",
+      "bounds": [
+        96.6,
+        292.4,
+        113.4,
+        293.1
+      ],
+      "bottom": 3.05,
+      "top": 3.45
+    },
+    {
+      "id": "B1",
+      "kind": "beam",
+      "bounds": [
+        96.45,
+        267,
+        113.65,
+        267.28
+      ],
+      "bottom": 3.25,
+      "top": 3.5
+    },
+    {
+      "id": "B2",
+      "kind": "beam",
+      "bounds": [
+        96.45,
+        271.5,
+        113.65,
+        271.78
+      ],
+      "bottom": 3.25,
+      "top": 3.5
+    },
+    {
+      "id": "B3",
+      "kind": "beam",
+      "bounds": [
+        96.45,
+        287,
+        113.65,
+        287.28
+      ],
+      "bottom": 3.25,
+      "top": 3.5
+    },
+    {
+      "id": "F1",
+      "kind": "light housing",
+      "bounds": [
+        100,
+        264.5,
+        102.2,
+        264.74
+      ],
+      "bottom": 2.95,
+      "top": 3.12
+    },
+    {
+      "id": "F2",
+      "kind": "light housing",
+      "bounds": [
+        107,
+        267.8,
+        109.2,
+        268.04
+      ],
+      "bottom": 2.95,
+      "top": 3.12
+    },
+    {
+      "id": "F3",
+      "kind": "light housing",
+      "bounds": [
+        109,
+        276.15,
+        111.2,
+        276.39
+      ],
+      "bottom": 2.55,
+      "top": 2.7
+    },
+    {
+      "id": "F4",
+      "kind": "light housing",
+      "bounds": [
+        109,
+        277.8,
+        111.2,
+        278.04
+      ],
+      "bottom": 2.55,
+      "top": 2.7
+    },
+    {
+      "id": "F5",
+      "kind": "light housing",
+      "bounds": [
+        99.2,
+        279,
+        101.4,
+        279.24
+      ],
+      "bottom": 2.95,
+      "top": 3.12
+    },
+    {
+      "id": "F6",
+      "kind": "light housing",
+      "bounds": [
+        109.2,
+        281.5,
+        111.4,
+        281.74
+      ],
+      "bottom": 2.95,
+      "top": 3.12
+    },
+    {
+      "id": "F7",
+      "kind": "light housing",
+      "bounds": [
+        101,
+        287.5,
+        103.2,
+        287.74
+      ],
+      "bottom": 2.95,
+      "top": 3.12
+    },
+    {
+      "id": "F8",
+      "kind": "light housing",
+      "bounds": [
+        108,
+        291.5,
+        110.2,
+        291.74
+      ],
+      "bottom": 2.95,
+      "top": 3.12
+    }
+  ],
+  "detail_blocks": [
+    {
+      "kind": "counter monitor",
+      "bounds": [
+        107.6,
+        276.6,
+        108.5,
+        276.85
+      ],
+      "bottom": 1.1,
+      "top": 1.65
+    },
+    {
+      "kind": "counter monitor",
+      "bounds": [
+        110.4,
+        276.6,
+        111.3,
+        276.85
+      ],
+      "bottom": 1.1,
+      "top": 1.65
+    },
+    {
+      "kind": "registration sign",
+      "bounds": [
+        108,
+        275.8,
+        111.5,
+        276.0
+      ],
+      "bottom": 2.1,
+      "top": 2.6
+    },
+    {
+      "kind": "noticeboard",
+      "bounds": [
+        102.5,
+        283.9,
+        105.2,
+        284.02
+      ],
+      "bottom": 1.1,
+      "top": 2.1
+    }
+  ],
+  "candidate_items": [
+    {
+      "at": [
+        108.1,
+        282.8
+      ],
+      "intent": "possible optional pickup on staff back counter; no item type/count assigned"
+    },
+    {
+      "at": [
+        111.6,
+        291.7
+      ],
+      "intent": "possible cabinet pickup in window lounge; no item type/count assigned"
+    }
+  ],
+  "checks": [
+    "Arrival / registration front: ratio 1.29",
+    "Waiting bay: ratio 1.26",
+    "Registration staff bay: ratio 1.02",
+    "Window lounge: ratio 1.81",
+    "All drawn floor paths reserve 3 m clear ribbons through 4 m new openings.",
+    "Floor-object bounds and separation checked; at least 1 m wall return beyond the screening frame."
+  ],
+  "unchanged": [
+    "shell portals",
+    "main A1 route",
+    "screening/office/staff-prep rooms",
+    "A2/A8 and other departments",
+    "keys and gates"
+  ],
+  "notes": [
+    "Cuboid silhouette/placement pass only. No fine paneling, final art or populated encounters.",
+    "All four functional bays retain floor 0 and ceiling 3.5 m; canopies/services create local lower overhead planes.",
+    "No return catwalk is added in this proposal; record it as a later route-planning principle."
+  ]
+}

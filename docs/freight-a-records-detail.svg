@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1160" viewBox="0 0 1840 1160"><title>A3 + A7 / RECORDS AND SUPERVISOR</title><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#29404d" stroke-width=".7"/></pattern>
+<marker id="route" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#7bddc2"/></marker>
+<marker id="upper" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#c5a7ff"/></marker>
+<marker id="stair" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#ffce74"/></marker>
+</defs>
+<rect width="1840" height="1160" fill="#101d28"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="40" y="54" font-size="30" fill="#e1ebf0" font-weight="700" text-anchor="start">A3 + A7 / RECORDS AND SUPERVISOR</text>
+<text x="40" y="91" font-size="19" fill="#a6bdcc" font-weight="400" text-anchor="start">BUILT A-01 / BLOCKOUT 05   /   Same X-Z alignment in both panels   /   Lower archive + upstairs card visit</text>
+<rect x="35" y="125" width="865" height="960" fill="#172b39" stroke="#29404d" stroke-width="2"/>
+<text x="57" y="162" font-size="23" fill="#e1ebf0" font-weight="700" text-anchor="start">LOWER / A3 archive at 0 m</text>
+<rect x="925" y="125" width="880" height="960" fill="#172b39" stroke="#29404d" stroke-width="2"/>
+<text x="947" y="162" font-size="23" fill="#e1ebf0" font-weight="700" text-anchor="start">UPPER / walkway and A7 at +4 m</text>
+<rect x="135" y="720" width="448" height="252" fill="#304039" stroke="#e5cf9b" stroke-width="2"/>
+<polyline points="485,720 485,916" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="317,790 317,902" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="583,881 583,923" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="674,846 625,846 625,902 583,902" fill="none" stroke="#7bddc2" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="583,902 499,902 499,944 373,944 373,874 401,874 401,846" fill="none" stroke="#7bddc2" stroke-width="3" stroke-linejoin="round" marker-end="url(#route)"/>
+<rect x="135" y="720" width="448" height="56" fill="none" stroke="#c5a7ff" stroke-width="1.5" stroke-dasharray="5 5"/>
+<rect x="135" y="776" width="252" height="14" fill="none" stroke="#c5a7ff" stroke-width="1.5" stroke-dasharray="5 5"/>
+<rect x="415" y="776" width="168" height="14" fill="none" stroke="#c5a7ff" stroke-width="1.5" stroke-dasharray="5 5"/>
+<rect x="513" y="790" width="70" height="140" fill="none" stroke="#c5a7ff" stroke-width="1.5" stroke-dasharray="5 5"/>
+<polyline points="415,846 387,846" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,842.5 387,842.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,839 387,839" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,835.5 387,835.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,832 387,832" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,828.5 387,828.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,825 387,825" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,821.5 387,821.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,818 387,818" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="401,846 401,818" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<polyline points="415,804 387,804" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,800.5 387,800.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,797 387,797" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,793.5 387,793.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,790 387,790" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,786.5 387,786.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,783 387,783" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,779.5 387,779.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="415,776 387,776" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="401,804 401,776" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<text x="184" y="895" font-size="18" fill="#e1ebf0" font-weight="700" text-anchor="start">ARCHIVE</text>
+<text x="170" y="951" font-size="16" fill="#ffce74" font-weight="400" text-anchor="start">0 m</text>
+<text x="415" y="860" font-size="16" fill="#ffce74" font-weight="700" text-anchor="start">R1</text>
+<circle cx="359" cy="979" r="15" fill="#ff9986" stroke="#101d28" stroke-width="2"/>
+<text x="359" y="984" font-size="15" fill="#101d28" font-weight="700" text-anchor="middle">1</text>
+<text x="415" y="1007" font-size="15" fill="#ff9986" font-weight="400" text-anchor="start">Fixed sealed door</text>
+<text x="68" y="220" font-size="20" fill="#e1ebf0" font-weight="400" text-anchor="start">1  Enter at the southeast corner, under the upper walkway.</text>
+<text x="68" y="257" font-size="20" fill="#e1ebf0" font-weight="400" text-anchor="start">2  The archive partition turns you around its south end.</text>
+<text x="68" y="294" font-size="20" fill="#e1ebf0" font-weight="400" text-anchor="start">3  Climb two flights to the north walkway (+4 m).</text>
+<text x="68" y="331" font-size="20" fill="#e1ebf0" font-weight="400" text-anchor="start">4  Follow the offset corridor to A7; collect R in its office.</text>
+<text x="68" y="368" font-size="20" fill="#e1ebf0" font-weight="400" text-anchor="start">5  Retrace the stairs and leave toward door 2.</text>
+<text x="78" y="440" font-size="20" fill="#e1ebf0" font-weight="700" text-anchor="start">SECTION / usable upper floor above the archive</text>
+<polyline points="78,555 828,555" fill="none" stroke="#29404d" stroke-width="1" stroke-linejoin="round" stroke-dasharray="4 4"/>
+<polyline points="108,555 338,533 568,511 798,511" fill="none" stroke="#ffce74" stroke-width="3" stroke-linejoin="round"/>
+<text x="108" y="543" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+0 m</text>
+<text x="108" y="583" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">Archive</text>
+<text x="338" y="521" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+2 m</text>
+<text x="338" y="583" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">Landing</text>
+<text x="568" y="499" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+4 m</text>
+<text x="568" y="583" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">Walkway</text>
+<text x="798" y="499" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+4 m</text>
+<text x="798" y="583" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">A7 / R</text>
+<text x="78" y="650" font-size="17" fill="#a6bdcc" font-weight="400" text-anchor="start">Upper deck: +4 m; underside at least 3.6 m above archive.</text>
+<text x="78" y="677" font-size="17" fill="#a6bdcc" font-weight="400" text-anchor="start">Archive ceiling: +8 m. A7 ceiling at +10 m.</text>
+<text x="78" y="704" font-size="17" fill="#a6bdcc" font-weight="400" text-anchor="start">Full-height archive partitions meet the deck where it overlaps.</text>
+<rect x="1025" y="720" width="448" height="252" fill="#11212c" stroke="#a6bdcc" stroke-width="1.5" stroke-dasharray="5 5"/>
+<rect x="1025" y="720" width="448" height="56" fill="#403953" stroke="#c5a7ff" stroke-width="2"/>
+<rect x="1025" y="776" width="252" height="14" fill="#403953" stroke="#c5a7ff" stroke-width="2"/>
+<rect x="1305" y="776" width="168" height="14" fill="#403953" stroke="#c5a7ff" stroke-width="2"/>
+<rect x="1403" y="790" width="70" height="140" fill="#403953" stroke="#c5a7ff" stroke-width="2"/>
+<rect x="1039" y="237" width="280" height="280" fill="#403953" stroke="#e5cf9b" stroke-width="2"/>
+<polyline points="1039,391 1151,391" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="1179,391 1319,391" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="1109,720 1151,720" fill="none" stroke="#c5a7ff" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="1207,517 1249,517" fill="none" stroke="#c5a7ff" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="1130,720 1130,636 1228,636 1228,517" fill="none" stroke="#c5a7ff" stroke-width="42" stroke-linejoin="round"/>
+<polyline points="1130,720 1130,636 1228,636 1228,517" fill="none" stroke="#11212c" stroke-width="39" stroke-linejoin="round"/>
+<polyline points="1130,720 1130,636 1228,636 1228,517" fill="none" stroke="#c5a7ff" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1291,776 1291,762 1130,762 1130,720" fill="none" stroke="#c5a7ff" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1228,517 1228,433 1165,433 1165,349 1102,349 1102,307" fill="none" stroke="#c5a7ff" stroke-width="3" stroke-linejoin="round" marker-end="url(#upper)"/>
+<polyline points="1305,846 1277,846" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,842.5 1277,842.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,839 1277,839" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,835.5 1277,835.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,832 1277,832" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,828.5 1277,828.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,825 1277,825" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,821.5 1277,821.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,818 1277,818" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1291,846 1291,818" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<polyline points="1305,804 1277,804" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,800.5 1277,800.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,797 1277,797" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,793.5 1277,793.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,790 1277,790" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,786.5 1277,786.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,783 1277,783" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,779.5 1277,779.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1305,776 1277,776" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="1291,804 1291,776" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<circle cx="1102" cy="307" r="15" fill="#ffce74" stroke="#101d28" stroke-width="2"/>
+<text x="1102" y="312" font-size="15" fill="#101d28" font-weight="700" text-anchor="middle">R</text>
+<text x="1200" y="293" font-size="17" fill="#e1ebf0" font-weight="700" text-anchor="start">SUPERVISOR</text>
+<text x="1193" y="335" font-size="16" fill="#ffce74" font-weight="400" text-anchor="start">+4 m</text>
+<text x="1053" y="475" font-size="16" fill="#a6bdcc" font-weight="400" text-anchor="start">ADMIN / WAITING</text>
+<text x="1228" y="587" font-size="15" fill="#c5a7ff" font-weight="400" text-anchor="start">+4 m passage</text>
+<text x="1046" y="755" font-size="14" fill="#c5a7ff" font-weight="700" text-anchor="start">UPPER WALKWAY</text>
+<text x="1067" y="909" font-size="16" fill="#a6bdcc" font-weight="400" text-anchor="start">OPEN TO ARCHIVE BELOW</text>
+<text x="1319" y="839" font-size="16" fill="#ffce74" font-weight="700" text-anchor="start">R1</text>
+<text x="40" y="1120" font-size="20" fill="#a6bdcc" font-weight="400" text-anchor="start">No new lock. R remains in A7 and opens door 2. The upstairs visit is reversible; no mandatory jump or drop.</text>
+</g></svg>

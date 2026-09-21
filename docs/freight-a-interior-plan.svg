@@ -1,0 +1,323 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1960" height="1510" viewBox="0 0 1960 1510"><title>RED BREACH / A LOOP INTERIORS</title><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#29404d" stroke-width=".7"/></pattern>
+<marker id="route" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#7bddc2"/></marker>
+<marker id="upper" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#c5a7ff"/></marker>
+<marker id="stair" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#ffce74"/></marker>
+</defs>
+<rect width="1960" height="1510" fill="#101d28"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="40" y="54" font-size="30" fill="#e1ebf0" font-weight="700" text-anchor="start">RED BREACH / A LOOP INTERIORS</text>
+<text x="40" y="91" font-size="19" fill="#a6bdcc" font-weight="400" text-anchor="start">BUILT A-01 / BLOCKOUT 05   /   Existing footprint, revised interiors and doorway positions</text>
+<rect x="35" y="125" width="1035" height="1320" fill="#172b39" stroke="#29404d" stroke-width="2"/>
+<text x="57" y="162" font-size="23" fill="#e1ebf0" font-weight="700" text-anchor="start">A / SECURITY ROUTE</text>
+<polyline points="920,1215 920,1179 659,1179 659,1260 578,1260" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="920,1215 920,1179 659,1179 659,1260 578,1260" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="344,1341 263,1341 263,1134" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="344,1341 263,1341 263,1134" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="155,873 155,819 299,819 299,783" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="155,873 155,819 299,819 299,783" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="299,783 299,702" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="299,783 299,702" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="299,783 447.5,783 501.5,783 501.5,621" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="299,783 447.5,783 501.5,783 501.5,621" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="447.5,783 447.5,873" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="447.5,783 447.5,873" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="501.5,621 470,621 470,657 443,657" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="501.5,621 470,621 470,657 443,657" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="501.5,621 609.5,621 609.5,499.5 519.5,499.5 519.5,463.5" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="501.5,621 609.5,621 609.5,499.5 519.5,499.5 519.5,463.5" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="222.5,540 222.5,486 285.5,486 285.5,409.5" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="222.5,540 222.5,486 285.5,486 285.5,409.5" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="708.5,463.5 708.5,504 744.5,504 744.5,558" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="708.5,463.5 708.5,504 744.5,504 744.5,558" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="659,693 659,738 605,738 605,792" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="659,693 659,738 605,738 605,792" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="767,900 857,900 857,1215 920,1215" fill="none" stroke="#29404d" stroke-width="30.0" stroke-linejoin="round"/>
+<polyline points="767,900 857,900 857,1215 920,1215" fill="none" stroke="#11212c" stroke-width="27.0" stroke-linejoin="round"/>
+<polyline points="732.8,324 812,324 893,324 893,279" fill="none" stroke="#29404d" stroke-width="21.0" stroke-linejoin="round"/>
+<polyline points="732.8,324 812,324 893,324 893,279" fill="none" stroke="#11212c" stroke-width="18.0" stroke-linejoin="round"/>
+<rect x="803" y="1125" width="234" height="180" fill="#304039" stroke="#e5cf9b" stroke-width="2"/>
+<rect x="344" y="1224" width="234" height="144" fill="#304039" stroke="#e5cf9b" stroke-width="2"/>
+<polyline points="578,1246.5 578,1273.5" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="344,1327.5 344,1354.5" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<rect x="101" y="873" width="216" height="261" fill="#304039" stroke="#e5cf9b" stroke-width="2"/>
+<rect x="236" y="1071" width="54" height="63" fill="#3d3950" stroke="#c5a7ff" stroke-width="1.5" stroke-dasharray="5 4"/>
+<polyline points="249.5,1134 276.5,1134" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="141.5,873 168.5,873" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<rect x="155" y="540" width="288" height="162" fill="#304039" stroke="#e5cf9b" stroke-width="2"/>
+<rect x="155" y="540" width="288" height="36" fill="#3d3950" stroke="#c5a7ff" stroke-width="1.5" stroke-dasharray="5 4"/>
+<rect x="155" y="576" width="162" height="9" fill="#3d3950" stroke="#c5a7ff" stroke-width="1.5" stroke-dasharray="5 4"/>
+<rect x="335" y="576" width="108" height="9" fill="#3d3950" stroke="#c5a7ff" stroke-width="1.5" stroke-dasharray="5 4"/>
+<rect x="398" y="585" width="45" height="90" fill="#3d3950" stroke="#c5a7ff" stroke-width="1.5" stroke-dasharray="5 4"/>
+<polyline points="443,643.5 443,670.5" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="209,540 236,540" fill="none" stroke="#c5a7ff" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="285.5,702 312.5,702" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<rect x="461" y="265.5" width="297" height="198" fill="#304039" stroke="#e5cf9b" stroke-width="2"/>
+<polyline points="506,463.5 533,463.5" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="695,463.5 722,463.5" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<rect x="641" y="558" width="135" height="135" fill="#304039" stroke="#e5cf9b" stroke-width="2"/>
+<rect x="641" y="630" width="99" height="63" fill="#3d3950" stroke="#c5a7ff" stroke-width="1.5" stroke-dasharray="5 4"/>
+<polyline points="731,558 758,558" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="645.5,693 672.5,693" fill="none" stroke="#c5a7ff" stroke-width="5" stroke-linejoin="round"/>
+<rect x="560" y="792" width="207" height="144" fill="#304039" stroke="#e5cf9b" stroke-width="2"/>
+<rect x="560" y="792" width="90" height="63" fill="#3d3950" stroke="#c5a7ff" stroke-width="1.5" stroke-dasharray="5 4"/>
+<polyline points="591.5,792 618.5,792" fill="none" stroke="#c5a7ff" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="767,886.5 767,913.5" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<rect x="164" y="229.5" width="180" height="180" fill="#304039" stroke="#e5cf9b" stroke-width="2"/>
+<polyline points="272,409.5 299,409.5" fill="none" stroke="#c5a7ff" stroke-width="5" stroke-linejoin="round"/>
+<rect x="357.5" y="873" width="162" height="261" fill="#304039" stroke="#e5cf9b" stroke-width="2"/>
+<polyline points="434,873 461,873" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<rect x="816.5" y="216" width="153" height="126" fill="#304039" stroke="#e5cf9b" stroke-width="2"/>
+<polyline points="920,1215 920,1179 659,1179 659,1260 578,1260" fill="none" stroke="#7bddc2" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="344,1341 263,1341 263,1134" fill="none" stroke="#7bddc2" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="155,873 155,819 299,819 299,783" fill="none" stroke="#7bddc2" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="299,783 299,702" fill="none" stroke="#7bddc2" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="299,783 447.5,783 501.5,783 501.5,621" fill="none" stroke="#7bddc2" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="447.5,783 447.5,873" fill="none" stroke="#7bddc2" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="501.5,621 470,621 470,657 443,657" fill="none" stroke="#7bddc2" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="501.5,621 609.5,621 609.5,499.5 519.5,499.5 519.5,463.5" fill="none" stroke="#7bddc2" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="222.5,540 222.5,486 285.5,486 285.5,409.5" fill="none" stroke="#c5a7ff" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="708.5,463.5 708.5,504 744.5,504 744.5,558" fill="none" stroke="#7bddc2" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="659,693 659,738 605,738 605,792" fill="none" stroke="#c5a7ff" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="767,900 857,900 857,1215 920,1215" fill="none" stroke="#7bddc2" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="732.8,324 812,324 893,324 893,279" fill="none" stroke="#c5a7ff" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<polyline points="497,1224 497,1305" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="497,1323 497,1368" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="344,1278 389,1278" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="407,1278 497,1278" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="101,999 173,999" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="191,999 317,999" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="209,873 209,972" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="380,540 380,666" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="272,585 272,657" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="164,328.5 236,328.5" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="254,328.5 344,328.5" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="461,405 560,405" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="578,405 695,405" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="713,405 758,405" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="659,405 659,463.5" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="632,265.5 632,328.5" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="632,364.5 632,405" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="686,630 686,657" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="686,675 686,693" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="560,873 677,873" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="695,873 713,873" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="650,882 650,936" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="357.5,963 461,963" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="479,963 519.5,963" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="461,981 461,1134" fill="none" stroke="#e5cf9b" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="578,1260 533,1260 533,1314 470,1314 470,1341 344,1341" fill="none" stroke="#7bddc2" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="263,1134 263,1053 182,1053 182,963 155,963 155,873" fill="none" stroke="#7bddc2" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="443,657 389,657 389,684 308,684 308,639 326,639 326,621" fill="none" stroke="#7bddc2" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="326,576 326,567 222.5,567 222.5,540" fill="none" stroke="#c5a7ff" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="285.5,409.5 285.5,355.5 245,355.5 245,301.5 204.5,301.5 204.5,274.5" fill="none" stroke="#c5a7ff" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="519.5,463.5 519.5,423 569,423 569,378 623,378 623,346.5 695,346.5" fill="none" stroke="#7bddc2" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="695,346.5 704,346.5 704,423 708.5,423 708.5,463.5" fill="none" stroke="#7bddc2" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="695,346.5 732.8,346.5 732.8,324" fill="none" stroke="#7bddc2" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="744.5,558 744.5,585 717.5,585" fill="none" stroke="#7bddc2" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="717.5,630 717.5,666 659,666 659,693" fill="none" stroke="#c5a7ff" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="605,792 605,837 650,837" fill="none" stroke="#c5a7ff" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="722,837 731,837 731,900 767,900" fill="none" stroke="#7bddc2" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="447.5,873 447.5,927 470,927 470,972 393.5,972 393.5,1071" fill="none" stroke="#7bddc2" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="272,1071 254,1071" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="272,1068.75 254,1068.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="272,1066.5 254,1066.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="272,1064.25 254,1064.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="272,1062 254,1062" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="272,1059.75 254,1059.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="272,1057.5 254,1057.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="272,1055.25 254,1055.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="272,1053 254,1053" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="263,1053 263,1071" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<text x="276.5" y="1062" font-size="13" fill="#ffce74" font-weight="700" text-anchor="start">I1</text>
+<polyline points="335,621 317,621" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,618.75 317,618.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,616.5 317,616.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,614.25 317,614.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,612 317,612" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,609.75 317,609.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,607.5 317,607.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,605.25 317,605.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,603 317,603" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="326,621 326,603" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<text x="339.5" y="612" font-size="13" fill="#ffce74" font-weight="700" text-anchor="start">R1a</text>
+<polyline points="335,594 317,594" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,591.75 317,591.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,589.5 317,589.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,587.25 317,587.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,585 317,585" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,582.75 317,582.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,580.5 317,580.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,578.25 317,578.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="335,576 317,576" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="326,594 326,576" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<polyline points="708.5,585 726.5,585" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,587.25 726.5,587.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,589.5 726.5,589.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,591.75 726.5,591.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,594 726.5,594" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,596.25 726.5,596.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,598.5 726.5,598.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,600.75 726.5,600.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,603 726.5,603" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="717.5,585 717.5,603" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<text x="731" y="594" font-size="13" fill="#ffce74" font-weight="700" text-anchor="start">G1a</text>
+<polyline points="708.5,612 726.5,612" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,614.25 726.5,614.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,616.5 726.5,616.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,618.75 726.5,618.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,621 726.5,621" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,623.25 726.5,623.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,625.5 726.5,625.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,627.75 726.5,627.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,630 726.5,630" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="717.5,612 717.5,630" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<polyline points="650,846 650,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="652.25,846 652.25,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="654.5,846 654.5,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="656.75,846 656.75,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="659,846 659,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="661.25,846 661.25,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="663.5,846 663.5,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="665.75,846 665.75,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="668,846 668,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="668,837 650,837" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<text x="672.5" y="837" font-size="13" fill="#ffce74" font-weight="700" text-anchor="start">O1a</text>
+<polyline points="677,846 677,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="679.25,846 679.25,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="681.5,846 681.5,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="683.75,846 683.75,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="686,846 686,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="688.25,846 688.25,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="690.5,846 690.5,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="692.75,846 692.75,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="695,846 695,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="695,837 677,837" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<polyline points="704,846 704,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="706.25,846 706.25,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="708.5,846 708.5,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="710.75,846 710.75,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="713,846 713,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="715.25,846 715.25,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="717.5,846 717.5,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="719.75,846 719.75,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="722,846 722,828" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="722,837 704,837" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<polyline points="308,756 290,756" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="308,753.75 290,753.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="308,751.5 290,751.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="308,749.25 290,749.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="308,747 290,747" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="308,744.75 290,744.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="308,742.5 290,742.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="308,740.25 290,740.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="308,738 290,738" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="299,756 299,738" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<polyline points="510.5,724.5 492.5,724.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="510.5,722.25 492.5,722.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="510.5,720 492.5,720" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="510.5,717.75 492.5,717.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="510.5,715.5 492.5,715.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="510.5,713.25 492.5,713.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="510.5,711 492.5,711" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="510.5,708.75 492.5,708.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="510.5,706.5 492.5,706.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="501.5,724.5 501.5,706.5" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<text x="515" y="715.5" font-size="13" fill="#ffce74" font-weight="700" text-anchor="start">T3</text>
+<polyline points="618.5,544.5 600.5,544.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="618.5,542.25 600.5,542.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="618.5,540 600.5,540" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="618.5,537.75 600.5,537.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="618.5,535.5 600.5,535.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="618.5,533.25 600.5,533.25" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="618.5,531 600.5,531" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="618.5,528.75 600.5,528.75" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="618.5,526.5 600.5,526.5" fill="none" stroke="#ffce74" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="609.5,544.5 609.5,526.5" fill="none" stroke="#ffce74" stroke-width="2" stroke-linejoin="round" marker-end="url(#stair)"/>
+<text x="623" y="535.5" font-size="13" fill="#ffce74" font-weight="700" text-anchor="start">T4</text>
+<text x="812" y="1143" font-size="15" fill="#e1ebf0" font-weight="700" text-anchor="start">H  0 m</text>
+<text x="353" y="1242" font-size="15" fill="#e1ebf0" font-weight="700" text-anchor="start">A1  0 m</text>
+<text x="110" y="891" font-size="15" fill="#e1ebf0" font-weight="700" text-anchor="start">A2  0 / -2 m</text>
+<text x="164" y="558" font-size="15" fill="#e1ebf0" font-weight="700" text-anchor="start">A3  0 / +4 m</text>
+<text x="470" y="283.5" font-size="15" fill="#e1ebf0" font-weight="700" text-anchor="start">A4  +2 m</text>
+<text x="650" y="576" font-size="15" fill="#e1ebf0" font-weight="700" text-anchor="start">A5  +2 / +6 m</text>
+<text x="569" y="810" font-size="15" fill="#e1ebf0" font-weight="700" text-anchor="start">A6  +6 / 0 m</text>
+<text x="173" y="247.5" font-size="15" fill="#e1ebf0" font-weight="700" text-anchor="start">A7  +4 m</text>
+<text x="366.5" y="891" font-size="15" fill="#e1ebf0" font-weight="700" text-anchor="start">A8  -2 m</text>
+<text x="825.5" y="234" font-size="15" fill="#e1ebf0" font-weight="700" text-anchor="start">M  +6 m</text>
+<text x="429.5" y="1354.5" font-size="12" fill="#a6bdcc" font-weight="400" text-anchor="start">STAFF</text>
+<text x="128" y="1111.5" font-size="12" fill="#a6bdcc" font-weight="400" text-anchor="start">INSPECTION</text>
+<text x="173" y="679.5" font-size="12" fill="#a6bdcc" font-weight="400" text-anchor="start">ARCHIVE</text>
+<text x="470" y="387" font-size="12" fill="#a6bdcc" font-weight="400" text-anchor="start">LOBBY</text>
+<text x="470" y="1120.5" font-size="12" fill="#a6bdcc" font-weight="400" text-anchor="start">ANNEX</text>
+<text x="830" y="1269" font-size="12" fill="#a6bdcc" font-weight="400" text-anchor="start">SERVICE HUB</text>
+<circle cx="204.5" cy="274.5" r="15" fill="#ffce74" stroke="#101d28" stroke-width="2"/>
+<text x="204.5" y="279.5" font-size="15" fill="#101d28" font-weight="700" text-anchor="middle">R</text>
+<circle cx="569" cy="378" r="15" fill="#ffce74" stroke="#101d28" stroke-width="2"/>
+<text x="569" y="383" font-size="15" fill="#101d28" font-weight="700" text-anchor="middle">K</text>
+<circle cx="299" cy="706.5" r="15" fill="#ff9986" stroke="#101d28" stroke-width="2"/>
+<text x="299" y="711.5" font-size="15" fill="#101d28" font-weight="700" text-anchor="middle">1</text>
+<circle cx="555.5" cy="621" r="15" fill="#ff9986" stroke="#101d28" stroke-width="2"/>
+<text x="555.5" y="626" font-size="15" fill="#101d28" font-weight="700" text-anchor="middle">2</text>
+<polyline points="843.5,1111.5 870.5,1111.5" fill="none" stroke="#7bddc2" stroke-width="5" stroke-linejoin="round"/>
+<text x="866" y="1102.5" font-size="16" fill="#7bddc2" font-weight="700" text-anchor="start">S1</text>
+<polyline points="812,310.5 812,337.5" fill="none" stroke="#c5a7ff" stroke-width="5" stroke-linejoin="round"/>
+<text x="812" y="355.5" font-size="14" fill="#c5a7ff" font-weight="700" text-anchor="start">BcD</text>
+<polyline points="732.8,324 758,324" fill="none" stroke="#c5a7ff" stroke-width="3" stroke-linejoin="round" stroke-dasharray="3 3"/>
+<text x="726.5" y="301.5" font-size="15" fill="#c5a7ff" font-weight="700" text-anchor="start">L</text>
+<circle cx="137" cy="954" r="15" fill="#c5a7ff" stroke="#101d28" stroke-width="2"/>
+<text x="137" y="959" font-size="15" fill="#101d28" font-weight="700" text-anchor="middle">S</text>
+<circle cx="137" cy="1071" r="15" fill="#c5a7ff" stroke="#101d28" stroke-width="2"/>
+<text x="137" y="1076" font-size="15" fill="#101d28" font-weight="700" text-anchor="middle">+</text>
+<text x="875" y="1372.5" font-size="16" fill="#7bddc2" font-weight="700" text-anchor="start">FROM HUB</text>
+<polyline points="101,1404 191,1404" fill="none" stroke="#a6bdcc" stroke-width="3" stroke-linejoin="round"/>
+<text x="101" y="1431" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="start">20 m  /  north up</text>
+<rect x="1100" y="125" width="825" height="1320" fill="#172b39" stroke="#29404d" stroke-width="2"/>
+<text x="1122" y="162" font-size="23" fill="#e1ebf0" font-weight="700" text-anchor="start">WHAT CHANGES ON THIS WALK</text>
+<text x="1130" y="210" font-size="22" fill="#ffce74" font-weight="700" text-anchor="start">01  STAFF / INSPECTION</text>
+<text x="1130" y="242" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">A1 becomes reception, screening and staff rooms.</text>
+<text x="1130" y="271" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">Opposing doorways move toward different corners.</text>
+<text x="1130" y="300" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">A2 gets a longer entry deck and divided inspection bays.</text>
+<text x="1130" y="365" font-size="22" fill="#ffce74" font-weight="700" text-anchor="start">02  RECORDS / SUPERVISOR</text>
+<text x="1130" y="397" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">Enter A3 below an upper walkway. Climb 4 m.</text>
+<text x="1130" y="426" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">Follow the upper passage into A7 and take Records R.</text>
+<text x="1130" y="455" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">Return downstairs to door 2. Card stays before its lock.</text>
+<text x="1130" y="520" font-size="22" fill="#ffce74" font-weight="700" text-anchor="start">03  SECURITY / THE ROUTE CHOICE</text>
+<text x="1130" y="552" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">A4 splits into a lobby, dispatch and an exit vestibule.</text>
+<text x="1130" y="581" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">Freight K sits on the approach before the routes divide.</text>
+<text x="1130" y="610" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">BcD retains its separate ladder up to Maintenance.</text>
+<text x="1130" y="675" font-size="22" fill="#ffce74" font-weight="700" text-anchor="start">04  WATCH / CLEARANCE RETURN</text>
+<text x="1130" y="707" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">Climb from A5 +2 m to a usable +6 m watch floor.</text>
+<text x="1130" y="736" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">Cross an upper dogleg into A6, then descend 6 m</text>
+<text x="1130" y="765" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">through the office block to the hub return.</text>
+<text x="1130" y="830" font-size="22" fill="#ffce74" font-weight="700" text-anchor="start">05  READABLE TURNS</text>
+<text x="1130" y="862" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">Door offsets and partitions interrupt through-views.</text>
+<text x="1130" y="891" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">Keep the existing branch junctions and return gate S1.</text>
+<text x="1130" y="920" font-size="19" fill="#e1ebf0" font-weight="400" text-anchor="start">A8 stays optional; B and its progression are unchanged.</text>
+<text x="1130" y="1015" font-size="21" fill="#e1ebf0" font-weight="700" text-anchor="start">ROUTE HEIGHTS / metres above the hub</text>
+<text x="1130" y="1055" font-size="20" fill="#e1ebf0" font-weight="700" text-anchor="start"></text>
+<polyline points="1130,1170 1870,1170" fill="none" stroke="#29404d" stroke-width="1" stroke-linejoin="round" stroke-dasharray="4 4"/>
+<polyline points="1160,1170 1245,1192 1330,1170 1415,1126 1500,1170 1585,1148 1670,1104 1755,1170 1840,1170" fill="none" stroke="#ffce74" stroke-width="3" stroke-linejoin="round"/>
+<text x="1160" y="1158" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+0 m</text>
+<text x="1160" y="1198" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">Hub</text>
+<text x="1245" y="1180" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">-2 m</text>
+<text x="1245" y="1198" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">A2</text>
+<text x="1330" y="1158" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+0 m</text>
+<text x="1330" y="1198" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">A3</text>
+<text x="1415" y="1114" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+4 m</text>
+<text x="1415" y="1198" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">A7</text>
+<text x="1500" y="1158" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+0 m</text>
+<text x="1500" y="1198" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">A3</text>
+<text x="1585" y="1136" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+2 m</text>
+<text x="1585" y="1198" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">A4</text>
+<text x="1670" y="1092" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+6 m</text>
+<text x="1670" y="1198" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">A5</text>
+<text x="1755" y="1158" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+0 m</text>
+<text x="1755" y="1198" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">A6</text>
+<text x="1840" y="1158" font-size="15" fill="#ffce74" font-weight="700" text-anchor="middle">+0 m</text>
+<text x="1840" y="1198" font-size="14" fill="#a6bdcc" font-weight="400" text-anchor="middle">Hub</text>
+<text x="1130" y="1260" font-size="18" fill="#a6bdcc" font-weight="400" text-anchor="start">Mint: lower route   /   Purple: upstairs route</text>
+<text x="1130" y="1289" font-size="18" fill="#a6bdcc" font-weight="400" text-anchor="start">Gold stair arrows point UP; footprints are to scale.</text>
+<text x="1130" y="1318" font-size="18" fill="#a6bdcc" font-weight="400" text-anchor="start">R = Records card   K = freight card   S = selector</text>
+<text x="1130" y="1347" font-size="18" fill="#a6bdcc" font-weight="400" text-anchor="start">Separate detail sheets show each floor without overlap.</text>
+<text x="40" y="1482" font-size="19" fill="#a6bdcc" font-weight="400" text-anchor="start">Reviewed A-01 interiors are built in blockout 05. Walk the revised spaces before the enemy and supply pass.</text>
+</g></svg>

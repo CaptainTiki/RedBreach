@@ -44,3 +44,30 @@ All **863 map faces** retain exactly the same plane coordinates as before the ma
 `res://tools/validate_greybox.gd` checks all saved architectural surfaces and derives physical distances from their actual mesh vertices and UVs. Across **1,724 baked triangles**, both UV directions measure one metre per repeat and are orthogonal, including the ramp. Nine checks pass, including local metre projection on the door, switch housing and vent. Maximum floating-point repeat error was under 0.000001 m. Rendered movement, ramp, combat and route captures were inspected at the final scale.
 
 Use the normal rebuild tool for the affected map. After a material/UV pass, also run Godot headlessly with `--script res://tools/validate_greybox.gd` and an explicit `.godot` log file, then inspect `capture_greybox.gd` rendered views. Do not edit baked Geometry materials alone; those edits would be replaced by the next map build.
+
+## Muted palette additions
+
+Eleven additive variants are available, each in `texture_01`, `texture_03` and `texture_06` (standard grid, panel grid and floor-cross grid). See [palette preview](blockout-palette.png).
+
+- `greybox/GreyCharcoal`: darker than the original Dark (background 28/255).
+- Existing `greybox/Dark`: retained as the second grey (background about 51/255).
+- `greybox/GreyMedium`: lighter grey (96/255).
+- `greybox/GreyPale`: second lighter grey (150/255), with readable light markings.
+- `greybox/MutedGreen`, `greybox/MutedOrange`, `greybox/MutedRed`, `greybox/MutedPurple`: original colours at 28% saturation and 80% brightness.
+- `greybox/DarkGreen`, `greybox/DarkOrange`, `greybox/DarkRed`, `greybox/DarkPurple`: matching dark colours at 28% saturation and 50% brightness (37.5% darker than the muted variants), in the same three patterns.
+
+Add these folders as material collections in TrenchBroom's texture browser; use the existing `res://textures` material root in Godot. They retain the original 1024-square dimensions, grid positions, alpha, mipmapped imports and **0.03125 face scale / 1 metre repeats**. No map assignments or existing textures are replaced. The original saturated colours remain available for stronger accents.
+
+`tools/create-blockout-palette.py` reproduces only these new assets and the preview with Pillow. Greys use a uniform luminance remap anchored to the original Dark background, with white mapped to 235; muted colours use uniform saturation/brightness adjustments. It does not redraw, resize or resample the game textures. `docs/blockout-palette.json` records source/output hashes and adjustment values.
+
+Validation: Godot 4.7.2 imported and loaded all 33 additions at 1024 x 1024 with mipmaps. Existing greybox validation passed 9 checks with zero failures. The generator verified all 78 original PNGs unchanged and preserved each output's dimensions and alpha. The dark-colour addition also verified that all 99 previously available texture PNGs remained byte-identical. Automated image viewing was unavailable in this session; the palette PNG is provided for visual review before assigning the colours to rooms.
+
+
+## Registration readability sample
+
+The palette additions are now assigned to the completed Registration area in freight layout 08. See [the built colour pass](freight-registration-palette.md): existing dark floor, muted green walls, pale grey ceiling, muted orange lower walkway and muted purple furnishing bodies with grey tops/panels. Original images, metre scale and lighting remain unchanged. These assignments are local to the reviewed Registration sample, not a global recolouring of the gyms or mission.
+
+
+## Geometry supports texture transitions
+
+User rule: a material/texture change needs a physical rise, drop, border brush, trim or three-dimensional seam. Avoid arbitrary coplanar changes on a continuous surface. Layout 10 removes Registration's recessed orange walkway and its step edges; the entire A1 floor now uses the existing dark grid at floor 0. Earlier Registration palette images show the historical depression. See [the current floor](freight-registration-flat-floor.md).

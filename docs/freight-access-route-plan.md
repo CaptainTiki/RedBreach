@@ -1,6 +1,6 @@
-# Freight access / built route 04
+# Freight access / route baseline 04, A interior revision 05
 
-Status: the reviewed route and elevation direction are now built for the user-authorized empty walkthrough. See [play and rebuild instructions](freight-blockout.md) and the [built floor/stair schedule](freight-access-elevation-plan.md). Cards, gates, the selector and Maintenance traversal work. Enemies and broader pickup placement remain a later pass.
+Status: the route and objective rules below remain the baseline. **A now uses the built [A-01 interior plan](freight-a-interior-plan.md)**, including moved thresholds, upstairs Records and the Watch/Clearance upper return. The whole-level SVG/PNG remain the revision-04 baseline; consult the A drawings for its current interior geometry. See [play and rebuild instructions](freight-blockout.md) and the [built floor/stair schedule](freight-access-elevation-plan.md). Cards, gates, the selector and Maintenance traversal work. Enemies and broader pickup placement remain a later pass.
 
 - [Rendered paper plan](freight-access-route-plan.png)
 - [Editable elevation drawing](freight-access-route-plan.svg)

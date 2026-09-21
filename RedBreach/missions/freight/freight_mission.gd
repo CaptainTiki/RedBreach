@@ -59,6 +59,7 @@ func reset_encounter() -> void:
 	message_seconds = 0.0
 	previous_position = player.global_position
 	for gate in $Gates.get_children(): gate.reset_gate()
+	$RegistrationF02/StaffDoor.reset_door()
 	$RunChart.send_event("reset")
 	$CircuitChart.send_event("off")
 	set_circuit("")
@@ -202,7 +203,7 @@ func update_hud(delta: float) -> void:
 	$HUD/Progress.text = "%s / %.1f s / %.0f m\n%s / Height %+.1f m\nRecords %s   Freight %s   Power %s" % [state_label,elapsed,distance,current_room,player.position.y,"YES" if records_card else "--","YES" if freight_card else "--","ON" if power_restored else "--"]
 	if run_state() == "Complete": $HUD/Progress.text += "\n"+save_status+"\nBackspace / repeat"
 func save_run(outcome: String) -> void:
-	last_result = {"outcome":outcome,"revision":"04","version":ProjectSettings.get_setting("application/config/version"),"elapsed_s":elapsed,"distance_m":distance,"visited":visited.duplicate(),"events":event_log.duplicate(true),"records":records_card,"freight":freight_card,"power":power_restored,"selector":selected_code,"map_sha256":FileAccess.get_sha256("res://maps/freight_01.map")}
+	last_result = {"outcome":outcome,"revision":str(layout.get("revision","unknown")),"version":ProjectSettings.get_setting("application/config/version"),"elapsed_s":elapsed,"distance_m":distance,"visited":visited.duplicate(),"events":event_log.duplicate(true),"records":records_card,"freight":freight_card,"power":power_restored,"selector":selected_code,"map_sha256":FileAccess.get_sha256("res://maps/freight_01.map")}
 	if not storage_enabled:
 		save_status = "QA / storage disabled"
 		return

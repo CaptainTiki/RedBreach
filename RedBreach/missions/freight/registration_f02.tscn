@@ -1,0 +1,241 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://props/blockout/f02/equipment_cabinets_4p000_2p400_1p000.tscn" id="1_q7i10"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/wall_cabinets_5p000_2p400_1p000.tscn" id="2_3wthk"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/information_kiosk_2p000_1p500_1p400.tscn" id="3_edmtj"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/check_terminal_2p000_1p200_1p000.tscn" id="4_7a2vd"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/equipment_housing_1p800_2p400_2p000.tscn" id="5_rjint"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/waiting_seats_0p800_0p900_4p600.tscn" id="6_56lnu"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/queue_rail_0p100_1p100_1p200.tscn" id="7_vmrbf"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/service_cabinet_3p000_2p200_1p050.tscn" id="8_ykdf2"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/north_service_trunk_16p800_0p400_0p800.tscn" id="15_2cn6r"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/d1.tscn" id="15_dd0a6"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/waiting_service_trunk_0p700_0p400_8p900.tscn" id="16_2dakl"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/chair.tscn" id="16_18mgi"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/lounge_service_trunk_16p800_0p400_0p700.tscn" id="17_ldqf5"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/d2.tscn" id="17_usymf"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/f1.tscn" id="18_ayxco"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/light_housing_2p200_0p170_0p240.tscn" id="18_g2chp"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/noticeboard.tscn" id="19_3tm2d"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/f2.tscn" id="19_ccqaa"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/f3.tscn" id="20_2cn6r"]
+[ext_resource type="PackedScene" path="res://props/blockout/f02/registration_desk.tscn" id="20_m5aj0"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/s1.tscn" id="21_2dakl"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/a1.tscn" id="22_ldqf5"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/a2.tscn" id="23_g2chp"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/t1.tscn" id="24_3tm2d"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/t2.tscn" id="25_m5aj0"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/m1.tscn" id="26_5o5k8"]
+[ext_resource type="PackedScene" path="res://props/blockout/f03/m2.tscn" id="27_jh3u5"]
+[ext_resource type="PackedScene" path="res://interaction/sliding_door_wide.tscn" id="28_mlkih"]
+[ext_resource type="Script" path="res://interaction/sliding_door_wide.gd" id="29_maale"]
+
+[node name="RegistrationF02" type="Node3D" unique_id=2005016812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -93.875, 0, 2)
+
+[node name="Objects" type="Node3D" parent="." unique_id=934848593]
+
+[node name="E1" type="Node3D" parent="Objects" unique_id=883108891 instance=ExtResource("1_q7i10")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.875, 0, 0.2999878)
+metadata/kind = "equipment cabinets"
+metadata/dimensions_m = Vector3(4, 2.4, 1)
+metadata/layout_id = "E1"
+
+[node name="E2" type="Node3D" parent="Objects" unique_id=252612176 instance=ExtResource("2_3wthk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.875, 0, 0.2999878)
+metadata/kind = "wall cabinets"
+metadata/dimensions_m = Vector3(5, 2.4, 1)
+metadata/layout_id = "E2"
+
+[node name="E3" type="Node3D" parent="Objects" unique_id=1396354754 instance=ExtResource("3_edmtj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.875, 0, 3)
+metadata/kind = "information kiosk"
+metadata/dimensions_m = Vector3(2, 1.5, 1.4)
+metadata/layout_id = "E3"
+
+[node name="E4" type="Node3D" parent="Objects" unique_id=1831105293 instance=ExtResource("4_7a2vd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.875, 0, 3)
+metadata/kind = "check terminal"
+metadata/dimensions_m = Vector3(2, 1.2, 1)
+metadata/layout_id = "E4"
+
+[node name="E5" type="Node3D" parent="Objects" unique_id=1338068854 instance=ExtResource("5_rjint")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.474998, 0, 1.5)
+metadata/kind = "equipment housing"
+metadata/dimensions_m = Vector3(1.8, 2.4, 2)
+metadata/layout_id = "E5"
+
+[node name="W1" type="Node3D" parent="Objects" unique_id=350427123 instance=ExtResource("6_56lnu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.67500305, 0, 14.600006)
+metadata/kind = "waiting seats"
+metadata/dimensions_m = Vector3(0.8, 0.9, 4.6)
+metadata/layout_id = "W1"
+
+[node name="W2" type="Node3D" parent="Objects" unique_id=1916716815 instance=ExtResource("7_vmrbf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.574997, 0, 14.600006)
+metadata/kind = "queue rail"
+metadata/dimensions_m = Vector3(0.1, 1.1, 1.2)
+metadata/layout_id = "W2"
+
+[node name="W3" type="Node3D" parent="Objects" unique_id=1114058414 instance=ExtResource("8_ykdf2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4749985, 0, 20.649994)
+metadata/kind = "service cabinet"
+metadata/dimensions_m = Vector3(3, 2.2, 1.05)
+metadata/layout_id = "W3"
+
+[node name="H2" type="Node3D" parent="Objects" unique_id=456351545 instance=ExtResource("15_2cn6r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47499847, 3.05, 0.6000061)
+metadata/kind = "north service trunk"
+metadata/dimensions_m = Vector3(16.8, 0.4, 0.8)
+metadata/layout_id = "H2"
+
+[node name="H3" type="Node3D" parent="Objects" unique_id=1160775202 instance=ExtResource("16_2dakl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27500153, 3.05, 12.5)
+metadata/kind = "waiting service trunk"
+metadata/dimensions_m = Vector3(0.7, 0.4, 8.9)
+metadata/layout_id = "H3"
+
+[node name="H4" type="Node3D" parent="Objects" unique_id=626055894 instance=ExtResource("17_ldqf5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47499847, 3.05, 30.399994)
+metadata/kind = "lounge service trunk"
+metadata/dimensions_m = Vector3(16.8, 0.4, 0.7)
+metadata/layout_id = "H4"
+
+[node name="F1" type="Node3D" parent="Objects" unique_id=1440193608 instance=ExtResource("18_g2chp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.875, 2.95, 2.5)
+metadata/kind = "light housing"
+metadata/dimensions_m = Vector3(2.2, 0.17, 0.24)
+metadata/layout_id = "F1"
+
+[node name="F2" type="Node3D" parent="Objects" unique_id=379535965 instance=ExtResource("18_g2chp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.875, 2.95, 5.799988)
+metadata/kind = "light housing"
+metadata/dimensions_m = Vector3(2.2, 0.17, 0.24)
+metadata/layout_id = "F2"
+
+[node name="F5" type="Node3D" parent="Objects" unique_id=2021995111 instance=ExtResource("18_g2chp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.074997, 2.95, 17)
+metadata/kind = "light housing"
+metadata/dimensions_m = Vector3(2.2, 0.17, 0.24)
+metadata/layout_id = "F5"
+
+[node name="F6" type="Node3D" parent="Objects" unique_id=885849129 instance=ExtResource("18_g2chp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.074997, 2.95, 19.5)
+metadata/kind = "light housing"
+metadata/dimensions_m = Vector3(2.2, 0.17, 0.24)
+metadata/layout_id = "F6"
+
+[node name="F7" type="Node3D" parent="Objects" unique_id=1073537166 instance=ExtResource("18_g2chp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.875, 2.95, 25.5)
+metadata/kind = "light housing"
+metadata/dimensions_m = Vector3(2.2, 0.17, 0.24)
+metadata/layout_id = "F7"
+
+[node name="F8" type="Node3D" parent="Objects" unique_id=678081023 instance=ExtResource("18_g2chp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.875, 2.95, 29.5)
+metadata/kind = "light housing"
+metadata/dimensions_m = Vector3(2.2, 0.17, 0.24)
+metadata/layout_id = "F8"
+
+[node name="Noticeboard" type="Node3D" parent="Objects" unique_id=2062045784 instance=ExtResource("19_3tm2d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.375, 1.1, 21.899994)
+
+[node name="RegistrationDesk" type="Node3D" parent="Objects" unique_id=362174525 instance=ExtResource("20_m5aj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 12.125)
+
+[node name="O_D1" type="Node3D" parent="Objects" unique_id=167996865 instance=ExtResource("15_dd0a6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.875, 0, 23)
+metadata/kind = "supervisor workstation"
+metadata/dimensions_m = Vector3(3, 0.75, 1.2)
+metadata/layout_id = "O_D1"
+
+[node name="O_C1" type="Node3D" parent="Objects" unique_id=458692541 instance=ExtResource("16_18mgi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.025, 0, 24.45)
+metadata/kind = "chair"
+metadata/dimensions_m = Vector3(0.65, 0.9, 0.65)
+metadata/layout_id = "O_C1"
+
+[node name="O_D2" type="Node3D" parent="Objects" unique_id=1670170037 instance=ExtResource("17_usymf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.075, 0, 25)
+metadata/kind = "registration workstation"
+metadata/dimensions_m = Vector3(2.4, 0.75, 1.2)
+metadata/layout_id = "O_D2"
+
+[node name="O_C2" type="Node3D" parent="Objects" unique_id=1637161443 instance=ExtResource("16_18mgi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.175, 0, 26.45)
+metadata/kind = "chair"
+metadata/dimensions_m = Vector3(0.65, 0.9, 0.65)
+metadata/layout_id = "O_C2"
+
+[node name="O_F1" type="Node3D" parent="Objects" unique_id=1351510032 instance=ExtResource("18_ayxco")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.475, 0, 23)
+metadata/kind = "filing cabinets"
+metadata/dimensions_m = Vector3(1.2, 2.1, 2.8)
+metadata/layout_id = "O_F1"
+
+[node name="O_F2" type="Node3D" parent="Objects" unique_id=712686678 instance=ExtResource("19_ccqaa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.875, 0, 22.4)
+metadata/kind = "filing / archive cabinets"
+metadata/dimensions_m = Vector3(3.2, 2.1, 0.8)
+metadata/layout_id = "O_F2"
+
+[node name="O_F3" type="Node3D" parent="Objects" unique_id=1406976750 instance=ExtResource("20_2cn6r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.625, 0, 29)
+metadata/kind = "supply cabinets"
+metadata/dimensions_m = Vector3(1.85, 2.1, 1.25)
+metadata/layout_id = "O_F3"
+
+[node name="O_S1" type="Node3D" parent="Objects" unique_id=1911909740 instance=ExtResource("21_2dakl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.225, 0, 23.1)
+metadata/kind = "two server rack envelopes"
+metadata/dimensions_m = Vector3(1.3, 2.4, 3.1)
+metadata/layout_id = "O_S1"
+
+[node name="O_A1" type="Node3D" parent="Objects" unique_id=1754863616 instance=ExtResource("22_ldqf5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.475, 0, 27)
+metadata/kind = "air circulation unit"
+metadata/dimensions_m = Vector3(1.3, 2.2, 2)
+metadata/layout_id = "O_A1"
+
+[node name="O_A2" type="Node3D" parent="Objects" unique_id=426623704 instance=ExtResource("23_g2chp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.375, 0, 30.9)
+metadata/kind = "air filter / service unit"
+metadata/dimensions_m = Vector3(1.8, 2.2, 0.8)
+metadata/layout_id = "O_A2"
+
+[node name="O_T1" type="Node3D" parent="Objects" unique_id=1568869780 instance=ExtResource("24_3tm2d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.875, 1.3, 22.15)
+metadata/kind = "wall status readout"
+metadata/dimensions_m = Vector3(2.4, 0.8, 0.2)
+metadata/layout_id = "O_T1"
+
+[node name="O_T2" type="Node3D" parent="Objects" unique_id=2090562863 instance=ExtResource("25_m5aj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.575, 1.1, 26.7)
+metadata/kind = "wall terminal"
+metadata/dimensions_m = Vector3(0.25, 0.9, 1)
+metadata/layout_id = "O_T2"
+
+[node name="O_M1" type="Node3D" parent="Objects" unique_id=1681257940 instance=ExtResource("26_5o5k8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.375, 0.75, 23.15)
+metadata/kind = "desk monitor"
+metadata/dimensions_m = Vector3(0.9, 0.5, 0.25)
+metadata/layout_id = "O_M1"
+
+[node name="O_M2" type="Node3D" parent="Objects" unique_id=1385054281 instance=ExtResource("27_jh3u5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.425, 0.75, 25.15)
+metadata/kind = "desk monitor"
+metadata/dimensions_m = Vector3(0.9, 0.5, 0.25)
+metadata/layout_id = "O_M2"
+
+[node name="CandidateItem1" type="Marker3D" parent="." unique_id=1766942594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.975, 1.15, 20.8)
+metadata/design_note = "possible optional pickup on staff back counter; no item type/count assigned"
+
+[node name="CandidateItem2" type="Marker3D" parent="." unique_id=1618558525]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.675, 0.78, 25.5)
+metadata/design_note = "Possible later item on registration office desk; no active pickup"
+
+[node name="StaffDoor" type="Node3D" parent="." unique_id=1716585048 instance=ExtResource("28_mlkih")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.875, 0, 18)
+script = ExtResource("29_maale")
+leaf_travel = 1.6

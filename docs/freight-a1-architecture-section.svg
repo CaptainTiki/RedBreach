@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1220" viewBox="0 0 1800 1220"><title>Red Breach Screening architecture sample F04</title><rect width="1800" height="1220" fill="#101c28"/><g font-family="Segoe UI,Arial,sans-serif">
+<text x="36" y="48" fill="#edf4fa" font-size="30" font-weight="700" text-anchor="start">RED BREACH / PRESSURIZED COLONY LANGUAGE</text>
+<text x="36" y="82" fill="#adc1d0" font-size="19" font-weight="400" text-anchor="start">F-04 / BUILT LAYOUT 09  |  Screening architectural sample  |  Ready for player walkthrough</text>
+<rect x="36" y="110" width="1728" height="470" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="60" y="148" fill="#edf4fa" font-size="23" font-weight="700" text-anchor="start">A / SCREENING CROSS-SECTION — THROUGH THE NORTH EQUIPMENT BAY</text>
+<rect x="168" y="208.0" width="1100.0" height="280.0" fill="#293540" stroke="#81b59e" stroke-width="4"/>
+<polygon points="168,208.0 232.0,208.0 168,272.0" fill="#81b59e" stroke="none" stroke-width="1"/>
+<polygon points="1268.0,208.0 1204.0,208.0 1268.0,272.0" fill="#81b59e" stroke="none" stroke-width="1"/>
+<rect x="188.0" y="208.0" width="1060.0" height="20.0" fill="#81b59e" stroke="none" stroke-width="1"/>
+<rect x="168" y="228.0" width="20.0" height="260.0" fill="#81b59e" stroke="none" stroke-width="1"/>
+<rect x="1248.0" y="228.0" width="20.0" height="260.0" fill="#81b59e" stroke="none" stroke-width="1"/>
+<rect x="238.0" y="312.0" width="448.0" height="176.0" fill="#85649f" stroke="#adc1d0" stroke-width="1"/>
+<polyline points="310.0,312.0 310.0,488" fill="none" stroke="#baacc8" stroke-width="1" stroke-dasharray=""/>
+<polyline points="382.0,312.0 382.0,488" fill="none" stroke="#baacc8" stroke-width="1" stroke-dasharray=""/>
+<polyline points="454.0,312.0 454.0,488" fill="none" stroke="#baacc8" stroke-width="1" stroke-dasharray=""/>
+<polyline points="526.0,312.0 526.0,488" fill="none" stroke="#baacc8" stroke-width="1" stroke-dasharray=""/>
+<polyline points="598.0,312.0 598.0,488" fill="none" stroke="#baacc8" stroke-width="1" stroke-dasharray=""/>
+<text x="462.0" y="404.0" fill="#edf4fa" font-size="18" font-weight="700" text-anchor="middle">S6 / STORAGE</text>
+<rect x="1126.0" y="288.0" width="112.0" height="200.0" fill="#8795a0" stroke="none" stroke-width="1"/>
+<polyline points="1136.0,448.0 1224.0,448.0" fill="none" stroke="#4e616d" stroke-width="3" stroke-dasharray=""/>
+<polyline points="1136.0,424.0 1224.0,424.0" fill="none" stroke="#4e616d" stroke-width="3" stroke-dasharray=""/>
+<polyline points="1136.0,400.0 1224.0,400.0" fill="none" stroke="#4e616d" stroke-width="3" stroke-dasharray=""/>
+<polyline points="1136.0,376.0 1224.0,376.0" fill="none" stroke="#4e616d" stroke-width="3" stroke-dasharray=""/>
+<polyline points="1136.0,352.0 1224.0,352.0" fill="none" stroke="#4e616d" stroke-width="3" stroke-dasharray=""/>
+<text x="1182.0" y="476.0" fill="#101c28" font-size="16" font-weight="700" text-anchor="middle">S7</text>
+<rect x="816.0" y="372.0" width="40.0" height="116.0" fill="#b8c9d0" stroke="none" stroke-width="1"/>
+<circle cx="836.0" cy="356.0" r="12.0" fill="#b8c9d0"/>
+<text x="836.0" y="516" fill="#adc1d0" font-size="16" font-weight="400" text-anchor="middle">1.8 m figure</text>
+<polyline points="168,530 1268.0,530" fill="none" stroke="#e2b373" stroke-width="2" stroke-dasharray=""/>
+<text x="718.0" y="556" fill="#e2b373" font-size="18" font-weight="700" text-anchor="middle">13.75 m existing room width / no room-shell enlargement</text>
+<text x="1320" y="236" fill="#edf4fa" font-size="17" font-weight="700" text-anchor="start">Ceiling slab: 3.50 m</text>
+<text x="1320" y="275" fill="#edf4fa" font-size="17" font-weight="700" text-anchor="start">Rib underside: 3.25 m</text>
+<text x="1320" y="314" fill="#edf4fa" font-size="17" font-weight="700" text-anchor="start">Upper corner begins: 2.95 m</text>
+<text x="1320" y="353" fill="#adc1d0" font-size="17" font-weight="400" text-anchor="start">Lower walls stay vertical.</text>
+<text x="1320" y="392" fill="#adc1d0" font-size="17" font-weight="400" text-anchor="start">Ribs follow the corner profile.</text>
+<text x="1320" y="431" fill="#adc1d0" font-size="17" font-weight="400" text-anchor="start">Structural colour is illustrative;</text>
+<text x="1320" y="470" fill="#adc1d0" font-size="17" font-weight="400" text-anchor="start">use the Kenney blockout palette.</text>
+<rect x="36" y="604" width="826" height="500" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="60" y="642" fill="#edf4fa" font-size="23" font-weight="700" text-anchor="start">B / SCREENING → STAFF PREPARATION</text>
+<rect x="205" y="741.0" width="410" height="287.0" fill="#81b59e" stroke="none" stroke-width="1"/>
+<rect x="246.0" y="765.5999999999999" width="328" height="262.40000000000003" fill="#293540" stroke="none" stroke-width="1"/>
+<polyline points="246.0,1046 574.0,1046" fill="none" stroke="#e2b373" stroke-width="2" stroke-dasharray=""/>
+<text x="410.0" y="1073" fill="#e2b373" font-size="18" font-weight="700" text-anchor="middle">4.0 m clear — existing opening width</text>
+<text x="60" y="681" fill="#edf4fa" font-size="19" font-weight="400" text-anchor="start">Deep frame reads as a compartment boundary.</text>
+<text x="60" y="715" fill="#adc1d0" font-size="18" font-weight="400" text-anchor="start">0.50 m overall depth; 3.20 m clear headroom.</text>
+<text x="410.0" y="896.8" fill="#edf4fa" font-size="21" font-weight="700" text-anchor="middle">OPEN PASSAGE</text>
+<text x="410.0" y="929.6" fill="#adc1d0" font-size="16" font-weight="400" text-anchor="middle">Door behaviour remains a later design.</text>
+<rect x="886" y="604" width="878" height="500" fill="#1a2c3c" stroke="none" stroke-width="1"/>
+<text x="910" y="642" fill="#edf4fa" font-size="23" font-weight="700" text-anchor="start">C / UPPER-CORNER PROFILE + BAY RHYTHM</text>
+<rect x="950" y="728" width="246.75" height="246.75" fill="#293540" stroke="none" stroke-width="1"/>
+<polyline points="950,974.75 950,728 1196.75,728" fill="none" stroke="#81b59e" stroke-width="6" stroke-dasharray=""/>
+<polygon points="950,728 1079.25,728 950,857.25" fill="#8795a0" stroke="none" stroke-width="1"/>
+<polyline points="1079.25,734 1079.25,857.25 956,857.25" fill="none" stroke="#e2b373" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="1086.3" y="798.5" fill="#e2b373" font-size="16" font-weight="400" text-anchor="start">0.55 m</text>
+<text x="978.2" y="908.95" fill="#edf4fa" font-size="16" font-weight="400" text-anchor="start">45° upper insert</text>
+<text x="1240" y="762" fill="#edf4fa" font-size="17" font-weight="700" text-anchor="start">Four rib stations:</text>
+<text x="1240" y="796" fill="#edf4fa" font-size="17" font-weight="400" text-anchor="start">3.75 / 3.75 / 3.75 m apart.</text>
+<text x="1240" y="830" fill="#edf4fa" font-size="17" font-weight="400" text-anchor="start">Each rib: 0.25 m wide/deep.</text>
+<text x="1240" y="864" fill="#adc1d0" font-size="17" font-weight="400" text-anchor="start">Interrupt legs and corner inserts</text>
+<text x="1240" y="898" fill="#adc1d0" font-size="17" font-weight="400" text-anchor="start">at existing doorway apertures.</text>
+<text x="1240" y="932" fill="#adc1d0" font-size="17" font-weight="400" text-anchor="start">Service trunk occupies the north bay;</text>
+<text x="1240" y="966" fill="#adc1d0" font-size="17" font-weight="400" text-anchor="start">light housings mark the workstations.</text>
+<text x="910" y="1022" fill="#edf4fa" font-size="18" font-weight="700" text-anchor="start">This is the visible interior lining and frame language.</text>
+<text x="910" y="1054" fill="#adc1d0" font-size="16" font-weight="400" text-anchor="start">It suggests a sealed outer shell; it is not a pressure-vessel design.</text>
+<text x="36" y="1156" fill="#edf4fa" font-size="20" font-weight="700" text-anchor="start">BUILD NOW: major frames, upper corners, services, light housings and full equipment compositions.</text>
+<text x="36" y="1190" fill="#adc1d0" font-size="18" font-weight="400" text-anchor="start">LATER: panel seams, bolts, small pipes, wear and final meshes. Preserve the 3 m route and 2 m working aisles.</text>
+</g></svg>
