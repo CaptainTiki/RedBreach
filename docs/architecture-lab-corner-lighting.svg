@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1640" height="2264" viewBox="0 0 1640 2264">
+<rect width="1640" height="2264" fill="#111b25"/>
+<text x="50" y="56" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="bold" fill="#e5edf3" text-anchor="start">CORNER LAB / LIGHTING — alternate vs every bay</text>
+<text x="50" y="88" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="normal" fill="#a9bac9" text-anchor="start">Playtest note: the unlit bays read wrong because the CEILING goes dark, not the wall. Every-bay lighting doubles the fittings, so each one comes down to 0.62 of its energy.</text>
+<text x="50" y="114" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Ceiling and floor figures are mean perceived brightness (0-255) measured on the same frame region in both passes — not an impression.</text>
+<text x="50" y="158" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold" fill="#e5edf3" text-anchor="start">ALTERNATE — every other bay lit, energy 1.40</text>
+<text x="830" y="158" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold" fill="#e5edf3" text-anchor="start">EVERY BAY — all lit, energy 0.87</text>
+<image x="50" y="176" width="760" height="427" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/plan_alternate/arch_corner_02_mid_straight.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="625" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#6fd3a8" text-anchor="start">ceiling 41.5   floor 48.0</text>
+<image x="830" y="176" width="760" height="427" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/plan_every_bay/arch_corner_02_mid_straight.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="830" y="625" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#6fd3a8" text-anchor="start">ceiling 93.3   floor 57.7</text>
+<text x="1080" y="625" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#6fd3a8" text-anchor="start">+51.8 on the ceiling</text>
+<text x="50" y="647" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">Half way down the 52 m straight</text>
+<image x="50" y="657" width="760" height="427" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/plan_alternate/arch_corner_03_v1_approach.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="1106" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#6fd3a8" text-anchor="start">ceiling 55.0   floor 36.0</text>
+<image x="830" y="657" width="760" height="427" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/plan_every_bay/arch_corner_03_v1_approach.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="830" y="1106" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#6fd3a8" text-anchor="start">ceiling 61.4   floor 42.4</text>
+<text x="1080" y="1106" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#6fd3a8" text-anchor="start">+6.4 on the ceiling</text>
+<text x="50" y="1128" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">Approaching V1, the square landing</text>
+<image x="50" y="1138" width="760" height="427" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/plan_alternate/arch_corner_07_v4_approach.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="1587" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#6fd3a8" text-anchor="start">ceiling 50.4   floor 51.4</text>
+<image x="830" y="1138" width="760" height="427" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/plan_every_bay/arch_corner_07_v4_approach.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="830" y="1587" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#6fd3a8" text-anchor="start">ceiling 104.2   floor 60.0</text>
+<text x="1080" y="1587" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#6fd3a8" text-anchor="start">+53.7 on the ceiling</text>
+<text x="50" y="1609" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">Approaching V4, the 45° leg</text>
+<image x="50" y="1619" width="760" height="427" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/plan_alternate/arch_corner_08_v4_in_the_leg.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="2068" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#6fd3a8" text-anchor="start">ceiling 34.2   floor 38.6</text>
+<image x="830" y="1619" width="760" height="427" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/plan_every_bay/arch_corner_08_v4_in_the_leg.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="830" y="2068" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#6fd3a8" text-anchor="start">ceiling 82.8   floor 48.3</text>
+<text x="1080" y="2068" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#6fd3a8" text-anchor="start">+48.5 on the ceiling</text>
+<text x="50" y="2090" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">Standing in the V4 leg</text>
+<text x="50" y="2168" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold" fill="#6fd3a8" text-anchor="start">Mean ceiling change across the four views: +40.1 brightness points.</text>
+<text x="50" y="2196" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">Set the plan with REDBREACH_LIGHT_PLAN before running the bootstrap AND the scene writer — they must agree, or the fittings and the lights end up in different places.</text>
+<text x="50" y="2226" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">CORNER LAB LIGHTING COMPARISON / geometry identical in both passes, 473 brushes — only the light plan differs</text>
+</svg>

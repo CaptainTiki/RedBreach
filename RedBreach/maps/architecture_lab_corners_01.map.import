@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://dkiiqcvy0piv3"
+path="res://.godot/imported/architecture_lab_corners_01.map-46faaea29c14cfec1fe2d6586c402c07.tres"
+
+[deps]
+
+source_file="res://maps/architecture_lab_corners_01.map"
+dest_files=["res://.godot/imported/architecture_lab_corners_01.map-46faaea29c14cfec1fe2d6586c402c07.tres"]
+
+[params]
+

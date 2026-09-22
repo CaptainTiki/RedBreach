@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1742" height="5310" viewBox="0 0 1742 5310">
+<rect width="1742" height="5310" fill="#111b25"/>
+<text x="50" y="58" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="bold" fill="#e5edf3">ARCHITECTURE LAB / THE CORNER — built</text>
+<text x="50" y="90" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="normal" fill="#a9bac9">107.66 m walk in one piece: a 54 m straight, a square 90 (V1), then a 45° leg (V4). No rib sits at any bend.</text>
+<text x="50" y="116" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">473 brushes · 1,268 validation checks, 0 failures · 23 ribs on one 4 m rhythm measured along the centreline, 3 stations skipped inside turns.</text>
+<image x="50" y="150" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_01_long_straight.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="629" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">The repetition test — 52 m, nothing in it</text>
+<image x="882" y="150" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_02_mid_straight.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="882" y="629" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">Half way down. Is the rhythm still saying anything?</text>
+<image x="50" y="661" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_03_v1_approach.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="1140" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">V1 approach — the square landing reads as a full stop</text>
+<image x="882" y="661" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_04_v1_exit.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="882" y="1140" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">V1 — the mitre frames the exit like a portal</text>
+<image x="50" y="1172" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_05_v1_outer_corner.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="1651" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">V1 outer corner — the dead square pocket, no rib on it</text>
+<image x="882" y="1172" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_06_v1_looking_back.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="882" y="1651" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">V1 from the far side — does the rib beat line up?</text>
+<image x="50" y="1683" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_07_v4_approach.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="2162" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">V4 approach — the 45° leg opening up</text>
+<image x="882" y="1683" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_08_v4_in_the_leg.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="882" y="2162" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">V4 — standing in the leg, a rib inside the turn</text>
+<image x="50" y="2194" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_09_v4_looking_back.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="2673" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">V4 from the far side, back up the diagonal</text>
+<image x="882" y="2194" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_10_v4_rib_base.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="882" y="2673" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">V4 — the battered rib base on a 45° wall</text>
+<image x="50" y="2705" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_11_t_approach.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="3184" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">T approach — the opening arrives on the right</text>
+<image x="882" y="2705" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_12_t_branch.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="882" y="3184" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">T — standing in the junction, down the branch</text>
+<image x="50" y="3216" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_13_t_choice.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="3695" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">T — the choice: straight on, or turn</text>
+<image x="882" y="3216" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_14_t_jamb.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="882" y="3695" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">T — the jamb and the branch’s first rib, 0.75 m apart</text>
+<image x="50" y="3727" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_15_t_looking_back.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="4206" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">T — looking back into the junction from the branch</text>
+<image x="882" y="3727" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_16_v1_corner_close.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="882" y="4206" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">V1 outer corner, close — the two mitred profiles meeting</text>
+<image x="50" y="4238" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_17_v1_corner_low.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="4717" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">V1 outer corner, low — base kick and plinth at the fold</text>
+<image x="882" y="4238" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_18_v1_corner_high.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="882" y="4717" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">V1 outer corner, high — the ceiling chamfer at the fold</text>
+<image x="50" y="4749" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_19_t_jamb_close.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="50" y="5228" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">T jamb, close — where the through wall stops</text>
+<image x="882" y="4749" width="810" height="455" xlink:href="file:///C:/Repo/RedBreach/RedBreach/.godot/arch_corner_20_user_view.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="882" y="5228" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9">The jamb from the user’s own camera — void filled</text>
+</svg>

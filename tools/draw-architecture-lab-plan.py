@@ -91,8 +91,8 @@ text(cx,BASE-1.80*SC,'4.0 × 3.2 clear',14,CLEAR,anchor='middle')
 
 sx0=790
 for k,line in enumerate([
-  ('Widest interior 5.50 m \u00b7 crown 3.75 m \u00b7 rib beam soffit 3.50 m.',TEXT),
-  ('Two angles only: 45\u00b0 chamfers, and one 63.43\u00b0 base kick.',TEXT),
+  (f'Widest interior {2*S.WIDEST:.2f} m \u00b7 crown {S.CEIL_Y:.2f} m \u00b7 rib beam soffit {S.RIB_SOFFIT_Y:.2f} m.',TEXT),
+  ('Outward-rising facets are 63.43\u00b0, 56.31\u00b0 and 51.34\u00b0; the 45\u00b0 chamfers are all overhangs.',TEXT),
   ('The kick is the single facet the player can stand on, so it is the',MUTED),
   ('only one that has to beat the floor_max_angle default.',MUTED),
   ('',TEXT),
@@ -326,7 +326,7 @@ for k,s in enumerate([
   '4   Mars volume, window bays, end viewport.']):
     text(60,1924+k*23,s,16)
 for k,s in enumerate([
-  'Does the 4.0 m rhythm read, and is 5.50 × 3.75 the right size?',
+  f'Does the 4.0 m rhythm read, and is {2*S.WIDEST:.2f} × {S.CEIL_Y:.2f} the right size?',
   'Does the kit hold together, and does the corner actually resolve?',
   'Do the panel swap-outs carry enough interest on their own?',
   'Does the red light do the work — is a glimpse of Mars enough?']):

@@ -110,6 +110,47 @@ Plan the upper entrance, exit, elevation and sightlines on paper together with t
 
 **Completion check:** The player can recognize the earlier room from the upper route, understand how the journey reconnects, and traverse both intended approaches without breaking progression. Review combat crossfire and enemy access in the later populated pass. F-02 reception does not implement this feature; its current 3.5 m ceiling cannot accept a usable upper floor.
 
+## FR-006: Power loss as a mission event
+
+**Status:** User-proposed; deferred until the mission redress needs it.
+
+The corridor kit now lights **every** bay by default, so an unlit bay is no
+longer a rhythm — it is a deliberate statement that something is wrong. The user
+proposed making that statement dynamic rather than authored: **the bugs cut the
+power and the hallway lights go out during play.**
+
+The kit is already shaped for it. `S.LIGHT_TIERS` pairs a fitting material with
+a light, and `C.LIGHT_PLANS` selects which bays use which tier, so going dark is
+a material swap plus disabling the OmniLight3D nodes — no geometry edit at all.
+The lab already proved the one-word change works; this is the same change made
+at runtime.
+
+- Swap the emissive fitting material for the dark one and disable that bay's
+  lights together. An **off fitting must never glow** — a strip that emits while
+  its bay stays dark reads as a mistake, and that rule does not relax just
+  because the change is dynamic.
+- Keep one or two bays **flickering** rather than fully out, with sparks. A
+  corridor that is uniformly dark is less legible than one that is intermittently
+  lit, and the flicker is what tells the player the outage is damage rather than
+  a design choice.
+- Decide what the player can still see by. Emissive materials do not illuminate
+  anything in Godot without GI, so a blackout with the OmniLights off is a true
+  blackout — some other source has to carry it, or the encounter has to assume
+  the player cannot see.
+- The event belongs in a StateChart like every other behaviour transition, and
+  the restored state must be reachable so a corridor is not permanently dark
+  after a reset.
+
+**Completion check:** Power can be cut and restored during a mission; affected
+bays swap fitting material and lose their lights together with no geometry
+rebuild; one or two bays flicker with sparks rather than going fully dark; the
+player can still navigate or is deliberately meant not to; and a mission reset
+returns the corridor to its lit state.
+
+Source: corner playtest 01, [architecture-lab-corner-playtest.md](architecture-lab-corner-playtest.md).
+Relates to [FR-004 distinct bug alert and ambush audio](#fr-004-distinct-bug-alert-and-ambush-audio)
+— a blackout and an ambush cue arriving together must not mask each other.
+
 ## Adding future entries
 
 Give each idea the next stable identifier (FR-006, FR-007, and so on), a short title, status, a reason to revisit it, the intended change, and a practical completion check. Keep uncertain details marked as open. When an item enters active work or is completed, update its status and link the relevant plan or implementation notes.

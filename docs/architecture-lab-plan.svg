@@ -26,8 +26,8 @@
 <path d="M430.0,492.5 L444.5,540.0" fill="none" stroke="#9dadb8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
 <path d="M413.5,452.9 L446.5,452.9" fill="none" stroke="#9dadb8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
 <text x="430" y="421" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#6fd3a8" text-anchor="middle">4.0 × 3.2 clear</text>
-<text x="790" y="258" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Widest interior 5.50 m · crown 3.75 m · rib beam soffit 3.50 m.</text>
-<text x="790" y="282" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Two angles only: 45° chamfers, and one 63.43° base kick.</text>
+<text x="790" y="258" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Widest interior 6.00 m · crown 3.75 m · rib beam soffit 3.50 m.</text>
+<text x="790" y="282" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Outward-rising facets are 63.43°, 56.31° and 51.34°; the 45° chamfers are all overhangs.</text>
 <text x="790" y="306" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">The kick is the single facet the player can stand on, so it is the</text>
 <text x="790" y="330" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">only one that has to beat the floor_max_angle default.</text>
 <text x="790" y="354" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start"></text>
@@ -324,7 +324,7 @@
 <text x="60" y="1947" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">2   Inserts, portal bay, T, corner, door bay.</text>
 <text x="60" y="1970" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">3   Trough reveal lighting, alternating bays.</text>
 <text x="60" y="1993" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">4   Mars volume, window bays, end viewport.</text>
-<text x="620" y="1924" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Does the 4.0 m rhythm read, and is 5.50 × 3.75 the right size?</text>
+<text x="620" y="1924" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Does the 4.0 m rhythm read, and is 6.00 × 3.75 the right size?</text>
 <text x="620" y="1947" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Does the kit hold together, and does the corner actually resolve?</text>
 <text x="620" y="1970" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Do the panel swap-outs carry enough interest on their own?</text>
 <text x="620" y="1993" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Does the red light do the work — is a glimpse of Mars enough?</text>

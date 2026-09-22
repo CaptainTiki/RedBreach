@@ -1,0 +1,305 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="2030" viewBox="0 0 1700 2030">
+<defs><clipPath id="pc0"><rect x="74" y="250" width="448" height="448"/></clipPath>
+<clipPath id="pc1"><rect x="600" y="250" width="448" height="448"/></clipPath>
+<clipPath id="pc2"><rect x="1126" y="250" width="448" height="448"/></clipPath></defs>
+<rect width="1700" height="2030" fill="#111b25"/>
+<text x="60" y="60" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="bold" fill="#e5edf3" text-anchor="start">ARCHITECTURE LAB / THE CORNER — three variants in plan</text>
+<text x="60" y="92" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="normal" fill="#a9bac9" text-anchor="start">Revision 06 kit, turned through 90 degrees. Paper only: this script writes no map.</text>
+<text x="60" y="118" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Plan view. Corridor A enters from the left, corridor B leaves at the bottom. OUTER corner top-right, INNER elbow bottom-left — matching the sketch.</text>
+<rect x="60.0" y="137.0" width="13.0" height="13.0" rx="0" fill="#7fb6d9" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="80" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#e5edf3" text-anchor="start">WIDEST</text>
+<text x="144" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">6.00 m</text>
+<rect x="232.0" y="137.0" width="13.0" height="13.0" rx="0" fill="#8595a4" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="252" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#e5edf3" text-anchor="start">PLATE</text>
+<text x="307" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">5.00 m</text>
+<rect x="395.0" y="137.0" width="13.0" height="13.0" rx="0" fill="#6fd3a8" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="415" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#e5edf3" text-anchor="start">LANE</text>
+<text x="461" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">4.00 m</text>
+<rect x="549.0" y="137.0" width="13.0" height="13.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="569" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#e5edf3" text-anchor="start">RIB</text>
+<text x="606" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">0.50 m proud</text>
+<path d="M60.0,168.0 L1640.0,168.0" fill="none" stroke="#3c4b59" stroke-width="1" opacity="1.0" stroke-linejoin="miter"/>
+<rect x="60.0" y="190.0" width="500.0" height="608.0" rx="6" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="74" y="216" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="bold" fill="#e5edf3" text-anchor="start">V1  SQUARE</text>
+<text x="74" y="238" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">Hard 90. Square landing, corridor continues at right angles.</text>
+<rect x="74.0" y="250.0" width="448.0" height="448.0" rx="0" fill="#15212b" stroke="none" stroke-width="1" clip-path="url(#pc0)" opacity="1.0"/>
+<path d="M-50.4,349.6 L422.4,349.6 L422.4,822.4 L273.1,822.4 L273.1,498.9 L-50.4,498.9 Z" fill="#22323f" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M-50.4,362.0 L410.0,362.0 L410.0,822.4 L285.6,822.4 L285.6,486.4 L-50.4,486.4 Z" fill="none" stroke="#8595a4" stroke-width="1.3" stroke-dasharray="5 4" clip-path="url(#pc0)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M-50.4,374.4 L397.6,374.4 L397.6,822.4 L298.0,822.4 L298.0,474.0 L-50.4,474.0 Z" fill="none" stroke="#6fd3a8" stroke-width="1.5" stroke-dasharray="7 5" clip-path="url(#pc0)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M-50.4,349.6 L422.4,349.6 L422.4,822.4" fill="none" stroke="#7fb6d9" stroke-width="2.6" clip-path="url(#pc0)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M-50.4,498.9 L273.1,498.9 L273.1,822.4" fill="none" stroke="#7fb6d9" stroke-width="2.6" clip-path="url(#pc0)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M167.3,349.6 L179.8,349.6 L179.8,374.4 L167.3,374.4 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M167.3,498.9 L179.8,498.9 L179.8,474.0 L167.3,474.0 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M67.8,349.6 L80.2,349.6 L80.2,374.4 L67.8,374.4 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M67.8,498.9 L80.2,498.9 L80.2,474.0 L67.8,474.0 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M-31.8,349.6 L-19.3,349.6 L-19.3,374.4 L-31.8,374.4 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M-31.8,498.9 L-19.3,498.9 L-19.3,474.0 L-31.8,474.0 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M273.1,592.2 L273.1,604.7 L298.0,604.7 L298.0,592.2 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M422.4,592.2 L422.4,604.7 L397.6,604.7 L397.6,592.2 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M273.1,691.8 L273.1,704.2 L298.0,704.2 L298.0,691.8 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M422.4,691.8 L422.4,704.2 L397.6,704.2 L397.6,691.8 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M422.4,349.6 L273.1,498.9" fill="none" stroke="#ffe9b8" stroke-width="1.8" stroke-dasharray="6 4" clip-path="url(#pc0)" opacity="1.0" stroke-linejoin="miter"/>
+<text x="360" y="418" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#ffe9b8" text-anchor="start">8.49 m</text>
+<text x="360" y="436" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="normal" fill="#a9bac9" text-anchor="start">across the turn</text>
+<circle cx="422.4" cy="349.6" r="9" fill="#e8a15c" clip-path="url(#pc0)" opacity="0.95"/>
+<circle cx="273.1" cy="498.9" r="9" fill="#e8a15c" clip-path="url(#pc0)" opacity="0.95"/>
+<circle cx="298.0" cy="474.0" r="6" fill="#111b25" stroke="#e8756c" stroke-width="2"/>
+<text x="284" y="480" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#e8756c" text-anchor="end">elbow toe</text>
+<text x="412" y="336" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#a9bac9" text-anchor="end">OUTER</text>
+<text x="283" y="521" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#a9bac9" text-anchor="start">INNER ELBOW</text>
+<path d="M88.9,424.2 L128.8,424.2" fill="none" stroke="#6fd3a8" stroke-width="2" clip-path="url(#pc0)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M128.8,424.2 L119.8,418.2 L119.8,430.2 Z" fill="#6fd3a8" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M347.8,638.3 L347.8,678.1" fill="none" stroke="#6fd3a8" stroke-width="2" clip-path="url(#pc0)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M347.8,678.1 L341.8,669.1 L353.8,669.1 Z" fill="#6fd3a8" stroke="none" stroke-width="0" clip-path="url(#pc0)" opacity="1.0" stroke-linejoin="miter"/>
+<rect x="74.0" y="710.0" width="448.0" height="78.0" rx="4" fill="#15212b" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="86" y="732" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">chamfers   outer 0.00 m · elbow 0.00 m</text>
+<text x="86" y="754" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e8756c" text-anchor="start">turn 41% wider than the corridor</text>
+<text x="86" y="775" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#6fd3a8" text-anchor="start">plan mitres 45°  ·  2 junction ribs</text>
+<text x="342" y="754" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">racing line 8.94 m</text>
+<text x="342" y="775" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#ffe9b8" text-anchor="start">sees 6.6 m down exit</text>
+<rect x="586.0" y="190.0" width="500.0" height="608.0" rx="6" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="600" y="216" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="bold" fill="#e5edf3" text-anchor="start">V2  OUTER</text>
+<text x="600" y="238" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">Outer corner chamfered at 45. The pocket stops being square.</text>
+<rect x="600.0" y="250.0" width="448.0" height="448.0" rx="0" fill="#15212b" stroke="none" stroke-width="1" clip-path="url(#pc1)" opacity="1.0"/>
+<path d="M475.6,349.6 L911.1,349.6 L948.4,386.9 L948.4,822.4 L799.1,822.4 L799.1,498.9 L475.6,498.9 Z" fill="#22323f" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M475.6,362.0 L898.7,362.0 L936.0,399.3 L936.0,822.4 L811.6,822.4 L811.6,486.4 L475.6,486.4 Z" fill="none" stroke="#8595a4" stroke-width="1.3" stroke-dasharray="5 4" clip-path="url(#pc1)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M475.6,374.4 L886.2,374.4 L923.6,411.8 L923.6,822.4 L824.0,822.4 L824.0,474.0 L475.6,474.0 Z" fill="none" stroke="#6fd3a8" stroke-width="1.5" stroke-dasharray="7 5" clip-path="url(#pc1)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M475.6,349.6 L911.1,349.6 L948.4,386.9 L948.4,822.4" fill="none" stroke="#7fb6d9" stroke-width="2.6" clip-path="url(#pc1)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M475.6,498.9 L799.1,498.9 L799.1,822.4" fill="none" stroke="#7fb6d9" stroke-width="2.6" clip-path="url(#pc1)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M693.3,349.6 L705.8,349.6 L705.8,374.4 L693.3,374.4 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M693.3,498.9 L705.8,498.9 L705.8,474.0 L693.3,474.0 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M593.8,349.6 L606.2,349.6 L606.2,374.4 L593.8,374.4 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M593.8,498.9 L606.2,498.9 L606.2,474.0 L593.8,474.0 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M494.2,349.6 L506.7,349.6 L506.7,374.4 L494.2,374.4 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M494.2,498.9 L506.7,498.9 L506.7,474.0 L494.2,474.0 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M799.1,592.2 L799.1,604.7 L824.0,604.7 L824.0,592.2 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M948.4,592.2 L948.4,604.7 L923.6,604.7 L923.6,592.2 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M799.1,691.8 L799.1,704.2 L824.0,704.2 L824.0,691.8 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M948.4,691.8 L948.4,704.2 L923.6,704.2 L923.6,691.8 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M929.8,368.2 L799.1,498.9" fill="none" stroke="#ffe9b8" stroke-width="1.8" stroke-dasharray="6 4" clip-path="url(#pc1)" opacity="1.0" stroke-linejoin="miter"/>
+<text x="876" y="428" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#ffe9b8" text-anchor="start">7.42 m</text>
+<text x="876" y="446" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="normal" fill="#a9bac9" text-anchor="start">across the turn</text>
+<circle cx="911.1" cy="349.6" r="9" fill="#e8a15c" clip-path="url(#pc1)" opacity="0.95"/>
+<circle cx="948.4" cy="386.9" r="9" fill="#e8a15c" clip-path="url(#pc1)" opacity="0.95"/>
+<circle cx="799.1" cy="498.9" r="9" fill="#e8a15c" clip-path="url(#pc1)" opacity="0.95"/>
+<circle cx="824.0" cy="474.0" r="6" fill="#111b25" stroke="#e8756c" stroke-width="2"/>
+<text x="810" y="480" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#e8756c" text-anchor="end">elbow toe</text>
+<text x="938" y="336" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#a9bac9" text-anchor="end">OUTER</text>
+<text x="809" y="521" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#a9bac9" text-anchor="start">INNER ELBOW</text>
+<path d="M614.9,424.2 L654.8,424.2" fill="none" stroke="#6fd3a8" stroke-width="2" clip-path="url(#pc1)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M654.8,424.2 L645.8,418.2 L645.8,430.2 Z" fill="#6fd3a8" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M873.8,638.3 L873.8,678.1" fill="none" stroke="#6fd3a8" stroke-width="2" clip-path="url(#pc1)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M873.8,678.1 L867.8,669.1 L879.8,669.1 Z" fill="#6fd3a8" stroke="none" stroke-width="0" clip-path="url(#pc1)" opacity="1.0" stroke-linejoin="miter"/>
+<rect x="600.0" y="710.0" width="448.0" height="78.0" rx="4" fill="#15212b" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="612" y="732" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">chamfers   outer 1.50 m · elbow 0.00 m</text>
+<text x="612" y="754" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#6fd3a8" text-anchor="start">turn 24% wider than the corridor</text>
+<text x="612" y="775" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e8756c" text-anchor="start">plan mitres 22.5/45°  ·  3 junction ribs</text>
+<text x="868" y="754" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">racing line 8.94 m</text>
+<text x="868" y="775" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#ffe9b8" text-anchor="start">sees 6.6 m down exit</text>
+<rect x="1112.0" y="190.0" width="500.0" height="608.0" rx="6" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="1126" y="216" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="bold" fill="#e5edf3" text-anchor="start">V3  BOTH</text>
+<text x="1126" y="238" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">Outer corner and elbow both chamfered; a short 45 leg between.</text>
+<rect x="1126.0" y="250.0" width="448.0" height="448.0" rx="0" fill="#15212b" stroke="none" stroke-width="1" clip-path="url(#pc2)" opacity="1.0"/>
+<path d="M1001.6,349.6 L1437.1,349.6 L1474.4,386.9 L1474.4,822.4 L1325.1,822.4 L1325.1,536.2 L1287.8,498.9 L1001.6,498.9 Z" fill="#22323f" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M1001.6,362.0 L1424.7,362.0 L1462.0,399.3 L1462.0,822.4 L1337.6,822.4 L1337.6,523.8 L1300.2,486.4 L1001.6,486.4 Z" fill="none" stroke="#8595a4" stroke-width="1.3" stroke-dasharray="5 4" clip-path="url(#pc2)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M1001.6,374.4 L1412.2,374.4 L1449.6,411.8 L1449.6,822.4 L1350.0,822.4 L1350.0,511.3 L1312.7,474.0 L1001.6,474.0 Z" fill="none" stroke="#6fd3a8" stroke-width="1.5" stroke-dasharray="7 5" clip-path="url(#pc2)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M1001.6,349.6 L1437.1,349.6 L1474.4,386.9 L1474.4,822.4" fill="none" stroke="#7fb6d9" stroke-width="2.6" clip-path="url(#pc2)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M1001.6,498.9 L1287.8,498.9 L1325.1,536.2 L1325.1,822.4" fill="none" stroke="#7fb6d9" stroke-width="2.6" clip-path="url(#pc2)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M1219.3,349.6 L1231.8,349.6 L1231.8,374.4 L1219.3,374.4 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M1219.3,498.9 L1231.8,498.9 L1231.8,474.0 L1219.3,474.0 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M1119.8,349.6 L1132.2,349.6 L1132.2,374.4 L1119.8,374.4 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M1119.8,498.9 L1132.2,498.9 L1132.2,474.0 L1119.8,474.0 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M1020.2,349.6 L1032.7,349.6 L1032.7,374.4 L1020.2,374.4 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M1020.2,498.9 L1032.7,498.9 L1032.7,474.0 L1020.2,474.0 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M1325.1,592.2 L1325.1,604.7 L1350.0,604.7 L1350.0,592.2 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M1474.4,592.2 L1474.4,604.7 L1449.6,604.7 L1449.6,592.2 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M1325.1,691.8 L1325.1,704.2 L1350.0,704.2 L1350.0,691.8 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M1474.4,691.8 L1474.4,704.2 L1449.6,704.2 L1449.6,691.8 Z" fill="#e8a15c" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="0.85" stroke-linejoin="miter"/>
+<path d="M1455.8,368.2 L1306.4,517.6" fill="none" stroke="#ffe9b8" stroke-width="1.8" stroke-dasharray="6 4" clip-path="url(#pc2)" opacity="1.0" stroke-linejoin="miter"/>
+<text x="1393" y="437" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#ffe9b8" text-anchor="start">8.49 m</text>
+<text x="1393" y="455" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="normal" fill="#a9bac9" text-anchor="start">across the turn</text>
+<circle cx="1437.1" cy="349.6" r="9" fill="#e8a15c" clip-path="url(#pc2)" opacity="0.95"/>
+<circle cx="1474.4" cy="386.9" r="9" fill="#e8a15c" clip-path="url(#pc2)" opacity="0.95"/>
+<circle cx="1287.8" cy="498.9" r="9" fill="#e8a15c" clip-path="url(#pc2)" opacity="0.95"/>
+<circle cx="1325.1" cy="536.2" r="9" fill="#e8a15c" clip-path="url(#pc2)" opacity="0.95"/>
+<circle cx="1331.3" cy="492.7" r="6" fill="#111b25" stroke="#e8756c" stroke-width="2"/>
+<text x="1317" y="499" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#e8756c" text-anchor="end">elbow toe</text>
+<text x="1464" y="336" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#a9bac9" text-anchor="end">OUTER</text>
+<text x="1335" y="521" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#a9bac9" text-anchor="start">INNER ELBOW</text>
+<path d="M1140.9,424.2 L1180.8,424.2" fill="none" stroke="#6fd3a8" stroke-width="2" clip-path="url(#pc2)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M1180.8,424.2 L1171.8,418.2 L1171.8,430.2 Z" fill="#6fd3a8" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M1399.8,638.3 L1399.8,678.1" fill="none" stroke="#6fd3a8" stroke-width="2" clip-path="url(#pc2)" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M1399.8,678.1 L1393.8,669.1 L1405.8,669.1 Z" fill="#6fd3a8" stroke="none" stroke-width="0" clip-path="url(#pc2)" opacity="1.0" stroke-linejoin="miter"/>
+<rect x="1126.0" y="710.0" width="448.0" height="78.0" rx="4" fill="#15212b" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="1138" y="732" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">chamfers   outer 1.50 m · elbow 1.50 m</text>
+<text x="1138" y="754" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e8756c" text-anchor="start">turn 41% wider than the corridor</text>
+<text x="1138" y="775" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e8756c" text-anchor="start">plan mitres 22.5°  ·  4 junction ribs</text>
+<text x="1394" y="754" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">racing line 8.51 m</text>
+<text x="1394" y="775" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#ffe9b8" text-anchor="start">sees 9.4 m down exit</text>
+<path d="M60.0,812.0 L1640.0,812.0" fill="none" stroke="#3c4b59" stroke-width="1" opacity="1.0" stroke-linejoin="miter"/>
+<text x="60" y="842" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="bold" fill="#e5edf3" text-anchor="start">WHAT THE THREE ACTUALLY TRADE</text>
+<text x="60" y="866" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">Every number is computed by tools/architecture_lab_corner.py from the section module, not measured off the drawing.</text>
+<text x="60" y="898" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">VARIANT</text>
+<text x="232" y="898" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">OUTER c</text>
+<text x="352" y="898" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">ELBOW d</text>
+<text x="474" y="898" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">TURN WIDTH</text>
+<text x="624" y="898" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">BULGE</text>
+<text x="734" y="898" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">RACING LINE</text>
+<text x="886" y="898" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">SEES DOWN EXIT</text>
+<text x="1092" y="898" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">PLAN MITRES</text>
+<text x="1244" y="898" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">JUNCTION RIBS</text>
+<text x="1420" y="898" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">GRID SAFE</text>
+<path d="M60.0,908.0 L1640.0,908.0" fill="none" stroke="#3c4b59" stroke-width="1" opacity="1.0" stroke-linejoin="miter"/>
+<text x="60" y="932" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#e5edf3" text-anchor="start">V1  SQUARE</text>
+<text x="232" y="932" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">0.00 m</text>
+<text x="352" y="932" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">0.00 m</text>
+<text x="474" y="932" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">8.49 m</text>
+<text x="624" y="932" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e8756c" text-anchor="start">41%</text>
+<text x="734" y="932" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">8.94 m</text>
+<text x="886" y="932" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">6.6 m from 8 m back</text>
+<text x="1092" y="932" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">45°</text>
+<text x="1244" y="932" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">2</text>
+<text x="1420" y="932" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">yes</text>
+<text x="60" y="964" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#e5edf3" text-anchor="start">V2  OUTER</text>
+<text x="232" y="964" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">1.50 m</text>
+<text x="352" y="964" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">0.00 m</text>
+<text x="474" y="964" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">7.42 m</text>
+<text x="624" y="964" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#6fd3a8" text-anchor="start">24%</text>
+<text x="734" y="964" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">8.94 m</text>
+<text x="886" y="964" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">6.6 m from 8 m back</text>
+<text x="1092" y="964" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e8756c" text-anchor="start">22.5/45°</text>
+<text x="1244" y="964" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">3</text>
+<text x="1420" y="964" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">yes</text>
+<text x="60" y="996" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#e5edf3" text-anchor="start">V3  BOTH</text>
+<text x="232" y="996" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">1.50 m</text>
+<text x="352" y="996" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">1.50 m</text>
+<text x="474" y="996" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">8.49 m</text>
+<text x="624" y="996" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e8756c" text-anchor="start">41%</text>
+<text x="734" y="996" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">8.51 m</text>
+<text x="886" y="996" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">9.4 m from 8 m back</text>
+<text x="1092" y="996" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e8756c" text-anchor="start">22.5°</text>
+<text x="1244" y="996" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">4</text>
+<text x="1420" y="996" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">yes</text>
+<path d="M60.0,1038.0 L1640.0,1038.0" fill="none" stroke="#3c4b59" stroke-width="1" opacity="1.0" stroke-linejoin="miter"/>
+<text x="60" y="1066" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="bold" fill="#e5edf3" text-anchor="start">FOUR THINGS THE GEOMETRY SETTLES</text>
+<rect x="48.0" y="1074.0" width="786.0" height="92.0" rx="5" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="60" y="1096" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="bold" fill="#e5edf3" text-anchor="start">The corner does not crowd — it BULGES.</text>
+<text x="60" y="1120" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">A hard 90 opens to 8.49 m across the diagonal against a 6.00 m corridor — 41% wider at the turn. The</text>
+<text x="60" y="1140" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">worry was the inside getting tight; the measurement says the opposite. What crowds the turn is not</text>
+<text x="60" y="1160" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">the wall, it is the RIB standing on the elbow.</text>
+<rect x="858.0" y="1074.0" width="786.0" height="92.0" rx="5" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="870" y="1096" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="bold" fill="#e5edf3" text-anchor="start">The elbow chamfer is the opposite — it is ALL play.</text>
+<text x="870" y="1120" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">V3 shortens the racing line to 8.51 m and opens the exit view from 6.6 m to 9.4 m, seen from 8 m</text>
+<text x="870" y="1140" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">back. It moves better and hides far less. A corner meant to work as a sight blocker should NOT have</text>
+<text x="870" y="1160" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">its elbow chamfered.</text>
+<rect x="48.0" y="1178.0" width="786.0" height="92.0" rx="5" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="60" y="1200" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="bold" fill="#e5edf3" text-anchor="start">The outer chamfer is a LOOKS decision, not a PLAY decision.</text>
+<text x="60" y="1224" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">V2 changes nothing a player can feel: same racing line (8.94 m), same sightline (6.6 m). It shrinks</text>
+<text x="60" y="1244" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">the bulge from 41% to 24% and stops the pocket reading as a dead square. Judge it by eye, not by</text>
+<text x="60" y="1264" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">stopwatch.</text>
+<rect x="858.0" y="1178.0" width="786.0" height="92.0" rx="5" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="870" y="1200" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="bold" fill="#e5edf3" text-anchor="start">A rib at every bend removes the 22.5° mitre problem.</text>
+<text x="870" y="1224" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">A 45° plan chamfer meeting an orthogonal wall needs a 22.5° mitre, and 22.5° will not land on the</text>
+<text x="870" y="1244" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">0.125 m grid. Put a rib at each end of every chamfer instead: the straight wall dies into one rib</text>
+<text x="870" y="1264" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">face and the chamfer into the next, and the rib stands 0.50 m proud so the joint is never seen.</text>
+<path d="M60.0,1298.0 L1640.0,1298.0" fill="none" stroke="#3c4b59" stroke-width="1" opacity="1.0" stroke-linejoin="miter"/>
+<text x="60" y="1330" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="bold" fill="#e5edf3" text-anchor="start">HOW LONG MUST THE 45° LEG BE?  — a rib at each end only works if there is room for them</text>
+<text x="60" y="1354" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">Raised by the user, and it holds. Too short and the two ribs collide; a little longer and they clear but read as crowded against the 3.50 m bay used</text>
+<text x="60" y="1375" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">everywhere else. Both thresholds fall straight out of the rib depth and pitch.</text>
+<rect x="60.0" y="1412.0" width="940.0" height="206.0" rx="5" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="74" y="1436" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#e5edf3" text-anchor="start">chamfer size c  →  clear run left between the two ribs</text>
+<rect x="178.0" y="1464.0" width="84.9" height="34.0" rx="0" fill="#e8756c" stroke="none" stroke-width="1" opacity="0.3"/>
+<text x="220" y="1486" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#e8756c" text-anchor="middle">RIBS COLLIDE</text>
+<rect x="262.9" y="1464.0" width="594.0" height="34.0" rx="0" fill="#c8913f" stroke="none" stroke-width="1" opacity="0.3"/>
+<text x="560" y="1486" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#c8913f" text-anchor="middle">CLEAR, BUT CROWDED</text>
+<rect x="856.8" y="1464.0" width="89.2" height="34.0" rx="0" fill="#6fd3a8" stroke="none" stroke-width="1" opacity="0.3"/>
+<text x="901" y="1486" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#6fd3a8" text-anchor="middle">FULL BAY</text>
+<path d="M658.0,1448.0 L658.0,1516.0" fill="none" stroke="#ffe9b8" stroke-width="2.2" opacity="1.0" stroke-linejoin="miter"/>
+<text x="658" y="1442" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#ffe9b8" text-anchor="middle">LANE CAP 2.00 m</text>
+<path d="M856.8,1448.0 L856.8,1516.0" fill="none" stroke="#6fd3a8" stroke-width="2" stroke-dasharray="5 4" opacity="1.0" stroke-linejoin="miter"/>
+<text x="857" y="1534" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6fd3a8" text-anchor="middle">full bay needs 2.83 m</text>
+<text x="178" y="1514" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="normal" fill="#a9bac9" text-anchor="middle">0</text>
+<text x="418" y="1514" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="normal" fill="#a9bac9" text-anchor="middle">1</text>
+<text x="658" y="1514" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="normal" fill="#a9bac9" text-anchor="middle">2</text>
+<text x="898" y="1514" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="normal" fill="#a9bac9" text-anchor="middle">3</text>
+<text x="74" y="1536" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">c</text>
+<text x="134" y="1536" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">45° face</text>
+<text x="244" y="1536" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">clear bay</text>
+<text x="364" y="1536" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a9bac9" text-anchor="start">of normal</text>
+<text x="74" y="1558" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#e5edf3" text-anchor="start">1.00 m</text>
+<text x="134" y="1558" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#e5edf3" text-anchor="start">1.41 m</text>
+<text x="244" y="1558" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#e5edf3" text-anchor="start">0.91 m</text>
+<text x="364" y="1558" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#e8756c" text-anchor="start">26%</text>
+<text x="74" y="1578" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#e5edf3" text-anchor="start">1.50 m</text>
+<text x="134" y="1578" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#e5edf3" text-anchor="start">2.12 m</text>
+<text x="244" y="1578" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#e5edf3" text-anchor="start">1.62 m</text>
+<text x="364" y="1578" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#e8756c" text-anchor="start">46%</text>
+<text x="74" y="1598" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#e5edf3" text-anchor="start">2.00 m</text>
+<text x="134" y="1598" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#e5edf3" text-anchor="start">2.83 m</text>
+<text x="244" y="1598" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#e5edf3" text-anchor="start">2.33 m</text>
+<text x="364" y="1598" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#e8756c" text-anchor="start">67%</text>
+<text x="434" y="1598" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#ffe9b8" text-anchor="start">← the most chamfer the lane allows, and still a third short</text>
+<rect x="1026.0" y="1412.0" width="614.0" height="206.0" rx="5" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="1042" y="1438" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="bold" fill="#e8756c" text-anchor="start">A plain chamfer can never hold a full bay.</text>
+<text x="1042" y="1466" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">A full 3.50 m bay needs c = 2.83 m, but the lane caps c at 2.00 m. The best</text>
+<text x="1042" y="1486" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">legal chamfer is 67% of a normal bay. The prediction was right — so stop</text>
+<text x="1042" y="1506" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">chamfering the corner and make the 45° run a piece of corridor in its own</text>
+<text x="1042" y="1526" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">right: straight, slice, a full bay at 45°, slice, straight.</text>
+<text x="1042" y="1562" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#ffe9b8" text-anchor="start">Cost: the junction grows. The two walls bend 2.485 m apart — and that is</text>
+<text x="1042" y="1582" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#ffe9b8" text-anchor="start">irrational, so a true 45° turn cannot be fully on-grid. Snapping to 2.500 m</text>
+<text x="1042" y="1602" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#ffe9b8" text-anchor="start">costs 1.0 cm of width, which is invisible.</text>
+<path d="M60.0,1650.0 L1640.0,1650.0" fill="none" stroke="#3c4b59" stroke-width="1" opacity="1.0" stroke-linejoin="miter"/>
+<text x="60" y="1682" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="bold" fill="#e5edf3" text-anchor="start">THE REPETITION TEST — how long may a straight run be?</text>
+<text x="60" y="1706" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">A separate question from the corner, and the answer has to be a NUMBER, because it becomes a rule: beyond this length, something must interrupt. The</text>
+<text x="60" y="1728" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">built lab run is 24.5 m — six bays — and has never felt long. This lays out 52 m of the same kit with nothing in it.</text>
+<rect x="60.0" y="1762.0" width="1500.0" height="60.0" rx="0" fill="#15212b" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<rect x="57.0" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="172.4" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="287.8" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="403.2" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="518.5" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="633.9" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="749.3" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="864.7" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="980.1" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="1095.5" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="1210.8" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="1326.2" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="1441.6" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<rect x="1557.0" y="1762.0" width="6.0" height="60.0" rx="0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="0.85"/>
+<path d="M406.2,1754.0 L406.2,1830.0" fill="none" stroke="#ffe9b8" stroke-width="1.3" stroke-dasharray="4 4" opacity="1.0" stroke-linejoin="miter"/>
+<text x="406" y="1846" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#ffe9b8" text-anchor="middle">12 m</text>
+<path d="M636.9,1754.0 L636.9,1830.0" fill="none" stroke="#ffe9b8" stroke-width="1.3" stroke-dasharray="4 4" opacity="1.0" stroke-linejoin="miter"/>
+<text x="637" y="1846" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#ffe9b8" text-anchor="middle">20 m</text>
+<path d="M867.7,1754.0 L867.7,1830.0" fill="none" stroke="#ffe9b8" stroke-width="1.3" stroke-dasharray="4 4" opacity="1.0" stroke-linejoin="miter"/>
+<text x="868" y="1846" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#ffe9b8" text-anchor="middle">28 m</text>
+<path d="M1098.5,1754.0 L1098.5,1830.0" fill="none" stroke="#ffe9b8" stroke-width="1.3" stroke-dasharray="4 4" opacity="1.0" stroke-linejoin="miter"/>
+<text x="1098" y="1846" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#ffe9b8" text-anchor="middle">36 m</text>
+<path d="M1329.2,1754.0 L1329.2,1830.0" fill="none" stroke="#ffe9b8" stroke-width="1.3" stroke-dasharray="4 4" opacity="1.0" stroke-linejoin="miter"/>
+<text x="1329" y="1846" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#ffe9b8" text-anchor="middle">44 m</text>
+<path d="M1560.0,1754.0 L1560.0,1830.0" fill="none" stroke="#ffe9b8" stroke-width="1.3" stroke-dasharray="4 4" opacity="1.0" stroke-linejoin="miter"/>
+<text x="1560" y="1846" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#ffe9b8" text-anchor="middle">52 m</text>
+<text x="64" y="1748" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">13 bays at 4 m — identical panels, alternating lit/off, no interruption of any kind</text>
+<text x="60" y="1876" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">Walk it in both directions and mark the bay where the rhythm stops giving you new information. That bay number × 4 m is the rule.</text>
+<text x="60" y="1898" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">Run it once with the lighting alternation ON and once with every bay lit — a repeating light pattern may be doing more of the work than the geometry.</text>
+<text x="60" y="1938" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#e5edf3" text-anchor="start">WHAT MAY INTERRUPT A RUN, most expensive first:</text>
+<text x="60" y="1966" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#e8a15c" text-anchor="start">CORNER</text>
+<text x="60" y="1988" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">Full sight block. Resets the</text>
+<text x="60" y="2006" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">view completely.</text>
+<text x="316" y="1966" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#e8a15c" text-anchor="start">T</text>
+<text x="316" y="1988" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">Sight block plus a choice.</text>
+<text x="316" y="2006" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">Most expensive.</text>
+<text x="572" y="1966" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#e8a15c" text-anchor="start">DOOR</text>
+<text x="572" y="1988" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">Sight block that can be</text>
+<text x="572" y="2006" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">locked. Also a pacing gate.</text>
+<text x="828" y="1966" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#e8a15c" text-anchor="start">PORTAL</text>
+<text x="828" y="1988" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">Two bays merged. Widens</text>
+<text x="828" y="2006" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">without turning; a soft break.</text>
+<text x="1084" y="1966" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#e8a15c" text-anchor="start">WINDOW</text>
+<text x="1084" y="1988" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">Relieves sight instead of</text>
+<text x="1084" y="2006" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">blocking it.</text>
+<text x="1340" y="1966" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#e8a15c" text-anchor="start">ALCOVE</text>
+<text x="1340" y="1988" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">Ground given at one bay. Cover</text>
+<text x="1340" y="2006" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="start">and width.</text>
+<text x="60" y="1996" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">CORNER STUDY / PAPER ONLY — generated from tools/architecture_lab_corner.py, which imports the revision 06 section · outer chamfer capped at 2.00 m before it cuts the lane corner · nothing here is built</text>
+</svg>
