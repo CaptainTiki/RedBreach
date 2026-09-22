@@ -1,10 +1,13 @@
 param(
-    [string]$GodotPath = 'D:\SteamLibrary\steamapps\common\Godot Engine\godot.windows.opt.tools.64.exe',
+    # Machine-specific. Set REDBREACH_GODOT once per machine rather than editing this,
+    # or pass -GodotPath. The desktop default is kept as the last resort.
+    [string]$GodotPath = $(if ($env:REDBREACH_GODOT) { $env:REDBREACH_GODOT }
+                          else { 'D:\SteamLibrary\steamapps\common\Godot Engine\godot.windows.opt.tools.64.exe' }),
     [switch]$Validate
 )
 $ErrorActionPreference = 'Stop'
 $projectDir = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\RedBreach'))
-if (-not (Test-Path -LiteralPath $GodotPath)) { throw 'Godot not found. Supply -GodotPath.' }
+if (-not (Test-Path -LiteralPath $GodotPath)) { throw "Godot not found at '$GodotPath'. Set `$env:REDBREACH_GODOT or pass -GodotPath." }
 $checks = ,@('res://tools/build_combat_gym.gd', 'combat_build.log')
 if ($Validate) {
     $checks += ,@('res://tools/validate_combat.gd', 'combat_qa.log')

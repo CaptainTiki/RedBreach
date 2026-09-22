@@ -1,136 +1,332 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1320" viewBox="0 0 1600 1320"><rect width="1600" height="1320" fill="#111b25"/>
-<text x="45" y="49" font-family="Segoe UI,Arial,sans-serif" font-size="32" fill="#e5edf3">ARCHITECTURE LAB / SHAPE STUDY 03</text>
-<text x="45" y="82" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#e5edf3">Same 4 m movement envelope. Three different wall constructions. All proposed dimensions in metres.</text>
-<text x="45" y="116" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#a9bac9">Profiles first: solid shell → sloped base → service volume → internal frame. Colour identifies geometry, not final materials.</text>
-<text x="45" y="161" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#7ed6bf">A / SUSPENDED SERVICE SPINE</text>
-<text x="45" y="189" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">Faceted shell + hanging spine + forked supports.</text>
-<path d="M144.0,485 L102,443.0 L102,275.0 L172.0,205 L368.0,205 L438,275.0 L438,443.0 L396.0,485 Z" fill="#1b2a36" stroke="#7ed6bf" stroke-width="3" />
-<path d="M144.0,485 L102,443.0 L118.79999999999998,437.4 L158,485 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
-<path d="M102,443.0 L102,275.0 L118.79999999999998,283.4 L118.79999999999998,437.4 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
-<path d="M102,275.0 L172.0,205 L180.39999999999998,221.8 L118.79999999999998,283.4 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
-<path d="M172.0,205 L368.0,205 L359.6,221.8 L180.39999999999998,221.8 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
-<path d="M368.0,205 L438,275.0 L421.20000000000005,283.4 L359.6,221.8 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
-<path d="M438,275.0 L438,443.0 L421.20000000000005,437.4 L421.20000000000005,283.4 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
-<path d="M438,443.0 L396.0,485 L382,485 L421.20000000000005,437.4 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="1" />
-<path d="M113.20000000000002,311.4 L138.4,311.4 L138.4,277.79999999999995 L113.20000000000002,277.79999999999995 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
-<path d="M426.79999999999995,311.4 L401.6,311.4 L401.6,277.79999999999995 L426.79999999999995,277.79999999999995 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
-<path d="M172.0,230.20000000000002 L225.2,269.4 L225.2,255.40000000000003 L180.39999999999998,221.8 Z" fill="#48645d" stroke="#7ed6bf" stroke-width="2" />
-<path d="M368.0,230.20000000000002 L314.8,269.4 L314.8,255.40000000000003 L359.6,221.8 Z" fill="#48645d" stroke="#7ed6bf" stroke-width="2" />
-<path d="M225.2,255.40000000000003 L314.8,255.40000000000003 L314.8,280.6 L300.8,294.6 L239.2,294.6 L225.2,280.6 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
-<path d="M226.32,280.6 L239.2,293.48" fill="none" stroke="#ecf6ce" stroke-width="5" />
-<path d="M313.68,280.6 L300.8,293.48" fill="none" stroke="#ecf6ce" stroke-width="5" />
-<path d="M158,485 L158,305.79999999999995 L382,305.79999999999995 L382,485" fill="none" stroke="#b7c5cf" stroke-width="2" stroke-dasharray="7 5" />
-<path d="M144.0,485 L396.0,485" fill="none" stroke="#c5d0d9" stroke-width="5" />
-<text x="181" y="360" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">4 m × 3.2 m clear</text>
-<circle cx="270" cy="391" r="8" fill="#9dadb8"/>
-<path d="M270,400 L270,445 L258,485" fill="none" stroke="#9dadb8" stroke-width="4" />
-<path d="M270,445 L282,485" fill="none" stroke="#9dadb8" stroke-width="4" />
-<text x="45" y="516" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">1.6 m-wide faceted trunk; underside at 3.4 m.</text>
-<text x="45" y="541" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">Forked hangers at ribs / paired inset light housings.</text>
-<text x="575" y="161" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#efbb75">B / STEPPED SERVICE GALLERY</text>
-<text x="575" y="189" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">Wall steps inward beneath a raised ceiling spine.</text>
-<path d="M674.0,485 L618.0,429 L618.0,331.0 L646.0,331.0 L646.0,261 L702.0,261 L702.0,205 L898.0,205 L898.0,261 L954.0,261 L954.0,331.0 L982.0,331.0 L982.0,429 L926.0,485 Z" fill="#1b2a36" stroke="#efbb75" stroke-width="3" />
-<path d="M688,485 L660.0,448.6 L660.0,305.79999999999995 L710.4,275.0 L710.4,261 L640.4,289.0 L640.4,448.6 L671.2,485 Z" fill="#665035" stroke="#efbb75" stroke-width="2" />
-<path d="M643.2,325.4 L685.2,325.4 L685.2,291.79999999999995 L643.2,291.79999999999995 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
-<path d="M912,485 L940.0,448.6 L940.0,305.79999999999995 L889.6,275.0 L889.6,261 L959.6,289.0 L959.6,448.6 L928.8,485 Z" fill="#665035" stroke="#efbb75" stroke-width="2" />
-<path d="M956.8,325.4 L914.8,325.4 L914.8,291.79999999999995 L956.8,291.79999999999995 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
-<rect x="710.4" y="219.0" width="179.20000000000002" height="14.0" fill="#665035" stroke="#efbb75"/>
-<path d="M688,485 L688,305.79999999999995 L912,305.79999999999995 L912,485" fill="none" stroke="#b7c5cf" stroke-width="2" stroke-dasharray="7 5" />
-<path d="M674.0,485 L926.0,485" fill="none" stroke="#c5d0d9" stroke-width="5" />
-<text x="711" y="360" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">4 m × 3.2 m clear</text>
-<circle cx="800" cy="391" r="8" fill="#9dadb8"/>
-<path d="M800,400 L800,445 L788,485" fill="none" stroke="#9dadb8" stroke-width="4" />
-<path d="M800,445 L812,485" fill="none" stroke="#9dadb8" stroke-width="4" />
-<text x="575" y="516" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">1 m sloped base + vertical wall + two real setbacks.</text>
-<text x="575" y="541" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">6.5 m widest shell / 5 m crown / separate columns.</text>
-<text x="1105" y="161" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#8dc5f2">C / BUTTRESSED WINDOW BAY</text>
-<text x="1105" y="189" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">Splayed base; deep windows; broad knee braces.</text>
-<path d="M1204.0,485 L1148.0,429 L1148.0,303.0 L1218,233.0 L1442,233.0 L1512.0,303.0 L1512.0,429 L1456.0,485 Z" fill="#1b2a36" stroke="#8dc5f2" stroke-width="3" />
-<rect x="1243.2" y="241.40000000000003" width="173.6" height="16.8" fill="#39546a" stroke="#8dc5f2"/>
-<path d="M1218,485 L1178.8,429 L1178.8,317 L1243.2,258.20000000000005 L1243.2,241.40000000000003 L1162,311.4 L1162,429 L1195.6,485 Z" fill="#39546a" stroke="#8dc5f2" stroke-width="2" />
-<path d="M1148.0,415.0 L1117.2,415.0 L1117.2,317 L1148.0,317" fill="none" stroke="#b4e8fc" stroke-width="3" />
-<path d="M1170.4,289.0 L1204.0,289.0 L1218,275.0 L1184.4,275.0 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
-<path d="M1442,485 L1481.2,429 L1481.2,317 L1416.8,258.20000000000005 L1416.8,241.40000000000003 L1498,311.4 L1498,429 L1464.4,485 Z" fill="#39546a" stroke="#8dc5f2" stroke-width="2" />
-<path d="M1512.0,415.0 L1542.8,415.0 L1542.8,317 L1512.0,317" fill="none" stroke="#b4e8fc" stroke-width="3" />
-<path d="M1489.6,289.0 L1456.0,289.0 L1442,275.0 L1475.6,275.0 Z" fill="#95643b" stroke="#f0b46e" stroke-width="2" />
-<path d="M1218,485 L1218,305.79999999999995 L1442,305.79999999999995 L1442,485" fill="none" stroke="#b7c5cf" stroke-width="2" stroke-dasharray="7 5" />
-<path d="M1204.0,485 L1456.0,485" fill="none" stroke="#c5d0d9" stroke-width="5" />
-<text x="1241" y="360" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">4 m × 3.2 m clear</text>
-<circle cx="1330" cy="391" r="8" fill="#9dadb8"/>
-<path d="M1330,400 L1330,445 L1318,485" fill="none" stroke="#9dadb8" stroke-width="4" />
-<path d="M1330,445 L1342,485" fill="none" stroke="#9dadb8" stroke-width="4" />
-<text x="1105" y="516" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">1 m splayed base; 1.25 m upper shoulder.</text>
-<text x="1105" y="541" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">6.5 m widest shell / 4.5 m crown / 0.55 m reveal.</text>
-<path d="M45,571 L1555,571" fill="none" stroke="#3c4b59" stroke-width="2" />
-<text x="45" y="608" font-family="Segoe UI,Arial,sans-serif" font-size="24" fill="#e5edf3">A / SIDE WALL + SUSPENDED CENTRE SPINE</text>
-<rect x="65" y="651" width="485" height="251" fill="#1b2a36" stroke="#758a9b"/>
-<path d="M65,902 L100,865 L515,865 L550,902 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="2" />
-<path d="M65,651 L100,688 L515,688 L550,651 Z" fill="#35594f" stroke="#7ed6bf" stroke-width="2" />
-<rect x="105" y="716" width="405" height="111" fill="#15212b" stroke="#7ed6bf"/>
-<rect x="65" y="651" width="35" height="251" fill="#48645d" stroke="#7ed6bf"/>
-<rect x="515" y="651" width="35" height="251" fill="#48645d" stroke="#7ed6bf"/>
-<rect x="100" y="689" width="415" height="24" fill="#95643b" stroke="#efbb75"/>
-<rect x="145" y="684" width="11" height="35" fill="#688278" stroke="none"/>
-<rect x="300" y="684" width="11" height="35" fill="#688278" stroke="none"/>
-<rect x="455" y="684" width="11" height="35" fill="#688278" stroke="none"/>
-<rect x="140" y="835" width="315" height="18" fill="#33443d" stroke="#7ed6bf"/>
-<rect x="65" y="732" width="485" height="39" fill="#95643b" stroke="#efbb75"/>
-<path d="M65,668 L100,668 L100,746 L65,746 Z" fill="#48645d" stroke="#7ed6bf" stroke-width="2" />
-<path d="M515,668 L550,668 L550,746 L515,746 Z" fill="#48645d" stroke="#7ed6bf" stroke-width="2" />
-<rect x="125" y="765" width="150" height="6" fill="#ecf6ce" stroke="none"/>
-<rect x="325" y="765" width="150" height="6" fill="#ecf6ce" stroke="none"/>
-<text x="77" y="929" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#e5edf3">Side elevation / spine in foreground; wall infill behind</text>
-<text x="605" y="665" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#7ed6bf">01  SHELL PLANES</text>
-<text x="605" y="692" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#e5edf3">Separate floor, lower wedges, wall slabs, upper wedges and roof.</text>
-<text x="605" y="731" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#efbb75">02  SUSPENDED SPINE</text>
-<text x="605" y="758" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#e5edf3">Chamfered trunk, real end caps and two inset light channels.</text>
-<text x="605" y="797" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#8dc5f2">03  FORKED SUPPORTS</text>
-<text x="605" y="824" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#e5edf3">Angled brush hangers connect each rib to the central trunk.</text>
-<text x="605" y="863" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#e5edf3">04  RECESSED INFILL</text>
-<text x="605" y="890" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#e5edf3">Set backing behind the frame. Add real lips to vents and windows.</text>
-<text x="605" y="923" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#a9bac9">Judge silhouette and shadow under neutral light before adding small detail.</text>
-<path d="M45,952 L1555,952" fill="none" stroke="#3c4b59" stroke-width="2" />
-<text x="45" y="990" font-family="Segoe UI,Arial,sans-serif" font-size="23" fill="#e5edf3">PLAN / SAME THREE OUT-AND-BACK TESTS</text>
-<rect x="70" y="1015" width="100" height="180" fill="#1b2a36" stroke="#7ed6bf"/>
-<rect x="92" y="1015" width="56" height="180" fill="#243643" stroke="none"/>
-<rect x="82" y="1020" width="10" height="6" fill="#7ed6bf" stroke="none"/>
-<rect x="148" y="1020" width="10" height="6" fill="#7ed6bf" stroke="none"/>
-<rect x="82" y="1060" width="10" height="6" fill="#7ed6bf" stroke="none"/>
-<rect x="148" y="1060" width="10" height="6" fill="#7ed6bf" stroke="none"/>
-<rect x="82" y="1105" width="10" height="6" fill="#7ed6bf" stroke="none"/>
-<rect x="148" y="1105" width="10" height="6" fill="#7ed6bf" stroke="none"/>
-<rect x="82" y="1150" width="10" height="6" fill="#7ed6bf" stroke="none"/>
-<rect x="148" y="1150" width="10" height="6" fill="#7ed6bf" stroke="none"/>
-<text x="111" y="1052" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#7ed6bf">A</text>
-<rect x="220" y="1015" width="100" height="180" fill="#1b2a36" stroke="#efbb75"/>
-<rect x="242" y="1015" width="56" height="180" fill="#243643" stroke="none"/>
-<rect x="232" y="1020" width="10" height="6" fill="#efbb75" stroke="none"/>
-<rect x="298" y="1020" width="10" height="6" fill="#efbb75" stroke="none"/>
-<rect x="232" y="1060" width="10" height="6" fill="#efbb75" stroke="none"/>
-<rect x="298" y="1060" width="10" height="6" fill="#efbb75" stroke="none"/>
-<rect x="232" y="1105" width="10" height="6" fill="#efbb75" stroke="none"/>
-<rect x="298" y="1105" width="10" height="6" fill="#efbb75" stroke="none"/>
-<rect x="232" y="1150" width="10" height="6" fill="#efbb75" stroke="none"/>
-<rect x="298" y="1150" width="10" height="6" fill="#efbb75" stroke="none"/>
-<text x="261" y="1052" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#efbb75">B</text>
-<rect x="370" y="1015" width="100" height="180" fill="#1b2a36" stroke="#8dc5f2"/>
-<rect x="392" y="1015" width="56" height="180" fill="#243643" stroke="none"/>
-<rect x="382" y="1020" width="10" height="6" fill="#8dc5f2" stroke="none"/>
-<rect x="448" y="1020" width="10" height="6" fill="#8dc5f2" stroke="none"/>
-<rect x="382" y="1060" width="10" height="6" fill="#8dc5f2" stroke="none"/>
-<rect x="448" y="1060" width="10" height="6" fill="#8dc5f2" stroke="none"/>
-<rect x="382" y="1105" width="10" height="6" fill="#8dc5f2" stroke="none"/>
-<rect x="448" y="1105" width="10" height="6" fill="#8dc5f2" stroke="none"/>
-<rect x="382" y="1150" width="10" height="6" fill="#8dc5f2" stroke="none"/>
-<rect x="448" y="1150" width="10" height="6" fill="#8dc5f2" stroke="none"/>
-<text x="411" y="1052" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#8dc5f2">C</text>
-<rect x="50" y="1195" width="450" height="65" fill="#243643" stroke="#9db1c1"/>
-<text x="98" y="1234" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#e5edf3">Shared gallery / widened to 24 × 6 m</text>
-<text x="575" y="1030" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#e5edf3">16 m sample lengths; centres 8 m apart; clear lanes remain 4 m.</text>
-<text x="575" y="1064" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#e5edf3">Extra wall depth sits outside the lanes. C’s scenery sits to the east.</text>
-<text x="575" y="1098" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#e5edf3">B reserves a sealed overhead hatch between ribs; services stay beside it.</text>
-<text x="575" y="1146" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#a9bac9">Images supplied by you guide geometry, not shader imitation.</text>
-<text x="575" y="1180" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#a9bac9">A: hanging spine   B: stepped bays   C: window buttresses</text>
-<text x="575" y="1214" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#a9bac9">Sketches show profiles at ribs; infill and continuous ducting sit behind.</text>
-<text x="45" y="1293" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#a9bac9">REVISION 03 / paper geometry study only · no game-map edits · actual construction and clearance checks follow review</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="2060" viewBox="0 0 1700 2060">
+<rect width="1700" height="2060" fill="#111b25"/>
+<text x="60" y="58" font-family="Segoe UI,Arial,sans-serif" font-size="33" font-weight="bold" fill="#e5edf3" text-anchor="start">ARCHITECTURE LAB / REVISION 06 — RHYTHM, KIT AND CIRCUIT</text>
+<text x="60" y="92" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="normal" fill="#e5edf3" text-anchor="start">Four reusable pieces plus swap-outs. The circuit below is provisional — the section is what is being signed off first.</text>
+<text x="60" y="118" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="normal" fill="#a9bac9" text-anchor="start">All dimensions in metres on a 0.125 m grid (4 map units at 32 u/m). Colour identifies construction, not final materials.</text>
+<rect x="60.0" y="148.0" width="16.0" height="16.0" fill="#5d7386" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="86" y="162" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="bold" fill="#e5edf3" text-anchor="start">R1  PLINTH</text>
+<text x="198" y="162" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">0 – 1.25 m  ·  base kick, plinth, chamfer out</text>
+<rect x="650.0" y="148.0" width="16.0" height="16.0" fill="#8fa3b3" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="676" y="162" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="bold" fill="#e5edf3" text-anchor="start">R2  PANEL</text>
+<text x="778" y="162" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">1.25 – 2.50 m  ·  eye level, the only zone that swaps</text>
+<rect x="1230.0" y="148.0" width="16.0" height="16.0" fill="#7fb6d9" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="1256" y="162" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="bold" fill="#e5edf3" text-anchor="start">R3  UPPER</text>
+<text x="1358" y="162" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">2.50 – 3.75 m  ·  chamfer, upper wall, ceiling</text>
+<text x="60" y="206" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="bold" fill="#e5edf3" text-anchor="start">THE SECTION, IN BRIEF</text>
+<text x="60" y="230" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Nine facets per half, in three reusable pieces. See architecture-lab-section.png for every dimension.</text>
+<path d="M430.0,292.5 L281.5,292.5 L248.5,325.5 L248.5,358.5 L232.0,375.0 L232.0,457.5 L248.5,482.2 L248.5,507.0 L265.0,540.0 L430.0,540.0 L595.0,540.0 L611.5,507.0 L611.5,482.2 L628.0,457.5 L628.0,375.0 L611.5,358.5 L611.5,325.5 L578.5,292.5 L430.0,292.5 Z" fill="#1b2a36" stroke="#9db1c1" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M298.0,540.0 L298.0,507.0 L265.0,465.8 L265.0,325.5 L281.5,309.0 L430.0,309.0 L430.0,292.5 L281.5,292.5 L248.5,325.5 L248.5,358.5 L232.0,375.0 L232.0,457.5 L248.5,482.2 L248.5,507.0 L265.0,540.0 Z" fill="#2c4e66" stroke="#7fb6d9" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M265.0,540.0 L248.5,507.0 L248.5,482.2 L232.0,457.5 L232.0,540.0 Z" fill="#3b4c5c" stroke="#5d7386" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M562.0,540.0 L562.0,507.0 L595.0,465.8 L595.0,325.5 L578.5,309.0 L430.0,309.0 L430.0,292.5 L578.5,292.5 L611.5,325.5 L611.5,358.5 L628.0,375.0 L628.0,457.5 L611.5,482.2 L611.5,507.0 L595.0,540.0 Z" fill="#2c4e66" stroke="#7fb6d9" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M595.0,540.0 L611.5,507.0 L611.5,482.2 L628.0,457.5 L628.0,540.0 Z" fill="#3b4c5c" stroke="#5d7386" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M298.0,540.0 L298.0,328.8 L562.0,328.8 L562.0,540.0" fill="none" stroke="#6fd3a8" stroke-width="2" stroke-dasharray="8 6" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M281.5,540.0 L578.5,540.0" fill="none" stroke="#c5d0d9" stroke-width="5" opacity="1.0" stroke-linejoin="miter"/>
+<circle cx="430.0" cy="433.1" r="7.3" fill="#9dadb8"/>
+<path d="M430.0,441.0 L430.0,492.5 L415.5,540.0" fill="none" stroke="#9dadb8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M430.0,492.5 L444.5,540.0" fill="none" stroke="#9dadb8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M413.5,452.9 L446.5,452.9" fill="none" stroke="#9dadb8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<text x="430" y="421" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#6fd3a8" text-anchor="middle">4.0 × 3.2 clear</text>
+<text x="790" y="258" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Widest interior 5.50 m · crown 3.75 m · rib beam soffit 3.50 m.</text>
+<text x="790" y="282" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Two angles only: 45° chamfers, and one 63.43° base kick.</text>
+<text x="790" y="306" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">The kick is the single facet the player can stand on, so it is the</text>
+<text x="790" y="330" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">only one that has to beat the floor_max_angle default.</text>
+<text x="790" y="354" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start"></text>
+<text x="790" y="378" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">FLOOR, WALL and CEILING are three separate reusable brushes.</text>
+<text x="790" y="402" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Mirror them for the far half. Any one can be swapped for a</text>
+<text x="790" y="426" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">special without touching the other two.</text>
+<text x="790" y="450" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start"></text>
+<text x="790" y="474" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">The RIB drops in every 4 m — four 1 m texture repeats — and</text>
+<text x="790" y="498" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">runs floor to ceiling; opposite toes define the 4.00 m clear lane.</text>
+<text x="790" y="522" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start"></text>
+<text x="790" y="546" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">The circuit below still carries revision 05 routing. Its numbers</text>
+<text x="790" y="570" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">are provisional until the section is signed off.</text>
+<path d="M60.0,566.0 L1640.0,566.0" fill="none" stroke="#3c4b59" stroke-width="1" opacity="1.0" stroke-linejoin="miter"/>
+<text x="60" y="604" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="bold" fill="#e5edf3" text-anchor="start">SPINE / WEST WALL ELEVATION — provisional routing at 4.0 m pitch</text>
+<text x="60" y="628" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Ribs every 4.0 m — four 1 m texture repeats. The panel between them is what changes, not the section.</text>
+<rect x="140.0" y="653.0" width="924.0" height="187.0" fill="#15212b" stroke="#9db1c1" stroke-width="2" opacity="1.0"/>
+<rect x="140.0" y="785.0" width="924.0" height="55.0" fill="#3b4c5c" stroke="#5d7386" stroke-width="1" opacity="1.0"/>
+<rect x="140.0" y="653.0" width="924.0" height="27.5" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="151.0" y="719.0" width="110.0" height="66.0" fill="#2a3a47" stroke="#8fa3b3" stroke-width="1" opacity="1.0"/>
+<rect x="157.0" y="664.0" width="98.0" height="9.0" fill="#ffe9b8" stroke="none" stroke-width="1" opacity="1.0"/>
+<rect x="283.0" y="719.0" width="110.0" height="66.0" fill="#2a3a47" stroke="#8fa3b3" stroke-width="1" opacity="1.0"/>
+<rect x="293.0" y="734.4" width="90.0" height="37.4" fill="#6a4f30" stroke="#e8a15c" stroke-width="2" opacity="1.0"/>
+<rect x="301.0" y="741.0" width="19.3" height="22.0" fill="#8a6437" stroke="#e8a15c" stroke-width="1" opacity="1.0"/>
+<rect x="325.7" y="741.0" width="19.3" height="22.0" fill="#8a6437" stroke="#e8a15c" stroke-width="1" opacity="1.0"/>
+<rect x="350.3" y="741.0" width="19.3" height="22.0" fill="#8a6437" stroke="#e8a15c" stroke-width="1" opacity="1.0"/>
+<rect x="415.0" y="735.5" width="110.0" height="104.5" fill="#24473d" stroke="#6fd3a8" stroke-width="2" opacity="1.0"/>
+<text x="470" y="792" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#6fd3a8" text-anchor="middle">ALCOVE</text>
+<rect x="580.0" y="699.2" width="176.0" height="140.8" fill="#3a3524" stroke="#ffe9b8" stroke-width="2" opacity="1.0"/>
+<text x="668" y="752" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#ffe9b8" text-anchor="middle">4.0 × 3.2 T OPENING</text>
+<text x="668" y="770" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="middle">to west branch</text>
+<rect x="547.0" y="719.0" width="33.0" height="66.0" fill="#2a3a47" stroke="#8fa3b3" stroke-width="1" opacity="1.0"/>
+<rect x="756.0" y="719.0" width="33.0" height="66.0" fill="#2a3a47" stroke="#8fa3b3" stroke-width="1" opacity="1.0"/>
+<rect x="811.0" y="719.0" width="110.0" height="66.0" fill="#2a3a47" stroke="#8fa3b3" stroke-width="1" opacity="1.0"/>
+<rect x="821.0" y="727.8" width="90.0" height="48.4" fill="#5c4a31" stroke="#e8a15c" stroke-width="2" opacity="1.0"/>
+<path d="M829.0,730.0 L829.0,778.4" fill="none" stroke="#e8a15c" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M837.2,730.0 L837.2,778.4" fill="none" stroke="#e8a15c" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M845.4,730.0 L845.4,778.4" fill="none" stroke="#e8a15c" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M853.7,730.0 L853.7,778.4" fill="none" stroke="#e8a15c" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M861.9,730.0 L861.9,778.4" fill="none" stroke="#e8a15c" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M870.1,730.0 L870.1,778.4" fill="none" stroke="#e8a15c" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M878.3,730.0 L878.3,778.4" fill="none" stroke="#e8a15c" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M886.6,730.0 L886.6,778.4" fill="none" stroke="#e8a15c" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M894.8,730.0 L894.8,778.4" fill="none" stroke="#e8a15c" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<rect x="817.0" y="664.0" width="98.0" height="9.0" fill="#ffe9b8" stroke="none" stroke-width="1" opacity="1.0"/>
+<rect x="943.0" y="719.0" width="110.0" height="66.0" fill="#2a3a47" stroke="#8fa3b3" stroke-width="1" opacity="1.0"/>
+<rect x="949.0" y="664.0" width="98.0" height="9.0" fill="#ffe9b8" stroke="none" stroke-width="1" opacity="1.0"/>
+<rect x="129.0" y="653.0" width="22.0" height="132.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="2" opacity="1.0"/>
+<rect x="261.0" y="653.0" width="22.0" height="132.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="2" opacity="1.0"/>
+<rect x="393.0" y="653.0" width="22.0" height="132.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="2" opacity="1.0"/>
+<rect x="525.0" y="653.0" width="22.0" height="132.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="2" opacity="1.0"/>
+<rect x="789.0" y="653.0" width="22.0" height="132.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="2" opacity="1.0"/>
+<rect x="921.0" y="653.0" width="22.0" height="132.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="2" opacity="1.0"/>
+<rect x="1053.0" y="653.0" width="22.0" height="132.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="2" opacity="1.0"/>
+<path d="M657.0,653.0 L657.0,785.0 L679.0,785.0 L679.0,653.0" fill="none" stroke="#7fb6d9" stroke-width="2" stroke-dasharray="5 6" opacity="0.6" stroke-linejoin="miter"/>
+<text x="668" y="621" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="middle">rib suppressed</text>
+<rect x="822.0" y="648.0" width="88.0" height="32.5" fill="none" stroke="#e8a15c" stroke-width="2" stroke-dasharray="6 5" opacity="1.0"/>
+<text x="866" y="639" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#e8a15c" text-anchor="middle">2.0 × 2.0 CEILING HATCH RESERVED</text>
+<path d="M140.0,840.0 L1064.0,840.0" fill="none" stroke="#c5d0d9" stroke-width="5" opacity="1.0" stroke-linejoin="miter"/>
+<circle cx="206.0" cy="768.7" r="4.8" fill="#9dadb8"/>
+<path d="M206.0,774.0 L206.0,808.3 L196.3,840.0" fill="none" stroke="#9dadb8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M206.0,808.3 L215.7,840.0" fill="none" stroke="#9dadb8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M195.0,781.9 L217.0,781.9" fill="none" stroke="#9dadb8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<text x="140" y="862" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="middle">0</text>
+<text x="272" y="862" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="middle">-3</text>
+<text x="404" y="862" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="middle">-6</text>
+<text x="536" y="862" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="middle">-9</text>
+<text x="668" y="862" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="middle">-12</text>
+<text x="800" y="862" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="middle">-15</text>
+<text x="932" y="862" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="middle">-18</text>
+<text x="1064" y="862" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="normal" fill="#a9bac9" text-anchor="middle">-21</text>
+<text x="602" y="884" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="middle">Z (metres, north is negative)</text>
+<text x="1140" y="664" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#7fb6d9" text-anchor="start">WHY 4.0 m PITCH</text>
+<text x="1140" y="688" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">One rib every four 1 m texture repeats, so the rib</text>
+<text x="1140" y="710" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">always lands on a texture seam.</text>
+<text x="1140" y="746" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#7fb6d9" text-anchor="start">WHY A 3.75 m CROWN</text>
+<text x="1140" y="770" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">6.00 wide, but the walking lane is still 4.00.</text>
+<text x="1140" y="792" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">Rib beam soffit 3.50 clears the 3.2 envelope by 0.30.</text>
+<text x="1140" y="828" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#ffe9b8" text-anchor="start">LIGHT IS STILL OPEN</text>
+<text x="1140" y="852" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">Deferred until the section is signed off. The ceiling</text>
+<text x="1140" y="874" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#e5edf3" text-anchor="start">piece is the obvious carrier, as a swap-out.</text>
+<path d="M60.0,906.0 L1640.0,906.0" fill="none" stroke="#3c4b59" stroke-width="1" opacity="1.0" stroke-linejoin="miter"/>
+<text x="60" y="942" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="bold" fill="#e5edf3" text-anchor="start">BAY INSERT KIT — the section never changes, the bay does</text>
+<text x="60" y="966" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Swap-outs replace the 1.25 – 2.50 m panel zone only, so the floor, ceiling and rib pieces are untouched.</text>
+<rect x="110.0" y="986.0" width="245.0" height="160.0" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="122" y="1011" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#8fa3b3" text-anchor="start">PANEL</text>
+<rect x="124.0" y="1024.0" width="217.0" height="76.0" fill="#15212b" stroke="#9db1c1" stroke-width="1" opacity="1.0"/>
+<rect x="124.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="327.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="146.0" y="1037.0" width="173.0" height="42.0" fill="#2a3a47" stroke="#8fa3b3" stroke-width="2" opacity="1.0"/>
+<rect x="124.0" y="1091.0" width="217.0" height="9.0" fill="#3b4c5c" stroke="#5d7386" stroke-width="1" opacity="1.0"/>
+<text x="122" y="1118" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">Flat panel behind the rib plane.</text>
+<text x="122" y="1136" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">The quiet default. Cheapest bay.</text>
+<rect x="367.0" y="986.0" width="245.0" height="160.0" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="379" y="1011" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#e8a15c" text-anchor="start">GRILLE</text>
+<rect x="381.0" y="1024.0" width="217.0" height="76.0" fill="#15212b" stroke="#9db1c1" stroke-width="1" opacity="1.0"/>
+<rect x="381.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="584.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="403.0" y="1035.0" width="173.0" height="44.0" fill="#5c4a31" stroke="#e8a15c" stroke-width="2" opacity="1.0"/>
+<path d="M411.0,1041.0 L411.0,1076.0" fill="none" stroke="#e8a15c" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M430.6,1041.0 L430.6,1076.0" fill="none" stroke="#e8a15c" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M450.2,1041.0 L450.2,1076.0" fill="none" stroke="#e8a15c" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M469.9,1041.0 L469.9,1076.0" fill="none" stroke="#e8a15c" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M489.5,1041.0 L489.5,1076.0" fill="none" stroke="#e8a15c" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M509.1,1041.0 L509.1,1076.0" fill="none" stroke="#e8a15c" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M528.8,1041.0 L528.8,1076.0" fill="none" stroke="#e8a15c" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M548.4,1041.0 L548.4,1076.0" fill="none" stroke="#e8a15c" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<rect x="381.0" y="1091.0" width="217.0" height="9.0" fill="#3b4c5c" stroke="#5d7386" stroke-width="1" opacity="1.0"/>
+<text x="379" y="1118" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">Louvres set 0.125 m deeper.</text>
+<text x="379" y="1136" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">Honest home for a wall hatch.</text>
+<rect x="624.0" y="986.0" width="245.0" height="160.0" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="636" y="1011" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#e8a15c" text-anchor="start">EQUIPMENT</text>
+<rect x="638.0" y="1024.0" width="217.0" height="76.0" fill="#15212b" stroke="#9db1c1" stroke-width="1" opacity="1.0"/>
+<rect x="638.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="841.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="658.0" y="1058.0" width="177.0" height="28.0" fill="#6a4f30" stroke="#e8a15c" stroke-width="2" opacity="1.0"/>
+<rect x="672.0" y="1037.0" width="129.0" height="21.0" fill="#8a6437" stroke="#e8a15c" stroke-width="1" opacity="1.0"/>
+<rect x="638.0" y="1091.0" width="217.0" height="9.0" fill="#3b4c5c" stroke="#5d7386" stroke-width="1" opacity="1.0"/>
+<text x="636" y="1118" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">Cabinets inside the panel zone.</text>
+<text x="636" y="1136" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">Never crosses the rib plane.</text>
+<rect x="881.0" y="986.0" width="245.0" height="160.0" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="893" y="1011" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#6fd3a8" text-anchor="start">RECESS</text>
+<rect x="895.0" y="1024.0" width="217.0" height="76.0" fill="#15212b" stroke="#9db1c1" stroke-width="1" opacity="1.0"/>
+<rect x="895.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="1098.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="911.0" y="1031.0" width="185.0" height="69.0" fill="#24473d" stroke="#6fd3a8" stroke-width="2" opacity="1.0"/>
+<circle cx="1003.5" cy="1051.4" r="3.3" fill="#6fd3a8"/>
+<path d="M1003.5,1055.0 L1003.5,1078.4 L996.9,1100.0" fill="none" stroke="#6fd3a8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M1003.5,1078.4 L1010.1,1100.0" fill="none" stroke="#6fd3a8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M996.0,1060.4 L1011.0,1060.4" fill="none" stroke="#6fd3a8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<rect x="895.0" y="1091.0" width="217.0" height="9.0" fill="#3b4c5c" stroke="#5d7386" stroke-width="1" opacity="1.0"/>
+<text x="893" y="1118" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">Full depth to floor, 0.50 m.</text>
+<text x="893" y="1136" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">Standing cover. Plinth stops.</text>
+<rect x="1138.0" y="986.0" width="245.0" height="160.0" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="1150" y="1011" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#7fd6ea" text-anchor="start">WINDOW</text>
+<rect x="1152.0" y="1024.0" width="217.0" height="76.0" fill="#15212b" stroke="#9db1c1" stroke-width="1" opacity="1.0"/>
+<rect x="1152.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="1355.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="1174.0" y="1039.0" width="173.0" height="34.0" fill="#1e4a58" stroke="#7fd6ea" stroke-width="2" opacity="1.0"/>
+<circle cx="1260" cy="1058" r="9" fill="#d4663f" opacity="0.9"/>
+<rect x="1152.0" y="1091.0" width="217.0" height="9.0" fill="#3b4c5c" stroke="#5d7386" stroke-width="1" opacity="1.0"/>
+<text x="1150" y="1118" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">Sill 1.25, head 2.50, chamfered reveal.</text>
+<text x="1150" y="1136" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">Glazing 0.75 m outboard.</text>
+<rect x="1395.0" y="986.0" width="245.0" height="160.0" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="1407" y="1011" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#ffe9b8" text-anchor="start">DOOR</text>
+<rect x="1409.0" y="1024.0" width="217.0" height="76.0" fill="#15212b" stroke="#9db1c1" stroke-width="1" opacity="1.0"/>
+<rect x="1409.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="1612.0" y="1024.0" width="14.0" height="76.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="1441.0" y="1033.0" width="153.0" height="67.0" fill="#3a3524" stroke="#ffe9b8" stroke-width="2" opacity="1.0"/>
+<path d="M1517.5,1033.0 L1517.5,1100.0" fill="none" stroke="#ffe9b8" stroke-width="2" stroke-dasharray="5 4" opacity="1.0" stroke-linejoin="miter"/>
+<rect x="1409.0" y="1091.0" width="217.0" height="9.0" fill="#3b4c5c" stroke="#5d7386" stroke-width="1" opacity="1.0"/>
+<text x="1407" y="1118" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e5edf3" text-anchor="start">2.00 × 2.46 DoorModule, centred.</text>
+<text x="1407" y="1136" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">Ribs are the wall returns.</text>
+<rect x="110.0" y="1162.0" width="1530.0" height="116.0" fill="#1b2a36" stroke="#3c4b59" stroke-width="1" opacity="1.0"/>
+<text x="126" y="1190" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="bold" fill="#ffe9b8" text-anchor="start">PORTAL BAY</text>
+<text x="126" y="1214" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">Two bays merged</text>
+<text x="126" y="1232" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">by dropping one rib.</text>
+<rect x="300.0" y="1192.0" width="253.0" height="42.0" fill="#15212b" stroke="#9db1c1" stroke-width="1" opacity="1.0"/>
+<rect x="300.0" y="1192.0" width="23.0" height="42.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="530.0" y="1192.0" width="23.0" height="42.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="334.5" y="1192.0" width="184.0" height="42.0" fill="#3a3524" stroke="#ffe9b8" stroke-width="2" opacity="1.0"/>
+<text x="426" y="1219" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffe9b8" text-anchor="middle">4.00 opening</text>
+<text x="300" y="1256" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="normal" fill="#a9bac9" text-anchor="start">5.50 m clear between flanking ribs  ·  0.75 bay + 0.50 rib = 1.25 m return each side</text>
+<text x="593" y="1192" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">This is the systemic win: the rib rhythm satisfies the project’s “1 m of solid wall beyond a frame”</text>
+<text x="593" y="1214" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">rule automatically, at every opening, without anyone measuring it. Single-bay doors serve side</text>
+<text x="593" y="1236" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">rooms; portal bays carry main routes and junctions. It also gives openings a visible hierarchy.</text>
+<path d="M60.0,1298.0 L1640.0,1298.0" fill="none" stroke="#3c4b59" stroke-width="1" opacity="1.0" stroke-linejoin="miter"/>
+<text x="60" y="1334" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="bold" fill="#e5edf3" text-anchor="start">CIRCUIT PLAN — one walk that exercises every part of the kit</text>
+<rect x="60.0" y="1350.0" width="13.0" height="13.0" fill="#7fb6d9" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="80" y="1362" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">rib / structure</text>
+<rect x="256.0" y="1350.0" width="13.0" height="13.0" fill="#8fa3b3" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="276" y="1362" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">bay infill</text>
+<rect x="452.0" y="1350.0" width="13.0" height="13.0" fill="#5d7386" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="472" y="1362" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">plinth</text>
+<rect x="648.0" y="1350.0" width="13.0" height="13.0" fill="#e8a15c" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="668" y="1362" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">service insert</text>
+<rect x="844.0" y="1350.0" width="13.0" height="13.0" fill="#6fd3a8" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="864" y="1362" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">clear lane / alcove</text>
+<rect x="1040.0" y="1350.0" width="13.0" height="13.0" fill="#7fd6ea" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="1060" y="1362" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">glazing</text>
+<rect x="1236.0" y="1350.0" width="13.0" height="13.0" fill="#ffe9b8" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="1256" y="1362" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">opening</text>
+<rect x="1432.0" y="1350.0" width="13.0" height="13.0" fill="#d4663f" stroke="none" stroke-width="1" opacity="1.0"/>
+<text x="1452" y="1362" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="normal" fill="#a9bac9" text-anchor="start">exterior volume</text>
+<rect x="382.0" y="1350.0" width="212.0" height="104.0" fill="#3a2018" stroke="#d4663f" stroke-width="2" stroke-dasharray="7 6" opacity="1.0"/>
+<rect x="598.0" y="1350.0" width="88.0" height="240.0" fill="#3a2018" stroke="#d4663f" stroke-width="2" stroke-dasharray="7 6" opacity="1.0"/>
+<rect x="402.8" y="1406.0" width="54.4" height="9.6" fill="#6b3a29" stroke="#d4663f" stroke-width="1" opacity="1.0"/>
+<rect x="490.8" y="1406.0" width="32.0" height="22.4" fill="#6b3a29" stroke="#d4663f" stroke-width="1" opacity="1.0"/>
+<rect x="628.4" y="1434.8" width="25.6" height="38.4" fill="#6b3a29" stroke="#d4663f" stroke-width="1" opacity="1.0"/>
+<rect x="636.4" y="1510.0" width="16.0" height="48.0" fill="#6b3a29" stroke="#d4663f" stroke-width="1" opacity="1.0"/>
+<circle cx="558" cy="1382" r="8" fill="#d4663f"/>
+<path d="M438.0,1415.6 L438.0,1442.8" fill="none" stroke="#d4663f" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M434.0,1434.8 L438.0,1442.8 L442.0,1434.8" fill="none" stroke="#d4663f" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M478.0,1415.6 L478.0,1442.8" fill="none" stroke="#d4663f" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M474.0,1434.8 L478.0,1442.8 L482.0,1434.8" fill="none" stroke="#d4663f" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<rect x="294.0" y="1458.0" width="112.0" height="436.0" fill="#1b2a36" stroke="#9db1c1" stroke-width="2" opacity="1.0"/>
+<rect x="294.0" y="1458.0" width="300.0" height="104.0" fill="#1b2a36" stroke="#9db1c1" stroke-width="2" opacity="1.0"/>
+<rect x="202.0" y="1602.0" width="148.0" height="104.0" fill="#1b2a36" stroke="#9db1c1" stroke-width="2" opacity="1.0"/>
+<rect x="186.0" y="1706.0" width="84.0" height="80.0" fill="#15212b" stroke="#9db1c1" stroke-width="2" stroke-dasharray="6 5" opacity="1.0"/>
+<rect x="314.0" y="1458.0" width="72.0" height="436.0" fill="#233543" stroke="none" stroke-width="1" opacity="1.0"/>
+<rect x="314.0" y="1474.0" width="280.0" height="72.0" fill="#233543" stroke="none" stroke-width="1" opacity="1.0"/>
+<rect x="202.0" y="1618.0" width="148.0" height="72.0" fill="#233543" stroke="none" stroke-width="1" opacity="1.0"/>
+<rect x="294.0" y="1706.0" width="16.0" height="40.0" fill="#24473d" stroke="#6fd3a8" stroke-width="2" opacity="1.0"/>
+<rect x="386.0" y="1514.0" width="16.0" height="40.0" fill="#24473d" stroke="#6fd3a8" stroke-width="2" opacity="1.0"/>
+<path d="M350.0,1894.0 L350.0,1510.0" fill="none" stroke="#6fd3a8" stroke-width="1" stroke-dasharray="9 7" opacity="0.7" stroke-linejoin="miter"/>
+<path d="M202.0,1654.0 L350.0,1654.0" fill="none" stroke="#6fd3a8" stroke-width="1" stroke-dasharray="9 7" opacity="0.7" stroke-linejoin="miter"/>
+<path d="M350.0,1510.0 L594.0,1510.0" fill="none" stroke="#6fd3a8" stroke-width="1" stroke-dasharray="9 7" opacity="0.7" stroke-linejoin="miter"/>
+<rect x="294.0" y="1842.0" width="112.0" height="8.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="294.0" y="1778.0" width="112.0" height="8.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="294.0" y="1714.0" width="112.0" height="8.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="294.0" y="1586.0" width="112.0" height="8.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="294.0" y="1522.0" width="112.0" height="8.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="410.0" y="1458.0" width="8.0" height="112.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="474.0" y="1458.0" width="8.0" height="112.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="538.0" y="1458.0" width="8.0" height="112.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="282.0" y="1602.0" width="8.0" height="112.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<rect x="218.0" y="1602.0" width="8.0" height="112.0" fill="#2c4e66" stroke="#7fb6d9" stroke-width="1" opacity="1.0"/>
+<path d="M406.0,1562.0 L406.0,1535.6 L375.6,1562.0 Z" fill="#2c4e66" stroke="#7fb6d9" stroke-width="2" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M294.0,1458.0 L294.0,1484.4 L324.4,1458.0" fill="none" stroke="#7fb6d9" stroke-width="2" stroke-dasharray="5 4" opacity="1.0" stroke-linejoin="miter"/>
+<rect x="294.0" y="1622.0" width="8.0" height="64.0" fill="#3a3524" stroke="#ffe9b8" stroke-width="2" opacity="1.0"/>
+<rect x="246.0" y="1706.0" width="32.0" height="8.0" fill="#3a3524" stroke="#ffe9b8" stroke-width="2" opacity="1.0"/>
+<rect x="418.0" y="1454.0" width="56.0" height="4.0" fill="#1e4a58" stroke="#7fd6ea" stroke-width="2" opacity="1.0"/>
+<rect x="482.0" y="1454.0" width="56.0" height="4.0" fill="#1e4a58" stroke="#7fd6ea" stroke-width="2" opacity="1.0"/>
+<rect x="594.0" y="1478.0" width="4.0" height="64.0" fill="#1e4a58" stroke="#7fd6ea" stroke-width="2" opacity="1.0"/>
+<rect x="334.0" y="1566.0" width="32.0" height="32.0" fill="none" stroke="#e8a15c" stroke-width="2" stroke-dasharray="5 4" opacity="1.0"/>
+<rect x="294.0" y="1722.0" width="8.0" height="56.0" fill="#e8a15c" stroke="none" stroke-width="0" opacity="0.9"/>
+<rect x="294.0" y="1530.0" width="8.0" height="56.0" fill="#e8a15c" stroke="none" stroke-width="0" opacity="0.9"/>
+<rect x="394.0" y="1658.0" width="8.0" height="56.0" fill="#e8a15c" stroke="none" stroke-width="0" opacity="0.9"/>
+<rect x="226.0" y="1602.0" width="56.0" height="8.0" fill="#e8a15c" stroke="none" stroke-width="0" opacity="0.9"/>
+<rect x="418.0" y="1554.0" width="56.0" height="8.0" fill="#e8a15c" stroke="none" stroke-width="0" opacity="0.9"/>
+<rect x="482.0" y="1554.0" width="56.0" height="8.0" fill="#e8a15c" stroke="none" stroke-width="0" opacity="0.9"/>
+<circle cx="350.0" cy="1861.7" r="1.5" fill="#6fd3a8"/>
+<path d="M350.0,1863.4 L350.0,1874.3 L346.9,1884.4" fill="none" stroke="#6fd3a8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M350.0,1874.3 L353.1,1884.4" fill="none" stroke="#6fd3a8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<path d="M346.5,1865.9 L353.5,1865.9" fill="none" stroke="#6fd3a8" stroke-width="3" opacity="1.0" stroke-linejoin="miter"/>
+<circle cx="350" cy="1856" r="11" fill="#111b25" stroke="#6fd3a8" stroke-width="2"/>
+<text x="350" y="1861" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#6fd3a8" text-anchor="middle">1</text>
+<circle cx="304" cy="1726" r="11" fill="#111b25" stroke="#6fd3a8" stroke-width="2"/>
+<text x="304" y="1731" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#6fd3a8" text-anchor="middle">2</text>
+<circle cx="308" cy="1654" r="11" fill="#111b25" stroke="#e5edf3" stroke-width="2"/>
+<text x="308" y="1659" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#e5edf3" text-anchor="middle">3</text>
+<circle cx="230" cy="1694" r="11" fill="#111b25" stroke="#e5edf3" stroke-width="2"/>
+<text x="230" y="1699" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#e5edf3" text-anchor="middle">4</text>
+<circle cx="350" cy="1582" r="11" fill="#111b25" stroke="#e5edf3" stroke-width="2"/>
+<text x="350" y="1587" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#e5edf3" text-anchor="middle">5</text>
+<circle cx="384" cy="1526" r="11" fill="#111b25" stroke="#e5edf3" stroke-width="2"/>
+<text x="384" y="1531" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#e5edf3" text-anchor="middle">6</text>
+<circle cx="430" cy="1459" r="11" fill="#111b25" stroke="#e5edf3" stroke-width="2"/>
+<text x="430" y="1464" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#e5edf3" text-anchor="middle">7</text>
+<circle cx="577" cy="1510" r="11" fill="#111b25" stroke="#e5edf3" stroke-width="2"/>
+<text x="577" y="1515" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#e5edf3" text-anchor="middle">8</text>
+<circle cx="648" cy="1388" r="11" fill="#111b25" stroke="#e5edf3" stroke-width="2"/>
+<text x="648" y="1393" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#e5edf3" text-anchor="middle">9</text>
+<text x="790" y="1354" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold" fill="#e5edf3" text-anchor="start">KEY</text>
+<circle cx="802" cy="1382" r="11" fill="#111b25" stroke="#a9bac9" stroke-width="2"/>
+<text x="802" y="1387" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#a9bac9" text-anchor="middle">1</text>
+<text x="822" y="1387" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Spawn. The spine, ribs every 4 m.</text>
+<circle cx="802" cy="1408" r="11" fill="#111b25" stroke="#a9bac9" stroke-width="2"/>
+<text x="802" y="1413" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#a9bac9" text-anchor="middle">2</text>
+<text x="822" y="1413" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Alcove bay — the section gives ground below 2 m.</text>
+<circle cx="802" cy="1434" r="11" fill="#111b25" stroke="#a9bac9" stroke-width="2"/>
+<text x="802" y="1439" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#a9bac9" text-anchor="middle">3</text>
+<text x="822" y="1439" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Portal bay carrying the 4.0 × 3.2 T opening.</text>
+<circle cx="802" cy="1460" r="11" fill="#111b25" stroke="#a9bac9" stroke-width="2"/>
+<text x="802" y="1465" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#a9bac9" text-anchor="middle">4</text>
+<text x="822" y="1465" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">West branch, ending in a door bay + stub.</text>
+<circle cx="802" cy="1486" r="11" fill="#111b25" stroke="#a9bac9" stroke-width="2"/>
+<text x="802" y="1491" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#a9bac9" text-anchor="middle">5</text>
+<text x="822" y="1491" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Sealed 2.0 × 2.0 ceiling hatch, between ribs, clear of light.</text>
+<circle cx="802" cy="1512" r="11" fill="#111b25" stroke="#a9bac9" stroke-width="2"/>
+<text x="802" y="1517" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#a9bac9" text-anchor="middle">6</text>
+<text x="822" y="1517" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Corner — mitre outside, solid rib block inside.</text>
+<circle cx="802" cy="1538" r="11" fill="#111b25" stroke="#a9bac9" stroke-width="2"/>
+<text x="802" y="1543" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#a9bac9" text-anchor="middle">7</text>
+<text x="822" y="1543" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Two window bays, outboard side only.</text>
+<circle cx="802" cy="1564" r="11" fill="#111b25" stroke="#a9bac9" stroke-width="2"/>
+<text x="802" y="1569" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#a9bac9" text-anchor="middle">8</text>
+<text x="822" y="1569" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">6 m portal bay ending in a 4.0 × 2.0 viewport.</text>
+<circle cx="802" cy="1590" r="11" fill="#111b25" stroke="#a9bac9" stroke-width="2"/>
+<text x="802" y="1595" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#a9bac9" text-anchor="middle">9</text>
+<text x="822" y="1595" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Mars exterior: sealed, not traversable, one raking light.</text>
+<text x="790" y="1622" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold" fill="#e5edf3" text-anchor="start">THE WALK</text>
+<text x="790" y="1650" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">Spawn, then north up the spine — the bays teach the rhythm</text>
+<text x="790" y="1673" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">before anything unusual happens. The alcove is the first time</text>
+<text x="790" y="1696" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">section gives ground. Judge it as cover, not decoration.</text>
+<text x="790" y="1719" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start"></text>
+<text x="790" y="1742" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">The T is a portal bay in the same rhythm: its flanking ribs</text>
+<text x="790" y="1765" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">are the wall returns, for free.</text>
+<text x="790" y="1788" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start"></text>
+<text x="790" y="1811" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">The corner is the real test — the chamfers have to mitre — so</text>
+<text x="790" y="1834" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">the knee gets a mitre outside and a solid rib block inside.</text>
+<text x="790" y="1857" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">The end viewport is the one deliberate rule break.</text>
+<text x="60" y="1898" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="bold" fill="#7fb6d9" text-anchor="start">BUILD ORDER — each stage is walkable and answers exactly one question</text>
+<text x="60" y="1924" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">1   Spine only, panel bays throughout, flat neutral light.</text>
+<text x="60" y="1947" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">2   Inserts, portal bay, T, corner, door bay.</text>
+<text x="60" y="1970" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">3   Trough reveal lighting, alternating bays.</text>
+<text x="60" y="1993" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#e5edf3" text-anchor="start">4   Mars volume, window bays, end viewport.</text>
+<text x="620" y="1924" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Does the 4.0 m rhythm read, and is 5.50 × 3.75 the right size?</text>
+<text x="620" y="1947" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Does the kit hold together, and does the corner actually resolve?</text>
+<text x="620" y="1970" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Do the panel swap-outs carry enough interest on their own?</text>
+<text x="620" y="1993" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="normal" fill="#a9bac9" text-anchor="start">Does the red light do the work — is a glimpse of Mars enough?</text>
+<text x="60" y="2040" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="normal" fill="#a9bac9" text-anchor="start">REVISION 06 / circuit routing provisional · the revision 05 stage 1 build is superseded · section detail in architecture-lab-section.png</text>
 </svg>
