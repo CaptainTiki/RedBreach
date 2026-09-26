@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://textures/packs/lvl11/ConcretePanel-01_64.png" id="1"]
+
+[resource]
+resource_name = "looks/concrete wall"
+albedo_texture = ExtResource("1")
+roughness = 0.8
+metallic_specular = 0.35
+texture_filter = 4

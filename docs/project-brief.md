@@ -26,7 +26,7 @@ Gym first, then the real level. The approved 2D gym plan and first playable map 
 
 ## Open decisions
 
-- Player role and immediate objective.
+- Player role: Mars colony security personnel, agreed 2026-09-22 via the [onboarding walkthrough](onboarding-walkthrough.md). Immediate objective for the first assignment is investigating a reported missing person; how that connects to the wider campaign discovery is still open.
 - Alien nature and origin.
 - TrenchBroom integration established: func_godot 2025.12, Valve format, 32 map units per metre (see workflow guide).
 - Exact campaign ordering, mission walkthrough and spatial layout; movement/combat prototypes already supply tested starting values.

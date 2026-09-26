@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://civ0fjxd7gmu3"
+path="res://.godot/imported/style_lab_01.map-d78847b4b27ae182da9fa2b9364c7f33.tres"
+
+[deps]
+
+source_file="res://maps/style_lab_01.map"
+dest_files=["res://.godot/imported/style_lab_01.map-d78847b4b27ae182da9fa2b9364c7f33.tres"]
+
+[params]
+

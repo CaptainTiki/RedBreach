@@ -16,6 +16,24 @@ Avoid perpendicular door openings that meet at the same thin wall tip or edge. G
 
 Proposed starting dimension: aim for at least **1 m of solid wall beyond a doorway frame before an adjoining opening or corner**, increasing it where doors, readers or movement need more space. Check the outside of the frame, not just opening centre coordinates. Maintain clear passage through the opening and room for its motor/pocket. Do not narrow the tested gates to create the return without explicitly reviewing that change.
 
+### Every room owns its walls — no shared wall brushes
+
+User rule, 2026-09-22: a room's walls belong to that room. Minimum **0.25 m
+thick per side**, so **0.5 m of solid between any two interior spaces**. Two
+rooms never share one wall brush.
+
+**Why:** a shared wall can only carry one material. Separate walls let each
+room texture its own side, and leave depth for trim, a projecting rib or a
+service box to stand proud of the surface without punching into the
+neighbouring room. Sharing also reads cramped.
+
+**How to apply:** when drawing or building, inset each space 0.25 m from its
+plan boundary; adjacent spaces then automatically leave the required 0.5 m.
+0.25 m = 8 map units and 0.5 m = 16 at 32 units/metre, so both stay on the
+0.125 m construction increment used everywhere else. Exterior shell walls can
+be thicker. This is a minimum, not a target — widen where services, ribs or
+recesses need the depth.
+
 ### Rooms have room-like proportions
 
 User rule: a room should normally be no more than **two to three times as long as it is wide**. Aim for **2:1 or less**, allowing up to **3:1** for a deliberately elongated room. Measure the clear usable interior, with length as the longer dimension and width as the shorter dimension.
