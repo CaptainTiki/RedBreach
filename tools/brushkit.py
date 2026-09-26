@@ -62,6 +62,7 @@ class Map:
         self.fit = fit or (lambda texture: False)
         self.world = []           # brush strings in worldspawn
         self.groups = []          # (name, [brush strings])
+        self.group_ids = {}       # name -> TrenchBroom group id (1-based, creation order)
         self.entities = []        # raw entity strings
         self.textures = list(textures)
         self._group = None
@@ -70,8 +71,13 @@ class Map:
 
     # --- grouping -----------------------------------------------------------
     def group(self, name):
+        """Select a group by name, creating it on first use."""
+        if name in self.group_ids:
+            self._group = self.groups[self.group_ids[name] - 1]
+            return self
         self._group = (name, [])
         self.groups.append(self._group)
+        self.group_ids[name] = len(self.groups)
         return self
 
     def ungroup(self):
@@ -181,9 +187,15 @@ class Map:
         """Plan polygon in the XZ plane, extruded vertically."""
         return self.hull([(x, y, z) for x, z in poly for y in (y0, y1)], tex, name, **kw)
 
-    def entity(self, classname, props):
-        body = ['{', f'"classname" "{classname}"'] + [f'"{k}" "{v}"' for k, v in props.items()] + ['}']
-        self.entities.append('\n'.join(body))
+    def entity(self, classname, props, group=None):
+        """A point entity; with group, it belongs to that TrenchBroom group."""
+        body = ['{', f'"classname" "{classname}"'] + [f'"{k}" "{v}"' for k, v in props.items()]
+        if group is not None:
+            previous = self._group
+            self.group(group)
+            self._group = previous
+            body.append(f'"_tb_group" "{self.group_ids[group]}"')
+        self.entities.append('\n'.join(body + ['}']))
 
     # --- output -------------------------------------------------------------
     def text(self, header=''):

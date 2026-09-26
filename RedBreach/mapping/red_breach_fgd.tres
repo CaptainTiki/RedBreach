@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=14 format=3]
+[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=16 format=3]
 
 [ext_resource type="Script" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1"]
 [ext_resource type="Resource" path="res://addons/func_godot/fgd/phong_base.tres" id="d0"]
@@ -13,8 +13,10 @@
 [ext_resource type="Resource" path="res://mapping/fgd/rb_probe.tres" id="r1"]
 [ext_resource type="Resource" path="res://mapping/fgd/rb_nav.tres" id="r2"]
 [ext_resource type="Resource" path="res://mapping/fgd/rb_dark.tres" id="r3"]
+[ext_resource type="Resource" path="res://mapping/fgd/rb_light.tres" id="r4"]
+[ext_resource type="Resource" path="res://mapping/fgd/rb_ladder.tres" id="r5"]
 
 [resource]
 script = ExtResource("1")
 fgd_name = "RedBreach"
-entity_definitions = Array[Resource]([ExtResource("d0"), ExtResource("d1"), ExtResource("d2"), ExtResource("d3"), ExtResource("d4"), ExtResource("d5"), ExtResource("d6"), ExtResource("d7"), ExtResource("r0"), ExtResource("r1"), ExtResource("r2"), ExtResource("r3")])
+entity_definitions = Array[Resource]([ExtResource("d0"), ExtResource("d1"), ExtResource("d2"), ExtResource("d3"), ExtResource("d4"), ExtResource("d5"), ExtResource("d6"), ExtResource("d7"), ExtResource("r0"), ExtResource("r1"), ExtResource("r2"), ExtResource("r3"), ExtResource("r4"), ExtResource("r5")])

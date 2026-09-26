@@ -151,6 +151,37 @@ Source: corner playtest 01, [architecture-lab-corner-playtest.md](architecture-l
 Relates to [FR-004 distinct bug alert and ambush audio](#fr-004-distinct-bug-alert-and-ambush-audio)
 — a blackout and an ambush cue arriving together must not mask each other.
 
+## FR-007: The standard airlock chamber
+
+**Status:** User-described 2026-09-26 for later. None of it is needed for the
+first builds; a plain chamber stands in until then.
+
+The arrival and departure airlock is a **standard room reused in every level**.
+Build it once, well:
+
+- **Shape:** an **octagonal interior**. Rounded shapes suit a pressure vessel.
+- **Console on one side**, labelled with the current level. It shows **air
+  going out, then air coming in**. That cycle's length can absorb level
+  loading once levels grow, so the console is the honest loading bar.
+- **Floor lighting** whose colour reports the air: breathable or not.
+- **A rotating, old-school emergency beacon** (red or amber) that turns while
+  the airlock is in operation between cycles.
+- **Sound:** hissing air, metal tinks and clunks.
+- **The door is a sequence, not "door opens":**
+  1. It pushes outward, away from the player.
+  2. It breaks open just a little, slowly, with fog and air rushing in from
+     the next room.
+  3. It then opens fairly quickly to fully open.
+
+It ties in with the transition rules in the mission walkthrough: the chamber
+and player stay present while the level swaps behind closed doors, and the
+title shows on the way out.
+
+**Completion check:** one airlock scene is reused at both ends of two
+different levels, and its console names the level. A full cycle (out, in,
+door sequence) plays with light, beacon, fog and sound, and it covers a real
+level load without exposing an unfinished room.
+
 ## Adding future entries
 
 Give each idea the next stable identifier (FR-006, FR-007, and so on), a short title, status, a reason to revisit it, the intended change, and a practical completion check. Keep uncertain details marked as open. When an item enters active work or is completed, update its status and link the relevant plan or implementation notes.

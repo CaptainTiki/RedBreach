@@ -6,7 +6,9 @@ extends SceneTree
 ## It reads validation markers placed in TrenchBroom (see mapping/fgd/ and
 ## tools/trenchbroom/RedBreach/RedBreach.fgd) from the built scene:
 ##   rb_route  waypoints walked in index order, forward then back, standing or
-##             crouched, climbing and descending stairs with the real player
+##             crouched, climbing and descending stairs with the real player;
+##             posture "climb" takes the nearest ladder (rb_ladder) with the
+##             player's own climb; oneway=1 routes are walked forward only
 ##   rb_probe  stand_clear / crouch_only / headroom
 ##   rb_nav    bug navigation pairs: connect or blocked
 ##   rb_dark   a deliberately dark zone: the light floor is waived within radius
@@ -84,13 +86,41 @@ func walk_leg(target: Vector3, crouch: bool, label: String, y_lo: float, y_hi: f
 	expect(false, "%s stalled at %v short of %v" % [label, player.global_position, target])
 	return false
 
+func climb_leg(a: Vector3, b: Vector3, label: String) -> bool:
+	Input.action_release("gym_crouch")
+	var ladder: Node3D = null
+	var best := 1e9
+	for node in scene.find_children("*", "StaticBody3D", true, false):
+		if node.has_method("climb_path"):
+			var d := Vector2(node.global_position.x - a.x, node.global_position.z - a.z).length()
+			if d < best:
+				best = d
+				ladder = node
+	if ladder == null or best > 2.5 or not player.has_method("begin_climb"):
+		expect(false, "%s: no ladder within reach of %v" % [label, a])
+		return false
+	for i in 6:
+		await physics_frame
+	if not ladder.start_climb(player):
+		expect(false, "%s: the climb would not start at %v" % [label, player.global_position])
+		return false
+	for i in int(30.0 / STEP):
+		await physics_frame
+		if not player.climbing():
+			break
+	if player.climbing():
+		expect(false, "%s: still climbing at %v" % [label, player.global_position])
+		return false
+	return await walk_leg(b, false, label + " (off the ladder)", minf(player.global_position.y, b.y), maxf(player.global_position.y, b.y))
+
 func run() -> void:
 	var args := OS.get_cmdline_user_args()
 	var path: String = args[0] if args.size() > 0 else "res://kit/kit_lab.tscn"
 	scene = load(path).instantiate()
 	root.add_child(scene)
 	for node in scene.find_children("*", "CharacterBody3D", true, false):
-		if node.get_script() and str(node.get_script().resource_path).ends_with("gym_player.gd"):
+		# The gym player, or a mission player derived from it.
+		if node.get_script() and "test_direction" in node and node.has_method("relocate"):
 			player = node
 	if player == null:
 		print("FAIL: no GymPlayer in ", path)
@@ -106,11 +136,17 @@ func run() -> void:
 	for map_node in scene.find_children("*", "", true, false):
 		if not map_node is FuncGodotMap:
 			continue
-		var shapes := map_node.find_children("*", "CollisionShape3D", true, false).size()
+		# Brush geometry only: entities with their own scripts (ladders) bring their own shapes and meshes.
+		var shapes := 0
+		for shape in map_node.find_children("*", "CollisionShape3D", true, false):
+			if shape.get_parent().get_script() == null:
+				shapes += 1
 		if shapes > 0 and map_node.local_map_file != "":
 			var brushes := map_brush_count(map_node.local_map_file)
 			expect(shapes == brushes, "%s: %d collision shapes for %d brushes" % [map_node.name, shapes, brushes])
 		for mesh_instance in map_node.find_children("*", "MeshInstance3D", true, false):
+			if mesh_instance.get_parent().get_script() != null:
+				continue
 			var mesh: Mesh = mesh_instance.mesh
 			for s in mesh.get_surface_count():
 				var m := mesh.surface_get_material(s)
@@ -119,6 +155,7 @@ func run() -> void:
 				expect(ok, "%s surface %s has no real material" % [map_node.name, mesh.surface_get_name(s)])
 
 	var routes := {}
+	var oneways := {}
 	var navs := {}
 	var probes := []
 	var darks := []
@@ -127,6 +164,8 @@ func run() -> void:
 		match str(p.get("classname", "")):
 			"rb_route":
 				routes.get_or_add(str(p.get("route", "main")), []).append([int(p.get("index", 0)), marker.global_position, str(p.get("posture", "stand"))])
+				if int(p.get("oneway", 0)) == 1:
+					oneways[str(p.get("route", "main"))] = true
 			"rb_probe":
 				probes.append([str(p.get("kind", "stand_clear")), float(p.get("min", 0.0)), marker.global_position])
 			"rb_nav":
@@ -179,6 +218,8 @@ func run() -> void:
 		var points: Array = routes[route_name]
 		points.sort_custom(func(a, b): return a[0] < b[0])
 		for direction in ["forward", "back"]:
+			if direction == "back" and oneways.get(route_name, false):
+				continue
 			var seq: Array = points if direction == "forward" else points.duplicate()
 			if direction == "back":
 				seq.reverse()
@@ -190,7 +231,12 @@ func run() -> void:
 				var b: Vector3 = seq[i][1]
 				var crouch: bool = seq[i][2] == "crouch" or seq[i - 1][2] == "crouch"
 				var label := "route %s %s leg %d->%d" % [route_name, direction, seq[i - 1][0], seq[i][0]]
-				var ok := await walk_leg(b, crouch, label, minf(a.y, b.y), maxf(a.y, b.y))
+				var ok: bool
+				# A climb marker is the point AFTER the ladder, walking forward.
+				if (direction == "forward" and seq[i][2] == "climb") or (direction == "back" and seq[i - 1][2] == "climb"):
+					ok = await climb_leg(a, b, label)
+				else:
+					ok = await walk_leg(b, crouch, label, minf(a.y, b.y), maxf(a.y, b.y))
 				expect(ok, label)
 				if not ok:
 					break

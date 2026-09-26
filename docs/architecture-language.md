@@ -92,6 +92,45 @@ running tally along the walkthrough so the net change is deliberate. Small
 changes make texture changes legal (a step is geometry) and give fights
 height differences without mezzanines.
 
+### Damage is visible, and triggers cannot be missed
+
+User rules, 2026-09-26:
+- **Damage must be seen**, not just a dark bay: a fitting hangs torn loose on
+  its cable, dead and not emissive, with sparks flashing from the break.
+- **An encounter trigger must be impossible to miss.** Size it so every path
+  into its space crosses it (a whole room floor, or the full width of every
+  entrance), so it can neither be skipped nor fired late from an unexpected
+  angle.
+
+### Stairs have a width and a reason; filler rooms carry one idea
+
+User rules, 2026-09-26 (freight v2 plan, revision 01 review):
+- **A flight is 3 m wide, 3.5 m at most**, in a stairwell or along a room
+  side that wraps it. A stair never fills the full 6 m width of a corridor;
+  that read as massive next to every other stair. One or two steps may still
+  span a room or a corridor.
+- **No stair without a reason.** A stair that exists only as an alternative
+  nobody needs should go. Give its landing a room, a reward or the only way
+  on.
+- **Filler rooms** sit between the big rooms, each carrying one idea:
+  - a hallway with an extension where pipes cross at crouch height, with a
+    reward in view beyond them
+  - a U-turn round a moving machine
+  
+  They are how a level grows, instead of long empty corridors.
+- **One crouch, then run** (freight v2 revision 03 notes). A crouch is an
+  entry, into a duct or under a pipe bank to a reward, never a toll repeated
+  along a path: a second crouch in the same passage only adds time. After
+  the crouch, a duct hallway is bare steel siding with basically zero detail,
+  only a tiny rib at every 2 m join.
+- **No labels in the game** (freight v2 revision 07 notes). A room's job is
+  read from its props, such as a seat with a console or a seat with a
+  joystick, never from a sign saying "crane operator". Plan names are for
+  the plan only.
+- **Motion in the walls.** Moving machinery is cheap interest: a piston, a
+  slow box fan, and small spinning bits and pumps set into the walls of
+  ordinary rooms.
+
 ### Rib feet come straight down
 
 User rule, 2026-09-25: a structural rib does not step out at its foot the way

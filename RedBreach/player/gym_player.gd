@@ -70,8 +70,8 @@ func is_alive() -> bool:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
-		if event.physical_keycode in [KEY_F1, KEY_F2, KEY_F3, KEY_F6, KEY_F7, KEY_F8, KEY_F9, KEY_F10]:
-			var scenes := {KEY_F1: "res://gym/gym.tscn", KEY_F2: "res://combat/combat_gym.tscn", KEY_F3: "res://encounters/route_trial.tscn", KEY_F6: "res://missions/freight/freight_blockout.tscn", KEY_F7: "res://architecture/architecture_lab.tscn", KEY_F8: "res://architecture/architecture_lab_corners.tscn", KEY_F9: "res://style/style_lab.tscn", KEY_F10: "res://kit/kit_lab.tscn"}
+		if event.physical_keycode in [KEY_F1, KEY_F2, KEY_F3, KEY_F6, KEY_F7, KEY_F8, KEY_F9, KEY_F10, KEY_F11]:
+			var scenes := {KEY_F1: "res://gym/gym.tscn", KEY_F2: "res://combat/combat_gym.tscn", KEY_F3: "res://encounters/route_trial.tscn", KEY_F6: "res://missions/freight/freight_blockout.tscn", KEY_F7: "res://architecture/architecture_lab.tscn", KEY_F8: "res://architecture/architecture_lab_corners.tscn", KEY_F9: "res://style/style_lab.tscn", KEY_F10: "res://kit/kit_lab.tscn", KEY_F11: "res://missions/freight_v2/freight_v2.tscn"}
 			get_tree().call_deferred("change_scene_to_file", scenes[event.physical_keycode])
 			return
 	if not is_alive():
@@ -257,7 +257,7 @@ func _physics_process(delta: float) -> void:
 	if global_position.y < -10.0:
 		reset_player()
 	_update_interaction()
-	status.text = "%s / %s / Hits: %d\nWASD move   Shift sprint   Ctrl crouch   Space jump\nLMB fire   RMB aim   R reload   E use\nEsc release mouse   Backspace reset\nF1 movement   F2 combat   F3 route   F6 freight   F7 lab   F8 corners   F9 style   F10 kit" % [gym_title, movement_mode(), hit_count]
+	status.text = "%s / %s / Hits: %d\nWASD move   Shift sprint   Ctrl crouch   Space jump\nLMB fire   RMB aim   R reload   E use\nEsc release mouse   Backspace reset\nF1 movement   F2 combat   F3 route   F6 freight   F7 lab   F8 corners   F9 style   F10 kit   F11 freight v2" % [gym_title, movement_mode(), hit_count]
 
 func is_grounded() -> bool:
 	# A capsule can touch a stair corner with a steep normal even though there is

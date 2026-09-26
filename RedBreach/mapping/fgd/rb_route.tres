@@ -12,12 +12,14 @@ description = "Validation route waypoint. Routes are walked in index order, forw
 class_properties = Dictionary[String, Variant]({
 "route": "main",
 "index": 0,
-"posture": "stand"
+"posture": "stand",
+"oneway": 0
 })
 class_property_descriptions = Dictionary[String, Variant]({
 "route": "Route name",
 "index": "Order along the route",
-"posture": "stand or crouch"
+"posture": "stand, crouch or climb (use the nearest ladder)",
+"oneway": "1: the route is walked forward only (it has a one-way drop)"
 })
 meta_properties = Dictionary[String, Variant]({
 "size": AABB(-8, -8, 0, 16, 16, 16),

@@ -5,7 +5,8 @@
 [
 	route(string) : "Route name" : "main"
 	index(integer) : "Order along the route" : 0
-	posture(string) : "stand or crouch" : "stand"
+	posture(string) : "stand, crouch or climb" : "stand"
+	oneway(integer) : "1: walked forward only" : 0
 ]
 
 @PointClass size(-8 -8 0, 8 8 16) color(232 189 119) = rb_probe : "Clearance probe: stand_clear, crouch_only or headroom." 
@@ -25,4 +26,19 @@
 [
 	radius(float) : "Radius in metres" : "4"
 	reason(string) : "Why this is dark on purpose" : "broken lights"
+]
+
+@PointClass size(-6 -6 -6, 6 6 6) color(255 242 178) = rb_light : "An omni light. Lives in the map so it moves with its room's group."
+[
+	energy(float) : "Light energy" : "1"
+	range(float) : "Omni range in metres" : "10"
+	shadow(integer) : "1 casts shadows, 0 does not" : 1
+	color(string) : "Colour as r g b (0-1)" : "0.86 0.93 1"
+]
+
+@PointClass size(-8 -8 0, 8 8 64) color(217 166 64) = rb_ladder : "A climbable ladder. Origin: the foot of the ladder face. The climber faces 'facing' and steps off forward at 'top'."
+[
+	top(float) : "Height of the top landing, metres" : "0"
+	facing(string) : "Plan direction the climber faces: dx dy (x east, y north)" : "0 1"
+	label(string) : "Name, for the plan" : ""
 ]

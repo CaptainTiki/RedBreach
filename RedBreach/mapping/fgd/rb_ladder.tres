@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="1"]
+[ext_resource type="Script" path="res://mapping/fgd/rb_ladder.gd" id="2"]
+
+[resource]
+script = ExtResource("1")
+script_class = ExtResource("2")
+apply_rotation_on_map_build = false
+classname = "rb_ladder"
+description = "A climbable ladder. Origin: the foot of the ladder face. The climber faces 'facing' and steps off forward at 'top'."
+class_properties = Dictionary[String, Variant]({
+"top": 0.0,
+"facing": "0 1",
+"label": ""
+})
+class_property_descriptions = Dictionary[String, Variant]({
+"top": "Height of the top landing, metres",
+"facing": "Plan direction the climber faces, into the ladder: dx dy (x east, y north)",
+"label": "Name, for the plan"
+})
+meta_properties = Dictionary[String, Variant]({
+"size": AABB(-8, -8, 0, 16, 16, 64),
+"color": Color(0.85, 0.65, 0.25, 1)
+})
+node_class = "StaticBody3D"
