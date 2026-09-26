@@ -140,11 +140,13 @@ def lossless_imports():
 
 
 # --- materials ------------------------------------------------------------------
-def material(set_name, role, image):
+def material(set_name, role, image, tint=None):
     lines = ['[gd_resource type="StandardMaterial3D" load_steps=2 format=3]', '',
              f'[ext_resource type="Texture2D" path="res://textures/{image}.png" id="1"]', '',
              '[resource]', f'resource_name = "{set_name} {role}"',
              'albedo_texture = ExtResource("1")']
+    if tint:
+        lines.append(f'albedo_color = Color({tint[0]}, {tint[1]}, {tint[2]}, 1)')
     if role in ('ground', 'rock'):
         lines += ['roughness = 1.0', 'metallic_specular = 0.15']
     else:
@@ -456,11 +458,26 @@ if __name__ == '__main__':
             shutil.rmtree(old)
     for old in (PROJ / 'mapping').glob('style_lab_style_*_settings.tres'):
         old.unlink()
+    # Refuse a texture that cannot meet its role's tiling (docs/texture-catalog.json,
+    # written by tools/audit-textures.py).
+    catalog = json.loads((ROOT / 'docs/texture-catalog.json').read_text())
+    problems = []
     for look_name, roles in S.LOOKS.items():
-        for role, image in roles.items():
+        for role, entry in roles.items():
+            image, tint = S.look_texture(entry)
             if not (TEX / f'{image}.png').exists():
                 raise SystemExit(f'{look_name}/{role}: no texture {image}.png')
-            material(f'looks/{look_name}', role, image)
+            need, c = S.ROLE_TILING[role], catalog.get(image)
+            if c is None:
+                problems.append(f'{look_name}/{role}: {image} is not in the texture catalog')
+            elif (need == 'HV' and not (c['tiles_h'] and c['tiles_v'])) or (need == 'H' and not c['tiles_h']):
+                problems.append(f'{look_name}/{role} needs {need} but {image} is {c["class_h"]}{c["class_v"]}')
+    if problems:
+        raise SystemExit('TEXTURE TILING:\n  ' + '\n  '.join(problems))
+    for look_name, roles in S.LOOKS.items():
+        for role, entry in roles.items():
+            image, tint = S.look_texture(entry)
+            material(f'looks/{look_name}', role, image, tint)
             # TrenchBroom preview beside the material (func_godot prefers the .tres).
             shutil.copyfile(TEX / f'{image}.png', TEX / 'looks' / look_name / f'{role}.png')
     (PROJ / 'mapping' / 'style_lab_map_settings.tres').write_text('''[gd_resource type="Resource" script_class="FuncGodotMapSettings" load_steps=2 format=3]

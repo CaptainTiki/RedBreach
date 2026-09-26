@@ -1,0 +1,6701 @@
+{
+ "packs/quod/tex12": {
+  "size": [
+   64,
+   32
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0265,
+  "seam_v": 0.0305,
+  "inner_h": 0.0165,
+  "inner_v": 0.1597,
+  "drift_h": 0.0004,
+  "drift_v": 0.0098,
+  "transparent": 0.0
+ },
+ "packs/quod/tex126": {
+  "size": [
+   8,
+   32
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.0,
+  "seam_v": 0.0,
+  "inner_h": 0.1647,
+  "inner_v": 0.1649,
+  "drift_h": 0.1325,
+  "drift_v": 0.0,
+  "transparent": 0.707
+ },
+ "packs/quod/tex127": {
+  "size": [
+   8,
+   20
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.0,
+  "seam_v": 0.0,
+  "inner_h": 0.2429,
+  "inner_v": 0.2763,
+  "drift_h": 0.25,
+  "drift_v": 0.1,
+  "transparent": 0.781
+ },
+ "packs/quod/tex13": {
+  "size": [
+   64,
+   16
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0062,
+  "seam_v": 0.1182,
+  "inner_h": 0.0156,
+  "inner_v": 0.0247,
+  "drift_h": 0.003,
+  "drift_v": 0.0424,
+  "transparent": 0.0
+ },
+ "packs/quod/tex14": {
+  "size": [
+   16,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.036,
+  "seam_v": 0.0115,
+  "inner_h": 0.0204,
+  "inner_v": 0.029,
+  "drift_h": 0.0022,
+  "drift_v": 0.0,
+  "transparent": 0.0
+ },
+ "packs/quod/tex15": {
+  "size": [
+   32,
+   32
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0838,
+  "seam_v": 0.3009,
+  "inner_h": 0.0171,
+  "inner_v": 0.0239,
+  "drift_h": 0.0088,
+  "drift_v": 0.0363,
+  "transparent": 0.0
+ },
+ "packs/quod/tex16": {
+  "size": [
+   16,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0642,
+  "seam_v": 0.1946,
+  "inner_h": 0.0796,
+  "inner_v": 0.0636,
+  "drift_h": 0.0227,
+  "drift_v": 0.0016,
+  "transparent": 0.0
+ },
+ "packs/quod/tex18": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0949,
+  "seam_v": 0.2609,
+  "inner_h": 0.0206,
+  "inner_v": 0.0282,
+  "drift_h": 0.0135,
+  "drift_v": 0.0688,
+  "transparent": 0.0,
+  "feature": "door with an emblem"
+ },
+ "packs/quod/tex182": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.1482,
+  "seam_v": 0.5101,
+  "inner_h": 0.011,
+  "inner_v": 0.0147,
+  "drift_h": 0.0033,
+  "drift_v": 0.0506,
+  "transparent": 0.0
+ },
+ "packs/quod/tex184": {
+  "size": [
+   14,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.3205,
+  "seam_v": 0.0546,
+  "inner_h": 0.043,
+  "inner_v": 0.0418,
+  "drift_h": 0.0001,
+  "drift_v": 0.0,
+  "transparent": 0.0
+ },
+ "packs/quod/tex185": {
+  "size": [
+   128,
+   14
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0581,
+  "seam_v": 0.3222,
+  "inner_h": 0.0426,
+  "inner_v": 0.0419,
+  "drift_h": 0.0,
+  "drift_v": 0.0011,
+  "transparent": 0.0
+ },
+ "packs/quod/tex186": {
+  "size": [
+   11,
+   89
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.089,
+  "seam_v": 0.2061,
+  "inner_h": 0.1344,
+  "inner_v": 0.0128,
+  "drift_h": 0.114,
+  "drift_v": 0.0267,
+  "transparent": 0.0
+ },
+ "packs/quod/tex187": {
+  "size": [
+   89,
+   11
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1367,
+  "seam_v": 0.283,
+  "inner_h": 0.0122,
+  "inner_v": 0.144,
+  "drift_h": 0.0312,
+  "drift_v": 0.2857,
+  "transparent": 0.0
+ },
+ "packs/quod/tex188": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1482,
+  "seam_v": 0.5069,
+  "inner_h": 0.0117,
+  "inner_v": 0.0163,
+  "drift_h": 0.0033,
+  "drift_v": 0.0389,
+  "transparent": 0.0,
+  "feature": "skull emblem"
+ },
+ "packs/quod/tex189": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.081,
+  "seam_v": 0.2542,
+  "inner_h": 0.1224,
+  "inner_v": 0.0547,
+  "drift_h": 0.0029,
+  "drift_v": 0.0183,
+  "transparent": 0.0
+ },
+ "packs/quod/tex190": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0824,
+  "seam_v": 0.2881,
+  "inner_h": 0.0301,
+  "inner_v": 0.0322,
+  "drift_h": 0.0028,
+  "drift_v": 0.01,
+  "transparent": 0.0
+ },
+ "packs/quod/tex192": {
+  "size": [
+   31,
+   49
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0002,
+  "seam_v": 0.0091,
+  "inner_h": 0.0375,
+  "inner_v": 0.0428,
+  "drift_h": 0.0009,
+  "drift_v": 0.0133,
+  "transparent": 0.197
+ },
+ "packs/quod/tex193": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.0823,
+  "seam_v": 0.0063,
+  "inner_h": 0.0134,
+  "inner_v": 0.0213,
+  "drift_h": 0.0169,
+  "drift_v": 0.0003,
+  "transparent": 0.0
+ },
+ "packs/quod/tex195": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.0823,
+  "seam_v": 0.0063,
+  "inner_h": 0.0077,
+  "inner_v": 0.0281,
+  "drift_h": 0.007,
+  "drift_v": 0.0049,
+  "transparent": 0.0
+ },
+ "packs/quod/tex196": {
+  "size": [
+   16,
+   8
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0724,
+  "seam_v": 0.3431,
+  "inner_h": 0.0672,
+  "inner_v": 0.0669,
+  "drift_h": 0.0482,
+  "drift_v": 0.001,
+  "transparent": 0.0
+ },
+ "packs/quod/tex197": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.0823,
+  "seam_v": 0.0063,
+  "inner_h": 0.0056,
+  "inner_v": 0.0185,
+  "drift_h": 0.0065,
+  "drift_v": 0.0009,
+  "transparent": 0.0
+ },
+ "packs/quod/tex20": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0732,
+  "seam_v": 0.1822,
+  "inner_h": 0.0399,
+  "inner_v": 0.0393,
+  "drift_h": 0.0041,
+  "drift_v": 0.2029,
+  "transparent": 0.0
+ },
+ "packs/quod/tex208": {
+  "size": [
+   64,
+   32
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0146,
+  "seam_v": 0.007,
+  "inner_h": 0.0131,
+  "inner_v": 0.0628,
+  "drift_h": 0.0013,
+  "drift_v": 0.1307,
+  "transparent": 0.0
+ },
+ "packs/quod/tex21": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0143,
+  "seam_v": 0.0188,
+  "inner_h": 0.0152,
+  "inner_v": 0.0626,
+  "drift_h": 0.0144,
+  "drift_v": 0.0134,
+  "transparent": 0.0
+ },
+ "packs/quod/tex214": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.171,
+  "seam_v": 0.171,
+  "inner_h": 0.0359,
+  "inner_v": 0.0428,
+  "drift_h": 0.019,
+  "drift_v": 0.047,
+  "transparent": 0.0
+ },
+ "packs/quod/tex219": {
+  "size": [
+   32,
+   48
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0,
+  "seam_v": 0.0,
+  "inner_h": 0.0196,
+  "inner_v": 0.0109,
+  "drift_h": 0.0002,
+  "drift_v": 0.0448,
+  "transparent": 0.872
+ },
+ "packs/quod/tex22": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0062,
+  "seam_v": 0.0095,
+  "inner_h": 0.0111,
+  "inner_v": 0.0121,
+  "drift_h": 0.0076,
+  "drift_v": 0.002,
+  "transparent": 0.0
+ },
+ "packs/quod/tex220": {
+  "size": [
+   32,
+   48
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1152,
+  "seam_v": 0.3076,
+  "inner_h": 0.0361,
+  "inner_v": 0.049,
+  "drift_h": 0.0301,
+  "drift_v": 0.0532,
+  "transparent": 0.0
+ },
+ "packs/quod/tex221": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.1482,
+  "seam_v": 0.5101,
+  "inner_h": 0.0092,
+  "inner_v": 0.0146,
+  "drift_h": 0.0026,
+  "drift_v": 0.0369,
+  "transparent": 0.0
+ },
+ "packs/quod/tex228": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1634,
+  "seam_v": 0.2568,
+  "inner_h": 0.0293,
+  "inner_v": 0.0459,
+  "drift_h": 0.0199,
+  "drift_v": 0.0384,
+  "transparent": 0.0,
+  "feature": "skull emblem"
+ },
+ "packs/quod/tex23": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1634,
+  "seam_v": 0.1621,
+  "inner_h": 0.0278,
+  "inner_v": 0.0438,
+  "drift_h": 0.0194,
+  "drift_v": 0.0831,
+  "transparent": 0.0,
+  "feature": "skull emblem"
+ },
+ "packs/quod/tex230": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.1482,
+  "seam_v": 0.5035,
+  "inner_h": 0.0122,
+  "inner_v": 0.0253,
+  "drift_h": 0.0033,
+  "drift_v": 0.0387,
+  "transparent": 0.0
+ },
+ "packs/quod/tex231": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.1495,
+  "seam_v": 0.4979,
+  "inner_h": 0.0124,
+  "inner_v": 0.0195,
+  "drift_h": 0.0264,
+  "drift_v": 0.0688,
+  "transparent": 0.0
+ },
+ "packs/quod/tex232": {
+  "size": [
+   32,
+   28
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0543,
+  "seam_v": 0.0744,
+  "inner_h": 0.0314,
+  "inner_v": 0.033,
+  "drift_h": 0.0004,
+  "drift_v": 0.003,
+  "transparent": 0.0
+ },
+ "packs/quod/tex234": {
+  "size": [
+   64,
+   32
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0082,
+  "seam_v": 0.1932,
+  "inner_h": 0.0075,
+  "inner_v": 0.0145,
+  "drift_h": 0.0063,
+  "drift_v": 0.0407,
+  "transparent": 0.0
+ },
+ "packs/quod/tex235": {
+  "size": [
+   64,
+   32
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0082,
+  "seam_v": 0.1932,
+  "inner_h": 0.0049,
+  "inner_v": 0.0112,
+  "drift_h": 0.0035,
+  "drift_v": 0.0407,
+  "transparent": 0.0
+ },
+ "packs/quod/tex238": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0949,
+  "seam_v": 0.2609,
+  "inner_h": 0.0199,
+  "inner_v": 0.0289,
+  "drift_h": 0.0063,
+  "drift_v": 0.0712,
+  "transparent": 0.0,
+  "feature": "hazard band along the bottom"
+ },
+ "packs/quod/tex239": {
+  "size": [
+   128,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.1443,
+  "seam_v": 0.4724,
+  "inner_h": 0.0182,
+  "inner_v": 0.0565,
+  "drift_h": 0.0017,
+  "drift_v": 0.0279,
+  "transparent": 0.0
+ },
+ "packs/quod/tex24": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0703,
+  "seam_v": 0.124,
+  "inner_h": 0.0124,
+  "inner_v": 0.0115,
+  "drift_h": 0.0018,
+  "drift_v": 0.0017,
+  "transparent": 0.0
+ },
+ "packs/quod/tex240": {
+  "size": [
+   128,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.1443,
+  "seam_v": 0.4724,
+  "inner_h": 0.0118,
+  "inner_v": 0.0196,
+  "drift_h": 0.0009,
+  "drift_v": 0.0409,
+  "transparent": 0.0
+ },
+ "packs/quod/tex241": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1049,
+  "seam_v": 0.5632,
+  "inner_h": 0.0303,
+  "inner_v": 0.0389,
+  "drift_h": 0.0048,
+  "drift_v": 0.0672,
+  "transparent": 0.0,
+  "feature": "computer"
+ },
+ "packs/quod/tex242": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0265,
+  "seam_v": 0.0305,
+  "inner_h": 0.0165,
+  "inner_v": 0.1576,
+  "drift_h": 0.0004,
+  "drift_v": 0.0255,
+  "transparent": 0.0
+ },
+ "packs/quod/tex243": {
+  "size": [
+   128,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.156,
+  "seam_v": 0.5094,
+  "inner_h": 0.0194,
+  "inner_v": 0.0416,
+  "drift_h": 0.0008,
+  "drift_v": 0.0053,
+  "transparent": 0.0
+ },
+ "packs/quod/tex244": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0817,
+  "seam_v": 0.2865,
+  "inner_h": 0.0273,
+  "inner_v": 0.0374,
+  "drift_h": 0.0081,
+  "drift_v": 0.0171,
+  "transparent": 0.0
+ },
+ "packs/quod/tex247": {
+  "size": [
+   128,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.156,
+  "seam_v": 0.5094,
+  "inner_h": 0.0112,
+  "inner_v": 0.0225,
+  "drift_h": 0.0042,
+  "drift_v": 0.0775,
+  "transparent": 0.0
+ },
+ "packs/quod/tex248": {
+  "size": [
+   128,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.156,
+  "seam_v": 0.5094,
+  "inner_h": 0.0195,
+  "inner_v": 0.0266,
+  "drift_h": 0.0479,
+  "drift_v": 0.0246,
+  "transparent": 0.0
+ },
+ "packs/quod/tex249": {
+  "size": [
+   64,
+   16
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0062,
+  "seam_v": 0.1141,
+  "inner_h": 0.0048,
+  "inner_v": 0.0124,
+  "drift_h": 0.0028,
+  "drift_v": 0.0258,
+  "transparent": 0.0
+ },
+ "packs/quod/tex25": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0662,
+  "seam_v": 0.1379,
+  "inner_h": 0.0816,
+  "inner_v": 0.0128,
+  "drift_h": 0.0076,
+  "drift_v": 0.0055,
+  "transparent": 0.0
+ },
+ "packs/quod/tex251": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.1049,
+  "seam_v": 0.524,
+  "inner_h": 0.0229,
+  "inner_v": 0.0233,
+  "drift_h": 0.0009,
+  "drift_v": 0.0275,
+  "transparent": 0.0
+ },
+ "packs/quod/tex252": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.1049,
+  "seam_v": 0.5632,
+  "inner_h": 0.0236,
+  "inner_v": 0.0315,
+  "drift_h": 0.0012,
+  "drift_v": 0.0365,
+  "transparent": 0.0
+ },
+ "packs/quod/tex254": {
+  "size": [
+   32,
+   16
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0539,
+  "seam_v": 0.3712,
+  "inner_h": 0.0422,
+  "inner_v": 0.0415,
+  "drift_h": 0.0255,
+  "drift_v": 0.0004,
+  "transparent": 0.0
+ },
+ "packs/quod/tex26": {
+  "size": [
+   16,
+   16
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0609,
+  "seam_v": 0.0548,
+  "inner_h": 0.0806,
+  "inner_v": 0.092,
+  "drift_h": 0.0408,
+  "drift_v": 0.01,
+  "transparent": 0.0
+ },
+ "packs/quod/tex27": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.0781,
+  "seam_v": 0.0092,
+  "inner_h": 0.0155,
+  "inner_v": 0.0271,
+  "drift_h": 0.0057,
+  "drift_v": 0.0,
+  "transparent": 0.0
+ },
+ "packs/quod/tex28": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0806,
+  "seam_v": 0.2514,
+  "inner_h": 0.0272,
+  "inner_v": 0.0232,
+  "drift_h": 0.0022,
+  "drift_v": 0.0118,
+  "transparent": 0.0
+ },
+ "packs/quod/tex34": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.1175,
+  "seam_v": 0.0651,
+  "inner_h": 0.1058,
+  "inner_v": 0.1349,
+  "drift_h": 0.049,
+  "drift_v": 0.0497,
+  "transparent": 0.0
+ },
+ "packs/quod/tex36": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1396,
+  "seam_v": 0.1931,
+  "inner_h": 0.0263,
+  "inner_v": 0.0496,
+  "drift_h": 0.1444,
+  "drift_v": 0.1121,
+  "transparent": 0.0
+ },
+ "packs/quod/tex37": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.1277,
+  "seam_v": 0.4369,
+  "inner_h": 0.0362,
+  "inner_v": 0.0428,
+  "drift_h": 0.0424,
+  "drift_v": 0.0037,
+  "transparent": 0.0
+ },
+ "packs/quod/tex39": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0362,
+  "seam_v": 0.0466,
+  "inner_h": 0.0378,
+  "inner_v": 0.0385,
+  "drift_h": 0.003,
+  "drift_v": 0.0076,
+  "transparent": 0.0
+ },
+ "packs/quod/tex4": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0354,
+  "seam_v": 0.0335,
+  "inner_h": 0.0085,
+  "inner_v": 0.0085,
+  "drift_h": 0.0166,
+  "drift_v": 0.0063,
+  "transparent": 0.0
+ },
+ "packs/quod/tex40": {
+  "size": [
+   48,
+   24
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.2395,
+  "seam_v": 0.6505,
+  "inner_h": 0.061,
+  "inner_v": 0.1286,
+  "drift_h": 0.0524,
+  "drift_v": 0.0122,
+  "transparent": 0.0,
+  "feature": "EXIT sign"
+ },
+ "packs/quod/tex41": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.1687,
+  "seam_v": 0.2178,
+  "inner_h": 0.0423,
+  "inner_v": 0.0441,
+  "drift_h": 0.0228,
+  "drift_v": 0.0093,
+  "transparent": 0.0
+ },
+ "packs/quod/tex43": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0698,
+  "seam_v": 0.0683,
+  "inner_h": 0.0152,
+  "inner_v": 0.0259,
+  "drift_h": 0.0048,
+  "drift_v": 0.0002,
+  "transparent": 0.0,
+  "feature": "hazard band along the bottom"
+ },
+ "packs/quod/tex44": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0777,
+  "seam_v": 0.2999,
+  "inner_h": 0.0148,
+  "inner_v": 0.0345,
+  "drift_h": 0.0055,
+  "drift_v": 0.0435,
+  "transparent": 0.0
+ },
+ "packs/quod/tex45": {
+  "size": [
+   64,
+   48
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0052,
+  "seam_v": 0.4956,
+  "inner_h": 0.0122,
+  "inner_v": 0.0176,
+  "drift_h": 0.007,
+  "drift_v": 0.446,
+  "transparent": 0.31
+ },
+ "packs/quod/tex46": {
+  "size": [
+   64,
+   24
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0066,
+  "seam_v": 0.5968,
+  "inner_h": 0.0095,
+  "inner_v": 0.0325,
+  "drift_h": 0.0079,
+  "drift_v": 0.5322,
+  "transparent": 0.333
+ },
+ "packs/quod/tex47": {
+  "size": [
+   64,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0189,
+  "seam_v": 0.1431,
+  "inner_h": 0.0114,
+  "inner_v": 0.0504,
+  "drift_h": 0.0007,
+  "drift_v": 0.1013,
+  "transparent": 0.0
+ },
+ "packs/quod/tex50": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0871,
+  "seam_v": 0.1415,
+  "inner_h": 0.008,
+  "inner_v": 0.0064,
+  "drift_h": 0.129,
+  "drift_v": 0.1058,
+  "transparent": 0.93
+ },
+ "packs/quod/tex52": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.2968,
+  "seam_v": 0.2497,
+  "inner_h": 0.0504,
+  "inner_v": 0.0464,
+  "drift_h": 0.2316,
+  "drift_v": 0.185,
+  "transparent": 0.0
+ },
+ "packs/quod/tex54": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.1029,
+  "seam_v": 0.0604,
+  "inner_h": 0.0896,
+  "inner_v": 0.1048,
+  "drift_h": 0.0414,
+  "drift_v": 0.0202,
+  "transparent": 0.0
+ },
+ "packs/quod/tex55": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.1394,
+  "seam_v": 0.0946,
+  "inner_h": 0.0415,
+  "inner_v": 0.0533,
+  "drift_h": 0.1324,
+  "drift_v": 0.0467,
+  "transparent": 0.0
+ },
+ "packs/quod/tex56": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0782,
+  "seam_v": 0.1574,
+  "inner_h": 0.0071,
+  "inner_v": 0.0105,
+  "drift_h": 0.08,
+  "drift_v": 0.2125,
+  "transparent": 0.875
+ },
+ "packs/quod/tex64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1752,
+  "seam_v": 0.254,
+  "inner_h": 0.0364,
+  "inner_v": 0.0403,
+  "drift_h": 0.0118,
+  "drift_v": 0.1838,
+  "transparent": 0.0,
+  "feature": "door and knobs"
+ },
+ "packs/quod/tex75": {
+  "size": [
+   192,
+   112
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0,
+  "seam_v": 0.0,
+  "inner_h": 0.0452,
+  "inner_v": 0.0513,
+  "drift_h": 0.0106,
+  "drift_v": 0.128,
+  "transparent": 0.237,
+  "feature": "logo"
+ },
+ "packs/quod/tex8": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.1049,
+  "seam_v": 0.5635,
+  "inner_h": 0.0207,
+  "inner_v": 0.0234,
+  "drift_h": 0.0015,
+  "drift_v": 0.0286,
+  "transparent": 0.0,
+  "panel": "bevelled panel rows"
+ },
+ "packs/quod/tex80": {
+  "size": [
+   16,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0642,
+  "seam_v": 0.1946,
+  "inner_h": 0.0796,
+  "inner_v": 0.0646,
+  "drift_h": 0.0227,
+  "drift_v": 0.0014,
+  "transparent": 0.0
+ },
+ "packs/quod/tex81": {
+  "size": [
+   32,
+   32
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.1695,
+  "seam_v": 0.443,
+  "inner_h": 0.0176,
+  "inner_v": 0.0453,
+  "drift_h": 0.0096,
+  "drift_v": 0.0087,
+  "transparent": 0.0
+ },
+ "packs/quod/tex82": {
+  "size": [
+   32,
+   32
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1694,
+  "seam_v": 0.4818,
+  "inner_h": 0.0347,
+  "inner_v": 0.0508,
+  "drift_h": 0.0064,
+  "drift_v": 0.0157,
+  "transparent": 0.0,
+  "feature": "skull emblem"
+ },
+ "packs/quod/tex84": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0949,
+  "seam_v": 0.2609,
+  "inner_h": 0.0206,
+  "inner_v": 0.0294,
+  "drift_h": 0.0085,
+  "drift_v": 0.0055,
+  "transparent": 0.0,
+  "feature": "hazard band"
+ },
+ "packs/quod/tex87": {
+  "size": [
+   192,
+   192
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0054,
+  "seam_v": 0.005,
+  "inner_h": 0.0024,
+  "inner_v": 0.0022,
+  "drift_h": 0.0012,
+  "drift_v": 0.0056,
+  "transparent": 0.0
+ },
+ "packs/quod/tex89": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0,
+  "seam_v": 0.2557,
+  "inner_h": 0.0,
+  "inner_v": 0.0041,
+  "drift_h": 0.0,
+  "drift_v": 0.1943,
+  "transparent": 0.328
+ },
+ "packs/quod/tex9": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1049,
+  "seam_v": 0.5632,
+  "inner_h": 0.0295,
+  "inner_v": 0.035,
+  "drift_h": 0.0023,
+  "drift_v": 0.1005,
+  "transparent": 0.0,
+  "feature": "door and hatch"
+ },
+ "packs/quod/tex90": {
+  "size": [
+   192,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0423,
+  "seam_v": 0.1181,
+  "inner_h": 0.0234,
+  "inner_v": 0.071,
+  "drift_h": 0.0181,
+  "drift_v": 0.0299,
+  "transparent": 0.0
+ },
+ "packs/quod/tex91": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1721,
+  "seam_v": 0.1975,
+  "inner_h": 0.0307,
+  "inner_v": 0.0392,
+  "drift_h": 0.007,
+  "drift_v": 0.068,
+  "transparent": 0.0,
+  "feature": "skull emblem"
+ },
+ "packs/quod/tex92": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1721,
+  "seam_v": 0.2924,
+  "inner_h": 0.0323,
+  "inner_v": 0.0414,
+  "drift_h": 0.0074,
+  "drift_v": 0.0236,
+  "transparent": 0.0,
+  "feature": "skull emblem"
+ },
+ "packs/quod/tex93": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0661,
+  "seam_v": 0.1184,
+  "inner_h": 0.0125,
+  "inner_v": 0.0116,
+  "drift_h": 0.005,
+  "drift_v": 0.0002,
+  "transparent": 0.0
+ },
+ "packs/quod/tex94": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.1482,
+  "seam_v": 0.5069,
+  "inner_h": 0.0158,
+  "inner_v": 0.0204,
+  "drift_h": 0.0064,
+  "drift_v": 0.0368,
+  "transparent": 0.0
+ },
+ "packs/quod/tex97": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1482,
+  "seam_v": 0.5101,
+  "inner_h": 0.0294,
+  "inner_v": 0.0289,
+  "drift_h": 0.0027,
+  "drift_v": 0.0439,
+  "transparent": 0.0,
+  "feature": "memorial"
+ },
+ "packs/quod/tex98": {
+  "size": [
+   27,
+   13
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.6244,
+  "seam_v": 0.3285,
+  "inner_h": 0.2486,
+  "inner_v": 0.1356,
+  "drift_h": 0.0276,
+  "drift_v": 0.0921,
+  "transparent": 0.584
+ },
+ "packs/lvl11/ConcreteFloor-01_32x64": {
+  "size": [
+   64,
+   32
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.04,
+  "seam_v": 0.0363,
+  "inner_h": 0.0201,
+  "inner_v": 0.0194,
+  "drift_h": 0.0088,
+  "drift_v": 0.0067,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloor-01_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0372,
+  "seam_v": 0.0365,
+  "inner_h": 0.023,
+  "inner_v": 0.0233,
+  "drift_h": 0.0001,
+  "drift_v": 0.0045,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloor-02_32x64": {
+  "size": [
+   64,
+   32
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0275,
+  "seam_v": 0.0284,
+  "inner_h": 0.0195,
+  "inner_v": 0.0186,
+  "drift_h": 0.0196,
+  "drift_v": 0.0303,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloor-02_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0333,
+  "seam_v": 0.0235,
+  "inner_h": 0.0192,
+  "inner_v": 0.018,
+  "drift_h": 0.0106,
+  "drift_v": 0.0339,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloor-Hazard-Full-01_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0393,
+  "seam_v": 0.327,
+  "inner_h": 0.0407,
+  "inner_v": 0.0292,
+  "drift_h": 0.0017,
+  "drift_v": 0.0104,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloor-Hazard-Half-01_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0303,
+  "seam_v": 0.2433,
+  "inner_h": 0.0316,
+  "inner_v": 0.0263,
+  "drift_h": 0.099,
+  "drift_v": 0.2342,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-C16x16B_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0437,
+  "seam_v": 0.0475,
+  "inner_h": 0.0225,
+  "inner_v": 0.0229,
+  "drift_h": 0.0224,
+  "drift_v": 0.0178,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-C16x16R_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0595,
+  "seam_v": 0.0634,
+  "inner_h": 0.0228,
+  "inner_v": 0.0232,
+  "drift_h": 0.0396,
+  "drift_v": 0.0351,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-C16x16Y_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0575,
+  "seam_v": 0.0572,
+  "inner_h": 0.0225,
+  "inner_v": 0.023,
+  "drift_h": 0.0232,
+  "drift_v": 0.0277,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-C16x32B_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0437,
+  "seam_v": 0.0636,
+  "inner_h": 0.0217,
+  "inner_v": 0.0224,
+  "drift_h": 0.0227,
+  "drift_v": 0.0398,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-C16x32R_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0595,
+  "seam_v": 0.0973,
+  "inner_h": 0.0221,
+  "inner_v": 0.0231,
+  "drift_h": 0.0401,
+  "drift_v": 0.0744,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-C16x32Y_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0575,
+  "seam_v": 0.0799,
+  "inner_h": 0.0218,
+  "inner_v": 0.0225,
+  "drift_h": 0.0235,
+  "drift_v": 0.0519,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-C32x32B_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0528,
+  "seam_v": 0.0636,
+  "inner_h": 0.0208,
+  "inner_v": 0.0213,
+  "drift_h": 0.0454,
+  "drift_v": 0.0406,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-C32x32R_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0858,
+  "seam_v": 0.0973,
+  "inner_h": 0.0215,
+  "inner_v": 0.022,
+  "drift_h": 0.0806,
+  "drift_v": 0.0759,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-C32x32Y_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0781,
+  "seam_v": 0.0799,
+  "inner_h": 0.0209,
+  "inner_v": 0.0215,
+  "drift_h": 0.0477,
+  "drift_v": 0.0527,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Cb16x16B_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0423,
+  "seam_v": 0.0461,
+  "inner_h": 0.023,
+  "inner_v": 0.0233,
+  "drift_h": 0.0104,
+  "drift_v": 0.0058,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Cb16x16R_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0571,
+  "seam_v": 0.0609,
+  "inner_h": 0.0233,
+  "inner_v": 0.0236,
+  "drift_h": 0.0185,
+  "drift_v": 0.0139,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Cb16x16Y_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0559,
+  "seam_v": 0.0557,
+  "inner_h": 0.023,
+  "inner_v": 0.0233,
+  "drift_h": 0.0109,
+  "drift_v": 0.0155,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Cb16x32B_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0437,
+  "seam_v": 0.0622,
+  "inner_h": 0.0223,
+  "inner_v": 0.0228,
+  "drift_h": 0.0227,
+  "drift_v": 0.0282,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Cb16x32R_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0595,
+  "seam_v": 0.0948,
+  "inner_h": 0.0227,
+  "inner_v": 0.0234,
+  "drift_h": 0.0401,
+  "drift_v": 0.0536,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Cb16x32Y_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0575,
+  "seam_v": 0.0784,
+  "inner_h": 0.0224,
+  "inner_v": 0.0229,
+  "drift_h": 0.0235,
+  "drift_v": 0.0393,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Cb32x32B_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0528,
+  "seam_v": 0.0636,
+  "inner_h": 0.021,
+  "inner_v": 0.0214,
+  "drift_h": 0.0454,
+  "drift_v": 0.0406,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Cb32x32R_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0858,
+  "seam_v": 0.0973,
+  "inner_h": 0.0217,
+  "inner_v": 0.0221,
+  "drift_h": 0.0806,
+  "drift_v": 0.0759,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Cb32x32Y_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0781,
+  "seam_v": 0.0799,
+  "inner_h": 0.0211,
+  "inner_v": 0.0216,
+  "drift_h": 0.0477,
+  "drift_v": 0.0527,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-H2FB_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0492,
+  "seam_v": 0.0561,
+  "inner_h": 0.02,
+  "inner_v": 0.0207,
+  "drift_h": 0.0407,
+  "drift_v": 0.0491,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-H2FR_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0964,
+  "seam_v": 0.1157,
+  "inner_h": 0.0213,
+  "inner_v": 0.0222,
+  "drift_h": 0.0911,
+  "drift_v": 0.1175,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-H2FY_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0781,
+  "seam_v": 0.0773,
+  "inner_h": 0.0205,
+  "inner_v": 0.0213,
+  "drift_h": 0.0476,
+  "drift_v": 0.0706,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-HB_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0239,
+  "seam_v": 0.0698,
+  "inner_h": 0.0168,
+  "inner_v": 0.0181,
+  "drift_h": 0.0029,
+  "drift_v": 0.0738,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-HR_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0242,
+  "seam_v": 0.1548,
+  "inner_h": 0.0174,
+  "inner_v": 0.02,
+  "drift_h": 0.0023,
+  "drift_v": 0.1748,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-HY_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0241,
+  "seam_v": 0.0952,
+  "inner_h": 0.0169,
+  "inner_v": 0.0186,
+  "drift_h": 0.004,
+  "drift_v": 0.1034,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Q2FB_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.042,
+  "seam_v": 0.0591,
+  "inner_h": 0.0211,
+  "inner_v": 0.0221,
+  "drift_h": 0.0204,
+  "drift_v": 0.049,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Q2FR_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.0648,
+  "seam_v": 0.1236,
+  "inner_h": 0.0219,
+  "inner_v": 0.0234,
+  "drift_h": 0.0453,
+  "drift_v": 0.1171,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Q2FY_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0575,
+  "seam_v": 0.082,
+  "inner_h": 0.0214,
+  "inner_v": 0.0223,
+  "drift_h": 0.0235,
+  "drift_v": 0.0704,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Q2HB_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.043,
+  "seam_v": 0.0736,
+  "inner_h": 0.0184,
+  "inner_v": 0.0195,
+  "drift_h": 0.017,
+  "drift_v": 0.0736,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Q2HR_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.0684,
+  "seam_v": 0.1604,
+  "inner_h": 0.0193,
+  "inner_v": 0.0213,
+  "drift_h": 0.0423,
+  "drift_v": 0.1743,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-Q2HY_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0436,
+  "seam_v": 0.0995,
+  "inner_h": 0.0185,
+  "inner_v": 0.0197,
+  "drift_h": 0.0276,
+  "drift_v": 0.1031,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-QB_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0299,
+  "seam_v": 0.0696,
+  "inner_h": 0.0196,
+  "inner_v": 0.021,
+  "drift_h": 0.0014,
+  "drift_v": 0.072,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-QR_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.03,
+  "seam_v": 0.1594,
+  "inner_h": 0.02,
+  "inner_v": 0.0228,
+  "drift_h": 0.0013,
+  "drift_v": 0.1713,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteFloorPainted-QY_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.03,
+  "seam_v": 0.0999,
+  "inner_h": 0.0196,
+  "inner_v": 0.0211,
+  "drift_h": 0.0016,
+  "drift_v": 0.102,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcretePanel-01_32x64": {
+  "size": [
+   64,
+   32
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0,
+  "seam_v": 0.0,
+  "inner_h": 0.0503,
+  "inner_v": 0.0653,
+  "drift_h": 0.0185,
+  "drift_v": 0.0375,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcretePanel-01_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0,
+  "seam_v": 0.0,
+  "inner_h": 0.0497,
+  "inner_v": 0.0482,
+  "drift_h": 0.0241,
+  "drift_v": 0.0429,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcretePanel-Hazard-Full-01_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.0055,
+  "seam_v": 0.2841,
+  "inner_h": 0.0482,
+  "inner_v": 0.036,
+  "drift_h": 0.0106,
+  "drift_v": 0.0387,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcretePanel-Hazard-Half-01_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0043,
+  "seam_v": 0.152,
+  "inner_h": 0.0553,
+  "inner_v": 0.0469,
+  "drift_h": 0.0874,
+  "drift_v": 0.319,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWall-Hazard-Full-01_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0216,
+  "seam_v": 0.3198,
+  "inner_h": 0.0351,
+  "inner_v": 0.0219,
+  "drift_h": 0.0044,
+  "drift_v": 0.0353,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWall-Hazard-Half-01_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0313,
+  "seam_v": 0.2942,
+  "inner_h": 0.0301,
+  "inner_v": 0.0244,
+  "drift_h": 0.0839,
+  "drift_v": 0.3141,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-H2FB_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.134,
+  "seam_v": 0.15,
+  "inner_h": 0.0177,
+  "inner_v": 0.0174,
+  "drift_h": 0.1085,
+  "drift_v": 0.1948,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-H2FG_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1252,
+  "seam_v": 0.1394,
+  "inner_h": 0.0175,
+  "inner_v": 0.0171,
+  "drift_h": 0.0998,
+  "drift_v": 0.1831,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-H2FR_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1759,
+  "seam_v": 0.201,
+  "inner_h": 0.019,
+  "inner_v": 0.0188,
+  "drift_h": 0.1497,
+  "drift_v": 0.2508,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-H2FY_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0801,
+  "seam_v": 0.0842,
+  "inner_h": 0.0166,
+  "inner_v": 0.0161,
+  "drift_h": 0.055,
+  "drift_v": 0.1224,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-HB_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0246,
+  "seam_v": 0.2101,
+  "inner_h": 0.0139,
+  "inner_v": 0.0161,
+  "drift_h": 0.0036,
+  "drift_v": 0.267,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-HG_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0246,
+  "seam_v": 0.1951,
+  "inner_h": 0.0138,
+  "inner_v": 0.0158,
+  "drift_h": 0.0035,
+  "drift_v": 0.2496,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-HR_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0254,
+  "seam_v": 0.2823,
+  "inner_h": 0.0148,
+  "inner_v": 0.018,
+  "drift_h": 0.0047,
+  "drift_v": 0.3501,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-HY_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0253,
+  "seam_v": 0.1175,
+  "inner_h": 0.0136,
+  "inner_v": 0.0145,
+  "drift_h": 0.0035,
+  "drift_v": 0.1601,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-Q2FB_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0876,
+  "seam_v": 0.1633,
+  "inner_h": 0.0185,
+  "inner_v": 0.0188,
+  "drift_h": 0.0506,
+  "drift_v": 0.1943,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-Q2FG_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0832,
+  "seam_v": 0.1518,
+  "inner_h": 0.0184,
+  "inner_v": 0.0186,
+  "drift_h": 0.0463,
+  "drift_v": 0.1827,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-Q2FR_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1085,
+  "seam_v": 0.2181,
+  "inner_h": 0.0193,
+  "inner_v": 0.02,
+  "drift_h": 0.0709,
+  "drift_v": 0.2501,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-Q2FY_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.0606,
+  "seam_v": 0.0923,
+  "inner_h": 0.0178,
+  "inner_v": 0.0175,
+  "drift_h": 0.0239,
+  "drift_v": 0.1221,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-Q2HB_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0815,
+  "seam_v": 0.2161,
+  "inner_h": 0.0162,
+  "inner_v": 0.0174,
+  "drift_h": 0.0599,
+  "drift_v": 0.2664,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-Q2HG_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0771,
+  "seam_v": 0.2008,
+  "inner_h": 0.016,
+  "inner_v": 0.0171,
+  "drift_h": 0.0555,
+  "drift_v": 0.2491,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-Q2HR_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.1031,
+  "seam_v": 0.2894,
+  "inner_h": 0.0173,
+  "inner_v": 0.0192,
+  "drift_h": 0.0815,
+  "drift_v": 0.3493,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-Q2HY_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.0551,
+  "seam_v": 0.1216,
+  "inner_h": 0.0155,
+  "inner_v": 0.0157,
+  "drift_h": 0.0337,
+  "drift_v": 0.1598,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-QB_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.03,
+  "seam_v": 0.2195,
+  "inner_h": 0.0165,
+  "inner_v": 0.0189,
+  "drift_h": 0.0059,
+  "drift_v": 0.2629,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-QG_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.03,
+  "seam_v": 0.2036,
+  "inner_h": 0.0165,
+  "inner_v": 0.0185,
+  "drift_h": 0.0059,
+  "drift_v": 0.2459,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-QR_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0303,
+  "seam_v": 0.2953,
+  "inner_h": 0.017,
+  "inner_v": 0.0205,
+  "drift_h": 0.0064,
+  "drift_v": 0.3446,
+  "transparent": 0.0
+ },
+ "packs/lvl11/ConcreteWallPainted-QY_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0302,
+  "seam_v": 0.1216,
+  "inner_h": 0.0163,
+  "inner_v": 0.0171,
+  "drift_h": 0.0062,
+  "drift_v": 0.1579,
+  "transparent": 0.0
+ },
+ "packs/lvl11/CorrugatedMetalPanel-01V_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.2173,
+  "seam_v": 0.0418,
+  "inner_h": 0.1175,
+  "inner_v": 0.0118,
+  "drift_h": 0.0106,
+  "drift_v": 0.0306,
+  "transparent": 0.0
+ },
+ "packs/lvl11/CorrugatedMetalPanel-03V_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.2381,
+  "seam_v": 0.0782,
+  "inner_h": 0.1651,
+  "inner_v": 0.0228,
+  "drift_h": 0.0105,
+  "drift_v": 0.0555,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_corner_HH_G": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0836,
+  "seam_v": 0.095,
+  "inner_h": 0.0215,
+  "inner_v": 0.0221,
+  "drift_h": 0.0784,
+  "drift_v": 0.0736,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_corner_HH_Gb": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0836,
+  "seam_v": 0.095,
+  "inner_h": 0.0217,
+  "inner_v": 0.0222,
+  "drift_h": 0.0784,
+  "drift_v": 0.0736,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_corner_QH_G": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0584,
+  "seam_v": 0.095,
+  "inner_h": 0.0221,
+  "inner_v": 0.0231,
+  "drift_h": 0.039,
+  "drift_v": 0.0722,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_corner_QH_Gb": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0584,
+  "seam_v": 0.0926,
+  "inner_h": 0.0227,
+  "inner_v": 0.0234,
+  "drift_h": 0.039,
+  "drift_v": 0.052,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_corner_QQ_G": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0584,
+  "seam_v": 0.0622,
+  "inner_h": 0.0228,
+  "inner_v": 0.0233,
+  "drift_h": 0.0385,
+  "drift_v": 0.0339,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_corner_QQ_Gb": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.056,
+  "seam_v": 0.0598,
+  "inner_h": 0.0233,
+  "inner_v": 0.0236,
+  "drift_h": 0.0179,
+  "drift_v": 0.0134,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_cornerL_HH_G": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.099,
+  "seam_v": 0.0948,
+  "inner_h": 0.0156,
+  "inner_v": 0.0163,
+  "drift_h": 0.0771,
+  "drift_v": 0.0729,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_cornerL_QQ_G": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.1093,
+  "seam_v": 0.0894,
+  "inner_h": 0.0205,
+  "inner_v": 0.021,
+  "drift_h": 0.1124,
+  "drift_v": 0.1081,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_painted_2H_G": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "P",
+  "class_v": "P",
+  "seam_h": 0.0836,
+  "seam_v": 0.1,
+  "inner_h": 0.0211,
+  "inner_v": 0.0219,
+  "drift_h": 0.0783,
+  "drift_v": 0.1001,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_painted_2Q_G": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.0584,
+  "seam_v": 0.1066,
+  "inner_h": 0.0218,
+  "inner_v": 0.0231,
+  "drift_h": 0.039,
+  "drift_v": 0.0998,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_painted_H_G": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0245,
+  "seam_v": 0.1327,
+  "inner_h": 0.0174,
+  "inner_v": 0.0197,
+  "drift_h": 0.0024,
+  "drift_v": 0.1491,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_painted_Q2H_G": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.0623,
+  "seam_v": 0.1377,
+  "inner_h": 0.0192,
+  "inner_v": 0.0209,
+  "drift_h": 0.0359,
+  "drift_v": 0.1487,
+  "transparent": 0.0
+ },
+ "packs/lvl11/flr_painted_Q_G": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0302,
+  "seam_v": 0.136,
+  "inner_h": 0.02,
+  "inner_v": 0.0224,
+  "drift_h": 0.0013,
+  "drift_v": 0.146,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-10_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0131,
+  "seam_v": 0.0078,
+  "inner_h": 0.063,
+  "inner_v": 0.0878,
+  "drift_h": 0.0045,
+  "drift_v": 0.0013,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-10_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0219,
+  "seam_v": 0.0212,
+  "inner_h": 0.0686,
+  "inner_v": 0.0921,
+  "drift_h": 0.0126,
+  "drift_v": 0.0075,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-10_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0291,
+  "seam_v": 0.0328,
+  "inner_h": 0.086,
+  "inner_v": 0.1154,
+  "drift_h": 0.0178,
+  "drift_v": 0.0205,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-10_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0128,
+  "seam_v": 0.0115,
+  "inner_h": 0.0586,
+  "inner_v": 0.0783,
+  "drift_h": 0.0096,
+  "drift_v": 0.0039,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-11_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0503,
+  "inner_v": 0.07,
+  "drift_h": 0.0048,
+  "drift_v": 0.0018,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-11_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0584,
+  "inner_v": 0.0776,
+  "drift_h": 0.0139,
+  "drift_v": 0.0105,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-11_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0103,
+  "seam_v": 0.07,
+  "inner_h": 0.0785,
+  "inner_v": 0.102,
+  "drift_h": 0.0195,
+  "drift_v": 0.0261,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-11_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.0469,
+  "inner_v": 0.0614,
+  "drift_h": 0.0114,
+  "drift_v": 0.0031,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-12_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0569,
+  "inner_v": 0.0818,
+  "drift_h": 0.006,
+  "drift_v": 0.0018,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-12_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.063,
+  "inner_v": 0.0871,
+  "drift_h": 0.0154,
+  "drift_v": 0.0134,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-12_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.071,
+  "inner_h": 0.0856,
+  "inner_v": 0.1149,
+  "drift_h": 0.0203,
+  "drift_v": 0.0304,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-12_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0466,
+  "inner_v": 0.0669,
+  "drift_h": 0.0132,
+  "drift_v": 0.003,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-13_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0398,
+  "inner_v": 0.0676,
+  "drift_h": 0.0063,
+  "drift_v": 0.0016,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-13_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0521,
+  "inner_v": 0.0779,
+  "drift_h": 0.0157,
+  "drift_v": 0.013,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-13_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0384,
+  "inner_v": 0.0605,
+  "drift_h": 0.0133,
+  "drift_v": 0.0036,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-14_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0131,
+  "seam_v": 0.0078,
+  "inner_h": 0.0567,
+  "inner_v": 0.0842,
+  "drift_h": 0.0045,
+  "drift_v": 0.0014,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-14_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0219,
+  "seam_v": 0.0212,
+  "inner_h": 0.0642,
+  "inner_v": 0.0897,
+  "drift_h": 0.0141,
+  "drift_v": 0.0069,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-14_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0128,
+  "seam_v": 0.0115,
+  "inner_h": 0.0546,
+  "inner_v": 0.0761,
+  "drift_h": 0.0093,
+  "drift_v": 0.004,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-15_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0439,
+  "inner_v": 0.0663,
+  "drift_h": 0.0052,
+  "drift_v": 0.0019,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-15_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0539,
+  "inner_v": 0.0751,
+  "drift_h": 0.0151,
+  "drift_v": 0.0099,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-15_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.0426,
+  "inner_v": 0.059,
+  "drift_h": 0.0114,
+  "drift_v": 0.0032,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-16_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0506,
+  "inner_v": 0.0781,
+  "drift_h": 0.0064,
+  "drift_v": 0.0019,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-16_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0586,
+  "inner_v": 0.0846,
+  "drift_h": 0.0166,
+  "drift_v": 0.0128,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-16_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0423,
+  "inner_v": 0.0645,
+  "drift_h": 0.0132,
+  "drift_v": 0.0031,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-2_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0131,
+  "seam_v": 0.0078,
+  "inner_h": 0.0559,
+  "inner_v": 0.0835,
+  "drift_h": 0.0045,
+  "drift_v": 0.0015,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-2_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0219,
+  "seam_v": 0.0212,
+  "inner_h": 0.0633,
+  "inner_v": 0.0889,
+  "drift_h": 0.0141,
+  "drift_v": 0.0069,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-2_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0291,
+  "seam_v": 0.0328,
+  "inner_h": 0.0802,
+  "inner_v": 0.1123,
+  "drift_h": 0.0197,
+  "drift_v": 0.0198,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-2_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0128,
+  "seam_v": 0.0115,
+  "inner_h": 0.0532,
+  "inner_v": 0.0746,
+  "drift_h": 0.0093,
+  "drift_v": 0.004,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-3_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0432,
+  "inner_v": 0.0655,
+  "drift_h": 0.0052,
+  "drift_v": 0.0019,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-3_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0531,
+  "inner_v": 0.0743,
+  "drift_h": 0.015,
+  "drift_v": 0.01,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-3_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0103,
+  "seam_v": 0.07,
+  "inner_h": 0.0727,
+  "inner_v": 0.0988,
+  "drift_h": 0.0211,
+  "drift_v": 0.0254,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-3_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.0412,
+  "inner_v": 0.0576,
+  "drift_h": 0.0114,
+  "drift_v": 0.0032,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-4_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0498,
+  "inner_v": 0.0773,
+  "drift_h": 0.0064,
+  "drift_v": 0.0019,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-4_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0577,
+  "inner_v": 0.0838,
+  "drift_h": 0.0165,
+  "drift_v": 0.0128,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-4_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.071,
+  "inner_h": 0.0797,
+  "inner_v": 0.1117,
+  "drift_h": 0.022,
+  "drift_v": 0.0297,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-4_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0409,
+  "inner_v": 0.0631,
+  "drift_h": 0.0133,
+  "drift_v": 0.0032,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-5_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0434,
+  "inner_v": 0.0711,
+  "drift_h": 0.0061,
+  "drift_v": 0.0015,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-5_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0544,
+  "inner_v": 0.0803,
+  "drift_h": 0.0159,
+  "drift_v": 0.0136,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-5_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0709,
+  "seam_v": 0.0737,
+  "inner_h": 0.0745,
+  "inner_v": 0.1062,
+  "drift_h": 0.022,
+  "drift_v": 0.0307,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-5_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0403,
+  "inner_v": 0.0625,
+  "drift_h": 0.0136,
+  "drift_v": 0.0035,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-6_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0131,
+  "seam_v": 0.0078,
+  "inner_h": 0.0603,
+  "inner_v": 0.0877,
+  "drift_h": 0.0043,
+  "drift_v": 0.0013,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-6_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0219,
+  "seam_v": 0.0212,
+  "inner_h": 0.0664,
+  "inner_v": 0.092,
+  "drift_h": 0.0143,
+  "drift_v": 0.0075,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-6_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0291,
+  "seam_v": 0.0328,
+  "inner_h": 0.0835,
+  "inner_v": 0.1154,
+  "drift_h": 0.02,
+  "drift_v": 0.0205,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-6_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0128,
+  "seam_v": 0.0115,
+  "inner_h": 0.0565,
+  "inner_v": 0.0781,
+  "drift_h": 0.0096,
+  "drift_v": 0.0039,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-7_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0475,
+  "inner_v": 0.0698,
+  "drift_h": 0.005,
+  "drift_v": 0.0018,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-7_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0562,
+  "inner_v": 0.0774,
+  "drift_h": 0.0153,
+  "drift_v": 0.0105,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-7_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0103,
+  "seam_v": 0.07,
+  "inner_h": 0.076,
+  "inner_v": 0.1018,
+  "drift_h": 0.0214,
+  "drift_v": 0.0261,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-7_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.0446,
+  "inner_v": 0.061,
+  "drift_h": 0.0117,
+  "drift_v": 0.0031,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-8_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0542,
+  "inner_v": 0.0816,
+  "drift_h": 0.0063,
+  "drift_v": 0.0018,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-8_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0608,
+  "inner_v": 0.0869,
+  "drift_h": 0.0167,
+  "drift_v": 0.0134,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-8_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.071,
+  "inner_h": 0.0831,
+  "inner_v": 0.1148,
+  "drift_h": 0.0223,
+  "drift_v": 0.0304,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-8_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0443,
+  "inner_v": 0.0665,
+  "drift_h": 0.0136,
+  "drift_v": 0.003,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-9_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0462,
+  "inner_v": 0.0713,
+  "drift_h": 0.0059,
+  "drift_v": 0.0015,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-9_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0566,
+  "inner_v": 0.0805,
+  "drift_h": 0.0145,
+  "drift_v": 0.0136,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-9_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0709,
+  "seam_v": 0.0737,
+  "inner_h": 0.0771,
+  "inner_v": 0.1063,
+  "drift_h": 0.0201,
+  "drift_v": 0.0307,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001-9_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0427,
+  "inner_v": 0.0629,
+  "drift_h": 0.0132,
+  "drift_v": 0.0035,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0391,
+  "inner_v": 0.0669,
+  "drift_h": 0.0063,
+  "drift_v": 0.0016,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0513,
+  "inner_v": 0.0772,
+  "drift_h": 0.0156,
+  "drift_v": 0.013,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0709,
+  "seam_v": 0.0737,
+  "inner_h": 0.0712,
+  "inner_v": 0.1031,
+  "drift_h": 0.0217,
+  "drift_v": 0.0299,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-001_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.037,
+  "inner_v": 0.0591,
+  "drift_h": 0.0133,
+  "drift_v": 0.0036,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-10_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0608,
+  "inner_v": 0.0485,
+  "drift_h": 0.0053,
+  "drift_v": 0.0038,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-10_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.055,
+  "inner_v": 0.0541,
+  "drift_h": 0.0197,
+  "drift_v": 0.0169,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-10_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.0405,
+  "inner_v": 0.0367,
+  "drift_h": 0.0112,
+  "drift_v": 0.0068,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-11_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0675,
+  "inner_v": 0.0598,
+  "drift_h": 0.0065,
+  "drift_v": 0.0032,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-11_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0568,
+  "inner_v": 0.0512,
+  "drift_h": 0.0191,
+  "drift_v": 0.0138,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-11_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0401,
+  "inner_v": 0.042,
+  "drift_h": 0.013,
+  "drift_v": 0.0066,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-12_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0527,
+  "inner_v": 0.0406,
+  "drift_h": 0.0059,
+  "drift_v": 0.0036,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-12_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0614,
+  "inner_v": 0.0605,
+  "drift_h": 0.0206,
+  "drift_v": 0.0162,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-12_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0392,
+  "inner_v": 0.0414,
+  "drift_h": 0.0129,
+  "drift_v": 0.0072,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-13_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0593,
+  "inner_v": 0.0519,
+  "drift_h": 0.0071,
+  "drift_v": 0.0031,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-13_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0587,
+  "inner_v": 0.0534,
+  "drift_h": 0.0181,
+  "drift_v": 0.0146,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-13_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.0434,
+  "inner_v": 0.0399,
+  "drift_h": 0.0111,
+  "drift_v": 0.0076,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-14_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0547,
+  "inner_v": 0.0424,
+  "drift_h": 0.0055,
+  "drift_v": 0.0045,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-14_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0633,
+  "inner_v": 0.0626,
+  "drift_h": 0.0195,
+  "drift_v": 0.017,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-14_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0431,
+  "inner_v": 0.0451,
+  "drift_h": 0.0129,
+  "drift_v": 0.0074,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-15_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0613,
+  "inner_v": 0.0536,
+  "drift_h": 0.0067,
+  "drift_v": 0.004,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-15_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0569,
+  "inner_v": 0.0562,
+  "drift_h": 0.0186,
+  "drift_v": 0.0177,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-1_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0103,
+  "seam_v": 0.07,
+  "inner_h": 0.0822,
+  "inner_v": 0.0691,
+  "drift_h": 0.0268,
+  "drift_v": 0.0225,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-1_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.0391,
+  "inner_v": 0.0353,
+  "drift_h": 0.0112,
+  "drift_v": 0.0068,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-2_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0519,
+  "inner_v": 0.0399,
+  "drift_h": 0.0059,
+  "drift_v": 0.0036,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-2_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0559,
+  "inner_v": 0.0505,
+  "drift_h": 0.019,
+  "drift_v": 0.0138,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-2_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.071,
+  "inner_h": 0.0893,
+  "inner_v": 0.0821,
+  "drift_h": 0.0275,
+  "drift_v": 0.0268,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-2_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0388,
+  "inner_v": 0.0405,
+  "drift_h": 0.013,
+  "drift_v": 0.0065,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-3_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0586,
+  "inner_v": 0.0511,
+  "drift_h": 0.0072,
+  "drift_v": 0.003,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-3_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0606,
+  "inner_v": 0.0597,
+  "drift_h": 0.0205,
+  "drift_v": 0.0162,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-3_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0709,
+  "seam_v": 0.0737,
+  "inner_h": 0.084,
+  "inner_v": 0.0766,
+  "drift_h": 0.0277,
+  "drift_v": 0.0278,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-3_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0382,
+  "inner_v": 0.0402,
+  "drift_h": 0.0134,
+  "drift_v": 0.0065,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-4_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0522,
+  "inner_v": 0.0455,
+  "drift_h": 0.0069,
+  "drift_v": 0.0041,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-4_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0573,
+  "inner_v": 0.0564,
+  "drift_h": 0.0199,
+  "drift_v": 0.0175,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-4_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0103,
+  "seam_v": 0.07,
+  "inner_h": 0.0855,
+  "inner_v": 0.0722,
+  "drift_h": 0.0271,
+  "drift_v": 0.0232,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-4_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.0425,
+  "inner_v": 0.0387,
+  "drift_h": 0.0115,
+  "drift_v": 0.0069,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-5_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0567,
+  "inner_v": 0.0499,
+  "drift_h": 0.0064,
+  "drift_v": 0.0041,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-5_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0591,
+  "inner_v": 0.0536,
+  "drift_h": 0.0193,
+  "drift_v": 0.0144,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-5_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.071,
+  "inner_h": 0.0926,
+  "inner_v": 0.0852,
+  "drift_h": 0.0279,
+  "drift_v": 0.0275,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-5_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0421,
+  "inner_v": 0.044,
+  "drift_h": 0.0133,
+  "drift_v": 0.0067,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-6_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0486,
+  "inner_v": 0.042,
+  "drift_h": 0.007,
+  "drift_v": 0.004,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-6_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0637,
+  "inner_v": 0.0628,
+  "drift_h": 0.0207,
+  "drift_v": 0.0168,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-6_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0709,
+  "seam_v": 0.0737,
+  "inner_h": 0.0876,
+  "inner_v": 0.0802,
+  "drift_h": 0.0234,
+  "drift_v": 0.0278,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-6_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0418,
+  "inner_v": 0.0439,
+  "drift_h": 0.0127,
+  "drift_v": 0.0065,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-7_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0506,
+  "inner_v": 0.0437,
+  "drift_h": 0.0066,
+  "drift_v": 0.0049,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-7_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0606,
+  "inner_v": 0.0598,
+  "drift_h": 0.0169,
+  "drift_v": 0.0175,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-7_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0103,
+  "seam_v": 0.07,
+  "inner_h": 0.0891,
+  "inner_v": 0.0759,
+  "drift_h": 0.0228,
+  "drift_v": 0.0232,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-7_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.046,
+  "inner_v": 0.0424,
+  "drift_h": 0.0108,
+  "drift_v": 0.0069,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-8_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0563,
+  "inner_v": 0.0441,
+  "drift_h": 0.0058,
+  "drift_v": 0.0038,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-8_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0624,
+  "inner_v": 0.0569,
+  "drift_h": 0.0163,
+  "drift_v": 0.0144,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-8_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.071,
+  "inner_h": 0.0962,
+  "inner_v": 0.0889,
+  "drift_h": 0.0236,
+  "drift_v": 0.0275,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-8_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0457,
+  "inner_v": 0.0476,
+  "drift_h": 0.0126,
+  "drift_v": 0.0067,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-9_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0629,
+  "inner_v": 0.0554,
+  "drift_h": 0.007,
+  "drift_v": 0.0032,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-9_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.067,
+  "inner_v": 0.0662,
+  "drift_h": 0.0177,
+  "drift_v": 0.0168,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002-9_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0363,
+  "inner_v": 0.0382,
+  "drift_h": 0.013,
+  "drift_v": 0.0064,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0478,
+  "inner_v": 0.0413,
+  "drift_h": 0.007,
+  "drift_v": 0.004,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0541,
+  "inner_v": 0.0533,
+  "drift_h": 0.0196,
+  "drift_v": 0.0169,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0709,
+  "seam_v": 0.0737,
+  "inner_h": 0.0807,
+  "inner_v": 0.0735,
+  "drift_h": 0.0274,
+  "drift_v": 0.0271,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Grid-002_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0349,
+  "inner_v": 0.0368,
+  "drift_h": 0.0131,
+  "drift_v": 0.0064,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-002_Section-001-2": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0219,
+  "seam_v": 0.0212,
+  "inner_h": 0.0513,
+  "inner_v": 0.0528,
+  "drift_h": 0.0167,
+  "drift_v": 0.0171,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-002_Section-001-3": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0408,
+  "inner_v": 0.0375,
+  "drift_h": 0.0177,
+  "drift_v": 0.0206,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-002_Section-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0454,
+  "inner_v": 0.0471,
+  "drift_h": 0.0191,
+  "drift_v": 0.0234,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-002_Section-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0481,
+  "inner_v": 0.05,
+  "drift_h": 0.0181,
+  "drift_v": 0.0242,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-002_Section-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0463,
+  "inner_v": 0.0478,
+  "drift_h": 0.0192,
+  "drift_v": 0.0234,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-002_Section-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0518,
+  "inner_v": 0.0535,
+  "drift_h": 0.0163,
+  "drift_v": 0.024,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-002_Section-005": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0204,
+  "inner_h": 0.0485,
+  "inner_v": 0.0501,
+  "drift_h": 0.0193,
+  "drift_v": 0.024,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-003_Section-001-2": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0291,
+  "seam_v": 0.0328,
+  "inner_h": 0.0678,
+  "inner_v": 0.0704,
+  "drift_h": 0.0236,
+  "drift_v": 0.0264,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-003_Section-001-3": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0103,
+  "seam_v": 0.07,
+  "inner_h": 0.0604,
+  "inner_v": 0.057,
+  "drift_h": 0.025,
+  "drift_v": 0.0322,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-003_Section-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.071,
+  "inner_h": 0.0675,
+  "inner_v": 0.07,
+  "drift_h": 0.0259,
+  "drift_v": 0.0365,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-003_Section-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.071,
+  "inner_h": 0.0681,
+  "inner_v": 0.0709,
+  "drift_h": 0.0243,
+  "drift_v": 0.0371,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-003_Section-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.071,
+  "inner_h": 0.0678,
+  "inner_v": 0.0702,
+  "drift_h": 0.026,
+  "drift_v": 0.0364,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-003_Section-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.071,
+  "inner_h": 0.0743,
+  "inner_v": 0.0767,
+  "drift_h": 0.0219,
+  "drift_v": 0.0372,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-003_Section-005": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.071,
+  "inner_h": 0.0708,
+  "inner_v": 0.073,
+  "drift_h": 0.0262,
+  "drift_v": 0.0372,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-004_Section-001-2": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0128,
+  "seam_v": 0.0115,
+  "inner_h": 0.0401,
+  "inner_v": 0.0394,
+  "drift_h": 0.0105,
+  "drift_v": 0.0089,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-004_Section-001-3": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.0276,
+  "inner_v": 0.0209,
+  "drift_h": 0.0126,
+  "drift_v": 0.0102,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-004_Section-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0273,
+  "inner_v": 0.0264,
+  "drift_h": 0.0144,
+  "drift_v": 0.0102,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-004_Section-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0316,
+  "inner_v": 0.031,
+  "drift_h": 0.0143,
+  "drift_v": 0.011,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-004_Section-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0287,
+  "inner_v": 0.0278,
+  "drift_h": 0.0144,
+  "drift_v": 0.0102,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-004_Section-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0342,
+  "inner_v": 0.0335,
+  "drift_h": 0.014,
+  "drift_v": 0.0103,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel-004_Section-005": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0123,
+  "inner_h": 0.0306,
+  "inner_v": 0.0298,
+  "drift_h": 0.0147,
+  "drift_v": 0.0103,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Base-001-Trims": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.012,
+  "inner_h": 0.075,
+  "inner_v": 0.0317,
+  "drift_h": 0.0148,
+  "drift_v": 0.0047,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0207,
+  "inner_v": 0.0213,
+  "drift_h": 0.0071,
+  "drift_v": 0.0052,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Base-002-Trims": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0218,
+  "seam_v": 0.0288,
+  "inner_h": 0.0719,
+  "inner_v": 0.0466,
+  "drift_h": 0.0137,
+  "drift_v": 0.0237,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.039,
+  "inner_v": 0.0404,
+  "drift_h": 0.0182,
+  "drift_v": 0.0237,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Base-003-Trims": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0631,
+  "seam_v": 0.0749,
+  "inner_h": 0.1034,
+  "inner_v": 0.0707,
+  "drift_h": 0.0178,
+  "drift_v": 0.037,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0709,
+  "seam_v": 0.0737,
+  "inner_h": 0.059,
+  "inner_v": 0.0614,
+  "drift_h": 0.0257,
+  "drift_v": 0.0368,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Base-004-Trims": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0126,
+  "seam_v": 0.0166,
+  "inner_h": 0.0439,
+  "inner_v": 0.0257,
+  "drift_h": 0.018,
+  "drift_v": 0.0098,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0234,
+  "inner_v": 0.0224,
+  "drift_h": 0.0145,
+  "drift_v": 0.0097,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Section-001-2": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0131,
+  "seam_v": 0.0078,
+  "inner_h": 0.0379,
+  "inner_v": 0.038,
+  "drift_h": 0.0054,
+  "drift_v": 0.005,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Section-001-3": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0248,
+  "inner_v": 0.0199,
+  "drift_h": 0.006,
+  "drift_v": 0.0049,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Section-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0314,
+  "inner_v": 0.0317,
+  "drift_h": 0.0073,
+  "drift_v": 0.0049,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Section-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0342,
+  "inner_v": 0.0342,
+  "drift_h": 0.0068,
+  "drift_v": 0.0058,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Section-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0322,
+  "inner_v": 0.0324,
+  "drift_h": 0.0072,
+  "drift_v": 0.0049,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Section-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0403,
+  "inner_v": 0.0403,
+  "drift_h": 0.0066,
+  "drift_v": 0.005,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Metal-Panel_Section-005": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0358,
+  "inner_v": 0.0359,
+  "drift_h": 0.0071,
+  "drift_v": 0.005,
+  "transparent": 0.0
+ },
+ "packs/lvl11/MetalGrateFloor-01_32x64": {
+  "size": [
+   64,
+   32
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0882,
+  "seam_v": 0.0905,
+  "inner_h": 0.1097,
+  "inner_v": 0.1283,
+  "drift_h": 0.013,
+  "drift_v": 0.0004,
+  "transparent": 0.0
+ },
+ "packs/lvl11/MetalGrateFloor-01_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0846,
+  "seam_v": 0.0865,
+  "inner_h": 0.1107,
+  "inner_v": 0.1257,
+  "drift_h": 0.0133,
+  "drift_v": 0.0022,
+  "transparent": 0.0
+ },
+ "packs/lvl11/MetalMesh-01_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.1137,
+  "seam_v": 0.4271,
+  "inner_h": 0.2448,
+  "inner_v": 0.3538,
+  "drift_h": 0.0029,
+  "drift_v": 0.0005,
+  "transparent": 0.549
+ },
+ "packs/lvl11/MetalPanel-01_32x64": {
+  "size": [
+   64,
+   32
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0,
+  "seam_v": 0.0,
+  "inner_h": 0.0436,
+  "inner_v": 0.0613,
+  "drift_h": 0.0044,
+  "drift_v": 0.0392,
+  "transparent": 0.0
+ },
+ "packs/lvl11/MetalPanel-01_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0,
+  "seam_v": 0.0,
+  "inner_h": 0.0471,
+  "inner_v": 0.0518,
+  "drift_h": 0.0029,
+  "drift_v": 0.0392,
+  "transparent": 0.0
+ },
+ "packs/lvl11/MetalPanel-01V_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": false,
+  "class_h": "X",
+  "class_v": "X",
+  "seam_h": 0.0213,
+  "seam_v": 0.0512,
+  "inner_h": 0.0885,
+  "inner_v": 0.0949,
+  "drift_h": 0.0474,
+  "drift_v": 0.1644,
+  "transparent": 0.0,
+  "feature": "numbered door"
+ },
+ "packs/lvl11/Panel-001-2_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.3802,
+  "seam_v": 0.0197,
+  "inner_h": 0.1467,
+  "inner_v": 0.0225,
+  "drift_h": 0.0052,
+  "drift_v": 0.0042,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-2_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.2769,
+  "seam_v": 0.0384,
+  "inner_h": 0.1176,
+  "inner_v": 0.0376,
+  "drift_h": 0.0163,
+  "drift_v": 0.0206,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-2_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.3805,
+  "seam_v": 0.0741,
+  "inner_h": 0.1642,
+  "inner_v": 0.0649,
+  "drift_h": 0.0258,
+  "drift_v": 0.0411,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-2_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.1699,
+  "seam_v": 0.0235,
+  "inner_h": 0.0718,
+  "inner_v": 0.0223,
+  "drift_h": 0.0123,
+  "drift_v": 0.0097,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-3_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.3802,
+  "seam_v": 0.0197,
+  "inner_h": 0.1452,
+  "inner_v": 0.0276,
+  "drift_h": 0.0049,
+  "drift_v": 0.0042,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-3_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0422,
+  "seam_v": 0.0363,
+  "inner_h": 0.1146,
+  "inner_v": 0.0351,
+  "drift_h": 0.0122,
+  "drift_v": 0.0181,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-3_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.3433,
+  "seam_v": 0.0561,
+  "inner_h": 0.1668,
+  "inner_v": 0.0716,
+  "drift_h": 0.0252,
+  "drift_v": 0.0413,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-3_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0751,
+  "seam_v": 0.0105,
+  "inner_h": 0.0735,
+  "inner_v": 0.0256,
+  "drift_h": 0.0167,
+  "drift_v": 0.0101,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-4_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.1357,
+  "seam_v": 0.0195,
+  "inner_h": 0.1204,
+  "inner_v": 0.0432,
+  "drift_h": 0.0105,
+  "drift_v": 0.0204,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-4_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0561,
+  "seam_v": 0.0705,
+  "inner_h": 0.1601,
+  "inner_v": 0.0604,
+  "drift_h": 0.0138,
+  "drift_v": 0.0364,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-4_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0243,
+  "seam_v": 0.0221,
+  "inner_h": 0.0722,
+  "inner_v": 0.0211,
+  "drift_h": 0.028,
+  "drift_v": 0.0101,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-5_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.2769,
+  "seam_v": 0.0384,
+  "inner_h": 0.1169,
+  "inner_v": 0.0416,
+  "drift_h": 0.0131,
+  "drift_v": 0.0206,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-5_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.3805,
+  "seam_v": 0.0741,
+  "inner_h": 0.1628,
+  "inner_v": 0.0692,
+  "drift_h": 0.0217,
+  "drift_v": 0.0411,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-5_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0243,
+  "seam_v": 0.0221,
+  "inner_h": 0.0731,
+  "inner_v": 0.025,
+  "drift_h": 0.0273,
+  "drift_v": 0.0101,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-6_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0422,
+  "seam_v": 0.0363,
+  "inner_h": 0.1139,
+  "inner_v": 0.0391,
+  "drift_h": 0.0153,
+  "drift_v": 0.0181,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-6_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0561,
+  "seam_v": 0.0705,
+  "inner_h": 0.1587,
+  "inner_v": 0.0648,
+  "drift_h": 0.0179,
+  "drift_v": 0.0364,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-6_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.1699,
+  "seam_v": 0.0235,
+  "inner_h": 0.0726,
+  "inner_v": 0.0262,
+  "drift_h": 0.0116,
+  "drift_v": 0.0097,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-7_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.1357,
+  "seam_v": 0.0195,
+  "inner_h": 0.1197,
+  "inner_v": 0.0472,
+  "drift_h": 0.0074,
+  "drift_v": 0.0204,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-7_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.3433,
+  "seam_v": 0.0561,
+  "inner_h": 0.1653,
+  "inner_v": 0.0759,
+  "drift_h": 0.0211,
+  "drift_v": 0.0413,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001-7_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0751,
+  "seam_v": 0.0105,
+  "inner_h": 0.0743,
+  "inner_v": 0.0296,
+  "drift_h": 0.016,
+  "drift_v": 0.0101,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.3802,
+  "seam_v": 0.0197,
+  "inner_h": 0.1484,
+  "inner_v": 0.0176,
+  "drift_h": 0.0054,
+  "drift_v": 0.004,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.2769,
+  "seam_v": 0.0384,
+  "inner_h": 0.1179,
+  "inner_v": 0.0339,
+  "drift_h": 0.0152,
+  "drift_v": 0.0195,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.3805,
+  "seam_v": 0.0741,
+  "inner_h": 0.1658,
+  "inner_v": 0.0612,
+  "drift_h": 0.0249,
+  "drift_v": 0.0394,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Panel-001_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": false,
+  "tiles_v": true,
+  "class_h": "X",
+  "class_v": "T",
+  "seam_h": 0.1699,
+  "seam_v": 0.0235,
+  "inner_h": 0.0705,
+  "inner_v": 0.0186,
+  "drift_h": 0.0121,
+  "drift_v": 0.0094,
+  "transparent": 0.0
+ },
+ "packs/lvl11/PipesnCables-01V_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.2041,
+  "seam_v": 0.1739,
+  "inner_h": 0.1291,
+  "inner_v": 0.0685,
+  "drift_h": 0.0171,
+  "drift_v": 0.0205,
+  "transparent": 0.0
+ },
+ "packs/lvl11/PipesnCableswBPipe-01V_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.2041,
+  "seam_v": 0.1451,
+  "inner_h": 0.1343,
+  "inner_v": 0.0676,
+  "drift_h": 0.0675,
+  "drift_v": 0.0227,
+  "transparent": 0.0
+ },
+ "packs/lvl11/PipesnCableswGlow-01V_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.2041,
+  "seam_v": 0.2511,
+  "inner_h": 0.2045,
+  "inner_v": 0.0955,
+  "drift_h": 0.0607,
+  "drift_v": 0.0268,
+  "transparent": 0.0
+ },
+ "packs/lvl11/PipesnCableswRed-01V_64": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "P",
+  "seam_h": 0.2041,
+  "seam_v": 0.1727,
+  "inner_h": 0.1272,
+  "inner_v": 0.0677,
+  "drift_h": 0.0171,
+  "drift_v": 0.0201,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-001_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0197,
+  "inner_v": 0.0538,
+  "drift_h": 0.0071,
+  "drift_v": 0.0203,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-001_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0361,
+  "inner_v": 0.0703,
+  "drift_h": 0.0183,
+  "drift_v": 0.0405,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-001_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0709,
+  "seam_v": 0.0737,
+  "inner_h": 0.054,
+  "inner_v": 0.0901,
+  "drift_h": 0.0257,
+  "drift_v": 0.0462,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-001_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0222,
+  "inner_v": 0.0551,
+  "drift_h": 0.0142,
+  "drift_v": 0.0343,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-002_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0131,
+  "seam_v": 0.0078,
+  "inner_h": 0.0369,
+  "inner_v": 0.0706,
+  "drift_h": 0.0053,
+  "drift_v": 0.0201,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-002_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0219,
+  "seam_v": 0.0212,
+  "inner_h": 0.0484,
+  "inner_v": 0.0827,
+  "drift_h": 0.0167,
+  "drift_v": 0.034,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-002_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0291,
+  "seam_v": 0.0328,
+  "inner_h": 0.0627,
+  "inner_v": 0.099,
+  "drift_h": 0.0237,
+  "drift_v": 0.0359,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-002_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0128,
+  "seam_v": 0.0115,
+  "inner_h": 0.0389,
+  "inner_v": 0.0721,
+  "drift_h": 0.0102,
+  "drift_v": 0.0335,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-003_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0238,
+  "inner_v": 0.0525,
+  "drift_h": 0.006,
+  "drift_v": 0.02,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-004_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0305,
+  "inner_v": 0.0643,
+  "drift_h": 0.0072,
+  "drift_v": 0.02,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-005_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0312,
+  "inner_v": 0.065,
+  "drift_h": 0.0072,
+  "drift_v": 0.02,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-006_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0332,
+  "inner_v": 0.0668,
+  "drift_h": 0.0068,
+  "drift_v": 0.0209,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-007_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0393,
+  "inner_v": 0.0729,
+  "drift_h": 0.0065,
+  "drift_v": 0.0201,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Thin-Vent-008_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0138,
+  "seam_v": 0.0108,
+  "inner_h": 0.0348,
+  "inner_v": 0.0685,
+  "drift_h": 0.007,
+  "drift_v": 0.0201,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-001_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0228,
+  "inner_v": 0.0717,
+  "drift_h": 0.007,
+  "drift_v": 0.0037,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-001_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0367,
+  "inner_v": 0.0817,
+  "drift_h": 0.0187,
+  "drift_v": 0.0094,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-001_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0709,
+  "seam_v": 0.0737,
+  "inner_h": 0.0509,
+  "inner_v": 0.105,
+  "drift_h": 0.0262,
+  "drift_v": 0.0143,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-001_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0256,
+  "inner_v": 0.0693,
+  "drift_h": 0.0136,
+  "drift_v": 0.0019,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-002_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0269,
+  "inner_v": 0.0704,
+  "drift_h": 0.0059,
+  "drift_v": 0.004,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-002_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0385,
+  "inner_v": 0.0789,
+  "drift_h": 0.0181,
+  "drift_v": 0.0063,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-002_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0103,
+  "seam_v": 0.07,
+  "inner_h": 0.0524,
+  "inner_v": 0.1006,
+  "drift_h": 0.0256,
+  "drift_v": 0.0098,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-002_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.0298,
+  "inner_v": 0.0677,
+  "drift_h": 0.0117,
+  "drift_v": 0.0023,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-003_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0272,
+  "inner_v": 0.076,
+  "drift_h": 0.0068,
+  "drift_v": 0.0035,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-003_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0398,
+  "inner_v": 0.0848,
+  "drift_h": 0.019,
+  "drift_v": 0.01,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-003_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0709,
+  "seam_v": 0.0737,
+  "inner_h": 0.0542,
+  "inner_v": 0.108,
+  "drift_h": 0.0265,
+  "drift_v": 0.0151,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-003_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0289,
+  "inner_v": 0.0727,
+  "drift_h": 0.0139,
+  "drift_v": 0.002,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-004_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.004,
+  "seam_v": 0.0214,
+  "inner_h": 0.0313,
+  "inner_v": 0.0746,
+  "drift_h": 0.0057,
+  "drift_v": 0.0039,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-004_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0079,
+  "seam_v": 0.0438,
+  "inner_h": 0.0417,
+  "inner_v": 0.082,
+  "drift_h": 0.0184,
+  "drift_v": 0.0069,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-004_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0103,
+  "seam_v": 0.07,
+  "inner_h": 0.0557,
+  "inner_v": 0.1037,
+  "drift_h": 0.0259,
+  "drift_v": 0.0105,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-004_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0039,
+  "seam_v": 0.0262,
+  "inner_h": 0.0331,
+  "inner_v": 0.0712,
+  "drift_h": 0.012,
+  "drift_v": 0.0025,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-005_Base-001": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0301,
+  "seam_v": 0.0227,
+  "inner_h": 0.0317,
+  "inner_v": 0.0804,
+  "drift_h": 0.0063,
+  "drift_v": 0.0035,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-005_Base-002": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0495,
+  "seam_v": 0.0462,
+  "inner_h": 0.0431,
+  "inner_v": 0.0882,
+  "drift_h": 0.016,
+  "drift_v": 0.01,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-005_Base-003": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0709,
+  "seam_v": 0.0737,
+  "inner_h": 0.0578,
+  "inner_v": 0.1117,
+  "drift_h": 0.0222,
+  "drift_v": 0.0151,
+  "transparent": 0.0
+ },
+ "packs/lvl11/Vent-005_Base-004": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0287,
+  "seam_v": 0.0278,
+  "inner_h": 0.0325,
+  "inner_v": 0.0764,
+  "drift_h": 0.0132,
+  "drift_v": 0.002,
+  "transparent": 0.0
+ },
+ "packs/potassifier/retro_bricks": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0511,
+  "seam_v": 0.1742,
+  "inner_h": 0.0297,
+  "inner_v": 0.0357,
+  "drift_h": 0.0123,
+  "drift_v": 0.001,
+  "transparent": 0.0
+ },
+ "packs/potassifier/retro_bricks2": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0271,
+  "seam_v": 0.0268,
+  "inner_h": 0.0326,
+  "inner_v": 0.035,
+  "drift_h": 0.0427,
+  "drift_v": 0.0549,
+  "transparent": 0.0
+ },
+ "packs/potassifier/retro_hazard_wall": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0284,
+  "seam_v": 0.0293,
+  "inner_h": 0.0298,
+  "inner_v": 0.0381,
+  "drift_h": 0.004,
+  "drift_v": 0.0034,
+  "transparent": 0.0
+ },
+ "packs/potassifier/retro_metal_plates": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "P",
+  "class_v": "X",
+  "seam_h": 0.0974,
+  "seam_v": 0.1497,
+  "inner_h": 0.0306,
+  "inner_v": 0.0338,
+  "drift_h": 0.0014,
+  "drift_v": 0.0016,
+  "transparent": 0.0
+ },
+ "packs/potassifier/retro_metal_plates2": {
+  "size": [
+   128,
+   128
+  ],
+  "tiles_h": true,
+  "tiles_v": false,
+  "class_h": "T",
+  "class_v": "X",
+  "seam_h": 0.0314,
+  "seam_v": 0.2068,
+  "inner_h": 0.0358,
+  "inner_v": 0.0397,
+  "drift_h": 0.0014,
+  "drift_v": 0.0213,
+  "transparent": 0.0
+ },
+ "style_common/mars_ground": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0137,
+  "seam_v": 0.0107,
+  "inner_h": 0.0141,
+  "inner_v": 0.0148,
+  "drift_h": 0.0057,
+  "drift_v": 0.0009,
+  "transparent": 0.0
+ },
+ "style_common/mars_rock": {
+  "size": [
+   64,
+   64
+  ],
+  "tiles_h": true,
+  "tiles_v": true,
+  "class_h": "T",
+  "class_v": "T",
+  "seam_h": 0.0206,
+  "seam_v": 0.0398,
+  "inner_h": 0.0136,
+  "inner_v": 0.0245,
+  "drift_h": 0.0101,
+  "drift_v": 0.0258,
+  "transparent": 0.0
+ }
+}

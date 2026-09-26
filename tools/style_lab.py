@@ -150,56 +150,86 @@ MACHINE = dict(cx=0.0, cz=ROOM_CZ, plinth=3.0, plinth_chamfer=0.75, plinth_h=0.5
 # so every change of look sits on real geometry.
 ROLES = ('floor', 'plinth', 'wall', 'slope', 'ceiling', 'rib', 'bulkhead', 'hazard',
          'service', 'door', 'frame', 'machine_base', 'machine_body', 'machine_top',
-         'pipe', 'coolant', 'screen', 'ground', 'rock')
-# Revision 03: coolant 2.2 -> 1.5. With a pale machine body it read as going
-# critical; the user wants a little bloom, not a reactor about to blow.
-EMISSIVE = {'coolant': (0.35, 1.0, 0.85, 1.5), 'screen': (0.6, 1.0, 0.8, 1.6)}
+         'pipe', 'coolant', 'screen', 'ground', 'rock', 'grate', 'riser', 'door_panel')
+EMISSIVE = {'coolant': (0.35, 1.0, 0.85, 1.5), 'screen': (0.6, 1.0, 0.8, 0.7)}
+
+# Revision 04 (user, 2026-09-25): a texture that does not tile must never be
+# used where a surface repeats (the QUOD heat pipe banded dark-bright-dark).
+# tools/audit-textures.py measures every pack texture per axis: T seamless,
+# P panel border (repeats as a grid), X never repeat. Each role states what it
+# needs: 'HV' repeats both ways, 'H' only horizontally (the plinth band is
+# pinned vertically), 'fit' is a FEATURE fitted to its face a whole number of
+# times (doors, screens, service panels, grate squares). The scene writer
+# refuses a texture that cannot meet its role.
+ROLE_TILING = {
+    'floor': 'HV', 'plinth': 'H', 'wall': 'HV', 'slope': 'HV', 'ceiling': 'HV', 'rib': 'HV',
+    'bulkhead': 'HV', 'hazard': 'HV', 'service': 'fit', 'door': 'fit', 'frame': 'HV',
+    'machine_base': 'HV', 'machine_body': 'HV', 'machine_top': 'HV', 'pipe': 'HV',
+    'coolant': 'HV', 'screen': 'fit', 'ground': 'HV', 'rock': 'HV', 'grate': 'fit', 'riser': 'H', 'door_panel': 'HV',
+}
+FIT_ROLES = {r for r, t in ROLE_TILING.items() if t == 'fit'}
 
 COMMON = {
-    # Hazard is reserved for thin trims (user: large caution areas are
-    # off-putting). QUOD's small diagonal stripe at 64 px/m.
-    'hazard': 'packs/quod/tex254',
+    # Hazard is a thin trim only. It must repeat along a trim in either
+    # direction, so it is Level Eleven's panel-bordered stripe.
+    'hazard': 'packs/lvl11/ConcretePanel-Hazard-Full-01_64',
     'coolant': 'packs/quod/tex39',
     'screen': 'packs/quod/tex192',
     'ground': 'style_common/mars_ground',
     'rock': 'style_common/mars_rock',
+    # The busy dotted plate is a FEATURE: one or two squares, set down in the
+    # floor, never a whole floor (user rule).
+    'grate': 'packs/lvl11/Grid-001-12_Base-004',
 }
 
+# Ceilings CONTINUE the look's slope/wall material (user, 2026-09-26). QUOD's
+# corrugated tex90 is reserved for container sides and roll doors, never a ceiling.
+# door_panel is the plain wall a door is cut into, so a cut never truncates a pattern.
+# A look entry is a texture, or (texture, tint) where the tint multiplies the
+# albedo, so a pale texture can serve a dark calm floor.
 LOOKS = {
     # QUOD tan, olive and rust: the warm look, for certain sections only.
     'warm': {
         'floor': 'packs/quod/tex244', 'plinth': 'packs/quod/tex93', 'wall': 'packs/quod/tex8',
-        'slope': 'packs/quod/tex4', 'ceiling': 'packs/quod/tex90', 'rib': 'packs/quod/tex24',
-        'bulkhead': 'packs/quod/tex238', 'service': 'packs/quod/tex27', 'door': 'packs/quod/tex18',
+        'slope': 'packs/quod/tex4', 'ceiling': 'packs/quod/tex4', 'rib': 'packs/quod/tex24',
+        'bulkhead': 'packs/lvl11/Metal-Panel-004_Section-001', 'service': 'packs/quod/tex27', 'door': 'packs/quod/tex18',
         'frame': 'packs/quod/tex24', 'machine_base': 'packs/quod/tex190',
-        'machine_body': 'packs/quod/tex43', 'machine_top': 'packs/quod/tex247', 'pipe': 'packs/quod/tex45',
+        'machine_body': 'packs/quod/tex25', 'machine_top': 'packs/quod/tex24',
+        'pipe': ('packs/lvl11/Panel-001-3_Base-004', (1.0, 0.62, 0.38)), 'riser': 'packs/quod/tex24',
+        'door_panel': 'packs/quod/tex4',
     },
-    # Grey metal: Level Eleven panels and trims with QUOD grey doors and ceiling.
+    # Grey metal: plain framed panels (the riveted panel repeated too loudly).
     'steel': {
         'floor': 'packs/lvl11/Metal-Panel_Base-004', 'plinth': 'packs/lvl11/Metal-Panel-004_Section-003',
-        'wall': 'packs/lvl11/Metal-Panel_Section-004', 'slope': 'packs/lvl11/Metal-Panel_Section-001-3',
-        'ceiling': 'packs/quod/tex90', 'rib': 'packs/lvl11/Metal-Panel_Base-004',
-        'bulkhead': 'packs/quod/tex238', 'service': 'packs/lvl11/Vent-002_Base-001', 'door': 'packs/quod/tex18',
+        'wall': 'packs/lvl11/Metal-Panel_Section-001', 'slope': 'packs/lvl11/Metal-Panel_Section-001-3',
+        'ceiling': 'packs/lvl11/Metal-Panel_Section-001-3', 'rib': 'packs/lvl11/Metal-Panel_Base-004',
+        'bulkhead': 'packs/lvl11/Metal-Panel-004_Section-001', 'service': 'packs/lvl11/Vent-002_Base-001', 'door': 'packs/quod/tex18',
         'frame': 'packs/lvl11/Metal-Panel_Base-004', 'machine_base': 'packs/quod/tex190',
-        'machine_body': 'packs/lvl11/Panel-001-2_Base-004', 'machine_top': 'packs/lvl11/Metal-Panel_Section-004',
-        'pipe': 'packs/lvl11/CorrugatedMetalPanel-01V_64',
+        'machine_body': 'packs/lvl11/Panel-001-3_Base-004', 'machine_top': 'packs/lvl11/Metal-Panel_Section-004',
+        'pipe': 'packs/lvl11/Panel-001-3_Base-004', 'riser': 'packs/lvl11/Metal-Panel_Base-004',
+        'door_panel': 'packs/lvl11/Metal-Panel_Section-001',
     },
-    # Pale concrete with a muted green painted band. The blue band was garish,
-    # and QUOD tex87 turned out pale, not dark, so the floor is Level Eleven's
-    # plain dark perforated plate.
+    # Pale concrete with a muted green band. The floor is Level Eleven's
+    # concrete, darkened by tint: calm, not the dotted plate.
     'concrete': {
-        'floor': 'packs/lvl11/Grid-001-12_Base-004', 'plinth': 'packs/lvl11/ConcreteWallPainted-HG_64',
+        'floor': ('packs/lvl11/ConcreteFloor-01_64', (0.5, 0.52, 0.55)), 'plinth': 'packs/lvl11/ConcreteWallPainted-HG_64',
         'wall': 'packs/lvl11/ConcretePanel-01_64', 'slope': 'packs/lvl11/ConcretePanel-01_64',
-        'ceiling': 'packs/lvl11/Metal-Panel_Section-001-3', 'rib': 'packs/lvl11/Metal-Panel_Base-001',
+        'ceiling': 'packs/lvl11/ConcretePanel-01_64', 'rib': 'packs/lvl11/Metal-Panel_Base-001',
         'bulkhead': 'packs/lvl11/Metal-Panel-004_Section-001', 'service': 'packs/quod/tex193',
         'door': 'packs/lvl11/MetalPanel-01V_64', 'frame': 'packs/lvl11/Metal-Panel_Base-004',
-        'machine_base': 'packs/quod/tex190', 'machine_body': 'packs/lvl11/Panel-001-2_Base-004',
-        'machine_top': 'packs/lvl11/Metal-Panel_Section-004', 'pipe': 'packs/quod/tex45',
+        'machine_base': 'packs/quod/tex190', 'machine_body': 'packs/lvl11/Panel-001-3_Base-004',
+        'machine_top': 'packs/lvl11/Metal-Panel_Section-004', 'pipe': 'packs/lvl11/Panel-001-3_Base-004',
+        'riser': 'packs/lvl11/Metal-Panel_Base-004', 'door_panel': 'packs/lvl11/ConcretePanel-01_64',
     },
 }
 for _l in LOOKS.values():
     for _k, _v in COMMON.items():
         _l.setdefault(_k, _v)
+
+
+def look_texture(entry):
+    """(texture path, tint or None) for a LOOKS entry."""
+    return (entry, None) if isinstance(entry, str) else (entry[0], entry[1])
 
 # The authored zoning: which look each part of the lab wears. The source map
 # is written with these, so TrenchBroom shows the real mix.

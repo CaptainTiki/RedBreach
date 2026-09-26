@@ -54,7 +54,12 @@ def _fmt(v):
 
 
 class Map:
-    def __init__(self, textures=()):
+    def __init__(self, textures=(), tex_size=None, fit=None):
+        """tex_size(texture) -> (w, h) pixels, needed for fitted faces.
+        fit(texture) -> True for FEATURE textures, which are fitted to each
+        face a whole number of times instead of repeating from an origin."""
+        self.tex_size = tex_size
+        self.fit = fit or (lambda texture: False)
         self.world = []           # brush strings in worldspawn
         self.groups = []          # (name, [brush strings])
         self.entities = []        # raw entity strings
@@ -73,12 +78,18 @@ class Map:
         self._group = None
 
     # --- brushes ------------------------------------------------------------
-    def hull(self, points, tex, name='', scale=1.0, offset=(0, 0), anchor=None, tally='misc'):
+    def hull(self, points, tex, name='', scale=1.0, offset=(0, 0), anchor=None, uv_origin=None, uv_u=None, tally='misc'):
         """Convex hull of ``points`` (Godot metres). Returns True if written.
 
-        ``anchor=(godot_point, texel_v)`` shifts V on every face so the texture
-        row ``texel_v`` lands on that point. It is how a painted band inside a
-        texture is pinned to a plinth foot on a slope."""
+        Texture alignment (user rule, 2026-09-25: seams belong on geometry):
+        ``uv_origin`` (a Godot point) puts the texture's corner there on every
+        face, so a wall's panels start at its corner, its bottom edge or a rib
+        station instead of at the world origin. ``uv_u`` (a horizontal Godot
+        direction) turns floor and ceiling U to follow a corridor.
+        ``anchor=(godot_point, texel_v)`` pins one texture row to a point: the
+        painted band inside a texture onto a plinth foot, even on a slope.
+        Faces whose texture ``fit()`` accepts are FEATURES: fitted to the face
+        a whole number of times, starting at its edges."""
         pts = []
         for p in points:
             q = to_map(p)
@@ -126,15 +137,31 @@ class Map:
             gn = map_to_godot_dir(n)
             gc = map_to_godot_dir(tuple(v / UNITS for v in fc))
             texture = tex(gn, gc) if callable(tex) else tex
-            u, v = _uv_axes(n)
+            u, v = _uv_axes(n, uv_u)
             s = scale(texture) if callable(scale) else scale
+            sx = sy = s
             ox, oy = offset
+            if uv_origin is not None:
+                op = to_map(uv_origin)
+                ox = ox - _dot(op, u) / s
+                oy = oy - _dot(op, v) / s
             if anchor is not None:
                 ap = to_map(anchor[0])
                 oy = anchor[1] - _dot(ap, v) / s
+            if self.fit(texture) and self.tex_size:
+                # A feature: exactly a whole number of repeats across the face,
+                # starting at its edges, at roughly its native density.
+                tw, th = self.tex_size(texture)
+                us = [_dot(p, u) for p in on]
+                vs = [_dot(p, v) for p in on]
+                eu, ev = max(us) - min(us), max(vs) - min(vs)
+                nu = max(1, round(eu / (tw * s)))
+                nv = max(1, round(ev / (th * s)))
+                sx, sy = eu / (nu * tw), ev / (nv * th)
+                ox, oy = -min(us) / sx, -min(vs) / sy
             lines.append(' '.join('( ' + ' '.join(_fmt(k) for k in p) + ' )' for p in (a, b, c))
                          + f' {texture} [ {_fmt(u[0])} {_fmt(u[1])} {_fmt(u[2])} {_fmt(ox)} ]'
-                         + f' [ {_fmt(v[0])} {_fmt(v[1])} {_fmt(v[2])} {_fmt(oy)} ] 0 {_fmt(s)} {_fmt(s)}')
+                         + f' [ {_fmt(v[0])} {_fmt(v[1])} {_fmt(v[2])} {_fmt(oy)} ] 0 {_fmt(sx)} {_fmt(sy)}')
         lines.append('}')
         text = '\n'.join(lines)
         (self._group[1] if self._group else self.world).append(text)
@@ -179,9 +206,15 @@ class Map:
         return '\n'.join(out) + '\n'
 
 
-def _uv_axes(n):
-    """Unit U/V axes in map coordinates for a face with outward normal n."""
+def _uv_axes(n, uv_u=None):
+    """Unit U/V axes in map coordinates for a face with outward normal n.
+    uv_u (a horizontal Godot direction) turns a floor or ceiling's U to
+    follow it; V is then U turned a right angle, as in the default."""
     if abs(n[2]) > 0.75:
+        if uv_u is not None:
+            mu = to_map(uv_u)
+            mu = _norm((mu[0], mu[1], 0.0))
+            return mu, (mu[1], -mu[0], 0.0)
         return (1, 0, 0), (0, -1, 0)
     up = (0, 0, 1)
     view = (-n[0], -n[1], -n[2])

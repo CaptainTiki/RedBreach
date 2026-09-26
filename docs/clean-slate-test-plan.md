@@ -1,8 +1,22 @@
 # Clean-slate test plan — from dev branch to production
 
-Status: revision 02, 2026-09-25. **Phase 1 is complete: style lab S-01 (F9),
-settled by the user after three revisions. The style sheet is in
-[style-lab.md](style-lab.md#phase-1-settled-2026-09-25). Phase 2 (kit lab) is next.**
+Status: revision 03, 2026-09-26. **Phases 1 and 2 are complete.** The style
+lab S-01 (F9) was settled by the user ([style-lab.md](style-lab.md#phase-1-settled-2026-09-25)).
+The kit lab K-01 (F10) was called a success after its texture and junction
+passes ([kit-sheet.md](kit-sheet.md)).
+
+**Next, the user's progression (2026-09-26):** one complete level, which also
+yields one texture pack:
+1. Design a complex level plan in words, describing each location.
+2. Build the 2D plan to check it makes spatial sense.
+3. Build it in 3D and walk through it.
+4. Add props and details.
+5. Add pickups and enemies.
+6. Test the level.
+
+A follow-up mission in a new location builds out a second pack. The texture
+packs wait until then. The postcard test (Phase 3) folds into the level: its
+screenshot moments are planned from the walkthrough.
 Nothing has been removed.
 
 ## Framing

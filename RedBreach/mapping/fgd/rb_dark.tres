@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="1"]
+[ext_resource type="Script" path="res://mapping/fgd/rb_marker.gd" id="2"]
+
+[resource]
+script = ExtResource("1")
+script_class = ExtResource("2")
+apply_rotation_on_map_build = false
+classname = "rb_dark"
+description = "A deliberately dark zone (a hiding place, broken lights, a blackout). The light-floor check is waived within radius."
+class_properties = Dictionary[String, Variant]({
+"radius": 4.0,
+"reason": "broken lights"
+})
+class_property_descriptions = Dictionary[String, Variant]({
+"radius": "Radius in metres",
+"reason": "Why this is dark on purpose"
+})
+meta_properties = Dictionary[String, Variant]({
+"size": AABB(-8, -8, 0, 16, 16, 16),
+"color": Color(0.35, 0.35, 0.4, 1)
+})
+node_class = "Marker3D"
+node_groups = Array[String](["rb_markers"])

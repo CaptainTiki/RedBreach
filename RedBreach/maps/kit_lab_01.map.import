@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://dvxeolsobg1tg"
+path="res://.godot/imported/kit_lab_01.map-332f5e2b222c8a723f2059b3340ed988.tres"
+
+[deps]
+
+source_file="res://maps/kit_lab_01.map"
+dest_files=["res://.godot/imported/kit_lab_01.map-332f5e2b222c8a723f2059b3340ed988.tres"]
+
+[params]
+

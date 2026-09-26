@@ -1,0 +1,28 @@
+// Red Breach validation markers. Mirrors RedBreach/mapping/fgd/*.tres.
+// Place these in any map; tools/validate_markers.gd reads them from the built scene.
+
+@PointClass size(-8 -8 0, 8 8 16) color(120 200 168) = rb_route : "Validation route waypoint. Routes are walked in index order, forward and then back." 
+[
+	route(string) : "Route name" : "main"
+	index(integer) : "Order along the route" : 0
+	posture(string) : "stand or crouch" : "stand"
+]
+
+@PointClass size(-8 -8 0, 8 8 16) color(232 189 119) = rb_probe : "Clearance probe: stand_clear, crouch_only or headroom." 
+[
+	kind(string) : "stand_clear, crouch_only or headroom" : "stand_clear"
+	min(float) : "Minimum clear height in metres (headroom only)" : "0"
+]
+
+@PointClass size(-8 -8 0, 8 8 16) color(180 140 240) = rb_nav : "Bug navigation probe. Two markers share a pair name; end a carries the expectation." 
+[
+	pair(string) : "Pair name" : ""
+	end(string) : "a or b" : "a"
+	expect(string) : "connect or blocked (read from end a)" : "connect"
+]
+
+@PointClass size(-8 -8 0, 8 8 16) color(90 90 102) = rb_dark : "A deliberately dark zone (a hiding place, broken lights). The light-floor check is waived within radius." 
+[
+	radius(float) : "Radius in metres" : "4"
+	reason(string) : "Why this is dark on purpose" : "broken lights"
+]

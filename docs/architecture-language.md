@@ -34,6 +34,71 @@ plan boundary; adjacent spaces then automatically leave the required 0.5 m.
 be thicker. This is a minimum, not a target — widen where services, ribs or
 recesses need the depth.
 
+### A room's contents define its shape
+
+User rule, 2026-09-25: never define rooms by a stock shape ("halls are
+knee-wall naves", "rooms are octagons"). First build out what is in the room:
+its equipment, the work it does, its circulation and its sightlines. Then let
+those define the perimeter and the wall shape. A shape that worked in one room
+is a record of that room, not a template. Corridors and junction pieces are
+kit; rooms are composed.
+
+### No darker than the light floor
+
+User rule, 2026-09-25: by default every walkable space meets a minimum
+brightness. Go darker only on purpose, for a hiding place or broken lights,
+and mark it with an `rb_dark` zone in the map. The generic validator measures
+this (scalar illuminance at bug height across the navigation mesh, floor 0.35;
+see `kit-sheet.md`), so dark corners are found by the checks rather than on a
+walkthrough. Undersides of catwalks, stair feet and the far ends of halls are
+the usual offenders.
+
+### Textures: tile where it repeats, feature where it does not, seams on geometry
+
+User rules, 2026-09-25:
+- **A texture that does not tile must never be used where a surface
+  repeats.** A heat pipe that runs dark to bright and then repeats reads as
+  broken. Each texture's tiling is measured (`tools/audit-textures.py`), each
+  role declares what it needs, and the build refuses a mismatch.
+- **Busy textures are features, not covers.** Use one or two squares of the
+  dotted grate as a highlight, with an elevation change where the texture
+  changes, rather than laying it over a whole floor.
+- **Seams belong on geometry.** Texture panels start at corners, segment
+  edges and rib stations, floors are centred on the corridor and follow it,
+  and features are fitted whole to their face.
+
+### A corridor meets a room through its own profile
+
+User rule, 2026-09-26: no flat accent slab around a corridor opening. Cut the
+room wall to the corridor's profile, run the corridor to the room's inner
+face, and let the corridor's rib stand at the room face as the connection. A
+door fills the opening with a panel shaped to the profile. A room lower than
+the corridor gets a door-sized hole, and the corridor ends in its rib. A
+change of look happens at that rib and a low sill.
+
+### Vertical interest is a running elevation story
+
+User rule, 2026-09-26: vertical interest is not only big stairs and
+mezzanines. One or two steps down into a room count. So do a staircase, and a
+ladder into a well with a hidden secret. The elevation changes accumulate
+along the route as a story the player feels, for example:
+
+> Walk into a room and take 2 steps down. Walk forward round a machine and
+> come back the way you came, 2 more steps down. The next corridor carries a
+> 4-step drop. In the next room a 10-rung ladder goes up, and now you are at +6.
+
+Plan every room and connector with its entry and exit elevation, and keep a
+running tally along the walkthrough so the net change is deliberate. Small
+changes make texture changes legal (a step is geometry) and give fights
+height differences without mezzanines.
+
+### Rib feet come straight down
+
+User rule, 2026-09-25: a structural rib does not step out at its foot the way
+a wall plinth does. Copying the plinth offset leaves a jagged notch. The rib's
+inner face drops vertically to the floor, flush with the rib above, so the
+member reads as one piece standing on the floor.
+
 ### Rooms have room-like proportions
 
 User rule: a room should normally be no more than **two to three times as long as it is wide**. Aim for **2:1 or less**, allowing up to **3:1** for a deliberately elongated room. Measure the clear usable interior, with length as the longer dimension and width as the shorter dimension.

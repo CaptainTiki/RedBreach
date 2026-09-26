@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1"]
+[ext_resource type="Resource" path="res://addons/func_godot/fgd/phong_base.tres" id="d0"]
+[ext_resource type="Resource" path="res://addons/func_godot/fgd/vertex_merge_distance_base.tres" id="d1"]
+[ext_resource type="Resource" path="res://addons/func_godot/fgd/cull_interior_faces.tres" id="d2"]
+[ext_resource type="Resource" path="res://addons/func_godot/fgd/worldspawn.tres" id="d3"]
+[ext_resource type="Resource" path="res://addons/func_godot/fgd/func_geo.tres" id="d4"]
+[ext_resource type="Resource" path="res://addons/func_godot/fgd/func_detail.tres" id="d5"]
+[ext_resource type="Resource" path="res://addons/func_godot/fgd/func_detail_illusionary.tres" id="d6"]
+[ext_resource type="Resource" path="res://addons/func_godot/fgd/func_illusionary.tres" id="d7"]
+[ext_resource type="Resource" path="res://mapping/fgd/rb_route.tres" id="r0"]
+[ext_resource type="Resource" path="res://mapping/fgd/rb_probe.tres" id="r1"]
+[ext_resource type="Resource" path="res://mapping/fgd/rb_nav.tres" id="r2"]
+[ext_resource type="Resource" path="res://mapping/fgd/rb_dark.tres" id="r3"]
+
+[resource]
+script = ExtResource("1")
+fgd_name = "RedBreach"
+entity_definitions = Array[Resource]([ExtResource("d0"), ExtResource("d1"), ExtResource("d2"), ExtResource("d3"), ExtResource("d4"), ExtResource("d5"), ExtResource("d6"), ExtResource("d7"), ExtResource("r0"), ExtResource("r1"), ExtResource("r2"), ExtResource("r3")])

@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3]
 
-[ext_resource type="Texture2D" path="res://textures/packs/quod/tex45.png" id="1"]
+[ext_resource type="Texture2D" path="res://textures/packs/lvl11/Panel-001-3_Base-004.png" id="1"]
 
 [resource]
 resource_name = "looks/concrete pipe"
