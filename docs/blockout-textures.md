@@ -47,7 +47,7 @@ Use the normal rebuild tool for the affected map. After a material/UV pass, also
 
 ## Muted palette additions
 
-Eleven additive variants are available, each in `texture_01`, `texture_03` and `texture_06` (standard grid, panel grid and floor-cross grid). See [palette preview](blockout-palette.png).
+Eleven additive variants are available, each in `texture_01`, `texture_03` and `texture_06` (standard grid, panel grid and floor-cross grid).
 
 - `greybox/GreyCharcoal`: darker than the original Dark (background 28/255).
 - Existing `greybox/Dark`: retained as the second grey (background about 51/255).
@@ -58,16 +58,12 @@ Eleven additive variants are available, each in `texture_01`, `texture_03` and `
 
 Add these folders as material collections in TrenchBroom's texture browser; use the existing `res://textures` material root in Godot. They retain the original 1024-square dimensions, grid positions, alpha, mipmapped imports and **0.03125 face scale / 1 metre repeats**. No map assignments or existing textures are replaced. The original saturated colours remain available for stronger accents.
 
-`tools/create-blockout-palette.py` reproduces only these new assets and the preview with Pillow. Greys use a uniform luminance remap anchored to the original Dark background, with white mapped to 235; muted colours use uniform saturation/brightness adjustments. It does not redraw, resize or resample the game textures. `docs/blockout-palette.json` records source/output hashes and adjustment values.
+The generator that made these variants (`tools/create-blockout-palette.py`) and its preview were removed in the 2026-09-26 cleanup; the textures themselves are final assets.
 
 Validation: Godot 4.7.2 imported and loaded all 33 additions at 1024 x 1024 with mipmaps. Existing greybox validation passed 9 checks with zero failures. The generator verified all 78 original PNGs unchanged and preserved each output's dimensions and alpha. The dark-colour addition also verified that all 99 previously available texture PNGs remained byte-identical. Automated image viewing was unavailable in this session; the palette PNG is provided for visual review before assigning the colours to rooms.
 
 
-## Registration readability sample
-
-The palette additions are now assigned to the completed Registration area in freight layout 08. See [the built colour pass](freight-registration-palette.md): existing dark floor, muted green walls, pale grey ceiling, muted orange lower walkway and muted purple furnishing bodies with grey tops/panels. Original images, metre scale and lighting remain unchanged. These assignments are local to the reviewed Registration sample, not a global recolouring of the gyms or mission.
-
 
 ## Geometry supports texture transitions
 
-User rule: a material/texture change needs a physical rise, drop, border brush, trim or three-dimensional seam. Avoid arbitrary coplanar changes on a continuous surface. Layout 10 removes Registration's recessed orange walkway and its step edges; the entire A1 floor now uses the existing dark grid at floor 0. Earlier Registration palette images show the historical depression. See [the current floor](freight-registration-flat-floor.md).
+User rule: a material/texture change needs a physical rise, drop, border brush, trim or three-dimensional seam. Avoid arbitrary coplanar changes on a continuous surface. See [architecture-language.md](architecture-language.md#texture-transitions-require-geometry).

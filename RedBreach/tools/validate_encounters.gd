@@ -19,7 +19,6 @@ func place(point: Vector3) -> void:
 	player.relocate(Transform3D(Basis.IDENTITY, point))
 	await ticks(3)
 func run() -> void:
-	check(load("res://encounters/route_trial.gd") != null, "Route controller compiles")
 	var metrics = load("res://encounters/route_metrics.gd").new()
 	metrics.register("a","A",2)
 	metrics.register("b","B",1)

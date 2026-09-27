@@ -26,4 +26,6 @@ if ($Validate) {
     Invoke-GymScript 'res://tools/validate_annex.gd' 'annex_qa.log' 120
     Invoke-GymScript 'res://tools/validate_alteration.gd' 'alteration_qa.log' 120
     Invoke-GymScript 'res://tools/validate_pistol.gd' 'pistol_qa.log' 120
+    # Kenney greybox materials and metre UVs in both gyms, the door and the vent grate.
+    Invoke-GymScript 'res://tools/validate_greybox.gd' 'greybox_qa.log'
 }

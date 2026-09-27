@@ -1,9 +1,8 @@
 # Style lab S-01: Phase 1
 
 Status: built and validated, 2026-09-25, awaiting the user's walkthrough. This
-is Phase 1 of the [clean-slate test plan](clean-slate-test-plan.md). It is R-01
-([retro-industrial-sample-plan.md](retro-industrial-sample-plan.md)) extended
-to three profiles, two texture directions, three light rigs and a Mars window.
+is Phase 1 of the [clean-slate test plan](clean-slate-test-plan.md). It is the R-01 retro industrial sample (never built, since removed)
+extended to three profiles, two texture directions, three light rigs and a Mars window.
 
 **Walk it:** press **F9** from any gym or lab.
 

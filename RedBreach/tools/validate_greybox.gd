@@ -7,9 +7,8 @@ func check(ok: bool, label: String) -> void:
 	print("PASS: " if ok else "FAIL: ",label)
 	if not ok: failures.append(label)
 func run() -> void:
-	for path in ["res://gym/gym.tscn","res://combat/combat_gym.tscn","res://encounters/route_trial.tscn"]:
+	for path in ["res://gym/gym.tscn","res://combat/combat_gym.tscn"]:
 		var scene: Node3D = load(path).instantiate()
-		if path.contains("route_trial"): scene.storage_enabled = false
 		root.add_child(scene)
 		scene.get_node("GymPlayer").set_physics_process(false)
 		var surfaces := 0

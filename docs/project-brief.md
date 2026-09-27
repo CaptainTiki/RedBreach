@@ -14,7 +14,7 @@
 
 The agreed arc is attack on the colony, discovery of a long-established alien presence, then escape from the planet. The exact alien origin, player role, timing of the discovery and evacuation route remain open. An earlier pitch about the plant breaking into an underground site and the player being sent to contain it was provisional; it is not established canon.
 
-The [freight-access example mission](example-mission-walkthrough.md) belongs around level 2 or 3. Players already understand movement, shooting and the general game feel. Its opening establishes location, situation and a foothold. A new alien or weapon could be introduced through play, but neither is selected yet. Do not turn this mission into the game's basic tutorial or assume that it contains the campaign's major revelation.
+The freight-access mission ([freight v2 walkthrough](freight-v2-walkthrough.md)) belongs around level 2 or 3. Players already understand movement, shooting and the general game feel. Its opening establishes location, situation and a foothold. A new alien or weapon could be introduced through play, but neither is selected yet. Do not turn this mission into the game's basic tutorial or assume that it contains the campaign's major revelation.
 
 Aim for roughly ten minutes for a normal run by a player who knows most of the route. First-time exploration can take longer; efficient play, skipped secrets and rushed fights can finish sooner. This is a playtest target, not a forced minimum or a measured result.
 
@@ -26,7 +26,7 @@ Gym first, then the real level. The approved 2D gym plan and first playable map 
 
 ## Open decisions
 
-- Player role: Mars colony security personnel, agreed 2026-09-22 via the [onboarding walkthrough](onboarding-walkthrough.md). Immediate objective for the first assignment is investigating a reported missing person; how that connects to the wider campaign discovery is still open.
+- Player role: Mars colony security personnel, agreed 2026-09-22 in the onboarding (level 1) walkthrough, since removed with the older designs. Immediate objective for the first assignment is investigating a reported missing person; how that connects to the wider campaign discovery is still open.
 - Alien nature and origin.
 - TrenchBroom integration established: func_godot 2025.12, Valve format, 32 map units per metre (see workflow guide).
 - Exact campaign ordering, mission walkthrough and spatial layout; movement/combat prototypes already supply tested starting values.

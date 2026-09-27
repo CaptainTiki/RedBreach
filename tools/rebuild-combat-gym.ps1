@@ -12,6 +12,8 @@ $checks = ,@('res://tools/build_combat_gym.gd', 'combat_build.log')
 if ($Validate) {
     $checks += ,@('res://tools/validate_combat.gd', 'combat_qa.log')
     $checks += ,@('res://tools/validate_spitter.gd', 'spitter_qa.log')
+    # The reusable encounter, vent and pacing-timer scripts, exercised in this arena.
+    $checks += ,@('res://tools/validate_encounters.gd', 'encounters_qa.log')
 }
 foreach ($entry in $checks) {
     $logPath = Join-Path $projectDir ('.godot\' + $entry[1])

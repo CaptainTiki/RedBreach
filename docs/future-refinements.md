@@ -98,7 +98,7 @@ This test should exercise the intended reusable system. No level geometry, wall-
 
 **Completion check:** On a first encounter with the ambush, a player looking toward D can distinguish the nearby ambush screech from routine pursuit, recognize its direction and turn to respond without prior knowledge of the hatch. Check this while firing/reloading with multiple active bugs, and confirm repeated pursuit sounds do not falsely signal another ambush.
 
-Source: [revision 04 accepted playtest](rear-hatch-plan.md#revision-04-human-playtest--concept-accepted). Coordinate this with [FR-002 bug presentation](#fr-002-bug-presentation-and-impact-refinement).
+Source: the encounter route trial's revision 04 playtest (the trial was removed in the 2026-09-26 cleanup; its lessons are in [combat-gym.md](combat-gym.md#bug-roster-and-lessons-from-the-encounter-route-trial)). Coordinate this with [FR-002 bug presentation](#fr-002-bug-presentation-and-impact-refinement).
 
 ## FR-005: Return views through upper routes
 
@@ -147,7 +147,7 @@ rebuild; one or two bays flicker with sparks rather than going fully dark; the
 player can still navigate or is deliberately meant not to; and a mission reset
 returns the corridor to its lit state.
 
-Source: corner playtest 01, [architecture-lab-corner-playtest.md](architecture-lab-corner-playtest.md).
+Source: corner playtest 01 (the architecture labs were removed in the 2026-09-26 cleanup; see [corridor-lab-findings.md](corridor-lab-findings.md)).
 Relates to [FR-004 distinct bug alert and ambush audio](#fr-004-distinct-bug-alert-and-ambush-audio)
 — a blackout and an ambush cue arriving together must not mask each other.
 

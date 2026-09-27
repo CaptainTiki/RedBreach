@@ -4,13 +4,13 @@ Status: built from the user-approved [top-down layout](combat-gym-plan.svg); rea
 
 ## Playtest route
 
-Press F2 during play to open a fresh combat gym. F5 now starts the [Encounter Route Test](encounter-route-test.md); F1 opens the movement gym and F3 returns to the route test.
+Press F2 during play to open a fresh combat gym; F1 opens the movement gym.
 
 1. Walk ahead into the precision range. Use the turquoise 10/20/30 m pads; each pad lines up with its own plate. Compare hip fire, ADS, deliberate single shots, repeated shots, and lateral movement. Plates are 0.8/0.6/0.4 m wide and recover two seconds after being downed.
 2. Return to staging and turn right to the arena entrance. Pickups in staging and inside the arena apply on contact only when useful: red health, gold ammunition.
 3. Enter fully and approach the green release panel on the right. Aim within 2 m and press E at the green MELEE BUG panel, or use the orange SPITTER panel beside it for the [larger ranged enemy](spitter.md). The gate closes and exactly one selected bug is alerted. It routes around cover toward you.
 4. Look for the yellow ring and LUNGE readout. The bug pauses for 0.55 seconds, then lunges along its committed direction. Sidestep, retreat, fire, or break its line of sight. A hit deals 20 damage; you have 100 health.
-5. Six body hits from the pistol kill its 150 HP (increased from 100 for the [enemy mix experiment](bug-mix.md)). Hits spray green droplets; death produces a larger burst, surface splatters, and a flattened corpse. The gate reopens. There is no automatic replacement bug.
+5. Six body hits from the pistol kill its 150 HP (increased from 100 for the enemy mix experiment; see the roster below). Hits spray green droplets; death produces a larger burst, surface splatters, and a flattened corpse. The gate reopens. There is no automatic replacement bug.
 6. Backspace restores the safe spawn, health, ammo, targets, bug, pickups, and gate, and clears blood/effects. Death cancels firing, movement, ADS, reload and pickup collection until reset.
 
 Controls remain WASD, Shift sprint, Ctrl crouch, Space jump, LMB semi-auto fire, RMB hold ADS, R reload, E use, Escape release mouse. The first click after Escape only recaptures the mouse. Escape releases the mouse; it does not pause the encounter.
@@ -51,3 +51,31 @@ Navigation uses Godot's [source-geometry parsing and navigation bake](https://do
 Original 0.0.005 validation: 62 combat checks passed, including accurate real shots in hip/ADS at all three distances, cover blocking sight and shots, pursuit around cover, a dodgeable lunge, blocked attacks, four-shot kill, persistent/bounded effects, automatic pickup collection, death/handling interruption, reset during wind-up, and F1/F2 scene switching. The original 220 movement, door, alteration and pistol checks passed. The combat source was rebuilt repeatedly and loaded from disk for validation. All 62 combat checks also passed in the rendered Forward+ game, and range/bug/hit/death captures were inspected; logs/captures live in ignored `RedBreach/.godot/combat_*`.
 
 No combat TrenchBroom UI round trip has been performed by the agent. The map is authored directly in the same verified Valve 220 format and uses the existing game definition.
+
+## Bug roster and lessons from the encounter route trial
+
+The route trial (F3, a 114 m pacing experiment with mixed packs, vents and a rear hatch) was removed in the cleanup of
+2026-09-26; it is in git history before that commit. The enemy prefabs, `encounters/encounter.gd`,
+`encounters/vent.gd` and the pacing timer `encounters/route_metrics.gd` stay for the freight v2 enemy pass.
+
+| Enemy | Health / pistol hits | Movement and attack |
+|---|---|---|
+| Small bug (`gym_small_bug.tscn`) | any accepted hit kills | 55% size, 4.5 m/s pursuit, 0.35 s wind-up, 11 m/s lunge for 0.16 s, 10 damage |
+| Regular bug (`gym_bug.tscn`) | 150 HP, 6 body hits | 3.3 m/s pursuit, 0.55 s wind-up, 10 m/s lunge for 0.25 s, 20 damage |
+| Spitter (`gym_spitter.tscn`) | 150 HP, 6 body or 2 mouth hits | half-second charge, 35 m/s spit |
+
+- **Reload pressure is arithmetic, not difficulty.** Three smalls, two regulars and a spitter cost at least 17
+  pistol hits against a 12-round magazine and a 1.4 s reload. Small pursuit (4.5 m/s) beats ADS walking (3 m/s) and
+  loses to walking (5 m/s), which gives a reason to drop ADS and retreat. The user still backpedalled comfortably when
+  there was ample retreat space. Retreat space sets the pressure as much as the pack does.
+- **Rear ambushes** need:
+  - an audible grate or bug warning
+  - separation and emergence time for a response
+  - one activation per encounter
+  - 3 m spawn separation, occupied-spawn retry and pending-spawn cancellation on reset
+
+  The user rejected a doorway trigger, because the player can engage and backpedal before entering. Use a blind 90°
+  reveal, a trigger before it, and a delayed burst: 1.75 s, then the spawn 0.35 s later.
+- **Timing:** an encounter runs from its trigger to its last kill. Total active time is the union of overlapping
+  encounters, never their sum, and quiet time includes pauses. Keep each quiet gap. Automated kills are never human
+  encounter durations.

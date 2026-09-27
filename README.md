@@ -5,34 +5,34 @@ A crunchy sci-fi shooter set at an industrial plant on Mars during an alien take
 ## Workspace
 
 - `AGENTS.md`: project instructions and development rules.
-- `docs/`: premise, decisions, and level planning.
-- [Future Refinements](docs/future-refinements.md): ideas and improvements to revisit after prototyping.
-- `RedBreach/project.godot`: the existing Godot project.
+- `docs/`: premise, decisions, level plans and build records. Start with the [project brief](docs/project-brief.md)
+  and the [architecture language](docs/architecture-language.md).
+- `tools/`: plan, generator, drawing and check scripts (Python 3), and the `rebuild-*.ps1` build and validation scripts.
+- `playtests/`: notes left during runs (Q in game); see [playtest notes](docs/playtest-notes.md).
+- [Future refinements](docs/future-refinements.md): ideas and improvements to revisit.
+- `RedBreach/project.godot`: the Godot 4.7 project.
 
-Open this repository root in Codex. Open `RedBreach/project.godot` in Godot.
+Open `RedBreach/project.godot` in Godot. The version starts at `0.0.001`, and every commit increments the final
+component; see `AGENTS.md`.
 
-The initial project version is `0.0.001`. Every subsequent commit increments the final version component by one; see `AGENTS.md` for the convention.
+## Play
 
-Plan levels on paper as top-down 2D layouts with story beats, objectives, encounters, and items before building them in 3D. Start with a small TrenchBroom integration test.
+F5 runs the main scene, **freight v2** ([build record](docs/freight-v2-build.md),
+[walkthrough](docs/freight-v2-walkthrough.md)). From any level:
 
-## Test gym
+| Key | Opens |
+|---|---|
+| F1 | Movement gym: jumps, runway, crouch tunnels, the door module ([first test plan](docs/first-test-plan.md)) |
+| F2 | Combat gym: the melee bug, the spitter and pickups ([combat gym](docs/combat-gym.md)) |
+| F9 | Style lab: looks, palettes, lighting and presentation ([style lab](docs/style-lab.md)) |
+| F10 | Kit lab: corridor profiles, junctions, doors and a hall ([kit sheet](docs/kit-sheet.md)) |
+| F11 | Freight v2 |
 
-Press F5 in Godot to play the [Encounter Route Test](docs/encounter-route-test.md): a measured 114 m route with three occupied rooms, two hallway vent ambushes and a delayed rear hatch in encounter D. F4 compares empty-route and combat runs; Backspace repeats. F1 opens the movement gym, F2 the original [Combat Gym](docs/combat-gym.md), and F3 the route test. See the [approved top-down plan](docs/gym-plan.svg), [gym scope](docs/first-test-plan.md), and [TrenchBroom workflow](docs/trenchbroom-workflow.md).
+WASD moves, Shift sprints, Ctrl crouches, Space jumps, LMB fires, RMB aims, R reloads and E uses. Backspace resets,
+and Esc releases the mouse. **Q** leaves a playtest note and **Z** marks z-fighting.
 
-The editable map is `RedBreach/maps/gym_01.map`; the playable saved scene is `RedBreach/gym/gym.tscn`.
+## Build
 
-The 2.0 m doorway now has a [State Charts door and two switches](docs/gym-door-module.md). Aim at a switch within 2 m and press E.
-
-The [door/stair playtest notes](docs/gym-playtest-02.md) cover confirmed door behavior and stair descent. [Blockout texture notes](docs/blockout-textures.md) record the supplied Kenney grids and their map scale.
-
-The [movement annex](docs/gym-movement-plan.md) has passed the user's first playtest. From spawn, turn left through the new west opening. Test the 2/3/4/5 m jump gaps, 20 m timed runway, and crouch tunnels. Hold Ctrl to crouch; failed gap attempts return to that lane, while Backspace returns to the original spawn. See [annex playtest notes](docs/gym-playtest-03.md) for checks and measured results.
-
-The high-jump blocks now sit along the south wall opposite the long-jump approaches. The [alteration plan and results](docs/gym-alteration-plan.md) record verified source edits, collision, labels, and repeated build/save/reload. The TrenchBroom UI step remains untested because desktop control could not start. The relocation is included with the pistol in local version `0.0.004` (Weapons).
-
-The [first pistol](docs/pistol-gym.md) is playable in the existing target lane: left click fires, hold right mouse for ADS, R reloads, and Backspace resets/refills the gym. Targets have health and recover automatically. The [approved Combat Gym layout](docs/combat-gym-plan.svg) is now built as a separate map: player damage/death, useful-only pickups, a StateCharts bug with a dodgeable lunge, and green hit/death splatters. See the [playtest route and build instructions](docs/combat-gym.md).
-
-The [larger spitter](docs/spitter.md) is available from the orange arena panel. Its half-second mouth-opening wind-up exposes a weak point, and its fast 35 m/s spit makes it a priority target. Two mouth hits or six body hits kill it.
-
-All three gyms now use the supplied [Kenney grids at their printed 1 m scale](docs/blockout-textures.md). [Level structure discussion](docs/level-structure-notes.md) records the proposal for objective branches, loops, shortcuts and measured pacing before level one.
-
-The [enemy mix experiment](docs/bug-mix.md) adds one-hit small bugs, raises regular melee health to 150, and puts three smalls, two regulars and one spitter in route encounter D. Use F3/F5 to test route revision 04: the [blind corner and rear hatch](docs/rear-hatch-plan.md) start D before its room becomes visible. The same six enemies arrive from two directions; the front five now start deeper in D to leave room to read the fight. Movement, pistol and hatch timing stay the same.
+Edit maps in TrenchBroom ([workflow](docs/trenchbroom-workflow.md)), then rebuild and validate with the matching
+script, for example `tools/rebuild-freight-v2.ps1 -Validate`. Levels are planned on paper first: a walkthrough, then a
+top-down 2D plan, then the 3D build.
