@@ -16,6 +16,14 @@ if ($Validate) {
     # The generic, marker-driven validator: any map validates by placing markers.
     $checks += ,@('res://tools/validate_markers.gd', 'freight_v2_qa.log', '400000', '^MARKER_QA: \d+ checks; 0 failures$', @('--', 'res://missions/freight_v2/freight_v2.tscn'))
 }
+if ($Validate) {
+    # The source map must be sealed (no air path to the void) and is checked for visible z-fighting. Reads the map as
+    # edited, so it covers TrenchBroom hand edits too. A leak fails the rebuild; z-fighting is reported.
+    $zf = & python (Join-Path $PSScriptRoot 'check-map-zfight.py') (Join-Path $projectDir 'maps/freight_v2_01.map') --limit 12
+    $zf | ForEach-Object { Write-Output $_ }
+    if ($LASTEXITCODE -ne 0) { throw "check-map-zfight.py failed" }
+    if ($zf | Select-String -Pattern '^LEAK \d+:' -Quiet) { throw "freight_v2_01.map leaks into the void; see the LEAK lines" }
+}
 foreach ($entry in $checks) {
     $logPath = Join-Path $projectDir ('.godot\' + $entry[1])
     $runArgs = @('--path', ('"' + $projectDir + '"'), '--log-file', ('"' + $logPath + '"'), '--script', $entry[0], '--fixed-fps', '120', '--quit-after', $entry[2]) + $entry[4]

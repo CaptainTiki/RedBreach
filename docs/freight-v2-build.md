@@ -12,6 +12,7 @@ adjusted without rebuilding everything (see "Editing one room").
 - **P** switches presentation (off / subtle).
 - **Backspace** returns you to the airlock and resets the timer.
 - **E** climbs a ladder, up from the bottom or down from the top.
+- **Q** leaves a playtest note at the crosshair; **Z** marks z-fighting. See [playtest-notes.md](playtest-notes.md).
 
 ![Player-eye views](freight-v2-built.png)
 
@@ -22,6 +23,7 @@ adjusted without rebuilding everything (see "Editing one room").
 | `tools/freight_v2.py` | The plan: the single source of truth, including the 3D build data at its end (ceilings, blocker heights, door sizes, ladder facings, lighting, capture views). |
 | `tools/bootstrap-freight-v2.py` | **One-time** generator of `RedBreach/maps/freight_v2_01.map`. It refuses to overwrite; `--overwrite` regenerates everything; `--room KEY` regenerates one room in place. Never part of a rebuild. |
 | `tools/polykit.py` | 2D polygon kit: convex decomposition and convex subtraction (walls with openings, floors with pits). |
+| `tools/check-map-zfight.py` | Leaks and visible z-fighting in the map as edited; part of `-Validate`. See [playtest-notes.md](playtest-notes.md). |
 | `RedBreach/maps/freight_v2_01.map` | **The editable source** (TrenchBroom) once generated. |
 | `tools/write-freight-v2-scene.py` | Writes the scene shell: environment, navigation node, level script, player with its climb chart, capture views. Rewriting it clears the built geometry, so rebuild after it. |
 | `tools/rebuild-freight-v2.ps1 -Validate` | Import, build, bake navigation, then run the marker validator. |
@@ -29,8 +31,10 @@ adjusted without rebuilding everything (see "Editing one room").
 | `RedBreach/tools/capture_freight_v2.gd` | The 27-view sheet `docs/freight-v2-built.png` (run without `--headless`). |
 | `RedBreach/mapping/fgd/rb_light.*`, `rb_ladder.*` | New map entities: an omni light, and a climbable ladder that uses the freight player's ClimbChart. |
 
-**Expected counts on any machine** (after `--import`):
-- `FREIGHT_V2_BUILD: 1002 brushes; 174 lights; 5 ladders; 671 navigation polygons; save=0`
+**Expected counts on any machine** (after `--import`), since the z-fighting pass:
+- `LEAK: none, the level is sealed`
+- `ZFIGHT: ... 0 VISIBLE, 0.0 m2`
+- `FREIGHT_V2_BUILD: 1014 brushes; 174 lights; 5 ladders; 658 navigation polygons; save=0`
 - `MARKER_QA: 631 checks; 0 failures`
 
 ## What G-01 is
@@ -127,3 +131,52 @@ floor.
   - `oneway` routes are walked forward only.
   - Shapes and meshes owned by scripted entities (ladders) are not counted as
     brushes.
+
+## Z-fighting and leaks, pass 1
+
+The user's first walk (189 s, 656 m) found many flickering surfaces. The new check
+(`tools/check-map-zfight.py`) measured **1,122 visible z-fighting pairs (1,605 m²) and 35 leaks** into the void.
+Each came from a generator rule, so each rule was fixed once, not each spot. The result is **1 pair (0.05 m²) and
+no leaks**, with the routes, light floor and gym validation unchanged.
+
+**Rules, now in `tools/bootstrap-freight-v2.py`:**
+
+- **Walls sample the floor densely.** A wall's height range is sampled every 0.25 m. It never stops above the room's
+  base floor, and reaches down into pits and channels along it. One sample on a stair or platform had lifted
+  walls off the floor, leaving the biggest leaks.
+- **A wall's top follows what overlaps its own footprint,** worked out 0.25 m at a time:
+  - A room stacked across the edge caps the wall: the booth notch under Logistics.
+  - A room beneath raises the wall to its roof: Logistics' east wall stands to the Sorting Bay's ceiling.
+  - Short end runs merge into their neighbour where a corner's mitre cuts back further than the run is long.
+- **Corners are mitred as one chain**, within a room and across rooms (the dock's north wall meeting the truck bay's
+  east wall). Two walls meet on the corner's bisector instead of overlapping, which made every inside corner flicker.
+- **Rooms exactly one wall apart share one wall**, filling the gap: pump room and filter room, secret closet and
+  pipe bay.
+- **The junction rule, built:** a corridor mouth cuts the room wall to the corridor's OUTER shell. The corridor's
+  own pieces fill the wall's thickness up to the room face, so the portal frame is the corridor's profile.
+  - At a **door**, the corridor's walls and ceiling stop at the wall's outer face.
+  - A door-wide **threshold** slab runs under the door, and the door hole starts at the threshold's underside.
+- **Side openings** (the pipe bay off the pipe run): the corridor's pieces are clipped at the room's edge, and the
+  room's wall there is left to the corridor. A room wall lying inside a parallel corridor's shell is also left to
+  the corridor.
+- **Nothing lies on a floor.** Things stop where the surface above them starts:
+  - pit, lane and channel walls stop at the surrounding floor's underside
+  - blockers stand on the lowest floor under them
+  - anything under a deck stops at the deck's underside (the supervisor cage under the archive)
+  - bulkheads sit on the lower ceiling slab
+  - ladder shafts stop under the floor they rise through
+  - box corridors have a full-width ceiling over walls that start on the floor slab
+- **Shared-wall doorways stand on the floors**, which meet under the wall. A door exactly as tall as the room beside
+  it runs up through that ceiling slab and meets it flush (door 1 and the secret closet).
+- **A crawl under a room** (the pipe gallery under the pump room) uses that room's floor as its ceiling.
+- **Catwalks** are a deck with rails inside rooms and an enclosed box between them. The catwalk had been open above
+  the dock.
+- **`outside_intervals`** judges each step by its midpoint and finds the switch points by bisection. A point on a
+  wall that two rooms share is never "outside", which had made a 0.1 m sliver of catwalk shell at the sorting bay's
+  edge.
+
+- **Platforms and ceilings stop at the face of a shared wall** (`shared_strips`): a centred wall stands a quarter
+  metre into each room. A platform or ceiling running under it put its edge face on the plane of the wall's end,
+  where they flicker: the S1 landing at the dock edge (the user's first Z mark) and the truck bay's ceiling lip.
+
+Result: **0 visible pairs, sealed**, 1,014 brushes, and the routes and light floor unchanged.

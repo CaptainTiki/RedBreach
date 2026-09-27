@@ -2,6 +2,7 @@ extends Node3D
 ## Freight access v2, G-01 greybox: the empty walk.
 ## The timer starts when you first move and stops when you reach the lift, so the empty walk can be measured.
 ##   P  presentation off / subtle;  Backspace  back to the airlock (resets the timer)
+##   Q  playtest note, Z  quick z-fight mark (the PlaytestNotes autoload; each note carries the run time and distance)
 
 @export var env_levels: Array[Environment] = []
 @export var presentation: int = 1
@@ -23,8 +24,9 @@ func _ready() -> void:
 	var layer := CanvasLayer.new()
 	layer.name = "CanvasLayer"
 	layer.layer = 10
-	_label = _make_label(Vector2(16, 12), 18)
-	_notice = _make_label(Vector2(16, 44), 20)
+	# Under the player's own title and key help.
+	_label = _make_label(Vector2(16, 186), 18)
+	_notice = _make_label(Vector2(16, 216), 20)
 	_label.name = "Label"
 	_notice.name = "Notice"
 	layer.add_child(_label)
@@ -59,11 +61,14 @@ func _physics_process(delta: float) -> void:
 		if Vector2(at.x, -at.z).distance_to(finish) < 2.5:
 			_finished = true
 			notice("Lift reached: %.1f s, %.0f m" % [_elapsed, _distance])
+			var notes := get_node_or_null("/root/PlaytestNotes")
+			if notes:
+				notes.event("finish", playtest_stats())
 	if _notice_time > 0.0:
 		_notice_time -= delta
 		if _notice_time <= 0.0:
 			_notice.text = ""
-	_label.text = "FREIGHT V2 G-01 | %s %.1f s  %.0f m | presentation: %s   [P present  Backspace restart]" % [
+	_label.text = "FREIGHT V2 G-01 | %s %.1f s  %.0f m | presentation: %s   [P present  Backspace restart  Q note  Z z-fight]" % [
 		"FINISHED" if _finished else "time", _elapsed, _distance, ["off", "subtle"][presentation]]
 
 func notice(text: String) -> void:
@@ -71,7 +76,14 @@ func notice(text: String) -> void:
 	_notice.text = text
 	_notice_time = 4.0
 
+## What a playtest note records about the run.
+func playtest_stats() -> Dictionary:
+	return {"elapsed": snappedf(_elapsed, 0.1), "distance": snappedf(_distance, 0.1), "started": _started, "finished": _finished}
+
 func reset_encounter() -> void:
+	var notes := get_node_or_null("/root/PlaytestNotes")
+	if notes and _started:
+		notes.event("restart", playtest_stats())
 	_started = false
 	_finished = false
 	_elapsed = 0.0

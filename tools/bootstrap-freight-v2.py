@@ -203,6 +203,21 @@ def corr_section(prof):
     return w / 2, h
 
 
+def corr_shell(prof):
+    """(half width, top above the floor) of a corridor's OUTER shell: what it fills where it passes through a wall."""
+    if prof in ('P1', 'P2'):
+        return S.SHELL_X, S.SHELL_TOP
+    hw, h = corr_section(prof)
+    wt = 0.25 if prof == 'crawl' else F.WALL_T
+    return hw + wt, h + wt
+
+
+def door_at(pt):
+    """The door (not sealed) standing where a corridor meets a room, if any."""
+    d = next((d for d in F.DOORS if math.dist(d[1], pt) < 0.6 and d[2] in F.DOOR_SIZE), None)
+    return d if d and not d[0].startswith(F.SEALED) else None
+
+
 def profile_section(prof):
     """The corridor's clear outline (v, h), convex: the main wall line carried down to the floor and up to the ceiling."""
     main = [sg for sg in S.PROFILES[prof]['segments'] if sg[2] != 'plinth']
@@ -219,6 +234,32 @@ def in_any_room(pt, margin=0.0):
 # ================================================================================
 # Floors, levels, stairs, ceilings
 # ================================================================================
+def shared_strips(r):
+    """This room's half of every centred wall it shares with another room (open edges have none): the strip a platform
+    must stop short of, or its edge face lies on the plane of the wall's end and the two flicker (the S1 landing)."""
+    open_pairs = {frozenset(p_) for p_ in F.OPEN_EDGES}
+    out = []
+    poly = r['poly']
+    for i in range(len(poly)):
+        a, b = poly[i], poly[(i + 1) % len(poly)]
+        L = math.dist(a, b)
+        ux, uy = (b[0] - a[0]) / L, (b[1] - a[1]) / L
+        inward = (-uy, ux)
+        for o in ROOMS.values():
+            if o is r or frozenset((r['key'], o['key'])) in open_pairs:
+                continue
+            op = o['poly']
+            for j in range(len(op)):
+                ov = collinear_overlap(a, b, op[j], op[(j + 1) % len(op)])
+                if ov and ov[1] - ov[0] > 1e-6:
+                    p0 = (a[0] + ux * ov[0], a[1] + uy * ov[0])
+                    p1 = (a[0] + ux * ov[1], a[1] + uy * ov[1])
+                    h = F.WALL_T / 2
+                    out.append(P.ccw([p0, p1, (p1[0] + inward[0] * h, p1[1] + inward[1] * h),
+                                      (p0[0] + inward[0] * h, p0[1] + inward[1] * h)]))
+    return out
+
+
 def build_floor(r):
     look(r['look'])
     org = GP(r['poly'][0][0], r['poly'][0][1], r['floor'])
@@ -242,8 +283,7 @@ def build_floor(r):
             for part in P.subtract_all(P.convex_parts(lv['poly']), sub):
                 prism(part, lv['h'] - F.FLOOR_T, lv['h'], top_tex(R('floor'), R('plinth')), f"{r['key']} {lv['name']} floor",
                       tally='floor', uv_origin=org)
-            if lv['kind'] == 'pit':
-                pit_walls(r, lv['poly'], lv['h'] - F.FLOOR_T, r['floor'], f"{r['key']} {lv['name']} wall")
+            pit_walls(r, lv['poly'], lv['h'] - F.FLOOR_T, r['floor'] - F.FLOOR_T, f"{r['key']} {lv['name']} wall")
         elif lv['kind'] == 'deck':
             for part in P.convex_parts(lv['poly']):
                 prism(part, lv['h'] - F.DECK_T, lv['h'], top_tex(R('floor'), R('frame')), f"{r['key']} {lv['name']} deck",
@@ -251,8 +291,8 @@ def build_floor(r):
         elif lv['kind'] == 'feature':
             for part in P.convex_parts(lv['poly']):
                 prism(part, r['floor'], lv['h'], top_tex(R('grate'), R('frame')), f"{r['key']} {lv['name']}", tally='floor')
-        else:  # a solid platform, from the floor up
-            for part in P.convex_parts(lv['poly']):
+        else:  # a solid platform, from the floor up, stopping at the face of a wall it shares with another room
+            for part in P.subtract_all(P.convex_parts(lv['poly']), shared_strips(r)):
                 prism(part, r['floor'] - F.FLOOR_T, lv['h'], top_tex(R('floor'), R('plinth')), f"{r['key']} {lv['name']}",
                       tally='platform', uv_origin=org)
     for hz in r['hazards']:
@@ -260,7 +300,7 @@ def build_floor(r):
         bottom = pit['h'] - 0.5
         for part in P.convex_parts(hz['poly']):
             prism(part, bottom - F.FLOOR_T, bottom, top_tex(R('coolant'), R('plinth')), f"{r['key']} {hz['name']}", tally='floor')
-        pit_walls(r, hz['poly'], bottom - F.FLOOR_T, pit['h'], f"{r['key']} {hz['name']} wall", within=pit['poly'])
+        pit_walls(r, hz['poly'], bottom - F.FLOOR_T, pit['h'] - F.FLOOR_T, f"{r['key']} {hz['name']} wall")
     for br in r['bridges']:
         for part in P.convex_parts(br['poly']):
             prism(part, br['h'] - 0.5, br['h'], top_tex(R('grate'), R('frame')), f"{r['key']} {br['name']}", tally='deck')
@@ -269,17 +309,25 @@ def build_floor(r):
             rail(min(xs), y, max(xs), y, br['h'], br['h'], f"{r['key']} bridge rail")
 
 
-def pit_walls(r, poly, h0, h1, name, within=None):
-    """Walls round a sunken area, along its edges that are not the room's own walls, standing under the floor around it."""
+def pit_walls(r, poly, h0, h1, name):
+    """Walls round a sunken area (a pit, a lower lane, a channel in a pit floor), along its edges that are not the
+    room's own walls. They stand under the floor around it and stop at that floor's underside (h1): the floor slab
+    finishes the step, so no wall face lies on the floor and flickers. A stair against an edge keeps its way down."""
     look(r['look'])
-    boundary = within or r['poly']
     n = len(poly)
     for i in range(n):
         a, b = poly[i], poly[(i + 1) % n]
         mid = ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
-        if P.edge_dist(mid, boundary) < 0.05:
+        if P.edge_dist(mid, r['poly']) < 0.05:
             continue
-        wall_piece(a, b, h0, h1, 'out', R('plinth'), R('plinth'), name, openings=wall_openings(a, b, 'pit'))
+        cuts = wall_openings(a, b, 'pit')
+        for st in r['stairs']:
+            sp = st['poly']
+            for j in range(len(sp)):
+                ov = collinear_overlap(a, b, sp[j], sp[(j + 1) % len(sp)])
+                if ov and ov[1] - ov[0] > 1e-6:
+                    cuts.append([(ov[0], h0 - 1), (ov[1], h0 - 1), (ov[1], h1 + 1), (ov[0], h1 + 1)])
+        wall_piece(a, b, h0, h1, 'out', R('plinth'), R('plinth'), name, openings=cuts)
 
 
 def build_stairs(r):
@@ -312,6 +360,7 @@ def build_ceiling(r):
     holes = []
     for poly in above:
         holes += P.convex_parts(poly)
+    holes += shared_strips(r)     # the shared walls rise past the ceiling: it stops at their face, like a platform
     c = F.CEILINGS[r['key']]
     regions = [(None, c)] if isinstance(c, (int, float)) else c
     for part in P.subtract_all([list(p) for p in r['parts']], holes):
@@ -334,7 +383,7 @@ def build_ceiling(r):
                         pa1 = (a[0] + (b[0] - a[0]) * s1 / L, a[1] + (b[1] - a[1]) * s1 / L)
                         mid = ((pa0[0] + pa1[0]) / 2, (pa0[1] + pa1[1]) / 2)
                         if P.inside(mid, r['poly']) and P.edge_dist(mid, r['poly']) > 0.05:
-                            wall_piece(pa0, pa1, min(ha, hb), max(ha, hb) + F.CEIL_T, 'centre', R('wall'), R('wall'),
+                            wall_piece(pa0, pa1, min(ha, hb) + F.CEIL_T, max(ha, hb) + F.CEIL_T, 'centre', R('wall'), R('wall'),
                                        f"{r['key']} ceiling bulkhead")
 
 
@@ -355,6 +404,17 @@ def collinear_overlap(a, b, c, d):
 # ================================================================================
 # Walls, with openings
 # ================================================================================
+def door_ceilings(pt, normal):
+    """The ceiling heights either side of a wall at pt."""
+    hs = []
+    for sgn in (1, -1):
+        q = (pt[0] + normal[0] * 0.45 * sgn, pt[1] + normal[1] * 0.45 * sgn)
+        for r in ROOMS.values():
+            if P.inside(q, r['poly']):
+                hs.append(ceiling_at(r, q))
+    return hs
+
+
 def door_floor(pt, normal):
     """The floor height a door stands on: the higher floor either side of the wall at pt."""
     hs = []
@@ -393,13 +453,17 @@ def wall_openings(a, b, owner_kind):
                 door_used.add(door[0])
                 if door[0].startswith(F.SEALED):
                     continue
+                # The corridor's floor runs under the wall to the room face and is the threshold, so the hole starts
+                # at its underside: no wall stub lies on the floor and flickers.
                 w, hh = F.DOOR_SIZE[door[2]]
-                out.append([(s - w / 2 / sin, h), (s + w / 2 / sin, h), (s + w / 2 / sin, h + hh), (s - w / 2 / sin, h + hh)])
-            elif c['prof'] in ('P1', 'P2'):
-                out.append([(s + v / sin, h + hh) for v, hh in profile_section(c['prof'])])
+                b0 = h - F.FLOOR_T
+                out.append([(s - w / 2 / sin, b0), (s + w / 2 / sin, b0), (s + w / 2 / sin, h + hh), (s - w / 2 / sin, h + hh)])
             else:
-                hw, hh = corr_section(c['prof'])
-                out.append([(s - hw / sin, h), (s + hw / sin, h), (s + hw / sin, h + hh), (s - hw / sin, h + hh)])
+                # The junction rule: the corridor meets the room through its own profile. The wall is cut to the
+                # corridor's outer shell and the corridor's pieces fill the wall's thickness up to the room face.
+                W, top = corr_shell(c['prof'])
+                b0 = h - F.FLOOR_T
+                out.append([(s - W / sin, b0), (s + W / sin, b0), (s + W / sin, h + top), (s - W / sin, h + top)])
     # Doors and windows that are not corridor mouths.
     for name, pt, kind in F.DOORS:
         if name in door_used or name.startswith(F.SEALED) or kind not in F.DOOR_SIZE:
@@ -409,9 +473,18 @@ def wall_openings(a, b, owner_kind):
         s = (pt[0] - a[0]) * ux + (pt[1] - a[1]) * uy
         w, hh = F.DOOR_SIZE[kind]
         h0 = door_floor(pt, normal)
+        b0 = h0 - F.FLOOR_T if owner_kind == 'shared' and kind != 'window' else h0   # both floors run to the line
+        top = h0 + hh
         if kind == 'window':
             h0 += F.WINDOW_SILL
-        out.append([(s - w / 2, h0), (s + w / 2, h0), (s + w / 2, h0 + hh), (s - w / 2, h0 + hh)])
+            b0 = h0
+            top = h0 + hh
+        # A door as tall as the room beside it would put its lintel's underside on that ceiling's underside (they
+        # flicker); the opening then runs up through the ceiling slab, and the ceiling meets the door flush.
+        for c in door_ceilings(pt, normal):
+            if abs(top - c) < 0.01:
+                top = c + F.CEIL_T
+        out.append([(s - w / 2, b0), (s + w / 2, b0), (s + w / 2, top), (s - w / 2, top)])
     # Explicit openings.
     for oa, ob, bottom, top in F.OPENING_3D:
         ov = collinear_overlap(a, b, oa, ob)
@@ -420,7 +493,8 @@ def wall_openings(a, b, owner_kind):
         mid = ((oa[0] + ob[0]) / 2, (oa[1] + ob[1]) / 2)
         h0 = bottom if bottom is not None else door_floor(mid, normal)
         h1 = top if (top is not None and bottom is not None) else h0 + (top if top is not None else F.DEFAULT_OPENING_H)
-        out.append([(ov[0], h0), (ov[1], h0), (ov[1], h1), (ov[0], h1)])
+        b0 = h0 - F.FLOOR_T if owner_kind == 'shared' and bottom is None else h0
+        out.append([(ov[0], b0), (ov[1], b0), (ov[1], h1), (ov[0], h1)])
     # The fan: stopped, so a crouch-through hole.
     fa, fb = F.FAN_HOLE['room_edge']
     ov = collinear_overlap(a, b, fa, fb)
@@ -449,9 +523,11 @@ def seg_intersection(a, b, p, q):
     return s, max(0.0, min(1.0, t))
 
 
-def wall_piece(a, b, h0, h1, side, tex_low, tex_high, name, openings=(), band=None, origin=None):
+def wall_piece(a, b, h0, h1, side, tex_low, tex_high, name, openings=(), band=None, origin=None, mitre=(0.0, 0.0)):
     """A wall along a-b from h0 to h1 with openings cut out. side: 'out' (right of a->b, i.e. outside a CCW room),
-    'centre' (straddling the line) or 'in'. band: the height where tex_low gives way to tex_high."""
+    'centre' (straddling the line) or 'in'. band: the height where tex_low gives way to tex_high. mitre: tan of half
+    the turn at a and at b; the wall's far face runs on (or stops short) by that much per metre of thickness, so two
+    walls meet on the corner's bisector instead of leaving a notch or overlapping."""
     L = math.dist(a, b)
     if L < 0.01 or h1 - h0 < 0.01:
         return
@@ -473,92 +549,259 @@ def wall_piece(a, b, h0, h1, side, tex_low, tex_high, name, openings=(), band=No
         for part in P.subtract_all([piece_rect], holes):
             pts = []
             for s, h in part:
-                x, y = a[0] + ux * s, a[1] + uy * s
                 for off in (o0, o1):
+                    sm = s - off * mitre[0] if abs(s) < 1e-6 else (s + off * mitre[1] if abs(s - L) < 1e-6 else s)
+                    x, y = a[0] + ux * sm, a[1] + uy * sm
                     pts.append((x + nx * off, y + ny * off, h))
             hullp(pts, tex, name, tally='wall', uv_origin=GP(org[0], org[1], h0))
 
 
+def edge_span(r, a, b, inward, off=0.3):
+    """Lowest floor and highest ceiling along a room edge, sampled every 0.25 m just inside it. Never above the room's
+    base floor: a stair or platform against a wall must not lift the wall off the floor, or the level leaks under it."""
+    L = math.dist(a, b)
+    n = max(2, int(L / 0.25))
+    lo, hi = r['floor'], -1e9
+    for i in range(n + 1):
+        t = min(max(i / n, 0.02), 0.98)
+        q = (a[0] + (b[0] - a[0]) * t + inward[0] * off, a[1] + (b[1] - a[1]) * t + inward[1] * off)
+        h = level_floor(r, q)
+        if any(P.inside(q, hz['poly']) for hz in r['hazards']):
+            h -= 0.5
+        lo = min(lo, h)
+        hi = max(hi, ceiling_at(r, q))
+    return lo, hi
+
+
+def turn_tan(poly, i):
+    """tan of half the turn at vertex i (positive at a convex corner of a CCW polygon)."""
+    a, b, c = poly[i - 1], poly[i], poly[(i + 1) % len(poly)]
+    d1 = (b[0] - a[0], b[1] - a[1])
+    d2 = (c[0] - b[0], c[1] - b[1])
+    return math.tan(math.atan2(d1[0] * d2[1] - d1[1] * d2[0], d1[0] * d2[0] + d1[1] * d2[1]) / 2)
+
+
+def gap_overlap(a, b, c, d):
+    """Overlap along a-b of an edge c-d of another room that faces it exactly one wall thickness outside it."""
+    L = math.dist(a, b)
+    ux, uy = (b[0] - a[0]) / L, (b[1] - a[1]) / L
+    nx, ny = uy, -ux                                   # outward (right of a->b)
+    for q in (c, d):
+        if abs((q[0] - a[0]) * nx + (q[1] - a[1]) * ny - F.WALL_T) > 1e-6:
+            return None
+    if (d[0] - c[0]) * ux + (d[1] - c[1]) * uy >= 0:
+        return None
+    tc = (c[0] - a[0]) * ux + (c[1] - a[1]) * uy
+    td = (d[0] - a[0]) * ux + (d[1] - a[1]) * uy
+    return P.overlap_1d(0, L, tc, td)
+
+
+def side_openings():
+    """Room openings that a corridor passes ALONG (the pipe bay off the pipe run): the corridor's shell closes them."""
+    out = []
+    for oa, ob, bottom, otop in F.OPENING_3D:
+        ex, ey = ob[0] - oa[0], ob[1] - oa[1]
+        for c in CORRS:
+            hw, _ = corr_section(c['prof'])
+            W, _ = corr_shell(c['prof'])
+            for pa, pb in zip(c['path'], c['path'][1:]):
+                dx, dy = pb[0] - pa[0], pb[1] - pa[1]
+                Lc = math.hypot(dx, dy)
+                if abs(ex * dy - ey * dx) > 1e-6 * math.hypot(ex, ey) * Lc:
+                    continue
+                v = abs((oa[0] - pa[0]) * -dy / Lc + (oa[1] - pa[1]) * dx / Lc)
+                if hw - 0.3 <= v <= W + 0.3:
+                    out.append((oa, ob))
+    return out
+
+
 def build_walls():
-    """Every room edge: exterior (outward), shared (one centred wall per pair) or open (a riser and a bulkhead)."""
-    pieces = []  # (room_key, a, b, other_key or None)
+    """Every room edge: exterior (outward), shared (one centred wall per pair), gap (two rooms exactly one wall apart:
+    one wall fills the gap) or open (a riser and a bulkhead). Exterior walls meeting at a corner are mitred, so an
+    inside corner is not two overlapping walls whose faces flicker."""
+    edges = {}   # (key, i) -> list of (s0, s1, other, kind)
     for key, r in ROOMS.items():
         poly = r['poly']
         for i in range(len(poly)):
             a, b = poly[i], poly[(i + 1) % len(poly)]
             L = math.dist(a, b)
-            cuts = [(0.0, L, None)]
+            cuts = [(0.0, L, None, 'ext')]
             for ok, o in ROOMS.items():
                 if ok == key:
                     continue
                 op = o['poly']
                 for j in range(len(op)):
-                    ov = collinear_overlap(a, b, op[j], op[(j + 1) % len(op)])
-                    if ov:
-                        new = []
-                        for s0, s1, other in cuts:
-                            if other is not None:
-                                new.append((s0, s1, other))
-                                continue
-                            lo, hi = max(s0, ov[0]), min(s1, ov[1])
-                            if hi - lo < 1e-6:
-                                new.append((s0, s1, other))
-                                continue
-                            if lo - s0 > 1e-6:
-                                new.append((s0, lo, None))
-                            new.append((lo, hi, ok))
-                            if s1 - hi > 1e-6:
-                                new.append((hi, s1, None))
-                        cuts = new
-            for s0, s1, other in cuts:
-                pa = (a[0] + (b[0] - a[0]) * s0 / L, a[1] + (b[1] - a[1]) * s0 / L)
-                pb = (a[0] + (b[0] - a[0]) * s1 / L, a[1] + (b[1] - a[1]) * s1 / L)
-                pieces.append((key, pa, pb, other))
+                    c, d = op[j], op[(j + 1) % len(op)]
+                    kind, ov = 'shared', collinear_overlap(a, b, c, d)
+                    if not ov:
+                        kind, ov = 'gap', gap_overlap(a, b, c, d)
+                    if not ov:
+                        continue
+                    new = []
+                    for s0, s1, other, k in cuts:
+                        lo, hi = max(s0, ov[0]), min(s1, ov[1])
+                        if other is not None or hi - lo < 1e-6:
+                            new.append((s0, s1, other, k))
+                            continue
+                        if lo - s0 > 1e-6:
+                            new.append((s0, lo, None, 'ext'))
+                        new.append((lo, hi, ok, kind))
+                        if s1 - hi > 1e-6:
+                            new.append((hi, s1, None, 'ext'))
+                    cuts = new
+            edges[(key, i)] = cuts
+    sides = side_openings()
     open_pairs = {frozenset(p) for p in F.OPEN_EDGES}
-    for key, a, b, other in pieces:
+
+    # Exterior pieces meeting end to start are mitred as one chain, within a room (its corners) or across two
+    # (the dock's north wall meeting the truck bay's east wall): no overlapping walls, no notch.
+    ext = []
+    for (key, i), cuts in edges.items():
+        poly = ROOMS[key]['poly']
+        ea, eb = poly[i], poly[(i + 1) % len(poly)]
+        EL = math.dist(ea, eb)
+        for s0, s1, other, kind in cuts:
+            if other is None:
+                a = (ea[0] + (eb[0] - ea[0]) * s0 / EL, ea[1] + (eb[1] - ea[1]) * s0 / EL)
+                b = (ea[0] + (eb[0] - ea[0]) * s1 / EL, ea[1] + (eb[1] - ea[1]) * s1 / EL)
+                ext.append(dict(key=key, i=i, s0=s0, a=a, b=b, m=[0.0, 0.0]))
+    start_at = {}
+    for e in ext:
+        start_at.setdefault((round(e['a'][0], 4), round(e['a'][1], 4)), []).append(e)
+    for e in ext:
+        nxt = [f for f in start_at.get((round(e['b'][0], 4), round(e['b'][1], 4)), []) if f is not e]
+        if not nxt:
+            continue
+        f = next((f for f in nxt if f['key'] == e['key']), nxt[0])
+        d1 = (e['b'][0] - e['a'][0], e['b'][1] - e['a'][1])
+        d2 = (f['b'][0] - f['a'][0], f['b'][1] - f['a'][1])
+        th = math.atan2(d1[0] * d2[1] - d1[1] * d2[0], d1[0] * d2[0] + d1[1] * d2[1])
+        if abs(th) < math.radians(170):
+            e['m'][1] = f['m'][0] = math.tan(th / 2)
+    mitres = {(e['key'], e['i'], round(e['s0'], 6)): e['m'] for e in ext}
+    # Corridor shells that run ALONG a wall line (not through it): a room wall inside one is the corridor's.
+    shells = []
+    for c in CORRS:
+        W, top = corr_shell(c['prof'])
+        for (pa, ha), (pb, hb) in zip(zip(c['path'], c['heights']), zip(c['path'][1:], c['heights'][1:])):
+            for t0, t1 in ([(0.0, 1.0)] if c['prof'] == 'crawl' else outside_intervals(pa, pb)):
+                qa = (pa[0] + (pb[0] - pa[0]) * t0, pa[1] + (pb[1] - pa[1]) * t0)
+                qb = (pa[0] + (pb[0] - pa[0]) * t1, pa[1] + (pb[1] - pa[1]) * t1)
+                shells.append((qa, qb, W, min(ha, hb) - F.FLOOR_T, max(ha, hb) + top))
+
+    def in_shell(q, ux, uy, lo, hi):
+        for qa, qb, W, s_lo, s_hi in shells:
+            dx, dy = qb[0] - qa[0], qb[1] - qa[1]
+            Ls = math.hypot(dx, dy)
+            if Ls < 1e-6 or abs(ux * dy - uy * dx) > 1e-6 * Ls:
+                continue      # only a corridor parallel to the wall
+            t = ((q[0] - qa[0]) * dx + (q[1] - qa[1]) * dy) / Ls ** 2
+            if 0.0 <= t <= 1.0 and P.seg_dist(q, qa, qb) < W - 0.01 and s_lo <= lo + 1e-6 and hi <= s_hi + 1e-6:
+                return True
+        return False
+
+    for (key, i), cuts in edges.items():
         r = ROOMS[key]
-        L = math.dist(a, b)
-        ux, uy = (b[0] - a[0]) / L, (b[1] - a[1]) / L
-        inward = (-uy, ux)
-        samples = [(a[0] + (b[0] - a[0]) * t + inward[0] * 0.3, a[1] + (b[1] - a[1]) * t + inward[1] * 0.3)
-                   for t in (0.15, 0.5, 0.85)]
-        floor_in = min(level_floor(r, q) for q in samples)
-        ceil_in = max(ceiling_at(r, q) for q in samples)
-        look(r['look'])
-        if other is None:
-            bottom, top = floor_in - F.FLOOR_T, ceil_in + F.CEIL_T
-            # A room stacked above this wall's outside caps it (the booth notch under Logistics).
-            for q in samples:
-                qo = (q[0] - inward[0] * 0.6, q[1] - inward[1] * 0.6)
-                for o in ROOMS.values():
-                    if o is not r and P.inside(qo, o['poly']) and o['floor'] - F.FLOOR_T > bottom + 0.5:
-                        top = min(top, o['floor'] - F.FLOOR_T)
-            m.group(f'{key} walls')
-            wall_piece(a, b, bottom, top, 'out', R('plinth'), R('wall'), f'{key} wall',
-                       openings=wall_openings(a, b, 'room'), band=floor_in + S.PLINTH_H, origin=r['poly'][0])
-            continue
-        if key > other:
-            continue  # shared pieces are built once, from the first key
-        o = ROOMS[other]
-        mid = ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
-        qo = (mid[0] - inward[0] * 0.3, mid[1] - inward[1] * 0.3)
-        floor_o = level_floor(o, qo)
-        ceil_o = ceiling_at(o, qo)
-        name = f'{key}|{other} walls'
-        m.group(name)
-        if frozenset((key, other)) in open_pairs:
-            hi_r, lo_f, hi_f = (r, floor_o, floor_in) if floor_in > floor_o else (o, floor_in, floor_o)
-            side = 'in' if hi_r is r else 'out'
-            look(hi_r['look'])
-            wall_piece(a, b, lo_f - F.FLOOR_T, hi_f - F.FLOOR_T, side, R('plinth'), R('plinth'), f'{key}|{other} edge')
-            if abs(ceil_in - ceil_o) > 1e-6:
-                wall_piece(a, b, min(ceil_in, ceil_o), max(ceil_in, ceil_o) + F.CEIL_T, 'centre', R('wall'), R('wall'),
-                           f'{key}|{other} bulkhead')
-            continue
-        bottom = min(floor_in, floor_o) - F.FLOOR_T
-        top = max(ceil_in, ceil_o) + F.CEIL_T
-        wall_piece(a, b, bottom, top, 'centre', R('plinth'), R('wall'), f'{key}|{other} wall',
-                   openings=wall_openings(a, b, 'shared'), band=min(floor_in, floor_o) + S.PLINTH_H, origin=r['poly'][0])
+        poly = r['poly']
+        ea, eb = poly[i], poly[(i + 1) % len(poly)]
+        EL = math.dist(ea, eb)
+        for s0, s1, other, kind in cuts:
+            a = (ea[0] + (eb[0] - ea[0]) * s0 / EL, ea[1] + (eb[1] - ea[1]) * s0 / EL)
+            b = (ea[0] + (eb[0] - ea[0]) * s1 / EL, ea[1] + (eb[1] - ea[1]) * s1 / EL)
+            L = math.dist(a, b)
+            ux, uy = (b[0] - a[0]) / L, (b[1] - a[1]) / L
+            inward = (-uy, ux)
+            floor_in, ceil_in = edge_span(r, a, b, inward)
+            look(r['look'])
+            if other is None:
+                bottom = floor_in - F.FLOOR_T
+                m_a, m_b = mitres[(key, i, round(s0, 6))]
+                # What overlaps the wall's own footprint sets its top, 0.25 m at a time. A room stacked across the
+                # edge caps it (the booth notch under Logistics) or, lying under this room, raises it to its roof
+                # (Logistics' east wall stands to the Sorting Bay's ceiling). A side opening is left to the corridor.
+                n_s = max(1, int(round(L / 0.25)))
+                tops = []
+                for k in range(n_s):
+                    t = (k + 0.5) / n_s
+                    q = (a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t)
+                    if any(ov and ov[0] - 1e-6 <= (q[0] - oa[0]) * (ob[0] - oa[0]) / math.dist(oa, ob) + (q[1] - oa[1]) * (ob[1] - oa[1]) / math.dist(oa, ob) <= ov[1] + 1e-6
+                           for oa, ob in sides for ov in [collinear_overlap(oa, ob, a, b)]):
+                        tops.append(None)
+                        continue
+                    q_in = (q[0] + inward[0] * 0.3, q[1] + inward[1] * 0.3)
+                    q_wall = (q[0] - inward[0] * F.WALL_T / 2, q[1] - inward[1] * F.WALL_T / 2)
+                    if in_shell(q_wall, ux, uy, bottom, ceil_in + F.CEIL_T):
+                        tops.append(None)
+                        continue
+                    top = ceil_in + F.CEIL_T
+                    for o in ROOMS.values():
+                        if o is r:
+                            continue
+                        # A room stacked above caps the wall over its floor AND under its own walls' footprint.
+                        in_o = P.inside(q_wall, o['poly'])
+                        near = lambda q_: P.inside(q_, o['poly']) or P.edge_dist(q_, o['poly']) < F.WALL_T - 1e-6
+                        if near(q_wall) and near(q_in) and o['floor'] - F.FLOOR_T > bottom + 0.5:
+                            top = min(top, o['floor'] - F.FLOOR_T)
+                        elif in_o:
+                            top = max(top, ceiling_at(o, q_wall) + F.CEIL_T)
+                    tops.append(round(top, 4))
+                m.group(f'{key} walls')
+                runs, k0 = [], 0
+                for k in range(1, n_s + 1):
+                    if k == n_s or tops[k] != tops[k0]:
+                        runs.append([k0, k, tops[k0]])
+                        k0 = k
+                # A sharp corner's mitre cuts the far face back by -m * WALL_T; an end run shorter than that (the bit
+                # of wall that would have stood in the neighbouring room) is taken into the next run.
+                for end, m_ in ((0, m_a), (-1, m_b)):
+                    need = max(0.0, -m_) * F.WALL_T + 0.01
+                    while len(runs) > 1 and (runs[end][1] - runs[end][0]) * L / n_s < need and runs[end + (1 if end == 0 else -1)][2] is not None:
+                        nb = runs[end + (1 if end == 0 else -1)]
+                        if end == 0:
+                            nb[0] = runs[0][0]
+                            runs.pop(0)
+                        else:
+                            nb[1] = runs[-1][1]
+                            runs.pop()
+                for k0, k, top in runs:
+                    if top is None:
+                        continue
+                    pa = (a[0] + (b[0] - a[0]) * k0 / n_s, a[1] + (b[1] - a[1]) * k0 / n_s)
+                    pb = (a[0] + (b[0] - a[0]) * k / n_s, a[1] + (b[1] - a[1]) * k / n_s)
+                    wall_piece(pa, pb, bottom, top, 'out', R('plinth'), R('wall'), f'{key} wall',
+                               openings=wall_openings(pa, pb, 'room'), band=floor_in + S.PLINTH_H,
+                               origin=r['poly'][0], mitre=(m_a if k0 == 0 else 0.0, m_b if k == n_s else 0.0))
+                continue
+            if key > other:
+                continue  # shared and gap walls are built once, from the first key
+            o = ROOMS[other]
+            name = f'{key}|{other} walls'
+            m.group(name)
+            if kind == 'gap':
+                # Two rooms exactly one wall apart: a single wall fills the gap, covering both rooms' heights.
+                floor_o, ceil_o = edge_span(o, a, b, (-inward[0], -inward[1]), off=F.WALL_T + 0.3)
+                bottom = min(floor_in, floor_o) - F.FLOOR_T
+                top = max(ceil_in, ceil_o) + F.CEIL_T
+                ao = (a[0] - inward[0] * F.WALL_T, a[1] - inward[1] * F.WALL_T)
+                bo = (b[0] - inward[0] * F.WALL_T, b[1] - inward[1] * F.WALL_T)
+                holes = wall_openings(a, b, 'room') + wall_openings(ao, bo, 'room')
+                wall_piece(a, b, bottom, top, 'out', R('plinth'), R('wall'), f'{key}|{other} wall', openings=holes,
+                           band=min(floor_in, floor_o) + S.PLINTH_H, origin=r['poly'][0])
+                continue
+            floor_o, ceil_o = edge_span(o, a, b, (-inward[0], -inward[1]))
+            if frozenset((key, other)) in open_pairs:
+                hi_r, lo_f, hi_f = (r, floor_o, floor_in) if floor_in > floor_o else (o, floor_in, floor_o)
+                side = 'in' if hi_r is r else 'out'
+                look(hi_r['look'])
+                wall_piece(a, b, lo_f - F.FLOOR_T, hi_f - F.FLOOR_T, side, R('plinth'), R('plinth'), f'{key}|{other} edge')
+                if abs(ceil_in - ceil_o) > 1e-6:
+                    wall_piece(a, b, min(ceil_in, ceil_o) + F.CEIL_T, max(ceil_in, ceil_o) + F.CEIL_T, 'centre', R('wall'),
+                               R('wall'), f'{key}|{other} bulkhead')
+                continue
+            bottom = min(floor_in, floor_o) - F.FLOOR_T
+            top = max(ceil_in, ceil_o) + F.CEIL_T
+            wall_piece(a, b, bottom, top, 'centre', R('plinth'), R('wall'), f'{key}|{other} wall',
+                       openings=wall_openings(a, b, 'shared'), band=min(floor_in, floor_o) + S.PLINTH_H, origin=r['poly'][0])
     m.ungroup()
 
 
@@ -572,8 +815,11 @@ def blocker_height(name):
     return 1.0
 
 
+RAIL_POSTS = set()
+
+
 def rail(x0, y0, x1, y1, h0, h1, name):
-    """An open rail: posts every 2 m and a top rail."""
+    """An open rail: posts every 2 m and a top rail. Two rails meeting at a bend share their corner post."""
     L = math.hypot(x1 - x0, y1 - y0)
     if L < 0.2:
         return
@@ -581,6 +827,10 @@ def rail(x0, y0, x1, y1, h0, h1, name):
     for j in range(k + 1):
         t = j / k
         px, py, ph = x0 + (x1 - x0) * t, y0 + (y1 - y0) * t, h0 + (h1 - h0) * t
+        spot = (round(px, 1), round(py, 1), round(ph, 1))
+        if any(math.dist(spot, q) < 0.15 for q in RAIL_POSTS):
+            continue
+        RAIL_POSTS.add(spot)
         prism([(px - 0.05, py - 0.05), (px + 0.05, py - 0.05), (px + 0.05, py + 0.05), (px - 0.05, py + 0.05)],
               ph, ph + 1.05, R('frame'), f'{name} post', tally='rail')
     nx, ny = -(y1 - y0) / L * 0.05, (x1 - x0) / L * 0.05
@@ -588,15 +838,24 @@ def rail(x0, y0, x1, y1, h0, h1, name):
           + [(x1 + nx * s, y1 + ny * s, h1 + dh) for s in (-1, 1) for dh in (1.0, 1.1)], R('frame'), f'{name} top', tally='rail')
 
 
+def under_deck(r, poly, top):
+    """A deck over part of this footprint caps anything rising into it at the deck's underside."""
+    for lv in r['levels']:
+        if lv['kind'] == 'deck' and overlap_area(lv['poly'], poly) > 1e-3 and top > lv['h'] - F.DECK_T:
+            top = min(top, lv['h'] - F.DECK_T)
+    return top
+
+
 def build_blockers(r):
     look(r['look'])
-    bottom = room_bottom(r)
     for bl in r['blockers']:
         poly, name = bl['poly'], bl['name']
         c = (sum(p[0] for p in poly) / len(poly), sum(p[1] for p in poly) / len(poly))
         base = level_floor(r, c)
         h = blocker_height(name)
-        top = ceiling_at(r, c) if h == 'ceiling' else base + h
+        top = under_deck(r, poly, ceiling_at(r, c) if h == 'ceiling' else base + h)
+        # Stood on the lowest floor under it (a machine at a step reaches the lower floor), never sunk through a slab.
+        bottom = min([base] + [level_floor(r, (q[0] + (c[0] - q[0]) * 0.02, q[1] + (c[1] - q[1]) * 0.02)) for q in poly])
         tag = f"{r['key']} {name}"
         if name in F.ENTERABLE:
             # A fenced cage with its gate open (G-01): thin fence walls, a gap at the gate.
@@ -611,7 +870,11 @@ def build_blockers(r):
                     ops.append([(s - 0.7, base), (s + 0.7, base), (s + 0.7, base + 2.4), (s - 0.7, base + 2.4)])
                 if P.edge_dist(((a[0] + b[0]) / 2, (a[1] + b[1]) / 2), r['poly']) < 0.05:
                     continue      # the room's own wall
-                wall_piece(a, b, base, top, 'in', R('frame'), R('frame'), tag, openings=ops)
+                # Mitred where two fence walls meet, so a corner is not two overlapping walls.
+                own = [P.edge_dist(((poly[k][0] + poly[(k + 1) % n][0]) / 2, (poly[k][1] + poly[(k + 1) % n][1]) / 2), r['poly']) < 0.05
+                       for k in range(n)]
+                wall_piece(a, b, base, top, 'in', R('frame'), R('frame'), tag, openings=ops,
+                           mitre=(0.0 if own[i - 1] else turn_tan(poly, i), 0.0 if own[(i + 1) % n] else turn_tan(poly, (i + 1) % n)))
             continue
         if 'burst' in name or 'quarantine' in name or 'container' in name:
             tex = top_tex(R('machine_top'), R('door'))
@@ -660,12 +923,14 @@ def shaft_walls(name, rect, lo, hi, key):
     x0, x1, y0, y1 = min(xs), max(xs), min(ys), max(ys)
     t = 0.25
     m.group(f'{key} {ROOMS[key]["name"]}')
-    prism([(x0 - t, y1), (x1 + t, y1), (x1 + t, y1 + t), (x0 - t, y1 + t)], lo - F.FLOOR_T, hi, R('wall'), f'{name} shaft', tally='shaft')
-    prism([(x0 - t, y0), (x0, y0), (x0, y1), (x0 - t, y1)], lo - F.FLOOR_T, hi, R('wall'), f'{name} shaft', tally='shaft')
-    prism([(x1, y0), (x1 + t, y0), (x1 + t, y1), (x1, y1)], lo - F.FLOOR_T, hi, R('wall'), f'{name} shaft', tally='shaft')
+    top = hi - F.FLOOR_T            # the floor round the hole finishes the shaft
+    prism([(x0 - t, y1), (x1 + t, y1), (x1 + t, y1 + t), (x0 - t, y1 + t)], lo - F.FLOOR_T, top, R('wall'), f'{name} shaft', tally='shaft')
+    prism([(x0 - t, y0), (x0, y0), (x0, y1), (x0 - t, y1)], lo - F.FLOOR_T, top, R('wall'), f'{name} shaft', tally='shaft')
+    prism([(x1, y0), (x1 + t, y0), (x1 + t, y1), (x1, y1)], lo - F.FLOOR_T, top, R('wall'), f'{name} shaft', tally='shaft')
     crawl_top = lo + F.PROFILE_BOX['crawl'][1]
-    prism([(x0 - t, y0 - t), (x1 + t, y0 - t), (x1 + t, y0), (x0 - t, y0)], crawl_top, hi, R('wall'), f'{name} shaft', tally='shaft')
-    prism([(x0, y0 - t), (x1, y0 - t), (x1, y1), (x0, y1)], lo - F.FLOOR_T, lo, top_tex(R('floor'), R('plinth')),
+    prism([(x0 - t, y0 - t), (x1 + t, y0 - t), (x1 + t, y0), (x0 - t, y0)], crawl_top + 0.25, top, R('wall'), f'{name} shaft',
+          tally='shaft')
+    prism([(x0, y0), (x1, y0), (x1, y1), (x0, y1)], lo - F.FLOOR_T, lo, top_tex(R('floor'), R('plinth')),
           f'{name} shaft floor', tally='shaft')
     m.ungroup()
 
@@ -674,24 +939,40 @@ def shaft_walls(name, rect, lo, hi, key):
 # Corridors
 # ================================================================================
 def outside_intervals(p, q):
-    """Parameter intervals of p-q (0..1) that lie outside every room."""
+    """Parameter intervals of p-q (0..1) that lie outside every room. Each 0.1 m step is judged by its midpoint, so a
+    point on a wall two rooms share is never "outside"; the switch points are then found exactly by bisection."""
     L = math.dist(p, q)
     n = max(4, int(L / 0.1))
-    ts = [k / n for k in range(n + 1)]
-    flags = []
-    for t in ts:
+
+    def out(t):
         pt = (p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t)
-        flags.append(not any(P.inside(pt, r['poly']) and P.edge_dist(pt, r['poly']) > 1e-6 for r in ROOMS.values()))
-    out, start = [], None
-    for t, f in zip(ts, flags):
-        if f and start is None:
-            start = t
-        if not f and start is not None:
-            out.append((start, t))
-            start = None
+        return not any(P.inside(pt, r['poly']) and P.edge_dist(pt, r['poly']) > 1e-6 for r in ROOMS.values())
+
+    def switch(t0, t1):
+        f0 = out(t0)
+        for _ in range(40):
+            tm = (t0 + t1) / 2
+            if out(tm) == f0:
+                t0 = tm
+            else:
+                t1 = tm
+        t = (t0 + t1) / 2
+        return round(t * n) / n if abs(t * n - round(t * n)) < 1e-6 else t
+
+    mids = [(k + 0.5) / n for k in range(n)]
+    flags = [out(t) for t in mids]
+    res, start = [], (0.0 if flags[0] else None)
+    for k in range(1, n):
+        if flags[k] != flags[k - 1]:
+            t = switch(mids[k - 1], mids[k])
+            if flags[k]:
+                start = t
+            else:
+                res.append((start, t))
+                start = None
     if start is not None:
-        out.append((start, 1.0))
-    return [(a, b) for a, b in out if (b - a) * L > 0.05]
+        res.append((start, 1.0))
+    return [(a, b) for a, b in res if (b - a) * L > 0.05]
 
 
 def build_corridor(c):
@@ -720,7 +1001,10 @@ def build_corridor(c):
         a = path[i]
         ha, hb = heights[i], heights[i + 1]
         L = lens[i]
-        ivals = [(0.0, 1.0)] if stacked else outside_intervals(path[i], path[i + 1])
+        ivals = [(0.0, 1.0)] if prof == 'crawl' else outside_intervals(path[i], path[i + 1])
+        if prof == 'catwalk':
+            cuts_t = sorted({0.0, 1.0} | {t for iv in ivals for t in iv})
+            ivals = list(zip(cuts_t, cuts_t[1:]))
         for t0, t1 in ivals:
             mitre_in = math.tan(turn[i] / 2) if t0 < 1e-6 and i > 0 else 0.0
             mitre_out = math.tan(turn[i + 1] / 2) if t1 > 1 - 1e-6 and i + 1 < n - 1 else 0.0
@@ -731,9 +1015,23 @@ def build_corridor(c):
                 return (x, y, ha + (hb - ha) * u / L + h)
 
             u0, u1 = t0 * L, t1 * L
+            # Where the corridor meets a room at a DOOR, its walls, ceiling and ribs stop at the wall's outer face (the
+            # door is a hole in the room wall); only the floor runs on under it to the room face, as the threshold.
+            trims = []
+            for t_end in (t0, t1):
+                pe = (a[0] + d[0] * L * t_end, a[1] + d[1] * L * t_end)
+                room = next((r for r in ROOMS.values() if P.edge_dist(pe, r['poly']) < 0.05), None)
+                trim = 0.0
+                if room is not None and door_at(pe):
+                    ea, eb = min(zip(room['poly'], room['poly'][1:] + room['poly'][:1]), key=lambda e: P.seg_dist(pe, e[0], e[1]))
+                    el = math.dist(ea, eb)
+                    sin_e = abs(d[0] * (eb[1] - ea[1]) - d[1] * (eb[0] - ea[0])) / el
+                    trim = F.WALL_T / max(sin_e, 0.2)
+                trims.append(trim)
+            wu0, wu1 = u0 + trims[0], u1 - trims[1]
 
             def piece(poly, tex, name, span=None, **kw):
-                ua_, ub_, mi, mo = span if span else (u0, u1, mitre_in, mitre_out)
+                ua_, ub_, mi, mo = span if span else (wu0, wu1, mitre_in, mitre_out)
                 pts = []
                 for v, h in poly:
                     pts += [pt(ua_ + v * mi, v, h), pt(ub_ - v * mo, v, h)]
@@ -753,23 +1051,39 @@ def build_corridor(c):
                 lo_u, hi_u = max(min(pa, pb), u0), min(max(pa, pb), u1)
                 if hi_u - lo_u > 1e-6:
                     top_rel = (otop - bottom) if (otop is not None and bottom is not None) else (otop if otop is not None else F.DEFAULT_OPENING_H)
-                    cuts.append((lo_u, hi_u, 1 if v > 0 else -1, top_rel))
-            bounds = sorted({u0, u1} | {x for cu in cuts for x in cu[:2]})
+                    cuts.append((lo_u, hi_u, 1 if v > 0 else -1, top_rel, abs(v)))
+            bounds = sorted({wu0, wu1} | {x for cu in cuts for x in cu[:2] if wu0 < x < wu1})
             spans = []
             for sa, sb in zip(bounds, bounds[1:]):
-                active = {cu[2]: cu[3] for cu in cuts if cu[0] <= sa + 1e-6 and cu[1] >= sb - 1e-6}
-                spans.append((sa, sb, mitre_in if abs(sa - u0) < 1e-9 else 0.0, mitre_out if abs(sb - u1) < 1e-9 else 0.0, active))
+                active = {cu[2]: (cu[3], cu[4]) for cu in cuts if cu[0] <= sa + 1e-6 and cu[1] >= sb - 1e-6}
+                spans.append((sa, sb, mitre_in if abs(sa - wu0) < 1e-9 else 0.0, mitre_out if abs(sb - wu1) < 1e-9 else 0.0, active))
             if cuts:
-                c.setdefault('cuts', []).extend((s0[i] + lo_, s0[i] + hi_) for lo_, hi_, _, _ in cuts)
+                c.setdefault('cuts', []).extend((s0[i] + lo_, s0[i] + hi_) for lo_, hi_, *_ in cuts)
 
             def side_wall(poly, side, tex, name, **kw):
                 for sa, sb, mi, mo, active in spans:
                     q = poly
                     if side in active:
-                        q = P.clip(P.ccw(poly), 0, -1, -active[side])
+                        # Above the side opening only, and no further out than the room's edge.
+                        q = P.clip(P.ccw(poly), 0, -1, -active[side][0])
+                        q = P.clip(q, side, 0, active[side][1]) if q else q
                         if not q or P.area(P.ccw(q)) < P.AREA_EPS:
                             continue
                     piece(q, tex, name, span=(sa, sb, mi, mo), **kw)
+
+            def across(poly, tex, name, full=False, **kw):
+                """A full-width piece (floor, ceiling), clipped at the edge of a room that opens off either side."""
+                sp = list(spans)
+                if full and sp:
+                    # The floor runs on under a door's wall to the room face (the threshold).
+                    sp[0] = (u0,) + sp[0][1:]
+                    sp[-1] = sp[-1][:1] + (u1,) + sp[-1][2:]
+                for sa, sb, mi, mo, active in sp:
+                    q = P.ccw(poly)
+                    for side, (_, v_edge) in active.items():
+                        q = P.clip(q, side, 0, v_edge) if q else q
+                    if q and P.area(P.ccw(q)) >= P.AREA_EPS:
+                        piece(q, tex, name, span=(sa, sb, mi, mo), **kw)
 
             run_u = GP(d[0], d[1], 0.0)
             run_u = (d[0], 0.0, -d[1])
@@ -777,17 +1091,33 @@ def build_corridor(c):
             org = GP(*pt(u0, -1.0, 0.0))
             if prof == 'catwalk':
                 inside_room = in_any_room(((a[0] + d[0] * (u0 + u1) / 2), (a[1] + d[1] * (u0 + u1) / 2)), 0.05)
-                piece([(-hw_clear, -0.25), (hw_clear, -0.25), (hw_clear, 0.0), (-hw_clear, 0.0)],
-                      top_tex(R('grate'), R('frame')), f"{c['key']} deck", tally='catwalk')
                 if inside_room:
+                    piece([(-hw_clear, -0.25), (hw_clear, -0.25), (hw_clear, 0.0), (-hw_clear, 0.0)],
+                          top_tex(R('grate'), R('frame')), f"{c['key']} deck", tally='catwalk')
                     for side in (1, -1):
                         v = side * (hw_clear - 0.05)
                         # Mitred like the walls: the inner rail stops short of a bend, the outer one runs on to meet.
                         p0, p1 = pt(u0 + v * mitre_in, v, 0.0), pt(u1 - v * mitre_out, v, 0.0)
                         rail(p0[0], p0[1], p1[0], p1[1], p0[2], p1[2], f"{c['key']} rail")
                     continue
+            for k_end, t_end in enumerate((t0, t1)):
+                if trims[k_end] <= 0.0:
+                    continue
+                pe = (a[0] + d[0] * L * t_end, a[1] + d[1] * L * t_end)
+                door = door_at(pe)
+                room = next(r_ for r_ in ROOMS.values() if P.edge_dist(pe, r_['poly']) < 0.05)
+                ea, eb = min(zip(room['poly'], room['poly'][1:] + room['poly'][:1]), key=lambda e: P.seg_dist(pe, e[0], e[1]))
+                el = math.dist(ea, eb)
+                e = ((eb[0] - ea[0]) / el, (eb[1] - ea[1]) / el)
+                n_out = (e[1], -e[0])                           # outward of the room's CCW edge
+                w_along = F.DOOR_SIZE[door[2]][0] / 2 / (F.WALL_T / trims[k_end])
+                hh_ = ha + (hb - ha) * t_end
+                quad = [(pe[0] + e[0] * sg * w_along + n_out[0] * o, pe[1] + e[1] * sg * w_along + n_out[1] * o)
+                        for sg, o in ((-1, 0.0), (1, 0.0), (1, F.WALL_T), (-1, F.WALL_T))]
+                prism(P.ccw(quad), hh_ - F.FLOOR_T, hh_, top_tex(R('floor'), R('plinth')), f"{c['key']} threshold", tally='corridor')
             if not flight:
-                piece([(-W, -F.FLOOR_T), (W, -F.FLOOR_T), (W, 0.0), (-W, 0.0)], top_tex(R('floor'), R('plinth')),
+                across([(-W, -F.FLOOR_T), (W, -F.FLOOR_T), (W, 0.0), (-W, 0.0)],
+                      top_tex(R('grate'), R('frame')) if prof == 'catwalk' else top_tex(R('floor'), R('plinth')),
                       f"{c['key']} floor", tally='corridor', uv_origin=org, uv_u=run_u)
             else:
                 risers = int(round(abs(hb - ha) / F.RISER))
@@ -810,17 +1140,31 @@ def build_corridor(c):
                     for (xa, ya), (xb, yb), role in S.PROFILES[prof]['segments']:
                         poly = [(side * xa, ya), (side * W, ya), (side * W, yb), (side * xb, yb)]
                         side_wall(poly, side, R(role), f"{c['key']} {role}", tally='corridor', uv_origin=org)
-                piece([(-W, S.CEIL_Y), (W, S.CEIL_Y), (W, S.SHELL_TOP), (-W, S.SHELL_TOP)], R('ceiling'),
-                      f"{c['key']} ceiling", tally='corridor', uv_origin=org, uv_u=run_u)
+                across([(-W, S.CEIL_Y), (W, S.CEIL_Y), (W, S.SHELL_TOP), (-W, S.SHELL_TOP)], R('ceiling'),
+                       f"{c['key']} ceiling", tally='corridor', uv_origin=org, uv_u=run_u)
             else:
                 # Box section. On a flight the walls and ceiling rise with the steps (the frame slopes them).
                 wt = W - hw_clear
                 lift = abs(hb - ha) if (flight and hb < ha) else 0.0
+                # A crawl passing under a room whose floor underside is the crawl's ceiling height uses that floor as
+                # its ceiling (the pipe gallery under the pump room): its walls stop there and the slab is left out.
+                roofs = [r_ for r_ in ROOMS.values() if prof == 'crawl' and not flight
+                         and abs(r_['floor'] - F.FLOOR_T - (ha + h_clear)) < 0.01]
+                wall_top = h_clear
+                foot = -F.FLOOR_T - lift if flight else 0.0      # on the flat the floor slab runs under the walls
                 for side in (1, -1):
-                    side_wall([(side * hw_clear, -F.FLOOR_T - lift), (side * W, -F.FLOOR_T - lift), (side * W, h_clear + wt),
-                               (side * hw_clear, h_clear + wt)], side, R('wall'), f"{c['key']} wall", tally='corridor', uv_origin=org)
-                piece([(-W, h_clear), (W, h_clear), (W, h_clear + wt), (-W, h_clear + wt)], bottom_tex(R('ceiling'), R('wall')),
-                      f"{c['key']} ceiling", tally='corridor', uv_origin=org, uv_u=run_u)
+                    side_wall([(side * hw_clear, foot), (side * W, foot), (side * W, wall_top),
+                               (side * hw_clear, wall_top)], side, R('wall'), f"{c['key']} wall", tally='corridor', uv_origin=org)
+                if roofs:
+                    foot = [pt(wu0 + v * mitre_in, v, 0.0)[:2] for v in (-W,)] + [pt(wu1 - v * mitre_out, v, 0.0)[:2] for v in (-W, W)] \
+                        + [pt(wu0 + v * mitre_in, v, 0.0)[:2] for v in (W,)]
+                    holes = [q for r_ in roofs for q in r_['parts']]
+                    for part in P.subtract_all([P.ccw(foot)], holes):
+                        prism(part, ha + h_clear, ha + h_clear + wt, bottom_tex(R('ceiling'), R('wall')), f"{c['key']} ceiling",
+                              tally='corridor')
+                else:
+                    across([(-W, h_clear), (W, h_clear), (W, h_clear + wt), (-W, h_clear + wt)], bottom_tex(R('ceiling'), R('wall')),
+                           f"{c['key']} ceiling", tally='corridor', uv_origin=org, uv_u=run_u)
                 if prof == 'D2':
                     k = 1
                     while k * F.DUCT_RIB_PITCH < (u1 - u0) - 0.3:
@@ -859,8 +1203,11 @@ def build_corridor(c):
                     for (xa, ya), (xb, yb), role in main:
                         hullp([rp(uu, v, hh) for v, hh in [(side * (xa - S.RIB_D), ya), (side * xa, ya), (side * xb, yb),
                                                            (side * (xb - S.RIB_D), yb)] for uu in ur], R('rib'), f"{c['key']} rib", tally='rib')
-                hullp([rp(uu, v, hh) for v, hh in [(-ch, S.CEIL_Y - S.RIB_D), (ch, S.CEIL_Y - S.RIB_D), (ch, S.CEIL_Y), (-ch, S.CEIL_Y)]
-                       for uu in ur], R('rib'), f"{c['key']} rib beam", tally='rib')
+                (xa_, ya_), (xb_, yb_), _ = main[-1]
+                inner = lambda y_: (xa_ - S.RIB_D) + (y_ - ya_) * (xb_ - xa_) / (yb_ - ya_)
+                lo_b, hi_b = inner(S.CEIL_Y - S.RIB_D), inner(S.CEIL_Y)
+                hullp([rp(uu, v, hh) for v, hh in [(-lo_b, S.CEIL_Y - S.RIB_D), (lo_b, S.CEIL_Y - S.RIB_D), (hi_b, S.CEIL_Y),
+                                                   (-hi_b, S.CEIL_Y)] for uu in ur], R('rib'), f"{c['key']} rib beam", tally='rib')
             st += 4.0
     m.ungroup()
 
