@@ -339,18 +339,18 @@ WEST = [(-12, 13.5), (-17.5, 12), (-17.5, 10.8), (-17.5, 8.0, 'crouch'), (-17.5,
         (-27.5, 20.5), (-24, 21.5), (-24, 27.5), (-22.5, 27.5), (-20, 27), (-14.6, 27), (-14.6, 33), (-20, 33), (-22, 33.3),
         (-21.9, 36.5), (-21.9, 39.1), (-23.2, 39.1, 'archive'), (-25, 37.5, 'archive'), (-26, 33.5, 'archive'),
         (-23.2, 39.1, 'archive'), (-21.9, 39.1), (-23.5, 37), (-26, 37, 'cage'),
-        (-23.5, 37), (-23.2, 36), (-18, 36.5), (-12, 39), (-10.5, 39), (-10.5, 29.3)]
+        (-23.5, 37), (-23.2, 36), (-18, 36.5), (-13.3, 39), (-12, 39), (-10.5, 39), (-10.5, 29.3)]
 S1_TO_TRENCH = [(-10.25, 26), (-3, 26), (-2.25, 21), (-2.25, 15), (10, 8)]
 # Bay -> trench -> U-turn -> pump room -> pit -> crawl -> substation -> gantry: M, then P.
 EAST_IN = [(14, 6.5), (20, 6.5), (20, -0.5), (26, -0.5), (27.5, -1), (29, -1), (43, -1), (44.5, 1), (44.5, 4.3), (44.5, 9.5),
            (36, 9.8), (36, 12), (36, 13.5), (32, 16), (33.4, 21), (34.45, 21), (35.5, 25.8), (40, 25.8),
            (40, 32, 'crawl'), (33, 32, 'crawl'), (33, 35.65, 'lb'), (33, 36.9), (35.5, 35.8), (43.4, 35.8, 'gantry'), (48.5, 35.5, 'gantry'), (48, 37, 'gantry'), (48, 45.5, 'gantry')]
 TO_LOBBY = [(48, 41, 'gantry'), (50, 41), (52.5, 41), (52.5, 24), (53, 18)]
-HOLD = [(53, 15), (53, 11.5), (55.25, 8.5), (55.25, 0.4), (58.5, 0.4), (55.25, 0.4), (55.25, 8.5), (53, 11.5), (53, 15),
+HOLD = [(53, 16.4), (53, 15), (53, 11.5), (55.25, 8.5), (55.25, 0.4), (58.5, 0.4), (55.25, 0.4), (55.25, 8.5), (53, 11.5), (53, 15),
         (53, 18)]
 LOBBY_UP = [(52.5, 24), (52.5, 41), (50, 41), (48, 41, 'gantry')]
 # The S2 return: through the pump room, the U-turn and the trench to the bay.
-S2_BACK = [(52, 17.5), (50, 17.5), (48, 17.5), (36, 17.5), (32, 17.5), (32, 16), (36, 13.5), (36, 12), (36, 9.8), (44.5, 9.5),
+S2_BACK = [(52, 17.5), (51.2, 17.5), (50, 17.5), (48, 17.5), (36, 17.5), (32, 17.5), (32, 16), (36, 13.5), (36, 12), (36, 9.8), (44.5, 9.5),
            (44.5, 4.3), (44.5, 1), (43, -1), (29, -1), (27.5, -1), (26, -0.5), (20, -0.5), (20, 6.5), (14, 6.5)]
 # The vent return (revision 03): grill, access corridor, filter room, ladder room, pipe room, vent, drop, lift.
 VENT_BACK = [(48, 37, 'gantry'), (43.4, 35.8, 'gantry'), (35.5, 35.8), (33, 38), (31, 46.5), (30, 46.5, 'crouch'), (27, 46.5), (27, 27), (27, 25),
@@ -376,7 +376,7 @@ CATWALK_IN = [(-21.9, 38.2), (-21.9, 39.1), (-23.2, 39.1, 'archive'), (-22.5, 37
               (-9.25, 57.6), (-2, 58), (1.5, 58), (6, 62.5), (7.5, 62.5), (9, 62.5)]
 # Along the stair corridor, through raised door 3 onto the north catwalk, along it to P, back and down the ladder to
 # the grill: then the vent way to the lift.
-TO_SUBSTATION = [(12.5, 62.5), (13.5, 62.5), (15.5, 62.5), (21.5, 62.5), (23.5, 62.5), (32, 54), (33.5, 54, 'gantry'),
+TO_SUBSTATION = [(12.5, 62.5), (13.5, 62.5), (15.5, 62.5), (21.5, 62.5), (23.5, 62.5), (30.9, 55.1), (32, 54), (33.5, 54, 'gantry'),
                  (46, 54, 'gantry'), (48.2, 52, 'gantry'), (48, 48, 'gantry'), (48, 45.5, 'gantry'), (48, 48, 'gantry'),
                  (48.2, 52, 'gantry'), (46, 54, 'gantry'), (35, 54, 'gantry'), (34.0, 53.75, 'gantry'), (34.0, 52.5),
                  (31.5, 47)] + VENT_BACK[4:]
@@ -384,17 +384,84 @@ TO_SUBSTATION = [(12.5, 62.5), (13.5, 62.5), (15.5, 62.5), (21.5, 62.5), (23.5, 
 # the stopped fan, through the pipe room, down the ladder, along the duct, through the grill, up the gantry to M and P.
 FAN_TO_P = [(12, 62), (12, 61), (12, 53), (12, 52), (9, 53), (9, 62.3), (9, 53), (12, 52), (13.5, 52), (20.8, 52.8),
             (18, 52.3), (18, 50.5, 'crouch'), (17.2, 47.2), (16.5, 45.8), (16.8, 42.5), (18, 39), (17.5, 32), (15.5, 29.2),
-            (15.5, 27.75), (16.5, 26.5), (16.5, 24), (17, 21), (27, 21), (27, 25), (27, 27), (27, 46.5), (30, 46.5, 'crouch'),
+            (15.5, 27.75), (16.5, 26.5), (16.5, 24), (17, 21), (27, 21), (27, 25), (27, 27), (27, 46.5), (28.8, 46.5), (30, 46.5, 'crouch'),
             (31, 46.5), (33, 38), (35.5, 35.8), (43.4, 35.8, 'gantry'), (48.5, 35.5, 'gantry'), (48, 37, 'gantry'),
             (48, 45.5, 'gantry')]
+# Every route ends in the lift: through its gate (K and P) to the finish inside.
+IN_LIFT = [(0, 50.5)]
 ROUTES = {
-    'card first, vent return': START + WEST + S1_TO_TRENCH + EAST_IN + VENT_BACK,
+    'card first, vent return': START + WEST + S1_TO_TRENCH + EAST_IN + VENT_BACK + IN_LIFT,
     'power first, S2 return': START + [(10, 8)] + EAST_IN + TO_LOBBY + HOLD + S2_BACK + [(10, 8), (-10.5, 10.5)] + WEST
-                              + [(0, 36.8), (0, 46)],
-    'completionist, east': START + WEST + S1_TO_TRENCH + EAST_IN + TO_LOBBY + HOLD + LOBBY_UP + VENT_BACK,
-    'knowing player, catwalk to P': START + to_k(W_SW) + CATWALK_IN + TO_SUBSTATION,
-    'catwalk explorer': START + to_k(W_EXPLORE) + CATWALK_IN + FAN_TO_P + VENT_BACK,
+                              + [(0, 36.8), (0, 46)] + IN_LIFT,
+    'completionist, east': START + WEST + S1_TO_TRENCH + EAST_IN + TO_LOBBY + HOLD + LOBBY_UP + VENT_BACK + IN_LIFT,
+    'knowing player, catwalk to P': START + to_k(W_SW) + CATWALK_IN + TO_SUBSTATION + IN_LIFT,
+    'catwalk explorer': START + to_k(W_EXPLORE) + CATWALK_IN + FAN_TO_P + VENT_BACK + IN_LIFT,
 }
+FINISH = IN_LIFT[0]
+
+# ================================================================================
+# Progression (G-02): what opens what. Read by the 3D build (map entities) and the route checker.
+# ================================================================================
+# Names the prompts give the flags ("Needs the freight card and power").
+FLAG_TEXT = {'K': 'the freight clearance card', 'P': 'power', 'M': 'the maintenance card'}
+# Door rules, by the start of the door's name in DOORS:
+#   opens  use (E either side) / side (E only from the side 'side' points to) / event (a switch only) / start (level ready)
+#   needs  flags; latch: stays open; style: rise (up into the wall) or slide (two leaves apart: gates in fences)
+DOOR_RULES = [
+    ('Airlock door', dict(id='AIRLOCK', opens='start', latch=1)),
+    ('Logistics west door', dict(id='LGW', opens='use')),
+    ('Cage gate', dict(id='CAGE', opens='event', events='cage', latch=1, style='slide')),
+    ('S1:', dict(id='S1', opens='side', side=(-1, 0), needs='K', latch=1)),
+    ('S2:', dict(id='S2', opens='side', side=(1, 0), needs='M', latch=1)),
+    ('Quarantine hold door', dict(id='HOLD', opens='side', side=(0, 1), needs='M', latch=1)),
+    ('Substation grill', dict(id='GRILL', opens='use', latch=1)),
+    ('Vent grille', dict(id='VENT', opens='side', side=(1, 0), latch=1)),
+    ('Door 1:', dict(id='D1', opens='event', events='door1', latch=1)),
+    ('Door 5:', dict(id='D5', opens='event', events='door5', latch=1)),
+    ('Door 3:', dict(id='D3', opens='side', side=(-0.7071, 0.7071), latch=1)),
+    ('Lift gate', dict(id='LIFT', opens='side', side=(0, -1), needs='K,P', latch=1, style='slide')),
+]
+# Switches and levers: (id, name, plan point on the wall face or floor, floor height, facing, mount, what it does).
+KIT_SWITCHES = [
+    ('SW1', 'pipe bay switch 1: sparks', (-19.1, 6.5), -3.0, (0, 1), 'wall', dict(effect='spark', once=0)),
+    ('SW2', 'pipe bay switch 2: door 5, a distant clunk', (-18.6, 6.5), -3.0, (0, 1), 'wall',
+     dict(sends='door5', notice='A distant clunk.')),
+    ('SW3', 'pipe bay switch 3: door 1, nearby', (-18.1, 6.5), -3.0, (0, 1), 'wall',
+     dict(sends='door1', notice='A door opens nearby.')),
+    ('RELEASE', 'archive lever: the cage gate', (-25.6, 32.0), 4.0, (0, 1), 'wall', dict(sends='cage')),
+    ('CAGE_SW', 'cage switch: lowers the raised catwalk section (3)', (-28.0, 35.2), 1.0, (1, 0), 'wall',
+     dict(sends='drawbridge')),
+    ('P', 'P: auxiliary power restore, end of the gantry', (49.2, 45.5), 1.0, (-1, 0), 'post',
+     dict(sets='P', sends='power', notice='Auxiliary power restored.')),
+    ('FAN_LEVER', 'fan lever: the big fan spins down and stops', (21.5, 53.0), 0.0, (-1, 0), 'wall', dict(sends='fan_stop')),
+]
+# Cards: (id, name, plan point, floor height, flag, colour)
+KIT_PICKUPS = [
+    ('K', 'K: freight clearance card, in the supervisor cage', (-27.0, 38.6), 1.0, 'K', (1.0, 0.7, 0.2)),
+    ('M', 'M: maintenance card, the gantry control booth', (49.3, 34.8), 1.0, 'M', (0.2, 0.85, 1.0)),
+]
+# The big fan in the pipe room's north wall (hub centre), and the hinged catwalk section at door 5.
+KIT_FAN = dict(id='FAN', point=(18.0, 51.0), floor=0.0, facing=(0, 1), event='fan_stop')
+KIT_DRAWBRIDGE = dict(id='DRAWBRIDGE', hinge=(-12.25, 37.5), height=4.0, extends=(-1, 0), length=4.75, width=1.5,
+                      event='drawbridge')
+# What the route checker does at a route point (the first time a route reaches it): use these kit pieces, in order.
+ROUTE_ACTIONS = {
+    (-24, 27.5): 'LGW', (-26, 33.5): 'RELEASE', (-26, 37): 'K', (-27.3, 35.4): 'CAGE_SW', (-19.2, 7.6): 'SW2,SW3',
+    (-13.3, 39): 'S1', (48.5, 35.5): 'M', (48, 45.5): 'P', (31, 46.5): 'GRILL', (28.8, 46.5): 'GRILL',
+    (14, 45.75): 'VENT', (30.9, 55.1): 'D3', (53, 16.4): 'HOLD', (51.2, 17.5): 'S2', (20.8, 52.8): 'FAN_LEVER',
+    (0, 46): 'LIFT',
+}
+# At level start these must refuse the player standing here: (kit id, plan point, tag).
+REFUSALS = [
+    ('S1', (-13.3, 39), None),              # no K yet
+    ('S2', (48.5, 17.5), None),             # the pump room side, and no M
+    ('HOLD', (53, 16.4), None),             # no M
+    ('D3', (33.5, 54), 'gantry'),           # the substation side of door 3
+    ('CAGE', (-23.0, 37.0), None),          # only the archive lever opens it
+    ('LIFT', (0, 46), None),                # no K, no P
+]
+# At level start the running fan closes its hole: a crouching player cannot pass (plan point, floor height).
+FAN_BLOCKED = ((18.0, 51.0), 0.0)
 
 
 # ================================================================================
@@ -404,7 +471,7 @@ FLOOR_T, WALL_T, CEIL_T = 0.25, 0.5, 0.5
 # Absolute ceiling heights. A list gives (region, height) pairs; the first region containing a point wins.
 CEILINGS = {
     'AL': 3.5, 'RC': 3.0, 'SB': 7.5, 'DK': 7.5, 'TB': 3.0, 'SC': -0.5, 'WX': 0.0, 'ST': 4.0,
-    'LG': [(rect(-28, 32, -12, 40), 7.5), (rect(-22.5, 22, -12, 32), 4.5)],
+    'LG': [(rect(-17.5, 36.5, -12, 38.5), 9.5), (rect(-28, 32, -12, 40), 7.5), (rect(-22.5, 22, -12, 32), 4.5)],
     'CU': 1.5, 'PR': 3.0, 'SS': 4.5, 'FL': 0.5, 'LR': 2.75, 'PP': 4.0, 'MR': 7.5, 'R3': 7.0, 'FC': 3.5,
     'LL': -0.5, 'QH': 0.0,
 }
@@ -549,7 +616,7 @@ def walkable(pt, tol=0.0):
 RISER, TREAD, RUNG, PLAYER_R = 0.25, 0.5, 0.25, 0.3
 DROP_MAX = 2.0
 CROUCH_H, STAIR_MAX_W, STEP_H = 1.1, 3.5, 0.3
-ENTERABLE = {'supervisor cage'}
+ENTERABLE = {'supervisor cage': 'Cage gate', 'lift cage': 'Lift gate'}   # walk-in blockers and the gate in their fence
 
 
 def check():
@@ -641,6 +708,38 @@ def check():
                     seg_dist(xy(e), c, d) < PLAYER_R for e in (a, b) for c, d in edges)
                 if hit or close:
                     bad.append(f'route {k}: {xy(a)} -> {xy(b)} runs through {name}')
+    names = [d[0] for d in DOORS]
+    ids = set()
+    for prefix, rule in DOOR_RULES:
+        if not any(n.startswith(prefix) for n in names):
+            bad.append(f'door rule {prefix} names no door')
+        ids.add(rule['id'])
+    events = {r.get('events', r['id']) for _, r in DOOR_RULES} | {'start', 'fan_stop', 'drawbridge', 'power'}
+    for sid, name, pt, h, facing, mount, what in KIT_SWITCHES:
+        ids.add(sid)
+        for e in what.get('sends', '').split(','):
+            if e and e not in events:
+                bad.append(f'switch {sid} sends {e}, which nothing listens for')
+    for kid, name, pt, h, flag, colour in KIT_PICKUPS:
+        ids.add(kid)
+        if not walkable(pt):
+            bad.append(f'card {kid} at {pt} is not in a room')
+    needed = {f for _, r in DOOR_RULES for f in r.get('needs', '').split(',') if f}
+    given = {w.get('sets', '') for *_, w in KIT_SWITCHES} | {k[4] for k in KIT_PICKUPS}
+    for f in needed - given:
+        bad.append(f'flag {f} is needed by a door but nothing sets it')
+    for pt, acts in ROUTE_ACTIONS.items():
+        for a in acts.split(','):
+            if a not in ids:
+                bad.append(f'route action {a} at {pt} names no door, switch or card')
+        if not any(xy(q) == pt for pts in ROUTES.values() for q in pts):
+            bad.append(f'route action at {pt} is on no route')
+    for kid, pt, tag in REFUSALS:
+        if kid not in ids:
+            bad.append(f'refusal {kid} names no door')
+    for k, pts in ROUTES.items():
+        if xy(pts[-1]) != FINISH:
+            bad.append(f'route {k} does not end in the lift')
     return bad
 
 

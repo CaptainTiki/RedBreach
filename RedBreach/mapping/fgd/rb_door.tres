@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="1"]
+[ext_resource type="PackedScene" path="res://interaction/door_kit.tscn" id="2"]
+
+[resource]
+script = ExtResource("1")
+scene_file = ExtResource("2")
+apply_rotation_on_map_build = false
+classname = "rb_door"
+description = "A door of any size. Origin: the bottom middle of the opening, on the wall's centre line; 'facing' is the wall's normal."
+class_properties = Dictionary[String, Variant]({
+"id": "",
+"opens": "use",
+"needs": "",
+"needs_text": "",
+"side": "0 0",
+"latch": 0,
+"events": "",
+"style": "rise",
+"width": 2.0,
+"height": 2.5,
+"facing": "0 1",
+"look": "steel"
+})
+class_property_descriptions = Dictionary[String, Variant]({
+"id": "Name that switches and route checks use",
+"opens": "use (E either side) / side (E from the side named by side) / event (a switch only) / start (opens when the level is ready)",
+"needs": "Progression flags it needs, comma separated (K,P)",
+"needs_text": "Names for the prompt: K=the freight card;P=power",
+"side": "For opens=side: plan direction dx dy of the side it opens from",
+"latch": "1: once open it stays open",
+"events": "Events that open it, comma separated (default: its id)",
+"style": "rise (one leaf up into the wall) / slide (two leaves apart)",
+"width": "Opening width, metres",
+"height": "Opening height, metres",
+"facing": "Plan direction dx dy of the wall's normal",
+"look": "Look for its materials (steel / concrete / warm)"
+})
+meta_properties = Dictionary[String, Variant]({
+"size": AABB(-32, -4, 0, 64, 8, 80),
+"color": Color(0.784, 0.353, 0.235, 1)
+})

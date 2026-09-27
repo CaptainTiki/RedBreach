@@ -27,6 +27,7 @@ scene = '''[gd_scene format=3]
 [ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="compound"]
 [ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="atomic"]
 [ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="transition"]
+[ext_resource type="Script" path="res://interaction/progression.gd" id="progression"]
 
 [sub_resource type="Environment" id="env_off"]
 background_mode = 1
@@ -72,6 +73,9 @@ env_levels = [SubResource("env_off"), SubResource("env_subtle")]
 script = ExtResource("map")
 local_map_file = "res://maps/freight_v2_01.map"
 map_settings = ExtResource("settings")
+
+[node name="Progression" type="Node" parent="."]
+script = ExtResource("progression")
 
 [node name="Navigation" type="NavigationRegion3D" parent="."]
 

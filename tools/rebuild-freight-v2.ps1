@@ -11,7 +11,7 @@ if (-not (Test-Path -LiteralPath $GodotPath)) { throw "Godot not found at '$Godo
 $import = Start-Process -FilePath $GodotPath -ArgumentList @('--headless', '--path', ('"' + $projectDir + '"'), '--import') -WindowStyle Hidden -PassThru -Wait
 if ($import.ExitCode -ne 0) { throw "texture import failed with exit code $($import.ExitCode)" }
 # Rebuild freight v2 from the editable source map; never run the one-time bootstrap here.
-$checks = ,@('res://tools/build_freight_v2.gd', 'freight_v2_build.log', '2400', '^FREIGHT_V2_BUILD: \d+ brushes; \d+ lights; \d+ ladders; \d+ navigation polygons; save=0$', @())
+$checks = ,@('res://tools/build_freight_v2.gd', 'freight_v2_build.log', '2400', '^FREIGHT_V2_BUILD: \d+ brushes; \d+ lights; \d+ ladders; \d+ kit pieces; \d+ navigation polygons; save=0$', @())
 if ($Validate) {
     # The generic, marker-driven validator: any map validates by placing markers.
     $checks += ,@('res://tools/validate_markers.gd', 'freight_v2_qa.log', '400000', '^MARKER_QA: \d+ checks; 0 failures$', @('--', 'res://missions/freight_v2/freight_v2.tscn'))

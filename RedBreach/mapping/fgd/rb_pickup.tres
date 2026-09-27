@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="1"]
+[ext_resource type="Script" path="res://interaction/pickup_kit.gd" id="2"]
+
+[resource]
+script = ExtResource("1")
+script_class = ExtResource("2")
+apply_rotation_on_map_build = false
+classname = "rb_pickup"
+description = "A card on a plinth: E takes it and sets its flag."
+class_properties = Dictionary[String, Variant]({
+"id": "",
+"flag": "",
+"color": "1 0.7 0.2",
+"notice": "",
+"prompt": "E  Take",
+"look": "steel"
+})
+class_property_descriptions = Dictionary[String, Variant]({
+"id": "Name that route checks use",
+"flag": "Progression flag it sets",
+"color": "Card colour r g b (0-1)",
+"notice": "A line on the HUD when taken",
+"prompt": "Interaction prompt",
+"look": "Look for its materials"
+})
+meta_properties = Dictionary[String, Variant]({
+"size": AABB(-8, -8, 0, 16, 16, 36),
+"color": Color(0.980, 0.784, 0.235, 1)
+})
+node_class = "StaticBody3D"

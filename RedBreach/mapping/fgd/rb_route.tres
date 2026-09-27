@@ -13,13 +13,15 @@ class_properties = Dictionary[String, Variant]({
 "route": "main",
 "index": 0,
 "posture": "stand",
-"oneway": 0
+"oneway": 0,
+"use": ""
 })
 class_property_descriptions = Dictionary[String, Variant]({
 "route": "Route name",
 "index": "Order along the route",
 "posture": "stand, crouch or climb (use the nearest ladder)",
-"oneway": "1: the route is walked forward only (it has a one-way drop)"
+"oneway": "1: the route is walked forward only (it has a one-way drop)",
+"use": "Kit pieces the checker uses on arriving here, as the player would, comma separated ids (a door, a switch, a card)"
 })
 meta_properties = Dictionary[String, Variant]({
 "size": AABB(-8, -8, 0, 16, 16, 16),

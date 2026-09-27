@@ -235,8 +235,8 @@ def in_any_room(pt, margin=0.0):
 # Floors, levels, stairs, ceilings
 # ================================================================================
 def shared_strips(r):
-    """This room's half of every centred wall it shares with another room (open edges have none): the strip a platform
-    must stop short of, or its edge face lies on the plane of the wall's end and the two flicker (the S1 landing)."""
+    """This room's own half of every wall it shares with another room (open edges have none): the strip a platform or
+    ceiling must stop short of, or its edge face lies on the plane of the wall's end and the two flicker (the S1 landing)."""
     open_pairs = {frozenset(p_) for p_ in F.OPEN_EDGES}
     out = []
     poly = r['poly']
@@ -525,7 +525,7 @@ def seg_intersection(a, b, p, q):
 
 def wall_piece(a, b, h0, h1, side, tex_low, tex_high, name, openings=(), band=None, origin=None, mitre=(0.0, 0.0)):
     """A wall along a-b from h0 to h1 with openings cut out. side: 'out' (right of a->b, i.e. outside a CCW room),
-    'centre' (straddling the line) or 'in'. band: the height where tex_low gives way to tex_high. mitre: tan of half
+    'centre' (straddling the line), 'in', or a room's own half of a wall it shares ('in_half', 'out_half'). band: the height where tex_low gives way to tex_high. mitre: tan of half
     the turn at a and at b; the wall's far face runs on (or stops short) by that much per metre of thickness, so two
     walls meet on the corner's bisector instead of leaving a notch or overlapping."""
     L = math.dist(a, b)
@@ -533,7 +533,8 @@ def wall_piece(a, b, h0, h1, side, tex_low, tex_high, name, openings=(), band=No
         return
     ux, uy = (b[0] - a[0]) / L, (b[1] - a[1]) / L
     nx, ny = uy, -ux                       # right of a->b
-    o0, o1 = {'out': (0.0, F.WALL_T), 'centre': (-F.WALL_T / 2, F.WALL_T / 2), 'in': (-F.WALL_T, 0.0)}[side]
+    o0, o1 = {'out': (0.0, F.WALL_T), 'centre': (-F.WALL_T / 2, F.WALL_T / 2), 'in': (-F.WALL_T, 0.0),
+              'in_half': (-F.WALL_T / 2, 0.0), 'out_half': (0.0, F.WALL_T / 2)}[side]
     rect = [(0.0, h0), (L, h0), (L, h1), (0.0, h1)]
     bands = [(h0, h1, tex_high)]
     if band is not None and h0 < band < h1:
@@ -772,24 +773,12 @@ def build_walls():
                                openings=wall_openings(pa, pb, 'room'), band=floor_in + S.PLINTH_H,
                                origin=r['poly'][0], mitre=(m_a if k0 == 0 else 0.0, m_b if k == n_s else 0.0))
                 continue
-            if key > other:
-                continue  # shared and gap walls are built once, from the first key
             o = ROOMS[other]
-            name = f'{key}|{other} walls'
-            m.group(name)
-            if kind == 'gap':
-                # Two rooms exactly one wall apart: a single wall fills the gap, covering both rooms' heights.
-                floor_o, ceil_o = edge_span(o, a, b, (-inward[0], -inward[1]), off=F.WALL_T + 0.3)
-                bottom = min(floor_in, floor_o) - F.FLOOR_T
-                top = max(ceil_in, ceil_o) + F.CEIL_T
-                ao = (a[0] - inward[0] * F.WALL_T, a[1] - inward[1] * F.WALL_T)
-                bo = (b[0] - inward[0] * F.WALL_T, b[1] - inward[1] * F.WALL_T)
-                holes = wall_openings(a, b, 'room') + wall_openings(ao, bo, 'room')
-                wall_piece(a, b, bottom, top, 'out', R('plinth'), R('wall'), f'{key}|{other} wall', openings=holes,
-                           band=min(floor_in, floor_o) + S.PLINTH_H, origin=r['poly'][0])
-                continue
-            floor_o, ceil_o = edge_span(o, a, b, (-inward[0], -inward[1]))
-            if frozenset((key, other)) in open_pairs:
+            if kind != 'gap' and frozenset((key, other)) in open_pairs:
+                if key > other:
+                    continue  # an open edge (one space seen across a step) is built once, from the first key
+                m.group(f'{key}|{other} walls')
+                floor_o, ceil_o = edge_span(o, a, b, (-inward[0], -inward[1]))
                 hi_r, lo_f, hi_f = (r, floor_o, floor_in) if floor_in > floor_o else (o, floor_in, floor_o)
                 side = 'in' if hi_r is r else 'out'
                 look(hi_r['look'])
@@ -798,10 +787,19 @@ def build_walls():
                     wall_piece(a, b, min(ceil_in, ceil_o) + F.CEIL_T, max(ceil_in, ceil_o) + F.CEIL_T, 'centre', R('wall'),
                                R('wall'), f'{key}|{other} bulkhead')
                 continue
-            bottom = min(floor_in, floor_o) - F.FLOOR_T
-            top = max(ceil_in, ceil_o) + F.CEIL_T
-            wall_piece(a, b, bottom, top, 'centre', R('plinth'), R('wall'), f'{key}|{other} wall',
-                       openings=wall_openings(a, b, 'shared'), band=min(floor_in, floor_o) + S.PLINTH_H, origin=r['poly'][0])
+            # Every room owns its walls (user rule): its own 0.25 m half of a wall it shares with a neighbour (inside
+            # its edge) or of a wall-thick gap (outside its edge), in its own look, from its own floor to its own
+            # ceiling. Each room builds its half from its own side, so the two halves carry two looks and a room
+            # regenerated alone (--room) never touches its neighbour's half.
+            m.group(f'{key} walls')
+            if kind == 'gap':
+                ao = (a[0] - inward[0] * F.WALL_T, a[1] - inward[1] * F.WALL_T)
+                bo = (b[0] - inward[0] * F.WALL_T, b[1] - inward[1] * F.WALL_T)
+                side, holes = 'out_half', wall_openings(a, b, 'room') + wall_openings(ao, bo, 'room')
+            else:
+                side, holes = 'in_half', wall_openings(a, b, 'shared')
+            wall_piece(a, b, floor_in - F.FLOOR_T, ceil_in + F.CEIL_T, side, R('plinth'), R('wall'), f'{key} wall',
+                       openings=holes, band=floor_in + S.PLINTH_H, origin=r['poly'][0])
     m.ungroup()
 
 
@@ -858,8 +856,10 @@ def build_blockers(r):
         bottom = min([base] + [level_floor(r, (q[0] + (c[0] - q[0]) * 0.02, q[1] + (c[1] - q[1]) * 0.02)) for q in poly])
         tag = f"{r['key']} {name}"
         if name in F.ENTERABLE:
-            # A fenced cage with its gate open (G-01): thin fence walls, a gap at the gate.
-            gate = next(d for d in F.DOORS if d[0].startswith('Cage gate'))[1]
+            # A fenced walk-in cage (the supervisor cage, the lift): thin fence walls with a gap where its gate's door
+            # kit stands (rb_door, placed by kit_entities).
+            gate_name, gate, gate_kind = next(d for d in F.DOORS if d[0].startswith(F.ENTERABLE[name]))
+            gw, gh = F.DOOR_SIZE[gate_kind]
             n = len(poly)
             for i in range(n):
                 a, b = poly[i], poly[(i + 1) % n]
@@ -867,7 +867,7 @@ def build_blockers(r):
                 if P.seg_dist(gate, a, b) < 0.1:
                     L = math.dist(a, b)
                     s = ((gate[0] - a[0]) * (b[0] - a[0]) + (gate[1] - a[1]) * (b[1] - a[1])) / L
-                    ops.append([(s - 0.7, base), (s + 0.7, base), (s + 0.7, base + 2.4), (s - 0.7, base + 2.4)])
+                    ops.append([(s - gw / 2, base - 1), (s + gw / 2, base - 1), (s + gw / 2, base + gh), (s - gw / 2, base + gh)])
                 if P.edge_dist(((a[0] + b[0]) / 2, (a[1] + b[1]) / 2), r['poly']) < 0.05:
                     continue      # the room's own wall
                 # Mitred where two fence walls meet, so a corner is not two overlapping walls.
@@ -899,6 +899,119 @@ def build_blockers(r):
             octo = [(x + rad * 0.6 * math.cos(k * math.pi / 4 + math.pi / 8), y + rad * 0.6 * math.sin(k * math.pi / 4 + math.pi / 8))
                     for k in range(8)]
             prism(octo, base + 3.0, ceiling_at(r, (x, y)), R('pipe'), f"{r['key']} piston", tally='blocker')
+
+
+def drawbridge_span(a, d, L):
+    """The span (u from a, along direction d) of a corridor segment that the drawbridge covers, or None."""
+    db = F.KIT_DRAWBRIDGE
+    hx, hy = db['hinge']
+    ex, ey = db['extends']
+    far = (hx + ex * db['length'], hy + ey * db['length'])
+    ends = []
+    for q in (db['hinge'], far):
+        u = (q[0] - a[0]) * d[0] + (q[1] - a[1]) * d[1]
+        off = abs((q[0] - a[0]) * -d[1] + (q[1] - a[1]) * d[0])
+        if off > db['width'] / 2 or u < -0.01 or u > L + 0.01:
+            return None
+        ends.append(u)
+    return (min(ends), max(ends))
+
+
+def room_at(pt, margin=0.25):
+    """The room whose floor holds a plan point, looking a little inward from a wall face."""
+    return next((r for r in ROOMS.values() if P.inside(pt, r['poly'])), None)
+
+
+def door_placement(door_pt, kind, side=None):
+    """Where a door's kit stands: the wall's centre line at the door, the wall's normal, the floor it stands on, the
+    leaf height, and the owning room (for a shared wall, the room on the side it opens from)."""
+    w, hh = F.DOOR_SIZE[kind]
+    # A gate in a walk-in cage's fence: the fence stands inside the cage's edge.
+    for room in ROOMS.values():
+        for bl in room['blockers']:
+            if bl['name'] in F.ENTERABLE and P.edge_dist(door_pt, bl['poly']) < 0.1:
+                poly = bl['poly']
+                a, b = min(zip(poly, poly[1:] + poly[:1]), key=lambda e: P.seg_dist(door_pt, e[0], e[1]))
+                L = math.dist(a, b)
+                ux, uy = (b[0] - a[0]) / L, (b[1] - a[1]) / L
+                centre = (door_pt[0] - uy * F.WALL_T / 2, door_pt[1] + ux * F.WALL_T / 2)
+                return centre, (uy, -ux), level_floor(room, centre), hh, room
+    edges = [(r, a, b) for r in ROOMS.values() for a, b in zip(r['poly'], r['poly'][1:] + r['poly'][:1])
+             if P.seg_dist(door_pt, a, b) < 0.1]
+    r, a, b = edges[0]
+    L = math.dist(a, b)
+    ux, uy = (b[0] - a[0]) / L, (b[1] - a[1]) / L
+    normal = (uy, -ux)
+    shared = len({e[0]['key'] for e in edges}) > 1
+    centre = door_pt if shared else (door_pt[0] + normal[0] * F.WALL_T / 2, door_pt[1] + normal[1] * F.WALL_T / 2)
+    owner = r
+    if side is not None:
+        owner = room_at((door_pt[0] + side[0] * 0.6, door_pt[1] + side[1] * 0.6)) or r
+    # A corridor meeting the room here: the door stands on the corridor's floor.
+    for c in CORRS:
+        for (p, hp), (q, hq) in zip(zip(c['path'], c['heights']), zip(c['path'][1:], c['heights'][1:])):
+            if P.seg_dist(door_pt, p, q) < 0.6:
+                seg = math.dist(p, q)
+                t = max(0.0, min(1.0, ((door_pt[0] - p[0]) * (q[0] - p[0]) + (door_pt[1] - p[1]) * (q[1] - p[1])) / seg ** 2))
+                return centre, normal, hp + (hq - hp) * t, hh, owner
+    h0 = door_floor(door_pt, normal)
+    top = h0 + hh
+    for ceil in door_ceilings(door_pt, normal):
+        if abs(top - ceil) < 0.01:
+            top = ceil + F.CEIL_T          # the opening runs up through that ceiling slab: so does the leaf
+    return centre, normal, h0, top - h0, owner
+
+
+def kit_entities():
+    """The progression kit (G-02), placed from the plan: doors, switches, cards, the fan and the drawbridge. Each sits
+    in its room's group, so a room regenerated alone keeps its own."""
+    def fmt(v):
+        return f'{B._fmt(v[0])} {B._fmt(v[1])}'
+
+    def origin(x, y, h):
+        return ' '.join(B._fmt(v) for v in B.to_map(G(x, h, y)))
+
+    count = 0
+    for prefix, rule in F.DOOR_RULES:
+        name, door_pt, kind = next(d for d in F.DOORS if d[0].startswith(prefix))
+        side = rule.get('side')
+        centre, normal, h0, leaf_h, owner = door_placement(door_pt, kind, side)
+        needs = rule.get('needs', '')
+        props = {'origin': origin(centre[0], centre[1], h0), 'id': rule['id'], 'opens': rule['opens'], 'needs': needs,
+                 'needs_text': ';'.join(f'{f}={F.FLAG_TEXT[f]}' for f in needs.split(',') if f),
+                 'side': fmt(side) if side else '0 0', 'latch': rule.get('latch', 0),
+                 'events': rule.get('events', rule['id']), 'style': rule.get('style', 'rise'),
+                 'width': B._fmt(F.DOOR_SIZE[kind][0]), 'height': B._fmt(round(leaf_h, 4)), 'facing': fmt(normal),
+                 'look': owner['look'], 'label': name}
+        m.entity('rb_door', props, group=f"{owner['key']} {owner['name']}")
+        count += 1
+    for sid, name, sp, h, facing, mount, what in F.KIT_SWITCHES:
+        room = room_at((sp[0] + facing[0] * 0.3, sp[1] + facing[1] * 0.3))
+        props = {'origin': origin(sp[0], sp[1], h), 'id': sid, 'sends': what.get('sends', ''), 'sets': what.get('sets', ''),
+                 'once': what.get('once', 1), 'effect': what.get('effect', ''), 'mount': mount,
+                 'notice': what.get('notice', ''), 'facing': fmt(facing), 'look': room['look'], 'label': name}
+        m.entity('rb_switch', props, group=f"{room['key']} {room['name']}")
+        count += 1
+    for kid, name, kp, h, flag, colour in F.KIT_PICKUPS:
+        room = room_at(kp)
+        props = {'origin': origin(kp[0], kp[1], h), 'id': kid, 'flag': flag, 'color': ' '.join(B._fmt(c) for c in colour),
+                 'notice': name.split(':')[1].split(',')[0].strip().capitalize() + '.', 'look': room['look'], 'label': name}
+        m.entity('rb_pickup', props, group=f"{room['key']} {room['name']}")
+        count += 1
+    fan = F.KIT_FAN
+    room = ROOMS['PP']
+    m.entity('rb_fan', {'origin': origin(fan['point'][0], fan['point'][1], fan['floor'] + F.FAN['hub_height']),
+                        'id': fan['id'], 'event': fan['event'], 'diameter': B._fmt(F.FAN['diameter']),
+                        'blades': F.FAN['blades'], 'hub_radius': B._fmt(F.FAN['hub_radius']),
+                        'blade_width': B._fmt(F.FAN['blade_width']), 'facing': fmt(fan['facing']), 'look': room['look']},
+             group=f"{room['key']} {room['name']}")
+    db = F.KIT_DRAWBRIDGE
+    room = room_at((db['hinge'][0] + db['extends'][0], db['hinge'][1] + db['extends'][1]))
+    m.entity('rb_drawbridge', {'origin': origin(db['hinge'][0], db['hinge'][1], db['height']), 'id': db['id'],
+                               'event': db['event'], 'length': B._fmt(db['length']), 'width': B._fmt(db['width']),
+                               'extends': fmt(db['extends']), 'look': room['look']},
+             group=f"{room['key']} {room['name']}")
+    return count + 2
 
 
 def ladder_entities():
@@ -1092,13 +1205,21 @@ def build_corridor(c):
             if prof == 'catwalk':
                 inside_room = in_any_room(((a[0] + d[0] * (u0 + u1) / 2), (a[1] + d[1] * (u0 + u1) / 2)), 0.05)
                 if inside_room:
-                    piece([(-hw_clear, -0.25), (hw_clear, -0.25), (hw_clear, 0.0), (-hw_clear, 0.0)],
-                          top_tex(R('grate'), R('frame')), f"{c['key']} deck", tally='catwalk')
-                    for side in (1, -1):
-                        v = side * (hw_clear - 0.05)
-                        # Mitred like the walls: the inner rail stops short of a bend, the outer one runs on to meet.
-                        p0, p1 = pt(u0 + v * mitre_in, v, 0.0), pt(u1 - v * mitre_out, v, 0.0)
-                        rail(p0[0], p0[1], p1[0], p1[1], p0[2], p1[2], f"{c['key']} rail")
+                    # The drawbridge (a kit entity) is the catwalk over its own span: leave that span empty.
+                    runs = [(u0, u1)]
+                    gap = drawbridge_span(a, d, L)
+                    if gap and gap[0] < u1 and gap[1] > u0:
+                        runs = [(ua, ub) for ua, ub in ((u0, max(u0, gap[0])), (min(u1, gap[1]), u1)) if ub - ua > 0.05]
+                    for ua, ub in runs:
+                        mi = mitre_in if abs(ua - u0) < 1e-9 else 0.0
+                        mo = mitre_out if abs(ub - u1) < 1e-9 else 0.0
+                        piece([(-hw_clear, -0.25), (hw_clear, -0.25), (hw_clear, 0.0), (-hw_clear, 0.0)],
+                              top_tex(R('grate'), R('frame')), f"{c['key']} deck", span=(ua, ub, mi, mo), tally='catwalk')
+                        for side in (1, -1):
+                            v = side * (hw_clear - 0.05)
+                            # Mitred like the walls: the inner rail stops short of a bend, the outer one runs on to meet.
+                            p0, p1 = pt(ua + v * mi, v, 0.0), pt(ub - v * mo, v, 0.0)
+                            rail(p0[0], p0[1], p1[0], p1[1], p0[2], p1[2], f"{c['key']} rail")
                     continue
             for k_end, t_end in enumerate((t0, t1)):
                 if trims[k_end] <= 0.0:
@@ -1248,12 +1369,17 @@ def light_entity(x, y, h, energy, rng, shadow, group):
     return 1
 
 
-def los_clear(a, b, r, tall):
-    """Plan line of sight inside room r, not through a tall blocker."""
+def los_clear(a, b, r, tall, fences=()):
+    """Plan line of sight inside room r, not through a tall blocker, nor across a walk-in cage's fence (the gate is
+    taken as shut, so a light never counts on seeing through it)."""
     for t in (0.2, 0.4, 0.6, 0.8):
         q = (a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t)
         if not P.inside(q, r['poly']):
             return False
+    for poly in fences:
+        for e0, e1 in zip(poly, poly[1:] + poly[:1]):
+            if seg_cross(a, b, e0, e1):
+                return False
     for poly in tall:
         if P.inside(a, poly) or P.inside(b, poly):
             return False
@@ -1275,6 +1401,7 @@ def room_lights(r):
     spacing, energy, rng, shadow = F.LIGHT_ROOM
     reach = F.LIGHT_REACH
     blockers = [b['poly'] for b in r['blockers'] if b['name'] not in F.ENTERABLE]
+    fences = [b['poly'] for b in r['blockers'] if b['name'] in F.ENTERABLE and blocker_height(b['name']) >= 1.5]
     tall = [b['poly'] for b in r['blockers'] if b['name'] not in F.ENTERABLE
             and (blocker_height(b['name']) == 'ceiling' or blocker_height(b['name']) >= 1.5)]
     xs, ys = [p[0] for p in r['poly']], [p[1] for p in r['poly']]
@@ -1284,7 +1411,11 @@ def room_lights(r):
         y = math.floor(min(ys)) + 0.5
         while y < max(ys):
             pt = (x, y)
-            if P.inside(pt, r['poly']) and P.edge_dist(pt, r['poly']) > 0.3 and not any(P.inside(pt, b) for b in blockers):
+            # Clear of walk-in cages' fences too (they stand 0.5 m inside the outline): a light in a fence lights nothing.
+            in_fence = any(P.edge_dist(pt, f) < (F.WALL_T + 0.3 if P.inside(pt, f) else 0.3)
+                           for f in (b['poly'] for b in r['blockers'] if b['name'] in F.ENTERABLE))
+            clear = P.edge_dist(pt, r['poly']) > 0.3 and not in_fence and not any(P.inside(pt, b) for b in blockers)
+            if P.inside(pt, r['poly']) and clear:
                 fl = level_floor(r, pt)
                 ceil = ceiling_at(r, pt)
                 decks = [lv for lv in r['levels'] if lv['kind'] == 'deck' and P.inside(pt, lv['poly'])]
@@ -1304,7 +1435,7 @@ def room_lights(r):
                 continue
             if (sj[0] - si[0]) ** 2 + (sj[1] - si[1]) ** 2 > reach * reach:
                 continue
-            if i == j or los_clear((si[0], si[1]), (sj[0], sj[1]), r, tall):
+            if i == j or los_clear((si[0], si[1]), (sj[0], sj[1]), r, tall, fences):
                 cov.add(j)
         cover.append(cov)
     uncovered = set(range(len(samples)))
@@ -1407,12 +1538,27 @@ def route_markers():
     for name, pts in F.ROUTES.items():
         rname = re.sub(r'[^a-z0-9]+', '_', name.lower()).strip('_')
         oneway = 1 if any(F.xy(p) == (10.8, 45.75) for p in pts) else 0
+        done = set()
         for i, (x, y, h, posture) in enumerate(route_heights(pts)):
             o = B.to_map(G(x, h, y))
-            m.entity('rb_route', {'origin': ' '.join(B._fmt(v) for v in o), 'route': rname, 'index': i, 'posture': posture,
-                                  'oneway': oneway}, group='Markers')
+            props = {'origin': ' '.join(B._fmt(v) for v in o), 'route': rname, 'index': i, 'posture': posture,
+                     'oneway': oneway}
+            act = F.ROUTE_ACTIONS.get((x, y))
+            if act and (x, y) not in done:
+                props['use'] = act             # the route checker uses these kit pieces here, as the player would
+                done.add((x, y))
+            m.entity('rb_route', props, group='Markers')
             count += 1
-    return count
+    # At level start these must refuse the player standing here, and the running fan must close its hole.
+    for kid, rp, tag in F.REFUSALS:
+        x, y, h, _ = route_heights([rp + ((tag,) if tag else ())])[0]
+        m.entity('rb_probe', {'origin': ' '.join(B._fmt(v) for v in B.to_map(G(x, h, y))), 'kind': 'refuse', 'id': kid},
+                 group='Markers')
+        count += 1
+    (fx, fy), fh = F.FAN_BLOCKED
+    m.entity('rb_probe', {'origin': ' '.join(B._fmt(v) for v in B.to_map(G(fx, fh + 0.05, fy))), 'kind': 'blocked_crouch'},
+             group='Markers')
+    return count + 1
 
 
 # ================================================================================
@@ -1432,6 +1578,7 @@ for c in CORRS:
     build_corridor(c)
 sealed_doors()
 ladder_entities()
+kits = kit_entities()
 m.group('Markers')
 m.box(-30.5, -30.25, -0.2, 0.0, 29.75, 30.0, 'clip', 'marker anchor', tally='misc')
 m.ungroup()
@@ -1496,6 +1643,6 @@ if ROOM_ARG:
 else:
     MAP.parent.mkdir(parents=True, exist_ok=True)
     MAP.write_text(text, encoding='utf-8')
-    print(f'FREIGHT_V2_MAP: {m.count} brushes, {lights} lights, {markers} route markers, {len(m.groups)} groups '
+    print(f'FREIGHT_V2_MAP: {m.count} brushes, {lights} lights, {kits} kit pieces, {markers} markers, {len(m.groups)} groups '
           f'-> {MAP.relative_to(ROOT)}')
     print('  ' + ', '.join(f'{k} {v}' for k, v in sorted(m.tally.items())))

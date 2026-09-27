@@ -45,5 +45,4 @@ func _physics_process(delta: float) -> void:
 		get_tree().get_first_node_in_group("freight_mission").notice("Ladder blocked / clear the landing")
 	elif global_position.distance_to(target) < 0.015:
 		climb_index += 1
-	status.text = "FREIGHT ACCESS / LADDER\nEsc pause   Backspace reset"
 	$HUD/Interaction.text = "Climbing..."

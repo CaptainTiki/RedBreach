@@ -19,7 +19,10 @@ func run() -> void:
 		quit(1)
 		return
 	for node in geometry.find_children("*", "", true, false):
-		node.owner = level
+		# A progression kit piece is saved as its entity (its scene or script and properties); the parts it builds
+		# at runtime (leaves, blades, panels) are not, or a load would find a second, frozen set.
+		if not in_kit(node, geometry):
+			node.owner = level
 	var nav := NavigationMesh.new()
 	nav.geometry_parsed_geometry_type = NavigationMesh.PARSED_GEOMETRY_STATIC_COLLIDERS
 	nav.geometry_collision_mask = 1
@@ -31,8 +34,18 @@ func run() -> void:
 	nav.cell_height = 0.05
 	# The whole level: plan x -32..66, y -30..66 (Godot z = -y), heights -7..9.
 	nav.filter_baking_aabb = AABB(Vector3(-32.0, -7.0, -66.0), Vector3(98.0, 16.0, 97.0))
+	# The progression kit (doors, switches, the fan) is not architecture: bugs path through doorways whether or not a
+	# door is shut now, so kit collision is off while the navigation is parsed.
+	var kit_layers := {}
+	for kit in level.get_tree().get_nodes_in_group("progression_kit"):
+		for body in [kit] + kit.find_children("*", "CollisionObject3D", true, false):
+			if body is CollisionObject3D:
+				kit_layers[body] = body.collision_layer
+				body.collision_layer = 0
 	var source := NavigationMeshSourceGeometryData3D.new()
 	NavigationServer3D.parse_source_geometry_data(nav, source, geometry)
+	for body in kit_layers:
+		body.collision_layer = kit_layers[body]
 	NavigationServer3D.bake_from_source_geometry_data(nav, source)
 	if nav.get_polygon_count() == 0:
 		push_error("FREIGHT_V2_NAVIGATION_EMPTY")
@@ -42,18 +55,36 @@ func run() -> void:
 	# The bake also finds the tops of ceilings and roofs, which nothing walks on.
 	nav = reachable(nav, geometry)
 	level.get_node("Navigation").navigation_mesh = nav
-	var lights := geometry.find_children("*", "OmniLight3D", true, false).size()
+	var lights := 0
+	for light in geometry.find_children("*", "OmniLight3D", true, false):
+		if not in_kit(light, geometry):
+			lights += 1
 	var ladders := 0
 	for node in geometry.find_children("*", "StaticBody3D", true, false):
 		if node.has_method("climb_path"):
 			ladders += 1
+	# Brushes: collision from the map's solids only, not from ladders or the progression kit's parts.
+	var brushes := 0
+	for shape in geometry.find_children("*", "CollisionShape3D", true, false):
+		if shape.get_parent().get_script() == null and not in_kit(shape, geometry):
+			brushes += 1
+	var kits := level.get_tree().get_nodes_in_group("progression_kit").size()
 	var packed := PackedScene.new()
 	var error := packed.pack(level)
 	if error == OK:
 		error = ResourceSaver.save(packed, "res://missions/freight_v2/freight_v2.tscn")
-	print("FREIGHT_V2_BUILD: ", geometry.find_children("*", "CollisionShape3D", true, false).size() - ladders, " brushes; ",
-		lights, " lights; ", ladders, " ladders; ", nav.get_polygon_count(), " navigation polygons; save=", error)
+	print("FREIGHT_V2_BUILD: ", brushes, " brushes; ", lights, " lights; ", ladders, " ladders; ", kits, " kit pieces; ",
+		nav.get_polygon_count(), " navigation polygons; save=", error)
 	quit(0 if error == OK else 1)
+
+## Inside a progression kit piece (a door's leaf, a switch, the fan): its own runtime parts, not map geometry.
+func in_kit(node: Node, stop: Node) -> bool:
+	var n := node.get_parent()
+	while n != null and n != stop:
+		if n.is_in_group("progression_kit"):
+			return true
+		n = n.get_parent()
+	return false
 
 func reachable(nav: NavigationMesh, geometry: Node) -> NavigationMesh:
 	var verts := nav.get_vertices()

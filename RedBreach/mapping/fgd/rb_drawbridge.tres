@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="1"]
+[ext_resource type="PackedScene" path="res://interaction/drawbridge_kit.tscn" id="2"]
+
+[resource]
+script = ExtResource("1")
+scene_file = ExtResource("2")
+apply_rotation_on_map_build = false
+classname = "rb_drawbridge"
+description = "A hinged catwalk section: stands at 90 degrees until its event lowers it. Origin: the hinge line's middle at deck height."
+class_properties = Dictionary[String, Variant]({
+"id": "DRAWBRIDGE",
+"event": "drawbridge",
+"length": 4.75,
+"width": 1.5,
+"thickness": 0.25,
+"extends": "-1 0",
+"look": "steel"
+})
+class_property_descriptions = Dictionary[String, Variant]({
+"id": "Name",
+"event": "Event that lowers it",
+"length": "Hinge to free end, metres",
+"width": "Metres",
+"thickness": "Deck thickness, metres",
+"extends": "Plan direction dx dy from the hinge to the free end",
+"look": "Look for its materials"
+})
+meta_properties = Dictionary[String, Variant]({
+"size": AABB(-8, -24, -8, 16, 48, 16),
+"color": Color(0.627, 0.784, 0.353, 1)
+})

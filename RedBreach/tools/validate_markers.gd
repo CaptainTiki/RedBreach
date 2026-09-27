@@ -86,6 +86,63 @@ func walk_leg(target: Vector3, crouch: bool, label: String, y_lo: float, y_hi: f
 	expect(false, "%s stalled at %v short of %v" % [label, player.global_position, target])
 	return false
 
+## Inside a progression kit piece (a door's leaf, a switch, the fan): its runtime parts are not map brushes.
+func in_kit(node: Node, stop: Node) -> bool:
+	var n := node.get_parent()
+	while n != null and n != stop:
+		if n.is_in_group("progression_kit"):
+			return true
+		n = n.get_parent()
+	return false
+
+
+## A progression kit piece (door, switch, card, fan, drawbridge) by its id.
+func find_kit(id: String) -> Node:
+	for node in scene.get_tree().get_nodes_in_group("progression_kit"):
+		if str(node.get("kit_id")) == id:
+			return node
+	return null
+
+
+## Put the player's eye (the camera kit pieces judge sides from) over a foot position.
+func put_eye(foot: Vector3) -> void:
+	player.relocate(Transform3D(Basis.IDENTITY, foot + Vector3.UP * 0.05))
+	player.camera.global_position = foot + Vector3.UP * 1.6
+
+
+## Wait until nothing in the kit is moving (a door opening, the fan spinning down, the section lowering).
+func settle(limit: float = 20.0) -> void:
+	for i in int(limit / STEP):
+		var busy := false
+		for node in scene.get_tree().get_nodes_in_group("progression_kit"):
+			if node.has_method("busy") and node.busy():
+				busy = true
+				break
+		if not busy and i > 10:
+			return
+		await physics_frame
+
+
+## Use kit pieces on arriving at a route marker, as the player would: within reach, from where the player stands.
+func use_kits(ids: String, label: String) -> bool:
+	for id in ids.split(",", false):
+		var kit := find_kit(id)
+		if kit == null:
+			expect(false, "%s: no kit piece %s" % [label, id])
+			return false
+		var reach: Vector3 = kit.use_point() - (player.global_position + Vector3.UP * 1.4)
+		if Vector2(reach.x, reach.z).length() > 2.6 or absf(reach.y) > 2.8:
+			expect(false, "%s: %s is out of reach (%.1f m) from %v" % [label, id, reach.length(), player.global_position])
+			return false
+		var used: bool = kit.use() or kit.use_done()
+		expect(used, "%s: %s would not work from %v (%s)" % [label, id, player.global_position,
+			kit.use_prompt() if kit.has_method("use_prompt") else ""])
+		if not used:
+			return false
+		await settle()
+	return true
+
+
 func climb_leg(a: Vector3, b: Vector3, label: String) -> bool:
 	Input.action_release("gym_crouch")
 	var ladder: Node3D = null
@@ -139,13 +196,13 @@ func run() -> void:
 		# Brush geometry only: entities with their own scripts (ladders) bring their own shapes and meshes.
 		var shapes := 0
 		for shape in map_node.find_children("*", "CollisionShape3D", true, false):
-			if shape.get_parent().get_script() == null:
+			if shape.get_parent().get_script() == null and not in_kit(shape, map_node):
 				shapes += 1
 		if shapes > 0 and map_node.local_map_file != "":
 			var brushes := map_brush_count(map_node.local_map_file)
 			expect(shapes == brushes, "%s: %d collision shapes for %d brushes" % [map_node.name, shapes, brushes])
 		for mesh_instance in map_node.find_children("*", "MeshInstance3D", true, false):
-			if mesh_instance.get_parent().get_script() != null:
+			if mesh_instance.get_parent().get_script() != null or in_kit(mesh_instance, map_node):
 				continue
 			var mesh: Mesh = mesh_instance.mesh
 			for s in mesh.get_surface_count():
@@ -163,11 +220,11 @@ func run() -> void:
 		var p := props(marker)
 		match str(p.get("classname", "")):
 			"rb_route":
-				routes.get_or_add(str(p.get("route", "main")), []).append([int(p.get("index", 0)), marker.global_position, str(p.get("posture", "stand"))])
+				routes.get_or_add(str(p.get("route", "main")), []).append([int(p.get("index", 0)), marker.global_position, str(p.get("posture", "stand")), str(p.get("use", ""))])
 				if int(p.get("oneway", 0)) == 1:
 					oneways[str(p.get("route", "main"))] = true
 			"rb_probe":
-				probes.append([str(p.get("kind", "stand_clear")), float(p.get("min", 0.0)), marker.global_position])
+				probes.append([str(p.get("kind", "stand_clear")), float(p.get("min", 0.0)), marker.global_position, str(p.get("id", ""))])
 			"rb_nav":
 				navs.get_or_add(str(p.get("pair", "")), {})[str(p.get("end", "a"))] = [marker.global_position, str(p.get("expect", "connect"))]
 			"rb_dark":
@@ -191,13 +248,25 @@ func run() -> void:
 				var hit := space.intersect_ray(q)
 				var clear: float = (hit.position.y - at.y) if not hit.is_empty() else 999.0
 				expect(clear >= probe[1], "headroom %.2f < %.2f at %v" % [clear, probe[1], at])
+			"refuse":
+				# At level start this kit piece must not open for a player standing here (a lock, a card, a side).
+				var kit := find_kit(probe[3])
+				if kit == null:
+					expect(false, "refuse probe: no kit piece %s" % probe[3])
+				else:
+					put_eye(at)
+					expect(not kit.use(), "refuse: %s opened for a player at %v at level start" % [probe[3], at])
+			"blocked_crouch":
+				expect(not capsule_clear(space, at, 1.1), "blocked_crouch: a crouched player fits at %v at level start" % at)
 			_:
 				expect(false, "unknown probe kind %s at %v" % [kind, at])
 
-	# Doors on the routes are opened first. Door behaviour has its own
-	# validator; here a door only needs to let the player through.
+	# A level with progression (doors with rules, switches, cards) is walked as a player plays it: each route
+	# starts from a reset level and uses its kit pieces where the route says. Otherwise doors are opened first:
+	# door behaviour has its own validator, and here a door only needs to let the player through.
+	var progression: Node = scene.get_tree().get_first_node_in_group("progression")
 	var doors := 0
-	for door in scene.find_children("*", "", true, false):
+	for door in ([] if progression != null else scene.find_children("*", "", true, false)):
 		if door.has_method("request_toggle") and door.has_method("state_name"):
 			for i in 30:
 				if door.state_name() != "Starting":
@@ -223,9 +292,22 @@ func run() -> void:
 			var seq: Array = points if direction == "forward" else points.duplicate()
 			if direction == "back":
 				seq.reverse()
+			if progression != null and direction == "forward":
+				# A fresh level: doors shut, cards back, switches up; the airlock opens when the level is ready.
+				if scene.has_method("reset_encounter"):
+					scene.reset_encounter()
+				else:
+					progression.reset()
 			player.relocate(Transform3D(Basis.IDENTITY, seq[0][1] + Vector3.UP * 0.05))
 			for i in 6:
 				await physics_frame
+			if progression != null and direction == "forward":
+				for i in int((progression.start_delay + 0.3) / STEP):
+					await physics_frame
+				await settle()
+				if seq[0][3] != "" and not await use_kits(seq[0][3], "route %s at its start" % route_name):
+					continue
+			var route_ok := true
 			for i in range(1, seq.size()):
 				var a: Vector3 = seq[i - 1][1]
 				var b: Vector3 = seq[i][1]
@@ -239,7 +321,19 @@ func run() -> void:
 					ok = await walk_leg(b, crouch, label, minf(a.y, b.y), maxf(a.y, b.y))
 				expect(ok, label)
 				if not ok:
+					route_ok = false
 					break
+				if direction == "forward" and seq[i][3] != "":
+					if not await use_kits(seq[i][3], label):
+						route_ok = false
+						break
+			# A route of a level with progression ends where the level says it is finished (freight v2: in the lift).
+			if progression != null and direction == "forward" and route_ok and scene.has_method("playtest_stats") and "finish" in scene:
+				var end: Vector3 = seq[seq.size() - 1][1]
+				if Vector2(end.x, -end.z).distance_to(scene.finish) < 2.5:
+					for i in 10:
+						await physics_frame
+					expect(scene.playtest_stats().get("finished", false), "route %s reached the end but the level did not finish" % route_name)
 	Input.action_release("gym_crouch")
 	player.control_override = false
 

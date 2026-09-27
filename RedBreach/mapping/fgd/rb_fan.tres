@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="1"]
+[ext_resource type="PackedScene" path="res://interaction/fan_kit.tscn" id="2"]
+
+[resource]
+script = ExtResource("1")
+scene_file = ExtResource("2")
+apply_rotation_on_map_build = false
+classname = "rb_fan"
+description = "A big fan in a round wall hole: solid while it turns, stops blade-up on its event. Origin: the hub centre."
+class_properties = Dictionary[String, Variant]({
+"id": "FAN",
+"event": "fan_stop",
+"diameter": 3.0,
+"blades": 3,
+"hub_radius": 0.3,
+"blade_width": 0.3,
+"facing": "0 1",
+"look": "steel"
+})
+class_property_descriptions = Dictionary[String, Variant]({
+"id": "Name",
+"event": "Event that stops it",
+"diameter": "Metres",
+"blades": "Blade count",
+"hub_radius": "Metres",
+"blade_width": "Metres",
+"facing": "Plan direction dx dy of the disc's normal",
+"look": "Look for its materials"
+})
+meta_properties = Dictionary[String, Variant]({
+"size": AABB(-48, -4, -48, 96, 8, 96),
+"color": Color(0.471, 0.706, 0.902, 1)
+})

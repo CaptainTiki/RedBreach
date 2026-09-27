@@ -7,12 +7,14 @@
 	index(integer) : "Order along the route" : 0
 	posture(string) : "stand, crouch or climb" : "stand"
 	oneway(integer) : "1: walked forward only" : 0
+	use(string) : "Kit pieces the checker uses here, comma separated ids" : ""
 ]
 
 @PointClass size(-8 -8 0, 8 8 16) color(232 189 119) = rb_probe : "Clearance probe: stand_clear, crouch_only or headroom." 
 [
-	kind(string) : "stand_clear, crouch_only or headroom" : "stand_clear"
+	kind(string) : "stand_clear, crouch_only, headroom, refuse or blocked_crouch" : "stand_clear"
 	min(float) : "Minimum clear height in metres (headroom only)" : "0"
+	id(string) : "The kit piece a refuse probe tries" : ""
 ]
 
 @PointClass size(-8 -8 0, 8 8 16) color(180 140 240) = rb_nav : "Bug navigation probe. Two markers share a pair name; end a carries the expectation." 
@@ -41,4 +43,67 @@
 	top(float) : "Height of the top landing, metres" : "0"
 	facing(string) : "Plan direction the climber faces: dx dy (x east, y north)" : "0 1"
 	label(string) : "Name, for the plan" : ""
+]
+
+@PointClass size(-32 -4 0, 32 4 80) color(200 90 60) = rb_door : "A door of any size. Origin: the bottom middle of the opening, on the wall's centre line; 'facing' is the wall's normal."
+[
+	id(string) : "Name that switches and route checks use" : ""
+	opens(string) : "use (E either side) / side (E from the side named by side) / event (a switch only) / start (opens when the level is ready)" : "use"
+	needs(string) : "Progression flags it needs, comma separated (K,P)" : ""
+	needs_text(string) : "Names for the prompt: K=the freight card;P=power" : ""
+	side(string) : "For opens=side: plan direction dx dy of the side it opens from" : "0 0"
+	latch(integer) : "1: once open it stays open" : 0
+	events(string) : "Events that open it, comma separated (default: its id)" : ""
+	style(string) : "rise (one leaf up into the wall) / slide (two leaves apart)" : "rise"
+	width(float) : "Opening width, metres" : "2"
+	height(float) : "Opening height, metres" : "2.5"
+	facing(string) : "Plan direction dx dy of the wall's normal" : "0 1"
+	look(string) : "Look for its materials (steel / concrete / warm)" : "steel"
+]
+
+@PointClass size(-8 -8 0, 8 8 48) color(230 60 60) = rb_switch : "A switch or lever. Origin: on the wall's face (wall) or the floor (post); 'facing' is the way its panel faces."
+[
+	id(string) : "Name that route checks use" : ""
+	sends(string) : "Events it fires, comma separated" : ""
+	sets(string) : "Progression flags it sets, comma separated" : ""
+	once(integer) : "1: it stays thrown" : 1
+	effect(string) : "spark: it only sparks" : ""
+	mount(string) : "wall / post" : "wall"
+	notice(string) : "A line on the HUD when used (a distant clunk)" : ""
+	prompt(string) : "Interaction prompt" : "E  Use"
+	facing(string) : "Plan direction dx dy its panel faces" : "0 1"
+	look(string) : "Look for its materials" : "steel"
+]
+
+@PointClass size(-8 -8 0, 8 8 36) color(250 200 60) = rb_pickup : "A card on a plinth: E takes it and sets its flag."
+[
+	id(string) : "Name that route checks use" : ""
+	flag(string) : "Progression flag it sets" : ""
+	color(string) : "Card colour r g b (0-1)" : "1 0.7 0.2"
+	notice(string) : "A line on the HUD when taken" : ""
+	prompt(string) : "Interaction prompt" : "E  Take"
+	look(string) : "Look for its materials" : "steel"
+]
+
+@PointClass size(-48 -4 -48, 48 4 48) color(120 180 230) = rb_fan : "A big fan in a round wall hole: solid while it turns, stops blade-up on its event. Origin: the hub centre."
+[
+	id(string) : "Name" : "FAN"
+	event(string) : "Event that stops it" : "fan_stop"
+	diameter(float) : "Metres" : "3"
+	blades(integer) : "Blade count" : 3
+	hub_radius(float) : "Metres" : "0.3"
+	blade_width(float) : "Metres" : "0.3"
+	facing(string) : "Plan direction dx dy of the disc's normal" : "0 1"
+	look(string) : "Look for its materials" : "steel"
+]
+
+@PointClass size(-8 -24 -8, 8 24 8) color(160 200 90) = rb_drawbridge : "A hinged catwalk section: stands at 90 degrees until its event lowers it. Origin: the hinge line's middle at deck height."
+[
+	id(string) : "Name" : "DRAWBRIDGE"
+	event(string) : "Event that lowers it" : "drawbridge"
+	length(float) : "Hinge to free end, metres" : "4.75"
+	width(float) : "Metres" : "1.5"
+	thickness(float) : "Deck thickness, metres" : "0.25"
+	extends(string) : "Plan direction dx dy from the hinge to the free end" : "-1 0"
+	look(string) : "Look for its materials" : "steel"
 ]

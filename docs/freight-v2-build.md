@@ -36,8 +36,8 @@ It is the project's main scene, so **F5** in the editor starts it, and **F11** o
 **Expected counts on any machine** (after `--import`), since the z-fighting pass:
 - `LEAK: none, the level is sealed`
 - `ZFIGHT: ... 0 VISIBLE, 0.0 m2`
-- `FREIGHT_V2_BUILD: 1014 brushes; 174 lights; 5 ladders; 658 navigation polygons; save=0`
-- `MARKER_QA: 631 checks; 0 failures`
+- `FREIGHT_V2_BUILD: 1091 brushes; 178 lights; 5 ladders; 23 kit pieces; 672 navigation polygons; save=0`
+- `MARKER_QA: 713 checks; 0 failures`
 
 ## What G-01 is
 
@@ -182,3 +182,27 @@ no leaks**, with the routes, light floor and gym validation unchanged.
   where they flicker: the S1 landing at the dock edge (the user's first Z mark) and the truck bay's ceiling lip.
 
 Result: **0 visible pairs, sealed**, 1,014 brushes, and the routes and light floor unchanged.
+
+## G-02: progression, and every room owning its walls
+
+**Every room owns its walls** (the user's rule, 2026-09-22):
+- A wall two rooms share is now two 0.25 m halves, each in its own room's look, from that room's floor to its ceiling.
+- A wall in a 0.5 m gap is split the same way.
+- Each half is in its room's `KEY walls` group, so `--room KEY` never touches a neighbour's half (tested: identical).
+- Open edges (the bay, dock and truck bay risers and bulkheads) stay single pieces.
+
+**Progression is built** with the reusable [progression kit](progression-kit.md):
+- 12 doors, 7 switches and levers, the cards K and M, the big fan and the hinged catwalk section. All are map
+  entities placed from the plan's progression data.
+- The route checker plays all five routes from a fresh level, using each route's switches, cards and doors in order,
+  and each ends with the level finished inside the lift.
+- Refusal probes prove the locks: S1 without K, S2 and the hold from the wrong side or without M, door 3 from the
+  substation, the cage without its lever, the lift without K and P, and the running fan's closed hole.
+
+**Geometry changes:**
+- The lift cage is a walk-in car behind its gate, and the finish is inside it.
+- Logistics has a 9.5 m ceiling pocket over the catwalk section.
+- The catwalk leaves a gap for the section.
+- Walk-in cage fences now block light sight-lines, and no light is placed inside a fence.
+
+**Still to do:** the lift's arrival delay and the final hold (the enemy pass), and sound for the clunks and the fan.

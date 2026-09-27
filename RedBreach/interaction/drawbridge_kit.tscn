@@ -1,0 +1,50 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://interaction/drawbridge_kit.gd" id="1_bridge"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="2_chart"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="3_compound"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="4_atomic"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="5_transition"]
+
+[node name="DrawbridgeKit" type="Node3D"]
+script = ExtResource("1_bridge")
+
+[node name="StateChart" type="Node" parent="."]
+script = ExtResource("2_chart")
+track_in_editor = true
+
+[node name="Hinge" type="Node" parent="StateChart"]
+script = ExtResource("3_compound")
+initial_state = NodePath("Raised")
+
+[node name="Reset" type="Node" parent="StateChart/Hinge"]
+script = ExtResource("5_transition")
+to = NodePath("../Raised")
+event = &"reset"
+
+[node name="Raised" type="Node" parent="StateChart/Hinge"]
+script = ExtResource("4_atomic")
+
+[node name="Lower" type="Node" parent="StateChart/Hinge/Raised"]
+script = ExtResource("5_transition")
+to = NodePath("../../Lowering")
+event = &"lower"
+
+[node name="Lowering" type="Node" parent="StateChart/Hinge"]
+script = ExtResource("4_atomic")
+
+[node name="Landed" type="Node" parent="StateChart/Hinge/Lowering"]
+script = ExtResource("5_transition")
+to = NodePath("../../Lowered")
+event = &"landed"
+
+[node name="Lowered" type="Node" parent="StateChart/Hinge"]
+script = ExtResource("4_atomic")
+
+[connection signal="state_entered" from="StateChart/Hinge/Raised" to="." method="_on_state_entered" binds=["Raised"]]
+
+[connection signal="state_entered" from="StateChart/Hinge/Lowering" to="." method="_on_state_entered" binds=["Lowering"]]
+
+[connection signal="state_entered" from="StateChart/Hinge/Lowered" to="." method="_on_state_entered" binds=["Lowered"]]
+
+[connection signal="state_physics_processing" from="StateChart/Hinge/Lowering" to="." method="_on_lowering_physics"]

@@ -7,8 +7,8 @@ extends Node3D
 
 @export var env_levels: Array[Environment] = []
 @export var presentation: int = 1
-## Plan point (x east, y north) of the lift gate; reaching it stops the timer.
-@export var finish := Vector2(0.0, 46.0)
+## Plan point (x east, y north) inside the lift, through its gate (K and P); reaching it stops the timer.
+@export var finish := Vector2(0.0, 50.5)
 
 var _label: Label
 var _notice: Label
@@ -22,6 +22,7 @@ var _last := Vector3.ZERO
 func _ready() -> void:
 	add_to_group("freight_mission")
 	add_to_group("combat_gym")
+	add_to_group("level")          # the progression kit shows its notices here
 	var layer := CanvasLayer.new()
 	layer.name = "CanvasLayer"
 	layer.layer = 10
@@ -62,7 +63,7 @@ func _physics_process(delta: float) -> void:
 			_distance += step
 		if Vector2(at.x, -at.z).distance_to(finish) < 2.5:
 			_finished = true
-			notice("Lift reached: %.1f s, %.0f m" % [_elapsed, _distance])
+			notice("In the lift: %.1f s, %.0f m" % [_elapsed, _distance])
 			var notes := get_node_or_null("/root/PlaytestNotes")
 			if notes:
 				notes.event("finish", playtest_stats())
@@ -84,6 +85,9 @@ func reset_encounter() -> void:
 	var notes := get_node_or_null("/root/PlaytestNotes")
 	if notes and _started:
 		notes.event("restart", playtest_stats())
+	var progression := get_node_or_null("Progression")
+	if progression:
+		progression.reset()        # doors shut, cards back, the fan running, the catwalk section up
 	_started = false
 	_finished = false
 	_elapsed = 0.0
