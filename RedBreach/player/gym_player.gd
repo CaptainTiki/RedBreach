@@ -62,6 +62,8 @@ func _ready() -> void:
 	floor_constant_speed = true
 	reset_camera_interpolation()
 	$HUD/Build.text = "Build: " + str(ProjectSettings.get_setting("application/config/version", ""))
+	# Only the non-standard keys are shown: the playtest notes (the PlaytestNotes autoload).
+	status.text = "Q note   Z z-fight"
 	if DisplayServer.get_name() != "headless":
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
@@ -257,7 +259,6 @@ func _physics_process(delta: float) -> void:
 	if global_position.y < -10.0:
 		reset_player()
 	_update_interaction()
-	status.text = "%s / %s / Hits: %d\nWASD move   Shift sprint   Ctrl crouch   Space jump\nLMB fire   RMB aim   R reload   E use\nEsc release mouse   Backspace reset\nF1 movement   F2 combat   F9 style   F10 kit   F11 freight v2" % [gym_title, movement_mode(), hit_count]
 
 func is_grounded() -> bool:
 	# A capsule can touch a stair corner with a steep normal even though there is

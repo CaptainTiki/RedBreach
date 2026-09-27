@@ -5,10 +5,12 @@ Status: **G-01 built and validated**, 2026-09-26, from plan revision 08
 level before the room studies, on the condition that a single room can be
 adjusted without rebuilding everything (see "Editing one room").
 
-**F11** opens it from any gym or lab (or open
-`RedBreach/missions/freight_v2/freight_v2.tscn`).
+It is the project's main scene, so **F5** in the editor starts it, and **F11** opens it from any gym or lab.
 - A timer starts when you first move, and stops at the lift gate, so the
-  empty walk can be measured.
+  empty walk can be measured. It is not on screen: a notice shows the time and
+  distance at the lift, and every playtest note and the logged finish carry them.
+- The HUD shows only the non-standard keys (**Q** note, **Z** z-fight) upper
+  left and the build upper right; the rest is a normal WASD setup.
 - **P** switches presentation (off / subtle).
 - **Backspace** returns you to the airlock and resets the timer.
 - **E** climbs a ladder, up from the bottom or down from the top.

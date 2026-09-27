@@ -1,8 +1,9 @@
 extends Node3D
 ## Freight access v2, G-01 greybox: the empty walk.
-## The timer starts when you first move and stops when you reach the lift, so the empty walk can be measured.
+## The timer starts when you first move and stops when you reach the lift, so the empty walk can be measured. It is not
+## on screen: each playtest note carries it, the finish is logged, and a notice shows the time at the lift.
 ##   P  presentation off / subtle;  Backspace  back to the airlock (resets the timer)
-##   Q  playtest note, Z  quick z-fight mark (the PlaytestNotes autoload; each note carries the run time and distance)
+##   Q  playtest note, Z  quick z-fight mark (the PlaytestNotes autoload)
 
 @export var env_levels: Array[Environment] = []
 @export var presentation: int = 1
@@ -24,9 +25,10 @@ func _ready() -> void:
 	var layer := CanvasLayer.new()
 	layer.name = "CanvasLayer"
 	layer.layer = 10
-	# Under the player's own title and key help.
-	_label = _make_label(Vector2(16, 186), 18)
-	_notice = _make_label(Vector2(16, 216), 20)
+	# Empty in play; capture_freight_v2.gd writes each view's caption into it (with the player's HUD hidden).
+	_label = _make_label(Vector2(24, 20), 18)
+	# Transient notices (the lift time, a blocked ladder), under the player's Q/Z line.
+	_notice = _make_label(Vector2(24, 52), 20)
 	_label.name = "Label"
 	_notice.name = "Notice"
 	layer.add_child(_label)
@@ -68,8 +70,6 @@ func _physics_process(delta: float) -> void:
 		_notice_time -= delta
 		if _notice_time <= 0.0:
 			_notice.text = ""
-	_label.text = "FREIGHT V2 G-01 | %s %.1f s  %.0f m | presentation: %s   [P present  Backspace restart  Q note  Z z-fight]" % [
-		"FINISHED" if _finished else "time", _elapsed, _distance, ["off", "subtle"][presentation]]
 
 func notice(text: String) -> void:
 	print("NOTICE: ", text)
