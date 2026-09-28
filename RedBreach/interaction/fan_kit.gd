@@ -7,8 +7,8 @@ const Parts := preload("res://interaction/kit_parts.gd")
 const Progression := preload("res://interaction/progression.gd")
 
 @export var func_godot_properties: Dictionary = {}
-@export var run_speed := 1.4          ## rad/s: "its blades turn slowly"
-@export var spin_down := 0.9          ## rad/s per second while it spins down
+@export var run_speed := 6.0          ## rad/s (user, 2026-09-27: it turned too slowly to read as running)
+@export var spin_down := 1.6          ## rad/s per second while it spins down: the slowing is plain to see
 @export var settle_speed := 0.35      ## the last, slow turn to blade-up
 @onready var chart: StateChart = $StateChart
 
@@ -24,6 +24,11 @@ var _target := INF
 var _rotor: AnimatableBody3D
 var _disc: CollisionShape3D
 var _progression: Node
+var _sparks: CPUParticles3D
+var _flash: OmniLight3D
+var _bursts := 0                      ## spark bursts still to come as it spins down
+var _burst_time := 0.0
+var _flash_time := 0.0
 
 
 func _func_godot_apply_properties(p: Dictionary) -> void:
@@ -98,6 +103,30 @@ func _build(look: String) -> void:
 	_disc.shape = ds
 	_disc.rotation.x = PI / 2
 	disc_body.add_child(_disc)
+	# Sparks from the hub the moment the lever cuts the drive (user, 2026-09-27: feedback at once, then the slowing).
+	_sparks = CPUParticles3D.new()
+	_sparks.emitting = false
+	_sparks.one_shot = true
+	_sparks.amount = 48
+	_sparks.lifetime = 0.8
+	_sparks.explosiveness = 0.9
+	_sparks.direction = Vector3(0, 0, 1)
+	_sparks.spread = 180.0
+	_sparks.initial_velocity_min = 1.5
+	_sparks.initial_velocity_max = 4.0
+	_sparks.gravity = Vector3(0, -9.8, 0)
+	var dot := SphereMesh.new()
+	dot.radius = 0.015
+	dot.height = 0.03
+	dot.material = Parts.glow(Color(1.0, 0.8, 0.35), 4.0)
+	_sparks.mesh = dot
+	add_child(_sparks)
+	_flash = OmniLight3D.new()
+	_flash.light_color = Color(1.0, 0.8, 0.45)
+	_flash.omni_range = 5.0
+	_flash.light_energy = 0.0
+	_flash.shadow_enabled = false
+	add_child(_flash)
 
 
 func _apply() -> void:
@@ -134,7 +163,26 @@ func _on_running_physics(delta: float) -> void:
 	_apply()
 
 
+func _burst() -> void:
+	_sparks.restart()
+	_sparks.emitting = true
+	_flash_time = 0.1
+
+
+func _process(delta: float) -> void:
+	if _flash == null:
+		return
+	_flash_time = maxf(0.0, _flash_time - delta)
+	_flash.light_energy = 2.5 if _flash_time > 0.0 else 0.0
+
+
 func _on_spinning_down_physics(delta: float) -> void:
+	if _bursts > 0:
+		_burst_time -= delta
+		if _burst_time <= 0.0:
+			_burst()
+			_bursts -= 1
+			_burst_time = 0.45
 	speed = maxf(settle_speed, speed - spin_down * delta)
 	if speed <= settle_speed and _target == INF:
 		_target = _next_blade_up(angle + 0.05)
@@ -154,9 +202,13 @@ func _on_state_entered(label: String) -> void:
 		"Running":
 			speed = run_speed
 			_target = INF
+			_bursts = 0
 			_disc.set_deferred("disabled", false)
 		"SpinningDown":
 			speed = run_speed
 			_target = INF
+			_burst()
+			_bursts = 2
+			_burst_time = 0.45
 		"Stopped":
 			_disc.set_deferred("disabled", true)

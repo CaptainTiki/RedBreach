@@ -8,10 +8,11 @@ room's TrenchBroom group and move with it. Built for freight v2 (G-02). The scri
 | Entity | What it is | Behaviour |
 |---|---|---|
 | `rb_door` (`door_kit.tscn`) | A door of any size. `rise`: one leaf lifts into the wall. `slide`: two leaves part (gates in fences). | StateChart: Closed, Opening, Open, Closing, Blocked, plus a reset from anywhere. |
-| `rb_switch` (`switch_kit.gd`) | A wall panel or a console post with a handle and a lamp. | Sends events, sets flags, or only sparks. |
+| `rb_switch` (`switch_kit.gd`) | A wall panel or a console post with a handle and a lamp, or (`flat`) a note on a clipboard. | Sends events, sets flags, or only sparks. `prompt` sets its words ("E  Read"). |
 | `rb_pickup` (`pickup_kit.gd`) | A glowing card on a plinth. | E takes it and sets its flag. |
 | `rb_fan` (`fan_kit.tscn`) | Blades in a round wall hole. | StateChart: Running, SpinningDown, Stopped. Solid while turning; at rest one blade points up. |
 | `rb_drawbridge` (`drawbridge_kit.tscn`) | A hinged catwalk section with rails. | StateChart: Raised, Lowering, Lowered. |
+| `rb_machine` (`machine_kit.gd`) | Moving machinery with no gameplay: a `piston` through a housing, a torn-loose light `fitting`, or a pump `plunger` rising out of its housing (`low`, `stroke`, `period`, `phase` so a row takes turns). | A plain loop, with no states to own: the piston and plunger pump with their lamps; the fitting sways and sparks. No collision (out of reach). `force()` freezes it for captures. |
 
 A level holds one `Progression` node (`progression.gd`). It keeps the flags (cards taken, power) and fires events
 (switches, levers), and every kit piece finds it by group. A `start` event fires a second after the level starts or
@@ -25,6 +26,7 @@ resets, which opens the arrival airlock. Backspace calls the level's `reset_enco
 | `opens` | `use`: E from either side. `side`: E only from the side `side` points to (a release). `event`: only a switch or lever. `start`: opens when the level is ready. |
 | `needs` | Flags, e.g. `K,P`. `needs_text` names them for the prompt: "Needs the freight clearance card and power". |
 | `latch` | 1: once open it stays open. |
+| `at` (plan rule) | Place the door at a point instead of in a wall opening: the archive drawer (`width`, `height`, `floor`, `facing`, `room`, and a small `lamp_depth`). |
 | `events` | The events that open it (default: its id). |
 
 There are no labels (a user rule). A lamp over each face shows the state:
@@ -78,6 +80,7 @@ The plan owns all of it (`tools/freight_v2.py`: `DOOR_RULES`, `KIT_SWITCHES`, `K
 | Door 5 | Switch 2 opens it (a distant clunk). |
 | Door 3 | From the stair corridor side only. |
 | Lift gate | From the dock, with K and P. The finish is inside the lift. |
+| Archive drawer | E with the drawer code (`CODE`, from the note on a dispatch desk). A secret: health. |
 
 - **Switches:**
   - pipe bay switch 1 sparks

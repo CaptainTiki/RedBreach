@@ -1,0 +1,34 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://props/lights/light_emergency_wall.glb" id="model"]
+[ext_resource type="Script" path="res://props/prop_light.gd" id="script"]
+
+[node name="LightEmergencyWall" type="Node3D"]
+script = ExtResource("script")
+color = Color(1, 0.16, 0.08, 1)
+energy = 3
+light_range = 10
+shadows = false
+wire = 0
+spin_speed = 3.5
+glow_ratio = 0.15
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Spin" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.12, 0.17)
+
+[node name="Light" type="SpotLight3D" parent="Spin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+light_color = Color(1, 0.16, 0.08, 1)
+light_energy = 3
+shadow_enabled = false
+spot_range = 10
+spot_angle = 25
+spot_attenuation = 1.2
+
+[node name="Glow" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22, 0.17)
+light_color = Color(1, 0.16, 0.08, 1)
+light_energy = 0.45
+omni_range = 3

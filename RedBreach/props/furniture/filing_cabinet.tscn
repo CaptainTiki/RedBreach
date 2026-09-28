@@ -1,0 +1,14 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://props/furniture/filing_cabinet.glb" id="model"]
+
+[sub_resource type="BoxShape3D" id="shape0"]
+size = Vector3(0.48, 1.32, 0.66)
+
+[node name="FilingCabinet" type="StaticBody3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Collision0" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.66, 0.33)
+shape = SubResource("shape0")

@@ -4,6 +4,11 @@ Everything that belongs to a room lives in the MAP (lights and ladders are map e
 what the whole level shares: the environment, navigation (baked by the build), the level script and the player
 with its climb chart. Rewriting it never touches a room.
 
+Props (user, 2026-09-27) are placed in Godot, not TrenchBroom, once the level's architecture is solid. They live in
+their own scene, missions/freight_v2/freight_v2_props.tscn, which this shell instances as "Props". This script creates
+it empty the first time and never writes it again, so props placed there survive every rewrite and rebuild. Open that
+scene (or the level, with the Props instance's Editable Children) to place props from res://props/.
+
     python tools/write-freight-v2-scene.py
     powershell -File tools/rebuild-freight-v2.ps1 -Validate
 """
@@ -28,6 +33,7 @@ scene = '''[gd_scene format=3]
 [ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="atomic"]
 [ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="transition"]
 [ext_resource type="Script" path="res://interaction/progression.gd" id="progression"]
+[ext_resource type="PackedScene" path="res://missions/freight_v2/freight_v2_props.tscn" id="props"]
 
 [sub_resource type="Environment" id="env_off"]
 background_mode = 1
@@ -79,6 +85,8 @@ script = ExtResource("progression")
 
 [node name="Navigation" type="NavigationRegion3D" parent="."]
 
+[node name="Props" parent="." instance=ExtResource("props")]
+
 [node name="Environment" type="WorldEnvironment" parent="."]
 environment = SubResource("env_subtle")
 
@@ -118,6 +126,10 @@ event = &"done"
 delay_in_seconds = "0.0"
 '''
 OUT.parent.mkdir(parents=True, exist_ok=True)
+PROPS = OUT.parent / 'freight_v2_props.tscn'
+if not PROPS.exists():
+    # Created once, empty; placed props are the user's from then on.
+    PROPS.write_text('[gd_scene format=3]\n\n[node name="Props" type="Node3D"]\n', encoding='utf-8')
 OUT.write_bytes(scene.encode('utf-8'))
 (OUT.parent / 'freight_v2_data.json').write_text(json.dumps({'views': F.VIEWS_3D}, indent=1), encoding='utf-8')
 print('FREIGHT_V2_SCENE:', OUT.relative_to(ROOT))

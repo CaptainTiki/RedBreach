@@ -1,0 +1,49 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://props/gallery/gallery_room.glb" id="model"]
+
+[sub_resource type="BoxShape3D" id="shape0"]
+size = Vector3(24.6, 0.25, 16.6)
+
+[sub_resource type="BoxShape3D" id="shape1"]
+size = Vector3(24.6, 0.3, 16.6)
+
+[sub_resource type="BoxShape3D" id="shape2"]
+size = Vector3(24.6, 4.5, 0.3)
+
+[sub_resource type="BoxShape3D" id="shape3"]
+size = Vector3(24.6, 4.5, 0.3)
+
+[sub_resource type="BoxShape3D" id="shape4"]
+size = Vector3(0.3, 4.5, 16)
+
+[sub_resource type="BoxShape3D" id="shape5"]
+size = Vector3(0.3, 4.5, 16)
+
+[node name="GalleryRoom" type="StaticBody3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Collision0" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
+shape = SubResource("shape0")
+
+[node name="Collision1" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.65, 0)
+shape = SubResource("shape1")
+
+[node name="Collision2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.25, -8.15)
+shape = SubResource("shape2")
+
+[node name="Collision3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.25, 8.15)
+shape = SubResource("shape3")
+
+[node name="Collision4" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.15, 2.25, 0)
+shape = SubResource("shape4")
+
+[node name="Collision5" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.15, 2.25, 0)
+shape = SubResource("shape5")

@@ -1,0 +1,23 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://props/lights/light_halogen.glb" id="model"]
+[ext_resource type="Script" path="res://props/prop_light.gd" id="script"]
+
+[node name="LightHalogen" type="Node3D"]
+script = ExtResource("script")
+color = Color(1, 0.86, 0.68, 1)
+energy = 4
+light_range = 14
+shadows = true
+wire = 1
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Light" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, -0.66, 0)
+light_color = Color(1, 0.86, 0.68, 1)
+light_energy = 4
+shadow_enabled = true
+spot_range = 14
+spot_angle = 55
+spot_attenuation = 1.2

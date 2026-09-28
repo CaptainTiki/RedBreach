@@ -110,10 +110,12 @@ ROOMS = [
     ('PP', 'Pipe room', [(14, 28.5), (20, 28.5), (24, 32.5), (24, 48), (21, 51), (15, 51), (14, 50)], 0.0, 'steel'),
     # Catwalk route (revision 05): pass-through rooms north of the dock, then the fan chamber behind the pipe room.
     ('MR', 'Lift machine room', [(-11, 55.5), (-2, 55.5), (-2, 59.5), (-4, 62), (-11, 62)], 4.0, 'steel'),
-    ('R3', 'Stair room', [(7.5, 51), (13.5, 51), (13.5, 64), (8.5, 64), (7.5, 63)], 0.0, 'steel'),
+    ('R3', 'Stair room', [(7.5, 51), (13.5, 51), (13.5, 64), (7.5, 64)], 0.0, 'steel'),   # square NW corner: the jog
+                                                                                       # corridor runs straight in
     ('FC', 'Fan chamber', [(13.5, 51), (20.5, 51), (21.5, 52), (21.5, 55), (20.5, 56), (13.5, 56)], 0.0, 'steel'),
     # The foot of the east stairs: two keyed doors, the easy way back (S2) and the quarantine hold.
     ('LL', 'East stair lobby', [(50, 15), (56, 15), (56, 22.5), (54, 24.5), (51, 24.5), (50, 23.5)], -4.0, 'steel'),
+    ('CV', 'Cable vault (secret)', rect(44.5, 52.25, 48.0, 53.75), -5.0, 'steel'),
     ('QH', 'Quarantine hold', [(50, -2), (61, -2), (64, 1), (64, 12), (61, 15), (50, 15)], -4.5, 'concrete'),
 ]
 
@@ -153,6 +155,7 @@ CORRIDORS = [
     # Revision 07: the stair corridor from the stair room's top landing down one 12-riser flight to raised door 3 (+1).
     ('C2', 'Stair corridor to the substation', 'S3', [(13.5, 62.5), (15.5, 62.5), (21.5, 62.5), (23.5, 62.5), (32, 54)],
      [4, 4, 1, 1, 1], 'steel'),
+    ('BG', 'Bridge girder crawl (secret)', 'crawl', [(34.25, 18.0), (47.5, 18.0), (47.5, 19.25)], [-6.25, -6.25, -6.25], 'steel'),
     ('PG', 'Pipe gallery (crouch)', 'crawl', [(40, 27), (40, 32), (33, 32), (33, 34.6)], [-5.5, -5.5, -5.5, -5.5], 'steel'),
     ('EL', 'East stairs', 'S3', [(50, 41), (52.5, 41), (52.5, 38), (52.5, 33), (52.5, 31), (52.5, 26), (52.5, 24)],
      [1, 1, 1, -1.5, -1.5, -4, -4], 'steel'),
@@ -179,9 +182,9 @@ STAIRS = [
 LADDERS = [
     ('Archive ladder (12 rungs)', (-22.35, 39.1), 1.0, 4.0),
     ('Pit ladder', (34.0, 21.0), -4.0, -5.5),
-    ('Bridge crawl ladder (secret)', (47.2, 15.6), -4.0, -5.5),
+    ('Bridge crawl ladder (secret)', (47.5, 20.75), -6.25, -4.0),   # down a hatch in the east walkway to the girder crawl
     ('Pipe gallery ladder (12 rungs)', (33.0, 36.1), -5.5, -2.5),
-    ('Cable vault ladder (secret)', (47.6, 53.2), -2.5, -5.0),
+    ('Cable vault ladder (secret)', (44.5, 53.0), -5.0, -2.5),       # down a hatch in the alley behind the cage row
     ('Gantry ladder (14 rungs)', (34.0, 52.95), 1.0, -2.5),
     ('Ladder room ladder (12 rungs)', (15.5, 28.25), -3.0, 0.0),
 ]
@@ -208,8 +211,9 @@ BLOCKERS = [
     ('LG', 'supervisor cage', rect(-28, 34, -24, 40)),
     ('WX', 'ammo container', rect(-18.4, 6.9, -16.6, 7.7)),
     ('SC', 'closet shelves', rect(-25.6, 6.4, -24.6, 9.6)),
+    ('LG', 'drawer bank', rect(-28.0, 38.2, -27.4, 39.8)),
     ('CU', 'spine: pipe manifold wall', rect(26, 2, 34, 7.5)),
-    ('CU', 'air compressor', rect(34, 2, 42, 7.5)),
+    ('CU', 'air compressor', rect(36, 3.0, 40, 6.5)),   # railed round at its old footprint (user: see the piston)
     ('PR', 'pump', reg_poly(37, 23, 1.6)), ('PR', 'pump', reg_poly(40, 23, 1.6)), ('PR', 'pump', reg_poly(43, 23, 1.6)),
     ('PR', 'valve stand', rect(32.5, 13.2, 33.5, 14.2)), ('PR', 'valve stand', rect(46.5, 28.5, 47.5, 29.5)),
     ('SS', 'transformer cage', rect(35.0, 48.5, 38.3, 52.0)), ('SS', 'transformer cage', rect(38.7, 48.5, 42.0, 52.0)),
@@ -237,7 +241,7 @@ CROUCH = [('pipe bank', rect(-20.5, 8.3, -14.5, 9.7), 1.2),
 # One-way drops: (name, from, to, from height, to height)
 DROPS = [('vent grille out, drop onto the dock', (12, 45.75), (10.8, 45.75), 0.0, -1.75)]
 # Moving machinery: (name, centre, radius, kind)
-MOVING = [('compressor piston, rising and falling', (38.0, 4.75), 1.4, 'piston'),
+MOVING = [('compressor piston, rising and falling', (38.0, 4.75), 2.0, 'piston'),
           ('big fan in the pipe room north wall: 3 m, three blades, stops blade-up', (18.0, 51.0), 1.5, 'fan')]
 # The fan you crouch through once stopped (user: a crouch is fine, rooms stay small). Checked in check().
 FAN = {'diameter': 3.0, 'blades': 3, 'hub_height': 1.75, 'hub_radius': 0.3, 'blade_width': 0.3, 'lip': 0.25}
@@ -252,9 +256,32 @@ OVERHEAD = [
     ('crane rail', [(0, 4), (0, 40)]),
     ('hanging container', rect(-1.25, 19.0, 1.25, 25.0)),
 ]
-BRIDGES = [('Pump bridge (box girder, crawl inside)', rect(34, 16.5, 46, 18.5), -4.0)]
+# Heights of the overhead things (absolute). Roof beams cross the bay on the 4 m beat and carry the rail; the trolley
+# runs under the rail, and the container hangs on four cables from a spreader, 4 m over the bay floor.
+CRANE = dict(beam=(6.9, 7.5), beam_w=0.4, pitch=4.0, rail=(6.4, 6.9), rail_w=0.3, trolley=(5.9, 6.4),
+             container=(1.0, 3.6), spreader=0.15, cable=0.06)
+# Old burrows sealed with poured concrete (the clues): (clue, centre on the surface, the wall's plan normal or None
+# for a floor, centre height (a wall) or floor height, radius, how far it stands proud).
+PATCHES = [((45.4, 26.0), (46.0, 26.0), (-1, 0), -4.75, 0.6, 0.08),
+           ((60.0, 11.0), (60.0, 11.0), None, -4.5, 0.95, 0.05)]
+# The compressor's piston: its radius, stroke and cycle, and the housing's depth under the ceiling. The compressor
+# is low (2.2 m) so the piston's stroke happens at eye level from both lanes of the U.
+PISTON = dict(radius=0.85, stroke=0.9, period=2.4, housing_depth=1.1)
+# Rails standing on their own (not at a drop): the compressor's enclosure, open to the spine on its west side.
+RAILINGS = [('compressor enclosure', [(34, 2.0), (42, 2.0), (42, 7.5), (34, 7.5)])]
+# Soft lights for dark places the player should still read (user: the girder crawl, with the flashlight):
+# (name, plan point, height, energy, range, corridor or room key)
+SOFT_LIGHTS = [('girder crawl, by its ladder', (47.5, 18.6), -5.4, 0.18, 4.0, 'BG')]
+BRIDGES = [('Pump bridge (box girder, crawl inside)', rect(34, 17.0, 46, 19.0), -4.0)]
 # Not walkable: coolant channel south of the bridge (the glow in the pit).
 HAZARDS = [('Coolant channel', rect(34, 15, 46, 16.5))]
+# Coolant pumps standing in the channel (user, 2026-09-27): each draws from the coolant and drives it up an outlet pipe
+# that arches over the bridge into the top of the reactor opposite. A plunger (an rb_machine) rises from the housing
+# to the walkway's eye level and falls back; the three take turns. Heights are absolute; the reactor is the 'pump'
+# blocker at the same x.
+COOLANT_PUMPS = dict(xs=(37.0, 40.0, 43.0), y=15.75, half=(1.0, 0.6), housing=(-6.1, -4.9), low=0.7, stroke=1.7,
+                     period=3.0, posts=0.62, post_w=0.14, beam=(-1.9, -1.7), pipe_dx=0.8, pipe_r=0.16, pipe_h=(-1.0, -0.7),
+                     reactor_y=23.0)
 
 # --- openings, doors, gates and releases -----------------------------------------------
 # Open junctions between spaces, drawn as gaps in the walls: (a, b)
@@ -305,10 +332,10 @@ OBJECTIVES = [
 ]
 SECRETS = [
     ('ammo: crawl inside the conveyor platform', (4.0, 17.1)),
-    ('health: archive drawer bank (desk code)', (-27.2, 38.8)),
+    ('health: archive drawer bank (desk code)', (-27.65, 39.0)),
     ('armour and health: the closet behind door 1', (-23.2, 7.8)),
-    ('ammo: crawl inside the pump bridge', (40.0, 17.5)),
-    ('armour: cable vault behind the last cage', (47.6, 53.2)),
+    ('ammo: crawl inside the pump bridge', (40.0, 18.0)),
+    ('armour: cable vault behind the last cage', (47.3, 53.0)),
 ]
 # Designed-in rewards the player can see (not secrets).
 REWARDS = [
@@ -350,7 +377,7 @@ HOLD = [(53, 16.4), (53, 15), (53, 11.5), (55.25, 8.5), (55.25, 0.4), (58.5, 0.4
         (53, 18)]
 LOBBY_UP = [(52.5, 24), (52.5, 41), (50, 41), (48, 41, 'gantry')]
 # The S2 return: through the pump room, the U-turn and the trench to the bay.
-S2_BACK = [(52, 17.5), (51.2, 17.5), (50, 17.5), (48, 17.5), (36, 17.5), (32, 17.5), (32, 16), (36, 13.5), (36, 12), (36, 9.8), (44.5, 9.5),
+S2_BACK = [(52, 17.5), (51.2, 17.5), (50, 17.5), (48, 18.0), (36, 18.0), (32, 17.5), (32, 16), (36, 13.5), (36, 12), (36, 9.8), (44.5, 9.5),
            (44.5, 4.3), (44.5, 1), (43, -1), (29, -1), (27.5, -1), (26, -0.5), (20, -0.5), (20, 6.5), (14, 6.5)]
 # The vent return (revision 03): grill, access corridor, filter room, ladder room, pipe room, vent, drop, lift.
 VENT_BACK = [(48, 37, 'gantry'), (43.4, 35.8, 'gantry'), (35.5, 35.8), (33, 38), (31, 46.5), (30, 46.5, 'crouch'), (27, 46.5), (27, 27), (27, 25),
@@ -398,12 +425,26 @@ ROUTES = {
     'catwalk explorer': START + to_k(W_EXPLORE) + CATWALK_IN + FAN_TO_P + VENT_BACK + IN_LIFT,
 }
 FINISH = IN_LIFT[0]
+_W = list(WEST)
+_W.insert(_W.index((-20, 27)) + 1, (-17.0, 26.8))                                 # read the note on the desk
+_W.insert(_W.index((-25, 37.5, 'archive')) + 1, (-26.3, 39.0, 'archive'))         # open the drawer bank with its code
+SECRET_WEST = _W[:4] + SWITCHES + _W[4:6] + CLOSET + _W[6:]
+CONVEYOR_CRAWL = [(10.5, 12.0), (10.6, 17.1), (9.2, 17.1, 'crouch'), (4.0, 17.1, 'crouch'), (9.2, 17.1, 'crouch'),
+                  (10.6, 17.1), (10.5, 12.0), (-10.5, 10.5)]
+GIRDER_CRAWL = [(47.5, 13.5), (49.0, 21.55), (47.5, 21.55), (47.5, 20.3, 'lb'), (47.5, 19.25, 'crawl'),
+                (47.5, 18.0, 'crawl'), (40.0, 18.0, 'crawl'), (47.5, 18.0, 'crawl'), (47.5, 19.25, 'crawl'),
+                (47.5, 20.3, 'lb'), (47.5, 21.55), (49.0, 21.55), (48.5, 27.5), (35.5, 28.5), (33.0, 27.5), (32.5, 21)]
+CABLE_VAULT = [(31.5, 38), (31.5, 47), (32.5, 53.9), (43.7, 53.9), (43.7, 53.0), (44.95, 53.0, 'lb'), (47.3, 53.0)]
+SECRET_ROUTES = {
+    'secrets': START + CONVEYOR_CRAWL + SECRET_WEST + S1_TO_TRENCH + EAST_IN[:EAST_IN.index((36, 13.5)) + 1]
+               + GIRDER_CRAWL + EAST_IN[EAST_IN.index((33.4, 21)):EAST_IN.index((33, 36.9)) + 1] + CABLE_VAULT,
+}
 
 # ================================================================================
 # Progression (G-02): what opens what. Read by the 3D build (map entities) and the route checker.
 # ================================================================================
 # Names the prompts give the flags ("Needs the freight card and power").
-FLAG_TEXT = {'K': 'the freight clearance card', 'P': 'power', 'M': 'the maintenance card'}
+FLAG_TEXT = {'K': 'the freight clearance card', 'P': 'power', 'M': 'the maintenance card', 'CODE': 'the drawer code'}
 # Door rules, by the start of the door's name in DOORS:
 #   opens  use (E either side) / side (E only from the side 'side' points to) / event (a switch only) / start (level ready)
 #   needs  flags; latch: stays open; style: rise (up into the wall) or slide (two leaves apart: gates in fences)
@@ -420,6 +461,9 @@ DOOR_RULES = [
     ('Door 5:', dict(id='D5', opens='event', events='door5', latch=1)),
     ('Door 3:', dict(id='D3', opens='side', side=(-0.7071, 0.7071), latch=1)),
     ('Lift gate', dict(id='LIFT', opens='side', side=(0, -1), needs='K,P', latch=1, style='slide')),
+    # Not a room door: the drawer in the archive's drawer bank, placed on the cabinet's front at its niche.
+    ('(archive drawer)', dict(id='DRAWER', at=(-27.4, 39.0), floor=4.6, facing=(1, 0), width=0.6, height=0.5, room='LG',
+                              opens='use', needs='CODE', latch=1, style='slide', lamp_depth=0.07)),
 ]
 # Switches and levers: (id, name, plan point on the wall face or floor, floor height, facing, mount, what it does).
 KIT_SWITCHES = [
@@ -434,6 +478,8 @@ KIT_SWITCHES = [
     ('P', 'P: auxiliary power restore, end of the gantry', (49.2, 45.5), 1.0, (-1, 0), 'post',
      dict(sets='P', sends='power', notice='Auxiliary power restored.')),
     ('FAN_LEVER', 'fan lever: the big fan spins down and stops', (21.5, 53.0), 0.0, (-1, 0), 'wall', dict(sends='fan_stop')),
+    ('NOTE', 'a note on a dispatch desk: the drawer code', (-17.0, 25.5), 1.8, (0, 1), 'flat',
+     dict(sets='CODE', notice='A note on the desk: DRAWER 4 1 7.', prompt='E  Read')),
 ]
 # Cards: (id, name, plan point, floor height, flag, colour)
 KIT_PICKUPS = [
@@ -449,7 +495,7 @@ ROUTE_ACTIONS = {
     (-24, 27.5): 'LGW', (-26, 33.5): 'RELEASE', (-26, 37): 'K', (-27.3, 35.4): 'CAGE_SW', (-19.2, 7.6): 'SW2,SW3',
     (-13.3, 39): 'S1', (48.5, 35.5): 'M', (48, 45.5): 'P', (31, 46.5): 'GRILL', (28.8, 46.5): 'GRILL',
     (14, 45.75): 'VENT', (30.9, 55.1): 'D3', (53, 16.4): 'HOLD', (51.2, 17.5): 'S2', (20.8, 52.8): 'FAN_LEVER',
-    (0, 46): 'LIFT',
+    (0, 46): 'LIFT', (-17.0, 26.8): 'NOTE', (-26.3, 39.0): 'DRAWER',
 }
 # At level start these must refuse the player standing here: (kit id, plan point, tag).
 REFUSALS = [
@@ -473,7 +519,7 @@ CEILINGS = {
     'AL': 3.5, 'RC': 3.0, 'SB': 7.5, 'DK': 7.5, 'TB': 3.0, 'SC': -0.5, 'WX': 0.0, 'ST': 4.0,
     'LG': [(rect(-17.5, 36.5, -12, 38.5), 9.5), (rect(-28, 32, -12, 40), 7.5), (rect(-22.5, 22, -12, 32), 4.5)],
     'CU': 1.5, 'PR': 3.0, 'SS': 4.5, 'FL': 0.5, 'LR': 2.75, 'PP': 4.0, 'MR': 7.5, 'R3': 7.0, 'FC': 3.5,
-    'LL': -0.5, 'QH': 0.0,
+    'LL': -0.5, 'QH': 0.0, 'CV': -2.75,
 }
 # Levels built as thin decks on the open space below (the rest are solid platforms).
 DECKS = {'Gantry', 'Archive (above the cage)', 'Stair room top landing'}
@@ -488,8 +534,8 @@ BLOCKER_H = [
     ('conveyor platform', 1.4), ('conveyor', 1.0), ('container stack', 5.2), ('quarantine container', 2.6),
     ('burst open', 2.6), ('containers', 2.6), ('booth console', 1.0), ('booth seats', 0.5), ('lift cage', 3.6),
     ('pallets', 1.2), ('cargo hauler', 2.6), ('dispatch counter', 1.1), ('desk row', 0.8), ('lockers', 2.0),
-    ('toppled cabinet', 0.7), ('supervisor cage', 3.0), ('ammo container', 0.6), ('closet shelves', 2.0),
-    ('spine', 3.2), ('air compressor', 3.0), ('hydraulic pump', 1.8), ('pump', 3.5), ('valve stand', 1.2),
+    ('toppled cabinet', 0.7), ('drawer bank', 1.3), ('supervisor cage', 3.0), ('ammo container', 0.6), ('closet shelves', 2.0),
+    ('spine', 3.2), ('air compressor', 2.2), ('hydraulic pump', 1.8), ('pump', 3.5), ('valve stand', 1.2),
     ('transformer cage', 2.5), ('fallen cable tray', 0.25), ('supply cage', 2.2), ('filter bank', 2.6), ('blower', 2.8),
     ('pipe rack', 1.5), ('up through the ceiling', 'ceiling'), ('riser', 2.7), ('valve manifold', 1.4),
     ('control cabinet', 2.0),
@@ -515,8 +561,18 @@ FAN_HOLE = {'room_edge': ((21, 51), (15, 51)), 'centre': 18.0, 'floor': 0.0}
 LADDER_FACING = {
     'Archive ladder (12 rungs)': (-1, 0), 'Pit ladder': (-1, 0), 'Pipe gallery ladder (12 rungs)': (0, 1),
     'Gantry ladder (14 rungs)': (0, 1), 'Ladder room ladder (12 rungs)': (0, 1),
+    'Bridge crawl ladder (secret)': (0, 1), 'Cable vault ladder (secret)': (-1, 0),
 }
-LADDER_SHAFT = {'Pipe gallery ladder (12 rungs)': rect(32.25, 34.6, 33.75, 36.1)}
+LADDER_SHAFT = {'Pipe gallery ladder (12 rungs)': rect(32.25, 34.6, 33.75, 36.1),
+                'Bridge crawl ladder (secret)': rect(46.75, 19.25, 48.25, 20.75)}
+# Crawl corridors closed at an end that meets nothing (the girder's west end, in the pit).
+CRAWL_CAPS = {'BG': 'start'}
+# Holes in a room's floor where a ladder comes up from a room below (the cable vault's hatch in the alley).
+FLOOR_HATCHES = {'SS': [rect(44.5, 52.35, 46.0, 53.65)]}
+# Blockers with a walk-in space: the open end's plan direction (the conveyor platform, crawled from its east end).
+HOLLOW = {'conveyor platform (crawl inside)': (1, 0)}
+# Blockers standing on a raised level rather than the room floor.
+BLOCKER_ON = {'drawer bank': 'Archive (above the cage)'}
 # Lighting for the greybox: (spacing m, energy, range m, shadows) per kind of space.
 LIGHT_ROOM = (6.5, 2.2, 13.0, True)
 # A room light covers walkable samples within this plan radius, in line of sight (2.2 energy at ~3.6 m keeps 0.35).
@@ -711,7 +767,7 @@ def check():
     names = [d[0] for d in DOORS]
     ids = set()
     for prefix, rule in DOOR_RULES:
-        if not any(n.startswith(prefix) for n in names):
+        if 'at' not in rule and not any(n.startswith(prefix) for n in names):
             bad.append(f'door rule {prefix} names no door')
         ids.add(rule['id'])
     events = {r.get('events', r['id']) for _, r in DOOR_RULES} | {'start', 'fan_stop', 'drawbridge', 'power'}
@@ -732,7 +788,7 @@ def check():
         for a in acts.split(','):
             if a not in ids:
                 bad.append(f'route action {a} at {pt} names no door, switch or card')
-        if not any(xy(q) == pt for pts in ROUTES.values() for q in pts):
+        if not any(xy(q) == pt for pts in list(ROUTES.values()) + list(SECRET_ROUTES.values()) for q in pts):
             bad.append(f'route action at {pt} is on no route')
     for kid, pt, tag in REFUSALS:
         if kid not in ids:
@@ -740,6 +796,9 @@ def check():
     for k, pts in ROUTES.items():
         if xy(pts[-1]) != FINISH:
             bad.append(f'route {k} does not end in the lift')
+    for name, pt in SECRETS:
+        if not any(math.dist(xy(q), pt) < 1.6 for pts in SECRET_ROUTES.values() for q in pts):
+            bad.append(f'secret {name} is not on the secrets route')
     return bad
 
 

@@ -27,7 +27,7 @@ class_property_descriptions = Dictionary[String, Variant]({
 "sets": "Progression flags it sets, comma separated",
 "once": "1: it stays thrown",
 "effect": "spark: it only sparks",
-"mount": "wall / post",
+"mount": "wall / post / flat (a note on a desk)",
 "notice": "A line on the HUD when used (a distant clunk)",
 "prompt": "Interaction prompt",
 "facing": "Plan direction dx dy its panel faces",

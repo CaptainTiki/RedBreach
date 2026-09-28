@@ -12,11 +12,13 @@ description = "A climbable ladder. Origin: the foot of the ladder face. The clim
 class_properties = Dictionary[String, Variant]({
 "top": 0.0,
 "facing": "0 1",
+"step": 0.8,
 "label": ""
 })
 class_property_descriptions = Dictionary[String, Variant]({
 "top": "Height of the top landing, metres",
 "facing": "Plan direction the climber faces, into the ladder: dx dy (x east, y north)",
+"step": "How far forward of the ladder face the climber steps off at the top, metres",
 "label": "Name, for the plan"
 })
 meta_properties = Dictionary[String, Variant]({

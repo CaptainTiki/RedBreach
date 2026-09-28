@@ -84,7 +84,8 @@ class Map:
         self._group = None
 
     # --- brushes ------------------------------------------------------------
-    def hull(self, points, tex, name='', scale=1.0, offset=(0, 0), anchor=None, uv_origin=None, uv_u=None, tally='misc'):
+    def hull(self, points, tex, name='', scale=1.0, offset=(0, 0), anchor=None, uv_origin=None, uv_u=None, tally='misc',
+             uv_shear=None):
         """Convex hull of ``points`` (Godot metres). Returns True if written.
 
         Texture alignment (user rule, 2026-09-25: seams belong on geometry):
@@ -95,7 +96,11 @@ class Map:
         ``anchor=(godot_point, texel_v)`` pins one texture row to a point: the
         painted band inside a texture onto a plinth foot, even on a slope.
         Faces whose texture ``fit()`` accepts are FEATURES: fitted to the face
-        a whole number of times, starting at its edges."""
+        a whole number of times, starting at its edges.
+        ``uv_shear=(godot_direction, slope)`` shears V on vertical faces so a
+        texture row runs up that slope (metres of rise per metre along the
+        direction): a plinth band following a stair keeps its band parallel
+        to its sloped top while its vertical lines stay vertical."""
         pts = []
         for p in points:
             q = to_map(p)
@@ -144,6 +149,10 @@ class Map:
             gc = map_to_godot_dir(tuple(v / UNITS for v in fc))
             texture = tex(gn, gc) if callable(tex) else tex
             u, v = _uv_axes(n, uv_u)
+            if uv_shear is not None and abs(n[2]) < 0.1:
+                w = _norm(to_map(uv_shear[0]))
+                k = uv_shear[1] * _dot(u, w)
+                v = (v[0] + k * u[0], v[1] + k * u[1], v[2] + k * u[2])
             s = scale(texture) if callable(scale) else scale
             sx = sy = s
             ox, oy = offset

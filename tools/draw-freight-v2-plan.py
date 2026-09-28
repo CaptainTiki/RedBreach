@@ -381,7 +381,7 @@ for name, (x, y) in F.OBJECTIVES:
 
 # --- labels ------------------------------------------------------------------------------
 N, S = 14, 11
-SKIP_LABEL = {'LR'}
+SKIP_LABEL = {'LR', 'CV'}   # the cable vault is a secret under the Substation: its secret marker labels it
 ROOM_LABEL = {'AL': (4.0, -25.0, 'l'), 'RC': (3.8, -12.2, 'm'), 'SB': (-4.0, 7.5, 'm'), 'DK': (-4.5, 41.7, 'm'),
               'TB': (-19.0, 50.8, 'm'), 'LG': (-19.0, 30.3, 'm'), 'PR': (36.0, 29.3, 'm'), 'SS': (39.6, 39.4, 'm'),
               'WX': (-17.5, 5.0, 'm'), 'ST': (-29.6, 13.3, 'r'), 'CU': (36.0, -2.5, 'm'), 'LL': (56.6, 20.0, 'l'),
@@ -394,7 +394,7 @@ for key, name, pts, floor, look in F.ROOMS:
     label(x, y, [(name, N, TEXT, True), (f'{hl(floor)} m  ·  {look}', S, NOTE, False)], a)
 COR_LABEL = {'C1': (3.8, -5.5, 'l'), 'W1': (-17.25, 18.6, 'm'), 'TR': (21.0, -5.6, 'm'), 'PG': (41.6, 33.25, 'm'),
              'EL': (55.0, 31.0, 'l'), 'AC': (26.6, 31.0, 'm'), 'CW': (-10.4, 54.7, 'r'), 'J2': (0.4, 63.3, 'm'), 'C2': (18.5, 59.3, 'm')}
-SKIP_COR = {'VT'}
+SKIP_COR = {'VT', 'BG'}   # the girder crawl is a secret under the bridge: its secret marker labels it
 for key, name, prof, path, heights, look in F.CORRIDORS:
     if key in SKIP_COR:
         continue

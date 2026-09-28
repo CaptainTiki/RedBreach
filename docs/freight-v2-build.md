@@ -36,8 +36,10 @@ It is the project's main scene, so **F5** in the editor starts it, and **F11** o
 **Expected counts on any machine** (after `--import`), since the z-fighting pass:
 - `LEAK: none, the level is sealed`
 - `ZFIGHT: ... 0 VISIBLE, 0.0 m2`
-- `FREIGHT_V2_BUILD: 1091 brushes; 178 lights; 5 ladders; 23 kit pieces; 672 navigation polygons; save=0`
-- `MARKER_QA: 713 checks; 0 failures`
+- `FREIGHT_V2_BUILD: 1606 brushes; 181 lights; 7 ladders; 30 kit pieces; 664 navigation polygons; save=0`
+- `MARKER_QA: 830 checks; 0 failures`
+
+The playtests changed the wall, plinth, frame and container rules: see [freight-v2-playtest-01.md](freight-v2-playtest-01.md) and [freight-v2-playtest-02.md](freight-v2-playtest-02.md).
 
 ## What G-01 is
 
@@ -206,3 +208,56 @@ Result: **0 visible pairs, sealed**, 1,014 brushes, and the routes and light flo
 - Walk-in cage fences now block light sight-lines, and no light is placed inside a fence.
 
 **Still to do:** the lift's arrival delay and the final hold (the enemy pass), and sound for the clunks and the fan.
+
+## Detail pass 1: what the player uses or finds
+
+The agreed plan after G-02 was:
+1. things the player uses or finds (this pass)
+2. the look: props, the texture pack and the lighting mood
+3. pickups and enemies
+4. the test
+
+`docs/freight-v2-detail-1.png` shows 15 player-eye views of this pass.
+
+**Rails.** `edge_rails()` puts a rail wherever a platform, deck, pit or stair edge drops 0.6 m or more.
+- It counts the floor across an open edge into the next room, and bridges.
+- It leaves the edge open where a wall, a blocker, a stair, a ladder or a catwalk closes or leaves it.
+
+**Secret interiors.** All five secrets are real spaces now, and a sixth route, `secrets`, proves them. It is walked one
+way by the real player and ends in the cable vault.
+- **The conveyor platform** is hollow: a lid and three sides, open at its east end. You crouch in to the ammo.
+- **The drawer bank** stands on the archive floor. It is a cabinet with one drawer, which is an `rb_door`
+  placed at a point (`at` in its rule) and opened with `CODE`.
+  - `CODE` comes from a note on a dispatch desk: a flat `rb_switch` that sets the flag and shows the code.
+  - The note is a clipboard. A bare sheet 4 mm above the desk vanished into the desk top in every render.
+- **The pump bridge** is a box girder with a crawl inside, reached down a ladder through a floor hatch in the east
+  walkway.
+  - The pit floor is cut where the crawl passes under it, and the crawl's west end is capped.
+  - The girder reaches the pit floor. Beside it, the pit's south strip is the coolant channel, as planned. The rails
+    and a 0.95 m jump keep the player out of it.
+- **The cable vault** is a small room under the Substation, down a hatch in the alley behind the cage row.
+  - A room too small for the light grid gets one small light (30% energy, 5 m range). At full room energy it blew
+    the walls out.
+- **The closet behind door 1** is unchanged.
+
+**Set pieces.**
+- **The crane.** Roof beams cross the bay on the 4 m beat, wall to wall under the 7.5 m ceiling, and carry the rail.
+  - The trolley runs under the rail. The container hangs on four cables from a spreader, 4 m over the floor.
+  - These are map brushes, from `CRANE` and `OVERHEAD` in the plan.
+  - No light is placed under the container.
+  - The walkthrough's portal-frame columns wait for the look pass, with the pipe recess they would meet.
+- **The torn fitting** in C1 is an `rb_machine` (kind `fitting`). It is dead and dark, hangs across the corridor from
+  its cable, sways, and sparks from the broken wires with a short warm flash.
+  - The corridor light that would have been there is not placed.
+  - Hung along the corridor, it read end-on as a post, so it hangs across.
+- **The compressor piston** is an `rb_machine` (kind `piston`). It rises and falls through a housing under the ceiling,
+  with an amber lamp that pumps with it.
+  - The compressor is now 2.2 m tall, not 3.0. At 3.0 the stroke happened above eye level, behind the machine's top
+    edge, from both lanes.
+- **The burrow patches** are rough, pale poured-concrete mounds with sloped edges: one on the pump pit's east wall,
+  one in the quarantine hold's floor. They carry their own geometry, following the texture rule.
+  - The texture starts at each patch's corner, so no panel seam crosses it.
+  - In the floor texture, the hold's patch disappeared into the floor.
+
+**Moved to the look pass:** the booth's seat-and-console and seat-and-joystick props, the quarantine stamps, the
+clogged filters, the portal-frame columns and all sound (the piston, the fan, the clunks).

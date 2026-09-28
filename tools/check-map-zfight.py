@@ -256,6 +256,8 @@ def main():
                     break
                 if a.brush is b.brush:
                     continue
+                if a.texture == b.texture and a.uv == b.uv:
+                    continue          # the same material projected the same way: both draw the same texels, nothing flickers
                 bb = box[id(b)]
                 if bb[0] >= ba[1] or ba[0] >= bb[1] or bb[2] >= ba[3] or ba[2] >= bb[3]:
                     continue

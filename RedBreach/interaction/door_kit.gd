@@ -30,6 +30,7 @@ var events := PackedStringArray()
 var width := 2.0
 var height := 2.5
 var side_dir := Vector3.ZERO
+var lamp_depth := 0.27          ## how far the lamps stand out from the leaf: half a wall, or a cabinet front
 var open_amount := 0.0
 var _leaves: Array[AnimatableBody3D] = []
 var _lamp_material: StandardMaterial3D
@@ -62,6 +63,7 @@ func _ready() -> void:
 	width = float(p.get("width", 2.0))
 	height = float(p.get("height", 2.5))
 	side_dir = Parts.plan_dir(str(p.get("side", "0 0")), Vector3.ZERO)
+	lamp_depth = float(p.get("lamp_depth", 0.27))
 	for pair in str(p.get("needs_text", "")).split(";", false):
 		var kv := pair.split("=", false, 1)
 		if kv.size() == 2:
@@ -94,7 +96,7 @@ func _build(look: String) -> void:
 		Parts.box(leaf, Vector3(w - 0.02, height - 0.02, 0.12), Vector3(0, height / 2.0, 0), leaf_material, true)
 		_leaves.append(leaf)
 	_lamp_material = Parts.glow(Color(1.0, 0.55, 0.12))
-	for z in [0.27, -0.27]:
+	for z in [lamp_depth, -lamp_depth]:
 		Parts.box(self, Vector3(minf(0.5, width * 0.4), 0.07, 0.04), Vector3(0, height + 0.14, z), _lamp_material)
 	var area := Area3D.new()
 	area.name = "Clearance"

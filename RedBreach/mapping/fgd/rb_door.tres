@@ -21,7 +21,8 @@ class_properties = Dictionary[String, Variant]({
 "width": 2.0,
 "height": 2.5,
 "facing": "0 1",
-"look": "steel"
+"look": "steel",
+"lamp_depth": 0.27
 })
 class_property_descriptions = Dictionary[String, Variant]({
 "id": "Name that switches and route checks use",
@@ -35,7 +36,8 @@ class_property_descriptions = Dictionary[String, Variant]({
 "width": "Opening width, metres",
 "height": "Opening height, metres",
 "facing": "Plan direction dx dy of the wall's normal",
-"look": "Look for its materials (steel / concrete / warm)"
+"look": "Look for its materials (steel / concrete / warm)",
+"lamp_depth": "How far the lamps stand out from the leaf (half the wall: 0.27)"
 })
 meta_properties = Dictionary[String, Variant]({
 "size": AABB(-32, -4, 0, 64, 8, 80),

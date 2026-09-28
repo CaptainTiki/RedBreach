@@ -1,0 +1,21 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://props/lights/light_fluorescent.glb" id="model"]
+[ext_resource type="Script" path="res://props/prop_light.gd" id="script"]
+
+[node name="LightFluorescent" type="Node3D"]
+script = ExtResource("script")
+color = Color(0.86, 0.93, 1, 1)
+energy = 1.4
+light_range = 8
+shadows = true
+wire = 0
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Light" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.35, 0)
+light_color = Color(0.86, 0.93, 1, 1)
+light_energy = 1.4
+shadow_enabled = true
+omni_range = 8

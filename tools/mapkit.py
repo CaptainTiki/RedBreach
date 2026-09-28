@@ -44,10 +44,10 @@ def godot_dir_to_map(v):
 
 
 class Face:
-    __slots__ = ('n', 'd', 'texture', 'pts', 'brush')
+    __slots__ = ('n', 'd', 'texture', 'pts', 'brush', 'uv')
 
     def __init__(self, n, d, texture):
-        self.n, self.d, self.texture, self.pts, self.brush = n, d, texture, [], None
+        self.n, self.d, self.texture, self.pts, self.brush, self.uv = n, d, texture, [], None, ''
 
     def area(self):
         """In square metres."""
@@ -129,6 +129,9 @@ def _polygon(face, faces):
     return clean if len(clean) >= 3 else []
 
 
+SNAP = 1.0          # map units: func_godot's default _vertex_merge_distance of 0.03125 m
+
+
 def load(path):
     m = MapData()
     groups = {}
@@ -176,7 +179,9 @@ def load(path):
                     v = [float(x) for x in f.groups()[:9]]
                     p1, p2, p3 = tuple(v[0:3]), tuple(v[3:6]), tuple(v[6:9])
                     n = norm(cross(sub(p3, p1), sub(p2, p1)))
-                    brush_faces.append(Face(n, dot(n, p1), f.group(10)))
+                    face = Face(n, dot(n, p1), f.group(10))
+                    face.uv = line[f.end():].strip()          # the texture's axes, offsets, rotation and scale
+                    brush_faces.append(face)
     for b in m.brushes:
         e = b.entity
         if e.get('_tb_type') in ('_tb_group', '_tb_layer'):
@@ -188,6 +193,11 @@ def load(path):
         for f in b.faces:
             f.brush = b
             f.pts = _polygon(f, b.faces)
+            if f.pts and SNAP:
+                # func_godot snaps every generated vertex to its merge distance (1/32 m, one map unit): offsets finer
+                # than that vanish in the build, so two faces a centimetre apart there ARE coplanar.
+                f.pts = [tuple(round(v / SNAP) * SNAP for v in p) for p in f.pts]
+                f.d = sum(dot(f.n, p) for p in f.pts) / len(f.pts)
         b.faces = [f for f in b.faces if f.pts]
         pts = [p for f in b.faces for p in f.pts] or [(0.0, 0.0, 0.0)]
         b.lo = tuple(min(p[i] for p in pts) for i in range(3))

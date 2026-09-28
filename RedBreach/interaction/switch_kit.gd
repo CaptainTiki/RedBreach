@@ -4,6 +4,7 @@ extends StaticBody3D
 ## stays thrown until Backspace resets the level. No labels: its lamp goes from red to green when thrown.
 ##   mount  wall  a panel on the wall the entity stands against, facing "facing"
 ##          post  a free-standing console facing "facing"
+##          flat  a sheet lying on a surface (a note on a desk): read it once
 const Parts := preload("res://interaction/kit_parts.gd")
 const Progression := preload("res://interaction/progression.gd")
 
@@ -53,6 +54,21 @@ func _build(mount: String, look: String) -> void:
 	var body := Parts.material(look, "machine_body")
 	var screen := Parts.material(look, "screen")
 	var h := _panel_height
+	if mount == "flat":
+		# A clipboard with a sheet on it. A bare sheet sat too close to the surface under it and vanished into it.
+		var paper := StandardMaterial3D.new()
+		paper.albedo_color = Color(0.62, 0.6, 0.54)
+		Parts.box(self, Vector3(0.24, 0.012, 0.33), Vector3(0, 0.006, 0), body)
+		Parts.box(self, Vector3(0.2, 0.004, 0.28), Vector3(0, 0.014, 0.01), paper)
+		Parts.box(self, Vector3(0.1, 0.01, 0.03), Vector3(0, 0.017, -0.14), screen)
+		var cs := CollisionShape3D.new()        # a little thicker than the board, so the crosshair finds it
+		var bs := BoxShape3D.new()
+		bs.size = Vector3(0.24, 0.06, 0.33)
+		cs.shape = bs
+		cs.position = Vector3(0, 0.03, 0)
+		add_child(cs)
+		_panel_height = 0.0
+		return
 	if mount == "post":
 		# A console: a body 1 m tall, its sloped top panel facing the user.
 		Parts.box(self, Vector3(0.5, 1.0, 0.4), Vector3(0, 0.5, 0), body, true)
@@ -113,7 +129,7 @@ func use() -> bool:
 		_sparks.restart()
 		_sparks.emitting = true
 		_flash_time = 0.18
-	if once:
+	if once and _handle != null:
 		_handle.rotation.x = deg_to_rad(70)
 		_lamp_material.albedo_color = Color(0.15, 0.95, 0.5)
 		_lamp_material.emission = _lamp_material.albedo_color
@@ -146,6 +162,8 @@ func _process(delta: float) -> void:
 
 func _on_reset() -> void:
 	_used = false
+	if _handle == null:
+		return
 	_handle.rotation.x = 0.0
 	_lamp_material.albedo_color = Color(1.0, 0.12, 0.08)
 	_lamp_material.emission = _lamp_material.albedo_color

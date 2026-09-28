@@ -41,6 +41,7 @@
 @PointClass size(-8 -8 0, 8 8 64) color(217 166 64) = rb_ladder : "A climbable ladder. Origin: the foot of the ladder face. The climber faces 'facing' and steps off forward at 'top'."
 [
 	top(float) : "Height of the top landing, metres" : "0"
+	step(float) : "How far forward of the ladder face the climber steps off at the top, metres" : "0.8"
 	facing(string) : "Plan direction the climber faces: dx dy (x east, y north)" : "0 1"
 	label(string) : "Name, for the plan" : ""
 ]
@@ -59,6 +60,7 @@
 	height(float) : "Opening height, metres" : "2.5"
 	facing(string) : "Plan direction dx dy of the wall's normal" : "0 1"
 	look(string) : "Look for its materials (steel / concrete / warm)" : "steel"
+	lamp_depth(float) : "How far the lamps stand out from the leaf" : "0.27"
 ]
 
 @PointClass size(-8 -8 0, 8 8 48) color(230 60 60) = rb_switch : "A switch or lever. Origin: on the wall's face (wall) or the floor (post); 'facing' is the way its panel faces."
@@ -68,7 +70,7 @@
 	sets(string) : "Progression flags it sets, comma separated" : ""
 	once(integer) : "1: it stays thrown" : 1
 	effect(string) : "spark: it only sparks" : ""
-	mount(string) : "wall / post" : "wall"
+	mount(string) : "wall / post / flat (a note on a desk)" : "wall"
 	notice(string) : "A line on the HUD when used (a distant clunk)" : ""
 	prompt(string) : "Interaction prompt" : "E  Use"
 	facing(string) : "Plan direction dx dy its panel faces" : "0 1"
@@ -105,5 +107,20 @@
 	width(float) : "Metres" : "1.5"
 	thickness(float) : "Deck thickness, metres" : "0.25"
 	extends(string) : "Plan direction dx dy from the hinge to the free end" : "-1 0"
+	look(string) : "Look for its materials" : "steel"
+]
+
+@PointClass size(-8 -8 -8, 8 8 8) color(230 140 60) = rb_machine : "Moving machinery with no gameplay: a piston through a housing (origin: the machine's top), a torn-loose fitting that sparks (origin: the ceiling point it hangs from), or a pump plunger rising out of its housing (origin: the housing's top)."
+[
+	id(string) : "Name (seeds the sparks)" : ""
+	kind(string) : "piston / fitting / plunger" : "piston"
+	low(float) : "Plunger: the head's height above the housing at the bottom of the stroke" : "0.7"
+	phase(float) : "Start of the cycle, 0-1, so a row of machines takes turns" : "0"
+	radius(float) : "Piston radius, metres" : "0.55"
+	housing(float) : "Piston: height of the housing's underside above the origin" : "1.7"
+	ceiling(float) : "Piston: height of the ceiling above the origin" : "2.8"
+	stroke(float) : "Piston stroke, metres" : "0.9"
+	period(float) : "Piston cycle, seconds" : "2.4"
+	facing(string) : "Fitting: plan direction dx dy it hangs toward" : "0 1"
 	look(string) : "Look for its materials" : "steel"
 ]

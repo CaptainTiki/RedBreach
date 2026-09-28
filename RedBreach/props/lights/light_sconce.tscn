@@ -1,0 +1,21 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://props/lights/light_sconce.glb" id="model"]
+[ext_resource type="Script" path="res://props/prop_light.gd" id="script"]
+
+[node name="LightSconce" type="Node3D"]
+script = ExtResource("script")
+color = Color(1, 0.82, 0.6, 1)
+energy = 1
+light_range = 6
+shadows = true
+wire = 0
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Light" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.35)
+light_color = Color(1, 0.82, 0.6, 1)
+light_energy = 1
+shadow_enabled = true
+omni_range = 6

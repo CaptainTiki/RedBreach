@@ -1,0 +1,14 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://props/furniture/locker_bank.glb" id="model"]
+
+[sub_resource type="BoxShape3D" id="shape0"]
+size = Vector3(1.2, 2, 0.54)
+
+[node name="LockerBank" type="StaticBody3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Collision0" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.27)
+shape = SubResource("shape0")

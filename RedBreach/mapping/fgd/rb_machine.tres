@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="1"]
+[ext_resource type="Script" path="res://interaction/machine_kit.gd" id="2"]
+
+[resource]
+script = ExtResource("1")
+script_class = ExtResource("2")
+apply_rotation_on_map_build = false
+classname = "rb_machine"
+description = "Moving machinery with no gameplay: a piston through a housing (origin: the machine's top), a torn-loose fitting that sparks (origin: the ceiling point it hangs from), or a pump plunger rising out of its housing (origin: the housing's top)."
+class_properties = Dictionary[String, Variant]({
+"id": "",
+"kind": "piston",
+"low": 0.7,
+"phase": 0.0,
+"radius": 0.55,
+"housing": 1.7,
+"ceiling": 2.8,
+"stroke": 0.9,
+"period": 2.4,
+"facing": "0 1",
+"look": "steel"
+})
+class_property_descriptions = Dictionary[String, Variant]({
+"id": "Name (seeds the sparks)",
+"kind": "piston / fitting / plunger",
+"low": "Plunger: the head's height above the housing at the bottom of the stroke",
+"phase": "Start of the cycle, 0-1, so a row of machines takes turns",
+"radius": "Piston radius, metres",
+"housing": "Piston: height of the housing's underside above the origin",
+"ceiling": "Piston: height of the ceiling above the origin",
+"stroke": "Piston stroke, metres",
+"period": "Piston cycle, seconds",
+"facing": "Fitting: plan direction dx dy it hangs toward",
+"look": "Look for its materials"
+})
+meta_properties = Dictionary[String, Variant]({
+"size": AABB(-8, -8, -8, 16, 16, 16),
+"color": Color(0.902, 0.549, 0.235, 1)
+})
+node_class = "Node3D"

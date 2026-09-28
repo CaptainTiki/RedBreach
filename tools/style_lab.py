@@ -150,8 +150,9 @@ MACHINE = dict(cx=0.0, cz=ROOM_CZ, plinth=3.0, plinth_chamfer=0.75, plinth_h=0.5
 # so every change of look sits on real geometry.
 ROLES = ('floor', 'plinth', 'wall', 'slope', 'ceiling', 'rib', 'bulkhead', 'hazard',
          'service', 'door', 'frame', 'machine_base', 'machine_body', 'machine_top',
-         'pipe', 'coolant', 'screen', 'ground', 'rock', 'grate', 'riser', 'door_panel')
-EMISSIVE = {'coolant': (0.35, 1.0, 0.85, 1.5), 'screen': (0.6, 1.0, 0.8, 0.7)}
+         'pipe', 'coolant', 'screen', 'ground', 'rock', 'grate', 'riser', 'door_panel', 'container')
+# The coolant glowed at 1.5 and read as a flat white strip in the dark pit (user, 2026-09-27): now a green liquid.
+EMISSIVE = {'coolant': (0.3, 0.9, 0.75, 0.45), 'screen': (0.6, 1.0, 0.8, 0.7)}
 
 # Revision 04 (user, 2026-09-25): a texture that does not tile must never be
 # used where a surface repeats (the QUOD heat pipe banded dark-bright-dark).
@@ -166,6 +167,7 @@ ROLE_TILING = {
     'bulkhead': 'HV', 'hazard': 'HV', 'service': 'fit', 'door': 'fit', 'frame': 'HV',
     'machine_base': 'HV', 'machine_body': 'HV', 'machine_top': 'HV', 'pipe': 'HV',
     'coolant': 'HV', 'screen': 'fit', 'ground': 'HV', 'rock': 'HV', 'grate': 'fit', 'riser': 'H', 'door_panel': 'HV',
+    'container': 'fit',
 }
 FIT_ROLES = {r for r, t in ROLE_TILING.items() if t == 'fit'}
 
@@ -183,7 +185,8 @@ COMMON = {
 }
 
 # Ceilings CONTINUE the look's slope/wall material (user, 2026-09-26). QUOD's
-# corrugated tex90 is reserved for container sides and roll doors, never a ceiling.
+# corrugated tex90 is reserved for container sides and roll doors, never a ceiling: the 'container' role, fitted
+# once to each side and tinted per look, so a stack reads as several containers (user, 2026-09-27).
 # door_panel is the plain wall a door is cut into, so a cut never truncates a pattern.
 # A look entry is a texture, or (texture, tint) where the tint multiplies the
 # albedo, so a pale texture can serve a dark calm floor.
@@ -196,7 +199,7 @@ LOOKS = {
         'frame': 'packs/quod/tex24', 'machine_base': 'packs/quod/tex190',
         'machine_body': 'packs/quod/tex25', 'machine_top': 'packs/quod/tex24',
         'pipe': ('packs/lvl11/Panel-001-3_Base-004', (1.0, 0.62, 0.38)), 'riser': 'packs/quod/tex24',
-        'door_panel': 'packs/quod/tex4',
+        'door_panel': 'packs/quod/tex4', 'container': ('packs/quod/tex90', (1.0, 0.62, 0.45)),
     },
     # Grey metal: plain framed panels (the riveted panel repeated too loudly).
     'steel': {
@@ -207,7 +210,7 @@ LOOKS = {
         'frame': 'packs/lvl11/Metal-Panel_Base-004', 'machine_base': 'packs/quod/tex190',
         'machine_body': 'packs/lvl11/Panel-001-3_Base-004', 'machine_top': 'packs/lvl11/Metal-Panel_Section-004',
         'pipe': 'packs/lvl11/Panel-001-3_Base-004', 'riser': 'packs/lvl11/Metal-Panel_Base-004',
-        'door_panel': 'packs/lvl11/Metal-Panel_Section-001',
+        'door_panel': 'packs/lvl11/Metal-Panel_Section-001', 'container': ('packs/quod/tex90', (0.62, 0.72, 0.9)),
     },
     # Pale concrete with a muted green band. The floor is Level Eleven's
     # concrete, darkened by tint: calm, not the dotted plate.
@@ -220,6 +223,7 @@ LOOKS = {
         'machine_base': 'packs/quod/tex190', 'machine_body': 'packs/lvl11/Panel-001-3_Base-004',
         'machine_top': 'packs/lvl11/Metal-Panel_Section-004', 'pipe': 'packs/lvl11/Panel-001-3_Base-004',
         'riser': 'packs/lvl11/Metal-Panel_Base-004', 'door_panel': 'packs/lvl11/ConcretePanel-01_64',
+        'container': ('packs/quod/tex90', (0.8, 0.85, 0.62)),
     },
 }
 for _l in LOOKS.values():

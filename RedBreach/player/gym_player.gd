@@ -72,8 +72,8 @@ func is_alive() -> bool:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
-		if event.physical_keycode in [KEY_F1, KEY_F2, KEY_F9, KEY_F10, KEY_F11]:
-			var scenes := {KEY_F1: "res://gym/gym.tscn", KEY_F2: "res://combat/combat_gym.tscn", KEY_F9: "res://style/style_lab.tscn", KEY_F10: "res://kit/kit_lab.tscn", KEY_F11: "res://missions/freight_v2/freight_v2.tscn"}
+		if event.physical_keycode in [KEY_F1, KEY_F2, KEY_F9, KEY_F10, KEY_F11, KEY_F12]:
+			var scenes := {KEY_F1: "res://gym/gym.tscn", KEY_F2: "res://combat/combat_gym.tscn", KEY_F9: "res://style/style_lab.tscn", KEY_F10: "res://kit/kit_lab.tscn", KEY_F11: "res://missions/freight_v2/freight_v2.tscn", KEY_F12: "res://props/props_gallery.tscn"}
 			get_tree().call_deferred("change_scene_to_file", scenes[event.physical_keycode])
 			return
 	if not is_alive():
@@ -84,6 +84,11 @@ func _unhandled_input(event: InputEvent) -> void:
 		return
 	if event.is_action_pressed("gym_interact") and (control_override or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED):
 		_interaction_requested = true
+	if event.is_action_pressed("gym_flashlight"):
+		# A flashlight for the dark places (user, 2026-09-27); F, as in most shooters, so it is not on the HUD.
+		var torch := camera.get_node_or_null("Flashlight") as Light3D
+		if torch != null:
+			torch.visible = not torch.visible
 	if event.is_action_pressed("gym_release_mouse"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		pistol.update_controls(false)

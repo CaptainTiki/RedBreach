@@ -1,0 +1,193 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://player/gym_player.tscn" id="player"]
+[ext_resource type="PackedScene" path="res://props/gallery/gallery_room.tscn" id="p0"]
+[ext_resource type="PackedScene" path="res://props/furniture/chair_office.tscn" id="p1"]
+[ext_resource type="PackedScene" path="res://props/furniture/console_operator.tscn" id="p2"]
+[ext_resource type="PackedScene" path="res://props/furniture/crate.tscn" id="p3"]
+[ext_resource type="PackedScene" path="res://props/furniture/desk_office.tscn" id="p4"]
+[ext_resource type="PackedScene" path="res://props/furniture/drum.tscn" id="p5"]
+[ext_resource type="PackedScene" path="res://props/furniture/filing_cabinet.tscn" id="p6"]
+[ext_resource type="PackedScene" path="res://props/lights/light_desk.tscn" id="p7"]
+[ext_resource type="PackedScene" path="res://props/lights/light_emergency.tscn" id="p8"]
+[ext_resource type="PackedScene" path="res://props/lights/light_emergency_wall.tscn" id="p9"]
+[ext_resource type="PackedScene" path="res://props/lights/light_floor.tscn" id="p10"]
+[ext_resource type="PackedScene" path="res://props/lights/light_fluorescent.tscn" id="p11"]
+[ext_resource type="PackedScene" path="res://props/lights/light_halogen.tscn" id="p12"]
+[ext_resource type="PackedScene" path="res://props/lights/light_sconce.tscn" id="p13"]
+[ext_resource type="PackedScene" path="res://props/furniture/locker_bank.tscn" id="p14"]
+[ext_resource type="PackedScene" path="res://props/furniture/pallet.tscn" id="p15"]
+[ext_resource type="PackedScene" path="res://props/furniture/seat_joystick.tscn" id="p16"]
+[ext_resource type="PackedScene" path="res://props/furniture/shelf_rack.tscn" id="p17"]
+[ext_resource type="PackedScene" path="res://props/furniture/terminal.tscn" id="p18"]
+
+[sub_resource type="Environment" id="env"]
+background_mode = 1
+background_color = Color(0.02, 0.02, 0.025, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.55, 0.62, 0.76, 1)
+ambient_light_energy = 0.12
+reflected_light_source = 1
+tonemap_mode = 3
+ssao_enabled = true
+ssao_radius = 0.8
+ssao_intensity = 2.2
+ssao_light_affect = 0.15
+glow_enabled = true
+glow_intensity = 0.7
+glow_strength = 1.0
+glow_bloom = 0.02
+glow_blend_mode = 1
+glow_hdr_threshold = 1.1
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.012
+volumetric_fog_albedo = Color(0.45, 0.48, 0.52, 1)
+volumetric_fog_length = 64.0
+volumetric_fog_ambient_inject = 0.02
+adjustment_enabled = true
+adjustment_contrast = 1.08
+adjustment_saturation = 1.12
+
+[node name="PropsGallery" type="Node3D"]
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource("env")
+
+[node name="Room" parent="." instance=ExtResource("p0")]
+
+[node name="Props" type="Node3D" parent="."]
+
+[node name="LightFluorescent1" parent="Props" instance=ExtResource("p11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4.5, -3)
+
+[node name="LightFluorescent2" parent="Props" instance=ExtResource("p11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 3.2, -3)
+wire = 1.8
+
+[node name="LightFluorescent3" parent="Props" instance=ExtResource("p11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4.5, 2)
+lit = false
+
+[node name="LightFluorescent4" parent="Props" instance=ExtResource("p11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 3.4, 2)
+wire = 1.6
+flicker = true
+
+[node name="LightHalogen1" parent="Props" instance=ExtResource("p12")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3.2, -3)
+wire = 1.8
+
+[node name="LightHalogen2" parent="Props" instance=ExtResource("p12")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 4.5, -3)
+wire = 0
+
+[node name="LightEmergency1" parent="Props" instance=ExtResource("p8")]
+transform = Transform3D(1, 0, 0, 0, -1, 0, 0, 0, -1, 7, 4.5, -3)
+
+[node name="LightSconce1" parent="Props" instance=ExtResource("p13")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2.3, -8)
+
+[node name="LightSconce2" parent="Props" instance=ExtResource("p13")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.3, -8)
+lit = false
+
+[node name="LightEmergencyWall1" parent="Props" instance=ExtResource("p9")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.6, -8)
+
+[node name="LightFloor1" parent="Props" instance=ExtResource("p10")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -8)
+
+[node name="LightFloor2" parent="Props" instance=ExtResource("p10")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -8)
+
+[node name="LightFloor3" parent="Props" instance=ExtResource("p10")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -8)
+
+[node name="LightFluorescent5" parent="Props" instance=ExtResource("p11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4.5, 6)
+energy = 1
+
+[node name="LightFluorescent6" parent="Props" instance=ExtResource("p11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4.5, 6)
+energy = 1
+
+[node name="LightFluorescent7" parent="Props" instance=ExtResource("p11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 4.5, 6)
+energy = 1
+
+[node name="LightFluorescent8" parent="Props" instance=ExtResource("p11")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 10, 4.5, 0)
+energy = 1
+
+[node name="LightFluorescent9" parent="Props" instance=ExtResource("p11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3.1, 4.6)
+wire = 1.4
+
+[node name="LightSconce3" parent="Props" instance=ExtResource("p13")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -12, 2.3, 2.2)
+
+[node name="LightHalogen3" parent="Props" instance=ExtResource("p12")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 3.3, 3.3)
+wire = 1.2
+energy = 3
+
+[node name="LightFluorescent10" parent="Props" instance=ExtResource("p11")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 0, 3.2, 2.7)
+wire = 1.3
+
+[node name="LightHalogen4" parent="Props" instance=ExtResource("p12")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 3.4, -6.4)
+wire = 1.1
+energy = 2.5
+
+[node name="DeskOffice1" parent="Props" instance=ExtResource("p4")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -7, 0, 5)
+
+[node name="ChairOffice1" parent="Props" instance=ExtResource("p1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 4.25)
+
+[node name="Terminal1" parent="Props" instance=ExtResource("p18")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -7.2, 0.76, 5.1)
+
+[node name="LightDesk1" parent="Props" instance=ExtResource("p7")]
+transform = Transform3D(-0.939693, 0, -0.34202, 0, 1, 0, 0.34202, 0, -0.939693, -6.4, 0.76, 5.15)
+
+[node name="LockerBank1" parent="Props" instance=ExtResource("p14")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -12, 0, 1)
+
+[node name="FilingCabinet1" parent="Props" instance=ExtResource("p6")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -12, 0, 3)
+
+[node name="FilingCabinet2" parent="Props" instance=ExtResource("p6")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -12, 0, 3.5)
+
+[node name="ShelfRack1" parent="Props" instance=ExtResource("p17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8)
+
+[node name="Crate1" parent="Props" instance=ExtResource("p3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.1, -7.5)
+
+[node name="Pallet1" parent="Props" instance=ExtResource("p15")]
+transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, 4, 0, 3)
+
+[node name="Drum1" parent="Props" instance=ExtResource("p5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7, 0.14, 2.8)
+
+[node name="Drum2" parent="Props" instance=ExtResource("p5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0.14, 3.1)
+
+[node name="Crate2" parent="Props" instance=ExtResource("p3")]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, 7, 0, 4)
+
+[node name="Crate3" parent="Props" instance=ExtResource("p3")]
+transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, 7.05, 0.9, 4)
+
+[node name="ConsoleOperator1" parent="Props" instance=ExtResource("p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.3)
+
+[node name="SeatJoystick1" parent="Props" instance=ExtResource("p16")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 3.1)
+
+[node name="GymPlayer" parent="." instance=ExtResource("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 6.5)
+gym_title = "PROPS GALLERY"

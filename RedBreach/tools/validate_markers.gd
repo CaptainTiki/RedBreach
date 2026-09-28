@@ -286,9 +286,10 @@ func run() -> void:
 	for route_name in routes:
 		var points: Array = routes[route_name]
 		points.sort_custom(func(a, b): return a[0] < b[0])
+		var forward_ok := true
 		for direction in ["forward", "back"]:
-			if direction == "back" and oneways.get(route_name, false):
-				continue
+			if direction == "back" and (oneways.get(route_name, false) or (progression != null and not forward_ok)):
+				continue    # one-way, or (with progression) the level is not in the state the forward walk leaves it
 			var seq: Array = points if direction == "forward" else points.duplicate()
 			if direction == "back":
 				seq.reverse()
@@ -327,6 +328,8 @@ func run() -> void:
 					if not await use_kits(seq[i][3], label):
 						route_ok = false
 						break
+			if direction == "forward":
+				forward_ok = route_ok
 			# A route of a level with progression ends where the level says it is finished (freight v2: in the lift).
 			if progression != null and direction == "forward" and route_ok and scene.has_method("playtest_stats") and "finish" in scene:
 				var end: Vector3 = seq[seq.size() - 1][1]

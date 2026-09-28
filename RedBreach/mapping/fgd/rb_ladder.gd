@@ -6,9 +6,13 @@ extends StaticBody3D
 @export var func_godot_properties: Dictionary = {}
 @export var top: float = 0.0
 @export var facing := Vector3(0, 0, -1)
+## How far forward of the ladder face the climber steps off at the top (a ladder standing out from its wall's plinth
+## steps off further, to the same place).
+@export var step: float = 0.8
 
 func _func_godot_apply_properties(p: Dictionary) -> void:
 	top = float(p.get("top", 0.0))
+	step = float(p.get("step", 0.8))
 	var f := str(p.get("facing", "0 1")).split_floats(" ")
 	facing = Vector3(f[0], 0.0, -f[1]).normalized()
 	for child in get_children():
@@ -39,7 +43,7 @@ func climb_path(from: Vector3) -> Array[Vector3]:
 	var base := global_position
 	var bottom := base - facing * 0.45 + Vector3.UP * 0.05
 	var top_c := Vector3(bottom.x, top + 0.05, bottom.z)
-	var off := Vector3(base.x, top + 0.05, base.z) + facing * 0.8
+	var off := Vector3(base.x, top + 0.05, base.z) + facing * step
 	var points: Array[Vector3] = []
 	if from.y < (base.y + top) / 2.0:
 		points.assign([bottom, top_c, off])
